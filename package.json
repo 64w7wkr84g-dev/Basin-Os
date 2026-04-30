@@ -1,18 +1,15 @@
 {
-  "name": "basin-ventures-lead-system",
-  "version": "2.0.0",
-  "description": "Basin Ventures Lead Generation System - local deployment package",
-  "main": "server.js",
-  "type": "commonjs",
+  "name": "basin-os",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.3"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=18"
   }
 }
