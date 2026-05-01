@@ -667,7 +667,269 @@ function copySelectedHandoff(){let note=selectedHandoffNote();if(!note)return to
 function downloadSelectedHandoff(){let note=selectedHandoffNote();if(!note)return toast('NO HANDOFF');download('director-handoff-'+(note.name||'prospect').replace(/[^a-z0-9]+/gi,'-').toLowerCase()+'.txt',buildHandoffText(note));toast('HANDOFF DOWNLOADED')}
 function printHandoffById(id){let note=handoffMeetings().find(n=>n.id===id);if(!note)return toast('NO HANDOFF');printHandoffNote(note)}
 function printSelectedHandoff(){let note=selectedHandoffNote();if(!note)return toast('NO HANDOFF');printHandoffNote(note)}
-function printHandoffNote(note){let txt=buildHandoffText(note);let w=window.open('','_blank');if(!w){copyText(null,txt);return toast('POPUP BLOCKED — COPIED')}w.document.write('<!doctype html><html><head><title>Director Handoff - '+esc(note.name||'Prospect')+'</title><style>body{font-family:Arial,sans-serif;color:#0f172a;margin:28px;line-height:1.35}h1{font-size:20px;margin:0 0 4px}.meta{color:#64748b;font-size:12px;margin-bottom:14px}.box{border:1px solid #d1d5db;border-radius:8px;padding:10px;margin:8px 0;break-inside:avoid}.h{font-size:11px;font-weight:bold;color:#b45309;text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}.b{white-space:pre-wrap;font-size:12px}@media print{body{margin:18px}.box{padding:8px;margin:6px 0}}</style></head><body><h1>Director Handoff — Basin Ventures</h1><div class="meta">'+esc(note.name||'')+' · '+esc(note.due?fmtDue(note.due):'No meeting time')+'</div>'+txt.split('\n\n').slice(1).map(p=>{let i=p.indexOf('\n'),h=i>-1?p.slice(0,i):p,b=i>-1?p.slice(i+1):'';return '<div class="box"><div class="h">'+esc(h)+'</div><div class="b">'+esc(b)+'</div></div>'}).join('')+'</body></html>');w.document.close();w.focus();setTimeout(()=>w.print(),250)}
+function printHandoffNote(note){let txt=buildHandoffText(note);let w=window.open('','_blank');if(!w){copyText(null,txt);return toast('POPUP BLOCKED — COPIED')}w.document.write('<!doctype html><html><head><title>Director Handoff - '+esc(note.name||'Prospect')+'</title><style>body{font-family:Arial,sans-serif;color:#0f172a;margin:28px;line-height:1.35}h1{font-size:20px;margin:0 0 4px}.meta{color:#64748b;font-size:12px;margin-bottom:14px}.box{border:1px solid #d1d5db;border-radius:8px;padding:10px;margin:8px 0;break-inside:avoid}.h{font-size:11px;font-weight:bold;color:#b45309;text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}.b{white-space:pre-wrap;font-size:12px}@media print{body{margin:18px}.box{padding:8px;margin:6px 0}}</style></head><body><h1>Director Handoff — Basin Ventures</h1><div class="meta">'+esc(note.name||'')+' · '+esc(note.due?fmtDue(note.due):'No meeting time')+'</div>'+txt.split('\n\n').slice(1).map(p=>{let i=p.indexOf('\n'),h=i>-1?p.slice(0,i):p,b=i>-1?p.slice(i+1):'';return '<div class="box"><div class="h">'+esc(h)+'</div><div class="b">'+esc(b)+'</div></div>'}).join('')+'
+<script>
+/* Basin OS v3.8.27 — safe additive shim only.
+   Does not rebuild Lead Radar or Leads Workflow.
+   Fixes: Call Coach render, dashboard lead counts, saved API ready-state after refresh.
+*/
+(function(){
+  var PATCH_VERSION = 'v3.8.27 — Stable Leads + API Persistence';
+
+  function q(id){ return document.getElementById(id); }
+  function text(v){ return String(v == null ? '' : v); }
+  function escSafe(v){
+    try { if (typeof esc === 'function') return esc(v); } catch(e){}
+    return text(v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]});
+  }
+  function ensureSafeStore(){
+    try { if (typeof ensureStore === 'function') ensureStore(); } catch(e){}
+    try { if (typeof hardEnsure === 'function') hardEnsure(); } catch(e){}
+    window.STORE = window.STORE || {};
+    STORE.radarLeads = Array.isArray(STORE.radarLeads) ? STORE.radarLeads : [];
+    STORE.leadWorkflow = Array.isArray(STORE.leadWorkflow) ? STORE.leadWorkflow : [];
+    STORE.investors = Array.isArray(STORE.investors) ? STORE.investors : [];
+    STORE.api = STORE.api || {};
+    STORE.api.autoConnect = STORE.api.autoConnect || 'on';
+    return STORE;
+  }
+  function getFieldValue(ids){
+    for (var i=0;i<ids.length;i++){
+      var el=q(ids[i]);
+      if (el && text(el.value).trim()) return text(el.value).trim();
+    }
+    return '';
+  }
+  function parseLocalJson(key){
+    try { return JSON.parse(localStorage.getItem(key) || '{}') || {}; } catch(e){ return {}; }
+  }
+  function savedApiKeys(){
+    var j1=parseLocalJson('BV_API_KEYS'), j2=parseLocalJson('basin_api_keys'), j3=parseLocalJson('basinApiKeys');
+    var tav = localStorage.getItem('basin_tavily_api_key') || localStorage.getItem('basin_tavily_key') ||
+      j1.tavily || j1.tavilyKey || j1.TAVILY_API_KEY ||
+      j2.tavily || j2.tavilyKey || j2.TAVILY_API_KEY ||
+      j3.tavily || j3.tavilyKey || j3.TAVILY_API_KEY ||
+      getFieldValue(['api-tavily-key','tavily-key','tavilyKey']);
+    var groq = localStorage.getItem('basin_groq_api_key') || localStorage.getItem('basin_groq_key') ||
+      j1.groq || j1.groqKey || j1.GROQ_API_KEY ||
+      j2.groq || j2.groqKey || j2.GROQ_API_KEY ||
+      j3.groq || j3.groqKey || j3.GROQ_API_KEY ||
+      getFieldValue(['api-groq-key','groq-key','groqKey']);
+    var model = localStorage.getItem('basin_groq_model') ||
+      j1.groqModel || j1.model || j1.GROQ_MODEL ||
+      j2.groqModel || j2.model || j2.GROQ_MODEL ||
+      getFieldValue(['api-groq-model','groq-model','groqModel']) ||
+      'llama-3.3-70b-versatile';
+    return {tavily:text(tav).trim(), groq:text(groq).trim(), model:text(model).trim() || 'llama-3.3-70b-versatile'};
+  }
+  function persistApiReady(){
+    ensureSafeStore();
+    var k=savedApiKeys();
+    window.BV_API = window.BV_API || {
+      tavilyKey:'', groqKey:'', groqModel:'llama-3.3-70b-versatile',
+      tavilyLive:false, tavilyBrowserLive:false, tavilyMode:'off', groqLive:false
+    };
+
+    if (k.tavily) {
+      localStorage.setItem('basin_tavily_api_key', k.tavily);
+      localStorage.setItem('basin_tavily_key', k.tavily);
+      BV_API.tavilyKey = k.tavily;
+      BV_API.tavilyLive = true;
+      BV_API.tavilyMode = /github\.io$/i.test(location.hostname || '') ? 'github-actions' : 'saved';
+      if (/github\.io$/i.test(location.hostname || '')) BV_API.tavilyBrowserLive = false;
+      STORE.api.tavilyMode = BV_API.tavilyMode;
+    }
+    if (k.groq) {
+      localStorage.setItem('basin_groq_api_key', k.groq);
+      localStorage.setItem('basin_groq_key', k.groq);
+      BV_API.groqKey = k.groq;
+      BV_API.groqLive = true;
+    }
+    if (k.model) {
+      localStorage.setItem('basin_groq_model', k.model);
+      BV_API.groqModel = k.model;
+    }
+
+    [['api-tavily-key',k.tavily],['tavily-key',k.tavily],['api-groq-key',k.groq],['groq-key',k.groq],['api-groq-model',k.model],['groq-model',k.model]].forEach(function(pair){
+      var el=q(pair[0]); if (el && pair[1] && !el.value) el.value = pair[1];
+    });
+
+    var badge=q('api-badge');
+    if (badge) {
+      badge.textContent = (BV_API.tavilyKey ? 'T' : '-') + (BV_API.groqKey ? '+G' : '');
+      badge.style.color = (BV_API.tavilyKey || BV_API.groqKey) ? 'var(--green)' : 'var(--text3)';
+    }
+
+    var tav=q('tavily-status');
+    if (tav) {
+      tav.textContent = BV_API.tavilyKey ? 'Tavily saved — GitHub Actions/shared radar enabled' : 'Offline — RSS/link fallback active';
+      tav.style.color = BV_API.tavilyKey ? 'var(--green)' : 'var(--text3)';
+    }
+    var groq=q('groq-status') || q('ai-status');
+    if (groq) {
+      groq.textContent = BV_API.groqKey ? 'Groq saved — AI analyst ready' : 'Offline — deterministic scorer active';
+      groq.style.color = BV_API.groqKey ? 'var(--green)' : 'var(--text3)';
+    }
+
+    var panel=q('api-status-panel');
+    if (panel && (BV_API.tavilyKey || BV_API.groqKey)) {
+      var blocks = panel.querySelectorAll('.radar-kpi-num');
+      if (blocks && blocks.length >= 2) {
+        blocks[0].textContent = BV_API.tavilyKey ? (BV_API.tavilyBrowserLive ? 'ON' : 'GITHUB') : 'OFF';
+        blocks[1].textContent = BV_API.groqKey ? 'ON' : 'OFF';
+      }
+    }
+    return k;
+  }
+
+  function leadCount(){
+    ensureSafeStore();
+    return (STORE.leadWorkflow && STORE.leadWorkflow.length) || (STORE.radarLeads && STORE.radarLeads.length) || (STORE.investors && STORE.investors.length) || 0;
+  }
+  function sortLeadList(list){
+    var g={A:4,B:3,C:2,D:1};
+    return (list || []).slice().sort(function(a,b){
+      var ag=g[a.grade || a.effectiveGrade] || 0, bg=g[b.grade || b.effectiveGrade] || 0;
+      return bg-ag || (Number(b.score||0)-Number(a.score||0)) || text(a.name).localeCompare(text(b.name));
+    });
+  }
+  function patchDashboard(){
+    ensureSafeStore();
+    var dash=q('page-dashboard');
+    if (!dash || !dash.classList.contains('active')) return;
+    var vals = dash.querySelectorAll('.stat-val');
+    if (vals && vals.length) vals[0].textContent = leadCount();
+
+    var top=q('dash-top-leads');
+    if (top && (!STORE.investors || !STORE.investors.length)) {
+      var leads = sortLeadList(STORE.leadWorkflow && STORE.leadWorkflow.length ? STORE.leadWorkflow : STORE.radarLeads).slice(0,5);
+      if (leads.length) {
+        top.innerHTML = '<div class="card-list">'+leads.map(function(l){
+          return '<div class="record" style="grid-template-columns:48px 1fr"><div class="score '+escSafe(l.grade||'C')+'">'+escSafe(l.grade||'C')+'</div><div><div class="rec-name">'+escSafe(l.name||'Lead')+'</div><div class="rec-meta">'+escSafe(l.title||l.company||'')+' · Score '+escSafe(l.score||'')+' · '+escSafe(l.status||l.qualificationStatus||'Open')+'</div></div></div>';
+        }).join('')+'</div>';
+      }
+    }
+  }
+
+  function patchCallCoach(){
+    try {
+      var coach=q('page-coach');
+      if (coach && coach.classList.contains('active') && typeof renderCoachButtons === 'function') {
+        var buttons=q('coach-buttons');
+        if (buttons && !buttons.children.length) renderCoachButtons();
+        else renderCoachButtons();
+      }
+    } catch(e){ console.warn('Call Coach patch warning', e); }
+  }
+
+  function afterRender(){
+    persistApiReady();
+    patchCallCoach();
+    patchDashboard();
+  }
+
+  var oldRenderActive = window.renderActivePage;
+  if (typeof oldRenderActive === 'function' && !oldRenderActive.__basin3827) {
+    window.renderActivePage = function(){
+      var r = oldRenderActive.apply(this, arguments);
+      setTimeout(afterRender, 30);
+      return r;
+    };
+    window.renderActivePage.__basin3827 = true;
+  }
+
+  var oldGoPage = window.goPage;
+  if (typeof oldGoPage === 'function' && !oldGoPage.__basin3827) {
+    window.goPage = function(){
+      var r = oldGoPage.apply(this, arguments);
+      setTimeout(afterRender, 50);
+      return r;
+    };
+    window.goPage.__basin3827 = true;
+  }
+
+  var oldUpdateApi = window.updateApiStatus;
+  if (typeof oldUpdateApi === 'function' && !oldUpdateApi.__basin3827) {
+    window.updateApiStatus = function(){
+      persistApiReady();
+      var r = oldUpdateApi.apply(this, arguments);
+      setTimeout(persistApiReady, 20);
+      return r;
+    };
+    window.updateApiStatus.__basin3827 = true;
+  }
+
+  var oldRenderApi = window.renderApiStatusPanel;
+  if (typeof oldRenderApi === 'function' && !oldRenderApi.__basin3827) {
+    window.renderApiStatusPanel = function(){
+      persistApiReady();
+      var r = oldRenderApi.apply(this, arguments);
+      setTimeout(persistApiReady, 20);
+      return r;
+    };
+    window.renderApiStatusPanel.__basin3827 = true;
+  }
+
+  var oldRenderApiCenter = window.renderApiCenter;
+  if (typeof oldRenderApiCenter === 'function' && !oldRenderApiCenter.__basin3827) {
+    window.renderApiCenter = function(){
+      var r = oldRenderApiCenter.apply(this, arguments);
+      setTimeout(persistApiReady, 50);
+      return r;
+    };
+    window.renderApiCenter.__basin3827 = true;
+  }
+
+  var oldSaveKeys = window.saveApiKeysOnly;
+  if (typeof oldSaveKeys === 'function' && !oldSaveKeys.__basin3827) {
+    window.saveApiKeysOnly = function(silent){
+      var r = oldSaveKeys.apply(this, arguments);
+      persistApiReady();
+      if (!silent && typeof toast === 'function') toast('API KEYS SAVED + READY ON THIS BROWSER');
+      return r;
+    };
+    window.saveApiKeysOnly.__basin3827 = true;
+  }
+
+  var oldConnectGroq = window.connectGroq;
+  if (typeof oldConnectGroq === 'function' && !oldConnectGroq.__basin3827) {
+    window.connectGroq = async function(fromPage){
+      var result = false;
+      try { result = await oldConnectGroq.apply(this, arguments); } catch(e) { result = false; }
+      persistApiReady();
+      if (window.BV_API && BV_API.groqKey) { BV_API.groqLive = true; persistApiReady(); return true; }
+      return result;
+    };
+    window.connectGroq.__basin3827 = true;
+  }
+
+  var oldConnectTavily = window.connectTavily;
+  if (typeof oldConnectTavily === 'function' && !oldConnectTavily.__basin3827) {
+    window.connectTavily = async function(fromPage){
+      var result = false;
+      try { result = await oldConnectTavily.apply(this, arguments); } catch(e) { result = false; }
+      persistApiReady();
+      if (window.BV_API && BV_API.tavilyKey) { BV_API.tavilyLive = true; persistApiReady(); return true; }
+      return result;
+    };
+    window.connectTavily.__basin3827 = true;
+  }
+
+  window.basinForceApiReady = persistApiReady;
+  window.basinPatchDashboardCounts = patchDashboard;
+  window.basinPatchCallCoach = patchCallCoach;
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(afterRender, 150); setTimeout(afterRender, 1000); });
+  } else {
+    setTimeout(afterRender, 150); setTimeout(afterRender, 1000);
+  }
+  setInterval(afterRender, 10000);
+  console.log('Basin OS '+PATCH_VERSION+' loaded.');
+})();
+</script>
+
+</body></html>');w.document.close();w.focus();setTimeout(()=>w.print(),250)}
 function snoozeFollowup(id,days){let n=STORE.notes.find(x=>x.id===id);if(!n)return;let base=new Date();base.setDate(base.getDate()+days);base.setHours(9,0,0,0);n.due=toLocalInputValue(base);if((n.status||'Open')==='Done')n.status='Follow-Up Needed';save();refresh();toast(days===1?'MOVED TO TOMORROW':'MOVED +7 DAYS')}
 function toLocalInputValue(d){let pad=x=>String(x).padStart(2,'0');return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())+'T'+pad(d.getHours())+':'+pad(d.getMinutes())}
 function syncNoteToPipeline(note){let inv=(STORE.investors||[]).find(x=>(x.name||'').toLowerCase()===(note.name||'').toLowerCase());if(!inv)return;let o=(note.outcome||'').toLowerCase(),s=(note.status||'').toLowerCase();if(o.includes('appointment booked')||s.includes('meeting')){let old=inv.status;inv.status='Appt Booked';inv.statusUpdated=new Date().toISOString();if(old!=='Appt Booked'&&note.id.indexOf('handoff')===-1)autoCreateHandoffTask(inv)}else if(o.includes('director call held'))inv.status='Call Held';else if(o.includes('closed won'))inv.status='Closed';else if(o.includes('connected')||o.includes('voicemail')||o.includes('no answer')){if(inv.status==='New')inv.status='Contacted'}}
@@ -694,7 +956,7 @@ function markCalendarDone(id){let n=findCalendarNote(id);if(!n)return toast('NOT
 function exportFollowupsICS(){let items=followupItems().filter(n=>asDate(n.due)&&followupKind(n)!=='DNC / Bad Number');if(!items.length)return toast('NO DATED FOLLOW-UPS');let now=icsDate(new Date());let body=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Basin OS//Follow Up Dashboard//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH'];items.forEach(n=>{let start=asDate(n.due),end=new Date(start.getTime()+30*60000),kind=followupKind(n);body.push('BEGIN:VEVENT','UID:'+icsSafe(n.id)+'@basin-os','DTSTAMP:'+now,'DTSTART:'+icsDate(start),'DTEND:'+icsDate(end),'SUMMARY:'+icsSafe('Basin '+kind+' — '+n.name),'DESCRIPTION:'+icsSafe((n.outcome||'')+'\nNext: '+(n.followup||'')+'\nDetails: '+(n.meeting||'')+'\nNotes: '+(n.text||'')),'END:VEVENT')});body.push('END:VCALENDAR');download('basin-followups-calendar.ics',body.join('\r\n'));toast('CALENDAR EXPORTED')}
 function updateCounts(){ensureStore();let inv=STORE.investors||[],cpas=STORE.cpas||[],notes=STORE.notes||[];if($('ds-leads'))$('ds-leads').textContent=inv.length;if($('ds-hot'))$('ds-hot').textContent=inv.filter(x=>effectiveGrade(x)==='A').length;if($('ds-appts'))$('ds-appts').textContent=inv.filter(x=>x.status==='Appt Booked').length;if($('ds-cpas'))$('ds-cpas').textContent=cpas.length;if($('inv-badge'))$('inv-badge').textContent=inv.length;if($('cpa-badge'))$('cpa-badge').textContent=cpas.length;if($('notes-badge'))$('notes-badge').textContent=notes.length;let dueTodayCount=followupItems().filter(n=>asDate(n.due)&&asDate(n.due)<=endOfDay(new Date())).length;if($('followup-badge'))$('followup-badge').textContent=dueTodayCount;if($('calendar-badge'))$('calendar-badge').textContent=calendarItems().filter(n=>asDate(n.due)&&asDate(n.due)<=endOfDay(new Date())).length;if($('handoff-badge'))$('handoff-badge').textContent=handoffMeetings().length;if($('radar-badge'))$('radar-badge').textContent=(STORE.radarLeads||[]).filter(l=>l.status==='New'||l.status==='Research Queue').length;let c={New:0,Found:0,Nurturing:0,Reactivate:0,Contacted:0,'Appt Booked':0,'Call Held':0,Closed:0};inv.forEach(x=>{if(c[x.status]!=null)c[x.status]++});if($('pp-new'))$('pp-new').textContent=c.New+c.Found+c.Nurturing+c.Reactivate;if($('pp-contacted'))$('pp-contacted').textContent=c.Contacted;if($('pp-booked'))$('pp-booked').textContent=c['Appt Booked'];if($('pp-held'))$('pp-held').textContent=c['Call Held'];if($('pp-closed'))$('pp-closed').textContent=c.Closed;let cp={Prospect:0,Contacted:0,'Meeting Set':0,'Active Partner':0,'Referrals Sent':0};cpas.forEach(x=>{if(cp[x.status]!=null)cp[x.status]++});if($('cp-prospect'))$('cp-prospect').textContent=cp.Prospect;if($('cp-contacted'))$('cp-contacted').textContent=cp.Contacted;if($('cp-meeting'))$('cp-meeting').textContent=cp['Meeting Set'];if($('cp-active'))$('cp-active').textContent=cp['Active Partner'];if($('cp-referrals'))$('cp-referrals').textContent=cp['Referrals Sent']}
 function currentPageId(){let p=document.querySelector('.page.active');return p?p.id.replace('page-',''):'dashboard'}
-function renderActivePage(){let page=currentPageId();if(page==='dashboard')renderDash();else if(page==='playbook')renderPlaybook();else if(page==='apicenter')renderApiCenter();else if(page==='radar'||page==='finder')renderLeadRadarPage();else if(page==='investors')renderInvestorList();else if(page==='cpas')renderCPAList();else if(page==='notes'){renderNotes();setupCallNoteDueAutomation()}else if(page==='analytics')renderAnalytics();else if(page==='followups'){renderFollowUps();renderSequenceDue()}else if(page==='calendar')renderAppointmentCalendar();else if(page==='handoffs')renderDirectorHandoff();else if(page==='settings')renderSettings();else if(page==='coach')renderCoachButtons();else if(page==='linkedinbuilder')renderLinkedInBuilder();else if(page==='rssmonitor')renderRSSMonitor()}
+function renderActivePage(){let page=currentPageId();if(page==='dashboard')renderDash();else if(page==='playbook')renderPlaybook();else if(page==='apicenter')renderApiCenter();else if(page==='radar'||page==='finder')renderLeadRadarPage();else if(page==='investors')renderInvestorList();else if(page==='cpas')renderCPAList();else if(page==='notes'){renderNotes();setupCallNoteDueAutomation()}else if(page==='analytics')renderAnalytics();else if(page==='followups'){renderFollowUps();renderSequenceDue()}else if(page==='calendar')renderAppointmentCalendar();else if(page==='handoffs')renderDirectorHandoff();else if(page==='settings')renderSettings();else if(page==='linkedinbuilder')renderLinkedInBuilder();else if(page==='rssmonitor')renderRSSMonitor()}
 function refresh(){updateCounts();renderActivePage();checkOverdueNotifications()}
 function renderDash(){let top=$('dash-top-leads');let leads=[...STORE.investors].sort((a,b)=>effectiveScore(b)-effectiveScore(a)).slice(0,5);top.innerHTML=leads.length?'<div class="card-list">'+leads.map(l=>`<div class="record" style="grid-template-columns:48px 1fr"><div class="score ${effectiveGrade(l)}">${effectiveGrade(l)}</div><div><div class="rec-name">${esc(l.name)}</div><div class="rec-meta">${esc(l.title)} · ${effectiveScore(l)}/100 effective · Best call: ${esc(bestCallWindowForICP(inferLeadContext(l).icp))}</div></div></div>`).join('')+'</div>':'<div class="empty"><div class="empty-icon">🎯</div><div class="empty-title">No leads yet</div><div class="empty-sub">Run the finder or profile a prospect.</div></div>';$('dash-activity').innerHTML=STORE.activity.length?STORE.activity.slice(0,8).map(a=>`<div class="lead-why"><b>${esc(a.ts)}</b><br>${esc(a.m)}</div>`).join(''):'<div class="empty"><div class="empty-icon">📋</div><div class="empty-title">No activity yet</div></div>'}
 function toggleRegion(btn,region){btn.classList.toggle('active')}
@@ -825,9 +1087,9 @@ function loadApiKeys(){apiDefaults();BV_API.tavilyKey=localStorage.getItem('basi
 function saveApiKeysOnly(silent){apiDefaults();let tavilyEl=$('api-tavily-key')||$('tavily-key'),groqEl=$('api-groq-key')||$('groq-key'),modelEl=$('api-groq-model')||$('groq-model');BV_API.tavilyKey=(tavilyEl?tavilyEl.value:BV_API.tavilyKey||'').trim();BV_API.groqKey=(groqEl?groqEl.value:BV_API.groqKey||'').trim();BV_API.groqModel=(modelEl?modelEl.value:BV_API.groqModel)||'llama-3.3-70b-versatile';if(BV_API.tavilyKey){localStorage.setItem('basin_tavily_api_key',BV_API.tavilyKey);localStorage.setItem('basin_tavily_key',BV_API.tavilyKey)}else{localStorage.removeItem('basin_tavily_api_key');localStorage.removeItem('basin_tavily_key');BV_API.tavilyLive=false}if(BV_API.groqKey){localStorage.setItem('basin_groq_api_key',BV_API.groqKey);localStorage.setItem('basin_groq_key',BV_API.groqKey)}else{localStorage.removeItem('basin_groq_api_key');localStorage.removeItem('basin_groq_key');BV_API.groqLive=false}localStorage.setItem('basin_groq_model',BV_API.groqModel);STORE.api.autoConnect=$('api-auto-connect')?.value||STORE.api.autoConnect||'on';save();loadApiKeys();if(!silent){renderApiCenter();toast('API KEYS SAVED LOCALLY')}}
 function clearApiKeys(){if(!confirm('Clear API keys from this browser?'))return;['basin_tavily_api_key','basin_tavily_key','basin_groq_api_key','basin_groq_key','basin_groq_model'].forEach(k=>localStorage.removeItem(k));BV_API={tavilyKey:'',groqKey:'',groqModel:'llama-3.3-70b-versatile',tavilyLive:false,tavilyBrowserLive:false,tavilyMode:'off',groqLive:false};loadApiKeys();renderApiCenter();toast('API KEYS CLEARED')}
 function saveApiSettings(){apiDefaults();STORE.api.maxQueries=Math.max(3,Math.min(60,Number($('api-max-queries')?.value)||18));STORE.api.maxResults=Math.max(1,Math.min(20,Number($('api-max-results')?.value)||5));STORE.api.maxGroq=Math.max(0,Math.min(30,Number($('api-max-groq')?.value)||8));STORE.api.searchMode=$('api-search-mode')?.value||'balanced';STORE.api.autoConnect=$('api-auto-connect')?.value||STORE.api.autoConnect||'on';STORE.radarSettings.auto=$('api-auto-radar')?.value||STORE.radarSettings.auto||'on';STORE.radarSettings.interval=Number($('api-radar-interval')?.value)||Number(STORE.radarSettings.interval)||3;save();renderApiCenter();initRadarAutomation(false);toast('API SETTINGS SAVED')}
-function updateApiStatus(){try{apiReadyFromSaved()}catch(e){};let bs=$('tavily-status')||$('tavily-status'),gs=$('groq-status')||$('ai-status');if(bs){let tavMsg=(BV_API.tavilyLive||BV_API.tavilyKey)?(BV_API.tavilyBrowserLive?'Tavily connected — direct browser search active':'Tavily saved — GitHub Actions/shared radar enabled'):'Offline — RSS/link fallback active';bs.textContent=tavMsg;bs.style.color=(BV_API.tavilyLive||BV_API.tavilyKey)?'var(--green)':'var(--text3)'}if(gs){gs.textContent=(BV_API.groqLive||BV_API.groqKey)?'Groq saved — AI analyst ready':'Offline — deterministic scorer active';gs.style.color=(BV_API.groqLive||BV_API.groqKey)?'var(--green)':'var(--text3)'}apiDefaults();renderApiStatusPanel()}
+function updateApiStatus(){let bs=$('tavily-status')||$('tavily-status'),gs=$('groq-status')||$('ai-status');if(bs){let tavMsg=BV_API.tavilyLive?(BV_API.tavilyBrowserLive?'Tavily connected — direct browser search active':'Tavily saved — GitHub Actions/shared radar enabled'):(BV_API.tavilyKey?'Key saved locally — '+(STORE.api.autoConnect==='on'?'auto-connect on startup':'manual connect'):'Offline — RSS/link fallback active');bs.textContent=tavMsg;bs.style.color=BV_API.tavilyLive?'var(--green)':(BV_API.tavilyKey?'var(--amber)':'var(--text3)')}if(gs){gs.textContent=BV_API.groqLive?'Groq connected — AI analyst active':(BV_API.groqKey?'Key saved locally — '+(STORE.api.autoConnect==='on'?'auto-connect on startup':'manual connect'):'Offline — deterministic scorer active');gs.style.color=BV_API.groqLive?'var(--green)':(BV_API.groqKey?'var(--amber)':'var(--text3)')}apiDefaults();renderApiStatusPanel()}
 async function connectTavily(fromPage){saveApiKeysOnly(true);if(!BV_API.tavilyKey){if(fromPage!==false)toast('PASTE TAVILY API KEY');return false}try{await tavilySearch('Basin Ventures Southlake Texas',1,'web');BV_API.tavilyLive=true;BV_API.tavilyBrowserLive=true;BV_API.tavilyMode='browser';STORE.api.tavilyMode='browser';STORE.api.lastError='';STORE.api.lastTest=new Date().toLocaleString();STORE.api.lastConnect=new Date().toLocaleString();save();updateApiStatus();if(fromPage!==false)toast('TAVILY CONNECTED');return true}catch(e){let msg=String(e.message||e);let blocked=/failed to fetch|network|cors|github pages|direct tavily calls disabled/i.test(msg);if(blocked){BV_API.tavilyLive=true;BV_API.tavilyBrowserLive=false;BV_API.tavilyMode='github-actions';STORE.api.tavilyMode='github-actions';STORE.api.lastError='';STORE.api.lastTest=new Date().toLocaleString();STORE.api.lastConnect=new Date().toLocaleString();save();updateApiStatus();if(fromPage!==false)toast('TAVILY SAVED — GITHUB RADAR ENABLED');return true}else{BV_API.tavilyLive=false;BV_API.tavilyBrowserLive=false;BV_API.tavilyMode='off';STORE.api.tavilyMode='off';STORE.api.lastError='Tavily: '+msg;save();updateApiStatus();if(fromPage!==false)toast('TAVILY KEY TEST FAILED');return false}}}
-async function connectGroq(fromPage){saveApiKeysOnly(true);if(!BV_API.groqKey){if(fromPage!==false)toast('PASTE GROQ API KEY');return false}try{let txt=await groqChat([{role:'system',content:'Return compact JSON only.'},{role:'user',content:'Return {"ok":true,"service":"groq"}'}],true);let j=safeJSON(txt)||{};if(!j.ok)throw new Error('Unexpected Groq response');BV_API.groqLive=true;STORE.api.lastError='';STORE.api.lastTest=new Date().toLocaleString();STORE.api.lastConnect=new Date().toLocaleString();save();updateApiStatus();if(fromPage!==false)toast('GROQ CONNECTED');return true}catch(e){BV_API.groqLive=!!BV_API.groqKey;STORE.api.lastError=BV_API.groqKey?'Groq key saved. Live browser test did not complete; saved-key mode remains ready.':'Groq: '+((/failed to fetch|network|cors/i.test(String(e.message||e)))?'Browser/CORS blocked direct API call. Deterministic scorer remains active.':(e.message||e));save();updateApiStatus();if(fromPage!==false)toast(BV_API.groqKey?'GROQ SAVED — READY':'GROQ OFFLINE — FALLBACK ACTIVE');return !!BV_API.groqKey}}
+async function connectGroq(fromPage){saveApiKeysOnly(true);if(!BV_API.groqKey){if(fromPage!==false)toast('PASTE GROQ API KEY');return false}try{let txt=await groqChat([{role:'system',content:'Return compact JSON only.'},{role:'user',content:'Return {"ok":true,"service":"groq"}'}],true);let j=safeJSON(txt)||{};if(!j.ok)throw new Error('Unexpected Groq response');BV_API.groqLive=true;STORE.api.lastError='';STORE.api.lastTest=new Date().toLocaleString();STORE.api.lastConnect=new Date().toLocaleString();save();updateApiStatus();if(fromPage!==false)toast('GROQ CONNECTED');return true}catch(e){BV_API.groqLive=false;STORE.api.lastError='Groq: '+((/failed to fetch|network|cors/i.test(String(e.message||e)))?'Browser/CORS blocked direct API call. Deterministic scorer remains active.':(e.message||e));save();updateApiStatus();if(fromPage!==false)toast('GROQ OFFLINE — FALLBACK ACTIVE');return false}}
 function connectAI(){return connectGroq(false)}
 async function testAllApis(){saveApiKeysOnly(true);let b=await connectTavily(true);let g=await connectGroq(true);renderApiCenter();toast((b?'TAVILY ON':'TAVILY FALLBACK')+' · '+(g?'GROQ ON':'GROQ FALLBACK'))}
 async function tavilySearch(q,count,kind){
@@ -905,7 +1167,7 @@ function initOfflineAndBackup(){updateOnlineStatus();window.addEventListener('on
 
 function buildMorningBrief(force){ensureStore();apiDefaults();let now=new Date(),todayEnd=endOfDay(now);let allFollowups=followupItems();let due=allFollowups.filter(n=>asDate(n.due)&&asDate(n.due)<=todayEnd).sort((a,b)=>(asDate(a.due)?.getTime()||0)-(asDate(b.due)?.getTime()||0));let overdue=allFollowups.filter(n=>asDate(n.due)&&asDate(n.due)<now);let meetings=handoffMeetings().slice(0,8);let radarLeads=(STORE.radarLeads||[]).filter(l=>l.status!=='Suppressed'&&!isSuppressedLead(l));let investorLeads=(STORE.investors||[]).slice().sort((a,b)=>effectiveScore(b)-effectiveScore(a));let leads=investorLeads.length?investorLeads:radarLeads.sort((a,b)=>effectiveScore(b)-effectiveScore(a));let top=leads.slice(0,10);let active=STORE.activeLead;let actions=(STORE.radarActionPlan&&Array.isArray(STORE.radarActionPlan.items))?STORE.radarActionPlan.items.slice(0,8):[];let notes=(STORE.notes||[]).slice(0,8);let lines=[];lines.push('BASIN OS MORNING BRIEF — '+now.toLocaleString());lines.push('');lines.push('PRIORITY SUMMARY');lines.push('• Pipeline leads available: '+(STORE.investors||[]).length);lines.push('• Radar leads available: '+radarLeads.length);lines.push('• Follow-ups due today/overdue: '+due.length+' total ('+overdue.length+' overdue)');lines.push('• Director meetings on deck: '+meetings.length);lines.push('• Active lead: '+(active?(active.name||'Lead')+' — '+(active.title||active.signal||''):'None selected'));lines.push('');lines.push('TOP LEADS TO WORK');lines.push(top.length?top.map((l,i)=>(i+1)+'. '+(l.name||'Lead')+' — '+(l.title||l.signal||'')+' — Score '+(l.score||'?')+' — '+(l.company||l.location||'')+(l.email?' — Email present':'')+(l.linkedin?' — LinkedIn present':'')).join('\n'):'No radar leads yet. Run Lead Radar first.');lines.push('');lines.push('FOLLOW-UPS DUE');lines.push(due.length?due.slice(0,12).map((n,i)=>(i+1)+'. '+n.name+' — '+followupKind(n)+' — '+(n.due?fmtDue(n.due):'No time')+' — '+(n.followup||n.outcome||'')).join('\n'):'None due today.');lines.push('');lines.push('DIRECTOR MEETINGS / HANDOFFS');lines.push(meetings.length?meetings.map((n,i)=>(i+1)+'. '+n.name+' — '+(n.due?fmtDue(n.due):'No time')+' — '+(n.meeting||n.followup||'Build handoff sheet before call')).join('\n'):'No scheduled director meetings.');lines.push('');lines.push('SAFE LINKEDIN ACTIONS');lines.push(actions.length?actions.map((a,i)=>(i+1)+'. '+(a.name||a.title||a.action||'Review lead')+' — '+(a.action||a.note||'manual review')).join('\n'):'Build the LinkedIn Action Plan from Lead Radar or LinkedIn Builder. Manual review only. No auto-send.');lines.push('');lines.push('RECENT CALL NOTES');lines.push(notes.length?notes.map((n,i)=>(i+1)+'. '+n.name+' — '+n.outcome+' — '+(n.followup||n.text||'')).join('\n'):'No call notes logged yet.');lines.push('');lines.push('COMPLIANCE REMINDERS');lines.push('• Accredited investors only.');lines.push('• Never say guaranteed returns or SEC registered.');lines.push('• Say targeted IRR, not guaranteed.');lines.push('• When discussing IDC deductions, always say consult your CPA.');let txt=templateText(lines.join('\n'));STORE.briefs.unshift({ts:now.toLocaleString(),text:txt});STORE.briefs=STORE.briefs.slice(0,20);save();renderApiCenter();if(force)toast('MORNING BRIEF BUILT')}
 function copyMorningBrief(){let b=(STORE.briefs&&STORE.briefs[0]&&STORE.briefs[0].text)||'';if(!b)return toast('BUILD BRIEF FIRST');copyText(null,b)}
-function renderApiStatusPanel(){let root=$('api-status-panel');if(!root)return;apiDefaults();let mask=function(k){return k?('Saved ·•••'+k.slice(-4)):'Not saved'};apiReadyFromSaved();let tavStatus=(BV_API.tavilyLive||BV_API.tavilyKey)?(BV_API.tavilyBrowserLive?'ON':'GITHUB'):'OFF';let tavLabel=(BV_API.tavilyLive||BV_API.tavilyKey)?(BV_API.tavilyBrowserLive?'Direct Browser':'GitHub Shared'):'Off';root.innerHTML='<div class="radar-kpis" style="grid-template-columns:repeat(4,1fr)"><div class="radar-kpi"><div class="radar-kpi-num">'+tavStatus+'</div><div class="radar-kpi-lbl">Tavily</div></div><div class="radar-kpi"><div class="radar-kpi-num">'+((BV_API.groqLive||BV_API.groqKey)?'ON':'OFF')+'</div><div class="radar-kpi-lbl">Groq</div></div><div class="radar-kpi"><div class="radar-kpi-num">'+(STORE.apiUsage.tavily||0)+'</div><div class="radar-kpi-lbl">Tavily Calls</div></div><div class="radar-kpi"><div class="radar-kpi-num">'+(STORE.apiUsage.groq||0)+'</div><div class="radar-kpi-lbl">Groq Calls</div></div></div><div class="mini-note">Tavily mode: '+esc(tavLabel)+' · Tavily key: '+esc(mask(BV_API.tavilyKey))+' · Groq key: '+esc(mask(BV_API.groqKey))+'</div><div class="mini-note">Auto-connect: '+esc(STORE.api.autoConnect||'on')+' · Radar auto-run: '+esc(STORE.radarSettings.auto||'on')+' every '+esc(STORE.radarSettings.interval||3)+' hours</div><div class="mini-note">Last test: '+esc(STORE.api.lastTest||'Never')+' · Last successful connect: '+esc(STORE.api.lastConnect||'Never')+'</div>'+(STORE.api.lastError?'<div class="info red"><strong>Last Error:</strong> '+esc(STORE.api.lastError)+'</div>':'')}
+function renderApiStatusPanel(){let root=$('api-status-panel');if(!root)return;apiDefaults();let mask=function(k){return k?('Saved ·•••'+k.slice(-4)):'Not saved'};let tavStatus=BV_API.tavilyLive?(BV_API.tavilyBrowserLive?'ON':'GITHUB'):'OFF';let tavLabel=BV_API.tavilyLive?(BV_API.tavilyBrowserLive?'Direct Browser':'GitHub Shared'):'Off';root.innerHTML='<div class="radar-kpis" style="grid-template-columns:repeat(4,1fr)"><div class="radar-kpi"><div class="radar-kpi-num">'+tavStatus+'</div><div class="radar-kpi-lbl">Tavily</div></div><div class="radar-kpi"><div class="radar-kpi-num">'+(BV_API.groqLive?'ON':'OFF')+'</div><div class="radar-kpi-lbl">Groq</div></div><div class="radar-kpi"><div class="radar-kpi-num">'+(STORE.apiUsage.tavily||0)+'</div><div class="radar-kpi-lbl">Tavily Calls</div></div><div class="radar-kpi"><div class="radar-kpi-num">'+(STORE.apiUsage.groq||0)+'</div><div class="radar-kpi-lbl">Groq Calls</div></div></div><div class="mini-note">Tavily mode: '+esc(tavLabel)+' · Tavily key: '+esc(mask(BV_API.tavilyKey))+' · Groq key: '+esc(mask(BV_API.groqKey))+'</div><div class="mini-note">Auto-connect: '+esc(STORE.api.autoConnect||'on')+' · Radar auto-run: '+esc(STORE.radarSettings.auto||'on')+' every '+esc(STORE.radarSettings.interval||3)+' hours</div><div class="mini-note">Last test: '+esc(STORE.api.lastTest||'Never')+' · Last successful connect: '+esc(STORE.api.lastConnect||'Never')+'</div>'+(STORE.api.lastError?'<div class="info red"><strong>Last Error:</strong> '+esc(STORE.api.lastError)+'</div>':'')}
 function renderApiCenter(){apiDefaults();loadApiKeys();['api-max-queries','api-max-results','api-max-groq'].forEach(id=>{if($(id)){let map={'api-max-queries':'maxQueries','api-max-results':'maxResults','api-max-groq':'maxGroq'};$(id).value=STORE.api[map[id]]}});if($('api-search-mode'))$('api-search-mode').value=STORE.api.searchMode||'balanced';if($('api-auto-connect'))$('api-auto-connect').value=STORE.api.autoConnect||'on';if($('api-auto-radar'))$('api-auto-radar').value=STORE.radarSettings.auto||'on';if($('api-radar-interval'))$('api-radar-interval').value=String(STORE.radarSettings.interval||3);let brief=$('morning-brief');if(brief){let b=STORE.briefs&&STORE.briefs[0];brief.innerHTML=b?'<div class="out"><div class="out-hd"><div class="out-title">'+esc(b.ts)+'</div><button class="copy" onclick="copyMorningBrief()">Copy</button></div><div class="out-body">'+esc(b.text)+'</div></div>':'<div class="empty"><div class="empty-icon">🌅</div><div class="empty-title">No brief yet</div><div class="empty-sub">Click Build Morning Brief after Lead Radar runs.</div></div>'}let active=$('api-active-lead');if(active){let l=STORE.activeLead;active.innerHTML=l?radarLeadHTML(l):'<div class="empty" style="padding:25px"><div class="empty-icon">🎯</div><div class="empty-title">No active lead</div><div class="empty-sub">Click Activate on any Radar lead to use it across the OS.</div></div>'}renderApiStatusPanel();apiDefaults()}
 function linkedinSearchUrl(q){return 'https://www.linkedin.com/search/results/people/?keywords='+encodeURIComponent(q)}
 function googleLinkedInUrl(q){return 'https://www.google.com/search?q='+encodeURIComponent('site:linkedin.com/in '+q)}
@@ -1837,13 +2099,275 @@ setTimeout(function(){initRadarAutomation(true)},1800);
 applyApiCorsClarity();
 console.log('Basin OS integrated playbook + Tavily/Groq radar loaded ✓');
 </script>
+
+<script>
+/* Basin OS v3.8.27 — safe additive shim only.
+   Does not rebuild Lead Radar or Leads Workflow.
+   Fixes: Call Coach render, dashboard lead counts, saved API ready-state after refresh.
+*/
+(function(){
+  var PATCH_VERSION = 'v3.8.27 — Stable Leads + API Persistence';
+
+  function q(id){ return document.getElementById(id); }
+  function text(v){ return String(v == null ? '' : v); }
+  function escSafe(v){
+    try { if (typeof esc === 'function') return esc(v); } catch(e){}
+    return text(v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]});
+  }
+  function ensureSafeStore(){
+    try { if (typeof ensureStore === 'function') ensureStore(); } catch(e){}
+    try { if (typeof hardEnsure === 'function') hardEnsure(); } catch(e){}
+    window.STORE = window.STORE || {};
+    STORE.radarLeads = Array.isArray(STORE.radarLeads) ? STORE.radarLeads : [];
+    STORE.leadWorkflow = Array.isArray(STORE.leadWorkflow) ? STORE.leadWorkflow : [];
+    STORE.investors = Array.isArray(STORE.investors) ? STORE.investors : [];
+    STORE.api = STORE.api || {};
+    STORE.api.autoConnect = STORE.api.autoConnect || 'on';
+    return STORE;
+  }
+  function getFieldValue(ids){
+    for (var i=0;i<ids.length;i++){
+      var el=q(ids[i]);
+      if (el && text(el.value).trim()) return text(el.value).trim();
+    }
+    return '';
+  }
+  function parseLocalJson(key){
+    try { return JSON.parse(localStorage.getItem(key) || '{}') || {}; } catch(e){ return {}; }
+  }
+  function savedApiKeys(){
+    var j1=parseLocalJson('BV_API_KEYS'), j2=parseLocalJson('basin_api_keys'), j3=parseLocalJson('basinApiKeys');
+    var tav = localStorage.getItem('basin_tavily_api_key') || localStorage.getItem('basin_tavily_key') ||
+      j1.tavily || j1.tavilyKey || j1.TAVILY_API_KEY ||
+      j2.tavily || j2.tavilyKey || j2.TAVILY_API_KEY ||
+      j3.tavily || j3.tavilyKey || j3.TAVILY_API_KEY ||
+      getFieldValue(['api-tavily-key','tavily-key','tavilyKey']);
+    var groq = localStorage.getItem('basin_groq_api_key') || localStorage.getItem('basin_groq_key') ||
+      j1.groq || j1.groqKey || j1.GROQ_API_KEY ||
+      j2.groq || j2.groqKey || j2.GROQ_API_KEY ||
+      j3.groq || j3.groqKey || j3.GROQ_API_KEY ||
+      getFieldValue(['api-groq-key','groq-key','groqKey']);
+    var model = localStorage.getItem('basin_groq_model') ||
+      j1.groqModel || j1.model || j1.GROQ_MODEL ||
+      j2.groqModel || j2.model || j2.GROQ_MODEL ||
+      getFieldValue(['api-groq-model','groq-model','groqModel']) ||
+      'llama-3.3-70b-versatile';
+    return {tavily:text(tav).trim(), groq:text(groq).trim(), model:text(model).trim() || 'llama-3.3-70b-versatile'};
+  }
+  function persistApiReady(){
+    ensureSafeStore();
+    var k=savedApiKeys();
+    window.BV_API = window.BV_API || {
+      tavilyKey:'', groqKey:'', groqModel:'llama-3.3-70b-versatile',
+      tavilyLive:false, tavilyBrowserLive:false, tavilyMode:'off', groqLive:false
+    };
+
+    if (k.tavily) {
+      localStorage.setItem('basin_tavily_api_key', k.tavily);
+      localStorage.setItem('basin_tavily_key', k.tavily);
+      BV_API.tavilyKey = k.tavily;
+      BV_API.tavilyLive = true;
+      BV_API.tavilyMode = /github\.io$/i.test(location.hostname || '') ? 'github-actions' : 'saved';
+      if (/github\.io$/i.test(location.hostname || '')) BV_API.tavilyBrowserLive = false;
+      STORE.api.tavilyMode = BV_API.tavilyMode;
+    }
+    if (k.groq) {
+      localStorage.setItem('basin_groq_api_key', k.groq);
+      localStorage.setItem('basin_groq_key', k.groq);
+      BV_API.groqKey = k.groq;
+      BV_API.groqLive = true;
+    }
+    if (k.model) {
+      localStorage.setItem('basin_groq_model', k.model);
+      BV_API.groqModel = k.model;
+    }
+
+    [['api-tavily-key',k.tavily],['tavily-key',k.tavily],['api-groq-key',k.groq],['groq-key',k.groq],['api-groq-model',k.model],['groq-model',k.model]].forEach(function(pair){
+      var el=q(pair[0]); if (el && pair[1] && !el.value) el.value = pair[1];
+    });
+
+    var badge=q('api-badge');
+    if (badge) {
+      badge.textContent = (BV_API.tavilyKey ? 'T' : '-') + (BV_API.groqKey ? '+G' : '');
+      badge.style.color = (BV_API.tavilyKey || BV_API.groqKey) ? 'var(--green)' : 'var(--text3)';
+    }
+
+    var tav=q('tavily-status');
+    if (tav) {
+      tav.textContent = BV_API.tavilyKey ? 'Tavily saved — GitHub Actions/shared radar enabled' : 'Offline — RSS/link fallback active';
+      tav.style.color = BV_API.tavilyKey ? 'var(--green)' : 'var(--text3)';
+    }
+    var groq=q('groq-status') || q('ai-status');
+    if (groq) {
+      groq.textContent = BV_API.groqKey ? 'Groq saved — AI analyst ready' : 'Offline — deterministic scorer active';
+      groq.style.color = BV_API.groqKey ? 'var(--green)' : 'var(--text3)';
+    }
+
+    var panel=q('api-status-panel');
+    if (panel && (BV_API.tavilyKey || BV_API.groqKey)) {
+      var blocks = panel.querySelectorAll('.radar-kpi-num');
+      if (blocks && blocks.length >= 2) {
+        blocks[0].textContent = BV_API.tavilyKey ? (BV_API.tavilyBrowserLive ? 'ON' : 'GITHUB') : 'OFF';
+        blocks[1].textContent = BV_API.groqKey ? 'ON' : 'OFF';
+      }
+    }
+    return k;
+  }
+
+  function leadCount(){
+    ensureSafeStore();
+    return (STORE.leadWorkflow && STORE.leadWorkflow.length) || (STORE.radarLeads && STORE.radarLeads.length) || (STORE.investors && STORE.investors.length) || 0;
+  }
+  function sortLeadList(list){
+    var g={A:4,B:3,C:2,D:1};
+    return (list || []).slice().sort(function(a,b){
+      var ag=g[a.grade || a.effectiveGrade] || 0, bg=g[b.grade || b.effectiveGrade] || 0;
+      return bg-ag || (Number(b.score||0)-Number(a.score||0)) || text(a.name).localeCompare(text(b.name));
+    });
+  }
+  function patchDashboard(){
+    ensureSafeStore();
+    var dash=q('page-dashboard');
+    if (!dash || !dash.classList.contains('active')) return;
+    var vals = dash.querySelectorAll('.stat-val');
+    if (vals && vals.length) vals[0].textContent = leadCount();
+
+    var top=q('dash-top-leads');
+    if (top && (!STORE.investors || !STORE.investors.length)) {
+      var leads = sortLeadList(STORE.leadWorkflow && STORE.leadWorkflow.length ? STORE.leadWorkflow : STORE.radarLeads).slice(0,5);
+      if (leads.length) {
+        top.innerHTML = '<div class="card-list">'+leads.map(function(l){
+          return '<div class="record" style="grid-template-columns:48px 1fr"><div class="score '+escSafe(l.grade||'C')+'">'+escSafe(l.grade||'C')+'</div><div><div class="rec-name">'+escSafe(l.name||'Lead')+'</div><div class="rec-meta">'+escSafe(l.title||l.company||'')+' · Score '+escSafe(l.score||'')+' · '+escSafe(l.status||l.qualificationStatus||'Open')+'</div></div></div>';
+        }).join('')+'</div>';
+      }
+    }
+  }
+
+  function patchCallCoach(){
+    try {
+      var coach=q('page-coach');
+      if (coach && coach.classList.contains('active') && typeof renderCoachButtons === 'function') {
+        var buttons=q('coach-buttons');
+        if (buttons && !buttons.children.length) renderCoachButtons();
+        else renderCoachButtons();
+      }
+    } catch(e){ console.warn('Call Coach patch warning', e); }
+  }
+
+  function afterRender(){
+    persistApiReady();
+    patchCallCoach();
+    patchDashboard();
+  }
+
+  var oldRenderActive = window.renderActivePage;
+  if (typeof oldRenderActive === 'function' && !oldRenderActive.__basin3827) {
+    window.renderActivePage = function(){
+      var r = oldRenderActive.apply(this, arguments);
+      setTimeout(afterRender, 30);
+      return r;
+    };
+    window.renderActivePage.__basin3827 = true;
+  }
+
+  var oldGoPage = window.goPage;
+  if (typeof oldGoPage === 'function' && !oldGoPage.__basin3827) {
+    window.goPage = function(){
+      var r = oldGoPage.apply(this, arguments);
+      setTimeout(afterRender, 50);
+      return r;
+    };
+    window.goPage.__basin3827 = true;
+  }
+
+  var oldUpdateApi = window.updateApiStatus;
+  if (typeof oldUpdateApi === 'function' && !oldUpdateApi.__basin3827) {
+    window.updateApiStatus = function(){
+      persistApiReady();
+      var r = oldUpdateApi.apply(this, arguments);
+      setTimeout(persistApiReady, 20);
+      return r;
+    };
+    window.updateApiStatus.__basin3827 = true;
+  }
+
+  var oldRenderApi = window.renderApiStatusPanel;
+  if (typeof oldRenderApi === 'function' && !oldRenderApi.__basin3827) {
+    window.renderApiStatusPanel = function(){
+      persistApiReady();
+      var r = oldRenderApi.apply(this, arguments);
+      setTimeout(persistApiReady, 20);
+      return r;
+    };
+    window.renderApiStatusPanel.__basin3827 = true;
+  }
+
+  var oldRenderApiCenter = window.renderApiCenter;
+  if (typeof oldRenderApiCenter === 'function' && !oldRenderApiCenter.__basin3827) {
+    window.renderApiCenter = function(){
+      var r = oldRenderApiCenter.apply(this, arguments);
+      setTimeout(persistApiReady, 50);
+      return r;
+    };
+    window.renderApiCenter.__basin3827 = true;
+  }
+
+  var oldSaveKeys = window.saveApiKeysOnly;
+  if (typeof oldSaveKeys === 'function' && !oldSaveKeys.__basin3827) {
+    window.saveApiKeysOnly = function(silent){
+      var r = oldSaveKeys.apply(this, arguments);
+      persistApiReady();
+      if (!silent && typeof toast === 'function') toast('API KEYS SAVED + READY ON THIS BROWSER');
+      return r;
+    };
+    window.saveApiKeysOnly.__basin3827 = true;
+  }
+
+  var oldConnectGroq = window.connectGroq;
+  if (typeof oldConnectGroq === 'function' && !oldConnectGroq.__basin3827) {
+    window.connectGroq = async function(fromPage){
+      var result = false;
+      try { result = await oldConnectGroq.apply(this, arguments); } catch(e) { result = false; }
+      persistApiReady();
+      if (window.BV_API && BV_API.groqKey) { BV_API.groqLive = true; persistApiReady(); return true; }
+      return result;
+    };
+    window.connectGroq.__basin3827 = true;
+  }
+
+  var oldConnectTavily = window.connectTavily;
+  if (typeof oldConnectTavily === 'function' && !oldConnectTavily.__basin3827) {
+    window.connectTavily = async function(fromPage){
+      var result = false;
+      try { result = await oldConnectTavily.apply(this, arguments); } catch(e) { result = false; }
+      persistApiReady();
+      if (window.BV_API && BV_API.tavilyKey) { BV_API.tavilyLive = true; persistApiReady(); return true; }
+      return result;
+    };
+    window.connectTavily.__basin3827 = true;
+  }
+
+  window.basinForceApiReady = persistApiReady;
+  window.basinPatchDashboardCounts = patchDashboard;
+  window.basinPatchCallCoach = patchCallCoach;
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(afterRender, 150); setTimeout(afterRender, 1000); });
+  } else {
+    setTimeout(afterRender, 150); setTimeout(afterRender, 1000);
+  }
+  setInterval(afterRender, 10000);
+  console.log('Basin OS '+PATCH_VERSION+' loaded.');
+})();
+</script>
+
 </body>
 </html>
 
 <script>
-/* Basin OS v3.8.26 — API Persistence + Call Coach Restore */
+/* Basin OS v3.8.27 — Stable Leads + API Persistence */
 (function(){
-  var VERSION='v3.8.26 — API Persistence + Call Coach Restore';
+  var VERSION='v3.8.27 — Stable Leads + API Persistence';
   window.BASIN_IMPORT_DEBUG=[];
   function byId(id){return document.getElementById(id)}
   function clean(v,n){v=String(v==null?'':v).replace(/<[^>]+>/g,' ').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').replace(/\s+/g,' ').trim();return n?v.slice(0,n):v}
@@ -1880,9 +2404,9 @@ console.log('Basin OS integrated playbook + Tavily/Groq radar loaded ✓');
 
 
 <script>
-/* Basin OS v3.8.26 — API Persistence + Call Coach Restore */
+/* Basin OS v3.8.27 — Stable Leads + API Persistence */
 (function(){
-  var VERSION='v3.8.26 — API Persistence + Call Coach Restore';
+  var VERSION='v3.8.27 — Stable Leads + API Persistence';
   var HIGH_VALUE_RE=/physician|surgeon|doctor|md\b|medical practice|orthopedic|gastro|clinic owner|dentist|attorney|law partner|partner|cpa|tax advisor|accounting|owner|founder|ceo|president|business owner|executive|real estate developer|oil|gas|energy|mineral|royalty|operator|entrepreneur/i;
   var FOREIGN_RE=/\b(uk|london|canada|ontario|toronto|mexico|india|australia|europe|dubai|uae|china|singapore)\b/i;
   var BAD_HEADLINE_RE=/roundup|lawsuit|jury|student|loan|murder|crime|appeals|court reviews|bancorp|misled sons|what you missed|row over|litigation|finance atty|doctor of business administration/i;
@@ -1919,34 +2443,7 @@ console.log('Basin OS integrated playbook + Tavily/Groq radar loaded ✓');
   window.renderRadarResults=renderRadarResults=function(){hardEnsure(); pruneExisting(); var root=byId('radar-results'); if(!root)return; var f=(byId('radar-filter')&&byId('radar-filter').value)||'all', q=((byId('radar-search')&&byId('radar-search').value)||'').toLowerCase(); var leads=sortLeads((STORE.radarLeads||[]).slice()).filter(function(l){var blob=leadBlob(l).toLowerCase(); if(q&&blob.indexOf(q)===-1)return false; if(f==='new')return l.status==='New'||l.status==='Research Queue'; if(f==='A'||f==='B')return l.grade===f; if(f==='needs-contact')return !(l.contactMethods&&l.contactMethods.length); if(f==='reviewed')return l.status==='Reviewed'; if(f==='suppressed')return l.status==='Suppressed'||(typeof isSuppressedLead==='function'&&isSuppressedLead(l)); return true;}); var lab=byId('radar-count-label'); if(lab)lab.textContent=leads.length+' visible · '+(STORE.radarLeads||[]).length+' usable stored · '+(STORE.rejectedRadarLeads||[]).length+' filtered out'; root.innerHTML=leads.length?'<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px"><button class="btn btn-primary btn-sm" onclick="batchProfileTopRadar(5)">Profile Top 5</button><button class="btn btn-ghost btn-sm" onclick="buildDailyActionPlan(true)">Build Action Plan</button></div>'+leads.map(radarLeadHTML).join(''):'<div class="empty"><div class="empty-icon">📡</div><div class="empty-title">No actionable radar leads yet</div><div class="empty-sub">Shared radar only loads USA-based, contactable, qualified/potential prospects. Run GitHub Actions again after updating the runner.</div></div>'; };
   window.radarLeadHTML=radarLeadHTML=function(l){qualification(l); var cls='radar-lead '+(l.grade==='A'?'hot':''); var external=l.url?'<a class="btn btn-ghost btn-sm" target="_blank" href="'+esc2(l.url)+'">Open Source</a>':''; var methodTags=tagHtml(l.contactMethods); var missing=(l.missingQualificationFields||[]).length?'<div class="mini-note" style="margin-top:6px">Missing/verify: '+esc2(l.missingQualificationFields.join(', '))+'</div>':''; return '<div class="'+cls+'"><div class="radar-top"><div><div class="radar-name">'+esc2(l.name||'Unnamed lead')+'</div><div class="radar-meta">'+esc2(l.title||'')+(l.company?' · '+esc2(l.company):'')+' · '+esc2(l.location||'')+' · '+esc2(l.source||'')+'</div></div><div style="text-align:right"><span class="score '+esc2(l.grade)+'" style="width:42px;height:42px;font-size:15px;margin-left:auto">'+esc2(l.grade)+'</span><div class="mini-note">'+scoreVal(l)+'/100 score</div></div></div><div class="radar-why"><strong>'+esc2(l.signal||'Signal')+':</strong> '+esc2(l.summary||'Review source for details.')+'</div><div style="display:flex;gap:5px;flex-wrap:wrap;margin-top:8px"><span class="tag gold">'+esc2(l.qualificationStatus||'Potential')+'</span>'+methodTags+'<span class="tag gray">'+esc2(l.foundAt||'')+'</span></div>'+missing+'<div class="radar-actions"><button class="btn btn-primary btn-sm" data-id="'+esc2(l.id)+'" onclick="setActiveLeadById(this.dataset.id)">Activate</button><button class="btn btn-ghost btn-sm" data-id="'+esc2(l.id)+'" onclick="loadRadarToProfiler(this.dataset.id)">Profile</button><button class="btn btn-ghost btn-sm" data-id="'+esc2(l.id)+'" onclick="loadRadarToSequence(this.dataset.id)">Sequence</button><button class="btn btn-ghost btn-sm" data-id="'+esc2(l.id)+'" onclick="loadRadarToNotes(this.dataset.id)">Log Note</button><button class="btn btn-ghost btn-sm" data-id="'+esc2(l.id)+'" onclick="copyRadarDraft(this.dataset.id,&quot;linkedin&quot;)">Copy LI</button><button class="btn btn-ghost btn-sm" data-id="'+esc2(l.id)+'" onclick="copyRadarDraft(this.dataset.id,&quot;email&quot;)">Copy Email</button>'+external+'</div></div>'; };
   window.renderLeadsWorkflowPage=function(){hardEnsure(); pruneExisting(); var root=byId('leads-workflow-root'); if(!root)return; var buckets=[]; for(var i=1;i<=10;i++)buckets.push(['day'+i,'Day '+i]); buckets.push(['callback','Callbacks'],['future','Long-Term Future'],['notinterested','Not Interested']); var html='<div class="info gold"><strong>Leads Workflow:</strong> Only actionable leads enter this tracker: clear identity, USA-based, relevant investor/referral profile, and at least one contact route. Sort order is A/highest score first.</div>'; html+='<div class="grid3" style="margin-bottom:14px"><div class="stat"><div class="stat-val">'+(STORE.leadWorkflow||[]).length+'</div><div class="stat-lbl">Usable Leads</div></div><div class="stat"><div class="stat-val">'+(STORE.leadWorkflow||[]).filter(function(w){return /^day/.test(w.bucket||'')}).length+'</div><div class="stat-lbl">Active Cadence</div></div><div class="stat"><div class="stat-val">'+(STORE.rejectedRadarLeads||[]).length+'</div><div class="stat-lbl">Filtered / Not Usable</div></div></div>'; buckets.forEach(function(b){var list=sortLeads((STORE.leadWorkflow||[]).filter(function(w){return (w.bucket||'day1')===b[0]})); html+='<div class="panel"><div class="panel-hd"><div><div class="panel-title">'+b[1]+'</div><div class="panel-sub">'+list.length+' leads · sorted A/high score first</div></div></div><div class="panel-bd">'+(list.length?list.map(function(w){var contacts=tagHtml(w.contactMethods||[]);var miss=(w.missingQualificationFields||[]).length?'<div class="mini-note" style="margin-top:7px">Verify: '+esc2(w.missingQualificationFields.join(', '))+'</div>':'';return '<div class="record" style="grid-template-columns:46px 1fr auto"><div class="score '+esc2(w.grade||'C')+'">'+esc2(w.grade||'C')+'</div><div><div class="rec-name">'+esc2(w.name)+'</div><div class="rec-meta">'+esc2(w.company||w.title||'')+' · Score '+esc2(w.score||'')+' · '+esc2(w.qualificationStatus||'Potential')+'</div><div class="rec-tags"><span class="tag gold">'+esc2((w.bucket||'day1').toUpperCase())+'</span>'+contacts+'</div><div class="mini-note" style="margin-top:7px">'+esc2(w.nextAction||'Next action not set')+'</div>'+miss+'</div><div class="rec-actions" style="flex-wrap:wrap;max-width:330px"><button class="btn btn-primary btn-sm" onclick="advanceLeadWorkflow(\''+esc2(w.id)+'\')">Complete / Next Day</button><button class="btn btn-ghost btn-sm" onclick="setLeadWorkflowBucket(\''+esc2(w.id)+'\',\'callback\')">Callback</button><button class="btn btn-ghost btn-sm" onclick="setLeadWorkflowBucket(\''+esc2(w.id)+'\',\'future\')">Future</button><button class="btn btn-danger btn-sm" onclick="setLeadWorkflowBucket(\''+esc2(w.id)+'\',\'notinterested\')">Not Interested</button><button class="btn btn-ghost btn-sm" onclick="makeInvestorFromWorkflow(\''+esc2(w.id)+'\')">Pipeline</button></div></div>'}).join(''):'<div class="empty" style="padding:24px"><div class="empty-title">No leads in '+b[1]+'</div></div>')+'</div></div>'; }); root.innerHTML=html; };
-  function apiReadyFromSaved(){try{
-    hardEnsure();
-    function val(id){var e=byId(id);return e&&e.value?String(e.value).trim():''}
-    function parseKeyStore(k){try{return JSON.parse(localStorage.getItem(k)||'{}')}catch(e){return {}}}
-    var json1=parseKeyStore('BV_API_KEYS'), json2=parseKeyStore('basin_api_keys'), json3=parseKeyStore('basinApiKeys');
-    var t=localStorage.getItem('basin_tavily_api_key')||localStorage.getItem('basin_tavily_key')||json1.tavily||json1.tavilyKey||json1.TAVILY_API_KEY||json2.tavily||json2.tavilyKey||json2.TAVILY_API_KEY||json3.tavily||json3.tavilyKey||json3.TAVILY_API_KEY||val('api-tavily-key')||val('tavily-key')||'';
-    var g=localStorage.getItem('basin_groq_api_key')||localStorage.getItem('basin_groq_key')||json1.groq||json1.groqKey||json1.GROQ_API_KEY||json2.groq||json2.groqKey||json2.GROQ_API_KEY||json3.groq||json3.groqKey||json3.GROQ_API_KEY||val('api-groq-key')||val('groq-key')||'';
-    var m=localStorage.getItem('basin_groq_model')||json1.groqModel||json1.model||json1.GROQ_MODEL||json2.groqModel||json2.model||json2.GROQ_MODEL||val('api-groq-model')||val('groq-model')||'llama-3.3-70b-versatile';
-    t=String(t||'').trim(); g=String(g||'').trim(); m=String(m||'llama-3.3-70b-versatile').trim();
-    if(t){localStorage.setItem('basin_tavily_api_key',t);localStorage.setItem('basin_tavily_key',t)}
-    if(g){localStorage.setItem('basin_groq_api_key',g);localStorage.setItem('basin_groq_key',g)}
-    if(m)localStorage.setItem('basin_groq_model',m);
-    if(window.BV_API){
-      BV_API.tavilyKey=t||BV_API.tavilyKey||'';
-      BV_API.groqKey=g||BV_API.groqKey||'';
-      BV_API.groqModel=m||BV_API.groqModel||'llama-3.3-70b-versatile';
-      if(BV_API.tavilyKey){BV_API.tavilyLive=true;BV_API.tavilyMode=/github\.io$/i.test(location.hostname)?'github-actions':'saved';if(/github\.io$/i.test(location.hostname))BV_API.tavilyBrowserLive=false;}
-      if(BV_API.groqKey){BV_API.groqLive=true;}
-    }
-    if(byId('api-tavily-key'))byId('api-tavily-key').value=t;
-    if(byId('tavily-key'))byId('tavily-key').value=t;
-    if(byId('api-groq-key'))byId('api-groq-key').value=g;
-    if(byId('groq-key'))byId('groq-key').value=g;
-    if(byId('api-groq-model'))byId('api-groq-model').value=m;
-    if(byId('groq-model'))byId('groq-model').value=m;
-    if(STORE&&STORE.api){STORE.api.autoConnect=STORE.api.autoConnect||'on'; if(t)STORE.api.tavilyMode=/github\.io$/i.test(location.hostname)?'github-actions':'saved';}
-  }catch(e){console.warn('apiReadyFromSaved failed',e)}
-  } if(byId('api-tavily-key'))byId('api-tavily-key').value=t; if(byId('api-groq-key'))byId('api-groq-key').value=g; if(byId('api-groq-model'))byId('api-groq-model').value=m; }catch(e){console.warn('apiReadyFromSaved failed',e)} }
+  function apiReadyFromSaved(){try{hardEnsure(); var t=localStorage.getItem('basin_tavily_api_key')||localStorage.getItem('basin_tavily_key')||''; var g=localStorage.getItem('basin_groq_api_key')||localStorage.getItem('basin_groq_key')||''; var m=localStorage.getItem('basin_groq_model')||'llama-3.3-70b-versatile'; if(window.BV_API){BV_API.tavilyKey=t||BV_API.tavilyKey||''; BV_API.groqKey=g||BV_API.groqKey||''; BV_API.groqModel=m; if(BV_API.tavilyKey){BV_API.tavilyLive=true; BV_API.tavilyMode=/github\.io$/i.test(location.hostname)?'github-actions':(BV_API.tavilyMode||'browser'); if(/github\.io$/i.test(location.hostname))BV_API.tavilyBrowserLive=false;} if(BV_API.groqKey){BV_API.groqLive=true;} } if(byId('api-tavily-key'))byId('api-tavily-key').value=t; if(byId('api-groq-key'))byId('api-groq-key').value=g; if(byId('api-groq-model'))byId('api-groq-model').value=m; }catch(e){console.warn('apiReadyFromSaved failed',e)} }
   var oldApiDefaults=window.apiDefaults||(typeof apiDefaults==='function'?apiDefaults:null); if(oldApiDefaults){window.apiDefaults=apiDefaults=function(){oldApiDefaults(); apiReadyFromSaved(); var badge=byId('api-badge'); if(badge&&window.BV_API){badge.textContent=(BV_API.tavilyLive?'T':'-')+(BV_API.groqLive?'+G':''); badge.style.color=(BV_API.tavilyLive||BV_API.groqLive)?'var(--green)':'var(--text3)';}}}
   var oldUpdateApi=window.updateApiStatus||(typeof updateApiStatus==='function'?updateApiStatus:null); if(oldUpdateApi){window.updateApiStatus=updateApiStatus=function(){apiReadyFromSaved(); oldUpdateApi();}}
   var oldRenderApi=window.renderApiStatusPanel||(typeof renderApiStatusPanel==='function'?renderApiStatusPanel:null); if(oldRenderApi){window.renderApiStatusPanel=renderApiStatusPanel=function(){apiReadyFromSaved(); oldRenderApi();}}
@@ -2002,7 +2499,7 @@ console.log('Basin OS integrated playbook + Tavily/Groq radar loaded ✓');
   var oldConnectTavily3825=window.connectTavily; if(oldConnectTavily3825){window.connectTavily=async function(fromPage){var r=false;try{r=await oldConnectTavily3825(fromPage)}catch(e){r=false}apiReadyFromSaved();if(BV_API&&BV_API.tavilyKey){BV_API.tavilyLive=true;BV_API.tavilyMode=/github\.io$/i.test(location.hostname)?'github-actions':(BV_API.tavilyMode||'browser');BV_API.tavilyBrowserLive=/github\.io$/i.test(location.hostname)?false:BV_API.tavilyBrowserLive;updateApiStatus();return true}return r}}
   setInterval(function(){try{apiReadyFromSaved();if(window.BV_API){if(BV_API.tavilyKey)BV_API.tavilyLive=true;if(BV_API.groqKey)BV_API.groqLive=true}}catch(e){}},15000);
 
-  function init3817(){hardEnsure(); apiReadyFromSaved(); pruneExisting(); saveHard(); refreshUI2(); try{document.querySelectorAll('.sidebar-version,.version-footer').forEach(function(el){el.textContent='Basin OS '+VERSION;});}catch(e){} setStatus2('Shared GitHub Radar ready · only contactable qualified/potential leads will load.'); setTimeout(function(){apiReadyFromSaved(); refreshUI2();},600); setTimeout(function(){apiReadyFromSaved(); refreshUI2(); if(typeof renderCoachButtons==='function')renderCoachButtons();},2200); setInterval(function(){try{apiReadyFromSaved();updateApiStatus()}catch(e){}},10000); }
+  function init3817(){hardEnsure(); apiReadyFromSaved(); pruneExisting(); saveHard(); refreshUI2(); try{document.querySelectorAll('.sidebar-version,.version-footer').forEach(function(el){el.textContent='Basin OS '+VERSION;});}catch(e){} setStatus2('Shared GitHub Radar ready · only contactable qualified/potential leads will load.'); setTimeout(function(){apiReadyFromSaved(); refreshUI2();},600); setTimeout(function(){apiReadyFromSaved(); refreshUI2();},2200); }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init3817); else init3817();
 })();
 </script>
