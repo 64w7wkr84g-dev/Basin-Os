@@ -1,18 +1,14 @@
 {
-  "name": "basin-os-github-pages",
-  "version": "1.0.0",
+  "name": "basin-os",
+  "version": "3.8.6",
   "private": true,
-  "description": "Basin OS static GitHub Pages app plus optional local Brave Search proxy.",
+  "description": "Basin OS GitHub Pages app with Tavily/Groq scheduled radar runner.",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2"
+    "radar": "node basin-radar-runner.js"
   },
   "engines": {
-    "node": ">=18"
-  }
+    "node": ">=20"
+  },
+  "dependencies": {}
 }
