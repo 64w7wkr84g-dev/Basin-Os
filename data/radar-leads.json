@@ -1,6 +1,6 @@
 [
   {
-    "id": "rad-gh-1777624019940-933453ec759bb",
+    "id": "rad-gh-1777624313774-60cf04f38cc3a",
     "name": "A Physician-Built Workforce Intelligence Platform Cracks Healthcare's Staffing Code",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -17,8 +17,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:26:59.940Z",
-    "ts": "5/1/2026, 3:26:59 AM",
+    "foundAt": "2026-05-01T08:31:53.774Z",
+    "ts": "5/1/2026, 3:31:53 AM",
     "confidence": "High",
     "evidenceTrail": [
       "https://finance.yahoo.com/sectors/healthcare/articles/physician-built-workforce-intelligence-platform-144800960.html"
@@ -40,19 +40,22 @@
     "score": 98,
     "grade": "A",
     "nurtureDraft": "Hi A,\n\nI came across Recent promotion / partner signal and thought Basin Ventures may be relevant if direct energy ownership, quarterly distributions, or potential IDC deductions are worth understanding. This is not tax advice; your CPA should review anything specific to your situation.\n\nWould a short director call be useful?",
-    "nextAction": "Research FutureDrx's competitive landscape and potential for scalability, consult-your-CPA regarding potential tax benefits and IDC deductions",
+    "nextAction": "Schedule a call to discuss potential investment opportunities and consult-your-CPA regarding tax implications and potential IDC deductions",
     "ai": {
       "score": 98,
       "grade": "A",
       "confidence": "High",
       "bestAngle": "Healthcare workforce intelligence and staffing solutions",
-      "riskFlags": [],
-      "nextAction": "Research FutureDrx's competitive landscape and potential for scalability, consult-your-CPA regarding potential tax benefits and IDC deductions"
+      "riskFlags": [
+        "Regulatory risks in the healthcare industry",
+        "Competition from established staffing platforms"
+      ],
+      "nextAction": "Schedule a call to discuss potential investment opportunities and consult-your-CPA regarding tax implications and potential IDC deductions"
     },
     "aiAngle": "Healthcare workforce intelligence and staffing solutions"
   },
   {
-    "id": "rad-gh-1777624019939-28a3791309e7b",
+    "id": "rad-gh-1777624313773-431f731d5bd53",
     "name": "Healthcare M&A in 2026: Five rules smart sponsors are following",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -69,8 +72,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:26:59.939Z",
-    "ts": "5/1/2026, 3:26:59 AM",
+    "foundAt": "2026-05-01T08:31:53.773Z",
+    "ts": "5/1/2026, 3:31:53 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.pehub.com/healthcare-ma-in-2026-five-rules-smart-sponsors-are-following/"
@@ -92,72 +95,19 @@
     "score": 98,
     "grade": "A",
     "nurtureDraft": "Hi Healthcare,\n\nI came across Recent promotion / partner signal and thought Basin Ventures may be relevant if direct energy ownership, quarterly distributions, or potential IDC deductions are worth understanding. This is not tax advice; your CPA should review anything specific to your situation.\n\nWould a short director call be useful?",
-    "nextAction": "Outreach for a short director call to discuss potential investment interests and opportunities, ensuring to consult-your-CPA for any tax or IDC related advice",
+    "nextAction": "Outreach to discuss potential investment opportunities in healthcare M&A, consult-your-CPA for tax/IDC considerations",
     "ai": {
       "score": 98,
       "grade": "A",
       "confidence": "Medium",
-      "bestAngle": "Recent promotion / partner signal in the healthcare sector, potentially indicating interest in investment opportunities or partnerships",
+      "bestAngle": "Healthcare M&A",
       "riskFlags": [],
-      "nextAction": "Outreach for a short director call to discuss potential investment interests and opportunities, ensuring to consult-your-CPA for any tax or IDC related advice"
+      "nextAction": "Outreach to discuss potential investment opportunities in healthcare M&A, consult-your-CPA for tax/IDC considerations"
     },
-    "aiAngle": "Recent promotion / partner signal in the healthcare sector, potentially indicating interest in investment opportunities or partnerships"
+    "aiAngle": "Healthcare M&A"
   },
   {
-    "id": "rad-gh-1777624019938-1fdef5767e7b9",
-    "name": "Kirkland-Led Emerald Lake Clinches $825M Fund",
-    "title": "Physician / Medical Practice",
-    "company": "",
-    "location": "nationwide USA",
-    "type": "investor",
-    "source": "GitHub Actions · Tavily",
-    "sourceFeed": "news",
-    "sourceQuery": "\"named partner\" OR \"joins\" physician practice surgeon specialist nationwide USA 2025 OR 2026",
-    "sourceUrl": "https://www.law360.com/privateequity/articles/2470357/kirkland-led-emerald-lake-clinches-825m-fund?about=privateequity",
-    "url": "https://www.law360.com/privateequity/articles/2470357/kirkland-led-emerald-lake-clinches-825m-fund?about=privateequity",
-    "signal": "Recent promotion / partner signal",
-    "summary": "New Jersey New York North Carolina Ohio Pennsylvania Personal Injury & Medical Malpractice Private Equity Product Liability Project Finance Public Policy Real Estate Retail & E-Commerce Securities Sports & Betting Tax Technology Telecommunications Texas Transportation Trials Washington White Collar # Law360 Pulse | ## Business of Law California Pulse Connecticut Pulse Courts DC Pulse Daily Litigation Delaware Pulse Florida Pulse Georgia Pulse In-House Insights Legal Tech & AI Mid-Law Modern Lawyer New Jersey Pulse New York Pulse Pennsylvania Pulse Small Law Texas Pulse # Law360 Authority | ## Deep News & Analysis ## Tax Authority Federal International State & Local ## Employment Authority Discrimination Labor Other Wage & Hour [...] Try our Advanced Search for more refined results # Law360 | ## The Practice of Law Access to Justice Aerospace & Defense Appellate Asset Management Banking B",
-    "email": "",
-    "linkedin": "",
-    "status": "New",
-    "reviewed": false,
-    "foundAt": "2026-05-01T08:26:59.938Z",
-    "ts": "5/1/2026, 3:26:59 AM",
-    "confidence": "Medium",
-    "evidenceTrail": [
-      "https://www.law360.com/privateequity/articles/2470357/kirkland-led-emerald-lake-clinches-825m-fund?about=privateequity"
-    ],
-    "sourceConfidence": "Medium",
-    "raw": {
-      "title": "Kirkland-Led Emerald Lake Clinches $825M Fund - Law360",
-      "desc": "New Jersey New York North Carolina Ohio Pennsylvania Personal Injury & Medical Malpractice Private Equity Product Liability Project Finance Public Policy Real Estate Retail & E-Commerce Securities Sports & Betting Tax Technology Telecommunications Texas Transportation Trials Washington White Collar # Law360 Pulse | ## Business of Law California Pulse Connecticut Pulse Courts DC Pulse Daily Litigation Delaware Pulse Florida Pulse Georgia Pulse In-House Insights Legal Tech & AI Mid-Law Modern Lawyer New Jersey Pulse New York Pulse Pennsylvania Pulse Small Law Texas Pulse # Law360 Authority | ## Deep News & Analysis ## Tax Authority Federal International State & Local ## Employment Authority Discrimination Labor Other Wage & Hour [...] Try our Advanced Search for more refined results # Law360 | ## The Practice of Law Access to Justice Aerospace & Defense Appellate Asset Management Banking B",
-      "pub": "Mon, 27 Apr 2026 19:08:00 GMT",
-      "tavilyScore": 0.04468087,
-      "query": "\"named partner\" OR \"joins\" physician practice surgeon specialist nationwide USA 2025 OR 2026"
-    },
-    "scoreSignals": [
-      "Physician / medical ICP +25",
-      "Attorney / law partner ICP +18",
-      "Trigger event detected +10",
-      "Tax motivation signal +10",
-      "Tavily web signal +2"
-    ],
-    "score": 98,
-    "grade": "A",
-    "nurtureDraft": "Hi Kirkland-Led,\n\nI came across Recent promotion / partner signal and thought Basin Ventures may be relevant if direct energy ownership, quarterly distributions, or potential IDC deductions are worth understanding. This is not tax advice; your CPA should review anything specific to your situation.\n\nWould a short director call be useful?",
-    "nextAction": "Outreach to discuss potential investment opportunities, consult-your-CPA for tax implications",
-    "ai": {
-      "score": 98,
-      "grade": "A",
-      "confidence": "Medium",
-      "bestAngle": "Recent $825M fund clinched, potential for direct energy ownership and quarterly distributions",
-      "riskFlags": [],
-      "nextAction": "Outreach to discuss potential investment opportunities, consult-your-CPA for tax implications"
-    },
-    "aiAngle": "Recent $825M fund clinched, potential for direct energy ownership and quarterly distributions"
-  },
-  {
-    "id": "rad-gh-1777624019939-bef92f068d31a",
+    "id": "rad-gh-1777624313773-4eee2f6d9445c8",
     "name": "BREAKING: Top Court Won't Hear Ex-Ohio Speaker's Bribery Appeal",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -174,8 +124,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:26:59.939Z",
-    "ts": "5/1/2026, 3:26:59 AM",
+    "foundAt": "2026-05-01T08:31:53.773Z",
+    "ts": "5/1/2026, 3:31:53 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.law360.com/whitecollar/articles/2464842?utm_source=rss&utm_medium=rss&utm_campaign=section"
@@ -198,22 +148,19 @@
     "score": 98,
     "grade": "A",
     "nurtureDraft": "Hi BREAKING:,\n\nI came across Recent promotion / partner signal and thought Basin Ventures may be relevant if direct energy ownership, quarterly distributions, or potential IDC deductions are worth understanding. This is not tax advice; your CPA should review anything specific to your situation.\n\nWould a short director call be useful?",
-    "nextAction": "Schedule a call to discuss investment opportunities and potential tax benefits with a Basin Ventures representative",
+    "nextAction": "Outreach to discuss potential investment opportunities and consult with CPA regarding tax implications",
     "ai": {
       "score": 98,
       "grade": "A",
       "confidence": "Medium",
-      "bestAngle": "Physician practice investment opportunity with potential tax benefits, consult-your-CPA for IDC deductions",
-      "riskFlags": [
-        "Regulatory risks in the medical practice industry",
-        "Potential litigation risks"
-      ],
-      "nextAction": "Schedule a call to discuss investment opportunities and potential tax benefits with a Basin Ventures representative"
+      "bestAngle": "Potential tax benefits and IDC deductions for physician/medical practice investments",
+      "riskFlags": [],
+      "nextAction": "Outreach to discuss potential investment opportunities and consult with CPA regarding tax implications"
     },
-    "aiAngle": "Physician practice investment opportunity with potential tax benefits, consult-your-CPA for IDC deductions"
+    "aiAngle": "Potential tax benefits and IDC deductions for physician/medical practice investments"
   },
   {
-    "id": "rad-gh-1777624019939-4dadd5b7ef91",
+    "id": "rad-gh-1777624313774-5a161aafce8068",
     "name": "White & Case Guides Chip Co. On £13M Placing, Retail Offer",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -230,8 +177,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:26:59.939Z",
-    "ts": "5/1/2026, 3:26:59 AM",
+    "foundAt": "2026-05-01T08:31:53.774Z",
+    "ts": "5/1/2026, 3:31:53 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.law360.com/articles/2470619/white-case-guides-chip-co-on-13m-placing-retail-offer"
@@ -254,19 +201,71 @@
     "score": 98,
     "grade": "A",
     "nurtureDraft": "Hi White,\n\nI came across Recent promotion / partner signal and thought Basin Ventures may be relevant if direct energy ownership, quarterly distributions, or potential IDC deductions are worth understanding. This is not tax advice; your CPA should review anything specific to your situation.\n\nWould a short director call be useful?",
-    "nextAction": "Outreach to explore interest in direct energy ownership and quarterly distributions, with caveat to consult-your-CPA for tax/IDC advice",
+    "nextAction": "Outreach to discuss potential investment opportunities and consult with CPA regarding tax implications",
     "ai": {
       "score": 98,
       "grade": "A",
       "confidence": "Medium",
       "bestAngle": "Tax motivation signal and potential IDC deductions",
       "riskFlags": [],
-      "nextAction": "Outreach to explore interest in direct energy ownership and quarterly distributions, with caveat to consult-your-CPA for tax/IDC advice"
+      "nextAction": "Outreach to discuss potential investment opportunities and consult with CPA regarding tax implications"
     },
     "aiAngle": "Tax motivation signal and potential IDC deductions"
   },
   {
-    "id": "rad-gh-1777624021257-a102eaff36079",
+    "id": "rad-gh-1777624313774-0db9886ec11688",
+    "name": "| Fierce Healthcare",
+    "title": "Physician / Medical Practice",
+    "company": "",
+    "location": "nationwide USA",
+    "type": "investor",
+    "source": "GitHub Actions · Tavily",
+    "sourceFeed": "news",
+    "sourceQuery": "\"named partner\" OR \"joins\" physician practice surgeon specialist nationwide USA 2025 OR 2026",
+    "sourceUrl": "https://www.fiercehealthcare.com/node?c=1&p=3551&pb=1&tb=1&page=127",
+    "url": "https://www.fiercehealthcare.com/node?c=1&p=3551&pb=1&tb=1&page=127",
+    "signal": "Recent promotion / partner signal",
+    "summary": "# | Fierce Healthcare Image 1 Image 2Image 3Image 4Image 5Image 6Image 7Image 8Image 9Image 10Image 11Image 12Image 13Image 14Image 15 Image 16: Barbara Sadick #### Barbara Sadick Image 17: Scott Caldwell #### Scott Caldwell Image 18: Tom Dobosenski #### Tom Dobosenski Image 19: Snezana Mahon #### Snezana Mahon Image 20: PRA Health Sciences #### PRA Health Sciences Image 21: Holly Rollins #### Holly Rollins Image 22: Medicus Healthcare Solutions #### Medicus Healthcare Solutions Medicus Healthcare Solutions Image 23: Medicus Healthcare Solutions Image 24: Peter J. Pitts #### Peter J. Pitts Image 25: Kate Hilton #### Kate Hilton #### Pagination [...] Image 25: Kate Hilton #### Kate Hilton #### Pagination « First First page ‹ Previous Previous page … 124 125 126 127 128 129 130 131 132 … Next ›Next page Last »Last page Subscribe to Image 26Image 27Image 28Image 29Image 30Image 31Image 32Im",
+    "email": "",
+    "linkedin": "",
+    "status": "New",
+    "reviewed": false,
+    "foundAt": "2026-05-01T08:31:53.774Z",
+    "ts": "5/1/2026, 3:31:53 AM",
+    "confidence": "Medium",
+    "evidenceTrail": [
+      "https://www.fiercehealthcare.com/node?c=1&p=3551&pb=1&tb=1&page=127"
+    ],
+    "sourceConfidence": "Medium",
+    "raw": {
+      "title": "| Fierce Healthcare - Fierce Healthcare",
+      "desc": "# | Fierce Healthcare Image 1 Image 2Image 3Image 4Image 5Image 6Image 7Image 8Image 9Image 10Image 11Image 12Image 13Image 14Image 15 Image 16: Barbara Sadick #### Barbara Sadick Image 17: Scott Caldwell #### Scott Caldwell Image 18: Tom Dobosenski #### Tom Dobosenski Image 19: Snezana Mahon #### Snezana Mahon Image 20: PRA Health Sciences #### PRA Health Sciences Image 21: Holly Rollins #### Holly Rollins Image 22: Medicus Healthcare Solutions #### Medicus Healthcare Solutions Medicus Healthcare Solutions Image 23: Medicus Healthcare Solutions Image 24: Peter J. Pitts #### Peter J. Pitts Image 25: Kate Hilton #### Kate Hilton #### Pagination [...] Image 25: Kate Hilton #### Kate Hilton #### Pagination « First First page ‹ Previous Previous page … 124 125 126 127 128 129 130 131 132 … Next ›Next page Last »Last page Subscribe to Image 26Image 27Image 28Image 29Image 30Image 31Image 32Im",
+      "pub": "Wed, 29 Apr 2026 21:45:16 GMT",
+      "tavilyScore": 0.018761085,
+      "query": "\"named partner\" OR \"joins\" physician practice surgeon specialist nationwide USA 2025 OR 2026"
+    },
+    "scoreSignals": [
+      "Physician / medical ICP +25",
+      "Attorney / law partner ICP +18",
+      "Trigger event detected +10",
+      "Tavily web signal +2"
+    ],
+    "score": 98,
+    "grade": "A",
+    "nurtureDraft": "Hi |,\n\nI came across Recent promotion / partner signal and thought Basin Ventures may be relevant if direct energy ownership, quarterly distributions, or potential IDC deductions are worth understanding. This is not tax advice; your CPA should review anything specific to your situation.\n\nWould a short director call be useful?",
+    "nextAction": "Manual review, verify source, then call or sequence today to discuss potential investment opportunities and consult-your-CPA for tax implications",
+    "ai": {
+      "score": 98,
+      "grade": "A",
+      "confidence": "Medium",
+      "bestAngle": "Recent promotion / partner signal in physician / medical practice",
+      "riskFlags": [],
+      "nextAction": "Manual review, verify source, then call or sequence today to discuss potential investment opportunities and consult-your-CPA for tax implications"
+    },
+    "aiAngle": "Recent promotion / partner signal in physician / medical practice"
+  },
+  {
+    "id": "rad-gh-1777624314258-1c7ea8e2102588",
     "name": "CPA + Medical practice management consultant for Physicians and Medical Practices",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -283,8 +282,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:01.257Z",
-    "ts": "5/1/2026, 3:27:01 AM",
+    "foundAt": "2026-05-01T08:31:54.259Z",
+    "ts": "5/1/2026, 3:31:54 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.rtacpa.com/"
@@ -319,7 +318,7 @@
     "aiAngle": "Tax planning and medical practice management consulting"
   },
   {
-    "id": "rad-gh-1777624021258-8f9bbb7b5a36b",
+    "id": "rad-gh-1777624314259-60313ee3ec2d1",
     "name": "CPA Services For Doctors",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -336,8 +335,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:01.258Z",
-    "ts": "5/1/2026, 3:27:01 AM",
+    "foundAt": "2026-05-01T08:31:54.259Z",
+    "ts": "5/1/2026, 3:31:54 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.chandlerknowlescpa.com/industries/physicians/"
@@ -371,7 +370,7 @@
     "aiAngle": "Tax planning and potential IDC deductions for medical practices"
   },
   {
-    "id": "rad-gh-1777624021258-c24313d9b4aa6",
+    "id": "rad-gh-1777624314259-6f84442797d83",
     "name": "Accounting Services for Doctors",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -388,8 +387,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:01.258Z",
-    "ts": "5/1/2026, 3:27:01 AM",
+    "foundAt": "2026-05-01T08:31:54.259Z",
+    "ts": "5/1/2026, 3:31:54 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://advantage.cpa/small-business/medical-healthcare/doctors/"
@@ -423,7 +422,7 @@
     "aiAngle": "Tax planning and accounting services for medical practices"
   },
   {
-    "id": "rad-gh-1777624021258-bcb9bde2c2673",
+    "id": "rad-gh-1777624314259-22d04e5aca66b8",
     "name": "Physician Tax Services & Strategists",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -440,8 +439,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:01.258Z",
-    "ts": "5/1/2026, 3:27:01 AM",
+    "foundAt": "2026-05-01T08:31:54.259Z",
+    "ts": "5/1/2026, 3:31:54 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.whitecoatinvestor.com/tax-strategists/"
@@ -466,7 +465,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624021258-616f5a3f2b96a",
+    "id": "rad-gh-1777624314259-9bd1cdad0bc2e",
     "name": "Medical Practice CPA Accounting",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -483,8 +482,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:01.258Z",
-    "ts": "5/1/2026, 3:27:01 AM",
+    "foundAt": "2026-05-01T08:31:54.259Z",
+    "ts": "5/1/2026, 3:31:54 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.medicalpracticecpa.com/"
@@ -509,7 +508,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624022487-7ca22c39c6a61",
+    "id": "rad-gh-1777624314747-b65ea45400f9a8",
     "name": "Multiple CDJR, Ford, Chevy, Hyundai dealerships sell in M&A deals",
     "title": "CPA / Tax Advisor",
     "company": "",
@@ -526,8 +525,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:02.487Z",
-    "ts": "5/1/2026, 3:27:02 AM",
+    "foundAt": "2026-05-01T08:31:54.747Z",
+    "ts": "5/1/2026, 3:31:54 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.autonews.com/retail/mergers-acquisitions/an-dealership-buy-sell-database-updates-0424/"
@@ -553,7 +552,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624022487-d0fb073de2a43",
+    "id": "rad-gh-1777624314747-00587b994d1f2",
     "name": "Young American Food Brands attracts investment",
     "title": "Attorney / Law Partner",
     "company": "",
@@ -570,8 +569,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:02.487Z",
-    "ts": "5/1/2026, 3:27:02 AM",
+    "foundAt": "2026-05-01T08:31:54.747Z",
+    "ts": "5/1/2026, 3:31:54 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.just-food.com/news/young-american-food-brands-attracts-investment/"
@@ -597,7 +596,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624026233-4437b57a46f88",
+    "id": "rad-gh-1777624316206-3b5f0c58749db8",
     "name": "Greenberg Traurig Selected as Winner and Finalist in 2026 California Legal Awards",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -614,8 +613,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:06.233Z",
-    "ts": "5/1/2026, 3:27:06 AM",
+    "foundAt": "2026-05-01T08:31:56.206Z",
+    "ts": "5/1/2026, 3:31:56 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.prnewswire.com/news-releases/greenberg-traurig-selected-as-winner-and-finalist-in-2026-california-legal-awards-302756352.html"
@@ -640,7 +639,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624026234-864ffa94c09f2",
+    "id": "rad-gh-1777624316206-8a49b5df72013",
     "name": "The Lawyers Advising Elon Musk and Sam Altman at Trial",
     "title": "Physician / Medical Practice",
     "company": "Trial",
@@ -657,8 +656,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:06.234Z",
-    "ts": "5/1/2026, 3:27:06 AM",
+    "foundAt": "2026-05-01T08:31:56.206Z",
+    "ts": "5/1/2026, 3:31:56 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.law.com/americanlawyer/2026/04/30/the-lawyers-advising-elon-musk-and-sam-altman-at-trial-/"
@@ -683,7 +682,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624027429-1c86a20145902",
+    "id": "rad-gh-1777624316689-f4c9b1f7ce23e8",
     "name": "Annual Professional Advisor Seminar",
     "title": "CPA / Tax Advisor",
     "company": "",
@@ -700,8 +699,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:07.429Z",
-    "ts": "5/1/2026, 3:27:07 AM",
+    "foundAt": "2026-05-01T08:31:56.689Z",
+    "ts": "5/1/2026, 3:31:56 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.afslaw.com/perspectives/events/annual-professional-advisor-seminar"
@@ -727,7 +726,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624027429-700463edd2385",
+    "id": "rad-gh-1777624316690-2611d2af7e93b",
     "name": "Fenwick Adds 5-Atty IP Team From Winston & Strawn",
     "title": "CPA / Tax Advisor",
     "company": "",
@@ -744,8 +743,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:07.429Z",
-    "ts": "5/1/2026, 3:27:07 AM",
+    "foundAt": "2026-05-01T08:31:56.690Z",
+    "ts": "5/1/2026, 3:31:56 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.law360.com/pulse/daily-litigation/articles/2471284/fenwick-adds-5-atty-ip-team-from-winston-strawn"
@@ -771,7 +770,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624027429-a915c38b2e687",
+    "id": "rad-gh-1777624316690-56b12708d25a68",
     "name": "Jenner & Block Hires 10-Year WilmerHale Litigator In DC",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -788,8 +787,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:07.429Z",
-    "ts": "5/1/2026, 3:27:07 AM",
+    "foundAt": "2026-05-01T08:31:56.690Z",
+    "ts": "5/1/2026, 3:31:56 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.law360.com/pulse/daily-litigation/articles/2469819/jenner-block-hires-10-year-wilmerhale-litigator-in-dc-"
@@ -815,7 +814,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624027429-03922db507c2e",
+    "id": "rad-gh-1777624316690-ca3775752f7128",
     "name": "Improving Well-Being In Law, 10 Years After Landmark Study",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -832,8 +831,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:07.430Z",
-    "ts": "5/1/2026, 3:27:07 AM",
+    "foundAt": "2026-05-01T08:31:56.690Z",
+    "ts": "5/1/2026, 3:31:56 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.law360.com/tax-authority/federal/articles/2469758/improving-well-being-in-law-10-years-after-landmark-study"
@@ -859,7 +858,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624028672-dca1562f6555c",
+    "id": "rad-gh-1777624317177-14ad189bf54af8",
     "name": "Year-End Tax Planning Tips for Business Owners",
     "title": "CPA / Tax Advisor",
     "company": "",
@@ -876,8 +875,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:08.672Z",
-    "ts": "5/1/2026, 3:27:08 AM",
+    "foundAt": "2026-05-01T08:31:57.177Z",
+    "ts": "5/1/2026, 3:31:57 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.youtube.com/watch?v=91D5-VW_cD8"
@@ -903,7 +902,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624028672-eb12481f0cf05",
+    "id": "rad-gh-1777624317178-1047adec4dbd2",
     "name": "Top 20 Year End Tax Strategies Everyone Should Know",
     "title": "CPA / Tax Advisor",
     "company": "",
@@ -920,8 +919,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:08.672Z",
-    "ts": "5/1/2026, 3:27:08 AM",
+    "foundAt": "2026-05-01T08:31:57.178Z",
+    "ts": "5/1/2026, 3:31:57 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.youtube.com/watch?v=4JBD02X0Wno"
@@ -947,7 +946,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624031638-112df8dd6ac71",
+    "id": "rad-gh-1777624318147-e51fe116f6d028",
     "name": "Medical Practice CPA",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -964,8 +963,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:11.638Z",
-    "ts": "5/1/2026, 3:27:11 AM",
+    "foundAt": "2026-05-01T08:31:58.147Z",
+    "ts": "5/1/2026, 3:31:58 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.virjeecpa.com/medical-practice-cpa/"
@@ -990,7 +989,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624031638-630e6d1fb814b",
+    "id": "rad-gh-1777624318147-0ec3aa66b4233",
     "name": "Healthcare CPA Services Nationwide & In Utah",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -1007,8 +1006,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:11.638Z",
-    "ts": "5/1/2026, 3:27:11 AM",
+    "foundAt": "2026-05-01T08:31:58.147Z",
+    "ts": "5/1/2026, 3:31:58 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://cmp.cpa/industries/healthcare/"
@@ -1033,7 +1032,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624031639-57e2ba4b822d",
+    "id": "rad-gh-1777624318147-7953d5251fd77",
     "name": "Physicians and Other Healthcare Professionals",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -1050,8 +1049,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:11.639Z",
-    "ts": "5/1/2026, 3:27:11 AM",
+    "foundAt": "2026-05-01T08:31:58.147Z",
+    "ts": "5/1/2026, 3:31:58 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://hobbscpa.com/who-we-serve/physicians-and-other-health-care-professionals/"
@@ -1076,7 +1075,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624031639-9075cb49320cf",
+    "id": "rad-gh-1777624318147-c49ce166194be",
     "name": "Healthcare Accounting",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -1093,8 +1092,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:11.639Z",
-    "ts": "5/1/2026, 3:27:11 AM",
+    "foundAt": "2026-05-01T08:31:58.147Z",
+    "ts": "5/1/2026, 3:31:58 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.adamsbrowncpa.com/industries/healthcare/"
@@ -1119,7 +1118,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624036501-1aaf23d6a3f9a",
+    "id": "rad-gh-1777624319604-b97c76a9ab5f4",
     "name": "History is Prologue OAG360 Series: But only if behavior repeats",
     "title": "Business Owner / Executive",
     "company": "",
@@ -1136,8 +1135,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:16.501Z",
-    "ts": "5/1/2026, 3:27:16 AM",
+    "foundAt": "2026-05-01T08:31:59.604Z",
+    "ts": "5/1/2026, 3:31:59 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.oilandgas360.com/history-is-prologue-oag360-series-but-only-if-behavior-repeats/"
@@ -1163,7 +1162,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624037897-c4ac3d70e0f4",
+    "id": "rad-gh-1777624320093-a23b9caf982918",
     "name": "Dr. Richard J. B. - Doctor of Business Administration",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -1180,8 +1179,8 @@
     "linkedin": "https://www.linkedin.com/in/rbasch",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:17.897Z",
-    "ts": "5/1/2026, 3:27:17 AM",
+    "foundAt": "2026-05-01T08:32:00.093Z",
+    "ts": "5/1/2026, 3:32:00 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.linkedin.com/in/rbasch"
@@ -1209,7 +1208,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624037898-65fd284dc3bbd",
+    "id": "rad-gh-1777624320093-f020233cc34f",
     "name": "Lance S. Loria, CPA, LFACHE, FAAMA",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -1226,8 +1225,8 @@
     "linkedin": "https://www.linkedin.com/company/loria-associates",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:17.898Z",
-    "ts": "5/1/2026, 3:27:17 AM",
+    "foundAt": "2026-05-01T08:32:00.093Z",
+    "ts": "5/1/2026, 3:32:00 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.linkedin.com/in/lanceloria"
@@ -1255,7 +1254,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624037898-885aa45217c3b",
+    "id": "rad-gh-1777624320093-e5e2896ff23f98",
     "name": "Aubrey Glazman, CPA - ★ CEO ★ Expertise in Senior NPO Leadership, Professional Accounting Education and Business Valuation",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -1272,8 +1271,8 @@
     "linkedin": "https://www.linkedin.com/in/aubreyglazman",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:17.898Z",
-    "ts": "5/1/2026, 3:27:17 AM",
+    "foundAt": "2026-05-01T08:32:00.093Z",
+    "ts": "5/1/2026, 3:32:00 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.linkedin.com/in/aubreyglazman"
@@ -1301,7 +1300,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624037898-01e1e9d88c266",
+    "id": "rad-gh-1777624320093-83ef2b2c5b1748",
     "name": "David Slenzak - Co-Founder and Managing Partner at Broadtree ...",
     "title": "Physician / Medical Practice",
     "company": "Broadtree ...",
@@ -1318,8 +1317,8 @@
     "linkedin": "https://www.linkedin.com/in/davidslenzak",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:17.898Z",
-    "ts": "5/1/2026, 3:27:17 AM",
+    "foundAt": "2026-05-01T08:32:00.094Z",
+    "ts": "5/1/2026, 3:32:00 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.linkedin.com/in/davidslenzak"
@@ -1347,7 +1346,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624037898-274b935de1341",
+    "id": "rad-gh-1777624320094-e05b790cadd0d",
     "name": "Eduardo Arista, CPA, Esq. - Partner",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -1364,8 +1363,8 @@
     "linkedin": "https://www.linkedin.com/company/holland-knight-llp",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:17.898Z",
-    "ts": "5/1/2026, 3:27:17 AM",
+    "foundAt": "2026-05-01T08:32:00.094Z",
+    "ts": "5/1/2026, 3:32:00 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.linkedin.com/in/edarista"
@@ -1393,7 +1392,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624039191-50c864ecc41a6",
+    "id": "rad-gh-1777624320579-af13df994f78b",
     "name": "CFTC Sues New York Over Sports Event Contract Crackdown",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -1410,8 +1409,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:19.191Z",
-    "ts": "5/1/2026, 3:27:19 AM",
+    "foundAt": "2026-05-01T08:32:00.579Z",
+    "ts": "5/1/2026, 3:32:00 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.law360.com/articles/2469906/cftc-sues-new-york-over-sports-event-contract-crackdown"
@@ -1439,52 +1438,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624039192-c3fceb338f587",
-    "name": "| Fierce Healthcare",
-    "title": "Physician / Medical Practice",
-    "company": "",
-    "location": "nationwide USA",
-    "type": "investor",
-    "source": "GitHub Actions · Tavily",
-    "sourceFeed": "events",
-    "sourceQuery": "conference speaker physician founder attorney CPA nationwide USA",
-    "sourceUrl": "https://www.fiercehealthcare.com/node?c=1&p=3551&pb=1&tb=1&page=127",
-    "url": "https://www.fiercehealthcare.com/node?c=1&p=3551&pb=1&tb=1&page=127",
-    "signal": "Authority / public platform signal",
-    "summary": "# | Fierce Healthcare Image 1 Image 2Image 3Image 4Image 5Image 6Image 7Image 8Image 9Image 10Image 11Image 12Image 13Image 14Image 15 Image 16: Barbara Sadick #### Barbara Sadick Image 17: Scott Caldwell #### Scott Caldwell Image 18: Tom Dobosenski #### Tom Dobosenski Image 19: Snezana Mahon #### Snezana Mahon Image 20: PRA Health Sciences #### PRA Health Sciences Image 21: Holly Rollins #### Holly Rollins Image 22: Medicus Healthcare Solutions #### Medicus Healthcare Solutions Medicus Healthcare Solutions Image 23: Medicus Healthcare Solutions Image 24: Peter J. Pitts #### Peter J. Pitts Image 25: Kate Hilton #### Kate Hilton #### Pagination [...] Image 25: Kate Hilton #### Kate Hilton #### Pagination « First First page ‹ Previous Previous page … 124 125 126 127 128 129 130 131 132 … Next ›Next page Last »Last page Subscribe to Image 26Image 27Image 28Image 29Image 30Image 31Image 32Im",
-    "email": "",
-    "linkedin": "",
-    "status": "New",
-    "reviewed": false,
-    "foundAt": "2026-05-01T08:27:19.192Z",
-    "ts": "5/1/2026, 3:27:19 AM",
-    "confidence": "Medium",
-    "evidenceTrail": [
-      "https://www.fiercehealthcare.com/node?c=1&p=3551&pb=1&tb=1&page=127"
-    ],
-    "sourceConfidence": "Medium",
-    "raw": {
-      "title": "| Fierce Healthcare - Fierce Healthcare",
-      "desc": "# | Fierce Healthcare Image 1 Image 2Image 3Image 4Image 5Image 6Image 7Image 8Image 9Image 10Image 11Image 12Image 13Image 14Image 15 Image 16: Barbara Sadick #### Barbara Sadick Image 17: Scott Caldwell #### Scott Caldwell Image 18: Tom Dobosenski #### Tom Dobosenski Image 19: Snezana Mahon #### Snezana Mahon Image 20: PRA Health Sciences #### PRA Health Sciences Image 21: Holly Rollins #### Holly Rollins Image 22: Medicus Healthcare Solutions #### Medicus Healthcare Solutions Medicus Healthcare Solutions Image 23: Medicus Healthcare Solutions Image 24: Peter J. Pitts #### Peter J. Pitts Image 25: Kate Hilton #### Kate Hilton #### Pagination [...] Image 25: Kate Hilton #### Kate Hilton #### Pagination « First First page ‹ Previous Previous page … 124 125 126 127 128 129 130 131 132 … Next ›Next page Last »Last page Subscribe to Image 26Image 27Image 28Image 29Image 30Image 31Image 32Im",
-      "pub": "Wed, 29 Apr 2026 21:45:16 GMT",
-      "tavilyScore": 0.017917344,
-      "query": "conference speaker physician founder attorney CPA nationwide USA"
-    },
-    "scoreSignals": [
-      "Physician / medical ICP +25",
-      "Business owner / founder ICP +22",
-      "Attorney / law partner ICP +18",
-      "CPA / tax advisor ICP +18",
-      "Trigger event detected +10",
-      "Tavily web signal +2"
-    ],
-    "score": 98,
-    "grade": "A",
-    "nurtureDraft": "Hi |,\n\nI came across Authority / public platform signal and thought Basin Ventures may be relevant if direct energy ownership, quarterly distributions, or potential IDC deductions are worth understanding. This is not tax advice; your CPA should review anything specific to your situation.\n\nWould a short director call be useful?",
-    "nextAction": "Manual review, verify source, then call or sequence today."
-  },
-  {
-    "id": "rad-gh-1777624039192-5d666d28d3d8a",
+    "id": "rad-gh-1777624320580-7dccfebc6b4c1",
     "name": "Why Trust Is the Most Underrated Marketing Metric",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -1501,8 +1455,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:19.192Z",
-    "ts": "5/1/2026, 3:27:19 AM",
+    "foundAt": "2026-05-01T08:32:00.580Z",
+    "ts": "5/1/2026, 3:32:00 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.law.com/2026/04/30/why-trust-is-the-most-underrated-marketing-metric/"
@@ -1529,7 +1483,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624039192-f68bd4d0223b2",
+    "id": "rad-gh-1777624320580-3a01ec14ab5708",
     "name": "Brian Ferdinand Brings EverForward's Risk-Governed Trading Perspective to Florida Finance and Business Audiences",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -1546,8 +1500,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:19.192Z",
-    "ts": "5/1/2026, 3:27:19 AM",
+    "foundAt": "2026-05-01T08:32:00.580Z",
+    "ts": "5/1/2026, 3:32:00 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.openpr.com/news/4495718/brian-ferdinand-brings-everforward-s-risk-governed-trading"
@@ -1574,7 +1528,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624041693-687c2b87238f6",
+    "id": "rad-gh-1777624321067-fbc251781ec07",
     "name": "Student Can Be Named In $2B Money Laundering Probe",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -1591,8 +1545,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:21.693Z",
-    "ts": "5/1/2026, 3:27:21 AM",
+    "foundAt": "2026-05-01T08:32:01.067Z",
+    "ts": "5/1/2026, 3:32:01 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.law360.com/articles/2469494/student-can-be-named-in-2b-money-laundering-probe"
@@ -1619,7 +1573,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624041693-f7d0e2d24ea5c",
+    "id": "rad-gh-1777624321067-a4ad30cadddaf",
     "name": "Sidley Adds Another Finance Atty, This Time In DC",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -1636,8 +1590,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:21.693Z",
-    "ts": "5/1/2026, 3:27:21 AM",
+    "foundAt": "2026-05-01T08:32:01.067Z",
+    "ts": "5/1/2026, 3:32:01 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.law360.com/articles/2470415"
@@ -1663,7 +1617,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624041693-9eaba0020e4d7",
+    "id": "rad-gh-1777624321068-6cd52e6774c09",
     "name": "Father Admits He Misled Sons Amid £5M Row Over Loan",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -1680,8 +1634,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:21.693Z",
-    "ts": "5/1/2026, 3:27:21 AM",
+    "foundAt": "2026-05-01T08:32:01.068Z",
+    "ts": "5/1/2026, 3:32:01 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.law360.com/articles/2465542/father-admits-he-misled-sons-amid-5m-row-over-loan"
@@ -1707,7 +1661,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624041693-2a79a48605a59",
+    "id": "rad-gh-1777624321068-a65bf0dc4714a8",
     "name": "Toss Of Atty's LVMH Claim 'Problematic,' 2nd Circ. Judge Says",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -1724,8 +1678,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:21.694Z",
-    "ts": "5/1/2026, 3:27:21 AM",
+    "foundAt": "2026-05-01T08:32:01.068Z",
+    "ts": "5/1/2026, 3:32:01 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.law360.com/corporate/articles/2470396/toss-of-atty-s-lvmh-claim-problematic-2nd-circ-judge-says"
@@ -1751,7 +1705,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624041694-407167e946721",
+    "id": "rad-gh-1777624321068-9c401aad9d42f",
     "name": "Ex-Fauci Adviser Charged With Concealing COVID Records",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -1768,8 +1722,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:21.694Z",
-    "ts": "5/1/2026, 3:27:21 AM",
+    "foundAt": "2026-05-01T08:32:01.068Z",
+    "ts": "5/1/2026, 3:32:01 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.law360.com/healthcare-authority/policy-compliance/articles/2470900/ex-fauci-adviser-charged-with-concealing-covid-records"
@@ -1796,7 +1750,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624042855-2738dc06c69ce",
+    "id": "rad-gh-1777624321553-d6d0d1add7eb2",
     "name": "Building a £4.1 billion business: lessons from a serial entrepreneur",
     "title": "Business Owner / Executive",
     "company": "",
@@ -1813,8 +1767,8 @@
     "linkedin": "https://www.linkedin.com/posts/rharpin_i-built-and-sold-a-41-billion-business-activity-7443589907836493824-JGYd",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:22.855Z",
-    "ts": "5/1/2026, 3:27:22 AM",
+    "foundAt": "2026-05-01T08:32:01.553Z",
+    "ts": "5/1/2026, 3:32:01 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.linkedin.com/posts/rharpin_i-built-and-sold-a-41-billion-business-activity-7443589907836493824-JGYd"
@@ -1841,7 +1795,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624022486-52e9111e7f306",
+    "id": "rad-gh-1777624314746-e6fea0bffeffd8",
     "name": "Fundamental Brands Acquires Great American Beauty",
     "title": "Attorney / Law Partner",
     "company": "American Beauty",
@@ -1858,8 +1812,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:02.487Z",
-    "ts": "5/1/2026, 3:27:02 AM",
+    "foundAt": "2026-05-01T08:31:54.746Z",
+    "ts": "5/1/2026, 3:31:54 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.beautypackaging.com/breaking-news/fundamental-brands-acquires-great-american-beauty/"
@@ -1884,7 +1838,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624023815-f5554ad46fb31",
+    "id": "rad-gh-1777624315233-aa552346da2e78",
     "name": "8 K&L Gates Partners Defect to Launch Dentons' Charleston, South Carolina Office",
     "title": "Attorney / Law Partner",
     "company": "",
@@ -1901,8 +1855,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:03.815Z",
-    "ts": "5/1/2026, 3:27:03 AM",
+    "foundAt": "2026-05-01T08:31:55.233Z",
+    "ts": "5/1/2026, 3:31:55 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.law.com/thelegalintelligencer/2026/04/27/8-kl-gates-partners-defect-to-launch-dentons-charleston-south-carolina-office/"
@@ -1927,7 +1881,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624028672-383514582bf92",
+    "id": "rad-gh-1777624317177-f2cc18ea034f18",
     "name": "Tax Planning Services for Business Owners",
     "title": "CPA / Tax Advisor",
     "company": "",
@@ -1944,8 +1898,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:08.672Z",
-    "ts": "5/1/2026, 3:27:08 AM",
+    "foundAt": "2026-05-01T08:31:57.177Z",
+    "ts": "5/1/2026, 3:31:57 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.madsencpa.com/tax-planning-services/"
@@ -1970,7 +1924,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624028672-36e203cb8a6c4",
+    "id": "rad-gh-1777624317178-6609d909043a98",
     "name": "Tax Strategies for High Income Earners",
     "title": "CPA / Tax Advisor",
     "company": "",
@@ -1987,8 +1941,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:08.672Z",
-    "ts": "5/1/2026, 3:27:08 AM",
+    "foundAt": "2026-05-01T08:31:57.178Z",
+    "ts": "5/1/2026, 3:31:57 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://interactiveaccountants.com/tax-strategies-for-high-income-earners/"
@@ -2013,7 +1967,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624028672-509d631ada8c7",
+    "id": "rad-gh-1777624317178-992f81dec39c08",
     "name": "Five Year-End Tax Planning Strategies for Businesses",
     "title": "CPA / Tax Advisor",
     "company": "",
@@ -2030,8 +1984,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:08.672Z",
-    "ts": "5/1/2026, 3:27:08 AM",
+    "foundAt": "2026-05-01T08:31:57.178Z",
+    "ts": "5/1/2026, 3:31:57 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://williamskeepers.com/five-year-end-tax-planning-strategies-for-businesses/"
@@ -2056,7 +2010,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624033197-de7b0033d825b",
+    "id": "rad-gh-1777624318631-76621d975aee",
     "name": "Repsol is in no rush to list upstream unit in US, CEO says",
     "title": "Business Owner / Executive",
     "company": "",
@@ -2073,8 +2027,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:13.197Z",
-    "ts": "5/1/2026, 3:27:13 AM",
+    "foundAt": "2026-05-01T08:31:58.631Z",
+    "ts": "5/1/2026, 3:31:58 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.oilandgas360.com/repsol-is-in-no-rush-to-list-upstream-unit-in-us-ceo-says/"
@@ -2099,7 +2053,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624033197-785e8a6ca0cc4",
+    "id": "rad-gh-1777624318632-abf79032126b4",
     "name": "bp inks offshore gas exploration deal with Venezuela",
     "title": "Business Owner / Executive",
     "company": "Venezuela",
@@ -2116,8 +2070,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:13.197Z",
-    "ts": "5/1/2026, 3:27:13 AM",
+    "foundAt": "2026-05-01T08:31:58.632Z",
+    "ts": "5/1/2026, 3:31:58 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.worldoil.com/news/2026/4/29/bp-inks-offshore-gas-exploration-deal-with-venezuela/"
@@ -2142,7 +2096,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624033198-a57d6806b162a",
+    "id": "rad-gh-1777624318632-852402b163c3e8",
     "name": "Florida’s redistricting fight puts Ron DeSantis back in the Republican spotlight",
     "title": "Business Owner / Executive",
     "company": "",
@@ -2159,8 +2113,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:13.198Z",
-    "ts": "5/1/2026, 3:27:13 AM",
+    "foundAt": "2026-05-01T08:31:58.632Z",
+    "ts": "5/1/2026, 3:31:58 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://apnews.com/article/ron-desantis-donald-trump-florida-gerrymandering-redistricting-5c25d674a8ad90b268c4794dda5e099f"
@@ -2185,7 +2139,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624033198-dcd70203e91da",
+    "id": "rad-gh-1777624318632-b5af6336f9cdf8",
     "name": "Trump gives go-ahead to major new Canada-US oil pipeline",
     "title": "Business Owner / Executive",
     "company": "",
@@ -2202,8 +2156,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:13.198Z",
-    "ts": "5/1/2026, 3:27:13 AM",
+    "foundAt": "2026-05-01T08:31:58.632Z",
+    "ts": "5/1/2026, 3:31:58 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://apnews.com/article/canada-us-pipeline-trump-oil-13643144e84a88104cb610f2081937fa"
@@ -2228,7 +2182,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624033199-00c7b0f2dbcc2",
+    "id": "rad-gh-1777624318632-99742953fea178",
     "name": "White House officials leading new delegation to Venezuela for energy, mining agreements",
     "title": "Attorney / Law Partner",
     "company": "",
@@ -2245,8 +2199,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:13.199Z",
-    "ts": "5/1/2026, 3:27:13 AM",
+    "foundAt": "2026-05-01T08:31:58.632Z",
+    "ts": "5/1/2026, 3:31:58 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.politico.com/news/2026/04/29/white-house-energy-caracas-venezuela-00898569"
@@ -2271,7 +2225,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624042855-acccaf8d88b3e",
+    "id": "rad-gh-1777624321553-cc2489ec7efd68",
     "name": "The Business Exit Wave: Who's Selling, Who's Buying, and What ...",
     "title": "Business Owner / Executive",
     "company": "",
@@ -2288,8 +2242,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:22.855Z",
-    "ts": "5/1/2026, 3:27:22 AM",
+    "foundAt": "2026-05-01T08:32:01.553Z",
+    "ts": "5/1/2026, 3:32:01 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://wealthgenadvisor.com/the-business-exit-wave-whos-selling-whos-buying-and-what-businesses-get-sold/"
@@ -2314,7 +2268,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624018599-43c00652c13c3",
+    "id": "rad-gh-1777624312584-5ea858412beee",
     "name": "Integer to Participate in Bank of America Healthcare Conference on May 12",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -2331,8 +2285,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:26:58.599Z",
-    "ts": "5/1/2026, 3:26:58 AM",
+    "foundAt": "2026-05-01T08:31:52.584Z",
+    "ts": "5/1/2026, 3:31:52 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.globenewswire.com/news-release/2026/04/29/3283694/26755/en/Integer-to-Participate-in-Bank-of-America-Healthcare-Conference-on-May-12.html"
@@ -2357,7 +2311,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624023816-c46d76cdb4468",
+    "id": "rad-gh-1777624315234-ff966ba00f5408",
     "name": "HEI Adds Embassy Suites Palm Beach Gardens to its Portfolio",
     "title": "Attorney / Law Partner",
     "company": "",
@@ -2374,8 +2328,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:03.816Z",
-    "ts": "5/1/2026, 3:27:03 AM",
+    "foundAt": "2026-05-01T08:31:55.234Z",
+    "ts": "5/1/2026, 3:31:55 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.hospitalitynet.org/news/4132158/hei-adds-embassy-suites-palm-beach-gardens-to-its-portfolio"
@@ -2399,7 +2353,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624023816-53614d6c5b8b3",
+    "id": "rad-gh-1777624315234-a6e17ec3218fd8",
     "name": "Acres Commercial To Internalize Management With Merger",
     "title": "Attorney / Law Partner",
     "company": "",
@@ -2416,8 +2370,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:03.816Z",
-    "ts": "5/1/2026, 3:27:03 AM",
+    "foundAt": "2026-05-01T08:31:55.234Z",
+    "ts": "5/1/2026, 3:31:55 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.law360.com/articles/2471895/acres-commercial-to-internalize-management-with-merger"
@@ -2441,7 +2395,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624030245-871da0b0bef98",
+    "id": "rad-gh-1777624317663-60eb6f1d25e92",
     "name": "Crude Oil Prices Today",
     "title": "CPA / Tax Advisor",
     "company": "",
@@ -2458,8 +2412,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:10.245Z",
-    "ts": "5/1/2026, 3:27:10 AM",
+    "foundAt": "2026-05-01T08:31:57.663Z",
+    "ts": "5/1/2026, 3:31:57 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://oilprice.com/"
@@ -2484,7 +2438,7 @@
     "nextAction": "Manual review, verify source, then call or sequence today."
   },
   {
-    "id": "rad-gh-1777624018580-21ea5667d1504",
+    "id": "rad-gh-1777624312519-96d14d008187f8",
     "name": "Operationalizing Precision Medicine 2026: U.S. Health Systems Scale Genetic Testing and AI Integration",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -2501,8 +2455,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:26:58.581Z",
-    "ts": "5/1/2026, 3:26:58 AM",
+    "foundAt": "2026-05-01T08:31:52.520Z",
+    "ts": "5/1/2026, 3:31:52 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://hitconsultant.net/2026/04/29/operationalizing-precision-medicine-2026-report/"
@@ -2526,7 +2480,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624018600-8680c6bb94ed3",
+    "id": "rad-gh-1777624312585-7b78a198fdec4",
     "name": "Orthopedic care draws in PE: 6 deals",
     "title": "Physician / Medical Practice",
     "company": "",
@@ -2543,8 +2497,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:26:58.600Z",
-    "ts": "5/1/2026, 3:26:58 AM",
+    "foundAt": "2026-05-01T08:31:52.585Z",
+    "ts": "5/1/2026, 3:31:52 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.pehub.com/orthopedic-care-draws-in-pe-6-deals/"
@@ -2568,7 +2522,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624035271-e05dbc789ac1",
+    "id": "rad-gh-1777624319118-50c8a4f827f1a8",
     "name": "Marathon Oil Corporation Form 10-K",
     "title": "Energy Executive / Mineral Owner",
     "company": "",
@@ -2585,8 +2539,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:15.271Z",
-    "ts": "5/1/2026, 3:27:15 AM",
+    "foundAt": "2026-05-01T08:31:59.118Z",
+    "ts": "5/1/2026, 3:31:59 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.sec.gov/Archives/edgar/data/101778/000089924303000495/d10k.htm"
@@ -2610,7 +2564,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624035272-ff91323e169d8",
+    "id": "rad-gh-1777624319118-30384df309492",
     "name": "Infinity Form 10-K",
     "title": "Energy Executive / Mineral Owner",
     "company": "",
@@ -2627,8 +2581,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:15.272Z",
-    "ts": "5/1/2026, 3:27:15 AM",
+    "foundAt": "2026-05-01T08:31:59.118Z",
+    "ts": "5/1/2026, 3:31:59 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.sec.gov/Archives/edgar/data/1557421/000101489713000388/infinity10k13v3.htm"
@@ -2652,7 +2606,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624035272-36e6ee5254df9",
+    "id": "rad-gh-1777624319118-cbc653566d145",
     "name": "FORM 40-F",
     "title": "Energy Executive / Mineral Owner",
     "company": "",
@@ -2669,8 +2623,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:15.272Z",
-    "ts": "5/1/2026, 3:27:15 AM",
+    "foundAt": "2026-05-01T08:31:59.118Z",
+    "ts": "5/1/2026, 3:31:59 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.sec.gov/Archives/edgar/data/311337/000104746912001967/a2207617z40-f.htm"
@@ -2694,7 +2648,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624035272-83b2f2958a949",
+    "id": "rad-gh-1777624319119-339edd90c17df",
     "name": "POS AMI",
     "title": "Energy Executive / Mineral Owner",
     "company": "",
@@ -2711,8 +2665,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:15.272Z",
-    "ts": "5/1/2026, 3:27:15 AM",
+    "foundAt": "2026-05-01T08:31:59.119Z",
+    "ts": "5/1/2026, 3:31:59 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.sec.gov/Archives/edgar/data/1048702/000119312523186467/d511512dposami.htm"
@@ -2736,7 +2690,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624022487-32a85e025c19e",
+    "id": "rad-gh-1777624314746-7aa0360f1ecb6",
     "name": "News Alert: RNDC In Talks To Divest Most Of Its Business",
     "title": "Business Owner / Executive",
     "company": "",
@@ -2753,8 +2707,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:02.487Z",
-    "ts": "5/1/2026, 3:27:02 AM",
+    "foundAt": "2026-05-01T08:31:54.747Z",
+    "ts": "5/1/2026, 3:31:54 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.shankennewsdaily.com/2026/04/27/39706/news-alert-rndc-in-talks-to-divest-most-of-its-business/"
@@ -2778,7 +2732,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624022488-4f99dbc7814db",
+    "id": "rad-gh-1777624314747-09604b7ecd9f6",
     "name": "Why not sell EVs the way Apple sells iPhones?",
     "title": "Business Owner / Executive",
     "company": "",
@@ -2795,8 +2749,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:02.488Z",
-    "ts": "5/1/2026, 3:27:02 AM",
+    "foundAt": "2026-05-01T08:31:54.747Z",
+    "ts": "5/1/2026, 3:31:54 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://europe.autonews.com/opinion/columns/an-intercolumn-direct-sales-0426/"
@@ -2820,7 +2774,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624023816-21218cafc4ea9",
+    "id": "rad-gh-1777624315234-38e7b10b89576",
     "name": "America's Top 10 Real Estate News: April's Most Interesting Real Estate & Home News",
     "title": "Business Owner / Executive",
     "company": "",
@@ -2837,8 +2791,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:03.816Z",
-    "ts": "5/1/2026, 3:27:03 AM",
+    "foundAt": "2026-05-01T08:31:55.234Z",
+    "ts": "5/1/2026, 3:31:55 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://sg.finance.yahoo.com/news/americas-top-10-real-estate-150000386.html"
@@ -2862,7 +2816,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624036501-6aa1138345593",
+    "id": "rad-gh-1777624319604-1b708fbf20f6b8",
     "name": "U.S. Drill More: How Washington is pulling every energy lever at once",
     "title": "Business Owner / Executive",
     "company": "",
@@ -2879,8 +2833,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:16.501Z",
-    "ts": "5/1/2026, 3:27:16 AM",
+    "foundAt": "2026-05-01T08:31:59.604Z",
+    "ts": "5/1/2026, 3:31:59 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://finance.yahoo.com/sectors/energy/articles/u-drill-more-washington-pulling-193054522.html"
@@ -2904,7 +2858,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624036502-cb1de97627c24",
+    "id": "rad-gh-1777624319604-78a5bdb5522b1",
     "name": "A look at valuation dashboards: Unlock Oil & Gas 360® Premium- FREE in April",
     "title": "Business Owner / Executive",
     "company": "",
@@ -2921,8 +2875,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:16.502Z",
-    "ts": "5/1/2026, 3:27:16 AM",
+    "foundAt": "2026-05-01T08:31:59.604Z",
+    "ts": "5/1/2026, 3:31:59 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.oilandgas360.com/how-to-get-the-most-out-of-oil-gas-360-premium-a-step-by-step-guide-4-27/"
@@ -2946,7 +2900,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624036502-fb6c9055bc643",
+    "id": "rad-gh-1777624319605-398dddf0a8ec38",
     "name": "IPAA’s annual meeting to re-visit site of association’s founding",
     "title": "Business Owner / Executive",
     "company": "",
@@ -2963,8 +2917,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:16.502Z",
-    "ts": "5/1/2026, 3:27:16 AM",
+    "foundAt": "2026-05-01T08:31:59.605Z",
+    "ts": "5/1/2026, 3:31:59 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.worldoil.com/magazine/2026/april/management-issues/ipaa-s-annual-meeting-to-re-visit-site-of-association-s-founding/"
@@ -2988,7 +2942,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624042855-44804f507be28",
+    "id": "rad-gh-1777624321553-9f8a259fdd3db8",
     "name": "Owner-Financed Businesses for Sale in the USA",
     "title": "Business Owner / Executive",
     "company": "",
@@ -3005,8 +2959,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:22.855Z",
-    "ts": "5/1/2026, 3:27:22 AM",
+    "foundAt": "2026-05-01T08:32:01.553Z",
+    "ts": "5/1/2026, 3:32:01 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://dealstream.com/united-states/owner-financed-businesses-for-sale/49"
@@ -3030,7 +2984,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624042855-60dbcf112eb7f",
+    "id": "rad-gh-1777624321553-9fb101983f083",
     "name": "What nobody tells you about selling your company for $10 million",
     "title": "Business Owner / Executive",
     "company": "",
@@ -3047,8 +3001,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:22.855Z",
-    "ts": "5/1/2026, 3:27:22 AM",
+    "foundAt": "2026-05-01T08:32:01.553Z",
+    "ts": "5/1/2026, 3:32:01 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.youtube.com/watch?v=19rDZpY_3nA"
@@ -3072,7 +3026,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624042855-c370c50927ebc",
+    "id": "rad-gh-1777624321553-da85b327c88f28",
     "name": "Hi",
     "title": "Business Owner / Executive",
     "company": "",
@@ -3089,8 +3043,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:22.855Z",
-    "ts": "5/1/2026, 3:27:22 AM",
+    "foundAt": "2026-05-01T08:32:01.553Z",
+    "ts": "5/1/2026, 3:32:01 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.facebook.com/groups/2815042615255352/posts/7576683069091259/"
@@ -3114,7 +3068,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624035272-9b5fb466bc646",
+    "id": "rad-gh-1777624319119-f6d92066158f9",
     "name": "S-1",
     "title": "Attorney / Law Partner",
     "company": "",
@@ -3131,8 +3085,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:15.272Z",
-    "ts": "5/1/2026, 3:27:15 AM",
+    "foundAt": "2026-05-01T08:31:59.119Z",
+    "ts": "5/1/2026, 3:31:59 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.sec.gov/Archives/edgar/data/2023484/000119312524219034/d827979ds1.htm"
@@ -3156,7 +3110,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624026233-710cd3eb70f42",
+    "id": "rad-gh-1777624316205-49cac2c805c12",
     "name": "The Top 20 Most Profitable Law Firms (2025)",
     "title": "Attorney / Law Partner",
     "company": "",
@@ -3173,8 +3127,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:06.233Z",
-    "ts": "5/1/2026, 3:27:06 AM",
+    "foundAt": "2026-05-01T08:31:56.205Z",
+    "ts": "5/1/2026, 3:31:56 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://davidlat.substack.com/p/2026-am-law-100-profits-per-equity-partner-pep-revenue-per-lawyer-rpl-in-2025"
@@ -3198,7 +3152,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624026233-8818667e798b8",
+    "id": "rad-gh-1777624316205-5eaf8beacefd8",
     "name": "BANA LAW, PC Named to 2026 Best Law Firms List for Personal Injury Litigation – Second Consecutive Year",
     "title": "Attorney / Law Partner",
     "company": "",
@@ -3215,8 +3169,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:06.233Z",
-    "ts": "5/1/2026, 3:27:06 AM",
+    "foundAt": "2026-05-01T08:31:56.206Z",
+    "ts": "5/1/2026, 3:31:56 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://natlawreview.com/press-releases/bana-law-pc-named-2026-best-law-firms-list-personal-injury-litigation-second"
@@ -3240,7 +3194,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624026234-9a6b9eb027608",
+    "id": "rad-gh-1777624316206-85671268e3e688",
     "name": "Making Hires, Gaining Clients: Sullivan & Cromwell's London Gamble 6 Months On",
     "title": "Attorney / Law Partner",
     "company": "",
@@ -3257,8 +3211,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:06.234Z",
-    "ts": "5/1/2026, 3:27:06 AM",
+    "foundAt": "2026-05-01T08:31:56.206Z",
+    "ts": "5/1/2026, 3:31:56 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.law.com/international-edition/2026/04/30/making-hires-gaining-clients-sullivan--cromwells-london-gamble-6-months-on/"
@@ -3282,7 +3236,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624027430-c881b4c40c1f7",
+    "id": "rad-gh-1777624316690-9360e41fcdf02",
     "name": "Lockheed Birth Defect Judge Slams Door On Trial Aids Fight",
     "title": "Attorney / Law Partner",
     "company": "",
@@ -3299,8 +3253,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:07.430Z",
-    "ts": "5/1/2026, 3:27:07 AM",
+    "foundAt": "2026-05-01T08:31:56.690Z",
+    "ts": "5/1/2026, 3:31:56 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.law360.com/real-estate-authority/commercial/articles/2469872/lockheed-birth-defect-judge-slams-door-on-trial-aids-fight"
@@ -3324,7 +3278,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624030244-fe77f13011459",
+    "id": "rad-gh-1777624317662-a5b05cb52cf7a8",
     "name": "Energy - Bloomberg",
     "title": "CPA / Tax Advisor",
     "company": "",
@@ -3341,8 +3295,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:10.244Z",
-    "ts": "5/1/2026, 3:27:10 AM",
+    "foundAt": "2026-05-01T08:31:57.662Z",
+    "ts": "5/1/2026, 3:31:57 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.bloomberg.com/energy"
@@ -3366,7 +3320,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624030244-73fd87ba2e85b",
+    "id": "rad-gh-1777624317662-346d7e11e57a38",
     "name": "Oil",
     "title": "CPA / Tax Advisor",
     "company": "",
@@ -3383,8 +3337,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:10.244Z",
-    "ts": "5/1/2026, 3:27:10 AM",
+    "foundAt": "2026-05-01T08:31:57.662Z",
+    "ts": "5/1/2026, 3:31:57 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://en.wikipedia.org/wiki/Oil"
@@ -3408,7 +3362,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624030244-acbf34426a082",
+    "id": "rad-gh-1777624317662-da14929793f1a",
     "name": "Oil",
     "title": "CPA / Tax Advisor",
     "company": "",
@@ -3425,8 +3379,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:10.244Z",
-    "ts": "5/1/2026, 3:27:10 AM",
+    "foundAt": "2026-05-01T08:31:57.662Z",
+    "ts": "5/1/2026, 3:31:57 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://understand-energy.stanford.edu/energy-resources/fossil-fuel-energy/oil"
@@ -3450,7 +3404,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624030245-82674d538b98a",
+    "id": "rad-gh-1777624317663-b6e2fa183ab5e8",
     "name": "Crude Oil - Price - Chart - Historical Data - News",
     "title": "CPA / Tax Advisor",
     "company": "",
@@ -3467,8 +3421,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:10.245Z",
-    "ts": "5/1/2026, 3:27:10 AM",
+    "foundAt": "2026-05-01T08:31:57.663Z",
+    "ts": "5/1/2026, 3:31:57 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://tradingeconomics.com/commodity/crude-oil"
@@ -3492,7 +3446,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624023816-83968872b4887",
+    "id": "rad-gh-1777624315234-1776676886bdc",
     "name": "FSR Announces Its 2026 NextGen Council of Restaurant Brand Leaders",
     "title": "Business Owner / Executive",
     "company": "",
@@ -3509,8 +3463,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:03.816Z",
-    "ts": "5/1/2026, 3:27:03 AM",
+    "foundAt": "2026-05-01T08:31:55.234Z",
+    "ts": "5/1/2026, 3:31:55 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.fsrmagazine.com/feature/fsr-announces-its-2026-nextgen-council-of-restaurant-brand-leaders/"
@@ -3533,7 +3487,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624025034-5497b38737876",
+    "id": "rad-gh-1777624315719-99ac0781b67ce",
     "name": "Inc. 5000 Names McAdam to 2025 List of America’s",
     "title": "Business Owner / Executive",
     "company": "",
@@ -3550,8 +3504,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:05.034Z",
-    "ts": "5/1/2026, 3:27:05 AM",
+    "foundAt": "2026-05-01T08:31:55.720Z",
+    "ts": "5/1/2026, 3:31:55 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.globenewswire.com/news-release/2025/08/12/3131561/0/en/inc-5000-names-mcadam-to-2025-list-of-america-s-fastest-growing-private-companies-for-the-seventh-time.html"
@@ -3574,7 +3528,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624025034-0d544c1545622",
+    "id": "rad-gh-1777624315720-a012ef3ebf13f8",
     "name": "Guess who’s an Inc. 5000 company? · Made By Things",
     "title": "Business Owner / Executive",
     "company": "",
@@ -3591,8 +3545,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:05.034Z",
-    "ts": "5/1/2026, 3:27:05 AM",
+    "foundAt": "2026-05-01T08:31:55.720Z",
+    "ts": "5/1/2026, 3:31:55 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://madebythings.com/inc-5000/"
@@ -3615,7 +3569,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624025034-6b1c7465bf4e2",
+    "id": "rad-gh-1777624315720-26b68c3e10f0e8",
     "name": "Meet the 2025 Inc. 5000 list, which represents the fastest-growing ...",
     "title": "Business Owner / Executive",
     "company": "",
@@ -3632,8 +3586,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:05.034Z",
-    "ts": "5/1/2026, 3:27:05 AM",
+    "foundAt": "2026-05-01T08:31:55.720Z",
+    "ts": "5/1/2026, 3:31:55 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.facebook.com/Inc/videos/meet-the-2025-inc-5000-list-which-represents-the-fastest-growing-private-compani/1071852371599949/"
@@ -3656,7 +3610,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624025035-429cc049a996",
+    "id": "rad-gh-1777624315720-cfca5692dced9",
     "name": "2025 Inc. 5000 List of Fastest-Growing Private Companies",
     "title": "Business Owner / Executive",
     "company": "",
@@ -3673,8 +3627,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:05.035Z",
-    "ts": "5/1/2026, 3:27:05 AM",
+    "foundAt": "2026-05-01T08:31:55.720Z",
+    "ts": "5/1/2026, 3:31:55 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.documentcrunch.com/news/inc-5000-fastest-growing-private-companies"
@@ -3697,7 +3651,7 @@
     "nextAction": "Review and place into nurture/manual queue."
   },
   {
-    "id": "rad-gh-1777624025035-c6282bdf51164",
+    "id": "rad-gh-1777624315720-e2026216fd9868",
     "name": "How These Founders Beat the Odds to Build Multiple Inc. 5000 ...",
     "title": "Business Owner / Executive",
     "company": "",
@@ -3714,8 +3668,8 @@
     "linkedin": "",
     "status": "New",
     "reviewed": false,
-    "foundAt": "2026-05-01T08:27:05.035Z",
-    "ts": "5/1/2026, 3:27:05 AM",
+    "foundAt": "2026-05-01T08:31:55.720Z",
+    "ts": "5/1/2026, 3:31:55 AM",
     "confidence": "Medium",
     "evidenceTrail": [
       "https://www.inc.com/sarah-lynch-/how-these-founders-built-multiple-inc-5000-companies.html"
