@@ -42,7 +42,7 @@
 
 
 
-/* ── Basin Ventures Branding Patch v3.8.2 ───────────────────────────── */
+/* ── Basin Ventures Branding Patch v3.8.3 ───────────────────────────── */
 .brand.brand-basin{padding:16px 14px 14px;display:block;text-align:left;background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(200,134,30,.03));}
 .brand-logo-img{display:block;width:100%;max-width:205px;height:auto;margin:0 auto 8px;border-radius:8px;box-shadow:0 10px 28px rgba(0,0,0,.25);}
 .brand-system-name{font:700 13px "Libre Baskerville",serif;color:var(--text);letter-spacing:.01em;text-align:center;}
@@ -79,7 +79,7 @@
   <div class="section"><div class="section-label">Data</div><div class="nav-item" onclick="goPage('notes',this)">📝 <span>Call Notes</span><span class="badge" id="notes-badge">0</span></div><div class="nav-item" onclick="goPage('analytics',this)">📊 <span>Call Analytics</span></div><div class="nav-item" onclick="goPage('followups',this)">📅 <span>Follow-Up Dashboard</span><span class="badge" id="followup-badge">0</span></div><div class="nav-item" onclick="goPage('calendar',this)">🗓️ <span>Appointment Calendar</span><span class="badge" id="calendar-badge">0</span></div><div class="nav-item" onclick="goPage('handoffs',this)">📄 <span>Director Handoffs</span><span class="badge" id="handoff-badge">0</span></div></div>
   <div class="section"><div class="section-label">System</div><div class="nav-item" onclick="goPage('settings',this)">⚙️ <span>Settings</span></div><div class="nav-item" onclick="goPage('apicenter',this)">🧠 <span>API Command Center</span><span class="badge" id="api-badge">OFF</span></div><div class="nav-item" onclick="exportData()">💾 <span>Export All Data</span></div></div>
       <div class="compliance"><strong>Compliance Always</strong>Never guarantee returns · Never “SEC registered” · Always “consult your CPA” · Accredited investors only · Targeted IRR, not guaranteed.</div>
-      <div class="sidebar-version">Basin OS v3.8.2 — Branded Operator Build — Updated 2026-05-01</div>
+      <div class="sidebar-version">Basin OS v3.8.3 — Cadence Logic Build — Updated 2026-05-01</div>
 </nav>
 <main class="main">
   <section id="page-dashboard" class="page active">
@@ -110,9 +110,9 @@
 <section id="page-settings" class="page"><div class="hdr"><div><div class="title">Settings</div><div class="sub">Enter your associate details once. The OS fills scripts, emails, LinkedIn notes, handoffs, and nurture drafts automatically.</div></div><div class="settings-save-row"><button class="btn btn-primary btn-sm" style="width:auto" onclick="saveSettings()">💾 Save Settings</button><button class="btn btn-ghost btn-sm" onclick="resetSettingsPlaceholders()">Reset Placeholders</button></div></div><div class="body"><div class="grid2"><div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Associate Profile</div><div class="panel-sub">Stored only in this browser localStorage.</div></div></div><div class="panel-bd"><div class="field"><label class="label">Your Name</label><input id="set-associate-name" class="input" placeholder="James ..."></div><div class="field"><label class="label">Title / Signature Line</label><input id="set-associate-title" class="input" placeholder="Associate | Basin Ventures"></div><div class="row2"><div class="field"><label class="label">Phone</label><input id="set-phone" class="input" placeholder="877.427.4707"></div><div class="field"><label class="label">Email</label><input id="set-email" class="input" placeholder="your.email@basinventures.com"></div></div><div class="field"><label class="label">Calendar Link</label><input id="set-calendar" class="input" placeholder="https://meetings.hubspot.com/..."></div><button class="btn btn-primary" onclick="saveSettings()">Save Associate Settings</button></div></div></div><div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Campaign Defaults</div><div class="panel-sub">These replace placeholders across the OS.</div></div></div><div class="panel-bd"><div class="row2"><div class="field"><label class="label">Director Name</label><input id="set-director" class="input" placeholder="[Director Name]"></div><div class="field"><label class="label">Current Fund Placeholder / Name</label><input id="set-current-fund" class="input" placeholder="[Current Fund]"></div></div><div class="field"><label class="label">Default Event Name</label><input id="set-event" class="input" placeholder="[Event Name]"></div><div class="field"><label class="label">Default Signature Preview</label><textarea id="set-signature-preview" class="textarea" readonly></textarea></div><div class="info red"><strong>Compliance:</strong> Keep [Current Fund] as a placeholder unless compliance gives you exact approved wording for the active offering. Never enter API keys here; use API Command Center.</div></div></div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Auto-Fill Test</div><div class="panel-sub">Shows how script placeholders will render.</div></div><button class="btn btn-ghost btn-sm" onclick="copySettingsPreview()">Copy</button></div><div class="panel-bd" id="settings-preview"></div></div></div></div></div></section>
 
 <section id="page-apicenter" class="page"><div class="hdr"><div><div class="title">API Command Center</div><div class="sub">Groq works from any browser including GitHub Pages. Brave requires server.js running locally because of browser CORS policy and will not work reliably from GitHub Pages without the proxy. Keys stay in this browser only.</div></div><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn btn-primary btn-sm" style="width:auto" onclick="testAllApis()">⚡ Test APIs</button><button class="btn btn-ghost btn-sm" onclick="buildMorningBrief(true)">🌅 Build Morning Brief</button><button class="btn btn-ghost btn-sm" onclick="runLeadRadar(true)">📡 Run Radar</button></div></div><div class="body"><div class="grid2"><div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Connection Setup</div><div class="panel-sub">One-time setup on your home MacBook browser.</div></div></div><div class="panel-bd"><div class="field"><label class="label">Brave API Key</label><input id="api-brave-key" type="password" class="input" placeholder="Paste Brave Search API key"></div><div class="field"><label class="label">Groq API Key</label><input id="api-groq-key" type="password" class="input" placeholder="Paste Groq API key"></div><div class="field"><label class="label">Groq Model</label><select id="api-groq-model" class="select"><option value="llama-3.3-70b-versatile">Llama 3.3 70B Versatile</option><option value="qwen/qwen3-32b">Qwen3 32B</option><option value="openai/gpt-oss-120b">GPT-OSS 120B</option><option value="openai/gpt-oss-20b">GPT-OSS 20B</option></select></div><div class="row2"><button class="btn btn-primary" onclick="connectBrave(true)">Connect Brave</button><button class="btn btn-teal" onclick="connectGroq(true)">Connect Groq</button></div><div class="row2" style="margin-top:8px"><button class="btn btn-ghost" onclick="saveApiKeysOnly()">Save Keys</button><button class="btn btn-danger" onclick="clearApiKeys()">Clear Keys</button></div><div class="info red" style="margin-top:12px"><strong>Security + CORS:</strong> This single-file version stores keys in your browser localStorage so your MacBook can stay connected. Do not upload keys into GitHub. Groq works from any browser including GitHub Pages. Brave requires server.js running locally due to browser CORS policy — it will not work reliably from GitHub Pages without the proxy.</div></div></div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Run Limits & Automation</div><div class="panel-sub">Controls costs and avoids noisy automation.</div></div></div><div class="panel-bd"><div class="row2"><div class="field"><label class="label">Max Queries / Radar Run</label><input id="api-max-queries" class="input" type="number" min="3" max="60" value="18"></div><div class="field"><label class="label">Max Brave Results / Query</label><input id="api-max-results" class="input" type="number" min="1" max="20" value="5"></div></div><div class="row2"><div class="field"><label class="label">Groq Lead Analyses / Run</label><input id="api-max-groq" class="input" type="number" min="0" max="30" value="8"></div><div class="field"><label class="label">Search Mode</label><select id="api-search-mode" class="select"><option value="balanced">Balanced</option><option value="highvalue">High-value only</option><option value="wide">Wide discovery</option></select></div></div><div class="row2"><div class="field"><label class="label">Auto-Connect Saved Keys</label><select id="api-auto-connect" class="select"><option value="on">ON — connect on page load</option><option value="off">OFF — manual connect only</option></select></div><div class="field"><label class="label">Lead Radar Auto-Run</label><select id="api-auto-radar" class="select"><option value="on">ON — run when open + repeat</option><option value="off">OFF — manual radar only</option></select></div></div><div class="field"><label class="label">Lead Radar Interval While Page Is Open</label><select id="api-radar-interval" class="select"><option value="1">Every 1 hour</option><option value="2">Every 2 hours</option><option value="3">Every 3 hours</option><option value="4">Every 4 hours</option><option value="6">Every 6 hours</option></select></div><div class="row2"><button class="btn btn-primary" onclick="saveApiSettings()">Save API Settings</button><button class="btn btn-teal" onclick="saveApiKeysOnly(false);autoConnectSavedApis(true)">Save Keys + Auto-Connect</button></div></div></div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Live API Status</div><div class="panel-sub">Browser API connection and usage counters.</div></div></div><div class="panel-bd" id="api-status-panel"></div></div></div><div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Morning Brief</div><div class="panel-sub">Generated from Radar, pipeline, notes, follow-ups, and meetings.</div></div><button class="btn btn-ghost btn-sm" onclick="copyMorningBrief()">Copy</button></div><div class="panel-bd" id="morning-brief"><div class="empty"><div class="empty-icon">🌅</div><div class="empty-title">No brief yet</div><div class="empty-sub">Click Build Morning Brief after Lead Radar runs.</div></div></div></div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Active Lead Intelligence</div><div class="panel-sub">Cross-linked into Profiler, Sequence, Notes, Handoff, and Radar.</div></div></div><div class="panel-bd" id="api-active-lead"></div></div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Automation Map</div><div class="panel-sub">What is automatic vs. what must remain manual.</div></div></div><div class="panel-bd"><div class="info teal"><strong>Automated inside this OS:</strong> query rotation, lead dedupe, scoring, suppression checks, contact-path detection, AI draft creation, compliance scan, morning brief, similar-lead searches, CPA map builder, follow-up task creation, and director handoff generation.</div><div class="info gold"><strong>Manual by design:</strong> LinkedIn connection requests, LinkedIn DMs, emails, texts, and phone calls. The OS prepares copy and actions, but you review and send manually to avoid platform violations, spam behavior, and compliance errors.</div></div></div></div></div></div></section>
-<section id="page-playbook" class="page"><div class="hdr"><div><div class="title">Associate Master Playbook</div><div class="sub">Integrated scripts, calculator, cadence, implementation guide, and compliance. · Version 3.8.1 · Branded Operator Build · Last updated 2026-05-01</div></div><button class="btn btn-ghost btn-sm" onclick="goPage('sequences',null)">Build Sequence →</button></div><div class="body" id="playbook-root"></div></section>
+<section id="page-playbook" class="page"><div class="hdr"><div><div class="title">Associate Master Playbook</div><div class="sub">Integrated scripts, calculator, cadence, implementation guide, and compliance. · Version 3.8.3 · Cadence Logic Build · Last updated 2026-05-01</div></div><button class="btn btn-ghost btn-sm" onclick="goPage('sequences',null)">Build Sequence →</button></div><div class="body" id="playbook-root"></div></section>
 
-  <div class="version-footer">Basin OS v3.8.2 — Branded Operator Build — Updated 2026-05-01 · If GitHub Pages shows an older layout, hard refresh / clear cache and confirm this file replaced the root index.html.</div>
+  <div class="version-footer">Basin OS v3.8.3 — Cadence Logic Build — Updated 2026-05-01 · If GitHub Pages shows an older layout, hard refresh / clear cache and confirm this file replaced the root index.html.</div>
 </main>
 </div>
 <div id="toast"></div>
@@ -975,13 +975,13 @@ const BV_ORIG_renderApiCenter=renderApiCenter;renderApiCenter=function(){BV_ORIG
     pbInjectStyle();
     const root = document.getElementById('playbook-root');
     if (!root) return;
-    if (root.dataset.done === 'v381-calc-autofill') {
+    if (root.dataset.done === 'v383-cadence-logic') {
       if (typeof window.calc === 'function') {
         try { window.calc(); setTimeout(function(){ window.calc(); }, 0); } catch(e) {}
       }
       return;
     }
-    root.dataset.done = 'v381-calc-autofill';
+    root.dataset.done = 'v383-cadence-logic';
 
     const channelKeys = Object.keys(PB_PATCH.channels);
     const leadKeys = Object.keys(PB_PATCH.leadDefs);
@@ -1030,6 +1030,345 @@ const BV_ORIG_renderApiCenter=renderApiCenter;renderApiCenter=function(){BV_ORIG
       } catch(e) {}
     }
   };
+})();
+
+
+/* ── Basin OS Patch v3.8.3: Script Cadence Logic + Timing Rules ───────────── */
+(function(){
+  const PB = window.PLAYBOOK_PATCH_V37;
+  if (!PB || !PB.matrix || !PB.channels || !PB.leadDefs) return;
+
+  const STATE = { channel:'phone', leadType:'aged' };
+
+  function esc(v){
+    return String(v == null ? '' : v).replace(/[&<>'"]/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c];
+    });
+  }
+  function toast(msg){
+    if (typeof window.toast === 'function') return window.toast(msg);
+    if (typeof window.showToast === 'function') return window.showToast(msg);
+    console.log(msg);
+  }
+  function copyText(text, btn){
+    function done(){
+      if (btn){ const old = btn.textContent; btn.textContent='Copied'; setTimeout(function(){btn.textContent=old||'Copy'},1200); }
+      toast('COPIED');
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done).catch(fallback);
+    else fallback();
+    function fallback(){
+      const ta=document.createElement('textarea'); ta.value=text; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta); done();
+    }
+  }
+  function dayNum(s){
+    const m = String(s || '').match(/Day\s*(\d+)/i);
+    return m ? Number(m[1]) : null;
+  }
+  function leadLabel(lead){ return (PB.leadDefs[lead] && PB.leadDefs[lead].label) || lead; }
+  function channelLabel(ch){ return PB.channels[ch] || ch; }
+
+  const RULES = {
+    aged: {
+      goal: 'Reactivate prior Basin interest without making the prospect feel like a brand-new cold lead.',
+      compliance: 'Reference prior Basin interest only when true. Never guarantee returns. Say targeted, not guaranteed. For IDC/tax questions, say consult your CPA.',
+      callWindow: '10:30 AM–12:00 PM or 3:30–5:15 PM local time. Avoid Monday 8–10 AM unless they replied or opened recently.',
+      sendWindow: '8:10–9:20 AM or 1:00–2:30 PM local time. Use late afternoon only for reply-driven follow-up.',
+      touchOrder: {
+        '0':'No Day 0. These are reactivation leads, so start with a clean re-open rather than urgency.',
+        '1':'Send the Day 1 reactivation email and/or LinkedIn reconnect first. Call later that day only if the lead opened/clicked, replied, or has recent activity; otherwise call Day 2.',
+        '2':'Call after Day 1 email/LinkedIn has gone out. If no answer, leave the matching voicemail and send the follow-up email within 60 seconds.',
+        '3':'Use LinkedIn only after the first email/call attempt. Keep it light and familiar.',
+        '4':'Second live phone angle. Use tax-planning/diversification as the reason, not “just following up.”',
+        '5':'Send value email only after at least one live-call attempt or voicemail has happened.',
+        '6':'Final live attempt before breakup. Use permission-based close language.',
+        '7':'Use Loom only for higher-value A/B leads after prior touches have failed.',
+        '8':'SMS only if consent, prior text permission, or inbound relationship exists.',
+        '10':'Breakup/close-loop step. Ask whether to close out or schedule the director call.',
+        '14':'Do not overwork aged leads here. Move to nurture unless they engage.',
+        '30':'Nurture only. Reassess around planning windows or new fund timing.',
+        '60':'Long-term nurture only. Keep it permission-based.'
+      }
+    },
+    incoming: {
+      goal: 'Convert the hand-raiser while intent is hot. Speed matters more than perfect sequencing.',
+      compliance: 'They raised their hand, but you still cannot imply returns are guaranteed. Confirm accredited fit before investment details. Tax questions go to CPA.',
+      callWindow: 'Immediate call within 5 minutes when possible. If missed, retry same day around 11:30 AM, 2:30 PM, or 4:30 PM local time.',
+      sendWindow: 'Email immediately after the call attempt or form fill. SMS only when allowed by consent/source rules.',
+      touchOrder: {
+        '0':'First action is the call. Do not wait for an email response if they just submitted a form, referral, event registration, or inbound request.',
+        '1':'Use after the immediate call + email/VM pair. Confirm what drove the inquiry: tax, income, diversification, or timing.',
+        '2':'Use if no connection yet. Pair phone + voicemail + short email. Do not let the lead cool off.',
+        '3':'LinkedIn can support the contact if email/phone misses, but should not replace calling.',
+        '4':'Use value-based follow-up after multiple misses. Explain why a director call beats generic information.',
+        '5':'Optional Loom/value touch for strong leads who have opened/clicked but not booked.',
+        '6':'Only use if still engaged. Otherwise move to close-loop.',
+        '7':'Final close-loop for fresh inbound if no appointment is booked.',
+        '8':'SMS only if consent exists. Keep it logistical, not promotional.',
+        '10':'Usually too late for active pursuit unless they keep engaging. Move to nurture.',
+        '14':'Nurture if they did not convert but did not ask to be removed.',
+        '30':'Light future planning-window touch.'
+      }
+    },
+    basinos: {
+      goal: 'Use the research signal as the reason for outreach. Keep it evidence-based and softer than inbound.',
+      compliance: 'Do not imply the signal means they need the investment. No guarantees. No tax advice. Make the director call educational and optional.',
+      callWindow: 'Day 2 is usually best after a Day 1 evidence-based email or LinkedIn touch. Best live windows: 10:30–11:45 AM and 3:30–5:00 PM local time.',
+      sendWindow: 'Day 1 email/LinkedIn first, usually 8:00–9:15 AM or 1:00–2:00 PM. Avoid aggressive same-day phone unless the signal is very strong and the number is business-public.',
+      touchOrder: {
+        '0':'No Day 0 unless imported as a true inbound lead. Basin OS discovered leads should not be treated like they raised their hand.',
+        '1':'Start with evidence: email or LinkedIn view/connect referencing the signal. Phone on Day 1 only if the signal is strong, recent, and the number is appropriate.',
+        '2':'First normal phone attempt after Day 1 email/LinkedIn. Reference the signal clearly so the call does not feel random.',
+        '3':'LinkedIn message if connected. Keep it short and relevant to the signal.',
+        '4':'Second call/research follow-up. Shift from signal to credibility and fit.',
+        '5':'Value email if they did not respond to phone/LinkedIn. Keep it educational.',
+        '6':'Use only as final research-based call or value follow-up before close-loop.',
+        '7':'Loom only for A-score leads where the signal makes personalization worth the effort.',
+        '8':'SMS is generally not recommended unless consent or prior relationship exists.',
+        '10':'Close-loop or permission-based future nurture.',
+        '30':'Nurture with future fund/planning updates only.',
+        '60':'Educational nurture only. Do not keep chasing.'
+      }
+    }
+  };
+
+  function channelSpecific(ch, lead, n, title){
+    const lower = String(title || '').toLowerCase();
+    if (ch === 'phone') {
+      if (lead === 'incoming' && n === 0) return {
+        timing:'Call immediately. This is the first touch.', prior:'Verify source, name, phone, and suppression/DNC status. No email response is needed before the first call.', trigger:'Fresh inbound form fill, referral, event signup, or direct request.', noResponse:'Leave the matching voicemail, then send the immediate follow-up email/SMS if permitted.', next:'Same-day retry in a different call window, then Day 1 follow-up.'
+      };
+      if (lead === 'basinos' && n === 1) return {
+        timing:'Use same day only for high-confidence signals; otherwise make this the Day 2 call after email/LinkedIn goes out.', prior:'Review the evidence trail, send or queue the Day 1 evidence-based email/LinkedIn touch, and confirm the phone source is appropriate.', trigger:'Strong public signal, A-score lead, or clear business context.', noResponse:'Leave the signal-based voicemail if appropriate, then follow with a short email referencing the same signal.', next:'Day 3 LinkedIn touch or Day 4 credibility-angle call.'
+      };
+      return { timing:RULES[lead].callWindow, prior:(lead==='aged'?'Day 1 reactivation email/LinkedIn should already be sent unless they recently replied or opened.':lead==='incoming'?'Prior immediate call/email/VM pair should already be completed if this is not Day 0.':'Evidence-based email or LinkedIn touch should normally happen before calling.'), trigger:RULES[lead].touchOrder[String(n)] || 'Use when this is the next scheduled live-call step.', noResponse:'Leave the matching voicemail when available, log outcome, and send the matching follow-up touch from this cadence.', next:'Advance to the next scheduled channel step unless they answer, object, book, or request removal.' };
+    }
+    if (ch === 'voicemail') return {
+      timing:'Only leave this immediately after the matching no-answer phone attempt.',
+      prior:'Complete the call attempt first. Do not leave voicemail without logging the call outcome.',
+      trigger:'No answer, assistant/gatekeeper, or missed live connection.',
+      noResponse:'Send the matching email within 60 seconds when appropriate so the voicemail and email reinforce each other.',
+      next:'Move to the next cadence step after the email follow-up unless they call back or reply.'
+    };
+    if (ch === 'email') return {
+      timing:RULES[lead].sendWindow,
+      prior:(lead==='incoming'&&n===0?'Inbound request just came in or immediate call attempt was made.':'Confirm the lead bucket, personalize the reason, and check suppression/DNC-style blocks before sending.'),
+      trigger:RULES[lead].touchOrder[String(n)] || 'Use as the scheduled written follow-up for this point in the cadence.',
+      noResponse:'Do not resend the same angle. Move to the planned phone/LinkedIn step or a value-based email later in the cadence.',
+      next:(lead==='incoming'?'Phone retry or director-booking push.':lead==='basinos'?'Phone/LinkedIn touch tied to the same signal.':'Phone or LinkedIn reactivation touch.')
+    };
+    if (ch === 'linkedin') return {
+      timing:'Best windows: 8:00–9:00 AM, lunch, or 4:00–5:30 PM local time. Do not spam multiple LinkedIn actions the same day.',
+      prior:(lead==='basinos'?'View profile or confirm the signal before connecting/message.':'Confirm prior Basin/inbound context before referencing it.'),
+      trigger:RULES[lead].touchOrder[String(n)] || 'Use as a soft support touch when email/phone has not converted.',
+      noResponse:'Do not stack repeated DMs. Wait for the next scheduled channel step.',
+      next:'If connected, use the matching DM. If not connected, proceed with the next email/phone step.'
+    };
+    if (ch === 'sms') return {
+      timing:'Use only during reasonable business hours, ideally after a call/VM or inbound permission.',
+      prior:'Confirm SMS consent or a legitimate inbound/prior-text relationship. Do not use SMS for cold Basin OS leads without permission.',
+      trigger:'Callback coordination, appointment logistics, or consent-based follow-up.',
+      noResponse:'Do not keep texting. Move back to email/phone or nurture.',
+      next:'If they respond, steer to a director call or confirm the requested next step.'
+    };
+    if (ch === 'video') return {
+      timing:'Use after basic touches fail, not as the first touch unless the lead is very high value.',
+      prior:'Have a clear reason for personalization: prior Basin interest, inbound activity, or a strong Basin OS signal.',
+      trigger:'A/B-score lead with enough context to justify a personalized video.',
+      noResponse:'Do not send multiple videos. Move to close-loop or nurture.',
+      next:'Send the video with a short email/LinkedIn note and ask for one simple reply or call time.'
+    };
+    if (ch === 'nurture') return {
+      timing:'Use after the active cadence ends or when the prospect says timing is not right.',
+      prior:'Log the last outcome and confirm they have not asked to be removed.',
+      trigger:'No conversion after the active cadence, future fund window, planning season, or explicit permission to keep in touch.',
+      noResponse:'Do not chase. Keep them in long-term nurture only.',
+      next:'Reopen only when there is a new fund window, new signal, or direct engagement.'
+    };
+    return {timing:'Use at the scheduled step.',prior:'Confirm lead bucket and previous touch.',trigger:'Next cadence step.',noResponse:'Move to next step.',next:'Continue cadence.'};
+  }
+
+  function stepLogic(ch, lead, item){
+    const n = dayNum(item.day);
+    const base = RULES[lead] || RULES.aged;
+    const spec = channelSpecific(ch, lead, n, item.title);
+    return {
+      timing: spec.timing,
+      prior: spec.prior,
+      trigger: spec.trigger,
+      noResponse: spec.noResponse,
+      next: spec.next,
+      goal: base.goal,
+      compliance: base.compliance
+    };
+  }
+
+  function logicHTML(logic){
+    const cells = [
+      ['Timing / Best Window', logic.timing],
+      ['Prior Touch Required', logic.prior],
+      ['Trigger', logic.trigger],
+      ['If No Response', logic.noResponse],
+      ['Next Step', logic.next],
+      ['Compliance', logic.compliance]
+    ];
+    return '<div class="pb-step-logic">' + cells.map(function(c){
+      return '<div class="pb-logic-cell"><b>' + esc(c[0]) + '</b><span>' + esc(c[1]) + '</span></div>';
+    }).join('') + '</div>';
+  }
+
+  function scriptCards(items, channel, lead){
+    if (!items || !items.length) return '<div class="pb-empty">No scripts loaded for this channel and lead type.</div>';
+    return items.map(function(s){
+      const logic = stepLogic(channel, lead, s);
+      const subj = s.subject || '';
+      const header = (s.day || '') + ' — ' + (s.title || 'Script');
+      const copy = header + '\n\nSTEP LOGIC\n' +
+        'Timing: ' + logic.timing + '\n' +
+        'Prior touch: ' + logic.prior + '\n' +
+        'Trigger: ' + logic.trigger + '\n' +
+        'If no response: ' + logic.noResponse + '\n' +
+        'Next step: ' + logic.next + '\n' +
+        'Compliance: ' + logic.compliance + '\n\n' +
+        (subj ? 'Subject: ' + subj + '\n\n' : '') + (s.body || '');
+      return '<div class="script-card pb-cadence-card" data-copy="' + esc(copy) + '">' +
+        '<button class="copy-light" onclick="copyPlaybookCard(this)">Copy</button>' +
+        '<div class="script-title">' + esc(header) + '</div>' +
+        logicHTML(logic) +
+        (subj ? '<div class="script-subj">Subject: ' + esc(subj) + '</div>' : '') +
+        '<div class="script-body">' + esc(s.body || '') + '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  function tabs(keys, labels, active, fn){
+    return '<div class="play-tabs ' + (fn === 'playbookChannel' ? 'pb-channel-tabs' : 'pb-lead-tabs') + '">' +
+      keys.map(function(k){ return '<button class="play-tab ' + (k === active ? 'active' : '') + '" onclick="' + fn + '(\'' + k + '\',this)">' + esc(labels[k] || k) + '</button>'; }).join('') +
+    '</div>';
+  }
+
+  function leadDefsHTML(){
+    return '<div class="pb-lead-defs">' + Object.keys(PB.leadDefs).map(function(k){
+      const d = PB.leadDefs[k];
+      return '<div class="pb-def"><b>' + esc(d.title) + '</b><span>' + esc(d.desc) + '</span></div>';
+    }).join('') + '</div>';
+  }
+
+  function injectStyle(){
+    if (document.getElementById('pb-v383-style')) return;
+    const style=document.createElement('style');
+    style.id='pb-v383-style';
+    style.textContent = `
+      .pb-cadence-overview{background:#ecfeff;border:1px solid #99f6e4;color:#164e63;border-radius:12px;padding:13px 14px;font-size:12px;line-height:1.6;margin-bottom:14px}
+      .pb-cadence-overview strong{color:#0f766e}
+      .pb-step-logic{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:10px 0 12px}
+      .pb-logic-cell{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:8px 9px}
+      .pb-logic-cell b{display:block;font:700 9px "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.07em;color:#b45309;margin-bottom:4px}
+      .pb-logic-cell span{display:block;font-size:11px;line-height:1.55;color:#475569}
+      .pb-cadence-card .script-title{color:#9a3412}
+      .pb-path-card{background:#fff;border:1px solid #e2e8f0;border-left:4px solid #c8861e;border-radius:10px;padding:12px;margin-bottom:10px}
+      .pb-path-card b{display:block;color:#0f172a;font-size:13px;margin-bottom:4px}
+      .pb-path-card span{display:block;color:#64748b;font-size:11px;line-height:1.6}
+      @media(max-width:760px){.pb-step-logic{grid-template-columns:1fr}}
+    `;
+    document.head.appendChild(style);
+  }
+
+  window.copyPlaybookCard = function(btn){
+    const card = btn.closest('.script-card');
+    const raw = card ? (card.getAttribute('data-copy') || '') : '';
+    const decoded = raw.replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>');
+    copyText(decoded, btn);
+  };
+
+  window.playbookChannel = function(channel, btn){
+    STATE.channel = channel;
+    if (btn && btn.parentElement) btn.parentElement.querySelectorAll('.play-tab').forEach(function(b){b.classList.remove('active')});
+    if (btn) btn.classList.add('active');
+    window.renderScriptLibrary();
+  };
+
+  window.playbookLeadType = function(leadType, btn){
+    STATE.leadType = leadType;
+    if (btn && btn.parentElement) btn.parentElement.querySelectorAll('.play-tab').forEach(function(b){b.classList.remove('active')});
+    if (btn) btn.classList.add('active');
+    window.renderScriptLibrary();
+  };
+
+  window.renderScriptLibrary = function(){
+    const root=document.getElementById('script-root'); if(!root) return;
+    const leadDef = PB.leadDefs[STATE.leadType] || PB.leadDefs.aged;
+    const items = (((PB.matrix || {})[STATE.channel] || {})[STATE.leadType] || []);
+    const rule = RULES[STATE.leadType] || RULES.aged;
+    root.innerHTML =
+      '<div class="pb-script-head"><div><h4>' + esc(channelLabel(STATE.channel)) + ' · ' + esc(leadDef.title) + '</h4>' +
+      '<p>' + esc(leadDef.desc) + '</p></div><div class="pb-script-count">' + items.length + ' scripts</div></div>' +
+      '<div class="pb-cadence-overview"><strong>Cadence rule:</strong> ' + esc(rule.goal) + '<br><strong>Default timing:</strong> ' + esc(STATE.channel === 'phone' || STATE.channel === 'voicemail' ? rule.callWindow : rule.sendWindow) + '</div>' +
+      scriptCards(items, STATE.channel, STATE.leadType);
+  };
+
+  window.renderCadenceGrid = function(mode){
+    const rows = PB.cadence[mode] || PB.cadence.aged;
+    const rule = RULES[mode] || RULES.aged;
+    return '<div class="pb-cadence-overview"><strong>Goal:</strong> ' + esc(rule.goal) + '<br><strong>Timing logic:</strong> ' + esc(mode === 'incoming' ? 'Call first when they raise their hand. Email/VM/SMS support the call.' : mode === 'basinos' ? 'Evidence-based written touch usually comes before the first call unless the signal is strong.' : 'Reactivate with written context before pushing the first live call.') + '</div>' +
+      '<div class="stage-grid">' + rows.map(function(r){
+        return '<div class="stage-card"><div class="stage-day">' + esc(r[0]) + '</div><div class="stage-title">' + esc(r[1]) + '</div><div class="stage-meta">' + esc(r[2]) + '</div></div>';
+      }).join('') + '</div>';
+  };
+
+  window.playCadence = function(mode, btn){
+    if (btn && btn.parentElement) btn.parentElement.querySelectorAll('.play-tab').forEach(function(b){b.classList.remove('active')});
+    if (btn) btn.classList.add('active');
+    window.showCadence(mode);
+  };
+
+  window.showCadence = function(mode){
+    const root=document.getElementById('cadence-root'); if(root) root.innerHTML=window.renderCadenceGrid(mode||'aged');
+  };
+
+  window.renderPlaybook = function(){
+    if (typeof pbInjectStyle === 'function') { try { pbInjectStyle(); } catch(e){} }
+    injectStyle();
+    const root=document.getElementById('playbook-root'); if(!root) return;
+    if (root.dataset.done === 'v383-cadence-logic-full') {
+      if (typeof window.calc === 'function') { try { window.calc(); setTimeout(function(){ window.calc(); }, 0); } catch(e){} }
+      return;
+    }
+    root.dataset.done='v383-cadence-logic-full';
+    const channelKeys=Object.keys(PB.channels);
+    const leadKeys=Object.keys(PB.leadDefs);
+    const calcBlock=(typeof calcHTML==='function') ? '<div class="play-card"><h3>Daily Activity Calculator</h3><div class="calc-grid"><div class="calc-panel"><h4>Method A — Cold Dialing</h4>'+calcHTML('a')+'</div><div class="calc-panel"><h4>Method B — 7-Channel System</h4>'+calcHTML('b')+'</div></div></div>' : '';
+    root.innerHTML =
+      '<div class="play-hero"><div class="play-title">Complete Associate <span>Outreach & Appointment System</span></div>' +
+      '<div class="play-text">Scripts now include the full progression logic: what should happen before the step, why the step exists, best call/send window, response trigger, no-response action, next step, and compliance reminder.</div></div>' +
+      '<div class="play-card"><h3>Lead Buckets — Keep These Separate</h3>' +
+      '<div class="pb-layout-note"><strong>Simple rule:</strong> Aged 90+ leads are reactivation. Brand new incoming leads are speed-to-lead. Basin OS new leads are researched outbound/nurture leads. The timing and first action are different for each bucket.</div>' + leadDefsHTML() + '</div>' +
+      '<div class="play-card"><h3>Default First-Step Logic</h3>' +
+      '<div class="pb-path-card"><b>Aged 90+ Leads</b><span>Start with a reactivation email/LinkedIn touch. Call later that day only if there is engagement; otherwise make the first main call on Day 2.</span></div>' +
+      '<div class="pb-path-card"><b>Brand New Incoming Leads</b><span>Call first immediately. Do not wait for an email response. If no answer, voicemail + email/SMS follow immediately, then retry same day in another call window.</span></div>' +
+      '<div class="pb-path-card"><b>Basin OS New Leads</b><span>Usually start with evidence-based email/LinkedIn tied to the signal. Call on Day 2 after the signal is introduced unless the lead is A-score and the phone source is appropriate.</span></div>' +
+      '</div>' +
+      '<div class="play-card"><h3>Verified Basin Facts — Use Exactly</h3><div class="fact-grid">' +
+      '<div class="fact"><div class="fact-num">85–90%</div><div class="fact-lbl">Year-One IDC Deduction</div><div class="fact-desc">Against earned income. Always say consult your CPA.</div></div>' +
+      '<div class="fact"><div class="fact-num">30%+</div><div class="fact-lbl">Prior Offering Returned</div><div class="fact-desc">In first two quarters. Add past performance disclaimer.</div></div>' +
+      '<div class="fact"><div class="fact-num">$1.25B+</div><div class="fact-lbl">Managed Since 2014</div><div class="fact-desc">25,000+ net mineral acres. 10,000+ leases nationwide.</div></div>' +
+      '<div class="fact"><div class="fact-num">25%+</div><div class="fact-lbl">Target IRR</div><div class="fact-desc">Targeted, never guaranteed.</div></div>' +
+      '</div></div>' + calcBlock +
+      '<div class="play-card"><h3>Cadence Map</h3><div class="play-tabs"><button class="play-tab active" onclick="playCadence(\'aged\',this)">Aged 90+</button><button class="play-tab" onclick="playCadence(\'incoming\',this)">New Incoming</button><button class="play-tab" onclick="playCadence(\'basinos\',this)">Basin OS New</button></div><div id="cadence-root"></div></div>' +
+      '<div class="play-card"><h3>Script Library</h3><div class="pb-cadence-overview"><strong>Every script card now answers:</strong> what came before, what triggers this step, best time to use it, what to do if they do not answer/reply, and what comes next.</div>' +
+      '<div class="pb-tab-label">1. Choose channel</div>' + tabs(channelKeys, PB.channels, STATE.channel, 'playbookChannel') +
+      '<div class="pb-tab-label">2. Choose lead type</div>' + tabs(leadKeys, Object.fromEntries(Object.keys(PB.leadDefs).map(function(k){return [k, PB.leadDefs[k].label];})), STATE.leadType, 'playbookLeadType') + '<div id="script-root"></div></div>';
+    window.showCadence('aged');
+    window.renderScriptLibrary();
+    if (typeof window.calc === 'function') { try { window.calc(); if(window.requestAnimationFrame) requestAnimationFrame(function(){window.calc();}); setTimeout(function(){window.calc();},0); setTimeout(function(){window.calc();},75); } catch(e){} }
+  };
+
+  // Update visible version markers if the old file was already loaded from cache.
+  try {
+    document.querySelectorAll('.sidebar-version,.version-footer').forEach(function(el){
+      el.textContent = el.textContent.replace('v3.8.2 — Branded Operator Build','v3.8.3 — Cadence Logic Build').replace('calculator','calculator / cadence logic');
+    });
+  } catch(e) {}
 })();
 
 
