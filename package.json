@@ -1,15 +1,14 @@
 {
-  "name": "basin-os",
+  "name": "basin-os-api-proxy",
   "version": "1.0.0",
   "private": true,
+  "type": "commonjs",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "^4.18.3"
-  },
-  "engines": {
-    "node": ">=18"
   }
 }
