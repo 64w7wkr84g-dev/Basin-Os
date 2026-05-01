@@ -36,7 +36,9 @@ jobs:
           GROQ_MODEL: llama-3.3-70b-versatile
           RADAR_GEO: nationwide USA
           RADAR_MAX_RESULTS: "5"
-          RADAR_MAX_QUERIES: "24"
+          RADAR_MAX_QUERIES: "36"
+          RADAR_MAX_ENRICH: "70"
+          RADAR_MAX_RECHECK: "75"
           RADAR_TEXAS_FIRST: "true"
           RADAR_REQUIRE_NAMED_CONTACT: "true"
           RADAR_REQUIRE_CONTACT_ROUTE: "true"
