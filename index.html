@@ -42,7 +42,7 @@
 
 
 
-/* ── Basin Ventures Branding Patch v3.8.1 ───────────────────────────── */
+/* ── Basin Ventures Branding Patch v3.8.2 ───────────────────────────── */
 .brand.brand-basin{padding:16px 14px 14px;display:block;text-align:left;background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(200,134,30,.03));}
 .brand-logo-img{display:block;width:100%;max-width:205px;height:auto;margin:0 auto 8px;border-radius:8px;box-shadow:0 10px 28px rgba(0,0,0,.25);}
 .brand-system-name{font:700 13px "Libre Baskerville",serif;color:var(--text);letter-spacing:.01em;text-align:center;}
@@ -79,7 +79,7 @@
   <div class="section"><div class="section-label">Data</div><div class="nav-item" onclick="goPage('notes',this)">📝 <span>Call Notes</span><span class="badge" id="notes-badge">0</span></div><div class="nav-item" onclick="goPage('analytics',this)">📊 <span>Call Analytics</span></div><div class="nav-item" onclick="goPage('followups',this)">📅 <span>Follow-Up Dashboard</span><span class="badge" id="followup-badge">0</span></div><div class="nav-item" onclick="goPage('calendar',this)">🗓️ <span>Appointment Calendar</span><span class="badge" id="calendar-badge">0</span></div><div class="nav-item" onclick="goPage('handoffs',this)">📄 <span>Director Handoffs</span><span class="badge" id="handoff-badge">0</span></div></div>
   <div class="section"><div class="section-label">System</div><div class="nav-item" onclick="goPage('settings',this)">⚙️ <span>Settings</span></div><div class="nav-item" onclick="goPage('apicenter',this)">🧠 <span>API Command Center</span><span class="badge" id="api-badge">OFF</span></div><div class="nav-item" onclick="exportData()">💾 <span>Export All Data</span></div></div>
       <div class="compliance"><strong>Compliance Always</strong>Never guarantee returns · Never “SEC registered” · Always “consult your CPA” · Accredited investors only · Targeted IRR, not guaranteed.</div>
-      <div class="sidebar-version">Basin OS v3.8.1 — Branded Operator Build — Updated 2026-05-01</div>
+      <div class="sidebar-version">Basin OS v3.8.2 — Branded Operator Build — Updated 2026-05-01</div>
 </nav>
 <main class="main">
   <section id="page-dashboard" class="page active">
@@ -112,7 +112,7 @@
 <section id="page-apicenter" class="page"><div class="hdr"><div><div class="title">API Command Center</div><div class="sub">Groq works from any browser including GitHub Pages. Brave requires server.js running locally because of browser CORS policy and will not work reliably from GitHub Pages without the proxy. Keys stay in this browser only.</div></div><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn btn-primary btn-sm" style="width:auto" onclick="testAllApis()">⚡ Test APIs</button><button class="btn btn-ghost btn-sm" onclick="buildMorningBrief(true)">🌅 Build Morning Brief</button><button class="btn btn-ghost btn-sm" onclick="runLeadRadar(true)">📡 Run Radar</button></div></div><div class="body"><div class="grid2"><div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Connection Setup</div><div class="panel-sub">One-time setup on your home MacBook browser.</div></div></div><div class="panel-bd"><div class="field"><label class="label">Brave API Key</label><input id="api-brave-key" type="password" class="input" placeholder="Paste Brave Search API key"></div><div class="field"><label class="label">Groq API Key</label><input id="api-groq-key" type="password" class="input" placeholder="Paste Groq API key"></div><div class="field"><label class="label">Groq Model</label><select id="api-groq-model" class="select"><option value="llama-3.3-70b-versatile">Llama 3.3 70B Versatile</option><option value="qwen/qwen3-32b">Qwen3 32B</option><option value="openai/gpt-oss-120b">GPT-OSS 120B</option><option value="openai/gpt-oss-20b">GPT-OSS 20B</option></select></div><div class="row2"><button class="btn btn-primary" onclick="connectBrave(true)">Connect Brave</button><button class="btn btn-teal" onclick="connectGroq(true)">Connect Groq</button></div><div class="row2" style="margin-top:8px"><button class="btn btn-ghost" onclick="saveApiKeysOnly()">Save Keys</button><button class="btn btn-danger" onclick="clearApiKeys()">Clear Keys</button></div><div class="info red" style="margin-top:12px"><strong>Security + CORS:</strong> This single-file version stores keys in your browser localStorage so your MacBook can stay connected. Do not upload keys into GitHub. Groq works from any browser including GitHub Pages. Brave requires server.js running locally due to browser CORS policy — it will not work reliably from GitHub Pages without the proxy.</div></div></div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Run Limits & Automation</div><div class="panel-sub">Controls costs and avoids noisy automation.</div></div></div><div class="panel-bd"><div class="row2"><div class="field"><label class="label">Max Queries / Radar Run</label><input id="api-max-queries" class="input" type="number" min="3" max="60" value="18"></div><div class="field"><label class="label">Max Brave Results / Query</label><input id="api-max-results" class="input" type="number" min="1" max="20" value="5"></div></div><div class="row2"><div class="field"><label class="label">Groq Lead Analyses / Run</label><input id="api-max-groq" class="input" type="number" min="0" max="30" value="8"></div><div class="field"><label class="label">Search Mode</label><select id="api-search-mode" class="select"><option value="balanced">Balanced</option><option value="highvalue">High-value only</option><option value="wide">Wide discovery</option></select></div></div><div class="row2"><div class="field"><label class="label">Auto-Connect Saved Keys</label><select id="api-auto-connect" class="select"><option value="on">ON — connect on page load</option><option value="off">OFF — manual connect only</option></select></div><div class="field"><label class="label">Lead Radar Auto-Run</label><select id="api-auto-radar" class="select"><option value="on">ON — run when open + repeat</option><option value="off">OFF — manual radar only</option></select></div></div><div class="field"><label class="label">Lead Radar Interval While Page Is Open</label><select id="api-radar-interval" class="select"><option value="1">Every 1 hour</option><option value="2">Every 2 hours</option><option value="3">Every 3 hours</option><option value="4">Every 4 hours</option><option value="6">Every 6 hours</option></select></div><div class="row2"><button class="btn btn-primary" onclick="saveApiSettings()">Save API Settings</button><button class="btn btn-teal" onclick="saveApiKeysOnly(false);autoConnectSavedApis(true)">Save Keys + Auto-Connect</button></div></div></div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Live API Status</div><div class="panel-sub">Browser API connection and usage counters.</div></div></div><div class="panel-bd" id="api-status-panel"></div></div></div><div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Morning Brief</div><div class="panel-sub">Generated from Radar, pipeline, notes, follow-ups, and meetings.</div></div><button class="btn btn-ghost btn-sm" onclick="copyMorningBrief()">Copy</button></div><div class="panel-bd" id="morning-brief"><div class="empty"><div class="empty-icon">🌅</div><div class="empty-title">No brief yet</div><div class="empty-sub">Click Build Morning Brief after Lead Radar runs.</div></div></div></div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Active Lead Intelligence</div><div class="panel-sub">Cross-linked into Profiler, Sequence, Notes, Handoff, and Radar.</div></div></div><div class="panel-bd" id="api-active-lead"></div></div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Automation Map</div><div class="panel-sub">What is automatic vs. what must remain manual.</div></div></div><div class="panel-bd"><div class="info teal"><strong>Automated inside this OS:</strong> query rotation, lead dedupe, scoring, suppression checks, contact-path detection, AI draft creation, compliance scan, morning brief, similar-lead searches, CPA map builder, follow-up task creation, and director handoff generation.</div><div class="info gold"><strong>Manual by design:</strong> LinkedIn connection requests, LinkedIn DMs, emails, texts, and phone calls. The OS prepares copy and actions, but you review and send manually to avoid platform violations, spam behavior, and compliance errors.</div></div></div></div></div></div></section>
 <section id="page-playbook" class="page"><div class="hdr"><div><div class="title">Associate Master Playbook</div><div class="sub">Integrated scripts, calculator, cadence, implementation guide, and compliance. · Version 3.8.1 · Branded Operator Build · Last updated 2026-05-01</div></div><button class="btn btn-ghost btn-sm" onclick="goPage('sequences',null)">Build Sequence →</button></div><div class="body" id="playbook-root"></div></section>
 
-  <div class="version-footer">Basin OS v3.8.1 — Branded Operator Build — Updated 2026-05-01 · If GitHub Pages shows an older layout, hard refresh / clear cache and confirm this file replaced the root index.html.</div>
+  <div class="version-footer">Basin OS v3.8.2 — Branded Operator Build — Updated 2026-05-01 · If GitHub Pages shows an older layout, hard refresh / clear cache and confirm this file replaced the root index.html.</div>
 </main>
 </div>
 <div id="toast"></div>
@@ -975,12 +975,17 @@ const BV_ORIG_renderApiCenter=renderApiCenter;renderApiCenter=function(){BV_ORIG
     pbInjectStyle();
     const root = document.getElementById('playbook-root');
     if (!root) return;
-    if (root.dataset.done === 'v37') return;
-    root.dataset.done = 'v37';
+    if (root.dataset.done === 'v381-calc-autofill') {
+      if (typeof window.calc === 'function') {
+        try { window.calc(); setTimeout(function(){ window.calc(); }, 0); } catch(e) {}
+      }
+      return;
+    }
+    root.dataset.done = 'v381-calc-autofill';
 
     const channelKeys = Object.keys(PB_PATCH.channels);
     const leadKeys = Object.keys(PB_PATCH.leadDefs);
-    const calc = (typeof calcHTML === 'function')
+    const calcBlock = (typeof calcHTML === 'function')
       ? '<div class="play-card"><h3>Daily Activity Calculator</h3><div class="calc-grid"><div class="calc-panel"><h4>Method A — Cold Dialing</h4>' + calcHTML('a') + '</div><div class="calc-panel"><h4>Method B — 7-Channel System</h4>' + calcHTML('b') + '</div></div></div>'
       : '';
 
@@ -999,7 +1004,7 @@ const BV_ORIG_renderApiCenter=renderApiCenter;renderApiCenter=function(){BV_ORIG
       '<div class="fact"><div class="fact-num">25%+</div><div class="fact-lbl">Target IRR</div><div class="fact-desc">Targeted, never guaranteed.</div></div>' +
       '</div></div>' +
 
-      calc +
+      calcBlock +
 
       '<div class="play-card"><h3>Cadence Map</h3>' +
       '<div class="play-tabs"><button class="play-tab active" onclick="playCadence(\'aged\',this)">Aged 90+</button><button class="play-tab" onclick="playCadence(\'incoming\',this)">New Incoming</button><button class="play-tab" onclick="playCadence(\'basinos\',this)">Basin OS New</button></div>' +
@@ -1012,8 +1017,17 @@ const BV_ORIG_renderApiCenter=renderApiCenter;renderApiCenter=function(){BV_ORIG
 
     showCadence('aged');
     renderScriptLibrary();
-    if (typeof calcUpdate === 'function') {
-      try { calcUpdate('a'); calcUpdate('b'); } catch(e) {}
+
+    // Populate Method A / Method B default calculator results immediately on first open.
+    // The old patch checked calcUpdate(), which does not exist in this file, so the KPI cards stayed at 0
+    // until a user manually changed an input. Use the existing global calc() after the calculator HTML is in the DOM.
+    if (typeof window.calc === 'function') {
+      try {
+        window.calc();
+        if (window.requestAnimationFrame) requestAnimationFrame(function(){ window.calc(); });
+        setTimeout(function(){ window.calc(); }, 0);
+        setTimeout(function(){ window.calc(); }, 75);
+      } catch(e) {}
     }
   };
 })();
