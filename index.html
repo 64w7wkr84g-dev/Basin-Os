@@ -667,7 +667,196 @@ function copySelectedHandoff(){let note=selectedHandoffNote();if(!note)return to
 function downloadSelectedHandoff(){let note=selectedHandoffNote();if(!note)return toast('NO HANDOFF');download('director-handoff-'+(note.name||'prospect').replace(/[^a-z0-9]+/gi,'-').toLowerCase()+'.txt',buildHandoffText(note));toast('HANDOFF DOWNLOADED')}
 function printHandoffById(id){let note=handoffMeetings().find(n=>n.id===id);if(!note)return toast('NO HANDOFF');printHandoffNote(note)}
 function printSelectedHandoff(){let note=selectedHandoffNote();if(!note)return toast('NO HANDOFF');printHandoffNote(note)}
-function printHandoffNote(note){let txt=buildHandoffText(note);let w=window.open('','_blank');if(!w){copyText(null,txt);return toast('POPUP BLOCKED — COPIED')}w.document.write('<!doctype html><html><head><title>Director Handoff - '+esc(note.name||'Prospect')+'</title><style>body{font-family:Arial,sans-serif;color:#0f172a;margin:28px;line-height:1.35}h1{font-size:20px;margin:0 0 4px}.meta{color:#64748b;font-size:12px;margin-bottom:14px}.box{border:1px solid #d1d5db;border-radius:8px;padding:10px;margin:8px 0;break-inside:avoid}.h{font-size:11px;font-weight:bold;color:#b45309;text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}.b{white-space:pre-wrap;font-size:12px}@media print{body{margin:18px}.box{padding:8px;margin:6px 0}}</style></head><body><h1>Director Handoff — Basin Ventures</h1><div class="meta">'+esc(note.name||'')+' · '+esc(note.due?fmtDue(note.due):'No meeting time')+'</div>'+txt.split('\n\n').slice(1).map(p=>{let i=p.indexOf('\n'),h=i>-1?p.slice(0,i):p,b=i>-1?p.slice(i+1):'';return '<div class="box"><div class="h">'+esc(h)+'</div><div class="b">'+esc(b)+'</div></div>'}).join('')+'</body></html>');w.document.close();w.focus();setTimeout(()=>w.print(),250)}
+function printHandoffNote(note){let txt=buildHandoffText(note);let w=window.open('','_blank');if(!w){copyText(null,txt);return toast('POPUP BLOCKED — COPIED')}w.document.write('<!doctype html><html><head><title>Director Handoff - '+esc(note.name||'Prospect')+'</title><style>body{font-family:Arial,sans-serif;color:#0f172a;margin:28px;line-height:1.35}h1{font-size:20px;margin:0 0 4px}.meta{color:#64748b;font-size:12px;margin-bottom:14px}.box{border:1px solid #d1d5db;border-radius:8px;padding:10px;margin:8px 0;break-inside:avoid}.h{font-size:11px;font-weight:bold;color:#b45309;text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}.b{white-space:pre-wrap;font-size:12px}@media print{body{margin:18px}.box{padding:8px;margin:6px 0}}</style></head><body><h1>Director Handoff — Basin Ventures</h1><div class="meta">'+esc(note.name||'')+' · '+esc(note.due?fmtDue(note.due):'No meeting time')+'</div>'+txt.split('\n\n').slice(1).map(p=>{let i=p.indexOf('\n'),h=i>-1?p.slice(0,i):p,b=i>-1?p.slice(i+1):'';return '<div class="box"><div class="h">'+esc(h)+'</div><div class="b">'+esc(b)+'</div></div>'}).join('')+'
+<script>
+/* Basin OS Call Coach Restore — additive only.
+   Leaves existing OS, leads, radar, dashboard, API, scoring, contact tags, and pipeline logic untouched.
+*/
+(function(){
+  var BASIN_CALL_COACH_DATA={
+trust:['Don’t know / trust you yet','That is completely fair — and exactly the right instinct.','I am not asking you to commit today. The director call is informational, and Basin has managed $1.25B+ since 2014. Verify everything before the call.','The director call is a verification step, not a commitment.','Would Tuesday at 2 or Thursday morning work?'],
+risk:['Oil and gas is too risky','That is a legitimate concern.','Basin uses a four-layer diligence process: land, legal, geology, and financial. The director call is where that risk process gets unpacked.','The risk question is exactly why the director call is worth taking.','Could we get you on that call this week?'],
+returns:['Guaranteed returns?','I appreciate you asking directly.','There are no guaranteed returns in any legitimate investment. Basin targets 25%+ IRR per project, but targeted is not guaranteed. Past performance does not guarantee future results.','The honest answer belongs in a director call, not a quick promise.','Would you hear it from the director this week?'],
+cpa:['Need to talk to CPA first','That is the right move.','The director call gives you specific questions to take to your CPA about IDC deductions and depletion allowance. Your CPA confirms what applies.','Take the director call first so the CPA conversation is sharper.','Let’s schedule the director call, then you can loop in your CPA.'],
+send:['Just send information','Absolutely.','Before I do, are you more focused on the tax deduction side or passive income side? I will send the right version plus a calendar link.','The overview is useful, but the director call is where specific questions get answered.','Can I hold a placeholder while you review?'],
+remove:['Remove me from your list','Absolutely — I will remove you right now.','No further outreach. Log as DNC immediately.','Honor the request immediately.','I appreciate your time. Take care.'],
+notinterested:['Not interested','I appreciate you being direct — I am not going to push.','Before I close the loop, it helps to know whether it is the asset class or the timing. Basin raises periodically, so a timing issue is different from a true no.','If it is timing, I would rather circle back when it is relevant instead of disappearing forever.','Is this a hard no on oil and gas, or just not the right timing?'],
+think:['Need to think about it','Of course — you should not move forward on anything until it makes sense.','Usually “think about it” means there is one specific unanswered question. The director call is designed to answer that question without asking for a commitment.','Let’s identify the question instead of letting it sit open.','What would you need answered for a 20-minute director call to be worth it?'],
+busy:['Too busy right now','I hear you — I will not take much time today.','The call is only 20 minutes, no prep required, and it can be scheduled out when your calendar is calmer.','If now is bad, the fix is timing the call better, not dropping it completely.','Would a slot next week or the week after work better?'],
+otherfirm:['Already working with another firm','That makes sense — most accredited investors already have advisors or allocations.','Basin is typically additive, not a replacement. Direct oil and gas ownership has different tax treatment than traditional securities, ETFs, or advisory portfolios.','This is worth comparing to what you already own, not replacing it.','Would a 20-minute compare-and-contrast call make sense?'],
+nocapital:['No capital available right now','Totally understand — timing matters.','The reason to still learn the structure now is so you are not starting from zero when liquidity opens up or the next raise comes around.','This can be an education call now and an action item later if timing changes.','When would capital realistically free up — this quarter, year-end, or next year?'],
+spouse:['Need to talk to spouse / partner','That is smart — these decisions should include the other decision-maker.','The cleanest path is to have both of you hear the same information directly rather than one person trying to relay the details afterward.','Bring them into the director call so both of you can ask questions live.','What day works for both of you to join a 20-minute call?'],
+lostmoney:['Lost money in oil and gas before','I am sorry to hear that, and I would not brush past it.','Oil and gas structures vary a lot. The useful question is whether what you were in before is the same structure Basin is discussing now. The director can walk through the diligence process and risk controls.','The comparison to your prior experience is exactly the conversation to have.','Would 20 minutes be worth it just to understand the structural differences?'],
+stalling:['Interested but not committing','It sounds like there is enough interest to keep the conversation alive, but something is holding it up.','The next step is not an investment decision. It is a 20-minute director call so you can get answers and either move forward or rule it out intelligently.','Let’s make the next step small and clear.','Should I hold Tuesday at 2 or Thursday morning for that call?'],
+alreadyenergy:['Already invests in energy','That is actually a good sign — you already understand the sector.','The difference is structure. Direct ownership may create tax treatment that public energy stocks, ETFs, or many royalty trusts do not. Your CPA can confirm what applies.','It is worth comparing what you already own against Basin’s direct ownership structure.','Would a quick comparison call be useful?'],
+minimum:['Minimum investment question','Fair question, and I understand why you are asking.','Specific terms depend on the current offering and accredited status, so the right place to answer that is the director call after the basic fit is confirmed.','I do not want to guess at terms on a quick call.','Can we get the 20-minute director call scheduled so you get the exact answer?']
+};
+
+  var basinCoachTimerInt = null;
+  var basinCoachTimerSecs = 0;
+
+  function $(id){ return document.getElementById(id); }
+  function escCoach(v){
+    return String(v == null ? '' : v).replace(/[&<>"']/g,function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function coachData(){
+    try {
+      if (typeof COACH !== 'undefined' && COACH && Object.keys(COACH).length) return COACH;
+    } catch(e){}
+    return BASIN_CALL_COACH_DATA;
+  }
+  function outCoachBlock(title, body, color){
+    if (typeof outBlock === 'function') return outBlock(title, body, color || 'var(--gold)');
+    var d=document.createElement('div');
+    d.className='out';
+    d.innerHTML='<div class="out-hd"><div class="out-title" style="color:'+(color||'var(--gold)')+'">'+escCoach(title)+'</div><button class="copy">Copy</button></div><div class="out-body">'+escCoach(body)+'</div>';
+    var btn=d.querySelector('button');
+    if(btn) btn.onclick=function(){ 
+      if(navigator.clipboard) navigator.clipboard.writeText(body);
+      btn.textContent='Copied';
+      setTimeout(function(){btn.textContent='Copy'},900);
+    };
+    return d;
+  }
+  function ensureCoachNav(){
+    var existing=[].slice.call(document.querySelectorAll('.nav-item')).find(function(n){
+      return ((n.getAttribute('onclick')||'').indexOf("'coach'")>=0) || /Call Coach/i.test(n.textContent||'');
+    });
+    if(existing) return;
+    var sequence=[].slice.call(document.querySelectorAll('.nav-item')).find(function(n){return /Sequence Builder/i.test(n.textContent||'')});
+    var item=document.createElement('div');
+    item.className='nav-item';
+    item.setAttribute('onclick',"goPage('coach',this)");
+    item.innerHTML='🎙️ <span>Call Coach</span>';
+    if(sequence && sequence.parentNode) sequence.parentNode.insertBefore(item, sequence.nextSibling);
+  }
+  function ensureCoachPage(){
+    if($('page-coach')) return;
+    var main=document.querySelector('.main') || document.body;
+    var section=document.createElement('section');
+    section.id='page-coach';
+    section.className='page';
+    section.innerHTML=
+      '<div class="hdr"><div><div class="title">Live Call Coach</div><div class="sub">Tap an objection and get the exact reframe and close.</div></div>'+
+      '<div><span id="timer" style="font:20px \'JetBrains Mono\',monospace;color:var(--text3);cursor:pointer" onclick="basinCoachToggleTimer()">00:00</span> '+
+      '<button class="btn btn-ghost btn-sm" onclick="basinCoachReset()">↺ New Call</button></div></div>'+
+      '<div class="body"><div class="grid2"><div><div class="panel"><div class="panel-hd"><div class="panel-title">Objection Buttons</div></div>'+
+      '<div class="panel-bd" id="coach-buttons"></div></div></div>'+
+      '<div id="coach-response"><div class="empty"><div class="empty-icon">🎙️</div><div class="empty-title">You\'re Live</div><div class="empty-sub">Tap an objection or type custom words.</div></div></div>'+
+      '</div></div>';
+    main.appendChild(section);
+  }
+  function contextHint(){
+    try {
+      if (typeof renderContextCoachHint === 'function') return renderContextCoachHint();
+    } catch(e){}
+    return '<div class="info gold" style="margin-bottom:10px"><strong>Live Call Coach:</strong> Use these responses to acknowledge, reframe, bridge to the director call, and close without guaranteeing returns or giving tax advice.</div>';
+  }
+  window.basinCoachRender = function(){
+    ensureCoachNav();
+    ensureCoachPage();
+    var root=$('coach-buttons');
+    if(!root) return;
+    var data=coachData();
+    root.innerHTML = contextHint() + Object.keys(data).map(function(k){
+      var v=data[k];
+      return '<button class="btn btn-ghost" style="width:100%;justify-content:flex-start;margin-bottom:6px" onclick="basinCoachFire(\''+escCoach(k)+'\')">⚡ '+escCoach(v[0])+'</button>';
+    }).join('') +
+    '<div class="divider"></div>'+
+    '<div class="field"><label class="label">Custom Objection / Exact Words</label><textarea id="custom-objection" class="textarea" placeholder="Type exactly what the prospect said…"></textarea></div>'+
+    '<button class="btn btn-teal" onclick="basinCoachCustom()">Coach Me →</button>'+
+    '<div class="mini-note" style="margin-top:8px">Custom text is coached locally unless Groq is active. Nothing auto-sends.</div>';
+  };
+  window.basinCoachFire = function(k){
+    var data=coachData();
+    var v=data[k];
+    if(!v) return;
+    if(typeof toggleTimer === 'function') {
+      try { if(!window.timerInt) toggleTimer(); } catch(e){}
+    } else if(!basinCoachTimerInt) {
+      basinCoachToggleTimer();
+    }
+    var txt='Acknowledge: '+v[1]+'\n\nReframe: '+v[2]+'\n\nBridge: '+v[3]+'\n\nClose: '+v[4];
+    var r=$('coach-response');
+    if(!r) return;
+    if(r.querySelector('.empty')) r.innerHTML='';
+    r.prepend(outCoachBlock('Objection: '+v[0], txt, k==='remove'?'var(--red)':'var(--gold)'));
+  };
+  window.basinCoachCustom = async function(){
+    var box=$('custom-objection');
+    var t=box ? box.value.trim() : '';
+    if(!t) {
+      if(typeof toast==='function') toast('TYPE OBJECTION');
+      return;
+    }
+    if(typeof customCoach === 'function') {
+      try { await customCoach(); return; } catch(e){}
+    }
+    var data=coachData();
+    data.tmp=['Custom','I hear you — and I appreciate you being direct.','The best next step is a 20-minute director call where your specific concern can be answered accurately.','The call is informational, not a commitment.','Would this week or early next work better?'];
+    basinCoachFire('tmp');
+    if(box) box.value='';
+  };
+  window.basinCoachToggleTimer = function(){
+    if(typeof toggleTimer === 'function') {
+      try { toggleTimer(); return; } catch(e){}
+    }
+    if(basinCoachTimerInt){ clearInterval(basinCoachTimerInt); basinCoachTimerInt=null; return; }
+    basinCoachTimerInt=setInterval(function(){
+      basinCoachTimerSecs++;
+      var m=String(Math.floor(basinCoachTimerSecs/60)).padStart(2,'0');
+      var s=String(basinCoachTimerSecs%60).padStart(2,'0');
+      var t=$('timer');
+      if(t) t.textContent=m+':'+s;
+    },1000);
+  };
+  window.basinCoachReset = function(){
+    if(typeof resetCoach === 'function') {
+      try { resetCoach(); setTimeout(basinCoachRender,50); return; } catch(e){}
+    }
+    basinCoachTimerSecs=0;
+    if(basinCoachTimerInt){ clearInterval(basinCoachTimerInt); basinCoachTimerInt=null; }
+    var t=$('timer'); if(t) t.textContent='00:00';
+    var r=$('coach-response');
+    if(r) r.innerHTML='<div class="empty"><div class="empty-icon">🎙️</div><div class="empty-title">You\'re Live</div><div class="empty-sub">Tap an objection or type custom words.</div></div>';
+    basinCoachRender();
+  };
+
+  if(typeof window.fireCoach !== 'function') window.fireCoach = window.basinCoachFire;
+  if(typeof window.customCoach !== 'function') window.customCoach = window.basinCoachCustom;
+  if(typeof window.fireCustom !== 'function') window.fireCustom = window.basinCoachCustom;
+  if(typeof window.resetCoach !== 'function') window.resetCoach = window.basinCoachReset;
+  if(typeof window.renderCoachButtons !== 'function') window.renderCoachButtons = window.basinCoachRender;
+
+  var oldGoPage = window.goPage;
+  if(typeof oldGoPage === 'function' && !oldGoPage.__callCoachRestoreOnly){
+    window.goPage=function(page,el){
+      var r=oldGoPage.apply(this,arguments);
+      if(page==='coach') setTimeout(window.basinCoachRender,30);
+      return r;
+    };
+    window.goPage.__callCoachRestoreOnly=true;
+  }
+
+  document.addEventListener('click',function(e){
+    var n=e.target && e.target.closest ? e.target.closest('.nav-item') : null;
+    if(n && /Call Coach/i.test(n.textContent||'')) setTimeout(window.basinCoachRender,60);
+  },true);
+
+  function initCoachRestore(){
+    ensureCoachNav();
+    ensureCoachPage();
+    if($('page-coach') && $('page-coach').classList.contains('active')) window.basinCoachRender();
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',function(){setTimeout(initCoachRestore,100);setTimeout(initCoachRestore,1000);});
+  else { setTimeout(initCoachRestore,100); setTimeout(initCoachRestore,1000); }
+  console.log('Basin OS Call Coach Restore loaded; no other OS sections modified.');
+})();
+</script>
+
+</body></html>');w.document.close();w.focus();setTimeout(()=>w.print(),250)}
 function snoozeFollowup(id,days){let n=STORE.notes.find(x=>x.id===id);if(!n)return;let base=new Date();base.setDate(base.getDate()+days);base.setHours(9,0,0,0);n.due=toLocalInputValue(base);if((n.status||'Open')==='Done')n.status='Follow-Up Needed';save();refresh();toast(days===1?'MOVED TO TOMORROW':'MOVED +7 DAYS')}
 function toLocalInputValue(d){let pad=x=>String(x).padStart(2,'0');return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())+'T'+pad(d.getHours())+':'+pad(d.getMinutes())}
 function syncNoteToPipeline(note){let inv=(STORE.investors||[]).find(x=>(x.name||'').toLowerCase()===(note.name||'').toLowerCase());if(!inv)return;let o=(note.outcome||'').toLowerCase(),s=(note.status||'').toLowerCase();if(o.includes('appointment booked')||s.includes('meeting')){let old=inv.status;inv.status='Appt Booked';inv.statusUpdated=new Date().toISOString();if(old!=='Appt Booked'&&note.id.indexOf('handoff')===-1)autoCreateHandoffTask(inv)}else if(o.includes('director call held'))inv.status='Call Held';else if(o.includes('closed won'))inv.status='Closed';else if(o.includes('connected')||o.includes('voicemail')||o.includes('no answer')){if(inv.status==='New')inv.status='Contacted'}}
@@ -692,11 +881,11 @@ function exportSingleCalendarICS(id){let n=findCalendarNote(id);if(!n||!asDate(n
 function copyCalendarItem(id){let n=findCalendarNote(id);if(!n)return toast('NOT FOUND');copyText(null,'Basin '+followupKind(n)+'\nName: '+n.name+'\nWhen: '+(n.due?fmtDue(n.due):'No time')+'\nOutcome: '+(n.outcome||'')+'\nDetails: '+(n.meeting||'')+'\nNext: '+(n.followup||'')+'\nNotes: '+(n.text||''))}
 function markCalendarDone(id){let n=findCalendarNote(id);if(!n)return toast('NOT FOUND');n.status='Done';save();refresh();toast('MARKED DONE')}
 function exportFollowupsICS(){let items=followupItems().filter(n=>asDate(n.due)&&followupKind(n)!=='DNC / Bad Number');if(!items.length)return toast('NO DATED FOLLOW-UPS');let now=icsDate(new Date());let body=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Basin OS//Follow Up Dashboard//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH'];items.forEach(n=>{let start=asDate(n.due),end=new Date(start.getTime()+30*60000),kind=followupKind(n);body.push('BEGIN:VEVENT','UID:'+icsSafe(n.id)+'@basin-os','DTSTAMP:'+now,'DTSTART:'+icsDate(start),'DTEND:'+icsDate(end),'SUMMARY:'+icsSafe('Basin '+kind+' — '+n.name),'DESCRIPTION:'+icsSafe((n.outcome||'')+'\nNext: '+(n.followup||'')+'\nDetails: '+(n.meeting||'')+'\nNotes: '+(n.text||'')),'END:VEVENT')});body.push('END:VCALENDAR');download('basin-followups-calendar.ics',body.join('\r\n'));toast('CALENDAR EXPORTED')}
-function updateCounts(){ensureStore();let inv=STORE.investors||[],cpas=STORE.cpas||[],notes=STORE.notes||[];if($('ds-leads'))$('ds-leads').textContent=inv.length;if($('ds-hot'))$('ds-hot').textContent=inv.filter(x=>effectiveGrade(x)==='A').length;if($('ds-appts'))$('ds-appts').textContent=inv.filter(x=>x.status==='Appt Booked').length;if($('ds-cpas'))$('ds-cpas').textContent=cpas.length;if($('inv-badge'))$('inv-badge').textContent=inv.length;if($('cpa-badge'))$('cpa-badge').textContent=cpas.length;if($('notes-badge'))$('notes-badge').textContent=notes.length;let dueTodayCount=followupItems().filter(n=>asDate(n.due)&&asDate(n.due)<=endOfDay(new Date())).length;if($('followup-badge'))$('followup-badge').textContent=dueTodayCount;if($('calendar-badge'))$('calendar-badge').textContent=calendarItems().filter(n=>asDate(n.due)&&asDate(n.due)<=endOfDay(new Date())).length;if($('handoff-badge'))$('handoff-badge').textContent=handoffMeetings().length;if($('radar-badge'))$('radar-badge').textContent=(STORE.radarLeads||[]).filter(l=>l.status==='New'||l.status==='Research Queue').length;let c={New:0,Found:0,Nurturing:0,Reactivate:0,Contacted:0,'Appt Booked':0,'Call Held':0,Closed:0};inv.forEach(x=>{if(c[x.status]!=null)c[x.status]++});if($('pp-new'))$('pp-new').textContent=c.New+c.Found+c.Nurturing+c.Reactivate;if($('pp-contacted'))$('pp-contacted').textContent=c.Contacted;if($('pp-booked'))$('pp-booked').textContent=c['Appt Booked'];if($('pp-held'))$('pp-held').textContent=c['Call Held'];if($('pp-closed'))$('pp-closed').textContent=c.Closed;let cp={Prospect:0,Contacted:0,'Meeting Set':0,'Active Partner':0,'Referrals Sent':0};cpas.forEach(x=>{if(cp[x.status]!=null)cp[x.status]++});if($('cp-prospect'))$('cp-prospect').textContent=cp.Prospect;if($('cp-contacted'))$('cp-contacted').textContent=cp.Contacted;if($('cp-meeting'))$('cp-meeting').textContent=cp['Meeting Set'];if($('cp-active'))$('cp-active').textContent=cp['Active Partner'];if($('cp-referrals'))$('cp-referrals').textContent=cp['Referrals Sent']}
+function updateCounts(){ensureStore();let inv=STORE.investors||[],cpas=STORE.cpas||[],notes=STORE.notes||[],wf=STORE.leadWorkflow||[];let allLeads=inv.length?inv:[...wf].map(function(w){return{score:w.score||0,grade:w.grade||'C',status:w.status||'Open',ts:w.updatedAt||w.ts||''}});if($('ds-leads'))$('ds-leads').textContent=inv.length+wf.length;if($('ds-hot'))$('ds-hot').textContent=inv.filter(x=>effectiveGrade(x)==='A').length+wf.filter(w=>(w.grade||'C')==='A').length;if($('ds-appts'))$('ds-appts').textContent=inv.filter(x=>x.status==='Appt Booked').length+wf.filter(w=>w.bucket==='opportunity'||w.status==='Opportunity').length;if($('ds-cpas'))$('ds-cpas').textContent=cpas.length;if($('inv-badge'))$('inv-badge').textContent=inv.length;if($('cpa-badge'))$('cpa-badge').textContent=cpas.length;if($('notes-badge'))$('notes-badge').textContent=notes.length;let dueTodayCount=followupItems().filter(n=>asDate(n.due)&&asDate(n.due)<=endOfDay(new Date())).length;if($('followup-badge'))$('followup-badge').textContent=dueTodayCount;if($('calendar-badge'))$('calendar-badge').textContent=calendarItems().filter(n=>asDate(n.due)&&asDate(n.due)<=endOfDay(new Date())).length;if($('handoff-badge'))$('handoff-badge').textContent=handoffMeetings().length;if($('radar-badge'))$('radar-badge').textContent=(STORE.radarLeads||[]).filter(l=>l.status==='New'||l.status==='Research Queue').length;let c={New:0,Found:0,Nurturing:0,Reactivate:0,Contacted:0,'Appt Booked':0,'Call Held':0,Closed:0};inv.forEach(x=>{if(c[x.status]!=null)c[x.status]++});if($('pp-new'))$('pp-new').textContent=c.New+c.Found+c.Nurturing+c.Reactivate;if($('pp-contacted'))$('pp-contacted').textContent=c.Contacted;if($('pp-booked'))$('pp-booked').textContent=c['Appt Booked'];if($('pp-held'))$('pp-held').textContent=c['Call Held'];if($('pp-closed'))$('pp-closed').textContent=c.Closed;let cp={Prospect:0,Contacted:0,'Meeting Set':0,'Active Partner':0,'Referrals Sent':0};cpas.forEach(x=>{if(cp[x.status]!=null)cp[x.status]++});if($('cp-prospect'))$('cp-prospect').textContent=cp.Prospect;if($('cp-contacted'))$('cp-contacted').textContent=cp.Contacted;if($('cp-meeting'))$('cp-meeting').textContent=cp['Meeting Set'];if($('cp-active'))$('cp-active').textContent=cp['Active Partner'];if($('cp-referrals'))$('cp-referrals').textContent=cp['Referrals Sent']}
 function currentPageId(){let p=document.querySelector('.page.active');return p?p.id.replace('page-',''):'dashboard'}
-function renderActivePage(){let page=currentPageId();if(page==='dashboard')renderDash();else if(page==='playbook')renderPlaybook();else if(page==='apicenter')renderApiCenter();else if(page==='radar'||page==='finder')renderLeadRadarPage();else if(page==='investors')renderInvestorList();else if(page==='cpas')renderCPAList();else if(page==='notes'){renderNotes();setupCallNoteDueAutomation()}else if(page==='analytics')renderAnalytics();else if(page==='followups'){renderFollowUps();renderSequenceDue()}else if(page==='calendar')renderAppointmentCalendar();else if(page==='handoffs')renderDirectorHandoff();else if(page==='settings')renderSettings();else if(page==='linkedinbuilder')renderLinkedInBuilder();else if(page==='rssmonitor')renderRSSMonitor()}
+function renderActivePage(){let page=currentPageId();if(page==='dashboard')renderDash();else if(page==='playbook')renderPlaybook();else if(page==='apicenter')renderApiCenter();else if(page==='radar'||page==='finder')renderLeadRadarPage();else if(page==='investors')renderInvestorList();else if(page==='cpas')renderCPAList();else if(page==='notes'){renderNotes();setupCallNoteDueAutomation()}else if(page==='analytics')renderAnalytics();else if(page==='followups'){renderFollowUps();renderSequenceDue()}else if(page==='calendar')renderAppointmentCalendar();else if(page==='handoffs')renderDirectorHandoff();else if(page==='settings')renderSettings();else if(page==='linkedinbuilder')renderLinkedInBuilder();else if(page==='rssmonitor')renderRSSMonitor();else if(page==='coach'){if(typeof renderCoachButtons==='function')renderCoachButtons()}}
 function refresh(){updateCounts();renderActivePage();checkOverdueNotifications()}
-function renderDash(){let top=$('dash-top-leads');let leads=[...STORE.investors].sort((a,b)=>effectiveScore(b)-effectiveScore(a)).slice(0,5);top.innerHTML=leads.length?'<div class="card-list">'+leads.map(l=>`<div class="record" style="grid-template-columns:48px 1fr"><div class="score ${effectiveGrade(l)}">${effectiveGrade(l)}</div><div><div class="rec-name">${esc(l.name)}</div><div class="rec-meta">${esc(l.title)} · ${effectiveScore(l)}/100 effective · Best call: ${esc(bestCallWindowForICP(inferLeadContext(l).icp))}</div></div></div>`).join('')+'</div>':'<div class="empty"><div class="empty-icon">🎯</div><div class="empty-title">No leads yet</div><div class="empty-sub">Run the finder or profile a prospect.</div></div>';$('dash-activity').innerHTML=STORE.activity.length?STORE.activity.slice(0,8).map(a=>`<div class="lead-why"><b>${esc(a.ts)}</b><br>${esc(a.m)}</div>`).join(''):'<div class="empty"><div class="empty-icon">📋</div><div class="empty-title">No activity yet</div></div>'}
+function renderDash(){let top=$('dash-top-leads');let invLeads=[...STORE.investors].sort((a,b)=>effectiveScore(b)-effectiveScore(a)).slice(0,5);let wfLeads=(STORE.leadWorkflow||[]).filter(function(w){return /^day/.test(w.bucket||'day1')}).sort(function(a,b){return (Number(b.score||0))-(Number(a.score||0))}).slice(0,5);let leads=invLeads.length?invLeads:wfLeads;top.innerHTML=leads.length?'<div class="card-list">'+leads.map(function(l){var g=l.grade||effectiveGrade(l)||'C';var sc=l.score||effectiveScore(l)||0;var title=l.title||l.company||'';var callW=typeof bestCallWindowForICP==="function"?bestCallWindowForICP(inferLeadContext(l).icp):'10:30AM-12PM';return '<div class="record" style="grid-template-columns:48px 1fr"><div class="score '+g+'">'+(g)+'</div><div><div class="rec-name">'+esc(l.name)+'</div><div class="rec-meta">'+esc(title)+' · '+sc+'/100 · Best call: '+esc(callW)+'</div>'+(l.bucket?'<div class="rec-tags"><span class="tag gold">'+esc((l.bucket||'').toUpperCase())+'</span></div>':'')+'</div></div>'}).join('')+'</div>':'<div class="empty"><div class="empty-icon">🎯</div><div class="empty-title">No leads yet</div><div class="empty-sub">Run the Lead Radar or profile a prospect.</div></div>';$('dash-activity').innerHTML=STORE.activity.length?STORE.activity.slice(0,8).map(a=>`<div class="lead-why"><b>${esc(a.ts)}</b><br>${esc(a.m)}</div>`).join(''):'<div class="empty"><div class="empty-icon">📋</div><div class="empty-title">No activity yet</div></div>'}
 function toggleRegion(btn,region){btn.classList.toggle('active')}
 function exportData(){STORE.lastBackupTs=Date.now();save();download('basin-os-data.json',JSON.stringify(STORE,null,2));toast('DATA BACKUP EXPORTED')}function exportNotes(){download('basin-call-notes.json',JSON.stringify(STORE.notes,null,2))}function download(name,text){let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type:'text/plain'}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}function clearAllData(){if(confirm('Clear all local data?')){STORE={investors:[],cpas:[],notes:[],activity:[],contacted:[],radarLeads:[],radarRuns:[],suppression:[],radarSettings:{},radarActionPlan:null,activeLead:null};ensureStore();save();refresh();toast('CLEARED')}}function clearContactedList(){STORE.contacted=[];save();toast('DEDUP CLEARED')}
 const COACH={
@@ -1821,6 +2010,20 @@ const BV_ORIG_renderApiCenter=renderApiCenter;renderApiCenter=function(){BV_ORIG
 
 
 load();
+// Safety stub — ensures autoConnectSavedApis is always defined globally
+// even if the v3.8.12 IIFE hasn't run yet or errored. The real implementation
+// inside the IIFE overwrites this stub via window.autoConnectSavedApis.
+if (typeof autoConnectSavedApis === 'undefined') {
+  window.autoConnectSavedApis = async function(forceToast) {
+    try {
+      if (typeof loadApiKeys === 'function') loadApiKeys();
+      if (typeof connectTavily === 'function' && window.BV_API && BV_API.tavilyKey) await connectTavily(false);
+      if (typeof connectGroq === 'function' && window.BV_API && BV_API.groqKey) await connectGroq(false);
+      if (typeof updateApiStatus === 'function') updateApiStatus();
+      if (forceToast && typeof toast === 'function') toast('KEYS LOADED');
+    } catch(e) { console.warn('autoConnectSavedApis stub error', e); }
+  };
+}
 if (typeof enhancedStartup === 'function') { try { enhancedStartup(); } catch(e) { console.warn('enhancedStartup failed', e); } }
 if (typeof loadApiKeys === 'function') { try { loadApiKeys(); } catch(e) { console.warn('loadApiKeys failed', e); } }
 if (typeof autoConnectSavedApis === 'function') { setTimeout(function(){ autoConnectSavedApis(false); }, 250); setTimeout(function(){ autoConnectSavedApis(false); }, 2500); }
@@ -1837,6 +2040,195 @@ setTimeout(function(){initRadarAutomation(true)},1800);
 applyApiCorsClarity();
 console.log('Basin OS integrated playbook + Tavily/Groq radar loaded ✓');
 </script>
+
+<script>
+/* Basin OS Call Coach Restore — additive only.
+   Leaves existing OS, leads, radar, dashboard, API, scoring, contact tags, and pipeline logic untouched.
+*/
+(function(){
+  var BASIN_CALL_COACH_DATA={
+trust:['Don’t know / trust you yet','That is completely fair — and exactly the right instinct.','I am not asking you to commit today. The director call is informational, and Basin has managed $1.25B+ since 2014. Verify everything before the call.','The director call is a verification step, not a commitment.','Would Tuesday at 2 or Thursday morning work?'],
+risk:['Oil and gas is too risky','That is a legitimate concern.','Basin uses a four-layer diligence process: land, legal, geology, and financial. The director call is where that risk process gets unpacked.','The risk question is exactly why the director call is worth taking.','Could we get you on that call this week?'],
+returns:['Guaranteed returns?','I appreciate you asking directly.','There are no guaranteed returns in any legitimate investment. Basin targets 25%+ IRR per project, but targeted is not guaranteed. Past performance does not guarantee future results.','The honest answer belongs in a director call, not a quick promise.','Would you hear it from the director this week?'],
+cpa:['Need to talk to CPA first','That is the right move.','The director call gives you specific questions to take to your CPA about IDC deductions and depletion allowance. Your CPA confirms what applies.','Take the director call first so the CPA conversation is sharper.','Let’s schedule the director call, then you can loop in your CPA.'],
+send:['Just send information','Absolutely.','Before I do, are you more focused on the tax deduction side or passive income side? I will send the right version plus a calendar link.','The overview is useful, but the director call is where specific questions get answered.','Can I hold a placeholder while you review?'],
+remove:['Remove me from your list','Absolutely — I will remove you right now.','No further outreach. Log as DNC immediately.','Honor the request immediately.','I appreciate your time. Take care.'],
+notinterested:['Not interested','I appreciate you being direct — I am not going to push.','Before I close the loop, it helps to know whether it is the asset class or the timing. Basin raises periodically, so a timing issue is different from a true no.','If it is timing, I would rather circle back when it is relevant instead of disappearing forever.','Is this a hard no on oil and gas, or just not the right timing?'],
+think:['Need to think about it','Of course — you should not move forward on anything until it makes sense.','Usually “think about it” means there is one specific unanswered question. The director call is designed to answer that question without asking for a commitment.','Let’s identify the question instead of letting it sit open.','What would you need answered for a 20-minute director call to be worth it?'],
+busy:['Too busy right now','I hear you — I will not take much time today.','The call is only 20 minutes, no prep required, and it can be scheduled out when your calendar is calmer.','If now is bad, the fix is timing the call better, not dropping it completely.','Would a slot next week or the week after work better?'],
+otherfirm:['Already working with another firm','That makes sense — most accredited investors already have advisors or allocations.','Basin is typically additive, not a replacement. Direct oil and gas ownership has different tax treatment than traditional securities, ETFs, or advisory portfolios.','This is worth comparing to what you already own, not replacing it.','Would a 20-minute compare-and-contrast call make sense?'],
+nocapital:['No capital available right now','Totally understand — timing matters.','The reason to still learn the structure now is so you are not starting from zero when liquidity opens up or the next raise comes around.','This can be an education call now and an action item later if timing changes.','When would capital realistically free up — this quarter, year-end, or next year?'],
+spouse:['Need to talk to spouse / partner','That is smart — these decisions should include the other decision-maker.','The cleanest path is to have both of you hear the same information directly rather than one person trying to relay the details afterward.','Bring them into the director call so both of you can ask questions live.','What day works for both of you to join a 20-minute call?'],
+lostmoney:['Lost money in oil and gas before','I am sorry to hear that, and I would not brush past it.','Oil and gas structures vary a lot. The useful question is whether what you were in before is the same structure Basin is discussing now. The director can walk through the diligence process and risk controls.','The comparison to your prior experience is exactly the conversation to have.','Would 20 minutes be worth it just to understand the structural differences?'],
+stalling:['Interested but not committing','It sounds like there is enough interest to keep the conversation alive, but something is holding it up.','The next step is not an investment decision. It is a 20-minute director call so you can get answers and either move forward or rule it out intelligently.','Let’s make the next step small and clear.','Should I hold Tuesday at 2 or Thursday morning for that call?'],
+alreadyenergy:['Already invests in energy','That is actually a good sign — you already understand the sector.','The difference is structure. Direct ownership may create tax treatment that public energy stocks, ETFs, or many royalty trusts do not. Your CPA can confirm what applies.','It is worth comparing what you already own against Basin’s direct ownership structure.','Would a quick comparison call be useful?'],
+minimum:['Minimum investment question','Fair question, and I understand why you are asking.','Specific terms depend on the current offering and accredited status, so the right place to answer that is the director call after the basic fit is confirmed.','I do not want to guess at terms on a quick call.','Can we get the 20-minute director call scheduled so you get the exact answer?']
+};
+
+  var basinCoachTimerInt = null;
+  var basinCoachTimerSecs = 0;
+
+  function $(id){ return document.getElementById(id); }
+  function escCoach(v){
+    return String(v == null ? '' : v).replace(/[&<>"']/g,function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function coachData(){
+    try {
+      if (typeof COACH !== 'undefined' && COACH && Object.keys(COACH).length) return COACH;
+    } catch(e){}
+    return BASIN_CALL_COACH_DATA;
+  }
+  function outCoachBlock(title, body, color){
+    if (typeof outBlock === 'function') return outBlock(title, body, color || 'var(--gold)');
+    var d=document.createElement('div');
+    d.className='out';
+    d.innerHTML='<div class="out-hd"><div class="out-title" style="color:'+(color||'var(--gold)')+'">'+escCoach(title)+'</div><button class="copy">Copy</button></div><div class="out-body">'+escCoach(body)+'</div>';
+    var btn=d.querySelector('button');
+    if(btn) btn.onclick=function(){ 
+      if(navigator.clipboard) navigator.clipboard.writeText(body);
+      btn.textContent='Copied';
+      setTimeout(function(){btn.textContent='Copy'},900);
+    };
+    return d;
+  }
+  function ensureCoachNav(){
+    var existing=[].slice.call(document.querySelectorAll('.nav-item')).find(function(n){
+      return ((n.getAttribute('onclick')||'').indexOf("'coach'")>=0) || /Call Coach/i.test(n.textContent||'');
+    });
+    if(existing) return;
+    var sequence=[].slice.call(document.querySelectorAll('.nav-item')).find(function(n){return /Sequence Builder/i.test(n.textContent||'')});
+    var item=document.createElement('div');
+    item.className='nav-item';
+    item.setAttribute('onclick',"goPage('coach',this)");
+    item.innerHTML='🎙️ <span>Call Coach</span>';
+    if(sequence && sequence.parentNode) sequence.parentNode.insertBefore(item, sequence.nextSibling);
+  }
+  function ensureCoachPage(){
+    if($('page-coach')) return;
+    var main=document.querySelector('.main') || document.body;
+    var section=document.createElement('section');
+    section.id='page-coach';
+    section.className='page';
+    section.innerHTML=
+      '<div class="hdr"><div><div class="title">Live Call Coach</div><div class="sub">Tap an objection and get the exact reframe and close.</div></div>'+
+      '<div><span id="timer" style="font:20px \'JetBrains Mono\',monospace;color:var(--text3);cursor:pointer" onclick="basinCoachToggleTimer()">00:00</span> '+
+      '<button class="btn btn-ghost btn-sm" onclick="basinCoachReset()">↺ New Call</button></div></div>'+
+      '<div class="body"><div class="grid2"><div><div class="panel"><div class="panel-hd"><div class="panel-title">Objection Buttons</div></div>'+
+      '<div class="panel-bd" id="coach-buttons"></div></div></div>'+
+      '<div id="coach-response"><div class="empty"><div class="empty-icon">🎙️</div><div class="empty-title">You\'re Live</div><div class="empty-sub">Tap an objection or type custom words.</div></div></div>'+
+      '</div></div>';
+    main.appendChild(section);
+  }
+  function contextHint(){
+    try {
+      if (typeof renderContextCoachHint === 'function') return renderContextCoachHint();
+    } catch(e){}
+    return '<div class="info gold" style="margin-bottom:10px"><strong>Live Call Coach:</strong> Use these responses to acknowledge, reframe, bridge to the director call, and close without guaranteeing returns or giving tax advice.</div>';
+  }
+  window.basinCoachRender = function(){
+    ensureCoachNav();
+    ensureCoachPage();
+    var root=$('coach-buttons');
+    if(!root) return;
+    var data=coachData();
+    root.innerHTML = contextHint() + Object.keys(data).map(function(k){
+      var v=data[k];
+      return '<button class="btn btn-ghost" style="width:100%;justify-content:flex-start;margin-bottom:6px" onclick="basinCoachFire(\''+escCoach(k)+'\')">⚡ '+escCoach(v[0])+'</button>';
+    }).join('') +
+    '<div class="divider"></div>'+
+    '<div class="field"><label class="label">Custom Objection / Exact Words</label><textarea id="custom-objection" class="textarea" placeholder="Type exactly what the prospect said…"></textarea></div>'+
+    '<button class="btn btn-teal" onclick="basinCoachCustom()">Coach Me →</button>'+
+    '<div class="mini-note" style="margin-top:8px">Custom text is coached locally unless Groq is active. Nothing auto-sends.</div>';
+  };
+  window.basinCoachFire = function(k){
+    var data=coachData();
+    var v=data[k];
+    if(!v) return;
+    if(typeof toggleTimer === 'function') {
+      try { if(!window.timerInt) toggleTimer(); } catch(e){}
+    } else if(!basinCoachTimerInt) {
+      basinCoachToggleTimer();
+    }
+    var txt='Acknowledge: '+v[1]+'\n\nReframe: '+v[2]+'\n\nBridge: '+v[3]+'\n\nClose: '+v[4];
+    var r=$('coach-response');
+    if(!r) return;
+    if(r.querySelector('.empty')) r.innerHTML='';
+    r.prepend(outCoachBlock('Objection: '+v[0], txt, k==='remove'?'var(--red)':'var(--gold)'));
+  };
+  window.basinCoachCustom = async function(){
+    var box=$('custom-objection');
+    var t=box ? box.value.trim() : '';
+    if(!t) {
+      if(typeof toast==='function') toast('TYPE OBJECTION');
+      return;
+    }
+    if(typeof customCoach === 'function') {
+      try { await customCoach(); return; } catch(e){}
+    }
+    var data=coachData();
+    data.tmp=['Custom','I hear you — and I appreciate you being direct.','The best next step is a 20-minute director call where your specific concern can be answered accurately.','The call is informational, not a commitment.','Would this week or early next work better?'];
+    basinCoachFire('tmp');
+    if(box) box.value='';
+  };
+  window.basinCoachToggleTimer = function(){
+    if(typeof toggleTimer === 'function') {
+      try { toggleTimer(); return; } catch(e){}
+    }
+    if(basinCoachTimerInt){ clearInterval(basinCoachTimerInt); basinCoachTimerInt=null; return; }
+    basinCoachTimerInt=setInterval(function(){
+      basinCoachTimerSecs++;
+      var m=String(Math.floor(basinCoachTimerSecs/60)).padStart(2,'0');
+      var s=String(basinCoachTimerSecs%60).padStart(2,'0');
+      var t=$('timer');
+      if(t) t.textContent=m+':'+s;
+    },1000);
+  };
+  window.basinCoachReset = function(){
+    if(typeof resetCoach === 'function') {
+      try { resetCoach(); setTimeout(basinCoachRender,50); return; } catch(e){}
+    }
+    basinCoachTimerSecs=0;
+    if(basinCoachTimerInt){ clearInterval(basinCoachTimerInt); basinCoachTimerInt=null; }
+    var t=$('timer'); if(t) t.textContent='00:00';
+    var r=$('coach-response');
+    if(r) r.innerHTML='<div class="empty"><div class="empty-icon">🎙️</div><div class="empty-title">You\'re Live</div><div class="empty-sub">Tap an objection or type custom words.</div></div>';
+    basinCoachRender();
+  };
+
+  if(typeof window.fireCoach !== 'function') window.fireCoach = window.basinCoachFire;
+  if(typeof window.customCoach !== 'function') window.customCoach = window.basinCoachCustom;
+  if(typeof window.fireCustom !== 'function') window.fireCustom = window.basinCoachCustom;
+  if(typeof window.resetCoach !== 'function') window.resetCoach = window.basinCoachReset;
+  if(typeof window.renderCoachButtons !== 'function') window.renderCoachButtons = window.basinCoachRender;
+
+  var oldGoPage = window.goPage;
+  if(typeof oldGoPage === 'function' && !oldGoPage.__callCoachRestoreOnly){
+    window.goPage=function(page,el){
+      var r=oldGoPage.apply(this,arguments);
+      if(page==='coach') setTimeout(window.basinCoachRender,30);
+      return r;
+    };
+    window.goPage.__callCoachRestoreOnly=true;
+  }
+
+  document.addEventListener('click',function(e){
+    var n=e.target && e.target.closest ? e.target.closest('.nav-item') : null;
+    if(n && /Call Coach/i.test(n.textContent||'')) setTimeout(window.basinCoachRender,60);
+  },true);
+
+  function initCoachRestore(){
+    ensureCoachNav();
+    ensureCoachPage();
+    if($('page-coach') && $('page-coach').classList.contains('active')) window.basinCoachRender();
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',function(){setTimeout(initCoachRestore,100);setTimeout(initCoachRestore,1000);});
+  else { setTimeout(initCoachRestore,100); setTimeout(initCoachRestore,1000); }
+  console.log('Basin OS Call Coach Restore loaded; no other OS sections modified.');
+})();
+</script>
+
 </body>
 </html>
 
