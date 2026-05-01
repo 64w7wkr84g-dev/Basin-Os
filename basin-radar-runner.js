@@ -2,7 +2,7 @@
 'use strict';
 
 /**
- * Basin OS Scheduled Radar Runner — Tavily + Groq Named-Contact Gate Build
+ * Basin OS Scheduled Radar Runner — Tavily + Groq Human-Contact Enrichment Build v3.8.25
  * Writes only actionable leads to radar-leads.json:
  * named contact person + USA-based + likely investor/referral ICP + at least one usable contact route.
  * Non-actionable signals are written to radar-rejected.json for audit, not loaded into the pipeline.
@@ -15,11 +15,11 @@ const TAVILY_API_KEY = (process.env.TAVILY_API_KEY || '').trim();
 const GROQ_API_KEY = (process.env.GROQ_API_KEY || '').trim();
 const GROQ_MODEL = (process.env.GROQ_MODEL || 'llama-3.3-70b-versatile').trim();
 const GEO = (process.env.RADAR_GEO || 'nationwide USA').trim();
-const MAX_QUERIES = clamp(Number(process.env.RADAR_MAX_QUERIES || 18), 3, 60);
+const MAX_QUERIES = clamp(Number(process.env.RADAR_MAX_QUERIES || 36), 3, 80);
 const MAX_RESULTS = clamp(Number(process.env.RADAR_MAX_RESULTS || 5), 1, 10);
-const MAX_ENRICH = clamp(Number(process.env.RADAR_MAX_ENRICH || 40), 5, 100);
+const MAX_ENRICH = clamp(Number(process.env.RADAR_MAX_ENRICH || 70), 5, 150);
 const MAX_GROQ = clamp(Number(process.env.RADAR_MAX_GROQ || 8), 0, 25);
-const MAX_RECHECK = clamp(Number(process.env.RADAR_MAX_RECHECK || 40), 0, 150);
+const MAX_RECHECK = clamp(Number(process.env.RADAR_MAX_RECHECK || 75), 0, 250);
 const YEAR_TAIL = (process.env.RADAR_YEAR_TAIL || '2025 OR 2026').trim();
 
 const OUT = path.join(process.cwd(), 'radar-leads.json');
@@ -88,7 +88,7 @@ function loadRejectedForRecheck(){
 function recheckQueriesFromRejected(){
   return loadRejectedForRecheck().map((r,i)=>{
     const identity=[r.name,r.company,r.title].filter(Boolean).join(' ').slice(0,160);
-    return {source:'weekly-recheck', q:`${identity} email phone LinkedIn website contact United States`, type:r.title||'Recheck Signal', priority:'Weekly Contact Recheck'};
+    return {source:'weekly-recheck', q:`${identity} owner founder CEO partner physician attorney CPA email phone LinkedIn website contact United States`, type:r.title||'Recheck Signal', priority:'Weekly Contact Recheck'};
   }).filter(x=>x.q.trim().length>35);
 }
 function extractEmail(txt){ const m=String(txt||'').match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i); return m?m[0]:''; }
@@ -133,8 +133,20 @@ function extractCompany(title){
   for(const p of pats){const m=t.match(p); if(m) return clean(m[1].replace(/\s+(in|as|for|after|with)\s+.*/i,''),90);}
   return '';
 }
+
+const CITY_OR_PLACE_RE = /\b(Dallas|Fort Worth|Houston|Austin|San Antonio|Midland|Odessa|Plano|Frisco|Keller|Southlake|Grapevine|Arlington|Irving|McKinney|Denton|Waco|Tyler|El Paso|Corpus Christi|Lubbock|Amarillo|Oklahoma City|Tulsa|Denver|Phoenix|Texas|Oklahoma|Colorado|Louisiana|Wyoming|New Mexico|California|Florida|New York)\b/i;
+const GENERIC_PAGE_RE = /^(our team|team|leadership|people|staff|directory|contact us|about us|home|news|press release|article|profile|company|unknown|shared radar lead|radar lead|city|county|state|market|region)$/i;
+function isCityOrPlaceOnly(name){
+  const n = clean(name,120);
+  if(!n) return true;
+  if(CITY_OR_PLACE_RE.test(n) && n.split(/\s+/).length <= 3) return true;
+  return false;
+}
+
 function personish(name){
   name=clean(name,160); if(!name||name.length>90) return false;
+  if(isCityOrPlaceOnly(name)) return false;
+  if(GENERIC_PAGE_RE.test(name)) return false;
   if(/\b(Dr\.?|Doctor|MD|Esq\.?|CPA)\b/i.test(name)) return true;
   const parts=name.replace(/[,|:;].*$/,'').trim().split(/\s+/);
   return parts.length>=2 && parts.length<=5 && parts.every(p=>/^[A-Z][A-Za-z.'-]{1,}$/.test(p)||/^(Jr\.?|Sr\.?)$/i.test(p));
@@ -142,7 +154,8 @@ function personish(name){
 function genericNameLike(name){
   const n=clean(name,180);
   if(!n) return true;
-  if(/^(our team|team|leadership|people|staff|directory|contact us|about us|home|news|press release|article|profile|company|unknown|shared radar lead|radar lead)$/i.test(n)) return true;
+  if(GENERIC_PAGE_RE.test(n)) return true;
+  if(isCityOrPlaceOnly(n)) return true;
   if(/^(new|top|best|how|why|what|when|where|inside|meet the|about the|contact|services|practice areas)\b/i.test(n)) return true;
   if(/[!?]/.test(n)) return true;
   if(/\b(opens|launches|announces|acquires|expands|sold|acquired|named|promoted|joins|conference|podcast|webinar|article|news|press|release|investment|investor|opportunity)\b/i.test(n) && !/^(Dr\.?|[A-Z][a-z]+\s+[A-Z][a-z]+)/.test(n)) return true;
@@ -214,7 +227,7 @@ function buildLead(result, queryMeta){
 async function enrichLead(lead){
   const tokens=[lead.name,lead.company,lead.articleTitle,lead.title].filter(Boolean).join(' ');
   if(!tokens || tokens.length<4) return lead;
-  const queries=[`${tokens} owner founder CEO president partner physician attorney CPA LinkedIn`, `${tokens} email phone contact`, `${tokens} LinkedIn`, `${tokens} website contact`, `${tokens} team profile directory`, `${tokens} company phone`];
+  const queries=[`${tokens} owner founder CEO president partner physician attorney CPA LinkedIn`, `${tokens} direct email phone contact`, `${tokens} LinkedIn profile`, `${tokens} website contact page`, `${tokens} team profile directory bio`, `${tokens} company phone`, `${tokens} managing partner owner profile`, `${tokens} practice owner contact`];
   lead.enrichmentResults=[];
   for(const q of queries){
     try{
@@ -242,7 +255,8 @@ async function enrichLead(lead){
 
 function qualify(lead){
   const missing=[];
-  if(!hasNamedPointPerson(lead)) missing.push('named point person/contact person');
+  if(!hasNamedPointPerson(lead)) missing.push('named human contact person');
+  if(isCityOrPlaceOnly(lead.name)) missing.push('city/place name is not a lead');
   if(!usaOk(lead)) missing.push('USA-based confirmation');
   if(!investorRelevant(lead)) missing.push('qualified investor/referral-source signal');
   if(!contactRouteUsable(lead)) missing.push('usable contact route');
@@ -304,13 +318,13 @@ async function main(){
   candidates.sort(sortLeads);
   for(const lead of candidates.slice(0,MAX_ENRICH)){
     if(!lead.contactMethods.length || !hasNamedPointPerson(lead)) await enrichLead(lead);
-    lead.score=scoreLead(lead); lead.grade=grade(lead.score); diagnostics.enriched++;
+    lead.score=Math.max(Number(lead.score||0), scoreLead(lead)); lead.grade=grade(lead.score); lead.scoreUpgradeReason='Score recalculated after contact/person enrichment before bucket placement'; diagnostics.enriched++;
   }
   candidates.sort(sortLeads);
   for(const lead of candidates.slice(0,MAX_GROQ)) await groqRefine(lead);
   const accepted=[], rejected=[];
   for(const lead of candidates){
-    lead.score=scoreLead(lead); lead.grade=grade(lead.score);
+    lead.score=Math.max(Number(lead.score||0), scoreLead(lead)); lead.grade=grade(lead.score);
     const ok=qualify(lead) && lead.qualificationStatus !== 'Do Not Load';
     if(ok){
       lead.pipelineBucket = 'Day 1';
