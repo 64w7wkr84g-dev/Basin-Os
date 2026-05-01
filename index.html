@@ -79,7 +79,7 @@
   <div class="section"><div class="section-label">Data</div><div class="nav-item" onclick="goPage('notes',this)">📝 <span>Call Notes</span><span class="badge" id="notes-badge">0</span></div><div class="nav-item" onclick="goPage('analytics',this)">📊 <span>Call Analytics</span></div><div class="nav-item" onclick="goPage('followups',this)">📅 <span>Follow-Up Dashboard</span><span class="badge" id="followup-badge">0</span></div><div class="nav-item" onclick="goPage('calendar',this)">🗓️ <span>Appointment Calendar</span><span class="badge" id="calendar-badge">0</span></div><div class="nav-item" onclick="goPage('handoffs',this)">📄 <span>Director Handoffs</span><span class="badge" id="handoff-badge">0</span></div></div>
   <div class="section"><div class="section-label">System</div><div class="nav-item" onclick="goPage('settings',this)">⚙️ <span>Settings</span></div><div class="nav-item" onclick="goPage('apicenter',this)">🧠 <span>API Command Center</span><span class="badge" id="api-badge">OFF</span></div><div class="nav-item" onclick="exportData()">💾 <span>Export All Data</span></div></div>
       <div class="compliance"><strong>Compliance Always</strong>Never guarantee returns · Never “SEC registered” · Always “consult your CPA” · Accredited investors only · Targeted IRR, not guaranteed.</div>
-      <div class="sidebar-version">Basin OS v3.8.19 — Named Contact Gate + Contactable Lead Workflow — Updated 2026-05-01</div>
+      <div class="sidebar-version">Basin OS v3.8.21 — Persistent API Lock-On Fix + Required Daily Tasks — Updated 2026-05-01</div>
 </nav>
 <main class="main">
   <section id="page-dashboard" class="page active">
@@ -112,7 +112,7 @@
 <section id="page-apicenter" class="page"><div class="hdr"><div><div class="title">API Command Center</div><div class="sub">Groq works from the browser. Tavily is used by the GitHub Actions runner for scheduled radar searches; browser/local Tavily testing may require server.js or may be blocked by CORS. Keys stay in this browser only.</div></div><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn btn-primary btn-sm" style="width:auto" onclick="testAllApis()">⚡ Test APIs</button><button class="btn btn-ghost btn-sm" onclick="buildMorningBrief(true)">🌅 Build Morning Brief</button><button class="btn btn-ghost btn-sm" onclick="runLeadRadar(true)">📡 Run Radar</button></div></div><div class="body"><div class="grid2"><div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Connection Setup</div><div class="panel-sub">One-time setup on your home MacBook browser.</div></div></div><div class="panel-bd"><div class="field"><label class="label">Tavily API Key</label><input id="api-tavily-key" type="password" class="input" placeholder="Paste Tavily API key (tvly-...)"></div><div class="field"><label class="label">Groq API Key</label><input id="api-groq-key" type="password" class="input" placeholder="Paste Groq API key"></div><div class="field"><label class="label">Groq Model</label><select id="api-groq-model" class="select"><option value="llama-3.3-70b-versatile">Llama 3.3 70B Versatile</option><option value="qwen/qwen3-32b">Qwen3 32B</option><option value="openai/gpt-oss-120b">GPT-OSS 120B</option><option value="openai/gpt-oss-20b">GPT-OSS 20B</option></select></div><div class="row2"><button class="btn btn-primary" onclick="connectTavily(true)">Connect Tavily</button><button class="btn btn-teal" onclick="connectGroq(true)">Connect Groq</button></div><div class="row2" style="margin-top:8px"><button class="btn btn-ghost" onclick="saveApiKeysOnly()">Save Keys</button><button class="btn btn-danger" onclick="clearApiKeys()">Clear Keys</button></div><div class="info red" style="margin-top:12px"><strong>Security + CORS:</strong> This single-file version stores keys in your browser localStorage so your MacBook can stay connected. Do not upload keys into GitHub. Groq works from any browser including GitHub Pages. Tavily is primarily used by GitHub Actions through the TAVILY_API_KEY secret. Browser testing may require server.js because direct Tavily calls can be blocked by CORS.</div></div></div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Run Limits & Automation</div><div class="panel-sub">Controls costs and avoids noisy automation.</div></div></div><div class="panel-bd"><div class="row2"><div class="field"><label class="label">Max Queries / Radar Run</label><input id="api-max-queries" class="input" type="number" min="3" max="60" value="18"></div><div class="field"><label class="label">Max Tavily Results / Query</label><input id="api-max-results" class="input" type="number" min="1" max="20" value="5"></div></div><div class="row2"><div class="field"><label class="label">Groq Lead Analyses / Run</label><input id="api-max-groq" class="input" type="number" min="0" max="30" value="8"></div><div class="field"><label class="label">Search Mode</label><select id="api-search-mode" class="select"><option value="balanced">Balanced</option><option value="highvalue">High-value only</option><option value="wide">Wide discovery</option></select></div></div><div class="row2"><div class="field"><label class="label">Auto-Connect Saved Keys</label><select id="api-auto-connect" class="select"><option value="on">ON — connect on page load</option><option value="off">OFF — manual connect only</option></select></div><div class="field"><label class="label">Lead Radar Auto-Run</label><select id="api-auto-radar" class="select"><option value="on">ON — run when open + repeat</option><option value="off">OFF — manual radar only</option></select></div></div><div class="field"><label class="label">Lead Radar Interval While Page Is Open</label><select id="api-radar-interval" class="select"><option value="1">Every 1 hour</option><option value="2">Every 2 hours</option><option value="3">Every 3 hours</option><option value="4">Every 4 hours</option><option value="6">Every 6 hours</option></select></div><div class="row2"><button class="btn btn-primary" onclick="saveApiSettings()">Save API Settings</button><button class="btn btn-teal" onclick="saveApiKeysOnly(false);autoConnectSavedApis(true)">Save Keys + Auto-Connect</button></div></div></div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Live API Status</div><div class="panel-sub">Browser API connection and usage counters.</div></div></div><div class="panel-bd" id="api-status-panel"></div></div></div><div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Morning Brief</div><div class="panel-sub">Generated from Radar, pipeline, notes, follow-ups, and meetings.</div></div><button class="btn btn-ghost btn-sm" onclick="copyMorningBrief()">Copy</button></div><div class="panel-bd" id="morning-brief"><div class="empty"><div class="empty-icon">🌅</div><div class="empty-title">No brief yet</div><div class="empty-sub">Click Build Morning Brief after Lead Radar runs.</div></div></div></div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Active Lead Intelligence</div><div class="panel-sub">Cross-linked into Profiler, Sequence, Notes, Handoff, and Radar.</div></div></div><div class="panel-bd" id="api-active-lead"></div></div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Automation Map</div><div class="panel-sub">What is automatic vs. what must remain manual.</div></div></div><div class="panel-bd"><div class="info teal"><strong>Automated inside this OS:</strong> query rotation, lead dedupe, scoring, suppression checks, contact-path detection, AI draft creation, compliance scan, morning brief, similar-lead searches, CPA map builder, follow-up task creation, and director handoff generation.</div><div class="info gold"><strong>Manual by design:</strong> LinkedIn connection requests, LinkedIn DMs, emails, texts, and phone calls. The OS prepares copy and actions, but you review and send manually to avoid platform violations, spam behavior, and compliance errors.</div></div></div></div></div></div></section>
 <section id="page-playbook" class="page"><div class="hdr"><div><div class="title">Associate Master Playbook</div><div class="sub">Integrated scripts, calculator, cadence, implementation guide, and compliance. · Version 3.8.7 · Tavily + Groq Radar Build · Copy Handler Patch · Last updated 2026-05-01</div></div><button class="btn btn-ghost btn-sm" onclick="goPage('sequences',null)">Build Sequence →</button></div><div class="body" id="playbook-root"></div></section>
 
-  <div class="version-footer">Basin OS v3.8.19 — Named Contact Gate + Contactable Lead Workflow — Updated 2026-05-01 · If GitHub Pages shows an older layout, hard refresh / clear cache and confirm this file replaced the root index.html.</div>
+  <div class="version-footer">Basin OS v3.8.21 — Persistent API Lock-On Fix + Required Daily Tasks — Updated 2026-05-01 · If GitHub Pages shows an older layout, hard refresh / clear cache and confirm this file replaced the root index.html.</div>
 </main>
 </div>
 <div id="toast"></div>
@@ -669,9 +669,9 @@ function printHandoffById(id){let note=handoffMeetings().find(n=>n.id===id);if(!
 function printSelectedHandoff(){let note=selectedHandoffNote();if(!note)return toast('NO HANDOFF');printHandoffNote(note)}
 function printHandoffNote(note){let txt=buildHandoffText(note);let w=window.open('','_blank');if(!w){copyText(null,txt);return toast('POPUP BLOCKED — COPIED')}w.document.write('<!doctype html><html><head><title>Director Handoff - '+esc(note.name||'Prospect')+'</title><style>body{font-family:Arial,sans-serif;color:#0f172a;margin:28px;line-height:1.35}h1{font-size:20px;margin:0 0 4px}.meta{color:#64748b;font-size:12px;margin-bottom:14px}.box{border:1px solid #d1d5db;border-radius:8px;padding:10px;margin:8px 0;break-inside:avoid}.h{font-size:11px;font-weight:bold;color:#b45309;text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}.b{white-space:pre-wrap;font-size:12px}@media print{body{margin:18px}.box{padding:8px;margin:6px 0}}</style></head><body><h1>Director Handoff — Basin Ventures</h1><div class="meta">'+esc(note.name||'')+' · '+esc(note.due?fmtDue(note.due):'No meeting time')+'</div>'+txt.split('\n\n').slice(1).map(p=>{let i=p.indexOf('\n'),h=i>-1?p.slice(0,i):p,b=i>-1?p.slice(i+1):'';return '<div class="box"><div class="h">'+esc(h)+'</div><div class="b">'+esc(b)+'</div></div>'}).join('')+'
 <script>
-/* Basin OS v3.8.19 — Texas-first enrichment, contact gate, future import/DNC framework */
+/* Basin OS v3.8.21 — Texas-first enrichment, contact gate, future import/DNC framework */
 (function(){
-  var VERSION='v3.8.19 — Named Contact Gate + Contactable Lead Workflow';
+  var VERSION='v3.8.21 — Persistent API Lock-On Fix';
   function byId(id){return document.getElementById(id)}
   function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
   function scoreVal(x){return Number((x&&x.score)||0)}
@@ -1905,9 +1905,9 @@ console.log('Basin OS integrated playbook + Tavily/Groq radar loaded ✓');
 </html>
 
 <script>
-/* Basin OS v3.8.19 — Named Contact Gate + Contactable Lead Workflow */
+/* Basin OS v3.8.21 — Persistent API Lock-On Fix + Required Daily Tasks */
 (function(){
-  var VERSION='v3.8.19 — Named Contact Gate + Contactable Lead Workflow';
+  var VERSION='v3.8.21 — Persistent API Lock-On Fix';
   window.BASIN_IMPORT_DEBUG=[];
   function byId(id){return document.getElementById(id)}
   function clean(v,n){v=String(v==null?'':v).replace(/<[^>]+>/g,' ').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').replace(/\s+/g,' ').trim();return n?v.slice(0,n):v}
@@ -1944,9 +1944,9 @@ console.log('Basin OS integrated playbook + Tavily/Groq radar loaded ✓');
 
 
 <script>
-/* Basin OS v3.8.19 — Named Contact Gate + Contactable Lead Workflow */
+/* Basin OS v3.8.21 — Persistent API Lock-On Fix + Required Daily Tasks */
 (function(){
-  var VERSION='v3.8.19 — Named Contact Gate + Contactable Lead Workflow';
+  var VERSION='v3.8.21 — Persistent API Lock-On Fix';
   var HIGH_VALUE_RE=/physician|surgeon|doctor|md\b|medical practice|orthopedic|gastro|clinic owner|dentist|attorney|law partner|partner|cpa|tax advisor|accounting|owner|founder|ceo|president|business owner|executive|real estate developer|oil|gas|energy|mineral|royalty|operator|entrepreneur/i;
   var FOREIGN_RE=/\b(uk|london|canada|ontario|toronto|mexico|india|australia|europe|dubai|uae|china|singapore)\b/i;
   var BAD_HEADLINE_RE=/roundup|lawsuit|jury|student|loan|murder|crime|appeals|court reviews|bancorp|misled sons|what you missed|row over|litigation|finance atty|doctor of business administration/i;
@@ -1994,9 +1994,9 @@ console.log('Basin OS integrated playbook + Tavily/Groq radar loaded ✓');
 
 
 <script>
-/* Basin OS v3.8.19 — Named Contact Gate + Contactable Lead Workflow */
+/* Basin OS v3.8.21 — Persistent API Lock-On Fix + Required Daily Tasks */
 (function(){
-  var VERSION='v3.8.19 — Named Contact Gate + Contactable Lead Workflow';
+  var VERSION='v3.8.21 — Persistent API Lock-On Fix';
   function byId(id){return document.getElementById(id)}
   function escx(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
   function clean(v,n){v=String(v==null?'':v).replace(/<[^>]+>/g,' ').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').replace(/\s+/g,' ').trim(); return n?v.slice(0,n):v}
@@ -2025,5 +2025,705 @@ console.log('Basin OS integrated playbook + Tavily/Groq radar loaded ✓');
   window.basinPruneNonNamedContacts=function(){hardEnsure(); var keep=[],rej=[]; STORE.radarLeads.forEach(function(l){if(namedPerson(l))keep.push(l);else rej.push(Object.assign({},l,{reason:'No named point person / not a contact',ts:new Date().toLocaleString()}))}); STORE.radarLeads=keep.sort(sortQ); STORE.leadWorkflow=STORE.leadWorkflow.filter(function(w){return namedPerson(w)}); STORE.rejectedRadarLeads=STORE.rejectedRadarLeads.concat(rej).slice(-1000); saveNow(); refresh(); return {kept:keep.length,rejected:rej.length}}
   function init(){hardEnsure(); STORE.buildVersion=VERSION; window.basinPruneNonNamedContacts(); try{document.querySelectorAll('.sidebar-version,.version-footer').forEach(function(el){el.textContent='Basin OS '+VERSION})}catch(e){} status('Shared GitHub Radar ready · named contact person + contact route required before a signal becomes a lead.');}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init); else init();
+})();
+</script>
+
+
+<script>
+/* Basin OS v3.8.21 — Persistent API Lock-On Fix + Required Daily Tasks Patch */
+(function(){
+  var VERSION = 'v3.8.21 — Persistent API Lock-On Fix';
+
+  function byId(id){ return document.getElementById(id); }
+  function escX(v){
+    try {
+      if (typeof esc2 === 'function') return esc2(v);
+      if (typeof esc === 'function') return esc(v);
+    } catch(e){}
+    return String(v == null ? '' : v).replace(/[&<>"']/g,function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function nowStamp(){ return new Date().toLocaleString(); }
+  function hardEnsure(){
+    try { if (typeof ensureStore === 'function') ensureStore(); } catch(e){}
+    window.STORE = window.STORE || {};
+    STORE.radarLeads = Array.isArray(STORE.radarLeads) ? STORE.radarLeads : [];
+    STORE.leadWorkflow = Array.isArray(STORE.leadWorkflow) ? STORE.leadWorkflow : [];
+    STORE.activity = Array.isArray(STORE.activity) ? STORE.activity : [];
+    return STORE;
+  }
+  function saveHard(){
+    hardEnsure();
+    try { if (typeof save === 'function') save(); } catch(e){}
+    try { if (typeof flushSave === 'function') flushSave(true); } catch(e){}
+    try { localStorage.setItem('basin_os_integrated', JSON.stringify(STORE)); } catch(e){}
+  }
+  function scoreNum(x){ return Number(x && x.score || 0) || 0; }
+  function gradeVal(x){ return String(x && x.grade || 'C'); }
+  function sortWorkflow(list){
+    var g = {A:4,B:3,C:2,D:1};
+    return (list||[]).slice().sort(function(a,b){
+      return (g[gradeVal(b)]||0)-(g[gradeVal(a)]||0) || scoreNum(b)-scoreNum(a) || String(a.name||'').localeCompare(String(b.name||''));
+    });
+  }
+  function dayFromBucket(bucket){
+    var m = String(bucket||'day1').match(/^day(\d+)$/);
+    return m ? Math.max(1, Math.min(10, Number(m[1]))) : 0;
+  }
+  function leadKind(w){
+    var k = String(w.leadType || w.type || '').toLowerCase();
+    if (k.indexOf('aged') >= 0 || String(w.bucket||'').indexOf('aged') >= 0) return 'aged';
+    if (k.indexOf('incoming') >= 0 || k.indexOf('recent') >= 0) return 'incoming';
+    return 'basinos';
+  }
+
+  var DAILY_TASKS = {
+    1: [
+      'Review source/evidence trail and confirm why this person is a fit',
+      'Verify named contact, company/practice/firm, and usable contact method',
+      'Complete first outreach touch: email or LinkedIn connection/message',
+      'Log disposition and notes'
+    ],
+    2: [
+      'Attempt phone call during recommended call window if phone exists',
+      'Leave voicemail if no answer and phone contact is available',
+      'Send same-day follow-up email/LinkedIn note tied to Day 1 touch',
+      'Log disposition and notes'
+    ],
+    3: [
+      'Complete LinkedIn touch: view/connect/message or engage with relevant post',
+      'Verify whether the lead opened/replied/engaged with prior touches',
+      'Adjust next outreach angle based on any response or objection',
+      'Log disposition and notes'
+    ],
+    4: [
+      'Make second call attempt using a different angle/time window',
+      'If no phone exists, complete alternate channel touch using email/LinkedIn/website',
+      'Record objection, no-answer result, or engagement signal',
+      'Log disposition and notes'
+    ],
+    5: [
+      'Send value email using tax/IDC/direct-energy-ownership angle when appropriate',
+      'Personalize with source signal, role, and likely motivation',
+      'Check contact quality and update missing contact notes if needed',
+      'Log disposition and notes'
+    ],
+    6: [
+      'Make final major live-call attempt or strongest available direct-contact attempt',
+      'If reached, qualify interest and ask for director call',
+      'If not reached, send short follow-up through best available channel',
+      'Log disposition and notes'
+    ],
+    7: [
+      'Send Loom/video or highly personalized written note for higher-value leads',
+      'Reference the exact signal and why Basin may be relevant now',
+      'Confirm no compliance language issues before sending',
+      'Log disposition and notes'
+    ],
+    8: [
+      'Complete light follow-up touch through best available channel',
+      'Review prior touches and avoid repeating the same message',
+      'Check whether callback/future/nurture is more appropriate',
+      'Log disposition and notes'
+    ],
+    9: [
+      'Final verification: contact route, fit, and any engagement history',
+      'Make final short touch if still viable',
+      'Decide whether this should continue, pause, or be closed',
+      'Log disposition and notes'
+    ],
+    10: [
+      'Send close-loop / breakup message or final nurture decision',
+      'Choose final route: long-term future, callback, not interested, DNC/client, or opportunity',
+      'Document final reason and next review timing if applicable',
+      'Log disposition and notes'
+    ]
+  };
+
+  var DISPOSITIONS = [
+    ['','Select disposition...'],
+    ['no_response','No Response'],
+    ['engaged','Opened / Engaged'],
+    ['interested','Replied Interested'],
+    ['callback_requested','Callback Requested'],
+    ['long_term_future','Long-Term Future'],
+    ['not_interested','Not Interested'],
+    ['bad_contact','Bad Contact Info'],
+    ['needs_research','Needs More Research'],
+    ['dnc_existing_client','DNC / Existing Client'],
+    ['booked_opportunity','Booked / Opportunity']
+  ];
+
+  function dayTitle(day, kind){
+    var prefix = kind === 'aged' ? 'Aged Lead' : (kind === 'incoming' ? 'New Incoming Lead' : 'Basin OS Lead');
+    var names = {
+      1:'Verify + First Touch',
+      2:'Call Attempt + Follow-Up',
+      3:'LinkedIn / Secondary Channel',
+      4:'Second Call Angle',
+      5:'Value Email / Tax Angle',
+      6:'Final Major Call Push',
+      7:'Loom / Personalized Note',
+      8:'Light Follow-Up',
+      9:'Final Review',
+      10:'Breakup / Nurture Decision'
+    };
+    return prefix + ' · Day ' + day + ' — ' + (names[day] || 'Cadence Step');
+  }
+
+  function ensureProgress(w){
+    if (!w.progress || typeof w.progress !== 'object') w.progress = {};
+    var day = dayFromBucket(w.bucket) || Number(w.day||1) || 1;
+    if (!w.progress[day]) w.progress[day] = { tasks:{}, disposition:'', notes:'', completedAt:'' };
+    return w.progress[day];
+  }
+
+  function taskCompletion(w, day){
+    var p = ensureProgress(w);
+    var tasks = DAILY_TASKS[day] || [];
+    var done = tasks.filter(function(_,i){ return !!p.tasks[i]; }).length;
+    return {done:done,total:tasks.length,complete:tasks.length && done === tasks.length};
+  }
+
+  function routeForDisposition(dispo, day){
+    if (dispo === 'callback_requested') return 'callback';
+    if (dispo === 'long_term_future') return 'future';
+    if (dispo === 'not_interested') return 'notinterested';
+    if (dispo === 'bad_contact' || dispo === 'needs_research') return 'needsresearch';
+    if (dispo === 'dnc_existing_client') return 'dncclient';
+    if (dispo === 'booked_opportunity' || dispo === 'interested') return 'opportunity';
+    if (day >= 10) return 'future';
+    return 'day' + (day + 1);
+  }
+
+  function nextActionForBucket(bucket, kind){
+    var day = dayFromBucket(bucket);
+    if (!day) {
+      if (bucket === 'callback') return 'Callback bucket: schedule/complete callback, then disposition.';
+      if (bucket === 'future') return 'Long-term future: set quarterly or future review note.';
+      if (bucket === 'opportunity') return 'Opportunity: create/update Investor Pipeline and Director Handoff.';
+      if (bucket === 'needsresearch') return 'Needs research: fix contact quality or qualification gap before reactivating.';
+      if (bucket === 'dncclient') return 'Do not contact. Existing client/DNC record.';
+      return 'Review status and disposition.';
+    }
+    var tasks = DAILY_TASKS[day] || [];
+    return dayTitle(day, kind) + ': ' + (tasks[0] || 'Complete required cadence work.');
+  }
+
+  function statusTag(w){
+    var day = dayFromBucket(w.bucket);
+    if (!day) return '<span class="tag gray">'+escX(String(w.bucket||'other').toUpperCase())+'</span>';
+    var c = taskCompletion(w, day);
+    var color = c.complete ? 'green' : 'gold';
+    return '<span class="tag '+color+'">Day '+day+' · '+c.done+'/'+c.total+' tasks</span>';
+  }
+
+  function contactTags(w){
+    var methods = Array.isArray(w.contactMethods) ? w.contactMethods : [];
+    if (!methods.length) return '<span class="tag gray">Contact Route</span>';
+    return methods.slice(0,5).map(function(m){
+      var label = typeof m === 'string' ? m : (m.type || m.label || 'Contact');
+      return '<span class="tag blue">'+escX(label)+'</span>';
+    }).join('');
+  }
+
+  function dispositionOptions(selected){
+    return DISPOSITIONS.map(function(d){
+      return '<option value="'+escX(d[0])+'" '+(selected===d[0]?'selected':'')+'>'+escX(d[1])+'</option>';
+    }).join('');
+  }
+
+  function findWorkflow(id){
+    hardEnsure();
+    return (STORE.leadWorkflow||[]).find(function(w){ return String(w.id) === String(id); });
+  }
+
+  window.basinToggleLeadTask = function(id, idx, checked){
+    var w = findWorkflow(id); if (!w) return;
+    var p = ensureProgress(w);
+    p.tasks[String(idx)] = !!checked;
+    w.updatedAt = nowStamp();
+    saveHard();
+    try { renderLeadsWorkflowPage(); } catch(e){}
+  };
+
+  window.basinSetLeadDisposition = function(id, val){
+    var w = findWorkflow(id); if (!w) return;
+    var p = ensureProgress(w);
+    p.disposition = val || '';
+    w.disposition = p.disposition;
+    w.updatedAt = nowStamp();
+    saveHard();
+    try { renderLeadsWorkflowPage(); } catch(e){}
+  };
+
+  window.basinSetLeadDayNotes = function(id, val){
+    var w = findWorkflow(id); if (!w) return;
+    var p = ensureProgress(w);
+    p.notes = String(val || '').trim();
+    w.notes = p.notes;
+    w.updatedAt = nowStamp();
+    saveHard();
+  };
+
+  window.basinCompleteLeadDay = function(id){
+    var w = findWorkflow(id); if (!w) return;
+    var day = dayFromBucket(w.bucket) || Number(w.day || 1) || 1;
+    var p = ensureProgress(w);
+    var c = taskCompletion(w, day);
+
+    if (!c.complete) {
+      alert('Complete all required Day '+day+' tasks before moving this lead forward.');
+      return;
+    }
+    if (!p.disposition) {
+      alert('Select a disposition before moving this lead forward.');
+      return;
+    }
+    if (!String(p.notes || '').trim() || String(p.notes || '').trim().length < 8) {
+      alert('Add a real note before moving this lead forward. Do not move leads without context.');
+      return;
+    }
+
+    var oldBucket = w.bucket || 'day1';
+    var newBucket = routeForDisposition(p.disposition, day);
+    p.completedAt = nowStamp();
+
+    w.history = Array.isArray(w.history) ? w.history : [];
+    w.history.unshift({
+      day: day,
+      bucket: oldBucket,
+      disposition: p.disposition,
+      notes: p.notes,
+      completedAt: p.completedAt,
+      tasksCompleted: c.done + '/' + c.total
+    });
+
+    w.bucket = newBucket;
+    w.day = dayFromBucket(newBucket) || day;
+    w.lastCompleted = 'Day '+day+' completed · '+p.disposition+' · '+p.completedAt;
+    w.status = newBucket === 'opportunity' ? 'Opportunity' :
+               newBucket === 'callback' ? 'Callback' :
+               newBucket === 'future' ? 'Long-Term Future' :
+               newBucket === 'notinterested' ? 'Not Interested' :
+               newBucket === 'dncclient' ? 'DNC / Client' :
+               newBucket === 'needsresearch' ? 'Needs Research' : 'Open';
+    w.nextAction = nextActionForBucket(newBucket, leadKind(w));
+    w.updatedAt = nowStamp();
+
+    if (newBucket === 'opportunity' && typeof makeInvestorFromWorkflow === 'function') {
+      try { makeInvestorFromWorkflow(w.id); } catch(e){}
+    }
+
+    saveHard();
+    try { if (typeof toast === 'function') toast('Lead moved to '+newBucket); } catch(e){}
+    try { renderLeadsWorkflowPage(); } catch(e){}
+    try { if (typeof updateCounts === 'function') updateCounts(); } catch(e){}
+  };
+
+  var oldSetLeadWorkflowBucket = window.setLeadWorkflowBucket;
+  window.setLeadWorkflowBucket = function(id, bucket){
+    var w = findWorkflow(id);
+    if (w) {
+      w.bucket = bucket;
+      w.day = dayFromBucket(bucket) || w.day || 1;
+      w.status = bucket === 'callback' ? 'Callback' :
+                 bucket === 'future' ? 'Long-Term Future' :
+                 bucket === 'notinterested' ? 'Not Interested' :
+                 bucket === 'dncclient' ? 'DNC / Client' :
+                 bucket === 'opportunity' ? 'Opportunity' :
+                 bucket === 'needsresearch' ? 'Needs Research' : 'Open';
+      w.nextAction = nextActionForBucket(bucket, leadKind(w));
+      w.updatedAt = nowStamp();
+      saveHard();
+      try { renderLeadsWorkflowPage(); } catch(e){}
+      return;
+    }
+    if (typeof oldSetLeadWorkflowBucket === 'function') return oldSetLeadWorkflowBucket(id,bucket);
+  };
+
+  window.renderLeadsWorkflowPage = function(){
+    hardEnsure();
+    var root = byId('leads-workflow-root');
+    if (!root) return;
+
+    var active = (STORE.leadWorkflow||[]).filter(function(w){ return /^day\d+$/.test(w.bucket||'day1'); }).length;
+    var needs = (STORE.leadWorkflow||[]).filter(function(w){ return (w.bucket||'') === 'needsresearch'; }).length;
+
+    var buckets = [];
+    for (var i=1;i<=10;i++) buckets.push(['day'+i,'Day '+i]);
+    buckets.push(
+      ['callback','Callbacks'],
+      ['future','Long-Term Future'],
+      ['opportunity','Booked / Opportunity'],
+      ['needsresearch','Needs Research / Bad Contact'],
+      ['notinterested','Not Interested'],
+      ['dncclient','DNC / Existing Client']
+    );
+
+    var html = ''
+      + '<div class="info gold"><strong>Required Daily Execution:</strong> A lead cannot move forward until every required task for its current day is checked, a disposition is selected, and a real note is logged. This keeps the 7-channel cadence from turning into random button-clicking.</div>'
+      + '<div class="grid3" style="margin-bottom:14px">'
+      + '<div class="stat"><div class="stat-val">'+(STORE.leadWorkflow||[]).length+'</div><div class="stat-lbl">Total Leads</div></div>'
+      + '<div class="stat"><div class="stat-val">'+active+'</div><div class="stat-lbl">Active Day 1–10</div></div>'
+      + '<div class="stat"><div class="stat-val">'+needs+'</div><div class="stat-lbl">Needs Research</div></div>'
+      + '</div>';
+
+    buckets.forEach(function(b){
+      var list = sortWorkflow((STORE.leadWorkflow||[]).filter(function(w){ return (w.bucket||'day1') === b[0]; }));
+      html += '<div class="panel"><div class="panel-hd"><div><div class="panel-title">'+escX(b[1])+'</div><div class="panel-sub">'+list.length+' leads · sorted by grade and score</div></div></div><div class="panel-bd">';
+      if (!list.length) {
+        html += '<div class="empty" style="padding:24px"><div class="empty-title">No leads in '+escX(b[1])+'</div></div>';
+      } else {
+        html += list.map(function(w){ return workflowCard(w); }).join('');
+      }
+      html += '</div></div>';
+    });
+
+    root.innerHTML = html;
+  };
+
+  function workflowCard(w){
+    var day = dayFromBucket(w.bucket) || Number(w.day || 1) || 1;
+    var kind = leadKind(w);
+    var p = ensureProgress(w);
+    var tasks = DAILY_TASKS[day] || [];
+    var isDayBucket = /^day\d+$/.test(w.bucket||'day1');
+    var completed = taskCompletion(w, day);
+    var locked = isDayBucket && !(completed.complete && p.disposition && String(p.notes||'').trim().length >= 8);
+    var score = w.score || '';
+    var grade = w.grade || 'C';
+    var history = Array.isArray(w.history) && w.history.length
+      ? '<details style="margin-top:9px"><summary class="mini-note">History · '+w.history.length+' completed step(s)</summary><div class="mini-note" style="margin-top:6px;line-height:1.6">'+w.history.slice(0,5).map(function(h){return escX('Day '+h.day+' · '+h.disposition+' · '+h.completedAt+' · '+h.notes);}).join('<br>')+'</div></details>'
+      : '';
+
+    var taskHtml = '';
+    if (isDayBucket) {
+      taskHtml = '<div class="info teal" style="margin-top:10px;margin-bottom:8px"><strong>'+escX(dayTitle(day,kind))+':</strong><br>'+escX(w.nextAction || nextActionForBucket(w.bucket,kind))+'</div>'
+        + '<div class="stack" style="gap:6px;margin-top:8px">'
+        + tasks.map(function(t,i){
+          var checked = p.tasks && p.tasks[String(i)] ? 'checked' : '';
+          return '<label style="display:flex;gap:8px;align-items:flex-start;font-size:12px;color:var(--text2);line-height:1.45">'
+            + '<input type="checkbox" '+checked+' onchange="basinToggleLeadTask(\''+escX(w.id)+'\','+i+',this.checked)">'
+            + '<span>'+escX(t)+'</span></label>';
+        }).join('')
+        + '</div>'
+        + '<div class="row2" style="margin-top:10px">'
+        + '<div><label class="label">Required Disposition</label><select class="select" onchange="basinSetLeadDisposition(\''+escX(w.id)+'\',this.value)">'+dispositionOptions(p.disposition||'')+'</select></div>'
+        + '<div><label class="label">Completion Status</label><div class="info '+(locked?'red':'teal')+'" style="margin:0;padding:9px 10px">'+(locked?'Locked: finish tasks, disposition, and note.':'Unlocked: ready to move forward.')+'</div></div>'
+        + '</div>'
+        + '<div style="margin-top:10px"><label class="label">Required Note</label><textarea class="textarea" style="min-height:58px" placeholder="What happened today? Who/what was contacted? Outcome? Next reason?" onblur="basinSetLeadDayNotes(\''+escX(w.id)+'\',this.value)">'+escX(p.notes||w.notes||'')+'</textarea></div>';
+    } else {
+      taskHtml = '<div class="info teal" style="margin-top:10px;margin-bottom:8px"><strong>Bucket Status:</strong> '+escX(w.nextAction || nextActionForBucket(w.bucket,kind))+'</div>';
+    }
+
+    return '<div class="record" style="grid-template-columns:50px 1fr;align-items:start;margin-bottom:10px">'
+      + '<div class="score '+escX(grade)+'">'+escX(grade)+'</div>'
+      + '<div>'
+      + '<div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start">'
+      + '<div><div class="rec-name">'+escX(w.name||'Unnamed Lead')+'</div><div class="rec-meta">'+escX(w.company||w.title||'')+' · Score '+escX(score)+' · '+escX(w.status||'Open')+'</div></div>'
+      + '<div class="rec-actions" style="flex-wrap:wrap;justify-content:flex-end">'
+      + (isDayBucket ? '<button class="btn btn-primary btn-sm" onclick="basinCompleteLeadDay(\''+escX(w.id)+'\')">'+(locked?'Locked':'Complete / Next Step')+'</button>' : '')
+      + '<button class="btn btn-ghost btn-sm" onclick="setLeadWorkflowBucket(\''+escX(w.id)+'\',\'callback\')">Callback</button>'
+      + '<button class="btn btn-ghost btn-sm" onclick="setLeadWorkflowBucket(\''+escX(w.id)+'\',\'future\')">Future</button>'
+      + '<button class="btn btn-ghost btn-sm" onclick="setLeadWorkflowBucket(\''+escX(w.id)+'\',\'needsresearch\')">Research</button>'
+      + '<button class="btn btn-danger btn-sm" onclick="setLeadWorkflowBucket(\''+escX(w.id)+'\',\'notinterested\')">Not Interested</button>'
+      + (typeof makeInvestorFromWorkflow === 'function' ? '<button class="btn btn-ghost btn-sm" onclick="makeInvestorFromWorkflow(\''+escX(w.id)+'\')">Pipeline</button>' : '')
+      + '</div></div>'
+      + '<div class="rec-tags" style="margin-top:8px">'+statusTag(w)+contactTags(w)+'<span class="tag gray">'+escX(leadKind(w).toUpperCase())+'</span></div>'
+      + taskHtml
+      + history
+      + '</div></div>';
+  }
+
+  var oldEnsureWorkflowForLead = window.ensureWorkflowForLead;
+  window.ensureWorkflowForLead = function(l){
+    var w = null;
+    if (typeof oldEnsureWorkflowForLead === 'function') {
+      try { w = oldEnsureWorkflowForLead(l); } catch(e){}
+    }
+    if (!w) {
+      hardEnsure();
+      var key = String((l && (l.id || l.url || l.name)) || ('lead-'+Date.now())).toLowerCase();
+      w = (STORE.leadWorkflow||[]).find(function(x){ return x.key === key || x.leadId === l.id; });
+      if (!w) {
+        w = {
+          id:'wf-'+Date.now()+'-'+Math.random().toString(16).slice(2),
+          key:key,
+          leadId:l.id,
+          name:l.name,
+          company:l.company,
+          title:l.title,
+          score:l.score,
+          grade:l.grade,
+          contactMethods:l.contactMethods || [],
+          qualificationStatus:l.qualificationStatus || 'Potential',
+          leadType:l.leadType || 'basinos',
+          bucket:'day1',
+          day:1,
+          status:'Open',
+          nextAction:nextActionForBucket('day1','basinos'),
+          progress:{},
+          history:[],
+          createdAt:nowStamp(),
+          updatedAt:nowStamp(),
+          url:l.url || '',
+          notes:''
+        };
+        STORE.leadWorkflow.unshift(w);
+      }
+    }
+    w.progress = w.progress || {};
+    w.history = Array.isArray(w.history) ? w.history : [];
+    if (!w.nextAction) w.nextAction = nextActionForBucket(w.bucket || 'day1', leadKind(w));
+    if (!Array.isArray(w.contactMethods) && l && Array.isArray(l.contactMethods)) w.contactMethods = l.contactMethods;
+    return w;
+  };
+
+  function patchVersionText(){
+    var txt = 'Basin OS '+VERSION;
+    try {
+      Array.from(document.querySelectorAll('.side-status,.tagline,.mini-note')).forEach(function(el){
+        if (/Basin OS v3\.8\./.test(el.textContent||'')) el.textContent = txt;
+      });
+    } catch(e){}
+  }
+
+  var oldGoPage = window.goPage;
+  if (typeof oldGoPage === 'function') {
+    window.goPage = function(page, el){
+      var r = oldGoPage.apply(this, arguments);
+      if (page === 'leads') setTimeout(function(){ try { renderLeadsWorkflowPage(); } catch(e){} }, 50);
+      return r;
+    };
+  }
+
+  setTimeout(function(){
+    hardEnsure();
+    (STORE.leadWorkflow||[]).forEach(function(w){
+      w.progress = w.progress || {};
+      w.history = Array.isArray(w.history) ? w.history : [];
+      if (!w.nextAction) w.nextAction = nextActionForBucket(w.bucket || 'day1', leadKind(w));
+    });
+    saveHard();
+    patchVersionText();
+    if (byId('page-leads') && byId('page-leads').classList.contains('active')) {
+      try { renderLeadsWorkflowPage(); } catch(e){}
+    }
+  }, 700);
+
+  console.log('Basin OS '+VERSION+' loaded');
+})();
+</script>
+
+
+<script>
+/* Basin OS v3.8.21 — Persistent API Lock-On Fix
+   Purpose: Saved API keys stay visually and functionally ON after browser refresh.
+   Tavily on GitHub Pages is treated as GitHub Actions/shared-radar ready, not browser-test OFF.
+*/
+(function(){
+  var VERSION = 'v3.8.21 — Persistent API Lock-On Fix';
+
+  function safeParse(v, fallback){
+    try { return JSON.parse(v); } catch(e){ return fallback; }
+  }
+  function getSavedApiPack(){
+    var keys = ['BV_API_KEYS','basin_api_keys','basinApiKeys','BV_KEYS','apiKeys'];
+    var out = {};
+    keys.forEach(function(k){
+      var o = safeParse(localStorage.getItem(k), null);
+      if (o && typeof o === 'object') Object.assign(out, o);
+    });
+
+    // Pull from visible fields too, even if app used a different storage name.
+    var tav = document.querySelector('#tavilyKey, #apiTavilyKey, input[name="tavilyKey"], input[placeholder*="Tavily" i]');
+    var groq = document.querySelector('#groqKey, #apiGroqKey, input[name="groqKey"], input[placeholder*="Groq" i]');
+    var model = document.querySelector('#groqModel, #apiGroqModel, select[name="groqModel"]');
+
+    out.tavily = out.tavily || out.tavilyKey || out.TAVILY_API_KEY || (tav && tav.value) || '';
+    out.groq = out.groq || out.groqKey || out.GROQ_API_KEY || (groq && groq.value) || '';
+    out.groqModel = out.groqModel || out.model || out.GROQ_MODEL || (model && model.value) || 'llama-3.3-70b-versatile';
+
+    return {
+      tavily: String(out.tavily || '').trim(),
+      groq: String(out.groq || '').trim(),
+      groqModel: String(out.groqModel || 'llama-3.3-70b-versatile').trim()
+    };
+  }
+  function persistApiPack(pack){
+    pack = pack || getSavedApiPack();
+    var payload = {
+      tavily: pack.tavily || '',
+      tavilyKey: pack.tavily || '',
+      TAVILY_API_KEY: pack.tavily || '',
+      groq: pack.groq || '',
+      groqKey: pack.groq || '',
+      GROQ_API_KEY: pack.groq || '',
+      groqModel: pack.groqModel || 'llama-3.3-70b-versatile',
+      model: pack.groqModel || 'llama-3.3-70b-versatile',
+      savedAt: new Date().toISOString(),
+      persistentReady: true
+    };
+    ['BV_API_KEYS','basin_api_keys','basinApiKeys'].forEach(function(k){
+      try { localStorage.setItem(k, JSON.stringify(payload)); } catch(e){}
+    });
+    try { localStorage.setItem('BV_API_READY_LOCK', JSON.stringify({
+      tavilyReady: !!payload.tavily,
+      groqReady: !!payload.groq,
+      mode: 'github-pages-shared-radar',
+      savedAt: payload.savedAt
+    })); } catch(e){}
+    return payload;
+  }
+  function fillApiFields(pack){
+    pack = pack || getSavedApiPack();
+    var candidates = [
+      ['#tavilyKey', pack.tavily],
+      ['#apiTavilyKey', pack.tavily],
+      ['input[name="tavilyKey"]', pack.tavily],
+      ['#groqKey', pack.groq],
+      ['#apiGroqKey', pack.groq],
+      ['input[name="groqKey"]', pack.groq]
+    ];
+    candidates.forEach(function(pair){
+      try {
+        document.querySelectorAll(pair[0]).forEach(function(el){
+          if (pair[1] && !el.value) el.value = pair[1];
+        });
+      } catch(e){}
+    });
+    try {
+      document.querySelectorAll('#groqModel,#apiGroqModel,select[name="groqModel"]').forEach(function(el){
+        if (pack.groqModel) el.value = pack.groqModel;
+      });
+    } catch(e){}
+  }
+  function hardSetApiObject(pack){
+    pack = pack || getSavedApiPack();
+    window.BV_API = window.BV_API || {};
+    BV_API.tavilyKey = pack.tavily || BV_API.tavilyKey || '';
+    BV_API.groqKey = pack.groq || BV_API.groqKey || '';
+    BV_API.groqModel = pack.groqModel || BV_API.groqModel || 'llama-3.3-70b-versatile';
+
+    // Do not let CORS browser-test failure turn Tavily off on GitHub Pages.
+    BV_API.tavilyLive = !!BV_API.tavilyKey;
+    BV_API.tavilySaved = !!BV_API.tavilyKey;
+    BV_API.tavilyMode = BV_API.tavilyKey ? 'github-actions/shared-radar' : 'missing';
+
+    // Groq should stay ready when key is saved. Live calls can still fail individually,
+    // but UI should not reset OFF on refresh.
+    BV_API.groqLive = !!BV_API.groqKey;
+    BV_API.groqSaved = !!BV_API.groqKey;
+    BV_API.ready = !!(BV_API.tavilyKey || BV_API.groqKey);
+    return BV_API;
+  }
+  function paintApiStatus(){
+    var pack = getSavedApiPack();
+    hardSetApiObject(pack);
+    var t = !!pack.tavily, g = !!pack.groq;
+    var label = t && g ? 'T+G' : (t ? 'T' : (g ? 'G' : 'OFF'));
+    var full = t && g ? 'Tavily GitHub Mode + Groq Ready' : (t ? 'Tavily GitHub Mode' : (g ? 'Groq Ready' : 'OFF'));
+
+    try {
+      document.querySelectorAll('.nav-item,.side-box,.badge,.side-status,.api-status,[data-api-status]').forEach(function(el){
+        var txt = (el.textContent || '').trim();
+        if (txt === 'OFF' || txt === 'T+G' || txt === 'T' || txt === 'G') {
+          el.textContent = label;
+        }
+      });
+    } catch(e){}
+
+    // Specific API center nav badge if present.
+    try {
+      document.querySelectorAll('[data-page="api"] .badge, [onclick*="api"] .badge').forEach(function(el){
+        el.textContent = label;
+        el.style.color = t || g ? '#1db8a0' : '';
+      });
+    } catch(e){}
+
+    // Replace common status text without breaking layout.
+    try {
+      document.querySelectorAll('.side-status,.api-status,[data-api-status]').forEach(function(el){
+        if (/api|tavily|groq|off|ready|connected/i.test(el.textContent || '')) {
+          if ((el.textContent || '').length < 160) el.textContent = full;
+        }
+      });
+    } catch(e){}
+  }
+
+  function lockApisOn(){
+    var pack = getSavedApiPack();
+    if (pack.tavily || pack.groq) {
+      persistApiPack(pack);
+      fillApiFields(pack);
+      hardSetApiObject(pack);
+      paintApiStatus();
+    }
+  }
+
+  // Patch save buttons so blank fields do not wipe stored keys.
+  function patchSaveButtons(){
+    try {
+      document.querySelectorAll('button').forEach(function(btn){
+        var txt = (btn.textContent || '').toLowerCase();
+        if (txt.indexOf('save keys') >= 0 || txt.indexOf('connect') >= 0 || txt.indexOf('test api') >= 0) {
+          if (btn.dataset.apiLockPatch) return;
+          btn.dataset.apiLockPatch = '1';
+          btn.addEventListener('click', function(){
+            setTimeout(function(){
+              var before = getSavedApiPack();
+              var visibleT = document.querySelector('#tavilyKey, #apiTavilyKey, input[name="tavilyKey"], input[placeholder*="Tavily" i]');
+              var visibleG = document.querySelector('#groqKey, #apiGroqKey, input[name="groqKey"], input[placeholder*="Groq" i]');
+              before.tavily = (visibleT && visibleT.value.trim()) || before.tavily;
+              before.groq = (visibleG && visibleG.value.trim()) || before.groq;
+              persistApiPack(before);
+              hardSetApiObject(before);
+              paintApiStatus();
+            }, 300);
+            setTimeout(lockApisOn, 1200);
+          }, true);
+        }
+      });
+    } catch(e){}
+  }
+
+  // Override common API status/test functions after original app loads.
+  function patchKnownFunctions(){
+    var names = ['refreshAPIStatus','updateAPIStatus','renderAPIStatus','testAPIs','checkAPIs','apiStatus'];
+    names.forEach(function(name){
+      try {
+        var old = window[name];
+        if (typeof old === 'function' && !old.__apiLockPatched) {
+          var wrapped = function(){
+            var result;
+            try { result = old.apply(this, arguments); } catch(e){ result = undefined; }
+            setTimeout(lockApisOn, 50);
+            return result;
+          };
+          wrapped.__apiLockPatched = true;
+          window[name] = wrapped;
+        }
+      } catch(e){}
+    });
+  }
+
+  // Run repeatedly because the app may render API Center/sidebar after our script runs.
+  [50, 250, 750, 1500, 3000].forEach(function(ms){
+    setTimeout(function(){
+      patchKnownFunctions();
+      patchSaveButtons();
+      lockApisOn();
+    }, ms);
+  });
+  setInterval(function(){
+    patchKnownFunctions();
+    patchSaveButtons();
+    lockApisOn();
+  }, 5000);
+
+  window.basinForceApiReady = lockApisOn;
+  console.log('Basin OS '+VERSION+' loaded: persistent API lock-on active');
 })();
 </script>
