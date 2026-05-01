@@ -36,7 +36,11 @@ jobs:
           GROQ_MODEL: llama-3.3-70b-versatile
           RADAR_GEO: nationwide USA
           RADAR_MAX_RESULTS: "5"
-          RADAR_MAX_QUERIES: "18"
+          RADAR_MAX_QUERIES: "24"
+          RADAR_TEXAS_FIRST: "true"
+          RADAR_REQUIRE_NAMED_CONTACT: "true"
+          RADAR_REQUIRE_CONTACT_ROUTE: "true"
+          RADAR_WRITE_REJECTED: "true"
         run: node basin-radar-runner.js
 
       - name: Commit updated radar data
