@@ -2,9 +2,9 @@
 'use strict';
 
 /**
- * Basin OS Scheduled Radar Runner — Tavily + Groq Contact-Enriched Build
+ * Basin OS Scheduled Radar Runner — Tavily + Groq Named-Contact Gate Build
  * Writes only actionable leads to radar-leads.json:
- * clear identity + USA-based + likely investor/referral ICP + at least one usable contact route.
+ * named contact person + USA-based + likely investor/referral ICP + at least one usable contact route.
  * Non-actionable signals are written to radar-rejected.json for audit, not loaded into the pipeline.
  */
 
@@ -19,6 +19,7 @@ const MAX_QUERIES = clamp(Number(process.env.RADAR_MAX_QUERIES || 18), 3, 60);
 const MAX_RESULTS = clamp(Number(process.env.RADAR_MAX_RESULTS || 5), 1, 10);
 const MAX_ENRICH = clamp(Number(process.env.RADAR_MAX_ENRICH || 40), 5, 100);
 const MAX_GROQ = clamp(Number(process.env.RADAR_MAX_GROQ || 8), 0, 25);
+const MAX_RECHECK = clamp(Number(process.env.RADAR_MAX_RECHECK || 40), 0, 150);
 const YEAR_TAIL = (process.env.RADAR_YEAR_TAIL || '2025 OR 2026').trim();
 
 const OUT = path.join(process.cwd(), 'radar-leads.json');
@@ -44,26 +45,52 @@ async function tavilySearch(query, max=5, topic='general'){
 }
 
 function radarQueries(){
-  const tail = ` ${GEO} ${YEAR_TAIL}`;
   const q=[];
-  function add(source, query, type){ q.push({source, q:query, type}); }
-  add('physician', `site:linkedin.com/in physician surgeon orthopedic gastroenterology practice owner United States`, 'Physician');
-  add('physician', `"opened" OR "launched" "medical practice" physician surgeon orthopedic ${tail}`, 'Physician');
-  add('physician', `"physician" "practice owner" "email" OR "contact" ${GEO}`, 'Physician');
-  add('business-owner', `site:linkedin.com/in founder CEO owner entrepreneur acquired sold company United States`, 'Business Owner');
-  add('business-owner', `"acquired" OR "sold" OR "expands" founder CEO owner business ${tail}`, 'Business Owner');
-  add('law', `site:linkedin.com/in attorney partner law firm estate planning United States`, 'Law Partner');
-  add('law', `"named partner" OR "promoted to partner" "law firm" ${tail}`, 'Law Partner');
-  add('cpa-referral', `site:linkedin.com/in CPA tax advisor high income business owners physicians United States`, 'CPA / Referral Partner');
-  add('cpa-referral', `"oil and gas" CPA tax planning IDC depletion ${GEO}`, 'CPA / Referral Partner');
-  add('energy', `site:linkedin.com/in oil gas energy executive mineral owner royalty owner United States`, 'Energy Executive');
-  add('energy', `"oil and gas" executive founder president mineral royalty ${tail}`, 'Energy Executive');
-  add('real-estate', `site:linkedin.com/in real estate developer founder owner accredited investor United States`, 'Real Estate Developer');
-  add('events', `conference speaker physician founder attorney CPA investor ${GEO}`, 'Speaker Signal');
-  add('podcasts', `podcast interview founder physician attorney business owner energy executive ${GEO}`, 'Media Signal');
+  function add(source, query, type, priority='Nationwide Qualified'){
+    q.push({source, q:query, type, priority});
+  }
+  const texas = 'Texas OR Dallas OR Fort Worth OR DFW OR Houston OR Austin OR San Antonio OR Midland OR Odessa';
+  const energyStates = 'Texas OR Oklahoma OR Colorado OR New Mexico OR Louisiana OR North Dakota OR Wyoming';
+  const usa = 'United States OR USA';
+  const years = YEAR_TAIL;
+  add('texas-physician', `(${texas}) physician OR surgeon OR orthopedic OR gastroenterology "practice owner" email contact ${years}`, 'Physician / Medical Practice', 'Texas Priority');
+  add('texas-business-owner', `(${texas}) founder OR CEO OR owner acquired sold company expansion email contact ${years}`, 'Business Owner / Executive', 'Texas Priority');
+  add('texas-law-partner', `(${texas}) attorney partner law firm estate planning named partner promoted contact email ${years}`, 'Attorney / Law Partner', 'Texas Priority');
+  add('texas-cpa-tax', `(${texas}) CPA OR tax advisor physicians business owners oil gas IDC depletion contact email`, 'CPA / Referral Partner', 'Texas Priority');
+  add('texas-energy', `(${texas}) oil gas energy executive operator mineral royalty owner president founder contact email ${years}`, 'Energy Executive / Mineral Owner', 'Texas Priority');
+  add('texas-real-estate', `(${texas}) real estate developer owner commercial property founder contact email ${years}`, 'Real Estate Developer', 'Texas Priority');
+  add('texas-events', `(${texas}) conference speaker chamber board physician attorney CPA founder business owner`, 'Speaker / Association Signal', 'Texas Priority');
+  add('energy-state-exec', `(${energyStates}) oil gas operator mineral royalty executive president founder contact email ${years}`, 'Energy Executive / Mineral Owner', 'Energy State Priority');
+  add('energy-state-cpa', `(${energyStates}) CPA tax planning IDC depletion oil gas high income contact email`, 'CPA / Referral Partner', 'Energy State Priority');
+  add('energy-state-owner', `(${energyStates}) business owner founder CEO acquired sold expands contact email ${years}`, 'Business Owner / Executive', 'Energy State Priority');
+  add('national-linkedin-physician', `site:linkedin.com/in physician surgeon orthopedic gastroenterology practice owner ${usa}`, 'Physician / Medical Practice', 'Nationwide Qualified');
+  add('national-linkedin-owner', `site:linkedin.com/in founder CEO owner entrepreneur acquired sold company ${usa}`, 'Business Owner / Executive', 'Nationwide Qualified');
+  add('national-linkedin-attorney', `site:linkedin.com/in attorney partner law firm estate planning ${usa}`, 'Attorney / Law Partner', 'Nationwide Qualified');
+  add('national-linkedin-cpa', `site:linkedin.com/in CPA tax advisor high income physicians business owners oil gas ${usa}`, 'CPA / Referral Partner', 'Nationwide Qualified');
+  add('national-linkedin-energy', `site:linkedin.com/in oil gas energy executive mineral royalty owner operator ${usa}`, 'Energy Executive / Mineral Owner', 'Nationwide Qualified');
+  add('national-news-liquidity', `"acquired" OR "sold" OR "liquidity event" founder CEO owner company ${usa} ${years}`, 'Liquidity Event / Business Owner', 'Nationwide Qualified');
+  add('national-inc5000', `Inc 5000 founder owner CEO contact email ${usa}`, 'Growth Company Owner', 'Nationwide Qualified');
+  add('national-podcast', `podcast interview founder physician attorney CPA business owner energy executive ${usa}`, 'Media Signal', 'Nationwide Qualified');
+  add('national-events', `conference speaker physician founder attorney CPA investor business owner ${usa}`, 'Speaker Signal', 'Nationwide Qualified');
+  add('sec-formd-energy', `site:sec.gov/Archives/edgar/data "Form D" "oil and gas" OR energy "United States"`, 'Form D / Private Placement Signal', 'Nationwide Qualified');
   return q.slice(0, MAX_QUERIES);
 }
 
+function loadRejectedForRecheck(){
+  try{
+    if(!fs.existsSync(REJECT_OUT)) return [];
+    const data=JSON.parse(fs.readFileSync(REJECT_OUT,'utf8'));
+    const arr=Array.isArray(data) ? data : (data.rejected || []);
+    return arr.filter(x=>x && (String(x.reason||'').toLowerCase().includes('contact') || String((x.missingQualificationFields||[]).join(' ')).toLowerCase().includes('contact'))).slice(0,MAX_RECHECK);
+  }catch(e){ return []; }
+}
+
+function recheckQueriesFromRejected(){
+  return loadRejectedForRecheck().map((r,i)=>{
+    const identity=[r.name,r.company,r.title].filter(Boolean).join(' ').slice(0,160);
+    return {source:'weekly-recheck', q:`${identity} email phone LinkedIn website contact United States`, type:r.title||'Recheck Signal', priority:'Weekly Contact Recheck'};
+  }).filter(x=>x.q.trim().length>35);
+}
 function extractEmail(txt){ const m=String(txt||'').match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i); return m?m[0]:''; }
 function extractPhone(txt){ const m=String(txt||'').match(/(?:\+?1[\s.-]?)?(?:\(?\d{3}\)?[\s.-]?)\d{3}[\s.-]?\d{4}/); return m?m[0]:''; }
 function extractLinkedIn(txt){ const m=String(txt||'').match(/https?:\/\/(www\.)?linkedin\.com\/(in|company)\/[^\s"')]+/i); return m?m[0]:''; }
@@ -112,7 +139,31 @@ function personish(name){
   const parts=name.replace(/[,|:;].*$/,'').trim().split(/\s+/);
   return parts.length>=2 && parts.length<=5 && parts.every(p=>/^[A-Z][A-Za-z.'-]{1,}$/.test(p)||/^(Jr\.?|Sr\.?)$/i.test(p));
 }
-function clearIdentity(lead){ return !!(lead.company || lead.email || lead.phone || lead.linkedin || personish(lead.name)); }
+function genericNameLike(name){
+  const n=clean(name,180);
+  if(!n) return true;
+  if(/^(our team|team|leadership|people|staff|directory|contact us|about us|home|news|press release|article|profile|company|unknown|shared radar lead|radar lead)$/i.test(n)) return true;
+  if(/^(new|top|best|how|why|what|when|where|inside|meet the|about the|contact|services|practice areas)\b/i.test(n)) return true;
+  if(/[!?]/.test(n)) return true;
+  if(/\b(opens|launches|announces|acquires|expands|sold|acquired|named|promoted|joins|conference|podcast|webinar|article|news|press|release|investment|investor|opportunity)\b/i.test(n) && !/^(Dr\.?|[A-Z][a-z]+\s+[A-Z][a-z]+)/.test(n)) return true;
+  if(n.split(/\s+/).length>6) return true;
+  return false;
+}
+function extractPersonCandidate(text){
+  const t=clean(text,1000);
+  const patterns=[
+    /\b(Dr\.?\s+[A-Z][a-zA-Z.'-]+\s+[A-Z][a-zA-Z.'-]+(?:,?\s*M\.?D\.?)?)/,
+    /\b([A-Z][a-zA-Z.'-]+\s+[A-Z][a-zA-Z.'-]+),?\s+(?:M\.?D\.?|MD|CPA|Esq\.?)/,
+    /\b(?:named|promoted|appoints|appointed|hires|welcomes|joins|interview with|speaker)\s+(?:Dr\.?\s+)?([A-Z][a-zA-Z.'-]+\s+[A-Z][a-zA-Z.'-]+)/i,
+    /\b(?:founder|ceo|owner|president|partner|principal|physician|surgeon|attorney|cpa)\s+([A-Z][a-zA-Z.'-]+\s+[A-Z][a-zA-Z.'-]+)/i,
+    /^([A-Z][a-zA-Z.'-]+\s+[A-Z][a-zA-Z.'-]+)\s+[-|–—]/
+  ];
+  for(const p of patterns){ const m=t.match(p); if(m){ const v=clean(m[1],90); if(personish(v) && !genericNameLike(v)) return v; }}
+  return '';
+}
+function hasNamedPointPerson(lead){ return personish(lead && lead.name) && !genericNameLike(lead.name); }
+function contactRouteUsable(lead){ return !!(lead && lead.contactMethods && lead.contactMethods.length); }
+function clearIdentity(lead){ return hasNamedPointPerson(lead); }
 function usaOk(lead){
   const b=[lead.name,lead.title,lead.company,lead.location,lead.summary,lead.url,lead.sourceQuery].join(' ');
   if(/\b(uk|london|canada|ontario|toronto|mexico|india|australia|europe|dubai|uae|china|singapore)\b/i.test(b) && !/\bUSA|United States|Texas|Dallas|Houston|Austin|Fort Worth|Oklahoma|Colorado|Louisiana|Pennsylvania|New Mexico|Wyoming|California|Florida|Arizona|New York\b/i.test(b)) return false;
@@ -141,14 +192,15 @@ function buildLead(result, queryMeta){
   const email=extractEmail(blob);
   const phone=extractPhone(blob);
   const company=extractCompany(result.title);
+  const person=extractPersonCandidate(blob);
   const lead={
-    id:safeId(), name:clean(result.title.replace(/\s+-\s+[^-]+$/,'').replace(/\s+\|\s+.*$/,''),180),
+    id:safeId(), name:person,
     title:role, company, location:GEO, type:inferType(role),
-    source:'GitHub Actions · Tavily', sourceFeed:queryMeta.source, sourceQuery:queryMeta.q,
+    source:'GitHub Actions · Tavily', sourceFeed:queryMeta.source, sourceQuery:queryMeta.q, geoPriority:queryMeta.priority||'Nationwide Qualified',
     sourceUrl:result.link, url:result.link, sourceDate:result.pub||'', signal:inferSignal(blob),
     summary:clean(result.desc||result.title,900), email, phone, linkedin, status:'New', reviewed:false,
     foundAt:new Date().toISOString(), ts:new Date().toLocaleString('en-US',{timeZone:'America/Chicago'}),
-    raw:{title:result.title,desc:result.desc,pub:result.pub,url:result.link,query:queryMeta.q,score:result.score},
+    articleTitle:clean(result.title,220), raw:{title:result.title,desc:result.desc,pub:result.pub,url:result.link,query:queryMeta.q,score:result.score},
     contactMethods:[]
   };
   if(email) pushMethod(lead.contactMethods,'Email',email,'High',result.link);
@@ -160,9 +212,9 @@ function buildLead(result, queryMeta){
 }
 
 async function enrichLead(lead){
-  const tokens=[lead.name,lead.company,lead.title].filter(Boolean).join(' ');
+  const tokens=[lead.name,lead.company,lead.articleTitle,lead.title].filter(Boolean).join(' ');
   if(!tokens || tokens.length<4) return lead;
-  const queries=[`${tokens} email phone contact`, `${tokens} LinkedIn`, `${tokens} website contact`];
+  const queries=[`${tokens} owner founder CEO president partner physician attorney CPA LinkedIn`, `${tokens} email phone contact`, `${tokens} LinkedIn`, `${tokens} website contact`, `${tokens} team profile directory`, `${tokens} company phone`];
   lead.enrichmentResults=[];
   for(const q of queries){
     try{
@@ -170,6 +222,7 @@ async function enrichLead(lead){
       for(const r of results){
         const blob=[r.title,r.desc,r.link].join(' ');
         lead.enrichmentResults.push({title:r.title,link:r.link,desc:r.desc,query:q});
+        if(!hasNamedPointPerson(lead)){ const pc=extractPersonCandidate(blob); if(pc) lead.name=pc; }
         const em=extractEmail(blob), ph=extractPhone(blob), li=looksLinkedIn(r.link)?r.link:extractLinkedIn(blob);
         if(em) pushMethod(lead.contactMethods,'Email',em,'Medium',r.link);
         if(ph) pushMethod(lead.contactMethods,'Phone',ph,'Medium',r.link);
@@ -189,23 +242,26 @@ async function enrichLead(lead){
 
 function qualify(lead){
   const missing=[];
-  if(!clearIdentity(lead)) missing.push('clear person/company identity');
+  if(!hasNamedPointPerson(lead)) missing.push('named point person/contact person');
   if(!usaOk(lead)) missing.push('USA-based confirmation');
   if(!investorRelevant(lead)) missing.push('qualified investor/referral-source signal');
-  if(!lead.contactMethods || !lead.contactMethods.length) missing.push('usable contact route');
+  if(!contactRouteUsable(lead)) missing.push('usable contact route');
   lead.usaBased=missing.indexOf('USA-based confirmation')===-1;
   lead.contactable=!!(lead.contactMethods&&lead.contactMethods.length);
   lead.missingQualificationFields=missing;
   lead.qualifiedInvestorSignals=(lead.scoreSignals||[]).filter(s=>/ICP|owner|physician|attorney|CPA|Oil|tax/i.test(s));
   lead.qualificationStatus=missing.length ? 'Do Not Load' : (lead.score>=82?'Qualified':'Potential');
+  lead.loadDecision = missing.length ? 'Rejected before pipeline' : 'Loaded to Day 1';
+  lead.contactMethodTags = (lead.contactMethods||[]).map(m=>m.type);
   lead.pipelineBlockReason=missing.join('; ');
+  if(!hasNamedPointPerson(lead)) lead.pipelineBlockReason='No named point person / not a contact';
   lead.contactSummary=lead.contactable?lead.contactMethods.map(m=>m.type).join(' + '):'No usable contact route';
   return missing.length===0;
 }
 
 async function groqRefine(lead){
   if(!GROQ_API_KEY) return lead;
-  const sys='You are a strict Basin Ventures oil and gas investment lead qualification analyst. Return JSON only. Do not invent facts. A usable lead must be USA-based, have clear identity, likely qualified/accredited investor or referral source profile, and a contact route.';
+  const sys='You are a strict Basin Ventures oil and gas investment lead qualification analyst. Return JSON only. Do not invent facts. A usable lead must be USA-based, have a named point person/contact person, likely qualified/accredited investor or referral source profile, and a contact route. Article titles, company pages, team pages, or publication names are not leads.';
   const user='Review this enriched lead. Return JSON {"qualificationStatus":"Qualified|Potential|Do Not Load","score":0,"grade":"A|B|C|D","bestAngle":"","riskFlags":[],"missingQualificationFields":[],"nextAction":""}. Lead: '+JSON.stringify(lead).slice(0,7000);
   try{
     const res=await fetch('https://api.groq.com/openai/v1/chat/completions',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+GROQ_API_KEY},body:JSON.stringify({model:GROQ_MODEL,messages:[{role:'system',content:sys},{role:'user',content:user}],temperature:0.1,max_completion_tokens:900,response_format:{type:'json_object'}})});
@@ -230,7 +286,8 @@ async function main(){
   const diagnostics={startedAt:new Date().toISOString(),queries:0,rawResults:0,candidates:0,enriched:0,accepted:0,rejected:0,reasons:{}};
   if(!TAVILY_API_KEY){ fs.writeFileSync(OUT,'[]\n'); fs.writeFileSync(REJECT_OUT,JSON.stringify([{reason:'Missing TAVILY_API_KEY'}],null,2)); console.log('Missing TAVILY_API_KEY; wrote empty radar output.'); return; }
   const all=[];
-  for(const qm of radarQueries()){
+  const queryPlan = radarQueries().concat(recheckQueriesFromRejected()).slice(0, MAX_QUERIES + MAX_RECHECK);
+  for(const qm of queryPlan){
     diagnostics.queries++;
     try{
       const results=await tavilySearch(qm.q,MAX_RESULTS,/news|events|podcasts/i.test(qm.source)?'news':'general');
@@ -246,7 +303,7 @@ async function main(){
   candidates.forEach(l=>{l.score=scoreLead(l);l.grade=grade(l.score);});
   candidates.sort(sortLeads);
   for(const lead of candidates.slice(0,MAX_ENRICH)){
-    if(!lead.contactMethods.length || !clearIdentity(lead)) await enrichLead(lead);
+    if(!lead.contactMethods.length || !hasNamedPointPerson(lead)) await enrichLead(lead);
     lead.score=scoreLead(lead); lead.grade=grade(lead.score); diagnostics.enriched++;
   }
   candidates.sort(sortLeads);
@@ -256,7 +313,9 @@ async function main(){
     lead.score=scoreLead(lead); lead.grade=grade(lead.score);
     const ok=qualify(lead) && lead.qualificationStatus !== 'Do Not Load';
     if(ok){
-      lead.nextAction=lead.nextAction || 'Day 1: use the verified contact route for a manual, signal-based email or LinkedIn touch. No auto-send.';
+      lead.pipelineBucket = 'Day 1';
+      lead.leadAgeType = lead.leadAgeType || 'New Basin OS';
+      lead.nextAction=lead.nextAction || 'Day 1: use the verified contact route for a manual, signal-based email, phone, or LinkedIn touch. No auto-send.';
       lead.nurtureDraft={
         linkedin:`Hi ${lead.name.split(' ')[0]||''}, I came across ${lead.signal.toLowerCase()} and thought Basin Ventures may be relevant if direct energy ownership and potential IDC deductions are part of your planning. Worth a brief director conversation?`,
         emailSubject:'Reason for reaching out',
@@ -264,9 +323,9 @@ async function main(){
       };
       accepted.push(lead);
     } else {
-      const reason=lead.pipelineBlockReason||'Not actionable';
+      const reason=lead.pipelineBlockReason||(!hasNamedPointPerson(lead)?'No named point person / not a contact':'Not actionable');
       diagnostics.reasons[reason]=(diagnostics.reasons[reason]||0)+1;
-      rejected.push({name:lead.name,title:lead.title,company:lead.company,url:lead.url,score:lead.score,grade:lead.grade,reason,missingQualificationFields:lead.missingQualificationFields,contactSummary:lead.contactSummary,sourceQuery:lead.sourceQuery});
+      rejected.push({name:lead.name,title:lead.title,company:lead.company,url:lead.url,score:lead.score,grade:lead.grade,reason,missingQualificationFields:lead.missingQualificationFields,contactSummary:lead.contactSummary,sourceQuery:lead.sourceQuery,geoPriority:lead.geoPriority||'',lastCheckedAt:new Date().toISOString(),recheckCadence:'weekly'});
     }
   }
   accepted.sort(sortLeads);
