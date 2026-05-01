@@ -1,0 +1,125 @@
+{
+  "version": "free-feed-radar-v1",
+  "notes": [
+    "Texas-first, nationwide eligible. Do not add Tavily here.",
+    "Paste Google Alerts RSS URLs into googleAlerts when you create alerts.",
+    "The runner also generates Google News RSS feeds from googleNewsQueries for free."
+  ],
+  "priorityOrder": [
+    "texas",
+    "energy_states",
+    "nationwide"
+  ],
+  "geoRules": {
+    "texasFirst": true,
+    "allowNationwide": true,
+    "requireUSA": true
+  },
+  "googleAlerts": [
+    {
+      "name": "PLACEHOLDER - paste a Google Alerts RSS URL here",
+      "url": "",
+      "type": "manual_google_alert",
+      "priority": "texas",
+      "disabled": true
+    }
+  ],
+  "googleNewsQueries": [
+    {
+      "name": "Texas physician practice owners",
+      "query": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
+      "type": "physician",
+      "priority": "texas"
+    },
+    {
+      "name": "Texas law firm partners",
+      "query": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
+      "type": "attorney",
+      "priority": "texas"
+    },
+    {
+      "name": "Texas CPA tax advisors",
+      "query": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
+      "type": "cpa",
+      "priority": "texas"
+    },
+    {
+      "name": "Texas business owner liquidity events",
+      "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
+      "type": "liquidity_event",
+      "priority": "texas"
+    },
+    {
+      "name": "Energy-state oil and gas executives",
+      "query": "(\"oil and gas\" OR \"mineral rights\" OR \"royalty owner\" OR \"energy operator\") (Texas OR Oklahoma OR Louisiana OR New Mexico OR Colorado OR Wyoming OR North Dakota) founder CEO owner president",
+      "type": "energy",
+      "priority": "energy_states"
+    },
+    {
+      "name": "Nationwide physician practice owners",
+      "query": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+      "type": "physician",
+      "priority": "nationwide"
+    },
+    {
+      "name": "Nationwide law firm partners",
+      "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "type": "attorney",
+      "priority": "nationwide"
+    },
+    {
+      "name": "Nationwide CPA tax advisors",
+      "query": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+      "type": "cpa",
+      "priority": "nationwide"
+    },
+    {
+      "name": "Nationwide business founder exits",
+      "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+      "type": "liquidity_event",
+      "priority": "nationwide"
+    },
+    {
+      "name": "Nationwide franchise and multi-unit owners",
+      "query": "(\"multi-unit franchisee\" OR \"franchise owner\" OR \"multi unit operator\") founder CEO owner \"United States\"",
+      "type": "business_owner",
+      "priority": "nationwide"
+    }
+  ],
+  "gdeltQueries": [
+    {
+      "name": "Texas physician founders",
+      "query": "(\"physician founder\" OR \"practice owner\") Texas",
+      "type": "physician",
+      "priority": "texas"
+    },
+    {
+      "name": "Texas law firm partners",
+      "query": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
+      "type": "attorney",
+      "priority": "texas"
+    },
+    {
+      "name": "Energy executives",
+      "query": "(\"oil and gas\" OR \"mineral rights\" OR \"royalty owner\") (Texas OR Oklahoma OR Louisiana OR New Mexico OR Colorado OR Wyoming OR North Dakota)",
+      "type": "energy",
+      "priority": "energy_states"
+    },
+    {
+      "name": "Nationwide founder liquidity events",
+      "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\") \"United States\"",
+      "type": "liquidity_event",
+      "priority": "nationwide"
+    }
+  ],
+  "secFeeds": [
+    {
+      "name": "SEC recent Form D filings",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=D&company=&dateb=&owner=include&start=0&count=100&output=atom",
+      "type": "sec_form_d",
+      "priority": "nationwide"
+    }
+  ],
+  "industryFeeds": [],
+  "customFeeds": []
+}
