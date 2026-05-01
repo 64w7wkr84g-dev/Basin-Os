@@ -79,7 +79,7 @@
   <div class="section"><div class="section-label">Data</div><div class="nav-item" onclick="goPage('notes',this)">📝 <span>Call Notes</span><span class="badge" id="notes-badge">0</span></div><div class="nav-item" onclick="goPage('analytics',this)">📊 <span>Call Analytics</span></div><div class="nav-item" onclick="goPage('followups',this)">📅 <span>Follow-Up Dashboard</span><span class="badge" id="followup-badge">0</span></div><div class="nav-item" onclick="goPage('calendar',this)">🗓️ <span>Appointment Calendar</span><span class="badge" id="calendar-badge">0</span></div><div class="nav-item" onclick="goPage('handoffs',this)">📄 <span>Director Handoffs</span><span class="badge" id="handoff-badge">0</span></div></div>
   <div class="section"><div class="section-label">System</div><div class="nav-item" onclick="goPage('settings',this)">⚙️ <span>Settings</span></div><div class="nav-item" onclick="goPage('apicenter',this)">🧠 <span>API Command Center</span><span class="badge" id="api-badge">OFF</span></div><div class="nav-item" onclick="exportData()">💾 <span>Export All Data</span></div></div>
       <div class="compliance"><strong>Compliance Always</strong>Never guarantee returns · Never “SEC registered” · Always “consult your CPA” · Accredited investors only · Targeted IRR, not guaranteed.</div>
-      <div class="sidebar-version">Basin OS v3.8.12 — API Auto-Connect + Shared Radar Fix — Updated 2026-05-01</div>
+      <div class="sidebar-version">Basin OS v3.8.14 — API Persistence + Shared Radar Import Fix — Updated 2026-05-01</div>
 </nav>
 <main class="main">
   <section id="page-dashboard" class="page active">
@@ -112,7 +112,7 @@
 <section id="page-apicenter" class="page"><div class="hdr"><div><div class="title">API Command Center</div><div class="sub">Groq works from the browser. Tavily is used by the GitHub Actions runner for scheduled radar searches; browser/local Tavily testing may require server.js or may be blocked by CORS. Keys stay in this browser only.</div></div><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn btn-primary btn-sm" style="width:auto" onclick="testAllApis()">⚡ Test APIs</button><button class="btn btn-ghost btn-sm" onclick="buildMorningBrief(true)">🌅 Build Morning Brief</button><button class="btn btn-ghost btn-sm" onclick="runLeadRadar(true)">📡 Run Radar</button></div></div><div class="body"><div class="grid2"><div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Connection Setup</div><div class="panel-sub">One-time setup on your home MacBook browser.</div></div></div><div class="panel-bd"><div class="field"><label class="label">Tavily API Key</label><input id="api-tavily-key" type="password" class="input" placeholder="Paste Tavily API key (tvly-...)"></div><div class="field"><label class="label">Groq API Key</label><input id="api-groq-key" type="password" class="input" placeholder="Paste Groq API key"></div><div class="field"><label class="label">Groq Model</label><select id="api-groq-model" class="select"><option value="llama-3.3-70b-versatile">Llama 3.3 70B Versatile</option><option value="qwen/qwen3-32b">Qwen3 32B</option><option value="openai/gpt-oss-120b">GPT-OSS 120B</option><option value="openai/gpt-oss-20b">GPT-OSS 20B</option></select></div><div class="row2"><button class="btn btn-primary" onclick="connectTavily(true)">Connect Tavily</button><button class="btn btn-teal" onclick="connectGroq(true)">Connect Groq</button></div><div class="row2" style="margin-top:8px"><button class="btn btn-ghost" onclick="saveApiKeysOnly()">Save Keys</button><button class="btn btn-danger" onclick="clearApiKeys()">Clear Keys</button></div><div class="info red" style="margin-top:12px"><strong>Security + CORS:</strong> This single-file version stores keys in your browser localStorage so your MacBook can stay connected. Do not upload keys into GitHub. Groq works from any browser including GitHub Pages. Tavily is primarily used by GitHub Actions through the TAVILY_API_KEY secret. Browser testing may require server.js because direct Tavily calls can be blocked by CORS.</div></div></div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Run Limits & Automation</div><div class="panel-sub">Controls costs and avoids noisy automation.</div></div></div><div class="panel-bd"><div class="row2"><div class="field"><label class="label">Max Queries / Radar Run</label><input id="api-max-queries" class="input" type="number" min="3" max="60" value="18"></div><div class="field"><label class="label">Max Tavily Results / Query</label><input id="api-max-results" class="input" type="number" min="1" max="20" value="5"></div></div><div class="row2"><div class="field"><label class="label">Groq Lead Analyses / Run</label><input id="api-max-groq" class="input" type="number" min="0" max="30" value="8"></div><div class="field"><label class="label">Search Mode</label><select id="api-search-mode" class="select"><option value="balanced">Balanced</option><option value="highvalue">High-value only</option><option value="wide">Wide discovery</option></select></div></div><div class="row2"><div class="field"><label class="label">Auto-Connect Saved Keys</label><select id="api-auto-connect" class="select"><option value="on">ON — connect on page load</option><option value="off">OFF — manual connect only</option></select></div><div class="field"><label class="label">Lead Radar Auto-Run</label><select id="api-auto-radar" class="select"><option value="on">ON — run when open + repeat</option><option value="off">OFF — manual radar only</option></select></div></div><div class="field"><label class="label">Lead Radar Interval While Page Is Open</label><select id="api-radar-interval" class="select"><option value="1">Every 1 hour</option><option value="2">Every 2 hours</option><option value="3">Every 3 hours</option><option value="4">Every 4 hours</option><option value="6">Every 6 hours</option></select></div><div class="row2"><button class="btn btn-primary" onclick="saveApiSettings()">Save API Settings</button><button class="btn btn-teal" onclick="saveApiKeysOnly(false);autoConnectSavedApis(true)">Save Keys + Auto-Connect</button></div></div></div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Live API Status</div><div class="panel-sub">Browser API connection and usage counters.</div></div></div><div class="panel-bd" id="api-status-panel"></div></div></div><div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Morning Brief</div><div class="panel-sub">Generated from Radar, pipeline, notes, follow-ups, and meetings.</div></div><button class="btn btn-ghost btn-sm" onclick="copyMorningBrief()">Copy</button></div><div class="panel-bd" id="morning-brief"><div class="empty"><div class="empty-icon">🌅</div><div class="empty-title">No brief yet</div><div class="empty-sub">Click Build Morning Brief after Lead Radar runs.</div></div></div></div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Active Lead Intelligence</div><div class="panel-sub">Cross-linked into Profiler, Sequence, Notes, Handoff, and Radar.</div></div></div><div class="panel-bd" id="api-active-lead"></div></div><div class="panel"><div class="panel-hd"><div><div class="panel-title">Automation Map</div><div class="panel-sub">What is automatic vs. what must remain manual.</div></div></div><div class="panel-bd"><div class="info teal"><strong>Automated inside this OS:</strong> query rotation, lead dedupe, scoring, suppression checks, contact-path detection, AI draft creation, compliance scan, morning brief, similar-lead searches, CPA map builder, follow-up task creation, and director handoff generation.</div><div class="info gold"><strong>Manual by design:</strong> LinkedIn connection requests, LinkedIn DMs, emails, texts, and phone calls. The OS prepares copy and actions, but you review and send manually to avoid platform violations, spam behavior, and compliance errors.</div></div></div></div></div></div></section>
 <section id="page-playbook" class="page"><div class="hdr"><div><div class="title">Associate Master Playbook</div><div class="sub">Integrated scripts, calculator, cadence, implementation guide, and compliance. · Version 3.8.7 · Tavily + Groq Radar Build · Copy Handler Patch · Last updated 2026-05-01</div></div><button class="btn btn-ghost btn-sm" onclick="goPage('sequences',null)">Build Sequence →</button></div><div class="body" id="playbook-root"></div></section>
 
-  <div class="version-footer">Basin OS v3.8.12 — API Auto-Connect + Shared Radar Fix — Updated 2026-05-01 · If GitHub Pages shows an older layout, hard refresh / clear cache and confirm this file replaced the root index.html.</div>
+  <div class="version-footer">Basin OS v3.8.14 — API Persistence + Shared Radar Import Fix — Updated 2026-05-01 · If GitHub Pages shows an older layout, hard refresh / clear cache and confirm this file replaced the root index.html.</div>
 </main>
 </div>
 <div id="toast"></div>
@@ -1566,7 +1566,7 @@ const BV_ORIG_renderApiCenter=renderApiCenter;renderApiCenter=function(){BV_ORIG
   // Update visible version markers if the old file was already loaded from cache.
   try {
     document.querySelectorAll('.sidebar-version,.version-footer').forEach(function(el){
-      el.textContent = el.textContent.replace('v3.8.2 — Branded Operator Build','v3.8.12 — Shared Radar Count Display Fix').replace('v3.8.3 — Cadence Logic Build','v3.8.12 — Shared Radar Count Display Fix').replace('v3.8.5 — GitHub Radar Runner Build','v3.8.12 — Shared Radar Count Display Fix').replace('calculator / cadence logic','calculator / cadence logic / Groq refresh / GitHub Radar runner').replace('calculator','calculator / cadence logic / Groq refresh / GitHub Radar runner');
+      el.textContent = el.textContent.replace('v3.8.2 — Branded Operator Build','v3.8.14 — API Persistence + Shared Radar Import Fix').replace('v3.8.3 — Cadence Logic Build','v3.8.14 — API Persistence + Shared Radar Import Fix').replace('v3.8.5 — GitHub Radar Runner Build','v3.8.14 — API Persistence + Shared Radar Import Fix').replace('calculator / cadence logic','calculator / cadence logic / Groq refresh / GitHub Radar runner').replace('calculator','calculator / cadence logic / Groq refresh / GitHub Radar runner');
     });
   } catch(e) {}
 })();
@@ -1682,7 +1682,7 @@ const BV_ORIG_renderApiCenter=renderApiCenter;renderApiCenter=function(){BV_ORIG
 })();
 
 
-/* ── Basin OS v3.8.12 Patch: API persistence + auto-connect on refresh ─────────
+/* ── Basin OS v3.8.14 Patch: API persistence + shared radar import ─────────
    Important behavior:
    - API keys are local to each browser/device by design.
    - GitHub Actions uses repository secrets for shared scheduled radar.
@@ -1817,6 +1817,236 @@ const BV_ORIG_renderApiCenter=renderApiCenter;renderApiCenter=function(){BV_ORIG
     if(typeof updateApiStatus==='function') updateApiStatus();
   };
   setInterval(window.basinApiKeepAlive,60000);
+})();
+
+
+/* ── Basin OS v3.8.14 Final Merge Patch: API persistence + shared radar import ──
+   Fixes:
+   - Saved API keys stay ready on the same browser after refresh.
+   - Tavily shows ready as GitHub/shared radar mode on GitHub Pages.
+   - Shared GitHub radar JSON imports into the exact STORE.radarLeads array used by counters/results.
+   - Import no longer depends on addRadarLead(), so GitHub runner lead objects cannot all fail.
+*/
+(function(){
+  var BUILD_LABEL = 'v3.8.14 — API Persistence + Shared Radar Import Fix';
+  function $(id){ return document.getElementById(id); }
+  function safeText(v){ return String(v == null ? '' : v).replace(/\s+/g,' ').trim(); }
+  function nowText(){ return new Date().toLocaleString(); }
+  function isGithubPages(){ try { return /github\.io$/i.test(location.hostname || ''); } catch(e) { return false; } }
+  function softToast(msg){ try { if(typeof toast === 'function') toast(msg); } catch(e){} }
+  function hardEnsure(){ try { if(typeof ensureStore === 'function') ensureStore(); } catch(e){}; window.STORE = window.STORE || {}; STORE.radarLeads = Array.isArray(STORE.radarLeads) ? STORE.radarLeads : []; STORE.radarRuns = Array.isArray(STORE.radarRuns) ? STORE.radarRuns : []; STORE.api = STORE.api || {}; }
+  function writeNow(){ try { if(typeof save === 'function') save(); } catch(e){}; try { if(typeof flushSave === 'function') flushSave(true); } catch(e){} }
+  function setVal(ids, val){ ids.forEach(function(id){ var el=$(id); if(el && val != null && val !== '' && el.value !== val) el.value = val; }); }
+  function getStored(k1,k2){ try { return localStorage.getItem(k1) || (k2 ? localStorage.getItem(k2) : '') || ''; } catch(e) { return ''; } }
+  function putStored(k1,k2,val){ try { if(val){ localStorage.setItem(k1,val); if(k2) localStorage.setItem(k2,val); } } catch(e){} }
+  window.basinLoadApiKeysPersistent = function(){
+    if(typeof apiDefaults === 'function') { try { apiDefaults(); } catch(e){} }
+    window.BV_API = window.BV_API || {tavilyKey:'', groqKey:'', groqModel:'llama-3.3-70b-versatile'};
+    var t = getStored('basin_tavily_api_key','basin_tavily_key') || BV_API.tavilyKey || '';
+    var g = getStored('basin_groq_api_key','basin_groq_key') || BV_API.groqKey || '';
+    var m = getStored('basin_groq_model') || BV_API.groqModel || 'llama-3.3-70b-versatile';
+    BV_API.tavilyKey = safeText(t);
+    BV_API.groqKey = safeText(g);
+    BV_API.groqModel = safeText(m) || 'llama-3.3-70b-versatile';
+    setVal(['api-tavily-key','tavily-key'], BV_API.tavilyKey);
+    setVal(['api-groq-key','groq-key'], BV_API.groqKey);
+    setVal(['api-groq-model','groq-model'], BV_API.groqModel);
+    hardEnsure();
+    STORE.api.autoConnect = STORE.api.autoConnect || getStored('basin_api_auto_connect') || 'on';
+    if(BV_API.tavilyKey){
+      BV_API.tavilyLive = true;
+      BV_API.tavilyBrowserLive = !isGithubPages() && !!BV_API.tavilyBrowserLive;
+      BV_API.tavilyMode = isGithubPages() ? 'github-actions' : (BV_API.tavilyBrowserLive ? 'browser' : 'saved');
+      STORE.api.tavilyMode = BV_API.tavilyMode;
+    }
+    if(BV_API.groqKey){
+      // Treat Groq as ready immediately; live test can refine this, but refresh should not show OFF.
+      BV_API.groqLive = true;
+      STORE.api.groqMode = 'saved';
+    }
+    STORE.api.lastAutoConnect = STORE.api.lastAutoConnect || nowText();
+    return {tavilyKey:BV_API.tavilyKey, groqKey:BV_API.groqKey, groqModel:BV_API.groqModel};
+  };
+  var prevLoadApiKeys = window.loadApiKeys || (typeof loadApiKeys === 'function' ? loadApiKeys : null);
+  window.loadApiKeys = loadApiKeys = function(){
+    if(prevLoadApiKeys){ try { prevLoadApiKeys(); } catch(e){} }
+    return window.basinLoadApiKeysPersistent();
+  };
+  var prevSaveApiKeysOnly = window.saveApiKeysOnly || (typeof saveApiKeysOnly === 'function' ? saveApiKeysOnly : null);
+  window.saveApiKeysOnly = saveApiKeysOnly = function(silent){
+    if(typeof apiDefaults === 'function') { try { apiDefaults(); } catch(e){} }
+    window.BV_API = window.BV_API || {};
+    var tEl = $('api-tavily-key') || $('tavily-key');
+    var gEl = $('api-groq-key') || $('groq-key');
+    var mEl = $('api-groq-model') || $('groq-model');
+    var t = safeText((tEl && tEl.value) || BV_API.tavilyKey || getStored('basin_tavily_api_key','basin_tavily_key'));
+    var g = safeText((gEl && gEl.value) || BV_API.groqKey || getStored('basin_groq_api_key','basin_groq_key'));
+    var m = safeText((mEl && mEl.value) || BV_API.groqModel || getStored('basin_groq_model')) || 'llama-3.3-70b-versatile';
+    BV_API.tavilyKey = t; BV_API.groqKey = g; BV_API.groqModel = m;
+    putStored('basin_tavily_api_key','basin_tavily_key',t);
+    putStored('basin_groq_api_key','basin_groq_key',g);
+    putStored('basin_groq_model',null,m);
+    putStored('basin_api_auto_connect',null,'on');
+    window.basinLoadApiKeysPersistent();
+    hardEnsure();
+    STORE.api.lastConnect = nowText();
+    STORE.api.lastAutoConnect = nowText();
+    writeNow();
+    if(typeof updateApiStatus === 'function') { try { updateApiStatus(); } catch(e){} }
+    if(typeof renderApiCenter === 'function' && $('api-status-panel')) { try { renderApiCenter(); } catch(e){} }
+    if(!silent) softToast('API KEYS SAVED + READY ON THIS BROWSER');
+    return true;
+  };
+  window.autoConnectSavedApis = autoConnectSavedApis = async function(forceToast){
+    hardEnsure();
+    var keys = window.basinLoadApiKeysPersistent();
+    if(STORE.api.autoConnect === 'off' && !forceToast){ if(typeof updateApiStatus === 'function') updateApiStatus(); return {skipped:true}; }
+    localStorage.setItem('basin_api_auto_connect','on');
+    var tReady = false, gReady = false;
+    if(keys.tavilyKey){
+      BV_API.tavilyLive = true;
+      BV_API.tavilyBrowserLive = !isGithubPages() && !!BV_API.tavilyBrowserLive;
+      BV_API.tavilyMode = isGithubPages() ? 'github-actions' : (BV_API.tavilyBrowserLive ? 'browser' : 'saved');
+      STORE.api.tavilyMode = BV_API.tavilyMode;
+      tReady = true;
+    }
+    if(keys.groqKey){
+      BV_API.groqLive = true;
+      gReady = true;
+      // Optional background test. Do not flip OFF on refresh if the test is blocked/rate-limited.
+      if(typeof connectGroq === 'function'){
+        try { await connectGroq(false); BV_API.groqLive = true; gReady = true; }
+        catch(e){ STORE.api.lastError = 'Groq saved key ready; live retest failed: '+(e.message||e); BV_API.groqLive = true; }
+      }
+    }
+    STORE.api.lastAutoConnect = nowText();
+    if(tReady || gReady) STORE.api.lastConnect = nowText();
+    try { localStorage.setItem('basin_api_last_active', String(Date.now())); } catch(e){}
+    writeNow();
+    if(typeof updateApiStatus === 'function') { try { updateApiStatus(); } catch(e){} }
+    if(typeof renderApiCenter === 'function' && $('api-status-panel')) { try { renderApiCenter(); } catch(e){} }
+    if(forceToast) softToast('API READY: '+(tReady?'TAVILY/GITHUB':'TAVILY OFF')+' · '+(gReady?'GROQ':'GROQ OFF'));
+    return {tavily:tReady, groq:gReady};
+  };
+  function normalizedRadarKey(l){
+    var url = safeText(l.url || l.link || l.sourceUrl).toLowerCase();
+    if(url) return 'url:'+url.replace(/[?#].*$/,'');
+    return 'lead:' + [l.name,l.company,l.title,l.source,l.sourceQuery].map(safeText).join('|').toLowerCase().replace(/[^a-z0-9|]+/g,'');
+  }
+  function normalizeSharedLeadHard(item, generatedAt){
+    var l = Object.assign({}, item || {});
+    var blob = [l.name,l.title,l.company,l.summary,l.desc,l.description,l.signal,l.sourceQuery,l.url,l.link].map(safeText).join(' ');
+    l.id = safeText(l.id) || ('rad-gh-' + Date.now() + '-' + Math.random().toString(16).slice(2));
+    l.name = safeText(l.name || l.headline || l.title) || 'Shared Radar Lead';
+    l.title = safeText(l.title || l.role || l.type) || 'Prospect Signal';
+    l.company = safeText(l.company || l.firm || l.organization) || '';
+    l.location = safeText(l.location || l.geo) || 'nationwide USA';
+    l.type = safeText(l.type) || (/cpa|tax|accounting/i.test(blob) ? 'cpa' : 'investor');
+    l.source = safeText(l.source) || 'GitHub Actions · Tavily';
+    l.sourceFeed = safeText(l.sourceFeed) || 'Scheduled GitHub Radar';
+    l.sourceQuery = safeText(l.sourceQuery || l.query);
+    l.sourceUrl = safeText(l.sourceUrl || l.url || l.link);
+    l.url = safeText(l.url || l.link || l.sourceUrl);
+    l.signal = safeText(l.signal) || 'Shared GitHub radar signal';
+    l.summary = safeText(l.summary || l.desc || l.description || l.snippet);
+    l.email = safeText(l.email);
+    l.linkedin = safeText(l.linkedin);
+    l.status = safeText(l.status) || 'New';
+    l.foundAt = safeText(l.foundAt || l.generatedAt || generatedAt) || nowText();
+    l.sharedRadar = true;
+    l._radarKey = normalizedRadarKey(l);
+    var sc = Number(l.score);
+    if(!Number.isFinite(sc) || sc <= 0){ try { sc = (typeof scoreRadarLead === 'function') ? Number(scoreRadarLead(l)) : 50; } catch(e) { sc = 50; } }
+    l.score = Math.max(1, Math.min(98, Math.round(sc)));
+    try { l.grade = safeText(l.grade) || (typeof grade === 'function' ? grade(l.score) : (l.score >= 82 ? 'A' : l.score >= 68 ? 'B' : l.score >= 52 ? 'C' : 'D')); } catch(e) { l.grade = l.grade || 'C'; }
+    if(!l.nurture){ try { l.nurture = (typeof generateNurtureDraft === 'function') ? generateNurtureDraft(l) : ''; } catch(e) { l.nurture = ''; } }
+    return l;
+  }
+  function setSharedRadarStatusHard(msg){
+    window.BASIN_SHARED_RADAR_STATUS = msg || '';
+    var el = $('shared-radar-status');
+    if(el) el.textContent = msg || '';
+  }
+  window.basinImportSharedRadarLeads = function(raw, sourcePath){
+    hardEnsure();
+    var leads = Array.isArray(raw) ? raw : (raw && Array.isArray(raw.leads) ? raw.leads : []);
+    var generatedAt = raw && !Array.isArray(raw) ? (raw.generatedAt || raw.ts || raw.updatedAt || '') : '';
+    var index = new Set();
+    STORE.radarLeads.forEach(function(x){ try { index.add(normalizedRadarKey(x)); } catch(e){} });
+    var added=0, skipped=0, errors=0;
+    leads.forEach(function(item){
+      try{
+        var lead = normalizeSharedLeadHard(item, generatedAt);
+        var key = normalizedRadarKey(lead);
+        if(index.has(key)){ skipped++; return; }
+        if(typeof isSuppressedLead === 'function') { try { if(isSuppressedLead(lead)) lead.status = 'Suppressed'; } catch(e){} }
+        STORE.radarLeads.unshift(lead);
+        index.add(key);
+        added++;
+      }catch(e){ errors++; console.warn('Shared radar direct import failed', e, item); }
+    });
+    STORE.lastSharedRadarLoad = nowText();
+    STORE.lastSharedRadarSource = sourcePath || 'data/radar-leads.json';
+    STORE.lastSharedRadarFound = leads.length;
+    STORE.lastSharedRadarAdded = added;
+    STORE.lastSharedRadarSkipped = skipped;
+    STORE.lastSharedRadarErrors = errors;
+    if(added){ try { if(typeof addActivity === 'function') addActivity('Shared GitHub Radar imported '+added+' leads'); } catch(e){} }
+    writeNow();
+    try { if(typeof updateCounts === 'function') updateCounts(); } catch(e){}
+    try { if(typeof renderRadarSummary === 'function') renderRadarSummary(); } catch(e){}
+    try { if(typeof renderRadarResults === 'function') renderRadarResults(); } catch(e){}
+    try { if(typeof renderNurtureQueue === 'function') renderNurtureQueue(); } catch(e){}
+    try { if(typeof renderActionPlan === 'function') renderActionPlan(); } catch(e){}
+    try { if(typeof renderLeadRadarPage === 'function' && $('page-radar') && $('page-radar').classList.contains('active')) renderLeadRadarPage(); } catch(e){}
+    var msg = 'Shared GitHub Radar: '+leads.length+' found · '+added+' imported · '+skipped+' already stored'+(errors?' · '+errors+' errors':'')+' · loaded '+STORE.lastSharedRadarLoad;
+    setSharedRadarStatusHard(msg);
+    console.log('Basin shared radar import v3.8.14', {found:leads.length, stored:STORE.radarLeads.length, added:added, skipped:skipped, errors:errors});
+    return {found:leads.length, added:added, skipped:skipped, errors:errors, stored:STORE.radarLeads.length};
+  };
+  window.basinLoadSharedRadar = async function(showToast){
+    hardEnsure();
+    var paths = ['data/radar-leads.json','./data/radar-leads.json','radar-leads.json'];
+    var lastErr = '';
+    for(var i=0;i<paths.length;i++){
+      var path = paths[i];
+      try{
+        setSharedRadarStatusHard('Loading Shared GitHub Radar from '+path+'...');
+        var res = await fetch(path + (path.indexOf('?')>-1?'&':'?') + 'v=' + Date.now(), {cache:'no-store'});
+        if(!res.ok){ lastErr = path+' HTTP '+res.status; continue; }
+        var data = await res.json();
+        var result = window.basinImportSharedRadarLeads(data, path);
+        if(showToast) softToast('Shared Radar loaded: '+result.found+' found · '+result.added+' imported · '+result.stored+' stored');
+        return result;
+      }catch(e){ lastErr = path+' '+(e.message||e); }
+    }
+    var msg = 'Shared GitHub Radar load failed: '+lastErr;
+    setSharedRadarStatusHard(msg);
+    if(showToast) softToast(msg);
+    return {found:0, added:0, skipped:0, errors:1, stored:(STORE.radarLeads||[]).length};
+  };
+  window.loadScheduledRadarData = function(){ return window.basinLoadSharedRadar(false); };
+  var baseRenderRadarSummary = window.renderRadarSummary || (typeof renderRadarSummary === 'function' ? renderRadarSummary : null);
+  if(baseRenderRadarSummary){
+    window.renderRadarSummary = renderRadarSummary = function(){
+      baseRenderRadarSummary();
+      var root = $('radar-summary');
+      if(root && !$('shared-radar-status')){
+        var msg = window.BASIN_SHARED_RADAR_STATUS || (STORE && STORE.lastSharedRadarLoad ? ('Shared GitHub Radar: '+(STORE.lastSharedRadarFound||0)+' found · '+(STORE.lastSharedRadarAdded||0)+' imported · '+((STORE.radarLeads||[]).length)+' total stored · loaded '+STORE.lastSharedRadarLoad) : 'Shared GitHub Radar: not loaded yet. Click Load Shared GitHub Radar.');
+        var div = document.createElement('div');
+        div.className = 'info teal';
+        div.style.display='flex'; div.style.justifyContent='space-between'; div.style.gap='10px'; div.style.alignItems='center';
+        div.innerHTML = '<span id="shared-radar-status">'+(typeof esc==='function'?esc(msg):msg)+'</span><button class="btn btn-ghost btn-sm" onclick="basinLoadSharedRadar(true)">Reload Shared GitHub Radar</button>';
+        root.appendChild(div);
+      }
+    };
+  }
+  window.basinApiKeepAlive = function(){
+    window.basinLoadApiKeysPersistent();
+    try { localStorage.setItem('basin_api_last_active', String(Date.now())); } catch(e){}
+    if(typeof updateApiStatus === 'function') { try { updateApiStatus(); } catch(e){} }
+  };
+  try { document.querySelectorAll('.sidebar-version,.version-footer').forEach(function(el){ el.textContent = 'Basin OS '+BUILD_LABEL+' — Updated 2026-05-01'; }); } catch(e){}
 })();
 
 
