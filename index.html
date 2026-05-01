@@ -669,20 +669,26 @@ function printHandoffById(id){let note=handoffMeetings().find(n=>n.id===id);if(!
 function printSelectedHandoff(){let note=selectedHandoffNote();if(!note)return toast('NO HANDOFF');printHandoffNote(note)}
 function printHandoffNote(note){let txt=buildHandoffText(note);let w=window.open('','_blank');if(!w){copyText(null,txt);return toast('POPUP BLOCKED — COPIED')}w.document.write('<!doctype html><html><head><title>Director Handoff - '+esc(note.name||'Prospect')+'</title><style>body{font-family:Arial,sans-serif;color:#0f172a;margin:28px;line-height:1.35}h1{font-size:20px;margin:0 0 4px}.meta{color:#64748b;font-size:12px;margin-bottom:14px}.box{border:1px solid #d1d5db;border-radius:8px;padding:10px;margin:8px 0;break-inside:avoid}.h{font-size:11px;font-weight:bold;color:#b45309;text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}.b{white-space:pre-wrap;font-size:12px}@media print{body{margin:18px}.box{padding:8px;margin:6px 0}}</style></head><body><h1>Director Handoff — Basin Ventures</h1><div class="meta">'+esc(note.name||'')+' · '+esc(note.due?fmtDue(note.due):'No meeting time')+'</div>'+txt.split('\n\n').slice(1).map(p=>{let i=p.indexOf('\n'),h=i>-1?p.slice(0,i):p,b=i>-1?p.slice(i+1):'';return '<div class="box"><div class="h">'+esc(h)+'</div><div class="b">'+esc(b)+'</div></div>'}).join('')+'
 <script>
-/* Basin OS v3.8.27 — safe additive shim only.
-   Does not rebuild Lead Radar or Leads Workflow.
-   Fixes: Call Coach render, dashboard lead counts, saved API ready-state after refresh.
+/* Basin OS v3.8.28 — Stable 3825 Hotfix
+   Safe additive patch only.
+   DOES NOT replace or rebuild Lead Radar, Leads Workflow, lead cards, scoring, sorting, tasks, or pipeline logic.
+   Fixes only:
+   1) API saved-key status after refresh
+   2) Dashboard lead count/top leads when Investor Pipeline is empty
+   3) Call Coach button render if the page opens blank
 */
 (function(){
-  var PATCH_VERSION = 'v3.8.27 — Stable Leads + API Persistence';
+  var PATCH_VERSION = 'v3.8.28 — Stable 3825 Hotfix';
 
-  function q(id){ return document.getElementById(id); }
-  function text(v){ return String(v == null ? '' : v); }
-  function escSafe(v){
+  function byId(id){ return document.getElementById(id); }
+  function clean(v){ return String(v == null ? '' : v).trim(); }
+  function escLocal(v){
     try { if (typeof esc === 'function') return esc(v); } catch(e){}
-    return text(v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]});
+    return String(v == null ? '' : v).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
   }
-  function ensureSafeStore(){
+  function safeStore(){
     try { if (typeof ensureStore === 'function') ensureStore(); } catch(e){}
     try { if (typeof hardEnsure === 'function') hardEnsure(); } catch(e){}
     window.STORE = window.STORE || {};
@@ -693,239 +699,210 @@ function printHandoffNote(note){let txt=buildHandoffText(note);let w=window.open
     STORE.api.autoConnect = STORE.api.autoConnect || 'on';
     return STORE;
   }
-  function getFieldValue(ids){
+  function parseJsonKey(key){
+    try { return JSON.parse(localStorage.getItem(key) || '{}') || {}; } catch(e){ return {}; }
+  }
+  function fieldValue(ids){
     for (var i=0;i<ids.length;i++){
-      var el=q(ids[i]);
-      if (el && text(el.value).trim()) return text(el.value).trim();
+      var el = byId(ids[i]);
+      if (el && clean(el.value)) return clean(el.value);
     }
     return '';
   }
-  function parseLocalJson(key){
-    try { return JSON.parse(localStorage.getItem(key) || '{}') || {}; } catch(e){ return {}; }
-  }
-  function savedApiKeys(){
-    var j1=parseLocalJson('BV_API_KEYS'), j2=parseLocalJson('basin_api_keys'), j3=parseLocalJson('basinApiKeys');
-    var tav = localStorage.getItem('basin_tavily_api_key') || localStorage.getItem('basin_tavily_key') ||
+  function getSavedKeys(){
+    var j1 = parseJsonKey('BV_API_KEYS');
+    var j2 = parseJsonKey('basin_api_keys');
+    var j3 = parseJsonKey('basinApiKeys');
+    var tavily =
+      localStorage.getItem('basin_tavily_api_key') ||
+      localStorage.getItem('basin_tavily_key') ||
       j1.tavily || j1.tavilyKey || j1.TAVILY_API_KEY ||
       j2.tavily || j2.tavilyKey || j2.TAVILY_API_KEY ||
       j3.tavily || j3.tavilyKey || j3.TAVILY_API_KEY ||
-      getFieldValue(['api-tavily-key','tavily-key','tavilyKey']);
-    var groq = localStorage.getItem('basin_groq_api_key') || localStorage.getItem('basin_groq_key') ||
+      fieldValue(['api-tavily-key','tavily-key','tavilyKey']);
+    var groq =
+      localStorage.getItem('basin_groq_api_key') ||
+      localStorage.getItem('basin_groq_key') ||
       j1.groq || j1.groqKey || j1.GROQ_API_KEY ||
       j2.groq || j2.groqKey || j2.GROQ_API_KEY ||
       j3.groq || j3.groqKey || j3.GROQ_API_KEY ||
-      getFieldValue(['api-groq-key','groq-key','groqKey']);
-    var model = localStorage.getItem('basin_groq_model') ||
+      fieldValue(['api-groq-key','groq-key','groqKey']);
+    var model =
+      localStorage.getItem('basin_groq_model') ||
       j1.groqModel || j1.model || j1.GROQ_MODEL ||
       j2.groqModel || j2.model || j2.GROQ_MODEL ||
-      getFieldValue(['api-groq-model','groq-model','groqModel']) ||
+      fieldValue(['api-groq-model','groq-model','groqModel']) ||
       'llama-3.3-70b-versatile';
-    return {tavily:text(tav).trim(), groq:text(groq).trim(), model:text(model).trim() || 'llama-3.3-70b-versatile'};
+    return {
+      tavily: clean(tavily),
+      groq: clean(groq),
+      model: clean(model) || 'llama-3.3-70b-versatile'
+    };
   }
-  function persistApiReady(){
-    ensureSafeStore();
-    var k=savedApiKeys();
+
+  function forceApiReady(){
+    safeStore();
+    var keys = getSavedKeys();
+
     window.BV_API = window.BV_API || {
-      tavilyKey:'', groqKey:'', groqModel:'llama-3.3-70b-versatile',
-      tavilyLive:false, tavilyBrowserLive:false, tavilyMode:'off', groqLive:false
+      tavilyKey:'',
+      groqKey:'',
+      groqModel:'llama-3.3-70b-versatile',
+      tavilyLive:false,
+      tavilyBrowserLive:false,
+      tavilyMode:'off',
+      groqLive:false
     };
 
-    if (k.tavily) {
-      localStorage.setItem('basin_tavily_api_key', k.tavily);
-      localStorage.setItem('basin_tavily_key', k.tavily);
-      BV_API.tavilyKey = k.tavily;
+    if (keys.tavily) {
+      localStorage.setItem('basin_tavily_api_key', keys.tavily);
+      localStorage.setItem('basin_tavily_key', keys.tavily);
+      BV_API.tavilyKey = keys.tavily;
       BV_API.tavilyLive = true;
       BV_API.tavilyMode = /github\.io$/i.test(location.hostname || '') ? 'github-actions' : 'saved';
       if (/github\.io$/i.test(location.hostname || '')) BV_API.tavilyBrowserLive = false;
       STORE.api.tavilyMode = BV_API.tavilyMode;
     }
-    if (k.groq) {
-      localStorage.setItem('basin_groq_api_key', k.groq);
-      localStorage.setItem('basin_groq_key', k.groq);
-      BV_API.groqKey = k.groq;
+
+    if (keys.groq) {
+      localStorage.setItem('basin_groq_api_key', keys.groq);
+      localStorage.setItem('basin_groq_key', keys.groq);
+      BV_API.groqKey = keys.groq;
       BV_API.groqLive = true;
     }
-    if (k.model) {
-      localStorage.setItem('basin_groq_model', k.model);
-      BV_API.groqModel = k.model;
+
+    if (keys.model) {
+      localStorage.setItem('basin_groq_model', keys.model);
+      BV_API.groqModel = keys.model;
     }
 
-    [['api-tavily-key',k.tavily],['tavily-key',k.tavily],['api-groq-key',k.groq],['groq-key',k.groq],['api-groq-model',k.model],['groq-model',k.model]].forEach(function(pair){
-      var el=q(pair[0]); if (el && pair[1] && !el.value) el.value = pair[1];
+    [
+      ['api-tavily-key', keys.tavily],
+      ['tavily-key', keys.tavily],
+      ['api-groq-key', keys.groq],
+      ['groq-key', keys.groq],
+      ['api-groq-model', keys.model],
+      ['groq-model', keys.model]
+    ].forEach(function(pair){
+      var el = byId(pair[0]);
+      if (el && pair[1] && !el.value) el.value = pair[1];
     });
 
-    var badge=q('api-badge');
+    var badge = byId('api-badge');
     if (badge) {
       badge.textContent = (BV_API.tavilyKey ? 'T' : '-') + (BV_API.groqKey ? '+G' : '');
       badge.style.color = (BV_API.tavilyKey || BV_API.groqKey) ? 'var(--green)' : 'var(--text3)';
     }
 
-    var tav=q('tavily-status');
-    if (tav) {
-      tav.textContent = BV_API.tavilyKey ? 'Tavily saved — GitHub Actions/shared radar enabled' : 'Offline — RSS/link fallback active';
-      tav.style.color = BV_API.tavilyKey ? 'var(--green)' : 'var(--text3)';
-    }
-    var groq=q('groq-status') || q('ai-status');
-    if (groq) {
-      groq.textContent = BV_API.groqKey ? 'Groq saved — AI analyst ready' : 'Offline — deterministic scorer active';
-      groq.style.color = BV_API.groqKey ? 'var(--green)' : 'var(--text3)';
+    var tavStatus = byId('tavily-status');
+    if (tavStatus) {
+      tavStatus.textContent = BV_API.tavilyKey
+        ? 'Tavily saved — GitHub Actions/shared radar enabled'
+        : 'Offline — RSS/link fallback active';
+      tavStatus.style.color = BV_API.tavilyKey ? 'var(--green)' : 'var(--text3)';
     }
 
-    var panel=q('api-status-panel');
+    var groqStatus = byId('groq-status') || byId('ai-status');
+    if (groqStatus) {
+      groqStatus.textContent = BV_API.groqKey
+        ? 'Groq saved — AI analyst ready'
+        : 'Offline — deterministic scorer active';
+      groqStatus.style.color = BV_API.groqKey ? 'var(--green)' : 'var(--text3)';
+    }
+
+    var panel = byId('api-status-panel');
     if (panel && (BV_API.tavilyKey || BV_API.groqKey)) {
-      var blocks = panel.querySelectorAll('.radar-kpi-num');
-      if (blocks && blocks.length >= 2) {
-        blocks[0].textContent = BV_API.tavilyKey ? (BV_API.tavilyBrowserLive ? 'ON' : 'GITHUB') : 'OFF';
-        blocks[1].textContent = BV_API.groqKey ? 'ON' : 'OFF';
+      var nums = panel.querySelectorAll('.radar-kpi-num');
+      if (nums && nums.length >= 2) {
+        nums[0].textContent = BV_API.tavilyKey ? (BV_API.tavilyBrowserLive ? 'ON' : 'GITHUB') : 'OFF';
+        nums[1].textContent = BV_API.groqKey ? 'ON' : 'OFF';
       }
     }
-    return k;
+
+    return keys;
   }
 
   function leadCount(){
-    ensureSafeStore();
-    return (STORE.leadWorkflow && STORE.leadWorkflow.length) || (STORE.radarLeads && STORE.radarLeads.length) || (STORE.investors && STORE.investors.length) || 0;
+    safeStore();
+    return Math.max(
+      STORE.leadWorkflow ? STORE.leadWorkflow.length : 0,
+      STORE.radarLeads ? STORE.radarLeads.length : 0,
+      STORE.investors ? STORE.investors.length : 0
+    );
   }
-  function sortLeadList(list){
-    var g={A:4,B:3,C:2,D:1};
-    return (list || []).slice().sort(function(a,b){
-      var ag=g[a.grade || a.effectiveGrade] || 0, bg=g[b.grade || b.effectiveGrade] || 0;
-      return bg-ag || (Number(b.score||0)-Number(a.score||0)) || text(a.name).localeCompare(text(b.name));
+
+  function sortedWorkingLeads(){
+    safeStore();
+    var source = (STORE.investors && STORE.investors.length) ? STORE.investors :
+      ((STORE.leadWorkflow && STORE.leadWorkflow.length) ? STORE.leadWorkflow : STORE.radarLeads);
+    var rank = {A:4,B:3,C:2,D:1};
+    return (source || []).slice().sort(function(a,b){
+      var ag = rank[a.grade || a.effectiveGrade] || 0;
+      var bg = rank[b.grade || b.effectiveGrade] || 0;
+      return bg - ag || (Number(b.score || 0) - Number(a.score || 0)) || clean(a.name).localeCompare(clean(b.name));
     });
   }
-  function patchDashboard(){
-    ensureSafeStore();
-    var dash=q('page-dashboard');
-    if (!dash || !dash.classList.contains('active')) return;
-    var vals = dash.querySelectorAll('.stat-val');
-    if (vals && vals.length) vals[0].textContent = leadCount();
 
-    var top=q('dash-top-leads');
-    if (top && (!STORE.investors || !STORE.investors.length)) {
-      var leads = sortLeadList(STORE.leadWorkflow && STORE.leadWorkflow.length ? STORE.leadWorkflow : STORE.radarLeads).slice(0,5);
+  function patchDashboardOnly(){
+    var dash = byId('page-dashboard');
+    if (!dash || !dash.classList.contains('active')) return;
+
+    var statVals = dash.querySelectorAll('.stat-val');
+    if (statVals && statVals.length) {
+      statVals[0].textContent = leadCount();
+    }
+
+    var top = byId('dash-top-leads');
+    if (!top) return;
+
+    var currentText = clean(top.textContent);
+    if (/No leads yet/i.test(currentText)) {
+      var leads = sortedWorkingLeads().slice(0,5);
       if (leads.length) {
-        top.innerHTML = '<div class="card-list">'+leads.map(function(l){
-          return '<div class="record" style="grid-template-columns:48px 1fr"><div class="score '+escSafe(l.grade||'C')+'">'+escSafe(l.grade||'C')+'</div><div><div class="rec-name">'+escSafe(l.name||'Lead')+'</div><div class="rec-meta">'+escSafe(l.title||l.company||'')+' · Score '+escSafe(l.score||'')+' · '+escSafe(l.status||l.qualificationStatus||'Open')+'</div></div></div>';
-        }).join('')+'</div>';
+        top.innerHTML = '<div class="card-list">' + leads.map(function(l){
+          var g = l.grade || l.effectiveGrade || 'C';
+          return '<div class="record" style="grid-template-columns:48px 1fr">' +
+            '<div class="score '+escLocal(g)+'">'+escLocal(g)+'</div>' +
+            '<div><div class="rec-name">'+escLocal(l.name || 'Lead')+'</div>' +
+            '<div class="rec-meta">'+escLocal(l.title || l.company || '')+' · Score '+escLocal(l.score || '')+' · '+escLocal(l.status || l.qualificationStatus || 'Open')+'</div></div>' +
+            '</div>';
+        }).join('') + '</div>';
       }
     }
   }
 
-  function patchCallCoach(){
-    try {
-      var coach=q('page-coach');
-      if (coach && coach.classList.contains('active') && typeof renderCoachButtons === 'function') {
-        var buttons=q('coach-buttons');
-        if (buttons && !buttons.children.length) renderCoachButtons();
-        else renderCoachButtons();
-      }
-    } catch(e){ console.warn('Call Coach patch warning', e); }
+  function patchCallCoachOnly(){
+    var coach = byId('page-coach');
+    if (!coach || !coach.classList.contains('active')) return;
+    var buttons = byId('coach-buttons');
+    if (buttons && typeof renderCoachButtons === 'function' && !buttons.children.length) {
+      renderCoachButtons();
+    }
   }
 
-  function afterRender(){
-    persistApiReady();
-    patchCallCoach();
-    patchDashboard();
+  function runHotfix(){
+    try { forceApiReady(); } catch(e){ console.warn('API hotfix warning', e); }
+    try { patchDashboardOnly(); } catch(e){ console.warn('Dashboard hotfix warning', e); }
+    try { patchCallCoachOnly(); } catch(e){ console.warn('Coach hotfix warning', e); }
   }
 
-  var oldRenderActive = window.renderActivePage;
-  if (typeof oldRenderActive === 'function' && !oldRenderActive.__basin3827) {
-    window.renderActivePage = function(){
-      var r = oldRenderActive.apply(this, arguments);
-      setTimeout(afterRender, 30);
-      return r;
-    };
-    window.renderActivePage.__basin3827 = true;
-  }
-
-  var oldGoPage = window.goPage;
-  if (typeof oldGoPage === 'function' && !oldGoPage.__basin3827) {
-    window.goPage = function(){
-      var r = oldGoPage.apply(this, arguments);
-      setTimeout(afterRender, 50);
-      return r;
-    };
-    window.goPage.__basin3827 = true;
-  }
-
-  var oldUpdateApi = window.updateApiStatus;
-  if (typeof oldUpdateApi === 'function' && !oldUpdateApi.__basin3827) {
-    window.updateApiStatus = function(){
-      persistApiReady();
-      var r = oldUpdateApi.apply(this, arguments);
-      setTimeout(persistApiReady, 20);
-      return r;
-    };
-    window.updateApiStatus.__basin3827 = true;
-  }
-
-  var oldRenderApi = window.renderApiStatusPanel;
-  if (typeof oldRenderApi === 'function' && !oldRenderApi.__basin3827) {
-    window.renderApiStatusPanel = function(){
-      persistApiReady();
-      var r = oldRenderApi.apply(this, arguments);
-      setTimeout(persistApiReady, 20);
-      return r;
-    };
-    window.renderApiStatusPanel.__basin3827 = true;
-  }
-
-  var oldRenderApiCenter = window.renderApiCenter;
-  if (typeof oldRenderApiCenter === 'function' && !oldRenderApiCenter.__basin3827) {
-    window.renderApiCenter = function(){
-      var r = oldRenderApiCenter.apply(this, arguments);
-      setTimeout(persistApiReady, 50);
-      return r;
-    };
-    window.renderApiCenter.__basin3827 = true;
-  }
-
-  var oldSaveKeys = window.saveApiKeysOnly;
-  if (typeof oldSaveKeys === 'function' && !oldSaveKeys.__basin3827) {
-    window.saveApiKeysOnly = function(silent){
-      var r = oldSaveKeys.apply(this, arguments);
-      persistApiReady();
-      if (!silent && typeof toast === 'function') toast('API KEYS SAVED + READY ON THIS BROWSER');
-      return r;
-    };
-    window.saveApiKeysOnly.__basin3827 = true;
-  }
-
-  var oldConnectGroq = window.connectGroq;
-  if (typeof oldConnectGroq === 'function' && !oldConnectGroq.__basin3827) {
-    window.connectGroq = async function(fromPage){
-      var result = false;
-      try { result = await oldConnectGroq.apply(this, arguments); } catch(e) { result = false; }
-      persistApiReady();
-      if (window.BV_API && BV_API.groqKey) { BV_API.groqLive = true; persistApiReady(); return true; }
-      return result;
-    };
-    window.connectGroq.__basin3827 = true;
-  }
-
-  var oldConnectTavily = window.connectTavily;
-  if (typeof oldConnectTavily === 'function' && !oldConnectTavily.__basin3827) {
-    window.connectTavily = async function(fromPage){
-      var result = false;
-      try { result = await oldConnectTavily.apply(this, arguments); } catch(e) { result = false; }
-      persistApiReady();
-      if (window.BV_API && BV_API.tavilyKey) { BV_API.tavilyLive = true; persistApiReady(); return true; }
-      return result;
-    };
-    window.connectTavily.__basin3827 = true;
-  }
-
-  window.basinForceApiReady = persistApiReady;
-  window.basinPatchDashboardCounts = patchDashboard;
-  window.basinPatchCallCoach = patchCallCoach;
-
+  // Do not override Leads Workflow or Lead Radar. Only repaint the small broken pieces after the app renders.
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function(){ setTimeout(afterRender, 150); setTimeout(afterRender, 1000); });
+    document.addEventListener('DOMContentLoaded', function(){
+      setTimeout(runHotfix, 100);
+      setTimeout(runHotfix, 800);
+      setTimeout(runHotfix, 2000);
+    });
   } else {
-    setTimeout(afterRender, 150); setTimeout(afterRender, 1000);
+    setTimeout(runHotfix, 100);
+    setTimeout(runHotfix, 800);
+    setTimeout(runHotfix, 2000);
   }
-  setInterval(afterRender, 10000);
-  console.log('Basin OS '+PATCH_VERSION+' loaded.');
+
+  setInterval(runHotfix, 5000);
+  window.basinForceApiReady = forceApiReady;
+  window.basinHotfix3828 = runHotfix;
+  console.log('Basin OS '+PATCH_VERSION+' loaded. Leads Workflow was not modified.');
 })();
 </script>
 
@@ -2101,20 +2078,26 @@ console.log('Basin OS integrated playbook + Tavily/Groq radar loaded ✓');
 </script>
 
 <script>
-/* Basin OS v3.8.27 — safe additive shim only.
-   Does not rebuild Lead Radar or Leads Workflow.
-   Fixes: Call Coach render, dashboard lead counts, saved API ready-state after refresh.
+/* Basin OS v3.8.28 — Stable 3825 Hotfix
+   Safe additive patch only.
+   DOES NOT replace or rebuild Lead Radar, Leads Workflow, lead cards, scoring, sorting, tasks, or pipeline logic.
+   Fixes only:
+   1) API saved-key status after refresh
+   2) Dashboard lead count/top leads when Investor Pipeline is empty
+   3) Call Coach button render if the page opens blank
 */
 (function(){
-  var PATCH_VERSION = 'v3.8.27 — Stable Leads + API Persistence';
+  var PATCH_VERSION = 'v3.8.28 — Stable 3825 Hotfix';
 
-  function q(id){ return document.getElementById(id); }
-  function text(v){ return String(v == null ? '' : v); }
-  function escSafe(v){
+  function byId(id){ return document.getElementById(id); }
+  function clean(v){ return String(v == null ? '' : v).trim(); }
+  function escLocal(v){
     try { if (typeof esc === 'function') return esc(v); } catch(e){}
-    return text(v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]});
+    return String(v == null ? '' : v).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
   }
-  function ensureSafeStore(){
+  function safeStore(){
     try { if (typeof ensureStore === 'function') ensureStore(); } catch(e){}
     try { if (typeof hardEnsure === 'function') hardEnsure(); } catch(e){}
     window.STORE = window.STORE || {};
@@ -2125,239 +2108,210 @@ console.log('Basin OS integrated playbook + Tavily/Groq radar loaded ✓');
     STORE.api.autoConnect = STORE.api.autoConnect || 'on';
     return STORE;
   }
-  function getFieldValue(ids){
+  function parseJsonKey(key){
+    try { return JSON.parse(localStorage.getItem(key) || '{}') || {}; } catch(e){ return {}; }
+  }
+  function fieldValue(ids){
     for (var i=0;i<ids.length;i++){
-      var el=q(ids[i]);
-      if (el && text(el.value).trim()) return text(el.value).trim();
+      var el = byId(ids[i]);
+      if (el && clean(el.value)) return clean(el.value);
     }
     return '';
   }
-  function parseLocalJson(key){
-    try { return JSON.parse(localStorage.getItem(key) || '{}') || {}; } catch(e){ return {}; }
-  }
-  function savedApiKeys(){
-    var j1=parseLocalJson('BV_API_KEYS'), j2=parseLocalJson('basin_api_keys'), j3=parseLocalJson('basinApiKeys');
-    var tav = localStorage.getItem('basin_tavily_api_key') || localStorage.getItem('basin_tavily_key') ||
+  function getSavedKeys(){
+    var j1 = parseJsonKey('BV_API_KEYS');
+    var j2 = parseJsonKey('basin_api_keys');
+    var j3 = parseJsonKey('basinApiKeys');
+    var tavily =
+      localStorage.getItem('basin_tavily_api_key') ||
+      localStorage.getItem('basin_tavily_key') ||
       j1.tavily || j1.tavilyKey || j1.TAVILY_API_KEY ||
       j2.tavily || j2.tavilyKey || j2.TAVILY_API_KEY ||
       j3.tavily || j3.tavilyKey || j3.TAVILY_API_KEY ||
-      getFieldValue(['api-tavily-key','tavily-key','tavilyKey']);
-    var groq = localStorage.getItem('basin_groq_api_key') || localStorage.getItem('basin_groq_key') ||
+      fieldValue(['api-tavily-key','tavily-key','tavilyKey']);
+    var groq =
+      localStorage.getItem('basin_groq_api_key') ||
+      localStorage.getItem('basin_groq_key') ||
       j1.groq || j1.groqKey || j1.GROQ_API_KEY ||
       j2.groq || j2.groqKey || j2.GROQ_API_KEY ||
       j3.groq || j3.groqKey || j3.GROQ_API_KEY ||
-      getFieldValue(['api-groq-key','groq-key','groqKey']);
-    var model = localStorage.getItem('basin_groq_model') ||
+      fieldValue(['api-groq-key','groq-key','groqKey']);
+    var model =
+      localStorage.getItem('basin_groq_model') ||
       j1.groqModel || j1.model || j1.GROQ_MODEL ||
       j2.groqModel || j2.model || j2.GROQ_MODEL ||
-      getFieldValue(['api-groq-model','groq-model','groqModel']) ||
+      fieldValue(['api-groq-model','groq-model','groqModel']) ||
       'llama-3.3-70b-versatile';
-    return {tavily:text(tav).trim(), groq:text(groq).trim(), model:text(model).trim() || 'llama-3.3-70b-versatile'};
+    return {
+      tavily: clean(tavily),
+      groq: clean(groq),
+      model: clean(model) || 'llama-3.3-70b-versatile'
+    };
   }
-  function persistApiReady(){
-    ensureSafeStore();
-    var k=savedApiKeys();
+
+  function forceApiReady(){
+    safeStore();
+    var keys = getSavedKeys();
+
     window.BV_API = window.BV_API || {
-      tavilyKey:'', groqKey:'', groqModel:'llama-3.3-70b-versatile',
-      tavilyLive:false, tavilyBrowserLive:false, tavilyMode:'off', groqLive:false
+      tavilyKey:'',
+      groqKey:'',
+      groqModel:'llama-3.3-70b-versatile',
+      tavilyLive:false,
+      tavilyBrowserLive:false,
+      tavilyMode:'off',
+      groqLive:false
     };
 
-    if (k.tavily) {
-      localStorage.setItem('basin_tavily_api_key', k.tavily);
-      localStorage.setItem('basin_tavily_key', k.tavily);
-      BV_API.tavilyKey = k.tavily;
+    if (keys.tavily) {
+      localStorage.setItem('basin_tavily_api_key', keys.tavily);
+      localStorage.setItem('basin_tavily_key', keys.tavily);
+      BV_API.tavilyKey = keys.tavily;
       BV_API.tavilyLive = true;
       BV_API.tavilyMode = /github\.io$/i.test(location.hostname || '') ? 'github-actions' : 'saved';
       if (/github\.io$/i.test(location.hostname || '')) BV_API.tavilyBrowserLive = false;
       STORE.api.tavilyMode = BV_API.tavilyMode;
     }
-    if (k.groq) {
-      localStorage.setItem('basin_groq_api_key', k.groq);
-      localStorage.setItem('basin_groq_key', k.groq);
-      BV_API.groqKey = k.groq;
+
+    if (keys.groq) {
+      localStorage.setItem('basin_groq_api_key', keys.groq);
+      localStorage.setItem('basin_groq_key', keys.groq);
+      BV_API.groqKey = keys.groq;
       BV_API.groqLive = true;
     }
-    if (k.model) {
-      localStorage.setItem('basin_groq_model', k.model);
-      BV_API.groqModel = k.model;
+
+    if (keys.model) {
+      localStorage.setItem('basin_groq_model', keys.model);
+      BV_API.groqModel = keys.model;
     }
 
-    [['api-tavily-key',k.tavily],['tavily-key',k.tavily],['api-groq-key',k.groq],['groq-key',k.groq],['api-groq-model',k.model],['groq-model',k.model]].forEach(function(pair){
-      var el=q(pair[0]); if (el && pair[1] && !el.value) el.value = pair[1];
+    [
+      ['api-tavily-key', keys.tavily],
+      ['tavily-key', keys.tavily],
+      ['api-groq-key', keys.groq],
+      ['groq-key', keys.groq],
+      ['api-groq-model', keys.model],
+      ['groq-model', keys.model]
+    ].forEach(function(pair){
+      var el = byId(pair[0]);
+      if (el && pair[1] && !el.value) el.value = pair[1];
     });
 
-    var badge=q('api-badge');
+    var badge = byId('api-badge');
     if (badge) {
       badge.textContent = (BV_API.tavilyKey ? 'T' : '-') + (BV_API.groqKey ? '+G' : '');
       badge.style.color = (BV_API.tavilyKey || BV_API.groqKey) ? 'var(--green)' : 'var(--text3)';
     }
 
-    var tav=q('tavily-status');
-    if (tav) {
-      tav.textContent = BV_API.tavilyKey ? 'Tavily saved — GitHub Actions/shared radar enabled' : 'Offline — RSS/link fallback active';
-      tav.style.color = BV_API.tavilyKey ? 'var(--green)' : 'var(--text3)';
-    }
-    var groq=q('groq-status') || q('ai-status');
-    if (groq) {
-      groq.textContent = BV_API.groqKey ? 'Groq saved — AI analyst ready' : 'Offline — deterministic scorer active';
-      groq.style.color = BV_API.groqKey ? 'var(--green)' : 'var(--text3)';
+    var tavStatus = byId('tavily-status');
+    if (tavStatus) {
+      tavStatus.textContent = BV_API.tavilyKey
+        ? 'Tavily saved — GitHub Actions/shared radar enabled'
+        : 'Offline — RSS/link fallback active';
+      tavStatus.style.color = BV_API.tavilyKey ? 'var(--green)' : 'var(--text3)';
     }
 
-    var panel=q('api-status-panel');
+    var groqStatus = byId('groq-status') || byId('ai-status');
+    if (groqStatus) {
+      groqStatus.textContent = BV_API.groqKey
+        ? 'Groq saved — AI analyst ready'
+        : 'Offline — deterministic scorer active';
+      groqStatus.style.color = BV_API.groqKey ? 'var(--green)' : 'var(--text3)';
+    }
+
+    var panel = byId('api-status-panel');
     if (panel && (BV_API.tavilyKey || BV_API.groqKey)) {
-      var blocks = panel.querySelectorAll('.radar-kpi-num');
-      if (blocks && blocks.length >= 2) {
-        blocks[0].textContent = BV_API.tavilyKey ? (BV_API.tavilyBrowserLive ? 'ON' : 'GITHUB') : 'OFF';
-        blocks[1].textContent = BV_API.groqKey ? 'ON' : 'OFF';
+      var nums = panel.querySelectorAll('.radar-kpi-num');
+      if (nums && nums.length >= 2) {
+        nums[0].textContent = BV_API.tavilyKey ? (BV_API.tavilyBrowserLive ? 'ON' : 'GITHUB') : 'OFF';
+        nums[1].textContent = BV_API.groqKey ? 'ON' : 'OFF';
       }
     }
-    return k;
+
+    return keys;
   }
 
   function leadCount(){
-    ensureSafeStore();
-    return (STORE.leadWorkflow && STORE.leadWorkflow.length) || (STORE.radarLeads && STORE.radarLeads.length) || (STORE.investors && STORE.investors.length) || 0;
+    safeStore();
+    return Math.max(
+      STORE.leadWorkflow ? STORE.leadWorkflow.length : 0,
+      STORE.radarLeads ? STORE.radarLeads.length : 0,
+      STORE.investors ? STORE.investors.length : 0
+    );
   }
-  function sortLeadList(list){
-    var g={A:4,B:3,C:2,D:1};
-    return (list || []).slice().sort(function(a,b){
-      var ag=g[a.grade || a.effectiveGrade] || 0, bg=g[b.grade || b.effectiveGrade] || 0;
-      return bg-ag || (Number(b.score||0)-Number(a.score||0)) || text(a.name).localeCompare(text(b.name));
+
+  function sortedWorkingLeads(){
+    safeStore();
+    var source = (STORE.investors && STORE.investors.length) ? STORE.investors :
+      ((STORE.leadWorkflow && STORE.leadWorkflow.length) ? STORE.leadWorkflow : STORE.radarLeads);
+    var rank = {A:4,B:3,C:2,D:1};
+    return (source || []).slice().sort(function(a,b){
+      var ag = rank[a.grade || a.effectiveGrade] || 0;
+      var bg = rank[b.grade || b.effectiveGrade] || 0;
+      return bg - ag || (Number(b.score || 0) - Number(a.score || 0)) || clean(a.name).localeCompare(clean(b.name));
     });
   }
-  function patchDashboard(){
-    ensureSafeStore();
-    var dash=q('page-dashboard');
-    if (!dash || !dash.classList.contains('active')) return;
-    var vals = dash.querySelectorAll('.stat-val');
-    if (vals && vals.length) vals[0].textContent = leadCount();
 
-    var top=q('dash-top-leads');
-    if (top && (!STORE.investors || !STORE.investors.length)) {
-      var leads = sortLeadList(STORE.leadWorkflow && STORE.leadWorkflow.length ? STORE.leadWorkflow : STORE.radarLeads).slice(0,5);
+  function patchDashboardOnly(){
+    var dash = byId('page-dashboard');
+    if (!dash || !dash.classList.contains('active')) return;
+
+    var statVals = dash.querySelectorAll('.stat-val');
+    if (statVals && statVals.length) {
+      statVals[0].textContent = leadCount();
+    }
+
+    var top = byId('dash-top-leads');
+    if (!top) return;
+
+    var currentText = clean(top.textContent);
+    if (/No leads yet/i.test(currentText)) {
+      var leads = sortedWorkingLeads().slice(0,5);
       if (leads.length) {
-        top.innerHTML = '<div class="card-list">'+leads.map(function(l){
-          return '<div class="record" style="grid-template-columns:48px 1fr"><div class="score '+escSafe(l.grade||'C')+'">'+escSafe(l.grade||'C')+'</div><div><div class="rec-name">'+escSafe(l.name||'Lead')+'</div><div class="rec-meta">'+escSafe(l.title||l.company||'')+' · Score '+escSafe(l.score||'')+' · '+escSafe(l.status||l.qualificationStatus||'Open')+'</div></div></div>';
-        }).join('')+'</div>';
+        top.innerHTML = '<div class="card-list">' + leads.map(function(l){
+          var g = l.grade || l.effectiveGrade || 'C';
+          return '<div class="record" style="grid-template-columns:48px 1fr">' +
+            '<div class="score '+escLocal(g)+'">'+escLocal(g)+'</div>' +
+            '<div><div class="rec-name">'+escLocal(l.name || 'Lead')+'</div>' +
+            '<div class="rec-meta">'+escLocal(l.title || l.company || '')+' · Score '+escLocal(l.score || '')+' · '+escLocal(l.status || l.qualificationStatus || 'Open')+'</div></div>' +
+            '</div>';
+        }).join('') + '</div>';
       }
     }
   }
 
-  function patchCallCoach(){
-    try {
-      var coach=q('page-coach');
-      if (coach && coach.classList.contains('active') && typeof renderCoachButtons === 'function') {
-        var buttons=q('coach-buttons');
-        if (buttons && !buttons.children.length) renderCoachButtons();
-        else renderCoachButtons();
-      }
-    } catch(e){ console.warn('Call Coach patch warning', e); }
+  function patchCallCoachOnly(){
+    var coach = byId('page-coach');
+    if (!coach || !coach.classList.contains('active')) return;
+    var buttons = byId('coach-buttons');
+    if (buttons && typeof renderCoachButtons === 'function' && !buttons.children.length) {
+      renderCoachButtons();
+    }
   }
 
-  function afterRender(){
-    persistApiReady();
-    patchCallCoach();
-    patchDashboard();
+  function runHotfix(){
+    try { forceApiReady(); } catch(e){ console.warn('API hotfix warning', e); }
+    try { patchDashboardOnly(); } catch(e){ console.warn('Dashboard hotfix warning', e); }
+    try { patchCallCoachOnly(); } catch(e){ console.warn('Coach hotfix warning', e); }
   }
 
-  var oldRenderActive = window.renderActivePage;
-  if (typeof oldRenderActive === 'function' && !oldRenderActive.__basin3827) {
-    window.renderActivePage = function(){
-      var r = oldRenderActive.apply(this, arguments);
-      setTimeout(afterRender, 30);
-      return r;
-    };
-    window.renderActivePage.__basin3827 = true;
-  }
-
-  var oldGoPage = window.goPage;
-  if (typeof oldGoPage === 'function' && !oldGoPage.__basin3827) {
-    window.goPage = function(){
-      var r = oldGoPage.apply(this, arguments);
-      setTimeout(afterRender, 50);
-      return r;
-    };
-    window.goPage.__basin3827 = true;
-  }
-
-  var oldUpdateApi = window.updateApiStatus;
-  if (typeof oldUpdateApi === 'function' && !oldUpdateApi.__basin3827) {
-    window.updateApiStatus = function(){
-      persistApiReady();
-      var r = oldUpdateApi.apply(this, arguments);
-      setTimeout(persistApiReady, 20);
-      return r;
-    };
-    window.updateApiStatus.__basin3827 = true;
-  }
-
-  var oldRenderApi = window.renderApiStatusPanel;
-  if (typeof oldRenderApi === 'function' && !oldRenderApi.__basin3827) {
-    window.renderApiStatusPanel = function(){
-      persistApiReady();
-      var r = oldRenderApi.apply(this, arguments);
-      setTimeout(persistApiReady, 20);
-      return r;
-    };
-    window.renderApiStatusPanel.__basin3827 = true;
-  }
-
-  var oldRenderApiCenter = window.renderApiCenter;
-  if (typeof oldRenderApiCenter === 'function' && !oldRenderApiCenter.__basin3827) {
-    window.renderApiCenter = function(){
-      var r = oldRenderApiCenter.apply(this, arguments);
-      setTimeout(persistApiReady, 50);
-      return r;
-    };
-    window.renderApiCenter.__basin3827 = true;
-  }
-
-  var oldSaveKeys = window.saveApiKeysOnly;
-  if (typeof oldSaveKeys === 'function' && !oldSaveKeys.__basin3827) {
-    window.saveApiKeysOnly = function(silent){
-      var r = oldSaveKeys.apply(this, arguments);
-      persistApiReady();
-      if (!silent && typeof toast === 'function') toast('API KEYS SAVED + READY ON THIS BROWSER');
-      return r;
-    };
-    window.saveApiKeysOnly.__basin3827 = true;
-  }
-
-  var oldConnectGroq = window.connectGroq;
-  if (typeof oldConnectGroq === 'function' && !oldConnectGroq.__basin3827) {
-    window.connectGroq = async function(fromPage){
-      var result = false;
-      try { result = await oldConnectGroq.apply(this, arguments); } catch(e) { result = false; }
-      persistApiReady();
-      if (window.BV_API && BV_API.groqKey) { BV_API.groqLive = true; persistApiReady(); return true; }
-      return result;
-    };
-    window.connectGroq.__basin3827 = true;
-  }
-
-  var oldConnectTavily = window.connectTavily;
-  if (typeof oldConnectTavily === 'function' && !oldConnectTavily.__basin3827) {
-    window.connectTavily = async function(fromPage){
-      var result = false;
-      try { result = await oldConnectTavily.apply(this, arguments); } catch(e) { result = false; }
-      persistApiReady();
-      if (window.BV_API && BV_API.tavilyKey) { BV_API.tavilyLive = true; persistApiReady(); return true; }
-      return result;
-    };
-    window.connectTavily.__basin3827 = true;
-  }
-
-  window.basinForceApiReady = persistApiReady;
-  window.basinPatchDashboardCounts = patchDashboard;
-  window.basinPatchCallCoach = patchCallCoach;
-
+  // Do not override Leads Workflow or Lead Radar. Only repaint the small broken pieces after the app renders.
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function(){ setTimeout(afterRender, 150); setTimeout(afterRender, 1000); });
+    document.addEventListener('DOMContentLoaded', function(){
+      setTimeout(runHotfix, 100);
+      setTimeout(runHotfix, 800);
+      setTimeout(runHotfix, 2000);
+    });
   } else {
-    setTimeout(afterRender, 150); setTimeout(afterRender, 1000);
+    setTimeout(runHotfix, 100);
+    setTimeout(runHotfix, 800);
+    setTimeout(runHotfix, 2000);
   }
-  setInterval(afterRender, 10000);
-  console.log('Basin OS '+PATCH_VERSION+' loaded.');
+
+  setInterval(runHotfix, 5000);
+  window.basinForceApiReady = forceApiReady;
+  window.basinHotfix3828 = runHotfix;
+  console.log('Basin OS '+PATCH_VERSION+' loaded. Leads Workflow was not modified.');
 })();
 </script>
 
@@ -2365,9 +2319,9 @@ console.log('Basin OS integrated playbook + Tavily/Groq radar loaded ✓');
 </html>
 
 <script>
-/* Basin OS v3.8.27 — Stable Leads + API Persistence */
+/* Basin OS v3.8.28 — Stable 3825 Hotfix */
 (function(){
-  var VERSION='v3.8.27 — Stable Leads + API Persistence';
+  var VERSION='v3.8.28 — Stable 3825 Hotfix';
   window.BASIN_IMPORT_DEBUG=[];
   function byId(id){return document.getElementById(id)}
   function clean(v,n){v=String(v==null?'':v).replace(/<[^>]+>/g,' ').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').replace(/\s+/g,' ').trim();return n?v.slice(0,n):v}
@@ -2404,9 +2358,9 @@ console.log('Basin OS integrated playbook + Tavily/Groq radar loaded ✓');
 
 
 <script>
-/* Basin OS v3.8.27 — Stable Leads + API Persistence */
+/* Basin OS v3.8.28 — Stable 3825 Hotfix */
 (function(){
-  var VERSION='v3.8.27 — Stable Leads + API Persistence';
+  var VERSION='v3.8.28 — Stable 3825 Hotfix';
   var HIGH_VALUE_RE=/physician|surgeon|doctor|md\b|medical practice|orthopedic|gastro|clinic owner|dentist|attorney|law partner|partner|cpa|tax advisor|accounting|owner|founder|ceo|president|business owner|executive|real estate developer|oil|gas|energy|mineral|royalty|operator|entrepreneur/i;
   var FOREIGN_RE=/\b(uk|london|canada|ontario|toronto|mexico|india|australia|europe|dubai|uae|china|singapore)\b/i;
   var BAD_HEADLINE_RE=/roundup|lawsuit|jury|student|loan|murder|crime|appeals|court reviews|bancorp|misled sons|what you missed|row over|litigation|finance atty|doctor of business administration/i;
