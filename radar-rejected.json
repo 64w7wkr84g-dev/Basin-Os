@@ -1,5 +1,646 @@
 {
-  "generatedAt": "",
-  "diagnostics": {},
-  "rejected": []
+  "generatedAt": "2026-05-01T10:42:39.057Z",
+  "diagnostics": {
+    "startedAt": "2026-05-01T10:36:28.946Z",
+    "queries": 20,
+    "rawResults": 100,
+    "candidates": 99,
+    "enriched": 40,
+    "accepted": 62,
+    "rejected": 37,
+    "reasons": {
+      "No named point person / not a contact": 37
+    }
+  },
+  "rejected": [
+    {
+      "name": "",
+      "title": "Attorney / Law Partner",
+      "company": "",
+      "url": "https://www.thecannatareport.com/documation-acquires-document-solutions/",
+      "score": 98,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website + LinkedIn + LinkedIn + Website / Contact Page + Company Website + Company Website + Email + Company Website",
+      "sourceQuery": "(Texas OR Dallas OR Fort Worth OR DFW OR Houston OR Austin OR San Antonio OR Midland OR Odessa) founder OR CEO OR owner acquired sold company expansion email contact 2025 OR 2026",
+      "geoPriority": "Texas Priority",
+      "lastCheckedAt": "2026-05-01T10:42:39.047Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Attorney / Law Partner",
+      "company": "",
+      "url": "https://www.hospitalitynet.org/news/4132177/hsmai-2026-commercial-strategy-conference-coming-to-san-antonio-texas",
+      "score": 98,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website + Company Website + Company Website + Company Website + Company Website + Company Website + Company Website",
+      "sourceQuery": "(Texas OR Dallas OR Fort Worth OR DFW OR Houston OR Austin OR San Antonio OR Midland OR Odessa) conference speaker chamber board physician attorney CPA founder business owner",
+      "geoPriority": "Texas Priority",
+      "lastCheckedAt": "2026-05-01T10:42:39.047Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://www.openpr.com/news/4495718/brian-ferdinand-brings-everforward-s-risk-governed-trading",
+      "score": 98,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website + Company Website + Company Website + Company Website + Company Website + Company Website",
+      "sourceQuery": "(Texas OR Dallas OR Fort Worth OR DFW OR Houston OR Austin OR San Antonio OR Midland OR Odessa) conference speaker chamber board physician attorney CPA founder business owner",
+      "geoPriority": "Texas Priority",
+      "lastCheckedAt": "2026-05-01T10:42:39.047Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Physician / Medical Practice",
+      "company": "",
+      "url": "https://www.privateequitywire.co.uk/astorg-strikes-1bn-plus-deal-for-thermo-fisher-microbiology-business/",
+      "score": 98,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "\"acquired\" OR \"sold\" OR \"liquidity event\" founder CEO owner company United States OR USA 2025 OR 2026",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.048Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Attorney / Law Partner",
+      "company": "",
+      "url": "https://events.inc.com/2026incconference",
+      "score": 98,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "Inc 5000 founder owner CEO contact email United States OR USA",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.048Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Physician / Medical Practice",
+      "company": "",
+      "url": "https://images.inc.com/uploaded_files/franchiseitem/Inc.5000-Yearbook-2020-PRINT_213.pdf",
+      "score": 98,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "Inc 5000 founder owner CEO contact email United States OR USA",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.048Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Physician / Medical Practice",
+      "company": "",
+      "url": "https://www.eei.org/en/news/news/all/new-eei-podcast-drew-maloney-highlights-eei-members-commitment-to-customers-across-america",
+      "score": 98,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "podcast interview founder physician attorney CPA business owner energy executive United States OR USA",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.048Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://www.irishnews.com/news/business/business-diary-its-all-building-towards-manufacturing-month-PPTU4BB4HVBX7C2XDAFXWLYI5M/",
+      "score": 98,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "conference speaker physician founder attorney CPA investor business owner United States OR USA",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.048Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Attorney / Law Partner",
+      "company": "Bay College - WZMQ 19 News",
+      "url": "https://wzmq19.com/news/361801/workforce-development-expert-mark-c-perna-speaks-at-bay-college/",
+      "score": 98,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "conference speaker physician founder attorney CPA investor business owner United States OR USA",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "PEI Group’s Investor Relations Network NY Forum, plus a profile of Chad",
+      "url": "https://www.pehub.com/warburg-pincus-jake-siewert-to-speak-at-pei-groups-investor-relations-network-ny-forum-plus-a-profile-of-chad-doerge-as-he-moves-to-round-hill/",
+      "score": 98,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Website / Contact Page",
+      "sourceQuery": "conference speaker physician founder attorney CPA investor business owner United States OR USA",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Physician / Medical Practice",
+      "company": "Via Law LLP",
+      "url": "https://www.linkedin.com/in/brian-h-standing-5a9ba016",
+      "score": 97,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "LinkedIn",
+      "sourceQuery": "site:linkedin.com/in attorney partner law firm estate planning United States OR USA",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Attorney / Law Partner",
+      "company": "",
+      "url": "https://streamrealty.com/",
+      "score": 94,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "(Texas OR Dallas OR Fort Worth OR DFW OR Houston OR Austin OR San Antonio OR Midland OR Odessa) real estate developer owner commercial property founder contact email 2025 OR 2026",
+      "geoPriority": "Texas Priority",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://www.yumpu.com/en/document/view/18431769/oil-gas-companies",
+      "score": 90,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Email + Phone + Company Website",
+      "sourceQuery": "(Texas OR Dallas OR Fort Worth OR DFW OR Houston OR Austin OR San Antonio OR Midland OR Odessa) oil gas energy executive operator mineral royalty owner president founder contact email 2025 OR 2026",
+      "geoPriority": "Texas Priority",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://mhatero.com/wp-content/uploads/2025/03/OIlfield-Vendors.pdf",
+      "score": 90,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Phone + Company Website",
+      "sourceQuery": "(Texas OR Oklahoma OR Colorado OR New Mexico OR Louisiana OR North Dakota OR Wyoming) oil gas operator mineral royalty executive president founder contact email 2025 OR 2026",
+      "geoPriority": "Energy State Priority",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://www.shalexp.com/texas/companies",
+      "score": 90,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "(Texas OR Dallas OR Fort Worth OR DFW OR Houston OR Austin OR San Antonio OR Midland OR Odessa) oil gas energy executive operator mineral royalty owner president founder contact email 2025 OR 2026",
+      "geoPriority": "Texas Priority",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://www.rrc.texas.gov/media/zvmhlzvx/olm003_02_20251126_rrc021_jan2026.pdf",
+      "score": 90,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "(Texas OR Dallas OR Fort Worth OR DFW OR Houston OR Austin OR San Antonio OR Midland OR Odessa) oil gas energy executive operator mineral royalty owner president founder contact email 2025 OR 2026",
+      "geoPriority": "Texas Priority",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://investsnips.com/publicly-traded-oil-gas-companies-in-texas/",
+      "score": 90,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "(Texas OR Dallas OR Fort Worth OR DFW OR Houston OR Austin OR San Antonio OR Midland OR Odessa) oil gas energy executive operator mineral royalty owner president founder contact email 2025 OR 2026",
+      "geoPriority": "Texas Priority",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://www.naro-us.org/chapters/texas",
+      "score": 90,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "(Texas OR Oklahoma OR Colorado OR New Mexico OR Louisiana OR North Dakota OR Wyoming) oil gas operator mineral royalty executive president founder contact email 2025 OR 2026",
+      "geoPriority": "Energy State Priority",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://www.scribd.com/document/417895727/Oil-and-Gas-Companies",
+      "score": 90,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Website / Contact Page",
+      "sourceQuery": "(Texas OR Oklahoma OR Colorado OR New Mexico OR Louisiana OR North Dakota OR Wyoming) oil gas operator mineral royalty executive president founder contact email 2025 OR 2026",
+      "geoPriority": "Energy State Priority",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://www.linkedin.com/in/kylevenema",
+      "score": 90,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "LinkedIn",
+      "sourceQuery": "site:linkedin.com/in oil gas energy executive mineral royalty owner operator United States OR USA",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://assets.inc.com/_/images/uploaded_files/franchiseitem/2024_Inc_5000_Regionals_448.pdf",
+      "score": 90,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "Inc 5000 founder owner CEO contact email United States OR USA",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "Drives Extraordinary Growth",
+      "url": "https://eonetwork.org/blog/together-we-build-eo-members-on-the-inc-5000-share-what-really-drives-extraordinary-growth/",
+      "score": 90,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "Inc 5000 founder owner CEO contact email United States OR USA",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://sec.gov/Archives/edgar/data/1505987/000150598710000001/xslFormDX01/primary_doc.xml",
+      "score": 90,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Phone",
+      "sourceQuery": "site:sec.gov/Archives/edgar/data \"Form D\" \"oil and gas\" OR energy \"United States\"",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1121484/000112148426000007/ois-20251231.htm",
+      "score": 90,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Phone",
+      "sourceQuery": "site:sec.gov/Archives/edgar/data \"Form D\" \"oil and gas\" OR energy \"United States\"",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Energy Executive / Mineral Owner",
+      "company": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1504461/000150446124000013/ngl-20240331.htm",
+      "score": 90,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Phone",
+      "sourceQuery": "site:sec.gov/Archives/edgar/data \"Form D\" \"oil and gas\" OR energy \"United States\"",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/101594/000143774925030799/useg20251005_s1.htm",
+      "score": 90,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Phone",
+      "sourceQuery": "site:sec.gov/Archives/edgar/data \"Form D\" \"oil and gas\" OR energy \"United States\"",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "CPA / Tax Advisor",
+      "company": "",
+      "url": "https://www.bradymartz.com/oil-gas/",
+      "score": 86,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Email + Phone + Company Website",
+      "sourceQuery": "(Texas OR Oklahoma OR Colorado OR New Mexico OR Louisiana OR North Dakota OR Wyoming) CPA tax planning IDC depletion oil gas high income contact email",
+      "geoPriority": "Energy State Priority",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://www.dallaschamber.org/wp-content/uploads/2026/01/12.16.25-Full-List_Corporate-Announcements_.pdf",
+      "score": 86,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "(Texas OR Dallas OR Fort Worth OR DFW OR Houston OR Austin OR San Antonio OR Midland OR Odessa) founder OR CEO OR owner acquired sold company expansion email contact 2025 OR 2026",
+      "geoPriority": "Texas Priority",
+      "lastCheckedAt": "2026-05-01T10:42:39.049Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "CPA / Tax Advisor",
+      "company": "",
+      "url": "https://www.api.org/~/media/files/policy/taxes/13-july/api-us-idc-delay-impacts-release-7-11-13.pdf",
+      "score": 86,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "(Texas OR Oklahoma OR Colorado OR New Mexico OR Louisiana OR North Dakota OR Wyoming) CPA tax planning IDC depletion oil gas high income contact email",
+      "geoPriority": "Energy State Priority",
+      "lastCheckedAt": "2026-05-01T10:42:39.050Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://corporate.exxonmobil.com/careers",
+      "score": 86,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "(Texas OR Oklahoma OR Colorado OR New Mexico OR Louisiana OR North Dakota OR Wyoming) business owner founder CEO acquired sold expands contact email 2025 OR 2026",
+      "geoPriority": "Energy State Priority",
+      "lastCheckedAt": "2026-05-01T10:42:39.050Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://pitchbook.com/news/articles/first-brands-reaches-global-settlement-liquidation-plan-after-market-rocking-bankruptcy",
+      "score": 86,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "\"acquired\" OR \"sold\" OR \"liquidity event\" founder CEO owner company United States OR USA 2025 OR 2026",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.050Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://time.com/article/2026/04/28/time100-companies-media-and-communications/",
+      "score": 86,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "\"acquired\" OR \"sold\" OR \"liquidity event\" founder CEO owner company United States OR USA 2025 OR 2026",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.050Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://techcrunch.com/2026/04/29/softbank-is-creating-a-robotics-company-that-builds-data-centers-and-already-eyeing-a-100b-ipo/",
+      "score": 86,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "\"acquired\" OR \"sold\" OR \"liquidity event\" founder CEO owner company United States OR USA 2025 OR 2026",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.050Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://events.inc.com/2026incconference/speakers",
+      "score": 86,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "Inc 5000 founder owner CEO contact email United States OR USA",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.050Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Attorney / Law Partner",
+      "company": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1070423/000110465906013594/a06-2528_110k.htm",
+      "score": 86,
+      "grade": "A",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Phone",
+      "sourceQuery": "site:sec.gov/Archives/edgar/data \"Form D\" \"oil and gas\" OR energy \"United States\"",
+      "geoPriority": "Nationwide Qualified",
+      "lastCheckedAt": "2026-05-01T10:42:39.050Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Real Estate Developer",
+      "company": "",
+      "url": "https://cbharper.com/commercial",
+      "score": 76,
+      "grade": "B",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Phone + Website / Contact Page",
+      "sourceQuery": "(Texas OR Dallas OR Fort Worth OR DFW OR Houston OR Austin OR San Antonio OR Midland OR Odessa) real estate developer owner commercial property founder contact email 2025 OR 2026",
+      "geoPriority": "Texas Priority",
+      "lastCheckedAt": "2026-05-01T10:42:39.050Z",
+      "recheckCadence": "weekly"
+    },
+    {
+      "name": "",
+      "title": "Business Owner / Executive",
+      "company": "",
+      "url": "https://www.hpitx.com/",
+      "score": 76,
+      "grade": "B",
+      "reason": "No named point person / not a contact",
+      "missingQualificationFields": [
+        "named point person/contact person"
+      ],
+      "contactSummary": "Company Website",
+      "sourceQuery": "(Texas OR Dallas OR Fort Worth OR DFW OR Houston OR Austin OR San Antonio OR Midland OR Odessa) real estate developer owner commercial property founder contact email 2025 OR 2026",
+      "geoPriority": "Texas Priority",
+      "lastCheckedAt": "2026-05-01T10:42:39.050Z",
+      "recheckCadence": "weekly"
+    }
+  ]
 }
