@@ -22,7 +22,8 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          if [ -f package.json ]; then npm install; else echo "No package.json; runner uses native Node fetch."; fi
 
       - name: Run Basin Radar
         env:
@@ -35,7 +36,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           mkdir -p data
-          if [ -f radar-leads.json ] && [ ! -f data/radar-leads.json ]; then cp radar-leads.json data/radar-leads.json; fi
+          cp radar-leads.json data/radar-leads.json
           git add radar-leads.json data/radar-leads.json || true
           git diff --cached --quiet && echo "No radar changes to commit" || git commit -m "Update Basin Radar leads"
           git push
