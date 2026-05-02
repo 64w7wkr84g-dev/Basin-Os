@@ -670,7 +670,406 @@ function copySelectedHandoff(){let note=selectedHandoffNote();if(!note)return to
 function downloadSelectedHandoff(){let note=selectedHandoffNote();if(!note)return toast('NO HANDOFF');download('director-handoff-'+(note.name||'prospect').replace(/[^a-z0-9]+/gi,'-').toLowerCase()+'.txt',buildHandoffText(note));toast('HANDOFF DOWNLOADED')}
 function printHandoffById(id){let note=handoffMeetings().find(n=>n.id===id);if(!note)return toast('NO HANDOFF');printHandoffNote(note)}
 function printSelectedHandoff(){let note=selectedHandoffNote();if(!note)return toast('NO HANDOFF');printHandoffNote(note)}
-function printHandoffNote(note){let txt=buildHandoffText(note);let w=window.open('','_blank');if(!w){copyText(null,txt);return toast('POPUP BLOCKED — COPIED')}w.document.write('<!doctype html><html><head><title>Director Handoff - '+esc(note.name||'Prospect')+'</title><style>body{font-family:Arial,sans-serif;color:#0f172a;margin:28px;line-height:1.35}h1{font-size:20px;margin:0 0 4px}.meta{color:#64748b;font-size:12px;margin-bottom:14px}.box{border:1px solid #d1d5db;border-radius:8px;padding:10px;margin:8px 0;break-inside:avoid}.h{font-size:11px;font-weight:bold;color:#b45309;text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}.b{white-space:pre-wrap;font-size:12px}@media print{body{margin:18px}.box{padding:8px;margin:6px 0}}</style></head><body><h1>Director Handoff — Basin Ventures</h1><div class="meta">'+esc(note.name||'')+' · '+esc(note.due?fmtDue(note.due):'No meeting time')+'</div>'+txt.split('\n\n').slice(1).map(p=>{let i=p.indexOf('\n'),h=i>-1?p.slice(0,i):p,b=i>-1?p.slice(i+1):'';return '<div class="box"><div class="h">'+esc(h)+'</div><div class="b">'+esc(b)+'</div></div>'}).join('')+'</body></html>');w.document.close();w.focus();setTimeout(()=>w.print(),250)}
+function printHandoffNote(note){let txt=buildHandoffText(note);let w=window.open('','_blank');if(!w){copyText(null,txt);return toast('POPUP BLOCKED — COPIED')}w.document.write('<!doctype html><html><head><title>Director Handoff - '+esc(note.name||'Prospect')+'</title><style>body{font-family:Arial,sans-serif;color:#0f172a;margin:28px;line-height:1.35}h1{font-size:20px;margin:0 0 4px}.meta{color:#64748b;font-size:12px;margin-bottom:14px}.box{border:1px solid #d1d5db;border-radius:8px;padding:10px;margin:8px 0;break-inside:avoid}.h{font-size:11px;font-weight:bold;color:#b45309;text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}.b{white-space:pre-wrap;font-size:12px}@media print{body{margin:18px}.box{padding:8px;margin:6px 0}}</style></head><body><h1>Director Handoff — Basin Ventures</h1><div class="meta">'+esc(note.name||'')+' · '+esc(note.due?fmtDue(note.due):'No meeting time')+'</div>'+txt.split('\n\n').slice(1).map(p=>{let i=p.indexOf('\n'),h=i>-1?p.slice(0,i):p,b=i>-1?p.slice(i+1):'';return '<div class="box"><div class="h">'+esc(h)+'</div><div class="b">'+esc(b)+'</div></div>'}).join('')+'
+<script>
+/* Basin OS — Sales Navigator + NPI Add-On
+   Additive only. Does not replace core Lead Radar, Investor Pipeline, scoring display, workflow, dashboard, or backend runner.
+*/
+(function(){
+  const MODULE = 'Sales Navigator + NPI Add-On';
+  function byId(id){ return document.getElementById(id); }
+  function val(id){ const el=byId(id); return el ? String(el.value||'').trim() : ''; }
+  function setVal(id,v){ const el=byId(id); if(el) el.value = v || ''; }
+  function clean(v){ return String(v == null ? '' : v).trim(); }
+  function escapeHtml(v){
+    try { if (typeof esc === 'function') return esc(v); } catch(e){}
+    return String(v == null ? '' : v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+  function notify(msg){ try { if(typeof toast === 'function') return toast(msg); } catch(e){} console.log(msg); }
+  function ensureStoreSafe(){
+    try { if(typeof ensureStore === 'function') ensureStore(); } catch(e){}
+    try { window.STORE = STORE; } catch(e){}
+    if(typeof STORE === 'undefined') window.STORE = window.STORE || {};
+    STORE.investors = Array.isArray(STORE.investors) ? STORE.investors : [];
+    STORE.radarLeads = Array.isArray(STORE.radarLeads) ? STORE.radarLeads : [];
+    STORE.contacted = Array.isArray(STORE.contacted) ? STORE.contacted : [];
+    STORE.notes = Array.isArray(STORE.notes) ? STORE.notes : [];
+    STORE.activity = Array.isArray(STORE.activity) ? STORE.activity : [];
+    STORE.salesNav = STORE.salesNav || {};
+    STORE.salesNav.inmail = STORE.salesNav.inmail || loadInMailStore();
+    STORE.salesNav.savedSearches = Array.isArray(STORE.salesNav.savedSearches) ? STORE.salesNav.savedSearches : defaultSalesNavSearches();
+    STORE.salesNav.alerts = Array.isArray(STORE.salesNav.alerts) ? STORE.salesNav.alerts : [];
+    return STORE;
+  }
+  function saveSafe(){ try { if(typeof save === 'function') save(); } catch(e){} try { if(typeof flushSave === 'function') flushSave(true); } catch(e){} }
+  function refreshSafe(){ try { if(typeof refresh === 'function') refresh(); } catch(e){} }
+  function addActivitySafe(msg){ try { if(typeof addActivity === 'function') return addActivity(msg); } catch(e){} ensureStoreSafe(); STORE.activity.unshift({m:msg,ts:new Date().toLocaleString()}); }
+  function dedupeLocal(name,company,email,linkedin){
+    ensureStoreSafe();
+    const n=clean(name).toLowerCase(), c=clean(company).toLowerCase(), e=clean(email).toLowerCase(), li=clean(linkedin).toLowerCase();
+    try { if(typeof investorExists === 'function' && investorExists(name,company,email)) return true; } catch(err){}
+    return (STORE.investors||[]).some(x => {
+      const xn=clean(x.name).toLowerCase(), xc=clean(x.company).toLowerCase(), xe=clean(x.email).toLowerCase(), xli=clean(x.linkedin||x.sourceUrl).toLowerCase();
+      return (e && xe === e) || (li && xli === li) || (n && c && xn === n && xc === c) || (n && !c && xn === n);
+    }) || (STORE.contacted||[]).some(x => clean(typeof x === 'string' ? x : JSON.stringify(x)).toLowerCase().includes(n) && (!c || clean(typeof x === 'string' ? x : JSON.stringify(x)).toLowerCase().includes(c)));
+  }
+  function markContactedSafe(name,company){ try { if(typeof markContacted === 'function') return markContacted(name,company); } catch(e){} }
+  function scoreContactLocal(o){
+    try { if(typeof scoreImportedContact === 'function') return scoreImportedContact(o); } catch(e){}
+    const blob = [o.Title,o.title,o.Company,o.company,o.Note,o.note,o.Location,o.location,o.Source,o.source].join(' ').toLowerCase();
+    let s=44;
+    if(/physician|surgeon|doctor|medical|clinic|orthopedic|cardiology|dermatology|radiology|urology|oral/.test(blob)) s+=28;
+    if(/owner|founder|ceo|president|principal|partner|director|vp|executive/.test(blob)) s+=24;
+    if(/attorney|law firm|managing partner/.test(blob)) s+=18;
+    if(/cpa|tax|accounting/.test(blob)) s+=18;
+    if(/sales navigator|promotion|job change|posted|mentioned|news|alert/.test(blob)) s+=12;
+    if(/oil|gas|energy|mineral|royalty|tax|idc|depletion|high income/.test(blob)) s+=10;
+    return Math.max(1, Math.min(98, s));
+  }
+  function gradeLocal(score){ try { if(typeof grade === 'function') return grade(score); } catch(e){} return score>=82?'A':score>=68?'B':score>=52?'C':'D'; }
+  function classifyLocal(blob){ try { if(typeof classifyICPText === 'function') return classifyICPText(blob); } catch(e){} blob=String(blob||'').toLowerCase(); if(/physician|surgeon|doctor/.test(blob)) return 'Physician'; if(/cpa|tax/.test(blob)) return 'CPA'; if(/attorney|law/.test(blob)) return 'Law Partner'; if(/oil|gas|energy/.test(blob)) return 'Energy'; return 'Business Owner'; }
+  function csvRowsLocal(text){
+    try { if(typeof parseCSV === 'function') return parseCSV(text); } catch(e){}
+    const rows=[]; let row=[], cur='', q=false;
+    for(let i=0;i<text.length;i++){
+      const ch=text[i], next=text[i+1];
+      if(ch==='"' && q && next==='"'){ cur+='"'; i++; }
+      else if(ch==='"'){ q=!q; }
+      else if(ch===',' && !q){ row.push(cur); cur=''; }
+      else if((ch==='\n'||ch==='\r') && !q){ if(ch==='\r'&&next==='\n')i++; row.push(cur); rows.push(row); row=[]; cur=''; }
+      else cur+=ch;
+    }
+    if(cur || row.length){ row.push(cur); rows.push(row); }
+    return rows.filter(r=>r.some(c=>clean(c)));
+  }
+  function getValObj(o, names){
+    try { if(typeof csvVal === 'function') return csvVal(o,names); } catch(e){}
+    const keys=Object.keys(o||{});
+    for(const name of names){ const hit=keys.find(k=>k.toLowerCase().trim()===String(name).toLowerCase().trim()); if(hit) return clean(o[hit]); }
+    return '';
+  }
+  function normalizeInvestor(rec){
+    rec.id = rec.id || ('inv-'+Date.now()+'-'+Math.random().toString(16).slice(2));
+    rec.status = rec.status || 'Found';
+    rec.sequenceStage = rec.sequenceStage || 'not-started';
+    rec.seqStage = rec.seqStage || rec.sequenceStage;
+    rec.sequenceDue = rec.sequenceDue || '';
+    rec.sequenceUpdated = rec.sequenceUpdated || '';
+    rec.ts = rec.ts || new Date().toLocaleString();
+    rec.grade = rec.grade || gradeLocal(rec.score||0);
+    rec.leadTemperature = rec.leadTemperature || 'warm';
+    rec.contactMethods = rec.contactMethods || [];
+    if(rec.linkedin && !rec.contactMethods.some(m=>/linkedin/i.test(m.type||m.label||m))) rec.contactMethods.push({type:'LinkedIn', value:rec.linkedin});
+    if(rec.email && !rec.contactMethods.some(m=>/email/i.test(m.type||m.label||m))) rec.contactMethods.push({type:'Email', value:rec.email});
+    if(rec.phone && !rec.contactMethods.some(m=>/phone/i.test(m.type||m.label||m))) rec.contactMethods.push({type:'Phone', value:rec.phone});
+    return rec;
+  }
+  function addInvestorRecord(rec, opts){
+    ensureStoreSafe(); opts=opts||{};
+    rec = normalizeInvestor(rec);
+    if(dedupeLocal(rec.name, rec.company, rec.email, rec.linkedin||rec.sourceUrl)) return false;
+    STORE.investors.unshift(rec);
+    markContactedSafe(rec.name, rec.company);
+    if(opts.activity !== false) addActivitySafe((opts.label||'Sales Navigator lead added')+': '+(rec.name||'Lead'));
+    saveSafe(); refreshSafe(); return true;
+  }
+
+  // Build 2 — Sales Navigator URLs and Search Builder output
+  function salesNavUrl(q){
+    const query = clean(q || '');
+    return 'https://www.linkedin.com/sales/search/people?keywords=' + encodeURIComponent(query);
+  }
+  window.salesNavUrl = salesNavUrl;
+  window.linkedinSearchUrl = function(q){ return salesNavUrl(q); };
+  const oldLinkedInPeopleSearch = window.linkedinPeopleSearch;
+  window.linkedinPeopleSearch = function(name,company,location){ return salesNavUrl([name,company,location].filter(Boolean).join(' ')); };
+  window.buildLinkedInBuilderLinks = function(showToastFlag=true){
+    const icp=val('li-icp')||'owner CEO founder';
+    const region=val('li-region')||'nationwide USA';
+    const senior=val('li-seniority')||'owner OR founder OR partner OR president OR CEO';
+    const sig=val('li-signal')||'';
+    const seniority='Director OR VP OR President OR Founder OR Owner OR Partner OR Principal OR CEO OR Managing Partner';
+    const base=[icp,region,senior,seniority,sig].filter(Boolean).join(' ');
+    const searches=[
+      ['Sales Navigator People Search',salesNavUrl(base),'Primary Sales Navigator Core search. Manual review only.'],
+      ['Sales Navigator Title + Region',salesNavUrl([icp,region,senior].join(' ')),'Uses ICP, region, and seniority hints.'],
+      ['Sales Navigator Trigger Search',salesNavUrl([sig||'promotion OR job change OR company news',icp,region].join(' ')),'Use for recent Sales Nav style signals.'],
+      ['Sales Navigator High-Seniority Search',salesNavUrl([icp,region,seniority].join(' ')),'Director+ and owner/founder/partner style search.'],
+      ['Google LinkedIn Backup', typeof googleLinkedInUrl==='function'?googleLinkedInUrl(base):('https://www.google.com/search?q='+encodeURIComponent('site:linkedin.com/in '+base)),'Backup public profile search if Sales Nav is thin.'],
+      ['Google News Signal Search','https://news.google.com/search?q='+encodeURIComponent([sig||'named partner OR opened practice OR acquired',icp,region].join(' ')),'Public signal search.'],
+      ['Sales Navigator Query Copy','',base]
+    ];
+    const root=byId('li-builder-results');
+    if(root){
+      root.dataset.built='1';
+      root.innerHTML='<div class="info gold"><strong>Sales Navigator Core:</strong> links open in Sales Navigator. No scraping, no auto-DMs, no automated LinkedIn actions.</div>'+searches.map(function(x){
+        if(x[1]) return '<div class="link-row"><div><a target="_blank" href="'+escapeHtml(x[1])+'">'+escapeHtml(x[0])+'</a><small>'+escapeHtml(x[2])+'</small></div><button class="btn btn-ghost btn-sm" data-url="'+escapeHtml(x[1])+'" onclick="copyText(this,this.dataset.url)">Copy URL</button></div>';
+        return '<div class="link-row"><div><a href="#" onclick="return false">'+escapeHtml(x[0])+'</a><small>'+escapeHtml(x[2])+'</small></div><button class="btn btn-ghost btn-sm" data-q="'+escapeHtml(x[2])+'" onclick="copyText(this,this.dataset.q)">Copy Query</button></div>';
+      }).join('');
+    }
+    const first='[Name]';
+    const copy='CONNECTION REQUEST\n'+templateSafe('Hi '+first+' — I’m with Basin Ventures in Southlake. Your background in '+(icp.split(' ')[0]||'your field')+' caught my eye. Would value the connection.')+'\n\nINMAIL / FOLLOW-UP OPENER\n'+templateSafe('Hi '+first+' — your background in '+(icp.split(' ')[0]||'your field')+' stood out. Basin works with accredited investors evaluating direct energy ownership and potential tax advantages. Would a short director intro be worth considering?');
+    if(byId('li-copy-output')) byId('li-copy-output').innerHTML='<div class="out"><div class="out-hd"><div class="out-title">Sales Navigator Copy</div><button class="copy" onclick="copyLinkedInBuilderPlan()">Copy</button></div><div class="out-body">'+escapeHtml(copy)+'</div></div>';
+    renderLinkedInDailyPlanSafe();
+    renderSalesNavSavedSearches();
+    if(showToastFlag) notify('SALES NAVIGATOR SEARCHES BUILT');
+  };
+  function templateSafe(s){ try { if(typeof templateText==='function') return templateText(s); } catch(e){} return s; }
+  function renderLinkedInDailyPlanSafe(){ try { if(typeof renderLinkedInDailyPlan === 'function') renderLinkedInDailyPlan(); } catch(e){} }
+
+  // Build 1 — Sales Navigator manual CSV import through the existing HubSpot CSV importer
+  const originalImportHubSpotCSV = window.importHubSpotCSV;
+  window.importHubSpotCSV = function(){
+    const fmt = val('csv-import-format') || 'hubspot';
+    if(fmt === 'salesnav') return importSalesNavCSV();
+    if(typeof originalImportHubSpotCSV === 'function') return originalImportHubSpotCSV();
+  };
+  window.importSalesNavCSV = function(){
+    const file=byId('hubspot-csv-file')?.files?.[0];
+    if(!file) return notify('SELECT CSV FIRST');
+    const reader=new FileReader();
+    reader.onload=function(){
+      const rows=csvRowsLocal(String(reader.result||''));
+      if(rows.length<2) return notify('CSV EMPTY');
+      const headers=rows[0].map(h=>clean(h));
+      let added=0, skipped=0;
+      rows.slice(1).forEach(function(r){
+        const o={}; headers.forEach((h,i)=>o[h]=r[i]||'');
+        const first=getValObj(o,['First Name','first name','firstname','first']);
+        const last=getValObj(o,['Last Name','last name','lastname','last']);
+        const full=getValObj(o,['Name','Full Name','full name']) || [first,last].filter(Boolean).join(' ');
+        const title=getValObj(o,['Title','title','Job Title','job title','Position']);
+        const company=getValObj(o,['Company','company','Company Name']);
+        const email=getValObj(o,['Email','email','Email Address']);
+        const linkedin=getValObj(o,['LinkedIn Profile URL','LinkedIn URL','linkedin','Profile URL']);
+        const location=getValObj(o,['Location','location','City','city']);
+        const connected=getValObj(o,['Connected','connected']);
+        const savedDate=getValObj(o,['Saved Date','saved date']);
+        const note=getValObj(o,['Note','Notes','note','notes']);
+        if(!full){ skipped++; return; }
+        if(dedupeLocal(full,company,email,linkedin)){ skipped++; return; }
+        const score=scoreContactLocal({Title:title,Company:company,Email:email,Source:'Sales Navigator',Note:note,Location:location});
+        const rec={name:full,title:title||'Sales Navigator Contact',company,location,email,linkedin,source:'Sales Navigator',sourceUrl:linkedin,sourceSignal:'Sales Navigator CSV import',salesNavConnected:connected,salesNavSavedDate:savedDate,salesNavNotes:note,notes:note,summary:note,industry:classifyLocal([title,company,note].join(' ')),leadTemperature:/yes|connected/i.test(connected)?'warm':'cold',score,grade:gradeLocal(score),status:'Found',priority:'Normal',tags:['Sales Navigator','CSV Import']};
+        if(addInvestorRecord(rec,{label:'Sales Navigator CSV import',activity:false})){ added++; } else skipped++;
+      });
+      addActivitySafe('Sales Navigator CSV import: '+added+' added, '+skipped+' skipped');
+      saveSafe(); refreshSafe(); notify('SALES NAV CSV IMPORTED: '+added+' ADDED');
+    };
+    reader.readAsText(file);
+  };
+  window.downloadSalesNavCSVTemplate = function(){
+    const txt='First Name,Last Name,Title,Company,Email,LinkedIn Profile URL,Location,Connected,Saved Date,Note\nJane,Smith,Orthopedic Surgeon,Smith Orthopedics,jane@example.com,https://www.linkedin.com/in/janesmith,Dallas-Fort Worth TX,No,2026-05-01,Sales Navigator saved lead — private practice owner';
+    try { if(typeof download === 'function') return download('sales-navigator-import-template.csv',txt); } catch(e){}
+    const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([txt],{type:'text/csv'})); a.download='sales-navigator-import-template.csv'; a.click();
+  };
+
+  // Build 3 — Sales Navigator alert logger
+  window.openSalesNavAlertLogger = function(){
+    ensureStoreSafe();
+    try { if(typeof goPage === 'function') goPage('radar',null); } catch(e){}
+    setTimeout(function(){ injectSalesNavRadarPanels(); const t=byId('sn-alert-type'); if(t) t.focus(); notify('SALES NAV ALERT LOGGER READY'); },80);
+  };
+  window.saveSalesNavAlertLead = function(){
+    ensureStoreSafe();
+    const type=val('sn-alert-type')||'Sales Navigator Alert';
+    const name=val('sn-alert-name');
+    const title=val('sn-alert-title');
+    const company=val('sn-alert-company');
+    const linkedin=val('sn-alert-linkedin');
+    const notes=val('sn-alert-notes')||('Sales Navigator alert — '+type);
+    if(!name) return notify('LEAD NAME REQUIRED');
+    if(dedupeLocal(name,company,'',linkedin)) return notify('DUPLICATE — NOT ADDED');
+    const score=Math.min(98, scoreContactLocal({Title:title,Company:company,Source:'Sales Navigator '+type,Note:notes})+10);
+    const rec={name,title:title||'Sales Navigator Alert',company,linkedin,source:'Sales Navigator',sourceUrl:linkedin,sourceSignal:'Sales Navigator alert — '+type,salesNavAlertType:type,salesNavNotes:notes,notes:notes,summary:notes,industry:classifyLocal([title,company,notes].join(' ')),leadTemperature:'warm',score,grade:gradeLocal(score),status:'Found',priority:'High',tags:['Sales Navigator',type,'High Priority']};
+    if(addInvestorRecord(rec,{label:'Sales Navigator alert'})){
+      STORE.salesNav.alerts.unshift({type,name,title,company,linkedin,notes,ts:new Date().toLocaleString(),investorId:rec.id});
+      ['sn-alert-name','sn-alert-title','sn-alert-company','sn-alert-linkedin'].forEach(id=>setVal(id,''));
+      setVal('sn-alert-notes','Sales Navigator alert — '+type+'.');
+      saveSafe(); refreshSafe(); notify('SALES NAV ALERT ADDED TO PIPELINE');
+    } else notify('DUPLICATE — NOT ADDED');
+  };
+  window.prefillManualImportFromSalesNavAlert = function(){
+    const type=val('sn-alert-type')||'Sales Navigator Alert';
+    setVal('radar-import-name',val('sn-alert-name'));
+    setVal('radar-import-title',val('sn-alert-title')||type);
+    setVal('radar-import-company',val('sn-alert-company'));
+    setVal('radar-import-linkedin',val('sn-alert-linkedin'));
+    setVal('radar-import-url',val('sn-alert-linkedin'));
+    setVal('radar-import-notes',val('sn-alert-notes')||('Sales Navigator alert — '+type+'.'));
+    notify('MANUAL IMPORT PREFILLED');
+  };
+
+  // Build 4 — InMail tracker and queue
+  function loadInMailStore(){
+    try { return JSON.parse(localStorage.getItem('basin_salesnav_inmail')||'{}') || {}; } catch(e){ return {}; }
+  }
+  function saveInMailStore(obj){
+    obj=obj||{}; localStorage.setItem('basin_salesnav_inmail', JSON.stringify(obj)); ensureStoreSafe(); STORE.salesNav.inmail=obj; saveSafe();
+  }
+  function inmailStore(){ ensureStoreSafe(); const s=Object.assign({used:0,limit:50,resetDate:''}, loadInMailStore(), STORE.salesNav.inmail||{}); STORE.salesNav.inmail=s; return s; }
+  window.setSalesNavInMailResetDate = function(v){ const s=inmailStore(); s.resetDate=v; saveInMailStore(s); renderInMailTracker(); };
+  window.adjustSalesNavInMailUsed = function(delta){ const s=inmailStore(); s.used=Math.max(0, Math.min(Number(s.limit||50), Number(s.used||0)+Number(delta||0))); saveInMailStore(s); renderInMailTracker(); };
+  function inmailQueue(){ ensureStoreSafe(); return STORE.investors.filter(x=>x.inmailQueued).sort((a,b)=>Number(b.score||0)-Number(a.score||0)); }
+  window.queueInvestorForInMail = function(id){ ensureStoreSafe(); const r=STORE.investors.find(x=>x.id===id); if(!r) return notify('INVESTOR NOT FOUND'); r.inmailQueued=true; r.inmailQueuedAt=new Date().toLocaleString(); r.tags=Array.from(new Set([...(r.tags||[]),'InMail Queue'])); addActivitySafe('Queued for InMail: '+r.name); saveSafe(); renderInMailTracker(); injectInvestorInMailButtons(); notify('QUEUED FOR INMAIL'); };
+  window.markInMailSent = function(id){ ensureStoreSafe(); const r=STORE.investors.find(x=>x.id===id); if(!r) return notify('INVESTOR NOT FOUND'); r.inmailQueued=false; r.lastTouchChannel='Sales Navigator InMail'; r.lastTouchAt=new Date().toLocaleString(); r.status=r.status==='Found'?'Contacted':r.status; r.notes=[r.notes||'', 'Sales Navigator InMail sent '+new Date().toLocaleString()].filter(Boolean).join('\n'); STORE.notes.unshift({id:'note-'+Date.now()+'-inmail',name:r.name,outcome:'Sales Navigator InMail Sent',status:'Follow-Up',text:'Manual InMail sent through Sales Navigator.',followup:'Watch for reply. Credit may return if the recipient responds.',leadId:r.id,source:'Sales Navigator',icp:classifyLocal([r.title,r.company,r.notes].join(' ')),ts:new Date().toLocaleString()}); adjustSalesNavInMailUsed(1); addActivitySafe('InMail sent: '+r.name); saveSafe(); refreshSafe(); renderInMailTracker(); };
+  window.markInMailCreditReturned = function(){ adjustSalesNavInMailUsed(-1); notify('INMAIL CREDIT RETURNED'); };
+  function inmailOpener(r){
+    const first=(r.name||'').split(/\s+/)[0]||'[Name]'; const ctx=classifyLocal([r.title,r.company,r.notes,r.salesNavNotes].join(' '));
+    if(ctx==='Physician') return 'Hi '+first+' — your background as '+(r.title||'a physician leader')+' stood out. Basin works with accredited investors evaluating direct energy ownership and potential tax advantages. Worth a brief director intro?';
+    if(ctx==='CPA') return 'Hi '+first+' — your tax background stood out. Basin works with accredited investors where IDC/depletion questions often need CPA guidance. Worth a short intro?';
+    if(ctx==='Law Partner') return 'Hi '+first+' — your partner-level background stood out. Basin works with accredited investors evaluating direct energy ownership. Worth a quick director intro?';
+    return 'Hi '+first+' — your background at '+(r.company||'your company')+' stood out. Basin works with accredited investors evaluating direct energy ownership and potential tax advantages. Worth a brief intro?';
+  }
+  function renderInMailTracker(){
+    const root=byId('salesnav-inmail-panel'); if(!root) return;
+    const s=inmailStore(); const used=Number(s.used||0), limit=Number(s.limit||50), remaining=Math.max(0,limit-used); const q=inmailQueue();
+    root.innerHTML='<div class="panel"><div class="panel-hd"><div><div class="panel-title">InMail Tracker + Queue</div><div class="panel-sub">Manual tracker for Sales Navigator Core 50-credit workflow.</div></div><span class="tag '+(remaining<10?'red':'green')+'">'+remaining+' Remaining</span></div><div class="panel-bd">'+
+      '<div class="grid3"><div class="stat"><div class="stat-val">'+used+'</div><div class="stat-lbl">Used</div></div><div class="stat"><div class="stat-val">'+remaining+'</div><div class="stat-lbl">Remaining</div></div><div class="stat"><div class="stat-val">'+limit+'</div><div class="stat-lbl">Monthly Limit</div></div></div>'+
+      (remaining<10?'<div class="info red"><strong>Warning:</strong> fewer than 10 InMails remain this month.</div>':'')+
+      '<div class="row2"><div class="field"><label class="label">Reset Date</label><input class="input" type="date" value="'+escapeHtml(s.resetDate||'')+'" onchange="setSalesNavInMailResetDate(this.value)"></div><div class="field"><label class="label">Manual Controls</label><div style="display:flex;gap:6px"><button class="btn btn-ghost btn-sm" onclick="adjustSalesNavInMailUsed(1)">+ Sent</button><button class="btn btn-ghost btn-sm" onclick="markInMailCreditReturned()">Credit Returned</button><button class="btn btn-danger btn-sm" onclick="adjustSalesNavInMailUsed(-999)">Reset Used</button></div></div></div>'+
+      '<div class="divider"></div><div class="panel-sub" style="margin-bottom:8px">Queued Leads</div>'+
+      (q.length?q.map(function(r){return '<div class="record" style="grid-template-columns:42px 1fr auto"><div class="score '+escapeHtml(r.grade||gradeLocal(r.score||0))+'">'+escapeHtml(r.grade||gradeLocal(r.score||0))+'</div><div><div class="rec-name">'+escapeHtml(r.name)+'</div><div class="rec-meta">'+escapeHtml(r.title||'')+' · '+escapeHtml(r.company||'')+' · Score '+escapeHtml(r.score||'')+'</div><div class="rec-tags">'+(r.linkedin||r.sourceUrl?'<a class="tag blue" target="_blank" href="'+escapeHtml(r.linkedin||r.sourceUrl)+'">LinkedIn</a>':'<span class="tag gray">No LinkedIn URL</span>')+'<span class="tag gold">InMail</span></div><div class="mini-note" style="margin-top:7px">'+escapeHtml(inmailOpener(r))+'</div></div><div class="rec-actions"><button class="btn btn-ghost btn-sm" onclick="copyText(this,\''+escapeHtml(inmailOpener(r)).replace(/'/g,'&#39;')+'\')">Copy</button><button class="btn btn-primary btn-sm" style="width:auto" onclick="markInMailSent(\''+escapeHtml(r.id)+'\')">Mark Sent</button></div></div>';}).join(''):'<div class="empty" style="padding:20px"><div class="empty-title">No InMail queue</div><div class="empty-sub">Use Queue for InMail on Investor Pipeline cards.</div></div>')+
+      '</div></div>';
+  }
+
+  // Build 5 — NPI Physician Finder
+  const NPI_SPECIALTIES=['Orthopedic Surgery','Cardiology','Gastroenterology','Dermatology','Ophthalmology','Plastic Surgery','Neurology','Anesthesiology','Radiology','Urology','Internal Medicine','Family Medicine','Psychiatry','Oral Surgery'];
+  const US_STATES=['AL','AK','AZ','AR','CA','CO','CT','DE','FL','GA','HI','IA','ID','IL','IN','KS','KY','LA','MA','MD','ME','MI','MN','MO','MS','MT','NC','ND','NE','NH','NJ','NM','NV','NY','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VA','VT','WA','WI','WV','WY'];
+  window.runNPIFinder = async function(){
+    const spec=val('npi-specialty')||'Orthopedic Surgery', state=val('npi-state')||'TX', city=val('npi-city'), limit=val('npi-limit')||'20';
+    const root=byId('npi-results'); if(root) root.innerHTML='<div class="empty" style="padding:20px"><div class="empty-title">Searching NPI Registry…</div></div>';
+    const params=new URLSearchParams({version:'2.1', taxonomy_description:spec, state:state, limit:limit}); if(city) params.set('city',city);
+    try{
+      const res=await fetch('https://npiregistry.cms.hhs.gov/api/?'+params.toString());
+      if(!res.ok) throw new Error('NPI API '+res.status);
+      const data=await res.json(); const items=(data.results||[]).map(normalizeNPIRecord).filter(x=>x.name);
+      renderNPIResults(items);
+    }catch(e){ if(root) root.innerHTML='<div class="info red"><strong>NPI error:</strong> '+escapeHtml(e.message||e)+'</div>'; }
+  };
+  function normalizeNPIRecord(r){
+    const b=r.basic||{}; const first=b.first_name||'', last=b.last_name||'', cred=b.credential||''; const name=[first,last].filter(Boolean).join(' ') || b.authorized_official_first_name && [b.authorized_official_first_name,b.authorized_official_last_name].filter(Boolean).join(' ') || '';
+    const addr=(r.addresses||[]).find(a=>a.address_purpose==='LOCATION') || (r.addresses||[])[0] || {};
+    const tax=(r.taxonomies||[]).find(t=>t.primary) || (r.taxonomies||[])[0] || {};
+    const org=b.organization_name || b.practice_location_address_telephone_number || '';
+    return {npi:r.number||'', name, credential:cred, title:tax.desc || val('npi-specialty') || 'Physician', specialty:tax.desc||val('npi-specialty'), company:org, address:[addr.address_1,addr.city,addr.state,addr.postal_code].filter(Boolean).join(', '), location:[addr.city,addr.state].filter(Boolean).join(', '), phone:addr.telephone_number||'', source:'NPI Registry', raw:r};
+  }
+  function renderNPIResults(items){
+    const root=byId('npi-results'); if(!root) return;
+    root.innerHTML=items.length?items.map(function(x,i){ const payload=encodeURIComponent(JSON.stringify(x)); return '<div class="record" style="grid-template-columns:48px 1fr auto"><div class="score B">MD</div><div><div class="rec-name">'+escapeHtml(x.name)+'</div><div class="rec-meta">'+escapeHtml([x.credential,x.specialty,x.company].filter(Boolean).join(' · '))+'</div><div class="rec-tags"><span class="tag blue">NPI '+escapeHtml(x.npi)+'</span>'+(x.phone?'<span class="tag gray">☎ '+escapeHtml(x.phone)+'</span>':'')+'<span class="tag gray">'+escapeHtml(x.location||'')+'</span></div><div class="mini-note" style="margin-top:7px">'+escapeHtml(x.address||'')+'</div></div><div class="rec-actions"><button class="btn btn-primary btn-sm" style="width:auto" data-npi="'+payload+'" onclick="addNPILeadToRadar(this.dataset.npi)">Add to Pipeline</button></div></div>'; }).join(''):'<div class="empty" style="padding:20px"><div class="empty-title">No NPI results</div><div class="empty-sub">Try a broader specialty, city, or limit.</div></div>';
+  }
+  window.addNPILeadToRadar = function(encoded){
+    ensureStoreSafe(); const x=JSON.parse(decodeURIComponent(encoded));
+    const l={id:'npi-'+(x.npi||Date.now()),name:x.name,title:x.specialty||'Physician',company:x.company||'',location:x.location||'',phone:x.phone||'',email:'',linkedin:'',url:'https://npiregistry.cms.hhs.gov/provider-view/'+(x.npi||''),summary:'NPI Physician Registry public federal data. Practice address: '+(x.address||'')+'. Practice phone: '+(x.phone||''),signal:'NPI physician registry match',source:'NPI Registry',sourceFeed:'Federal public data',status:'New',foundAt:new Date().toLocaleString(),type:'investor'};
+    l.score=scoreContactLocal({Title:l.title,Company:l.company,Source:'NPI Registry',Note:l.summary,Location:l.location}); l.grade=gradeLocal(l.score); l.contactMethods=x.phone?[{type:'Phone',value:x.phone}]:[];
+    let added=false; try { if(typeof addRadarLead === 'function') added=addRadarLead(l); else { STORE.radarLeads.unshift(l); added=true; } } catch(e){ STORE.radarLeads.unshift(l); added=true; }
+    if(added){ addActivitySafe('NPI Registry lead added: '+l.name); saveSafe(); refreshSafe(); notify('NPI LEAD ADDED'); } else notify('DUPLICATE — NOT ADDED');
+  };
+
+  // Build 6 — Sales Navigator Saved Search Library
+  function defaultSalesNavSearches(){ return [
+    {name:'DFW Physician Owners', query:'physician surgeon medical practice owner Dallas-Fort Worth TX Director OR Owner OR Founder OR Partner'},
+    {name:'Houston Physicians', query:'gastroenterologist physician private practice Houston TX Director OR Owner OR Founder'},
+    {name:'Austin Business Owners', query:'CEO founder owner president private company Austin TX acquisition expansion'},
+    {name:'San Antonio Owners', query:'business owner private company growth San Antonio TX owner founder president'},
+    {name:'Houston Law Partners', query:'law firm partner attorney managing partner Houston TX tax estate'},
+    {name:'DFW Medical CPAs', query:'CPA tax partner accounting firm physician clients Dallas-Fort Worth TX'},
+    {name:'Midland Energy Executives', query:'oil gas energy executive mineral royalty owner Midland Odessa TX'},
+    {name:'Nationwide Practice Owners', query:'opened medical practice private practice owner United States physician surgeon owner founder'}
+  ]; }
+  function renderSalesNavSavedSearches(){
+    const root=byId('salesnav-search-library'); if(!root) return; ensureStoreSafe();
+    const rows=STORE.salesNav.savedSearches || defaultSalesNavSearches();
+    root.innerHTML='<div class="panel"><div class="panel-hd"><div><div class="panel-title">Sales Navigator Saved Search Library</div><div class="panel-sub">One-click manual Sales Navigator searches. No scraping or automation.</div></div><button class="btn btn-ghost btn-sm" onclick="saveCurrentSalesNavSearch()">Save Current</button></div><div class="panel-bd">'+rows.map(function(s,i){const url=salesNavUrl(s.query); return '<div class="link-row"><div><a target="_blank" href="'+escapeHtml(url)+'">'+escapeHtml(s.name)+'</a><small>'+escapeHtml(s.query)+'</small></div><div style="display:flex;gap:5px"><button class="btn btn-ghost btn-sm" data-url="'+escapeHtml(url)+'" onclick="copyText(this,this.dataset.url)">Copy</button><button class="btn btn-danger btn-sm" onclick="deleteSavedSalesNavSearch('+i+')">×</button></div></div>';}).join('')+'</div></div>';
+  }
+  window.saveCurrentSalesNavSearch = function(){ ensureStoreSafe(); const icp=val('li-icp')||'owner CEO founder', region=val('li-region')||'nationwide USA', sig=val('li-signal')||''; const name=prompt('Saved search name?', [region, icp.split(' ')[0]].filter(Boolean).join(' ')); if(!name) return; STORE.salesNav.savedSearches.unshift({name, query:[icp,region,sig,'Director OR VP OR Owner OR Founder OR Partner OR CEO'].filter(Boolean).join(' ')}); saveSafe(); renderSalesNavSavedSearches(); };
+  window.deleteSavedSalesNavSearch = function(i){ ensureStoreSafe(); STORE.salesNav.savedSearches.splice(i,1); saveSafe(); renderSalesNavSavedSearches(); };
+
+  // Build 7 — Sales Navigator Notes / Lead IQ
+  function renderSalesNavNotesPanel(){
+    const root=byId('salesnav-notes-panel'); if(!root) return; ensureStoreSafe();
+    const options=STORE.investors.slice().sort((a,b)=>Number(b.score||0)-Number(a.score||0)).map(x=>'<option value="'+escapeHtml(x.id)+'">'+escapeHtml((x.name||'Lead')+' — '+(x.company||x.title||''))+'</option>').join('');
+    root.innerHTML='<div class="panel"><div class="panel-hd"><div><div class="panel-title">Sales Navigator Notes / Lead IQ</div><div class="panel-sub">Save Lead IQ, Account IQ, and manual Sales Nav notes back to the investor record.</div></div></div><div class="panel-bd"><div class="field"><label class="label">Investor</label><select id="sn-notes-investor" class="select" onchange="loadSalesNavNotesForInvestor()"><option value="">Select investor…</option>'+options+'</select></div><div class="field"><label class="label">Lead IQ Summary</label><textarea id="sn-lead-iq" class="textarea" placeholder="Paste or summarize Sales Navigator Lead IQ…"></textarea></div><div class="field"><label class="label">Account IQ Summary</label><textarea id="sn-account-iq" class="textarea" placeholder="Paste or summarize Account IQ / company context…"></textarea></div><div class="field"><label class="label">Manual Sales Nav Notes</label><textarea id="sn-manual-notes" class="textarea" placeholder="Connection status, recent post, alert notes, InMail angle…"></textarea></div><button class="btn btn-teal" onclick="saveSalesNavLeadIQ()">Save Notes to Investor</button><div class="mini-note" style="margin-top:8px">Saved notes are copied into the record notes/summary so existing scoring, sequences, handoff, and call coach context can use them.</div></div></div>';
+  }
+  window.loadSalesNavNotesForInvestor = function(){ const id=val('sn-notes-investor'); ensureStoreSafe(); const r=STORE.investors.find(x=>x.id===id); setVal('sn-lead-iq',r?.leadIQ||''); setVal('sn-account-iq',r?.accountIQ||''); setVal('sn-manual-notes',r?.salesNavNotes||''); };
+  window.saveSalesNavLeadIQ = function(){ const id=val('sn-notes-investor'); ensureStoreSafe(); const r=STORE.investors.find(x=>x.id===id); if(!r) return notify('SELECT INVESTOR'); r.leadIQ=val('sn-lead-iq'); r.accountIQ=val('sn-account-iq'); r.salesNavNotes=val('sn-manual-notes'); const merged=['Sales Navigator Notes:',r.salesNavNotes,'Lead IQ:',r.leadIQ,'Account IQ:',r.accountIQ].filter(Boolean).join('\n'); r.notes=[r.notes||'',merged].filter(Boolean).join('\n'); r.summary=[r.summary||'',merged].filter(Boolean).join('\n'); r.sourceSignal=r.sourceSignal||'Sales Navigator intelligence'; r.tags=Array.from(new Set([...(r.tags||[]),'Sales Navigator Notes'])); addActivitySafe('Sales Navigator notes saved: '+r.name); saveSafe(); refreshSafe(); notify('SALES NAV NOTES SAVED'); };
+
+  // UI injection functions
+  function injectCSVFormatToggle(){
+    const input=byId('hubspot-csv-file'); if(!input || byId('csv-import-format')) return;
+    const field=input.closest('.field'); if(!field) return;
+    const wrap=document.createElement('div'); wrap.className='field'; wrap.innerHTML='<label class="label">CSV Format</label><select id="csv-import-format" class="select"><option value="hubspot">HubSpot CSV</option><option value="salesnav">Sales Navigator Manual CSV</option></select><div class="mini-note" style="margin-top:6px">Sales Navigator Core does not natively export CSV. Use this for a manually prepared Sales Nav lead CSV.</div>';
+    field.parentNode.insertBefore(wrap, field);
+    const btns=field.parentNode.querySelector('.row2');
+    if(btns && !byId('salesnav-template-btn')){
+      const b=document.createElement('button'); b.id='salesnav-template-btn'; b.className='btn btn-ghost'; b.type='button'; b.textContent='Sales Nav Template'; b.onclick=window.downloadSalesNavCSVTemplate; btns.appendChild(b);
+    }
+  }
+  function injectSalesNavRadarPanels(){
+    const page=byId('page-radar'); if(!page) return; injectCSVFormatToggle();
+    const body=page.querySelector('.body'); if(!body) return;
+    if(!byId('salesnav-alert-panel')){
+      const panel=document.createElement('div'); panel.id='salesnav-alert-panel'; panel.className='panel';
+      panel.innerHTML='<div class="panel-hd"><div><div class="panel-title">Sales Navigator Alert Logger</div><div class="panel-sub">Manual logger for promotions, job changes, posts, mentions, and Sales Nav alerts.</div></div><span class="tag gold">High Priority</span></div><div class="panel-bd"><div class="row2"><div class="field"><label class="label">Alert Type</label><select id="sn-alert-type" class="select" onchange="setVal && 0"><option>Promotion</option><option>Job Change</option><option>Company News</option><option>Posted on LinkedIn</option><option>Mentioned in News</option><option>Saved Lead Alert</option><option>Account Alert</option></select></div><div class="field"><label class="label">Lead Name</label><input id="sn-alert-name" class="input" placeholder="Jane Smith"></div></div><div class="row2"><div class="field"><label class="label">New Title</label><input id="sn-alert-title" class="input" placeholder="Managing Partner / Founder / Physician Owner"></div><div class="field"><label class="label">Company</label><input id="sn-alert-company" class="input" placeholder="Company / Practice / Firm"></div></div><div class="field"><label class="label">LinkedIn Profile URL</label><input id="sn-alert-linkedin" class="input" placeholder="https://www.linkedin.com/in/..."></div><div class="field"><label class="label">Notes</label><textarea id="sn-alert-notes" class="textarea">Sales Navigator alert — Promotion.</textarea></div><div class="row2"><button class="btn btn-teal" onclick="saveSalesNavAlertLead()">Add Alert Lead to Pipeline</button><button class="btn btn-ghost" onclick="prefillManualImportFromSalesNavAlert()">Prefill Manual Import</button></div></div>';
+      const grid=page.querySelector('.grid2'); if(grid && grid.parentNode) grid.parentNode.insertBefore(panel, grid); else body.prepend(panel);
+      const type=byId('sn-alert-type'); if(type) type.addEventListener('change', function(){ setVal('sn-alert-notes','Sales Navigator alert — '+this.value+'.'); });
+    }
+    if(!byId('npi-finder-panel')){
+      const panel=document.createElement('div'); panel.id='npi-finder-panel'; panel.className='panel';
+      panel.innerHTML='<div class="panel-hd"><div><div class="panel-title">NPI Physician Finder</div><div class="panel-sub">NPI Physician Registry — Federal public data, no API key required. Use responsibly.</div></div><span class="tag green">Free</span></div><div class="panel-bd"><div class="grid3"><div class="field"><label class="label">Specialty</label><select id="npi-specialty" class="select">'+NPI_SPECIALTIES.map(x=>'<option>'+escapeHtml(x)+'</option>').join('')+'</select></div><div class="field"><label class="label">State</label><select id="npi-state" class="select">'+US_STATES.map(s=>'<option '+(s==='TX'?'selected':'')+'>'+s+'</option>').join('')+'</select></div><div class="field"><label class="label">Results Limit</label><select id="npi-limit" class="select"><option>20</option><option>50</option><option>100</option><option>200</option></select></div></div><div class="row2"><div class="field"><label class="label">City</label><input id="npi-city" class="input" placeholder="Dallas, Houston, Austin…"></div><div class="field"><label class="label">Search</label><button class="btn btn-primary" onclick="runNPIFinder()">Search NPI Registry</button></div></div><div id="npi-results"><div class="empty" style="padding:20px"><div class="empty-title">Ready to search NPI</div><div class="empty-sub">Choose a specialty, state, and optional city.</div></div></div></div>';
+      const alertPanel=byId('salesnav-alert-panel'); if(alertPanel && alertPanel.parentNode) alertPanel.parentNode.insertBefore(panel, alertPanel.nextSibling); else body.appendChild(panel);
+    }
+  }
+  function injectSalesNavLinkedInPanels(){
+    const page=byId('page-linkedinbuilder'); if(!page) return;
+    const hdr=page.querySelector('.hdr > div:last-child');
+    if(hdr && !byId('sn-alert-open-btn')){ const b=document.createElement('button'); b.id='sn-alert-open-btn'; b.className='btn btn-ghost btn-sm'; b.textContent='⚡ Log Sales Navigator Alert'; b.onclick=window.openSalesNavAlertLogger; hdr.prepend(b); }
+    const body=page.querySelector('.body'); if(!body) return;
+    if(!byId('salesnav-core-label')){ const label=document.createElement('div'); label.id='salesnav-core-label'; label.className='info gold'; label.innerHTML='<strong>Sales Navigator Core:</strong> links open in Sales Navigator. Manual use only — no scraping, auto-connects, auto-DMs, or session automation.'; body.insertBefore(label, body.firstChild); }
+    if(!byId('salesnav-addon-grid')){ const div=document.createElement('div'); div.id='salesnav-addon-grid'; div.className='grid2'; div.style.marginTop='16px'; div.innerHTML='<div><div id="salesnav-inmail-panel"></div><div id="salesnav-search-library"></div></div><div><div id="salesnav-notes-panel"></div></div>'; body.appendChild(div); }
+    renderInMailTracker(); renderSalesNavSavedSearches(); renderSalesNavNotesPanel();
+  }
+  function injectInvestorInMailButtons(){
+    const root=byId('investor-list'); if(!root) return; ensureStoreSafe();
+    root.querySelectorAll('.record').forEach(function(card){
+      const name=clean(card.querySelector('.rec-name')?.textContent); if(!name) return;
+      const rec=STORE.investors.find(x=>clean(x.name)===name); if(!rec) return;
+      const actions=card.querySelector('.rec-actions'); if(!actions || actions.querySelector('.sn-inmail-btn')) return;
+      const b=document.createElement('button'); b.className='btn btn-ghost btn-sm sn-inmail-btn'; b.textContent=rec.inmailQueued?'InMail Queued':'Queue InMail'; b.onclick=function(){ queueInvestorForInMail(rec.id); }; actions.insertBefore(b, actions.firstChild);
+    });
+  }
+
+  // Patch render/go functions only to add Sales Nav UI after existing pages render.
+  const oldRenderInvestorList = window.renderInvestorList;
+  if(typeof oldRenderInvestorList === 'function' && !oldRenderInvestorList.__salesNavAddon){
+    window.renderInvestorList = function(){ const out=oldRenderInvestorList.apply(this,arguments); setTimeout(injectInvestorInMailButtons,30); return out; };
+    window.renderInvestorList.__salesNavAddon = true;
+  }
+  const oldRenderActivePage = window.renderActivePage;
+  if(typeof oldRenderActivePage === 'function' && !oldRenderActivePage.__salesNavAddon){
+    window.renderActivePage = function(){ const out=oldRenderActivePage.apply(this,arguments); setTimeout(runSalesNavAddons,50); return out; };
+    window.renderActivePage.__salesNavAddon = true;
+  }
+  const oldGoPage = window.goPage;
+  if(typeof oldGoPage === 'function' && !oldGoPage.__salesNavAddon){
+    window.goPage = function(page,el){ const out=oldGoPage.apply(this,arguments); setTimeout(runSalesNavAddons,80); return out; };
+    window.goPage.__salesNavAddon = true;
+  }
+  function runSalesNavAddons(){
+    try { ensureStoreSafe(); } catch(e){}
+    try { injectCSVFormatToggle(); } catch(e){ console.warn('CSV toggle inject failed',e); }
+    try { if(byId('page-radar')?.classList.contains('active')) injectSalesNavRadarPanels(); } catch(e){ console.warn('Radar SalesNav inject failed',e); }
+    try { if(byId('page-linkedinbuilder')?.classList.contains('active')) injectSalesNavLinkedInPanels(); } catch(e){ console.warn('LinkedIn SalesNav inject failed',e); }
+    try { if(byId('page-investors')?.classList.contains('active')) injectInvestorInMailButtons(); } catch(e){ console.warn('Investor InMail inject failed',e); }
+  }
+
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function(){ setTimeout(runSalesNavAddons,250); setTimeout(runSalesNavAddons,1200); });
+  else { setTimeout(runSalesNavAddons,250); setTimeout(runSalesNavAddons,1200); }
+  window.basinRunSalesNavAddons = runSalesNavAddons;
+  console.log('Basin OS '+MODULE+' loaded. Core OS sections were not rebuilt.');
+})();
+</script>
+
+</body></html>');w.document.close();w.focus();setTimeout(()=>w.print(),250)}
 function snoozeFollowup(id,days){let n=STORE.notes.find(x=>x.id===id);if(!n)return;let base=new Date();base.setDate(base.getDate()+days);base.setHours(9,0,0,0);n.due=toLocalInputValue(base);if((n.status||'Open')==='Done')n.status='Follow-Up Needed';save();refresh();toast(days===1?'MOVED TO TOMORROW':'MOVED +7 DAYS')}
 function toLocalInputValue(d){let pad=x=>String(x).padStart(2,'0');return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())+'T'+pad(d.getHours())+':'+pad(d.getMinutes())}
 function syncNoteToPipeline(note){let inv=(STORE.investors||[]).find(x=>(x.name||'').toLowerCase()===(note.name||'').toLowerCase());if(!inv)return;let o=(note.outcome||'').toLowerCase(),s=(note.status||'').toLowerCase();if(o.includes('appointment booked')||s.includes('meeting')){let old=inv.status;inv.status='Appt Booked';inv.statusUpdated=new Date().toISOString();if(old!=='Appt Booked'&&note.id.indexOf('handoff')===-1)autoCreateHandoffTask(inv)}else if(o.includes('director call held'))inv.status='Call Held';else if(o.includes('closed won'))inv.status='Closed';else if(o.includes('connected')||o.includes('voicemail')||o.includes('no answer')){if(inv.status==='New')inv.status='Contacted'}}
@@ -1854,6 +2253,413 @@ setTimeout(function(){initRadarAutomation(true)},1800);
 applyApiCorsClarity();
 console.log('Basin OS integrated playbook + Tavily/Groq radar loaded ✓');
 </script>
+
+<script>
+/* Basin OS — Sales Navigator + NPI Add-On
+   Additive only. Does not replace core Lead Radar, Investor Pipeline, scoring display, workflow, dashboard, or backend runner.
+*/
+(function(){
+  const MODULE = 'Sales Navigator + NPI Add-On';
+  function byId(id){ return document.getElementById(id); }
+  function val(id){ const el=byId(id); return el ? String(el.value||'').trim() : ''; }
+  function setVal(id,v){ const el=byId(id); if(el) el.value = v || ''; }
+  function clean(v){ return String(v == null ? '' : v).trim(); }
+  function escapeHtml(v){
+    try { if (typeof esc === 'function') return esc(v); } catch(e){}
+    return String(v == null ? '' : v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+  function notify(msg){ try { if(typeof toast === 'function') return toast(msg); } catch(e){} console.log(msg); }
+  function ensureStoreSafe(){
+    try { if(typeof ensureStore === 'function') ensureStore(); } catch(e){}
+    try { window.STORE = STORE; } catch(e){}
+    if(typeof STORE === 'undefined') window.STORE = window.STORE || {};
+    STORE.investors = Array.isArray(STORE.investors) ? STORE.investors : [];
+    STORE.radarLeads = Array.isArray(STORE.radarLeads) ? STORE.radarLeads : [];
+    STORE.contacted = Array.isArray(STORE.contacted) ? STORE.contacted : [];
+    STORE.notes = Array.isArray(STORE.notes) ? STORE.notes : [];
+    STORE.activity = Array.isArray(STORE.activity) ? STORE.activity : [];
+    STORE.salesNav = STORE.salesNav || {};
+    STORE.salesNav.inmail = STORE.salesNav.inmail || loadInMailStore();
+    STORE.salesNav.savedSearches = Array.isArray(STORE.salesNav.savedSearches) ? STORE.salesNav.savedSearches : defaultSalesNavSearches();
+    STORE.salesNav.alerts = Array.isArray(STORE.salesNav.alerts) ? STORE.salesNav.alerts : [];
+    return STORE;
+  }
+  function saveSafe(){ try { if(typeof save === 'function') save(); } catch(e){} try { if(typeof flushSave === 'function') flushSave(true); } catch(e){} }
+  function refreshSafe(){ try { if(typeof refresh === 'function') refresh(); } catch(e){} }
+  function addActivitySafe(msg){ try { if(typeof addActivity === 'function') return addActivity(msg); } catch(e){} ensureStoreSafe(); STORE.activity.unshift({m:msg,ts:new Date().toLocaleString()}); }
+  function dedupeLocal(name,company,email,linkedin){
+    ensureStoreSafe();
+    const n=clean(name).toLowerCase(), c=clean(company).toLowerCase(), e=clean(email).toLowerCase(), li=clean(linkedin).toLowerCase();
+    try { if(typeof investorExists === 'function' && investorExists(name,company,email)) return true; } catch(err){}
+    return (STORE.investors||[]).some(x => {
+      const xn=clean(x.name).toLowerCase(), xc=clean(x.company).toLowerCase(), xe=clean(x.email).toLowerCase(), xli=clean(x.linkedin||x.sourceUrl).toLowerCase();
+      return (e && xe === e) || (li && xli === li) || (n && c && xn === n && xc === c) || (n && !c && xn === n);
+    }) || (STORE.contacted||[]).some(x => clean(typeof x === 'string' ? x : JSON.stringify(x)).toLowerCase().includes(n) && (!c || clean(typeof x === 'string' ? x : JSON.stringify(x)).toLowerCase().includes(c)));
+  }
+  function markContactedSafe(name,company){ try { if(typeof markContacted === 'function') return markContacted(name,company); } catch(e){} }
+  function scoreContactLocal(o){
+    try { if(typeof scoreImportedContact === 'function') return scoreImportedContact(o); } catch(e){}
+    const blob = [o.Title,o.title,o.Company,o.company,o.Note,o.note,o.Location,o.location,o.Source,o.source].join(' ').toLowerCase();
+    let s=44;
+    if(/physician|surgeon|doctor|medical|clinic|orthopedic|cardiology|dermatology|radiology|urology|oral/.test(blob)) s+=28;
+    if(/owner|founder|ceo|president|principal|partner|director|vp|executive/.test(blob)) s+=24;
+    if(/attorney|law firm|managing partner/.test(blob)) s+=18;
+    if(/cpa|tax|accounting/.test(blob)) s+=18;
+    if(/sales navigator|promotion|job change|posted|mentioned|news|alert/.test(blob)) s+=12;
+    if(/oil|gas|energy|mineral|royalty|tax|idc|depletion|high income/.test(blob)) s+=10;
+    return Math.max(1, Math.min(98, s));
+  }
+  function gradeLocal(score){ try { if(typeof grade === 'function') return grade(score); } catch(e){} return score>=82?'A':score>=68?'B':score>=52?'C':'D'; }
+  function classifyLocal(blob){ try { if(typeof classifyICPText === 'function') return classifyICPText(blob); } catch(e){} blob=String(blob||'').toLowerCase(); if(/physician|surgeon|doctor/.test(blob)) return 'Physician'; if(/cpa|tax/.test(blob)) return 'CPA'; if(/attorney|law/.test(blob)) return 'Law Partner'; if(/oil|gas|energy/.test(blob)) return 'Energy'; return 'Business Owner'; }
+  function csvRowsLocal(text){
+    try { if(typeof parseCSV === 'function') return parseCSV(text); } catch(e){}
+    const rows=[]; let row=[], cur='', q=false;
+    for(let i=0;i<text.length;i++){
+      const ch=text[i], next=text[i+1];
+      if(ch==='"' && q && next==='"'){ cur+='"'; i++; }
+      else if(ch==='"'){ q=!q; }
+      else if(ch===',' && !q){ row.push(cur); cur=''; }
+      else if((ch==='\n'||ch==='\r') && !q){ if(ch==='\r'&&next==='\n')i++; row.push(cur); rows.push(row); row=[]; cur=''; }
+      else cur+=ch;
+    }
+    if(cur || row.length){ row.push(cur); rows.push(row); }
+    return rows.filter(r=>r.some(c=>clean(c)));
+  }
+  function getValObj(o, names){
+    try { if(typeof csvVal === 'function') return csvVal(o,names); } catch(e){}
+    const keys=Object.keys(o||{});
+    for(const name of names){ const hit=keys.find(k=>k.toLowerCase().trim()===String(name).toLowerCase().trim()); if(hit) return clean(o[hit]); }
+    return '';
+  }
+  function normalizeInvestor(rec){
+    rec.id = rec.id || ('inv-'+Date.now()+'-'+Math.random().toString(16).slice(2));
+    rec.status = rec.status || 'Found';
+    rec.sequenceStage = rec.sequenceStage || 'not-started';
+    rec.seqStage = rec.seqStage || rec.sequenceStage;
+    rec.sequenceDue = rec.sequenceDue || '';
+    rec.sequenceUpdated = rec.sequenceUpdated || '';
+    rec.ts = rec.ts || new Date().toLocaleString();
+    rec.grade = rec.grade || gradeLocal(rec.score||0);
+    rec.leadTemperature = rec.leadTemperature || 'warm';
+    rec.contactMethods = rec.contactMethods || [];
+    if(rec.linkedin && !rec.contactMethods.some(m=>/linkedin/i.test(m.type||m.label||m))) rec.contactMethods.push({type:'LinkedIn', value:rec.linkedin});
+    if(rec.email && !rec.contactMethods.some(m=>/email/i.test(m.type||m.label||m))) rec.contactMethods.push({type:'Email', value:rec.email});
+    if(rec.phone && !rec.contactMethods.some(m=>/phone/i.test(m.type||m.label||m))) rec.contactMethods.push({type:'Phone', value:rec.phone});
+    return rec;
+  }
+  function addInvestorRecord(rec, opts){
+    ensureStoreSafe(); opts=opts||{};
+    rec = normalizeInvestor(rec);
+    if(dedupeLocal(rec.name, rec.company, rec.email, rec.linkedin||rec.sourceUrl)) return false;
+    STORE.investors.unshift(rec);
+    markContactedSafe(rec.name, rec.company);
+    if(opts.activity !== false) addActivitySafe((opts.label||'Sales Navigator lead added')+': '+(rec.name||'Lead'));
+    saveSafe(); refreshSafe(); return true;
+  }
+
+  // Build 2 — Sales Navigator URLs and Search Builder output
+  function salesNavUrl(q){
+    const query = clean(q || '');
+    return 'https://www.linkedin.com/sales/search/people?keywords=' + encodeURIComponent(query);
+  }
+  window.salesNavUrl = salesNavUrl;
+  window.linkedinSearchUrl = function(q){ return salesNavUrl(q); };
+  const oldLinkedInPeopleSearch = window.linkedinPeopleSearch;
+  window.linkedinPeopleSearch = function(name,company,location){ return salesNavUrl([name,company,location].filter(Boolean).join(' ')); };
+  window.buildLinkedInBuilderLinks = function(showToastFlag=true){
+    const icp=val('li-icp')||'owner CEO founder';
+    const region=val('li-region')||'nationwide USA';
+    const senior=val('li-seniority')||'owner OR founder OR partner OR president OR CEO';
+    const sig=val('li-signal')||'';
+    const seniority='Director OR VP OR President OR Founder OR Owner OR Partner OR Principal OR CEO OR Managing Partner';
+    const base=[icp,region,senior,seniority,sig].filter(Boolean).join(' ');
+    const searches=[
+      ['Sales Navigator People Search',salesNavUrl(base),'Primary Sales Navigator Core search. Manual review only.'],
+      ['Sales Navigator Title + Region',salesNavUrl([icp,region,senior].join(' ')),'Uses ICP, region, and seniority hints.'],
+      ['Sales Navigator Trigger Search',salesNavUrl([sig||'promotion OR job change OR company news',icp,region].join(' ')),'Use for recent Sales Nav style signals.'],
+      ['Sales Navigator High-Seniority Search',salesNavUrl([icp,region,seniority].join(' ')),'Director+ and owner/founder/partner style search.'],
+      ['Google LinkedIn Backup', typeof googleLinkedInUrl==='function'?googleLinkedInUrl(base):('https://www.google.com/search?q='+encodeURIComponent('site:linkedin.com/in '+base)),'Backup public profile search if Sales Nav is thin.'],
+      ['Google News Signal Search','https://news.google.com/search?q='+encodeURIComponent([sig||'named partner OR opened practice OR acquired',icp,region].join(' ')),'Public signal search.'],
+      ['Sales Navigator Query Copy','',base]
+    ];
+    const root=byId('li-builder-results');
+    if(root){
+      root.dataset.built='1';
+      root.innerHTML='<div class="info gold"><strong>Sales Navigator Core:</strong> links open in Sales Navigator. No scraping, no auto-DMs, no automated LinkedIn actions.</div>'+searches.map(function(x){
+        if(x[1]) return '<div class="link-row"><div><a target="_blank" href="'+escapeHtml(x[1])+'">'+escapeHtml(x[0])+'</a><small>'+escapeHtml(x[2])+'</small></div><button class="btn btn-ghost btn-sm" data-url="'+escapeHtml(x[1])+'" onclick="copyText(this,this.dataset.url)">Copy URL</button></div>';
+        return '<div class="link-row"><div><a href="#" onclick="return false">'+escapeHtml(x[0])+'</a><small>'+escapeHtml(x[2])+'</small></div><button class="btn btn-ghost btn-sm" data-q="'+escapeHtml(x[2])+'" onclick="copyText(this,this.dataset.q)">Copy Query</button></div>';
+      }).join('');
+    }
+    const first='[Name]';
+    const copy='CONNECTION REQUEST\n'+templateSafe('Hi '+first+' — I’m with Basin Ventures in Southlake. Your background in '+(icp.split(' ')[0]||'your field')+' caught my eye. Would value the connection.')+'\n\nINMAIL / FOLLOW-UP OPENER\n'+templateSafe('Hi '+first+' — your background in '+(icp.split(' ')[0]||'your field')+' stood out. Basin works with accredited investors evaluating direct energy ownership and potential tax advantages. Would a short director intro be worth considering?');
+    if(byId('li-copy-output')) byId('li-copy-output').innerHTML='<div class="out"><div class="out-hd"><div class="out-title">Sales Navigator Copy</div><button class="copy" onclick="copyLinkedInBuilderPlan()">Copy</button></div><div class="out-body">'+escapeHtml(copy)+'</div></div>';
+    renderLinkedInDailyPlanSafe();
+    renderSalesNavSavedSearches();
+    if(showToastFlag) notify('SALES NAVIGATOR SEARCHES BUILT');
+  };
+  function templateSafe(s){ try { if(typeof templateText==='function') return templateText(s); } catch(e){} return s; }
+  function renderLinkedInDailyPlanSafe(){ try { if(typeof renderLinkedInDailyPlan === 'function') renderLinkedInDailyPlan(); } catch(e){} }
+
+  // Build 1 — Sales Navigator manual CSV import through the existing HubSpot CSV importer
+  const originalImportHubSpotCSV = window.importHubSpotCSV;
+  window.importHubSpotCSV = function(){
+    const fmt = val('csv-import-format') || 'hubspot';
+    if(fmt === 'salesnav') return importSalesNavCSV();
+    if(typeof originalImportHubSpotCSV === 'function') return originalImportHubSpotCSV();
+  };
+  window.importSalesNavCSV = function(){
+    const file=byId('hubspot-csv-file')?.files?.[0];
+    if(!file) return notify('SELECT CSV FIRST');
+    const reader=new FileReader();
+    reader.onload=function(){
+      const rows=csvRowsLocal(String(reader.result||''));
+      if(rows.length<2) return notify('CSV EMPTY');
+      const headers=rows[0].map(h=>clean(h));
+      let added=0, skipped=0;
+      rows.slice(1).forEach(function(r){
+        const o={}; headers.forEach((h,i)=>o[h]=r[i]||'');
+        const first=getValObj(o,['First Name','first name','firstname','first']);
+        const last=getValObj(o,['Last Name','last name','lastname','last']);
+        const full=getValObj(o,['Name','Full Name','full name']) || [first,last].filter(Boolean).join(' ');
+        const title=getValObj(o,['Title','title','Job Title','job title','Position']);
+        const company=getValObj(o,['Company','company','Company Name']);
+        const email=getValObj(o,['Email','email','Email Address']);
+        const linkedin=getValObj(o,['LinkedIn Profile URL','LinkedIn URL','linkedin','Profile URL']);
+        const location=getValObj(o,['Location','location','City','city']);
+        const connected=getValObj(o,['Connected','connected']);
+        const savedDate=getValObj(o,['Saved Date','saved date']);
+        const note=getValObj(o,['Note','Notes','note','notes']);
+        if(!full){ skipped++; return; }
+        if(dedupeLocal(full,company,email,linkedin)){ skipped++; return; }
+        const score=scoreContactLocal({Title:title,Company:company,Email:email,Source:'Sales Navigator',Note:note,Location:location});
+        const rec={name:full,title:title||'Sales Navigator Contact',company,location,email,linkedin,source:'Sales Navigator',sourceUrl:linkedin,sourceSignal:'Sales Navigator CSV import',salesNavConnected:connected,salesNavSavedDate:savedDate,salesNavNotes:note,notes:note,summary:note,industry:classifyLocal([title,company,note].join(' ')),leadTemperature:/yes|connected/i.test(connected)?'warm':'cold',score,grade:gradeLocal(score),status:'Found',priority:'Normal',tags:['Sales Navigator','CSV Import']};
+        if(addInvestorRecord(rec,{label:'Sales Navigator CSV import',activity:false})){ added++; } else skipped++;
+      });
+      addActivitySafe('Sales Navigator CSV import: '+added+' added, '+skipped+' skipped');
+      saveSafe(); refreshSafe(); notify('SALES NAV CSV IMPORTED: '+added+' ADDED');
+    };
+    reader.readAsText(file);
+  };
+  window.downloadSalesNavCSVTemplate = function(){
+    const txt='First Name,Last Name,Title,Company,Email,LinkedIn Profile URL,Location,Connected,Saved Date,Note\nJane,Smith,Orthopedic Surgeon,Smith Orthopedics,jane@example.com,https://www.linkedin.com/in/janesmith,Dallas-Fort Worth TX,No,2026-05-01,Sales Navigator saved lead — private practice owner';
+    try { if(typeof download === 'function') return download('sales-navigator-import-template.csv',txt); } catch(e){}
+    const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([txt],{type:'text/csv'})); a.download='sales-navigator-import-template.csv'; a.click();
+  };
+
+  // Build 3 — Sales Navigator alert logger
+  window.openSalesNavAlertLogger = function(){
+    ensureStoreSafe();
+    try { if(typeof goPage === 'function') goPage('radar',null); } catch(e){}
+    setTimeout(function(){ injectSalesNavRadarPanels(); const t=byId('sn-alert-type'); if(t) t.focus(); notify('SALES NAV ALERT LOGGER READY'); },80);
+  };
+  window.saveSalesNavAlertLead = function(){
+    ensureStoreSafe();
+    const type=val('sn-alert-type')||'Sales Navigator Alert';
+    const name=val('sn-alert-name');
+    const title=val('sn-alert-title');
+    const company=val('sn-alert-company');
+    const linkedin=val('sn-alert-linkedin');
+    const notes=val('sn-alert-notes')||('Sales Navigator alert — '+type);
+    if(!name) return notify('LEAD NAME REQUIRED');
+    if(dedupeLocal(name,company,'',linkedin)) return notify('DUPLICATE — NOT ADDED');
+    const score=Math.min(98, scoreContactLocal({Title:title,Company:company,Source:'Sales Navigator '+type,Note:notes})+10);
+    const rec={name,title:title||'Sales Navigator Alert',company,linkedin,source:'Sales Navigator',sourceUrl:linkedin,sourceSignal:'Sales Navigator alert — '+type,salesNavAlertType:type,salesNavNotes:notes,notes:notes,summary:notes,industry:classifyLocal([title,company,notes].join(' ')),leadTemperature:'warm',score,grade:gradeLocal(score),status:'Found',priority:'High',tags:['Sales Navigator',type,'High Priority']};
+    if(addInvestorRecord(rec,{label:'Sales Navigator alert'})){
+      STORE.salesNav.alerts.unshift({type,name,title,company,linkedin,notes,ts:new Date().toLocaleString(),investorId:rec.id});
+      ['sn-alert-name','sn-alert-title','sn-alert-company','sn-alert-linkedin'].forEach(id=>setVal(id,''));
+      setVal('sn-alert-notes','Sales Navigator alert — '+type+'.');
+      saveSafe(); refreshSafe(); notify('SALES NAV ALERT ADDED TO PIPELINE');
+    } else notify('DUPLICATE — NOT ADDED');
+  };
+  window.prefillManualImportFromSalesNavAlert = function(){
+    const type=val('sn-alert-type')||'Sales Navigator Alert';
+    setVal('radar-import-name',val('sn-alert-name'));
+    setVal('radar-import-title',val('sn-alert-title')||type);
+    setVal('radar-import-company',val('sn-alert-company'));
+    setVal('radar-import-linkedin',val('sn-alert-linkedin'));
+    setVal('radar-import-url',val('sn-alert-linkedin'));
+    setVal('radar-import-notes',val('sn-alert-notes')||('Sales Navigator alert — '+type+'.'));
+    notify('MANUAL IMPORT PREFILLED');
+  };
+
+  // Build 4 — InMail tracker and queue
+  function loadInMailStore(){
+    try { return JSON.parse(localStorage.getItem('basin_salesnav_inmail')||'{}') || {}; } catch(e){ return {}; }
+  }
+  function saveInMailStore(obj){
+    obj=obj||{}; localStorage.setItem('basin_salesnav_inmail', JSON.stringify(obj)); ensureStoreSafe(); STORE.salesNav.inmail=obj; saveSafe();
+  }
+  function inmailStore(){ ensureStoreSafe(); const s=Object.assign({used:0,limit:50,resetDate:''}, loadInMailStore(), STORE.salesNav.inmail||{}); STORE.salesNav.inmail=s; return s; }
+  window.setSalesNavInMailResetDate = function(v){ const s=inmailStore(); s.resetDate=v; saveInMailStore(s); renderInMailTracker(); };
+  window.adjustSalesNavInMailUsed = function(delta){ const s=inmailStore(); s.used=Math.max(0, Math.min(Number(s.limit||50), Number(s.used||0)+Number(delta||0))); saveInMailStore(s); renderInMailTracker(); };
+  function inmailQueue(){ ensureStoreSafe(); return STORE.investors.filter(x=>x.inmailQueued).sort((a,b)=>Number(b.score||0)-Number(a.score||0)); }
+  window.queueInvestorForInMail = function(id){ ensureStoreSafe(); const r=STORE.investors.find(x=>x.id===id); if(!r) return notify('INVESTOR NOT FOUND'); r.inmailQueued=true; r.inmailQueuedAt=new Date().toLocaleString(); r.tags=Array.from(new Set([...(r.tags||[]),'InMail Queue'])); addActivitySafe('Queued for InMail: '+r.name); saveSafe(); renderInMailTracker(); injectInvestorInMailButtons(); notify('QUEUED FOR INMAIL'); };
+  window.markInMailSent = function(id){ ensureStoreSafe(); const r=STORE.investors.find(x=>x.id===id); if(!r) return notify('INVESTOR NOT FOUND'); r.inmailQueued=false; r.lastTouchChannel='Sales Navigator InMail'; r.lastTouchAt=new Date().toLocaleString(); r.status=r.status==='Found'?'Contacted':r.status; r.notes=[r.notes||'', 'Sales Navigator InMail sent '+new Date().toLocaleString()].filter(Boolean).join('\n'); STORE.notes.unshift({id:'note-'+Date.now()+'-inmail',name:r.name,outcome:'Sales Navigator InMail Sent',status:'Follow-Up',text:'Manual InMail sent through Sales Navigator.',followup:'Watch for reply. Credit may return if the recipient responds.',leadId:r.id,source:'Sales Navigator',icp:classifyLocal([r.title,r.company,r.notes].join(' ')),ts:new Date().toLocaleString()}); adjustSalesNavInMailUsed(1); addActivitySafe('InMail sent: '+r.name); saveSafe(); refreshSafe(); renderInMailTracker(); };
+  window.markInMailCreditReturned = function(){ adjustSalesNavInMailUsed(-1); notify('INMAIL CREDIT RETURNED'); };
+  function inmailOpener(r){
+    const first=(r.name||'').split(/\s+/)[0]||'[Name]'; const ctx=classifyLocal([r.title,r.company,r.notes,r.salesNavNotes].join(' '));
+    if(ctx==='Physician') return 'Hi '+first+' — your background as '+(r.title||'a physician leader')+' stood out. Basin works with accredited investors evaluating direct energy ownership and potential tax advantages. Worth a brief director intro?';
+    if(ctx==='CPA') return 'Hi '+first+' — your tax background stood out. Basin works with accredited investors where IDC/depletion questions often need CPA guidance. Worth a short intro?';
+    if(ctx==='Law Partner') return 'Hi '+first+' — your partner-level background stood out. Basin works with accredited investors evaluating direct energy ownership. Worth a quick director intro?';
+    return 'Hi '+first+' — your background at '+(r.company||'your company')+' stood out. Basin works with accredited investors evaluating direct energy ownership and potential tax advantages. Worth a brief intro?';
+  }
+  function renderInMailTracker(){
+    const root=byId('salesnav-inmail-panel'); if(!root) return;
+    const s=inmailStore(); const used=Number(s.used||0), limit=Number(s.limit||50), remaining=Math.max(0,limit-used); const q=inmailQueue();
+    root.innerHTML='<div class="panel"><div class="panel-hd"><div><div class="panel-title">InMail Tracker + Queue</div><div class="panel-sub">Manual tracker for Sales Navigator Core 50-credit workflow.</div></div><span class="tag '+(remaining<10?'red':'green')+'">'+remaining+' Remaining</span></div><div class="panel-bd">'+
+      '<div class="grid3"><div class="stat"><div class="stat-val">'+used+'</div><div class="stat-lbl">Used</div></div><div class="stat"><div class="stat-val">'+remaining+'</div><div class="stat-lbl">Remaining</div></div><div class="stat"><div class="stat-val">'+limit+'</div><div class="stat-lbl">Monthly Limit</div></div></div>'+
+      (remaining<10?'<div class="info red"><strong>Warning:</strong> fewer than 10 InMails remain this month.</div>':'')+
+      '<div class="row2"><div class="field"><label class="label">Reset Date</label><input class="input" type="date" value="'+escapeHtml(s.resetDate||'')+'" onchange="setSalesNavInMailResetDate(this.value)"></div><div class="field"><label class="label">Manual Controls</label><div style="display:flex;gap:6px"><button class="btn btn-ghost btn-sm" onclick="adjustSalesNavInMailUsed(1)">+ Sent</button><button class="btn btn-ghost btn-sm" onclick="markInMailCreditReturned()">Credit Returned</button><button class="btn btn-danger btn-sm" onclick="adjustSalesNavInMailUsed(-999)">Reset Used</button></div></div></div>'+
+      '<div class="divider"></div><div class="panel-sub" style="margin-bottom:8px">Queued Leads</div>'+
+      (q.length?q.map(function(r){return '<div class="record" style="grid-template-columns:42px 1fr auto"><div class="score '+escapeHtml(r.grade||gradeLocal(r.score||0))+'">'+escapeHtml(r.grade||gradeLocal(r.score||0))+'</div><div><div class="rec-name">'+escapeHtml(r.name)+'</div><div class="rec-meta">'+escapeHtml(r.title||'')+' · '+escapeHtml(r.company||'')+' · Score '+escapeHtml(r.score||'')+'</div><div class="rec-tags">'+(r.linkedin||r.sourceUrl?'<a class="tag blue" target="_blank" href="'+escapeHtml(r.linkedin||r.sourceUrl)+'">LinkedIn</a>':'<span class="tag gray">No LinkedIn URL</span>')+'<span class="tag gold">InMail</span></div><div class="mini-note" style="margin-top:7px">'+escapeHtml(inmailOpener(r))+'</div></div><div class="rec-actions"><button class="btn btn-ghost btn-sm" onclick="copyText(this,\''+escapeHtml(inmailOpener(r)).replace(/'/g,'&#39;')+'\')">Copy</button><button class="btn btn-primary btn-sm" style="width:auto" onclick="markInMailSent(\''+escapeHtml(r.id)+'\')">Mark Sent</button></div></div>';}).join(''):'<div class="empty" style="padding:20px"><div class="empty-title">No InMail queue</div><div class="empty-sub">Use Queue for InMail on Investor Pipeline cards.</div></div>')+
+      '</div></div>';
+  }
+
+  // Build 5 — NPI Physician Finder
+  const NPI_SPECIALTIES=['Orthopedic Surgery','Cardiology','Gastroenterology','Dermatology','Ophthalmology','Plastic Surgery','Neurology','Anesthesiology','Radiology','Urology','Internal Medicine','Family Medicine','Psychiatry','Oral Surgery'];
+  const US_STATES=['AL','AK','AZ','AR','CA','CO','CT','DE','FL','GA','HI','IA','ID','IL','IN','KS','KY','LA','MA','MD','ME','MI','MN','MO','MS','MT','NC','ND','NE','NH','NJ','NM','NV','NY','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VA','VT','WA','WI','WV','WY'];
+  window.runNPIFinder = async function(){
+    const spec=val('npi-specialty')||'Orthopedic Surgery', state=val('npi-state')||'TX', city=val('npi-city'), limit=val('npi-limit')||'20';
+    const root=byId('npi-results'); if(root) root.innerHTML='<div class="empty" style="padding:20px"><div class="empty-title">Searching NPI Registry…</div></div>';
+    const params=new URLSearchParams({version:'2.1', taxonomy_description:spec, state:state, limit:limit}); if(city) params.set('city',city);
+    try{
+      const res=await fetch('https://npiregistry.cms.hhs.gov/api/?'+params.toString());
+      if(!res.ok) throw new Error('NPI API '+res.status);
+      const data=await res.json(); const items=(data.results||[]).map(normalizeNPIRecord).filter(x=>x.name);
+      renderNPIResults(items);
+    }catch(e){ if(root) root.innerHTML='<div class="info red"><strong>NPI error:</strong> '+escapeHtml(e.message||e)+'</div>'; }
+  };
+  function normalizeNPIRecord(r){
+    const b=r.basic||{}; const first=b.first_name||'', last=b.last_name||'', cred=b.credential||''; const name=[first,last].filter(Boolean).join(' ') || b.authorized_official_first_name && [b.authorized_official_first_name,b.authorized_official_last_name].filter(Boolean).join(' ') || '';
+    const addr=(r.addresses||[]).find(a=>a.address_purpose==='LOCATION') || (r.addresses||[])[0] || {};
+    const tax=(r.taxonomies||[]).find(t=>t.primary) || (r.taxonomies||[])[0] || {};
+    const org=b.organization_name || b.practice_location_address_telephone_number || '';
+    return {npi:r.number||'', name, credential:cred, title:tax.desc || val('npi-specialty') || 'Physician', specialty:tax.desc||val('npi-specialty'), company:org, address:[addr.address_1,addr.city,addr.state,addr.postal_code].filter(Boolean).join(', '), location:[addr.city,addr.state].filter(Boolean).join(', '), phone:addr.telephone_number||'', source:'NPI Registry', raw:r};
+  }
+  function renderNPIResults(items){
+    const root=byId('npi-results'); if(!root) return;
+    root.innerHTML=items.length?items.map(function(x,i){ const payload=encodeURIComponent(JSON.stringify(x)); return '<div class="record" style="grid-template-columns:48px 1fr auto"><div class="score B">MD</div><div><div class="rec-name">'+escapeHtml(x.name)+'</div><div class="rec-meta">'+escapeHtml([x.credential,x.specialty,x.company].filter(Boolean).join(' · '))+'</div><div class="rec-tags"><span class="tag blue">NPI '+escapeHtml(x.npi)+'</span>'+(x.phone?'<span class="tag gray">☎ '+escapeHtml(x.phone)+'</span>':'')+'<span class="tag gray">'+escapeHtml(x.location||'')+'</span></div><div class="mini-note" style="margin-top:7px">'+escapeHtml(x.address||'')+'</div></div><div class="rec-actions"><button class="btn btn-primary btn-sm" style="width:auto" data-npi="'+payload+'" onclick="addNPILeadToRadar(this.dataset.npi)">Add to Pipeline</button></div></div>'; }).join(''):'<div class="empty" style="padding:20px"><div class="empty-title">No NPI results</div><div class="empty-sub">Try a broader specialty, city, or limit.</div></div>';
+  }
+  window.addNPILeadToRadar = function(encoded){
+    ensureStoreSafe(); const x=JSON.parse(decodeURIComponent(encoded));
+    const l={id:'npi-'+(x.npi||Date.now()),name:x.name,title:x.specialty||'Physician',company:x.company||'',location:x.location||'',phone:x.phone||'',email:'',linkedin:'',url:'https://npiregistry.cms.hhs.gov/provider-view/'+(x.npi||''),summary:'NPI Physician Registry public federal data. Practice address: '+(x.address||'')+'. Practice phone: '+(x.phone||''),signal:'NPI physician registry match',source:'NPI Registry',sourceFeed:'Federal public data',status:'New',foundAt:new Date().toLocaleString(),type:'investor'};
+    l.score=scoreContactLocal({Title:l.title,Company:l.company,Source:'NPI Registry',Note:l.summary,Location:l.location}); l.grade=gradeLocal(l.score); l.contactMethods=x.phone?[{type:'Phone',value:x.phone}]:[];
+    let added=false; try { if(typeof addRadarLead === 'function') added=addRadarLead(l); else { STORE.radarLeads.unshift(l); added=true; } } catch(e){ STORE.radarLeads.unshift(l); added=true; }
+    if(added){ addActivitySafe('NPI Registry lead added: '+l.name); saveSafe(); refreshSafe(); notify('NPI LEAD ADDED'); } else notify('DUPLICATE — NOT ADDED');
+  };
+
+  // Build 6 — Sales Navigator Saved Search Library
+  function defaultSalesNavSearches(){ return [
+    {name:'DFW Physician Owners', query:'physician surgeon medical practice owner Dallas-Fort Worth TX Director OR Owner OR Founder OR Partner'},
+    {name:'Houston Physicians', query:'gastroenterologist physician private practice Houston TX Director OR Owner OR Founder'},
+    {name:'Austin Business Owners', query:'CEO founder owner president private company Austin TX acquisition expansion'},
+    {name:'San Antonio Owners', query:'business owner private company growth San Antonio TX owner founder president'},
+    {name:'Houston Law Partners', query:'law firm partner attorney managing partner Houston TX tax estate'},
+    {name:'DFW Medical CPAs', query:'CPA tax partner accounting firm physician clients Dallas-Fort Worth TX'},
+    {name:'Midland Energy Executives', query:'oil gas energy executive mineral royalty owner Midland Odessa TX'},
+    {name:'Nationwide Practice Owners', query:'opened medical practice private practice owner United States physician surgeon owner founder'}
+  ]; }
+  function renderSalesNavSavedSearches(){
+    const root=byId('salesnav-search-library'); if(!root) return; ensureStoreSafe();
+    const rows=STORE.salesNav.savedSearches || defaultSalesNavSearches();
+    root.innerHTML='<div class="panel"><div class="panel-hd"><div><div class="panel-title">Sales Navigator Saved Search Library</div><div class="panel-sub">One-click manual Sales Navigator searches. No scraping or automation.</div></div><button class="btn btn-ghost btn-sm" onclick="saveCurrentSalesNavSearch()">Save Current</button></div><div class="panel-bd">'+rows.map(function(s,i){const url=salesNavUrl(s.query); return '<div class="link-row"><div><a target="_blank" href="'+escapeHtml(url)+'">'+escapeHtml(s.name)+'</a><small>'+escapeHtml(s.query)+'</small></div><div style="display:flex;gap:5px"><button class="btn btn-ghost btn-sm" data-url="'+escapeHtml(url)+'" onclick="copyText(this,this.dataset.url)">Copy</button><button class="btn btn-danger btn-sm" onclick="deleteSavedSalesNavSearch('+i+')">×</button></div></div>';}).join('')+'</div></div>';
+  }
+  window.saveCurrentSalesNavSearch = function(){ ensureStoreSafe(); const icp=val('li-icp')||'owner CEO founder', region=val('li-region')||'nationwide USA', sig=val('li-signal')||''; const name=prompt('Saved search name?', [region, icp.split(' ')[0]].filter(Boolean).join(' ')); if(!name) return; STORE.salesNav.savedSearches.unshift({name, query:[icp,region,sig,'Director OR VP OR Owner OR Founder OR Partner OR CEO'].filter(Boolean).join(' ')}); saveSafe(); renderSalesNavSavedSearches(); };
+  window.deleteSavedSalesNavSearch = function(i){ ensureStoreSafe(); STORE.salesNav.savedSearches.splice(i,1); saveSafe(); renderSalesNavSavedSearches(); };
+
+  // Build 7 — Sales Navigator Notes / Lead IQ
+  function renderSalesNavNotesPanel(){
+    const root=byId('salesnav-notes-panel'); if(!root) return; ensureStoreSafe();
+    const options=STORE.investors.slice().sort((a,b)=>Number(b.score||0)-Number(a.score||0)).map(x=>'<option value="'+escapeHtml(x.id)+'">'+escapeHtml((x.name||'Lead')+' — '+(x.company||x.title||''))+'</option>').join('');
+    root.innerHTML='<div class="panel"><div class="panel-hd"><div><div class="panel-title">Sales Navigator Notes / Lead IQ</div><div class="panel-sub">Save Lead IQ, Account IQ, and manual Sales Nav notes back to the investor record.</div></div></div><div class="panel-bd"><div class="field"><label class="label">Investor</label><select id="sn-notes-investor" class="select" onchange="loadSalesNavNotesForInvestor()"><option value="">Select investor…</option>'+options+'</select></div><div class="field"><label class="label">Lead IQ Summary</label><textarea id="sn-lead-iq" class="textarea" placeholder="Paste or summarize Sales Navigator Lead IQ…"></textarea></div><div class="field"><label class="label">Account IQ Summary</label><textarea id="sn-account-iq" class="textarea" placeholder="Paste or summarize Account IQ / company context…"></textarea></div><div class="field"><label class="label">Manual Sales Nav Notes</label><textarea id="sn-manual-notes" class="textarea" placeholder="Connection status, recent post, alert notes, InMail angle…"></textarea></div><button class="btn btn-teal" onclick="saveSalesNavLeadIQ()">Save Notes to Investor</button><div class="mini-note" style="margin-top:8px">Saved notes are copied into the record notes/summary so existing scoring, sequences, handoff, and call coach context can use them.</div></div></div>';
+  }
+  window.loadSalesNavNotesForInvestor = function(){ const id=val('sn-notes-investor'); ensureStoreSafe(); const r=STORE.investors.find(x=>x.id===id); setVal('sn-lead-iq',r?.leadIQ||''); setVal('sn-account-iq',r?.accountIQ||''); setVal('sn-manual-notes',r?.salesNavNotes||''); };
+  window.saveSalesNavLeadIQ = function(){ const id=val('sn-notes-investor'); ensureStoreSafe(); const r=STORE.investors.find(x=>x.id===id); if(!r) return notify('SELECT INVESTOR'); r.leadIQ=val('sn-lead-iq'); r.accountIQ=val('sn-account-iq'); r.salesNavNotes=val('sn-manual-notes'); const merged=['Sales Navigator Notes:',r.salesNavNotes,'Lead IQ:',r.leadIQ,'Account IQ:',r.accountIQ].filter(Boolean).join('\n'); r.notes=[r.notes||'',merged].filter(Boolean).join('\n'); r.summary=[r.summary||'',merged].filter(Boolean).join('\n'); r.sourceSignal=r.sourceSignal||'Sales Navigator intelligence'; r.tags=Array.from(new Set([...(r.tags||[]),'Sales Navigator Notes'])); addActivitySafe('Sales Navigator notes saved: '+r.name); saveSafe(); refreshSafe(); notify('SALES NAV NOTES SAVED'); };
+
+  // UI injection functions
+  function injectCSVFormatToggle(){
+    const input=byId('hubspot-csv-file'); if(!input || byId('csv-import-format')) return;
+    const field=input.closest('.field'); if(!field) return;
+    const wrap=document.createElement('div'); wrap.className='field'; wrap.innerHTML='<label class="label">CSV Format</label><select id="csv-import-format" class="select"><option value="hubspot">HubSpot CSV</option><option value="salesnav">Sales Navigator Manual CSV</option></select><div class="mini-note" style="margin-top:6px">Sales Navigator Core does not natively export CSV. Use this for a manually prepared Sales Nav lead CSV.</div>';
+    field.parentNode.insertBefore(wrap, field);
+    const btns=field.parentNode.querySelector('.row2');
+    if(btns && !byId('salesnav-template-btn')){
+      const b=document.createElement('button'); b.id='salesnav-template-btn'; b.className='btn btn-ghost'; b.type='button'; b.textContent='Sales Nav Template'; b.onclick=window.downloadSalesNavCSVTemplate; btns.appendChild(b);
+    }
+  }
+  function injectSalesNavRadarPanels(){
+    const page=byId('page-radar'); if(!page) return; injectCSVFormatToggle();
+    const body=page.querySelector('.body'); if(!body) return;
+    if(!byId('salesnav-alert-panel')){
+      const panel=document.createElement('div'); panel.id='salesnav-alert-panel'; panel.className='panel';
+      panel.innerHTML='<div class="panel-hd"><div><div class="panel-title">Sales Navigator Alert Logger</div><div class="panel-sub">Manual logger for promotions, job changes, posts, mentions, and Sales Nav alerts.</div></div><span class="tag gold">High Priority</span></div><div class="panel-bd"><div class="row2"><div class="field"><label class="label">Alert Type</label><select id="sn-alert-type" class="select" onchange="setVal && 0"><option>Promotion</option><option>Job Change</option><option>Company News</option><option>Posted on LinkedIn</option><option>Mentioned in News</option><option>Saved Lead Alert</option><option>Account Alert</option></select></div><div class="field"><label class="label">Lead Name</label><input id="sn-alert-name" class="input" placeholder="Jane Smith"></div></div><div class="row2"><div class="field"><label class="label">New Title</label><input id="sn-alert-title" class="input" placeholder="Managing Partner / Founder / Physician Owner"></div><div class="field"><label class="label">Company</label><input id="sn-alert-company" class="input" placeholder="Company / Practice / Firm"></div></div><div class="field"><label class="label">LinkedIn Profile URL</label><input id="sn-alert-linkedin" class="input" placeholder="https://www.linkedin.com/in/..."></div><div class="field"><label class="label">Notes</label><textarea id="sn-alert-notes" class="textarea">Sales Navigator alert — Promotion.</textarea></div><div class="row2"><button class="btn btn-teal" onclick="saveSalesNavAlertLead()">Add Alert Lead to Pipeline</button><button class="btn btn-ghost" onclick="prefillManualImportFromSalesNavAlert()">Prefill Manual Import</button></div></div>';
+      const grid=page.querySelector('.grid2'); if(grid && grid.parentNode) grid.parentNode.insertBefore(panel, grid); else body.prepend(panel);
+      const type=byId('sn-alert-type'); if(type) type.addEventListener('change', function(){ setVal('sn-alert-notes','Sales Navigator alert — '+this.value+'.'); });
+    }
+    if(!byId('npi-finder-panel')){
+      const panel=document.createElement('div'); panel.id='npi-finder-panel'; panel.className='panel';
+      panel.innerHTML='<div class="panel-hd"><div><div class="panel-title">NPI Physician Finder</div><div class="panel-sub">NPI Physician Registry — Federal public data, no API key required. Use responsibly.</div></div><span class="tag green">Free</span></div><div class="panel-bd"><div class="grid3"><div class="field"><label class="label">Specialty</label><select id="npi-specialty" class="select">'+NPI_SPECIALTIES.map(x=>'<option>'+escapeHtml(x)+'</option>').join('')+'</select></div><div class="field"><label class="label">State</label><select id="npi-state" class="select">'+US_STATES.map(s=>'<option '+(s==='TX'?'selected':'')+'>'+s+'</option>').join('')+'</select></div><div class="field"><label class="label">Results Limit</label><select id="npi-limit" class="select"><option>20</option><option>50</option><option>100</option><option>200</option></select></div></div><div class="row2"><div class="field"><label class="label">City</label><input id="npi-city" class="input" placeholder="Dallas, Houston, Austin…"></div><div class="field"><label class="label">Search</label><button class="btn btn-primary" onclick="runNPIFinder()">Search NPI Registry</button></div></div><div id="npi-results"><div class="empty" style="padding:20px"><div class="empty-title">Ready to search NPI</div><div class="empty-sub">Choose a specialty, state, and optional city.</div></div></div></div>';
+      const alertPanel=byId('salesnav-alert-panel'); if(alertPanel && alertPanel.parentNode) alertPanel.parentNode.insertBefore(panel, alertPanel.nextSibling); else body.appendChild(panel);
+    }
+  }
+  function injectSalesNavLinkedInPanels(){
+    const page=byId('page-linkedinbuilder'); if(!page) return;
+    const hdr=page.querySelector('.hdr > div:last-child');
+    if(hdr && !byId('sn-alert-open-btn')){ const b=document.createElement('button'); b.id='sn-alert-open-btn'; b.className='btn btn-ghost btn-sm'; b.textContent='⚡ Log Sales Navigator Alert'; b.onclick=window.openSalesNavAlertLogger; hdr.prepend(b); }
+    const body=page.querySelector('.body'); if(!body) return;
+    if(!byId('salesnav-core-label')){ const label=document.createElement('div'); label.id='salesnav-core-label'; label.className='info gold'; label.innerHTML='<strong>Sales Navigator Core:</strong> links open in Sales Navigator. Manual use only — no scraping, auto-connects, auto-DMs, or session automation.'; body.insertBefore(label, body.firstChild); }
+    if(!byId('salesnav-addon-grid')){ const div=document.createElement('div'); div.id='salesnav-addon-grid'; div.className='grid2'; div.style.marginTop='16px'; div.innerHTML='<div><div id="salesnav-inmail-panel"></div><div id="salesnav-search-library"></div></div><div><div id="salesnav-notes-panel"></div></div>'; body.appendChild(div); }
+    renderInMailTracker(); renderSalesNavSavedSearches(); renderSalesNavNotesPanel();
+  }
+  function injectInvestorInMailButtons(){
+    const root=byId('investor-list'); if(!root) return; ensureStoreSafe();
+    root.querySelectorAll('.record').forEach(function(card){
+      const name=clean(card.querySelector('.rec-name')?.textContent); if(!name) return;
+      const rec=STORE.investors.find(x=>clean(x.name)===name); if(!rec) return;
+      const actions=card.querySelector('.rec-actions'); if(!actions || actions.querySelector('.sn-inmail-btn')) return;
+      const b=document.createElement('button'); b.className='btn btn-ghost btn-sm sn-inmail-btn'; b.textContent=rec.inmailQueued?'InMail Queued':'Queue InMail'; b.onclick=function(){ queueInvestorForInMail(rec.id); }; actions.insertBefore(b, actions.firstChild);
+    });
+  }
+
+  // Patch render/go functions only to add Sales Nav UI after existing pages render.
+  const oldRenderInvestorList = window.renderInvestorList;
+  if(typeof oldRenderInvestorList === 'function' && !oldRenderInvestorList.__salesNavAddon){
+    window.renderInvestorList = function(){ const out=oldRenderInvestorList.apply(this,arguments); setTimeout(injectInvestorInMailButtons,30); return out; };
+    window.renderInvestorList.__salesNavAddon = true;
+  }
+  const oldRenderActivePage = window.renderActivePage;
+  if(typeof oldRenderActivePage === 'function' && !oldRenderActivePage.__salesNavAddon){
+    window.renderActivePage = function(){ const out=oldRenderActivePage.apply(this,arguments); setTimeout(runSalesNavAddons,50); return out; };
+    window.renderActivePage.__salesNavAddon = true;
+  }
+  const oldGoPage = window.goPage;
+  if(typeof oldGoPage === 'function' && !oldGoPage.__salesNavAddon){
+    window.goPage = function(page,el){ const out=oldGoPage.apply(this,arguments); setTimeout(runSalesNavAddons,80); return out; };
+    window.goPage.__salesNavAddon = true;
+  }
+  function runSalesNavAddons(){
+    try { ensureStoreSafe(); } catch(e){}
+    try { injectCSVFormatToggle(); } catch(e){ console.warn('CSV toggle inject failed',e); }
+    try { if(byId('page-radar')?.classList.contains('active')) injectSalesNavRadarPanels(); } catch(e){ console.warn('Radar SalesNav inject failed',e); }
+    try { if(byId('page-linkedinbuilder')?.classList.contains('active')) injectSalesNavLinkedInPanels(); } catch(e){ console.warn('LinkedIn SalesNav inject failed',e); }
+    try { if(byId('page-investors')?.classList.contains('active')) injectInvestorInMailButtons(); } catch(e){ console.warn('Investor InMail inject failed',e); }
+  }
+
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function(){ setTimeout(runSalesNavAddons,250); setTimeout(runSalesNavAddons,1200); });
+  else { setTimeout(runSalesNavAddons,250); setTimeout(runSalesNavAddons,1200); }
+  window.basinRunSalesNavAddons = runSalesNavAddons;
+  console.log('Basin OS '+MODULE+' loaded. Core OS sections were not rebuilt.');
+})();
+</script>
+
+
+<!-- Basin OS Safe Companion Launcher — single static link only, no JavaScript, no core changes -->
+<a href="salesnav-npi-companion.html"
+   title="Open Sales Navigator + NPI Companion"
+   style="position:fixed;right:18px;bottom:18px;z-index:99999;background:linear-gradient(135deg,#c8861e,#e09b2a);color:#0a0b0d;text-decoration:none;border-radius:999px;padding:11px 14px;font:800 12px Outfit,Arial,sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.18)">
+  🧭 SalesNav + NPI
+</a>
+
 </body>
 </html>
 
