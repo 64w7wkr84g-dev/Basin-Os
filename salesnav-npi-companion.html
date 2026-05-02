@@ -357,6 +357,8 @@
     const l={name:$('alert-name').value,title:$('alert-title').value,company:$('alert-company').value,linkedin:$('alert-linkedin').value,notes:$('alert-notes').value,source:'Sales Navigator',tags:['Sales Navigator',type],pipelinePriority:'High',alertType:type,status:'New'};
     const res=addInvestor(l);
     saveStore(false);
+    toast(res.ok ? 'ALERT LEAD ADDED — PRIORITY HIGH' : 'NOT ADDED: ' + res.reason);
+    if(res.ok) refresh();
     $('alert-results').innerHTML=(res.ok?'<div class="info teal"><strong>Added:</strong> high-priority Sales Navigator alert lead.</div>':'<div class="info red"><strong>Not added:</strong> '+esc(res.reason)+'</div>')+card(Object.assign({score:scoreLead(l),grade:grade(scoreLead(l))},l));
   }
 
@@ -406,13 +408,34 @@
     $('inmail-used').value=inmail().used||0; $('inmail-reset').value=inmail().resetDate||'';
     const rem=inmailRemain();
     $('inmail-warning').innerHTML=rem<10?`<div class="info red"><strong>Warning:</strong> only ${rem} InMails remain this month.</div>`:`<div class="info teal"><strong>Remaining:</strong> ${rem} InMails available.</div>`;
-    const candidates=sortLeads(STORE.investors).filter(l=>!queueIds().includes(l.id)).slice(0,20);
-    $('inmail-candidates').innerHTML=candidates.length?candidates.map(l=>card(l,`<button class="btn btn-ghost btn-sm" onclick="queueForInMail('${l.id}')">Queue</button>`)).join(''):'<div class="mini">No pipeline candidates.</div>';
-    const queued=sortLeads(queueIds().map(id=>STORE.investors.find(x=>x.id===id)).filter(Boolean));
-    $('inmail-queue').innerHTML=queued.length?queued.map(l=>card(l,`<a class="btn btn-ghost btn-sm" target="_blank" href="${esc(l.linkedin||'#')}">Profile</a><button class="btn btn-primary btn-sm" onclick="markInMailSent('${l.id}')">Mark Sent</button><button class="btn btn-danger btn-sm" onclick="removeFromInMail('${l.id}')">Remove</button><div class="mini" style="grid-column:1/-1;margin-top:8px">${esc(opener(l))}</div>`)).join(''):'<div class="mini">No queued InMails yet.</div>';
+
+    const queuedIds=queueIds();
+    const queued=queuedIds.map(id=>STORE.investors.find(x=>x.id===id)).filter(Boolean);
+
+    // Auto-surface A/B leads with no email as InMail candidates so the queue is useful even before manual flagging.
+    const autoCandidates=sortLeads(STORE.investors).filter(function(l){
+      const g=l.grade||grade(l.score);
+      const hasEmail=String(l.email||'').trim().length>0;
+      const alreadyQueued=queuedIds.includes(l.id);
+      const sent=String(l.lastTouchChannel||'').toLowerCase()==='inmail';
+      return (g==='A'||g==='B') && !hasEmail && !alreadyQueued && !sent;
+    }).slice(0,25);
+
+    $('inmail-candidates').innerHTML=autoCandidates.length
+      ? autoCandidates.map(l=>card(l,`<button class="btn btn-ghost btn-sm" onclick="queueForInMail('${l.id}')">Queue</button><button class="btn btn-primary btn-sm" onclick="markInMailSent('${l.id}')">Mark Sent</button><div class="mini" style="grid-column:1/-1;margin-top:8px">${esc(opener(l))}</div>`)).join('')
+      : '<div class="mini">No A/B no-email investors found. Import or add leads first, then refresh this tab.</div>';
+
+    const displayQueue=sortLeads([].concat(queued, autoCandidates).filter(function(l,i,arr){return l&&arr.findIndex(x=>x&&x.id===l.id)===i;}));
+    $('inmail-queue').innerHTML=displayQueue.length
+      ? displayQueue.map(l=>{
+          const isQueued=queuedIds.includes(l.id);
+          return card(l,`<a class="btn btn-ghost btn-sm" target="_blank" href="${esc(l.linkedin||'#')}">Profile</a>${isQueued?`<button class="btn btn-danger btn-sm" onclick="removeFromInMail('${l.id}')">Remove</button>`:`<button class="btn btn-ghost btn-sm" onclick="queueForInMail('${l.id}')">Queue</button>`}<button class="btn btn-primary btn-sm" onclick="markInMailSent('${l.id}')">Mark Sent</button><div class="mini" style="grid-column:1/-1;margin-top:8px">${esc(opener(l))}</div>`);
+        }).join('')
+      : '<div class="mini">No queued or auto-surfaced InMail candidates yet.</div>';
   }
 
   function npiName(basic){return [basic.first_name,basic.middle_name,basic.last_name].filter(Boolean).join(' ')||basic.organization_name||'NPI Provider'}
+  function fmtPhone(p){p=String(p||'').replace(/\D/g,'');return p.length===10?'('+p.slice(0,3)+') '+p.slice(3,6)+'-'+p.slice(6):p;}
   window.searchNPI=async function(){
     const spec=$('npi-specialty').value,state=$('npi-state').value.trim().toUpperCase(),city=$('npi-city').value.trim(),limit=$('npi-limit').value;
     const url=new URL('https://npiregistry.cms.hhs.gov/api/');
@@ -425,7 +448,7 @@
       window.__npiResults=arr;
       $('npi-results').innerHTML=arr.map((x,i)=>{
         const b=x.basic||{}, addr=(x.addresses||[]).find(a=>a.address_purpose==='LOCATION')||(x.addresses||[])[0]||{}, tax=(x.taxonomies||[]).find(t=>t.primary)||(x.taxonomies||[])[0]||{};
-        const l={name:npiName(b),title:(b.credential||'')+' '+(tax.desc||spec),company:b.organization_name||'',phone:addr.telephone_number||'',location:[addr.city,addr.state].filter(Boolean).join(', '),score:0,grade:'C',tags:['NPI Registry','Physician']};
+        const l={name:npiName(b),title:(b.credential||'')+' '+(tax.desc||spec),company:b.organization_name||'',phone:fmtPhone(addr.telephone_number||''),location:[addr.city,addr.state].filter(Boolean).join(', '),score:0,grade:'C',tags:['NPI Registry','Physician']};
         l.score=scoreLead(l); l.grade=grade(l.score);
         return card(l,`<button class="btn btn-primary btn-sm" onclick="addNPIToPipeline(${i})">Add to Pipeline</button>`);
       }).join('');
@@ -435,7 +458,7 @@
     const x=(window.__npiResults||[])[i]; if(!x)return;
     const b=x.basic||{}, addr=(x.addresses||[]).find(a=>a.address_purpose==='LOCATION')||(x.addresses||[])[0]||{}, tax=(x.taxonomies||[]).find(t=>t.primary)||(x.taxonomies||[])[0]||{};
     const name=npiName(b);
-    const l={name,title:[b.credential,tax.desc].filter(Boolean).join(' · '),company:b.organization_name||'',phone:addr.telephone_number||'',location:[addr.address_1,addr.city,addr.state,addr.postal_code].filter(Boolean).join(', '),source:'NPI Registry',tags:['NPI Registry','Physician'],notes:'Federal NPI Registry public provider record. NPI: '+(x.number||''),pipelinePriority:'Normal',status:'New'};
+    const l={name,title:[b.credential,tax.desc].filter(Boolean).join(' · '),company:b.organization_name||'',phone:fmtPhone(addr.telephone_number||''),location:[addr.address_1,addr.city,addr.state,addr.postal_code].filter(Boolean).join(', '),source:'NPI Registry',tags:['NPI Registry','Physician'],notes:'Federal NPI Registry public provider record. NPI: '+(x.number||''),pipelinePriority:'Normal',status:'New'};
     const res=addInvestor(l); saveStore(false);
     toast(res.ok?'NPI LEAD ADDED':('NOT ADDED: '+res.reason));
     refresh();

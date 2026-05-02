@@ -165,8 +165,8 @@ h1{font:700 30px "Libre Baskerville",serif;letter-spacing:-.02em}
       var tags=Array.isArray(x.tags)?x.tags.join(' '):'';
       return /sales navigator|sales nav|inmail|npi registry/i.test([x.source,x.alertType,tags,x.salesNavNotes,x.leadIQNotes].join(' '));
     }).length;
-    var inmail=((s.salesNav||{}).inmail)||{};
-    var remaining=Math.max(0,50-Number(inmail.used||0));
+    var inmailData = (s.salesNav && s.salesNav.inmail) ? s.salesNav.inmail : {};
+    var remaining = Math.max(0, 50 - Number(inmailData.used || 0));
     byId('stat-investors').textContent=inv.length;
     byId('stat-radar').textContent=radar.length;
     byId('stat-salesnav').textContent=salesNav;
