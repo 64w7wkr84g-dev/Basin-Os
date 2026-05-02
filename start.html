@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Basin OS — Start</title>
+<meta name="description" content="Safe launcher for Basin OS and Sales Navigator + NPI Companion." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0a0b0d;--ink2:#141619;--ink3:#1e2128;--ink4:#272b35;
+  --stroke:#2a2f3a;--stroke2:#363d4a;
+  --gold:#c8861e;--gold2:#e09b2a;--goldfaint:rgba(200,134,30,.09);
+  --teal:#1db8a0;--text:#d8dce8;--text2:#9aa3b8;--text3:#636b7e;
+  --red:#e05252;--green:#3dba6f;--r:16px;--r2:10px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  min-height:100vh;background:var(--ink);color:var(--text);font-family:Outfit,system-ui,-apple-system,Segoe UI,sans-serif;
+  display:flex;align-items:center;justify-content:center;padding:28px;
+}
+body:before{
+  content:"";position:fixed;inset:0;
+  background:radial-gradient(ellipse at top left,rgba(200,134,30,.11),transparent 42%),
+             radial-gradient(ellipse at bottom right,rgba(29,184,160,.07),transparent 48%);
+  pointer-events:none;
+}
+.wrap{position:relative;z-index:1;width:min(1120px,100%)}
+.top{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:20px;
+}
+.logoRow{display:flex;gap:12px;align-items:center}
+.logo{
+  width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--gold),#754604);
+  display:flex;align-items:center;justify-content:center;color:#0a0b0d;
+  font:700 20px "Libre Baskerville",serif;
+}
+h1{font:700 30px "Libre Baskerville",serif;letter-spacing:-.02em}
+.sub{font-size:13px;color:var(--text3);line-height:1.55;margin-top:6px;max-width:720px}
+.safe{
+  border:1px solid rgba(61,186,111,.28);background:rgba(61,186,111,.07);
+  color:var(--text2);border-radius:12px;padding:10px 12px;font-size:11px;line-height:1.45;max-width:310px;
+}
+.safe strong{color:var(--green);font:800 9px "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.11em;display:block;margin-bottom:3px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:20px 0}
+.card{
+  background:linear-gradient(180deg,var(--ink2),#121419);border:1px solid var(--stroke);border-radius:var(--r);
+  padding:22px;min-height:260px;display:flex;flex-direction:column;justify-content:space-between;
+  box-shadow:0 20px 60px rgba(0,0,0,.22);
+}
+.card h2{font:700 22px "Libre Baskerville",serif;margin-bottom:8px}
+.card p{font-size:13px;color:var(--text2);line-height:1.65;margin-bottom:16px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 18px}
+.tag{
+  font:9px "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.06em;
+  border:1px solid var(--stroke2);color:var(--text3);border-radius:999px;padding:4px 8px;background:var(--ink3);
+}
+.tag.gold{border-color:rgba(200,134,30,.34);background:var(--goldfaint);color:var(--gold)}
+.tag.teal{border-color:rgba(29,184,160,.32);background:rgba(29,184,160,.08);color:var(--teal)}
+.btn{
+  display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;border:0;border-radius:var(--r2);
+  padding:13px 16px;font-size:13px;font-weight:900;letter-spacing:.02em;cursor:pointer;
+}
+.btn-main{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#0a0b0d}
+.btn-ghost{background:var(--ink4);border:1px solid var(--stroke2);color:var(--text2)}
+.stats{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px;
+}
+.stat{
+  background:var(--ink3);border:1px solid var(--stroke);border-radius:12px;padding:14px;
+}
+.val{font:700 25px "Libre Baskerville",serif;color:var(--gold)}
+.lbl{font:9px "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-top:5px}
+.note{
+  margin-top:16px;border:1px solid var(--stroke);background:rgba(20,22,25,.82);border-radius:12px;padding:13px 15px;
+  color:var(--text3);font-size:12px;line-height:1.65;
+}
+.note code{color:var(--gold);font-family:"JetBrains Mono",monospace}
+.footer{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.warn{color:var(--red);font-weight:800}
+@media(max-width:850px){
+  .top{display:block}.safe{margin-top:14px;max-width:none}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="top">
+    <div>
+      <div class="logoRow">
+        <div class="logo">B</div>
+        <div>
+          <h1>Basin OS Start</h1>
+          <div class="sub">Safe launcher page. Your main <strong>index.html</strong> stays untouched. Use this page as your bookmark so you can access the core OS and the SalesNav + NPI companion from one place.</div>
+        </div>
+      </div>
+    </div>
+    <div class="safe">
+      <strong>Core-safe setup</strong>
+      This page does not patch, inject, rebuild, or modify the main Basin OS file.
+    </div>
+  </div>
+
+  <section class="grid">
+    <article class="card">
+      <div>
+        <h2>Open Basin OS</h2>
+        <p>Main operating system: dashboard, lead radar, leads workflow, investor pipeline, call coach, playbook, sequences, and existing tools.</p>
+        <div class="tags">
+          <span class="tag gold">Main OS</span>
+          <span class="tag">Do not modify</span>
+          <span class="tag">Core workflow</span>
+          <span class="tag">Working index</span>
+        </div>
+      </div>
+      <a class="btn btn-main" href="index.html">⚡ Open Basin OS</a>
+    </article>
+
+    <article class="card">
+      <div>
+        <h2>Open SalesNav + NPI</h2>
+        <p>Companion tools for Sales Navigator manual CSV import, Sales Nav searches, alert logging, InMail queue, NPI physician finder, saved searches, and Lead IQ notes.</p>
+        <div class="tags">
+          <span class="tag teal">Companion</span>
+          <span class="tag">Sales Navigator</span>
+          <span class="tag">NPI Registry</span>
+          <span class="tag">Manual only</span>
+        </div>
+      </div>
+      <a class="btn btn-main" href="salesnav-npi-companion.html">🧭 Open SalesNav + NPI</a>
+    </article>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><div class="val" id="stat-investors">0</div><div class="lbl">Investor Pipeline</div></div>
+    <div class="stat"><div class="val" id="stat-radar">0</div><div class="lbl">Radar Leads</div></div>
+    <div class="stat"><div class="val" id="stat-salesnav">0</div><div class="lbl">SalesNav Tagged</div></div>
+    <div class="stat"><div class="val" id="stat-inmail">50</div><div class="lbl">InMails Remaining</div></div>
+  </section>
+
+  <div class="note">
+    Bookmark this page instead of the raw homepage:<br>
+    <code>https://64w7wkr84g-dev.github.io/Basin-Os/start.html</code><br>
+    If the companion page is not uploaded yet, the SalesNav + NPI button will 404 until <code>salesnav-npi-companion.html</code> is in the repo root.
+  </div>
+
+  <div class="footer">
+    <a class="btn btn-ghost" href="data/radar-leads.json" target="_blank">View Shared Radar JSON</a>
+    <a class="btn btn-ghost" href="data/radar-run-log.json" target="_blank">View Radar Run Log</a>
+  </div>
+</main>
+
+<script>
+(function(){
+  function byId(id){return document.getElementById(id)}
+  function readStore(){
+    try{return JSON.parse(localStorage.getItem('basin_os_integrated')||'{}')||{}}catch(e){return {}}
+  }
+  function updateStats(){
+    var s=readStore();
+    var inv=Array.isArray(s.investors)?s.investors:[];
+    var radar=Array.isArray(s.radarLeads)?s.radarLeads:[];
+    var salesNav=inv.filter(function(x){
+      var tags=Array.isArray(x.tags)?x.tags.join(' '):'';
+      return /sales navigator|sales nav|inmail|npi registry/i.test([x.source,x.alertType,tags,x.salesNavNotes,x.leadIQNotes].join(' '));
+    }).length;
+    var inmailData = (s.salesNav && s.salesNav.inmail) ? s.salesNav.inmail : {};
+    var remaining = Math.max(0, 50 - Number(inmailData.used || 0));
+    byId('stat-investors').textContent=inv.length;
+    byId('stat-radar').textContent=radar.length;
+    byId('stat-salesnav').textContent=salesNav;
+    byId('stat-inmail').textContent=remaining;
+  }
+  updateStats();
+  setInterval(updateStats,10000);
+})();
+</script>
+</body>
+</html>
