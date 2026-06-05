@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T15:20:54.552Z",
+  "generatedAt": "2026-06-05T14:55:59.589Z",
   "engine": "Free Feed Radar + Groq Managed",
   "geoMode": "texas_first_nationwide",
   "tavilyUsed": false,
@@ -21,56 +21,56 @@
   },
   "leads": [
     {
-      "id": "rad-free-1780586446499-555e0abc7104b8",
-      "name": "Abraxas Petroleum",
-      "title": "energy",
-      "company": "Abraxas Petroleum",
+      "id": "rad-free-1780671351561-852514a912e778",
+      "name": "Alexandra Wilde",
+      "title": "attorney",
+      "company": "",
       "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdmNZeDBMRmFwQWlzcFJkYlRReVBWODQtNkFyRGZQUjl1TUwyaG40SkhVUWZCaUh0X3ZiaUJqV2pvb1pIalRUVm9vVWZXZjhEcFctWGhpUjhZM2FQSlZTWHdNNnBsbWNpYkY0Vy1OSmNJbkNaVDZONTJiVEdQYmJrSzJKYlA5U1VvSnVlLWV1OGpobnM?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdmNZeDBMRmFwQWlzcFJkYlRReVBWODQtNkFyRGZQUjl1TUwyaG40SkhVUWZCaUh0X3ZiaUJqV2pvb1pIalRUVm9vVWZXZjhEcFctWGhpUjhZM2FQSlZTWHdNNnBsbWNpYkY0Vy1OSmNJbkNaVDZONTJiVEdQYmJrSzJKYlA5U1VvSnVlLWV1OGpobnM?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOQUYzT3F5ejd0QVNNTk45SUlrNVlsc2U4LUx3TnRRMEtJWXNEZl9EQWVjc1FrS0pDSlZtS0lzSVVTbWtQOWhCeGVlZmRzLUNIQlVqYkV4OXJHYm1xdDFuSzh0N1M2dUFCdl9WM3hEY0dUZnNmRWV4VGRTT0cySW9DQ3ZZd2dDT05LTFFXXzFEM2h3UGfSAZgBQVVfeXFMTktOaWRmS1p3VXlzTlhrSEYwMi1nX0d1S0s3eXg2eF9ObHBWVDVqcTJwQWx5V2hFN0l1Ml9XVndfZ0lVNWdDdmJSUFVhcXJWaUJhc245a3J4V3VfRHRYellFRWZfNlJJOEhkbWlmbGlrWkplTHctY05xVTJrNVk1UEd0a2VPaWkzTWNXT2taX3BTUWRxaTlLQ1Y?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOQUYzT3F5ejd0QVNNTk45SUlrNVlsc2U4LUx3TnRRMEtJWXNEZl9EQWVjc1FrS0pDSlZtS0lzSVVTbWtQOWhCeGVlZmRzLUNIQlVqYkV4OXJHYm1xdDFuSzh0N1M2dUFCdl9WM3hEY0dUZnNmRWV4VGRTT0cySW9DQ3ZZd2dDT05LTFFXXzFEM2h3UGfSAZgBQVVfeXFMTktOaWRmS1p3VXlzTlhrSEYwMi1nX0d1S0s3eXg2eF9ObHBWVDVqcTJwQWx5V2hFN0l1Ml9XVndfZ0lVNWdDdmJSUFVhcXJWaUJhc245a3J4V3VfRHRYellFRWZfNlJJOEhkbWlmbGlrWkplTHctY05xVTJrNVk1UEd0a2VPaWkzTWNXT2taX3BTUWRxaTlLQ1Y?oc=5",
       "source": "Free Feed Radar",
-      "sourceFeed": "Energy-state oil and gas executives",
-      "sourceQuery": "(\"oil and gas\" OR \"mineral rights\" OR \"royalty owner\" OR \"energy operator\") (Texas OR Oklahoma OR Louisiana OR New Mexico OR Colorado OR Wyoming OR North Dakota) founder CEO owner president",
-      "sourceDate": "Mon, 03 Jan 2022 08:00:00 GMT",
-      "sourceType": "energy",
-      "priority": "energy_states",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxQdmNZeDBMRmFwQWlzcFJkYlRReVBWODQtNkFyRGZQUjl1TUwyaG40SkhVUWZCaUh0X3ZiaUJqV2pvb1pIalRUVm9vVWZXZjhEcFctWGhpUjhZM2FQSlZTWHdNNnBsbWNpYkY0Vy1OSmNJbkNaVDZONTJiVEdQYmJrSzJKYlA5U1VvSnVlLWV1OGpobnM?oc=5\" target=\"_blank\"&gt;Abraxas Petroleum sells North Dakota assets to pay down debt&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;San Antonio Express-News&lt;/font&gt;",
-      "signal": "Abraxas Petroleum sells North Dakota assets to pay down debt - San Antonio Express-News",
+      "sourceFeed": "Texas law firm partners",
+      "sourceQuery": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
+      "sourceDate": "Wed, 11 Mar 2026 07:00:00 GMT",
+      "sourceType": "attorney",
+      "priority": "texas",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxOQUYzT3F5ejd0QVNNTk45SUlrNVlsc2U4LUx3TnRRMEtJWXNEZl9EQWVjc1FrS0pDSlZtS0lzSVVTbWtQOWhCeGVlZmRzLUNIQlVqYkV4OXJHYm1xdDFuSzh0N1M2dUFCdl9WM3hEY0dUZnNmRWV4VGRTT0cySW9DQ3ZZd2dDT05LTFFXXzFEM2h3UGfSAZgBQVVfeXFMTktOaWRmS1p3VXlzTlhrSEYwMi1nX0d1S0s3eXg2eF9ObHBWVDVqcTJwQWx5V2hFN0l1Ml9XVndfZ0lVNWdDdmJSUFVhcXJWaUJhc245a3J4V3VfRHRYellFRWZfNlJJOEhkbWlmbGlrWkplTHctY05xVTJrNVk1UEd0a2VPaWkzTWNXT2taX3BTUWRxaTlLQ1Y?oc=5\" target=\"_blank\"&gt;Clifford Chance: Alexandra Wilde Named Houston Office Managing Partner&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Pulse 2.0&lt;/font&gt;",
+      "signal": "Clifford Chance: Alexandra Wilde Named Houston Office Managing Partner - Pulse 2.0",
       "raw": {
         "sourceKind": "rss",
-        "sourceFeed": "Energy-state oil and gas executives",
-        "sourceQuery": "(\"oil and gas\" OR \"mineral rights\" OR \"royalty owner\" OR \"energy operator\") (Texas OR Oklahoma OR Louisiana OR New Mexico OR Colorado OR Wyoming OR North Dakota) founder CEO owner president",
-        "sourceType": "energy",
-        "priority": "energy_states",
-        "title": "Abraxas Petroleum sells North Dakota assets to pay down debt - San Antonio Express-News",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdmNZeDBMRmFwQWlzcFJkYlRReVBWODQtNkFyRGZQUjl1TUwyaG40SkhVUWZCaUh0X3ZiaUJqV2pvb1pIalRUVm9vVWZXZjhEcFctWGhpUjhZM2FQSlZTWHdNNnBsbWNpYkY0Vy1OSmNJbkNaVDZONTJiVEdQYmJrSzJKYlA5U1VvSnVlLWV1OGpobnM?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxQdmNZeDBMRmFwQWlzcFJkYlRReVBWODQtNkFyRGZQUjl1TUwyaG40SkhVUWZCaUh0X3ZiaUJqV2pvb1pIalRUVm9vVWZXZjhEcFctWGhpUjhZM2FQSlZTWHdNNnBsbWNpYkY0Vy1OSmNJbkNaVDZONTJiVEdQYmJrSzJKYlA5U1VvSnVlLWV1OGpobnM?oc=5\" target=\"_blank\"&gt;Abraxas Petroleum sells North Dakota assets to pay down debt&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;San Antonio Express-News&lt;/font&gt;",
-        "sourceDate": "Mon, 03 Jan 2022 08:00:00 GMT",
+        "sourceFeed": "Texas law firm partners",
+        "sourceQuery": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
+        "sourceType": "attorney",
+        "priority": "texas",
+        "title": "Clifford Chance: Alexandra Wilde Named Houston Office Managing Partner - Pulse 2.0",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOQUYzT3F5ejd0QVNNTk45SUlrNVlsc2U4LUx3TnRRMEtJWXNEZl9EQWVjc1FrS0pDSlZtS0lzSVVTbWtQOWhCeGVlZmRzLUNIQlVqYkV4OXJHYm1xdDFuSzh0N1M2dUFCdl9WM3hEY0dUZnNmRWV4VGRTT0cySW9DQ3ZZd2dDT05LTFFXXzFEM2h3UGfSAZgBQVVfeXFMTktOaWRmS1p3VXlzTlhrSEYwMi1nX0d1S0s3eXg2eF9ObHBWVDVqcTJwQWx5V2hFN0l1Ml9XVndfZ0lVNWdDdmJSUFVhcXJWaUJhc245a3J4V3VfRHRYellFRWZfNlJJOEhkbWlmbGlrWkplTHctY05xVTJrNVk1UEd0a2VPaWkzTWNXT2taX3BTUWRxaTlLQ1Y?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxOQUYzT3F5ejd0QVNNTk45SUlrNVlsc2U4LUx3TnRRMEtJWXNEZl9EQWVjc1FrS0pDSlZtS0lzSVVTbWtQOWhCeGVlZmRzLUNIQlVqYkV4OXJHYm1xdDFuSzh0N1M2dUFCdl9WM3hEY0dUZnNmRWV4VGRTT0cySW9DQ3ZZd2dDT05LTFFXXzFEM2h3UGfSAZgBQVVfeXFMTktOaWRmS1p3VXlzTlhrSEYwMi1nX0d1S0s3eXg2eF9ObHBWVDVqcTJwQWx5V2hFN0l1Ml9XVndfZ0lVNWdDdmJSUFVhcXJWaUJhc245a3J4V3VfRHRYellFRWZfNlJJOEhkbWlmbGlrWkplTHctY05xVTJrNVk1UEd0a2VPaWkzTWNXT2taX3BTUWRxaTlLQ1Y?oc=5\" target=\"_blank\"&gt;Clifford Chance: Alexandra Wilde Named Houston Office Managing Partner&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Pulse 2.0&lt;/font&gt;",
+        "sourceDate": "Wed, 11 Mar 2026 07:00:00 GMT",
         "raw": {
           "meta": {
-            "name": "Energy-state oil and gas executives",
-            "query": "(\"oil and gas\" OR \"mineral rights\" OR \"royalty owner\" OR \"energy operator\") (Texas OR Oklahoma OR Louisiana OR New Mexico OR Colorado OR Wyoming OR North Dakota) founder CEO owner president",
-            "type": "energy",
-            "priority": "energy_states",
-            "url": "https://news.google.com/rss/search?q=(%22oil%20and%20gas%22%20OR%20%22mineral%20rights%22%20OR%20%22royalty%20owner%22%20OR%20%22energy%20operator%22)%20(Texas%20OR%20Oklahoma%20OR%20Louisiana%20OR%20New%20Mexico%20OR%20Colorado%20OR%20Wyoming%20OR%20North%20Dakota)%20founder%20CEO%20owner%20president&hl=en-US&gl=US&ceid=US:en",
+            "name": "Texas law firm partners",
+            "query": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
+            "type": "attorney",
+            "priority": "texas",
+            "url": "https://news.google.com/rss/search?q=(%22named%20partner%22%20OR%20%22managing%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20Texas&hl=en-US&gl=US&ceid=US:en",
             "sourceKind": "google_news_rss"
           }
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.499Z",
+      "foundAt": "2026-06-05T14:55:51.561Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
         {
           "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Abraxas%20Petroleum",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Alexandra%20Wilde",
           "confidence": "Medium",
           "source": "free search path"
         },
         {
           "type": "Google Search",
-          "value": "https://www.google.com/search?q=Abraxas%20Petroleum+contact+LinkedIn+email",
+          "value": "https://www.google.com/search?q=Alexandra%20Wilde+contact+LinkedIn+email",
           "confidence": "Medium",
           "source": "free search path"
         }
@@ -78,39 +78,19 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Abraxas Petroleum and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nextAction": "Day 1: verify Alexandra Wilde and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi Abraxas, I came across a public signal related to Abraxas Petroleum sells North Dakota assets to pay down debt - San Antonio Express-News. Basin Ventures may be relevant if direct energy ownership is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi Alexandra, I came across a public signal related to Clifford Chance: Alexandra Wilde Named Houston Office Managing Partner - Pulse 2.0. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
         "manual contact path available",
         "Texas-first priority",
         "Basin ICP signal",
-        "Groq fit: no"
+        "timely public trigger"
       ],
-      "ai": {
-        "isHumanLead": false,
-        "contactName": "",
-        "company": "Abraxas Petroleum",
-        "title": "",
-        "leadType": "",
-        "usaRelevance": true,
-        "investorFit": "no",
-        "contactPath": "none",
-        "contactPathValue": "",
-        "scoreAdjustment": 0,
-        "qualificationGaps": [
-          "no human contact",
-          "company-only page"
-        ],
-        "bestAngle": "",
-        "likelyObjection": "",
-        "nextAction": "",
-        "rejectReason": "company-only page, no human contact"
-      },
-      "groqAnalyzedAt": "2026-06-04T15:20:52.809Z",
+      "aiError": "Groq HTTP 429",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -119,7 +99,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446498-469a2eec827068",
+      "id": "rad-free-1780671351583-f24918955a16a8",
       "name": "Bob Frenzel",
       "title": "CEO",
       "company": "Xcel",
@@ -156,7 +136,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.498Z",
+      "foundAt": "2026-06-05T14:55:51.583Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -202,13 +182,13 @@
         "scoreAdjustment": 0,
         "qualificationGaps": [],
         "bestAngle": "energy investment opportunities in Texas",
-        "likelyObjection": "none",
+        "likelyObjection": "no known objections",
         "nextAction": "research Xcel's current projects and initiatives",
         "rejectReason": ""
       },
-      "groqAnalyzedAt": "2026-06-04T15:20:53.600Z",
+      "groqAnalyzedAt": "2026-06-05T14:55:58.886Z",
       "bestAngle": "energy investment opportunities in Texas",
-      "likelyObjection": "none",
+      "likelyObjection": "no known objections",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -217,7 +197,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446493-2187e67d4e3b08",
+      "id": "rad-free-1780671351577-03c194ce217828",
       "name": "Brightstar Capital Partners",
       "title": "liquidity_event",
       "company": "Brightstar Capital Partners",
@@ -254,7 +234,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.493Z",
+      "foundAt": "2026-06-05T14:55:51.577Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -295,7 +275,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446475-99e8c71e285638",
+      "id": "rad-free-1780671351559-113c64c0acb308",
       "name": "Charles Harrell",
       "title": "attorney",
       "company": "",
@@ -332,7 +312,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.475Z",
+      "foundAt": "2026-06-05T14:55:51.559Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -373,7 +353,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446494-e259125e3aa51",
+      "id": "rad-free-1780671351578-5952758f6e6f7",
       "name": "Daniel Chu",
       "title": "liquidity_event",
       "company": "",
@@ -410,7 +390,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.494Z",
+      "foundAt": "2026-06-05T14:55:51.578Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -442,7 +422,6 @@
         "Basin ICP signal",
         "timely public trigger"
       ],
-      "aiError": "Groq HTTP 429",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -451,7 +430,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446482-9c0ca1a7e856f",
+      "id": "rad-free-1780671351567-4b087f8255939",
       "name": "Doeren Mayhew",
       "title": "cpa",
       "company": "TBK CPA",
@@ -488,7 +467,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.482Z",
+      "foundAt": "2026-06-05T14:55:51.567Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -527,7 +506,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446483-24740c58d21c18",
+      "id": "rad-free-1780671351568-ffe6fe4d5ee3e8",
       "name": "Ferguson Acquires Local Dallas",
       "title": "cpa",
       "company": "Calvetti Ferguson Acquires Local Dallas CPA Firm",
@@ -564,7 +543,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.483Z",
+      "foundAt": "2026-06-05T14:55:51.568Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -603,7 +582,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446483-3ba5f170bf48f8",
+      "id": "rad-free-1780671351568-e474762923908",
       "name": "Firm Gummer Group Acquired",
       "title": "cpa",
       "company": "Dallas CPA Firm Gummer Group",
@@ -640,7 +619,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.483Z",
+      "foundAt": "2026-06-05T14:55:51.568Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -680,7 +659,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446471-538b1ede8d11d",
+      "id": "rad-free-1780671351555-5251cd94440198",
       "name": "Glenn Davis",
       "title": "physician",
       "company": "",
@@ -717,7 +696,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.471Z",
+      "foundAt": "2026-06-05T14:55:51.555Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -756,7 +735,84 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446471-e41d6331426008",
+      "id": "rad-free-1780671351560-350cfb094dfad",
+      "name": "Hardy Wilkerson",
+      "title": "attorney",
+      "company": "Potts Law Firm",
+      "location": "Texas-first",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYkMtcVdqOFdpdkE5SHpOem5IQ19TbXFNODVwalBUZmUxTUl5U3dHbWVBZzVDbGdhaWFXTE8tQWRheFl6MHJ3LUpyMFNWaG9nNnY5MW0wb3lJNUZsVXZfUFpNOUZCbENlM0dMVFpMSG9xbTV6ZjBsUmdXT25FWnFHVHZ3Vjk4elZXaWNaZnNZSFVpdThKUmEyWEZlMHNfaXducTdINUEwNUNseWFnbXZPbjlIV29qeHNEMk45Ml9udDRVQQ?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYkMtcVdqOFdpdkE5SHpOem5IQ19TbXFNODVwalBUZmUxTUl5U3dHbWVBZzVDbGdhaWFXTE8tQWRheFl6MHJ3LUpyMFNWaG9nNnY5MW0wb3lJNUZsVXZfUFpNOUZCbENlM0dMVFpMSG9xbTV6ZjBsUmdXT25FWnFHVHZ3Vjk4elZXaWNaZnNZSFVpdThKUmEyWEZlMHNfaXducTdINUEwNUNseWFnbXZPbjlIV29qeHNEMk45Ml9udDRVQQ?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Texas law firm partners",
+      "sourceQuery": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
+      "sourceDate": "Thu, 30 Jan 2025 08:00:00 GMT",
+      "sourceType": "attorney",
+      "priority": "texas",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYkMtcVdqOFdpdkE5SHpOem5IQ19TbXFNODVwalBUZmUxTUl5U3dHbWVBZzVDbGdhaWFXTE8tQWRheFl6MHJ3LUpyMFNWaG9nNnY5MW0wb3lJNUZsVXZfUFpNOUZCbENlM0dMVFpMSG9xbTV6ZjBsUmdXT25FWnFHVHZ3Vjk4elZXaWNaZnNZSFVpdThKUmEyWEZlMHNfaXducTdINUEwNUNseWFnbXZPbjlIV29qeHNEMk45Ml9udDRVQQ?oc=5\" target=\"_blank\"&gt;Potts Law Firm Welcomes Seasoned West Texas Attorney Hardy Wilkerson&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;PR Newswire&lt;/font&gt;",
+      "signal": "Potts Law Firm Welcomes Seasoned West Texas Attorney Hardy Wilkerson - PR Newswire",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Texas law firm partners",
+        "sourceQuery": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
+        "sourceType": "attorney",
+        "priority": "texas",
+        "title": "Potts Law Firm Welcomes Seasoned West Texas Attorney Hardy Wilkerson - PR Newswire",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYkMtcVdqOFdpdkE5SHpOem5IQ19TbXFNODVwalBUZmUxTUl5U3dHbWVBZzVDbGdhaWFXTE8tQWRheFl6MHJ3LUpyMFNWaG9nNnY5MW0wb3lJNUZsVXZfUFpNOUZCbENlM0dMVFpMSG9xbTV6ZjBsUmdXT25FWnFHVHZ3Vjk4elZXaWNaZnNZSFVpdThKUmEyWEZlMHNfaXducTdINUEwNUNseWFnbXZPbjlIV29qeHNEMk45Ml9udDRVQQ?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYkMtcVdqOFdpdkE5SHpOem5IQ19TbXFNODVwalBUZmUxTUl5U3dHbWVBZzVDbGdhaWFXTE8tQWRheFl6MHJ3LUpyMFNWaG9nNnY5MW0wb3lJNUZsVXZfUFpNOUZCbENlM0dMVFpMSG9xbTV6ZjBsUmdXT25FWnFHVHZ3Vjk4elZXaWNaZnNZSFVpdThKUmEyWEZlMHNfaXducTdINUEwNUNseWFnbXZPbjlIV29qeHNEMk45Ml9udDRVQQ?oc=5\" target=\"_blank\"&gt;Potts Law Firm Welcomes Seasoned West Texas Attorney Hardy Wilkerson&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;PR Newswire&lt;/font&gt;",
+        "sourceDate": "Thu, 30 Jan 2025 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Texas law firm partners",
+            "query": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
+            "type": "attorney",
+            "priority": "texas",
+            "url": "https://news.google.com/rss/search?q=(%22named%20partner%22%20OR%20%22managing%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20Texas&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-06-05T14:55:51.560Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Hardy%20Wilkerson%20Potts%20Law%20Firm",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Hardy%20Wilkerson%20Potts%20Law%20Firm+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Hardy Wilkerson and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Hardy, I came across a public signal related to Potts Law Firm Welcomes Seasoned West Texas Attorney Hardy Wilkerson - PR Newswire. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Texas-first priority",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1780671351556-e486255e909d28",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
@@ -793,7 +849,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.471Z",
+      "foundAt": "2026-06-05T14:55:51.556Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -832,7 +888,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446491-a226cb74a80828",
+      "id": "rad-free-1780671351575-b12b374520ffd8",
       "name": "Keith Conlon Brings Local",
       "title": "liquidity_event",
       "company": "",
@@ -869,7 +925,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.491Z",
+      "foundAt": "2026-06-05T14:55:51.575Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -909,7 +965,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446474-75874282f9a55",
+      "id": "rad-free-1780671351558-5fce521601d618",
       "name": "Laura Gibson",
       "title": "attorney",
       "company": "",
@@ -946,7 +1002,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.474Z",
+      "foundAt": "2026-06-05T14:55:51.558Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -986,7 +1042,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446476-23756d6a7fbc6",
+      "id": "rad-free-1780671351560-2fc89b01da5d3",
       "name": "Law Graduate Debany Davila",
       "title": "attorney",
       "company": "Texas A&M Law",
@@ -1023,7 +1079,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.476Z",
+      "foundAt": "2026-06-05T14:55:51.560Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1063,7 +1119,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446476-4ec6d11f792108",
+      "id": "rad-free-1780671351560-364cfaa84031e8",
       "name": "Law School Graduate",
       "title": "attorney",
       "company": "New Texas A&M Law",
@@ -1100,7 +1156,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.476Z",
+      "foundAt": "2026-06-05T14:55:51.560Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1140,7 +1196,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446481-86947256b330d8",
+      "id": "rad-free-1780671351566-20ebcd8b7b0cd",
       "name": "Litigator Michael B. Goldberg",
       "title": "attorney",
       "company": "Litigator Michael B. Goldberg Joins PIB Law",
@@ -1177,7 +1233,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.481Z",
+      "foundAt": "2026-06-05T14:55:51.566Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1217,7 +1273,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446474-c7ed7cd5835488",
+      "id": "rad-free-1780671351558-3d03a4486d2dd",
       "name": "Mark Malveaux",
       "title": "attorney",
       "company": "",
@@ -1254,7 +1310,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.474Z",
+      "foundAt": "2026-06-05T14:55:51.558Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1294,7 +1350,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446472-18dade0eb64198",
+      "id": "rad-free-1780671351557-2db0d0eb9d9ad",
       "name": "Mehmet Oz Shows Houston",
       "title": "physician",
       "company": "",
@@ -1331,7 +1387,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.472Z",
+      "foundAt": "2026-06-05T14:55:51.557Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1370,84 +1426,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446494-5bc9f0845d9c18",
-      "name": "New CEO",
-      "title": "liquidity_event",
-      "company": "",
-      "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPLU1yQUNwNkFTNlZURUtuQXlaWDFiVE1HMlRTRjRuSF9Ja1NNQ1R5NVR5a0plTDlmT1ZUYWgtdlY4UXFXclp6VkpLSWdIcmdQeHhlLUh0WG9wZG5rcU1TTlpjZ001WWxQTG10RWdFdVE0eElSdE5ZUlc2QXNtd3RhY08zWTFoTEZaenEwRVNTYWJ5aGVHUU1obHMtdlM0TG9NVjV6aWMtdFcwUWcyTUd2eg?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPLU1yQUNwNkFTNlZURUtuQXlaWDFiVE1HMlRTRjRuSF9Ja1NNQ1R5NVR5a0plTDlmT1ZUYWgtdlY4UXFXclp6VkpLSWdIcmdQeHhlLUh0WG9wZG5rcU1TTlpjZ001WWxQTG10RWdFdVE0eElSdE5ZUlc2QXNtd3RhY08zWTFoTEZaenEwRVNTYWJ5aGVHUU1obHMtdlM0TG9NVjV6aWMtdFcwUWcyTUd2eg?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas business owners liquidity events",
-      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-      "sourceDate": "Mon, 06 Mar 2023 08:00:00 GMT",
-      "sourceType": "liquidity_event",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxPLU1yQUNwNkFTNlZURUtuQXlaWDFiVE1HMlRTRjRuSF9Ja1NNQ1R5NVR5a0plTDlmT1ZUYWgtdlY4UXFXclp6VkpLSWdIcmdQeHhlLUh0WG9wZG5rcU1TTlpjZ001WWxQTG10RWdFdVE0eElSdE5ZUlc2QXNtd3RhY08zWTFoTEZaenEwRVNTYWJ5aGVHUU1obHMtdlM0TG9NVjV6aWMtdFcwUWcyTUd2eg?oc=5\" target=\"_blank\"&gt;Lincoln Property’s Residential Division Acquired by Cadillac Fairview, New CEO Named&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Dallas Innovates&lt;/font&gt;",
-      "signal": "Lincoln Property’s Residential Division Acquired by Cadillac Fairview, New CEO Named - Dallas Innovates",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Texas business owners liquidity events",
-        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-        "sourceType": "liquidity_event",
-        "priority": "texas",
-        "title": "Lincoln Property’s Residential Division Acquired by Cadillac Fairview, New CEO Named - Dallas Innovates",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPLU1yQUNwNkFTNlZURUtuQXlaWDFiVE1HMlRTRjRuSF9Ja1NNQ1R5NVR5a0plTDlmT1ZUYWgtdlY4UXFXclp6VkpLSWdIcmdQeHhlLUh0WG9wZG5rcU1TTlpjZ001WWxQTG10RWdFdVE0eElSdE5ZUlc2QXNtd3RhY08zWTFoTEZaenEwRVNTYWJ5aGVHUU1obHMtdlM0TG9NVjV6aWMtdFcwUWcyTUd2eg?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxPLU1yQUNwNkFTNlZURUtuQXlaWDFiVE1HMlRTRjRuSF9Ja1NNQ1R5NVR5a0plTDlmT1ZUYWgtdlY4UXFXclp6VkpLSWdIcmdQeHhlLUh0WG9wZG5rcU1TTlpjZ001WWxQTG10RWdFdVE0eElSdE5ZUlc2QXNtd3RhY08zWTFoTEZaenEwRVNTYWJ5aGVHUU1obHMtdlM0TG9NVjV6aWMtdFcwUWcyTUd2eg?oc=5\" target=\"_blank\"&gt;Lincoln Property’s Residential Division Acquired by Cadillac Fairview, New CEO Named&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Dallas Innovates&lt;/font&gt;",
-        "sourceDate": "Mon, 06 Mar 2023 08:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Texas business owners liquidity events",
-            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-            "type": "liquidity_event",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20Texas%20founder%20owner%20CEO&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-06-04T15:20:46.494Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=New%20CEO",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=New%20CEO+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify New CEO and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi New, I came across a public signal related to Lincoln Property’s Residential Division Acquired by Cadillac Fairview, New CEO Named - Dallas Innovates. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1780586446484-12a4929bbd177",
+      "id": "rad-free-1780671351568-0909756b0a18d",
       "name": "Practice Advisor",
       "title": "cpa",
       "company": "",
@@ -1484,7 +1463,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.484Z",
+      "foundAt": "2026-06-05T14:55:51.568Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1523,7 +1502,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446484-2adc43b819a988",
+      "id": "rad-free-1780671351569-1fff550500216",
       "name": "Practice Advisor",
       "title": "cpa",
       "company": "Texas Accounting Firm",
@@ -1560,7 +1539,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.484Z",
+      "foundAt": "2026-06-05T14:55:51.569Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1599,7 +1578,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446483-33b8f72422c25",
+      "id": "rad-free-1780671351568-cb17f929688f",
       "name": "Seeks Optional Expense Substantiation",
       "title": "cpa",
       "company": "",
@@ -1636,7 +1615,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.483Z",
+      "foundAt": "2026-06-05T14:55:51.568Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1675,7 +1654,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446487-977add674ac62",
+      "id": "rad-free-1780671351572-f8021cd8fc87d8",
       "name": "Trevor Roe Becomes Ownership",
       "title": "liquidity_event",
       "company": "Roe Strategic Capital",
@@ -1712,7 +1691,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.487Z",
+      "foundAt": "2026-06-05T14:55:51.572Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1752,7 +1731,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446499-827f2a2bc6fca8",
+      "id": "rad-free-1780671351585-449e7db7ded818",
       "name": "Trump Called CEO For",
       "title": "energy",
       "company": "",
@@ -1789,7 +1768,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.499Z",
+      "foundAt": "2026-06-05T14:55:51.585Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1828,7 +1807,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446488-f5b46dd5e26f9",
+      "id": "rad-free-1780671351573-4776338a6805b8",
       "name": "Uplift Hospice",
       "title": "liquidity_event",
       "company": "",
@@ -1865,7 +1844,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.488Z",
+      "foundAt": "2026-06-05T14:55:51.573Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1905,7 +1884,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1780586446482-043743ada98958",
+      "id": "rad-free-1780671351567-1bc2b959a2b2",
       "name": "Who Honors Kaleen Reyna",
       "title": "cpa",
       "company": "",
@@ -1942,7 +1921,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-06-04T15:20:46.482Z",
+      "foundAt": "2026-06-05T14:55:51.567Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
