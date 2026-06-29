@@ -1,14 +1,140 @@
 {
-  "generatedAt": "2026-06-26T14:28:45.716Z",
-  "startedAt": "2026-06-26T14:28:33.708Z",
+  "generatedAt": "2026-06-29T15:54:51.452Z",
+  "startedAt": "2026-06-29T15:50:50.680Z",
   "engine": "Free Feed Radar + Groq Managed",
   "stats": {
-    "rawSignals": 250,
-    "candidates": 250,
+    "rawSignals": 71,
+    "candidates": 71,
     "groqUsed": 12,
-    "usableLeads": 27,
-    "rejected": 223,
-    "collectionErrors": 0
+    "usableLeads": 3,
+    "rejected": 68,
+    "collectionErrors": 28
   },
-  "errors": []
+  "errors": [
+    {
+      "kind": "googleNewsQueries",
+      "name": "Texas physician practice owners",
+      "error": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20Texas&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Texas law firm partners",
+      "error": "https://news.google.com/rss/search?q=(%22named%20partner%22%20OR%20%22managing%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20Texas&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Texas CPA tax advisors",
+      "error": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22%20OR%20%22depletion%20allowance%22%20OR%20%22high%20net%20worth%22)%20Texas&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Texas business owners liquidity events",
+      "error": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20Texas%20founder%20owner%20CEO&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Energy-state oil and gas executives",
+      "error": "https://news.google.com/rss/search?q=(%22oil%20and%20gas%22%20OR%20%22mineral%20rights%22%20OR%20%22royalty%20owner%22%20OR%20%22energy%20operator%22)%20(Texas%20OR%20Oklahoma%20OR%20Louisiana%20OR%20New%20Mexico%20OR%20Colorado%20OR%20Wyoming%20OR%20North%20Dakota)%20founder%20CEO%20owner%20president&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Nationwide physician practice owners",
+      "error": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Nationwide law firm managing partners",
+      "error": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Nationwide CPA tax advisors",
+      "error": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22high%20net%20worth%22%20OR%20%22business%20owner%22%20OR%20%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Nationwide business founder exits",
+      "error": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20%22United%20States%22%20founder%20CEO%20owner&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Nationwide franchise and multi-unit owners",
+      "error": "https://news.google.com/rss/search?q=(%22multi-unit%20franchisee%22%20OR%20%22franchise%20owner%22%20OR%20%22multi%20unit%20operator%22)%20founder%20CEO%20owner%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Texas physician practice owners",
+      "error": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20Texas&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Texas law firm partners",
+      "error": "https://news.google.com/rss/search?q=(%22named%20partner%22%20OR%20%22managing%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20Texas&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Texas CPA tax advisors",
+      "error": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22%20OR%20%22depletion%20allowance%22%20OR%20%22high%20net%20worth%22)%20Texas&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Texas business owner liquidity events",
+      "error": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20Texas%20founder%20owner%20CEO&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Energy-state oil and gas executives",
+      "error": "https://news.google.com/rss/search?q=(%22oil%20and%20gas%22%20OR%20%22mineral%20rights%22%20OR%20%22royalty%20owner%22%20OR%20%22energy%20operator%22)%20(Texas%20OR%20Oklahoma%20OR%20Louisiana%20OR%20New%20Mexico%20OR%20Colorado%20OR%20Wyoming%20OR%20North%20Dakota)%20founder%20CEO%20owner%20president&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Nationwide physician practice owners",
+      "error": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Nationwide law firm partners",
+      "error": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Nationwide CPA tax advisors",
+      "error": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22high%20net%20worth%22%20OR%20%22business%20owner%22%20OR%20%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Nationwide business founder exits",
+      "error": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20%22United%20States%22%20founder%20CEO%20owner&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "googleNewsQueries",
+      "name": "Nationwide franchise and multi-unit owners",
+      "error": "https://news.google.com/rss/search?q=(%22multi-unit%20franchisee%22%20OR%20%22franchise%20owner%22%20OR%20%22multi%20unit%20operator%22)%20founder%20CEO%20owner%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en HTTP 503"
+    },
+    {
+      "kind": "gdeltQueries",
+      "name": "Texas physician founders",
+      "error": "https://api.gdeltproject.org/api/v2/doc/doc?query=(%22physician%20founder%22%20OR%20%22practice%20owner%22)%20Texas&mode=artlist&format=json&maxrecords=50&sort=datedesc HTTP 429"
+    },
+    {
+      "kind": "gdeltQueries",
+      "name": "Energy executives",
+      "error": "https://api.gdeltproject.org/api/v2/doc/doc?query=(%22oil%20and%20gas%22%20OR%20%22mineral%20rights%22%20OR%20%22royalty%20owner%22)%20(Texas%20OR%20Oklahoma%20OR%20Louisiana%20OR%20New%20Mexico%20OR%20Colorado%20OR%20Wyoming%20OR%20North%20Dakota)&mode=artlist&format=json&maxrecords=50&sort=datedesc HTTP 429"
+    },
+    {
+      "kind": "gdeltQueries",
+      "name": "Texas physician founders",
+      "error": "https://api.gdeltproject.org/api/v2/doc/doc?query=(%22physician%20founder%22%20OR%20%22practice%20owner%22)%20Texas&mode=artlist&format=json&maxrecords=50&sort=datedesc HTTP 429"
+    },
+    {
+      "kind": "gdeltQueries",
+      "name": "Texas law firm partners",
+      "error": "https://api.gdeltproject.org/api/v2/doc/doc?query=(%22named%20partner%22%20OR%20%22managing%20partner%22)%20%22law%20firm%22%20Texas&mode=artlist&format=json&maxrecords=50&sort=datedesc HTTP 429"
+    },
+    {
+      "kind": "gdeltQueries",
+      "name": "Energy executives",
+      "error": "https://api.gdeltproject.org/api/v2/doc/doc?query=(%22oil%20and%20gas%22%20OR%20%22mineral%20rights%22%20OR%20%22royalty%20owner%22)%20(Texas%20OR%20Oklahoma%20OR%20Louisiana%20OR%20New%20Mexico%20OR%20Colorado%20OR%20Wyoming%20OR%20North%20Dakota)&mode=artlist&format=json&maxrecords=50&sort=datedesc HTTP 429"
+    }
+  ]
 }
