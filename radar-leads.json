@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T13:55:14.769Z",
+  "generatedAt": "2026-07-22T14:00:14.813Z",
   "engine": "Free Feed Radar + Groq Managed",
   "geoMode": "texas_first_nationwide",
   "tavilyUsed": false,
@@ -13,15 +13,15 @@
   },
   "stats": {
     "rawSignals": 250,
-    "candidates": 248,
+    "candidates": 247,
     "groqUsed": 12,
     "usableLeads": 24,
-    "rejected": 224,
+    "rejected": 223,
     "collectionErrors": 0
   },
   "leads": [
     {
-      "id": "rad-free-1784642106478-48437aceb1bb18",
+      "id": "rad-free-1784728800523-26c59e51530f68",
       "name": "Bob Frenzel",
       "title": "CEO",
       "company": "Xcel",
@@ -58,7 +58,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.478Z",
+      "foundAt": "2026-07-22T14:00:00.523Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -108,7 +108,7 @@
         "nextAction": "research Xcel's current projects and initiatives",
         "rejectReason": ""
       },
-      "groqAnalyzedAt": "2026-07-21T13:55:11.016Z",
+      "groqAnalyzedAt": "2026-07-22T14:00:06.047Z",
       "bestAngle": "energy investment opportunities in Texas",
       "likelyObjection": "none",
       "contactable": true,
@@ -119,7 +119,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106466-47cbd77ef5fe8",
+      "id": "rad-free-1784728800512-5e09030d30d97",
       "name": "Carrie Carson",
       "title": "cpa",
       "company": "Oxy Low Carbon Ventures",
@@ -156,7 +156,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.466Z",
+      "foundAt": "2026-07-22T14:00:00.512Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -176,7 +176,7 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "research and verify contact information",
+      "nextAction": "Research Carrie Carson's current role and responsibilities at Oxy Low Carbon Ventures",
       "nurture": {
         "subject": "Reason for reaching out",
         "body": "Hi [Name], I came across a public signal related to Women in Energy: Carrie Carson, Oxy Low Carbon Ventures - Hart Energy. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
@@ -186,7 +186,7 @@
         "Texas-first priority",
         "Basin ICP signal",
         "Groq fit: potential",
-        "Angle: energy investment opportunities"
+        "Angle: energy investment"
       ],
       "ai": {
         "isHumanLead": true,
@@ -200,14 +200,13 @@
         "contactPathValue": "https://www.linkedin.com/search/results/people/?keywords=Carrie%20Carson%20Oxy%20Low%20Carbon%20Ventures",
         "scoreAdjustment": 0,
         "qualificationGaps": [],
-        "bestAngle": "energy investment opportunities",
-        "likelyObjection": "no known objections",
-        "nextAction": "research and verify contact information",
+        "bestAngle": "energy investment",
+        "likelyObjection": "",
+        "nextAction": "Research Carrie Carson's current role and responsibilities at Oxy Low Carbon Ventures",
         "rejectReason": ""
       },
-      "groqAnalyzedAt": "2026-07-21T13:55:10.032Z",
-      "bestAngle": "energy investment opportunities",
-      "likelyObjection": "no known objections",
+      "groqAnalyzedAt": "2026-07-22T14:00:04.905Z",
+      "bestAngle": "energy investment",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -216,7 +215,108 @@
       "contactSummary": "Google Search + LinkedIn Search"
     },
     {
-      "id": "rad-free-1784642106457-d5e40e804c9e3",
+      "id": "rad-free-1784728800499-1176d5f163e3e8",
+      "name": "Charged With",
+      "title": "physician",
+      "company": "Colorado Dental",
+      "location": "Texas-first",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNc3dPVXVXYlVheXZkMjRZMDV1UjBvYmloX2s2SEpLa2g2UzM3dXZjOVhZS0MwQUJpdzFicVhSZlJhb2VILWhKVG1xbkVqWFhtb1p1Y2xWZ25ieG04YXhFd2ZSTkZaVHk1UFlBZzNpXzc2LXY5M3BpSE10MGNMVm92NnFUY25jR0tTc1cyVUFDTkxTVEI0YTdqQy0yVDBrOXc4WHU0?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNc3dPVXVXYlVheXZkMjRZMDV1UjBvYmloX2s2SEpLa2g2UzM3dXZjOVhZS0MwQUJpdzFicVhSZlJhb2VILWhKVG1xbkVqWFhtb1p1Y2xWZ25ieG04YXhFd2ZSTkZaVHk1UFlBZzNpXzc2LXY5M3BpSE10MGNMVm92NnFUY25jR0tTc1cyVUFDTkxTVEI0YTdqQy0yVDBrOXc4WHU0?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Texas physician practice owners",
+      "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
+      "sourceDate": "Fri, 05 Apr 2019 07:00:00 GMT",
+      "sourceType": "physician practice owner",
+      "priority": "texas",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxNc3dPVXVXYlVheXZkMjRZMDV1UjBvYmloX2s2SEpLa2g2UzM3dXZjOVhZS0MwQUJpdzFicVhSZlJhb2VILWhKVG1xbkVqWFhtb1p1Y2xWZ25ieG04YXhFd2ZSTkZaVHk1UFlBZzNpXzc2LXY5M3BpSE10MGNMVm92NnFUY25jR0tTc1cyVUFDTkxTVEI0YTdqQy0yVDBrOXc4WHU0?oc=5\" target=\"_blank\"&gt;Colorado Dental Practice Owner Charged With $400,000 in Medicaid Fraud&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Dentistry Today&lt;/font&gt;",
+      "signal": "Colorado Dental Practice Owner Charged With $400,000 in Medicaid Fraud - Dentistry Today",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Texas physician practice owners",
+        "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
+        "sourceType": "physician",
+        "priority": "texas",
+        "title": "Colorado Dental Practice Owner Charged With $400,000 in Medicaid Fraud - Dentistry Today",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNc3dPVXVXYlVheXZkMjRZMDV1UjBvYmloX2s2SEpLa2g2UzM3dXZjOVhZS0MwQUJpdzFicVhSZlJhb2VILWhKVG1xbkVqWFhtb1p1Y2xWZ25ieG04YXhFd2ZSTkZaVHk1UFlBZzNpXzc2LXY5M3BpSE10MGNMVm92NnFUY25jR0tTc1cyVUFDTkxTVEI0YTdqQy0yVDBrOXc4WHU0?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxNc3dPVXVXYlVheXZkMjRZMDV1UjBvYmloX2s2SEpLa2g2UzM3dXZjOVhZS0MwQUJpdzFicVhSZlJhb2VILWhKVG1xbkVqWFhtb1p1Y2xWZ25ieG04YXhFd2ZSTkZaVHk1UFlBZzNpXzc2LXY5M3BpSE10MGNMVm92NnFUY25jR0tTc1cyVUFDTkxTVEI0YTdqQy0yVDBrOXc4WHU0?oc=5\" target=\"_blank\"&gt;Colorado Dental Practice Owner Charged With $400,000 in Medicaid Fraud&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Dentistry Today&lt;/font&gt;",
+        "sourceDate": "Fri, 05 Apr 2019 07:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Texas physician practice owners",
+            "query": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
+            "type": "physician",
+            "priority": "texas",
+            "url": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20Texas&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-07-22T14:00:00.499Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Charged%20With%20Colorado%20Dental",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Charged%20With%20Colorado%20Dental+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "research and verify contact information",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Charged, I came across a public signal related to Colorado Dental Practice Owner Charged With $400,000 in Medicaid Fraud - Dentistry Today. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Texas-first priority",
+        "Basin ICP signal",
+        "Groq fit: potential",
+        "Angle: Medicaid fraud charges may indicate financial difficulties, potential for investment or restructuring"
+      ],
+      "ai": {
+        "isHumanLead": true,
+        "contactName": "Charged With",
+        "company": "Colorado Dental",
+        "title": "physician",
+        "leadType": "physician practice owner",
+        "usaRelevance": true,
+        "investorFit": "potential",
+        "contactPath": "linkedin",
+        "contactPathValue": "https://www.linkedin.com/search/results/people/?keywords=Charged%20With%20Colorado%20Dental",
+        "scoreAdjustment": 0,
+        "qualificationGaps": [
+          "email",
+          "phone number"
+        ],
+        "bestAngle": "Medicaid fraud charges may indicate financial difficulties, potential for investment or restructuring",
+        "likelyObjection": "sensitivity around fraud charges",
+        "nextAction": "research and verify contact information",
+        "rejectReason": ""
+      },
+      "groqAnalyzedAt": "2026-07-22T14:00:07.312Z",
+      "bestAngle": "Medicaid fraud charges may indicate financial difficulties, potential for investment or restructuring",
+      "likelyObjection": "sensitivity around fraud charges",
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1784728800501-f3c54f551b7548",
       "name": "Charles Harrell",
       "title": "attorney",
       "company": "Jackson Walker LLP",
@@ -253,7 +353,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.457Z",
+      "foundAt": "2026-07-22T14:00:00.501Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -273,7 +373,7 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "Research Charles Harrell's profile and connect on LinkedIn",
+      "nextAction": "Send a personalized LinkedIn message to Charles Harrell introducing Basin Ventures and inquiring about potential investment interests",
       "nurture": {
         "subject": "Reason for reaching out",
         "body": "Hi Charles, I came across a public signal related to Jackson Walker Expands Corporate & Securities Practice With Addition of Houston Partner Charles Harrell - Jackson Walker. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
@@ -284,8 +384,8 @@
         "Texas-first priority",
         "Basin ICP signal",
         "timely public trigger",
-        "Groq fit: qualified",
-        "Angle: Texas law firm partnership"
+        "Groq fit: potential",
+        "Angle: Reach out to Charles Harrell via LinkedIn to discuss potential investment opportunities in the Texas region"
       ],
       "ai": {
         "isHumanLead": true,
@@ -294,18 +394,19 @@
         "title": "attorney",
         "leadType": "attorney/partner",
         "usaRelevance": true,
-        "investorFit": "qualified",
+        "investorFit": "potential",
         "contactPath": "linkedin",
         "contactPathValue": "https://www.linkedin.com/search/results/people/?keywords=Charles%20Harrell",
         "scoreAdjustment": 0,
         "qualificationGaps": [],
-        "bestAngle": "Texas law firm partnership",
-        "likelyObjection": "",
-        "nextAction": "Research Charles Harrell's profile and connect on LinkedIn",
+        "bestAngle": "Reach out to Charles Harrell via LinkedIn to discuss potential investment opportunities in the Texas region",
+        "likelyObjection": "May not be interested in investment opportunities outside of law firm activities",
+        "nextAction": "Send a personalized LinkedIn message to Charles Harrell introducing Basin Ventures and inquiring about potential investment interests",
         "rejectReason": ""
       },
-      "groqAnalyzedAt": "2026-07-21T13:55:11.985Z",
-      "bestAngle": "Texas law firm partnership",
+      "groqAnalyzedAt": "2026-07-22T14:00:09.786Z",
+      "bestAngle": "Reach out to Charles Harrell via LinkedIn to discuss potential investment opportunities in the Texas region",
+      "likelyObjection": "May not be interested in investment opportunities outside of law firm activities",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -314,7 +415,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106464-9bc0558a757728",
+      "id": "rad-free-1784728800510-4c96f744198df8",
       "name": "Doeren Mayhew",
       "title": "CPA",
       "company": "TBK CPA",
@@ -351,7 +452,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.464Z",
+      "foundAt": "2026-07-22T14:00:00.510Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -400,9 +501,9 @@
         "bestAngle": "",
         "likelyObjection": "",
         "nextAction": "",
-        "rejectReason": "company-only signal, no named human contact"
+        "rejectReason": "company-only page, no named human contact"
       },
-      "groqAnalyzedAt": "2026-07-21T13:55:12.796Z",
+      "groqAnalyzedAt": "2026-07-22T14:00:11.740Z",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -411,7 +512,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106473-d83770a79a09b8",
+      "id": "rad-free-1784728800518-9d6b573b0c78",
       "name": "Eli Lilly",
       "title": "liquidity_event",
       "company": "",
@@ -448,7 +549,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.473Z",
+      "foundAt": "2026-07-22T14:00:00.518Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -494,14 +595,14 @@
         "scoreAdjustment": 0,
         "qualificationGaps": [
           "no human contact",
-          "company-only signal"
+          "company-only page"
         ],
         "bestAngle": "",
         "likelyObjection": "",
         "nextAction": "",
-        "rejectReason": "signal does not contain or imply a real human contact"
+        "rejectReason": "signal does not contain a real human contact"
       },
-      "groqAnalyzedAt": "2026-07-21T13:55:13.523Z",
+      "groqAnalyzedAt": "2026-07-22T14:00:12.920Z",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -510,7 +611,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106465-dc2e27452ea9c8",
+      "id": "rad-free-1784728800511-74beea604a06f8",
       "name": "Energy Tax Expert",
       "title": "cpa",
       "company": "",
@@ -547,7 +648,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.465Z",
+      "foundAt": "2026-07-22T14:00:00.511Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -587,10 +688,10 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106476-eb1d1308cbc7f",
+      "id": "rad-free-1784728800522-65eb44cba95c1",
       "name": "Frontier Tubular Solutions",
       "title": "liquidity_event",
-      "company": "Hart Energy",
+      "company": "Frontier Tubular Solutions",
       "location": "Texas-first",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRUZSM2I0STdOSUczb0Y3a3hTVmRXSVBXQ1NRRGVyOHNxMVJjeExHeG9IYlZ3WXpqWlB4T0dsM3Vjb1BISjlIQXVnYy0zak04LW00d3h1MEdsWXdVcUZyWmtRdTZmX1duMGlYTVQ0Tmo1Zk5DbXVMNHZ6dGRpQXlFN1pSVTFoOGt2MlVwcFRFTUdsOEFPZ3BEa2ZQUUk4RUUxdG1JNzJfcEhXVFoyYVBHMGdFTWQ4U01KS1ppU2NR?oc=5",
       "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRUZSM2I0STdOSUczb0Y3a3hTVmRXSVBXQ1NRRGVyOHNxMVJjeExHeG9IYlZ3WXpqWlB4T0dsM3Vjb1BISjlIQXVnYy0zak04LW00d3h1MEdsWXdVcUZyWmtRdTZmX1duMGlYTVQ0Tmo1Zk5DbXVMNHZ6dGRpQXlFN1pSVTFoOGt2MlVwcFRFTUdsOEFPZ3BEa2ZQUUk4RUUxdG1JNzJfcEhXVFoyYVBHMGdFTWQ4U01KS1ppU2NR?oc=5",
@@ -624,7 +725,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.476Z",
+      "foundAt": "2026-07-22T14:00:00.522Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -654,9 +755,29 @@
         "manual contact path available",
         "Texas-first priority",
         "Basin ICP signal",
-        "timely public trigger"
+        "timely public trigger",
+        "Groq fit: no"
       ],
-      "aiError": "Groq HTTP 429",
+      "ai": {
+        "isHumanLead": false,
+        "contactName": "",
+        "company": "Frontier Tubular Solutions",
+        "title": "",
+        "leadType": "",
+        "usaRelevance": true,
+        "investorFit": "no",
+        "contactPath": "none",
+        "contactPathValue": "",
+        "scoreAdjustment": 0,
+        "qualificationGaps": [
+          "no human contact mentioned"
+        ],
+        "bestAngle": "",
+        "likelyObjection": "",
+        "nextAction": "",
+        "rejectReason": "company-only page, no human contact"
+      },
+      "groqAnalyzedAt": "2026-07-22T14:00:14.317Z",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -665,7 +786,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106453-8ed42dd1aeaba8",
+      "id": "rad-free-1784728800497-dcb77f662118",
       "name": "Glenn Davis",
       "title": "physician",
       "company": "",
@@ -702,7 +823,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.453Z",
+      "foundAt": "2026-07-22T14:00:00.497Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -742,7 +863,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106474-56cb50c1f6cac",
+      "id": "rad-free-1784728800519-0c8d07d4476f58",
       "name": "Global MarTech Co. PMG",
       "title": "liquidity_event",
       "company": "",
@@ -779,7 +900,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.474Z",
+      "foundAt": "2026-07-22T14:00:00.519Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -811,7 +932,6 @@
         "Basin ICP signal",
         "timely public trigger"
       ],
-      "aiError": "Groq HTTP 429",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -820,7 +940,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106477-63f7bd256e4c68",
+      "id": "rad-free-1784728800522-6041c7d9f6df08",
       "name": "HomeCentris Healthcare",
       "title": "liquidity_event",
       "company": "Scan Group",
@@ -857,7 +977,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.477Z",
+      "foundAt": "2026-07-22T14:00:00.522Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -897,7 +1017,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106454-1e2c2933763b08",
+      "id": "rad-free-1784728800497-fd5406d35152a",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
@@ -934,7 +1054,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.454Z",
+      "foundAt": "2026-07-22T14:00:00.497Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -973,7 +1093,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106470-b132b038580458",
+      "id": "rad-free-1784728800515-e46e483d9ea668",
       "name": "Keith Conlon Brings Local",
       "title": "liquidity_event",
       "company": "",
@@ -1010,7 +1130,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.470Z",
+      "foundAt": "2026-07-22T14:00:00.515Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1050,7 +1170,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106459-f69b3fdc8e23c8",
+      "id": "rad-free-1784728800503-a8a5135fa20538",
       "name": "Law Graduate Debany Davila",
       "title": "attorney",
       "company": "Texas A&M Law",
@@ -1087,7 +1207,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.459Z",
+      "foundAt": "2026-07-22T14:00:00.503Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1127,7 +1247,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106458-5c62e3aba4ae4",
+      "id": "rad-free-1784728800501-4422f845a485b8",
       "name": "Law School Graduate",
       "title": "attorney",
       "company": "New Texas A&M Law",
@@ -1164,7 +1284,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.458Z",
+      "foundAt": "2026-07-22T14:00:00.501Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1204,7 +1324,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106463-e6f73d4077f1e",
+      "id": "rad-free-1784728800509-4bcac0021a8e78",
       "name": "Litigator Michael B. Goldberg",
       "title": "attorney",
       "company": "Litigator Michael B. Goldberg Joins PIB Law",
@@ -1241,7 +1361,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.463Z",
+      "foundAt": "2026-07-22T14:00:00.509Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1281,7 +1401,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106457-7c742ebdcf235",
+      "id": "rad-free-1784728800500-1f3430923de308",
       "name": "Mark Malveaux",
       "title": "attorney",
       "company": "",
@@ -1318,7 +1438,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.457Z",
+      "foundAt": "2026-07-22T14:00:00.500Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1358,7 +1478,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106455-df428e01bcafc8",
+      "id": "rad-free-1784728800498-5c0fd14bf7dc68",
       "name": "Mehmet Oz Shows Houston",
       "title": "physician",
       "company": "",
@@ -1395,7 +1515,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.455Z",
+      "foundAt": "2026-07-22T14:00:00.498Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1434,7 +1554,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106469-474523e9f06a38",
+      "id": "rad-free-1784728800515-0f4a017ffc2bf8",
       "name": "Mission Critical Group",
       "title": "liquidity_event",
       "company": "Mission Critical Group",
@@ -1471,7 +1591,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.469Z",
+      "foundAt": "2026-07-22T14:00:00.515Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1511,84 +1631,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106472-f457b268b58da",
-      "name": "New CEO",
-      "title": "liquidity_event",
-      "company": "",
-      "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPLU1yQUNwNkFTNlZURUtuQXlaWDFiVE1HMlRTRjRuSF9Ja1NNQ1R5NVR5a0plTDlmT1ZUYWgtdlY4UXFXclp6VkpLSWdIcmdQeHhlLUh0WG9wZG5rcU1TTlpjZ001WWxQTG10RWdFdVE0eElSdE5ZUlc2QXNtd3RhY08zWTFoTEZaenEwRVNTYWJ5aGVHUU1obHMtdlM0TG9NVjV6aWMtdFcwUWcyTUd2eg?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPLU1yQUNwNkFTNlZURUtuQXlaWDFiVE1HMlRTRjRuSF9Ja1NNQ1R5NVR5a0plTDlmT1ZUYWgtdlY4UXFXclp6VkpLSWdIcmdQeHhlLUh0WG9wZG5rcU1TTlpjZ001WWxQTG10RWdFdVE0eElSdE5ZUlc2QXNtd3RhY08zWTFoTEZaenEwRVNTYWJ5aGVHUU1obHMtdlM0TG9NVjV6aWMtdFcwUWcyTUd2eg?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas business owners liquidity events",
-      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-      "sourceDate": "Mon, 06 Mar 2023 08:00:00 GMT",
-      "sourceType": "liquidity_event",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxPLU1yQUNwNkFTNlZURUtuQXlaWDFiVE1HMlRTRjRuSF9Ja1NNQ1R5NVR5a0plTDlmT1ZUYWgtdlY4UXFXclp6VkpLSWdIcmdQeHhlLUh0WG9wZG5rcU1TTlpjZ001WWxQTG10RWdFdVE0eElSdE5ZUlc2QXNtd3RhY08zWTFoTEZaenEwRVNTYWJ5aGVHUU1obHMtdlM0TG9NVjV6aWMtdFcwUWcyTUd2eg?oc=5\" target=\"_blank\"&gt;Lincoln Property’s Residential Division Acquired by Cadillac Fairview, New CEO Named&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Dallas Innovates&lt;/font&gt;",
-      "signal": "Lincoln Property’s Residential Division Acquired by Cadillac Fairview, New CEO Named - Dallas Innovates",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Texas business owners liquidity events",
-        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-        "sourceType": "liquidity_event",
-        "priority": "texas",
-        "title": "Lincoln Property’s Residential Division Acquired by Cadillac Fairview, New CEO Named - Dallas Innovates",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPLU1yQUNwNkFTNlZURUtuQXlaWDFiVE1HMlRTRjRuSF9Ja1NNQ1R5NVR5a0plTDlmT1ZUYWgtdlY4UXFXclp6VkpLSWdIcmdQeHhlLUh0WG9wZG5rcU1TTlpjZ001WWxQTG10RWdFdVE0eElSdE5ZUlc2QXNtd3RhY08zWTFoTEZaenEwRVNTYWJ5aGVHUU1obHMtdlM0TG9NVjV6aWMtdFcwUWcyTUd2eg?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxPLU1yQUNwNkFTNlZURUtuQXlaWDFiVE1HMlRTRjRuSF9Ja1NNQ1R5NVR5a0plTDlmT1ZUYWgtdlY4UXFXclp6VkpLSWdIcmdQeHhlLUh0WG9wZG5rcU1TTlpjZ001WWxQTG10RWdFdVE0eElSdE5ZUlc2QXNtd3RhY08zWTFoTEZaenEwRVNTYWJ5aGVHUU1obHMtdlM0TG9NVjV6aWMtdFcwUWcyTUd2eg?oc=5\" target=\"_blank\"&gt;Lincoln Property’s Residential Division Acquired by Cadillac Fairview, New CEO Named&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Dallas Innovates&lt;/font&gt;",
-        "sourceDate": "Mon, 06 Mar 2023 08:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Texas business owners liquidity events",
-            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-            "type": "liquidity_event",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20Texas%20founder%20owner%20CEO&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-07-21T13:55:06.472Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=New%20CEO",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=New%20CEO+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify New CEO and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi New, I came across a public signal related to Lincoln Property’s Residential Division Acquired by Cadillac Fairview, New CEO Named - Dallas Innovates. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1784642106484-9bf3ad2205384",
+      "id": "rad-free-1784728800525-a5b63b4eb78bd8",
       "name": "Shelly Lambertz",
       "title": "energy",
       "company": "Continental Resources",
@@ -1625,7 +1668,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.484Z",
+      "foundAt": "2026-07-22T14:00:00.525Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1664,7 +1707,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106482-67d4208f00ebe8",
+      "id": "rad-free-1784728800528-0a37d373763b78",
       "name": "Timothy J. Cutt",
       "title": "energy",
       "company": "QEP Resources",
@@ -1701,7 +1744,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.482Z",
+      "foundAt": "2026-07-22T14:00:00.528Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1740,7 +1783,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106467-54e04e0532051",
+      "id": "rad-free-1784728800512-e1ac72d8f6b76",
       "name": "Trevor Roe Becomes Ownership",
       "title": "liquidity_event",
       "company": "Roe Strategic Capital",
@@ -1777,7 +1820,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.467Z",
+      "foundAt": "2026-07-22T14:00:00.512Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1817,7 +1860,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106464-8d0cb70d0114d",
+      "id": "rad-free-1784728800509-94e57019ac3c2",
       "name": "Trump Nominates Ryan Patrick",
       "title": "attorney",
       "company": "",
@@ -1854,7 +1897,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.464Z",
+      "foundAt": "2026-07-22T14:00:00.509Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1894,7 +1937,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1784642106464-f6d39e7fcec978",
+      "id": "rad-free-1784728800510-a37ff79c4297e",
       "name": "Who Honors Kaleen Reyna",
       "title": "cpa",
       "company": "",
@@ -1931,7 +1974,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-07-21T13:55:06.464Z",
+      "foundAt": "2026-07-22T14:00:00.510Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
