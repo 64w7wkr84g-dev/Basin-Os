@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-07T13:07:35.936Z",
-  "startedAt": "2026-08-07T13:07:20.495Z",
+  "generatedAt": "2026-08-10T13:11:58.984Z",
+  "startedAt": "2026-08-10T13:11:47.590Z",
   "engine": "Free Feed Radar + Groq Managed",
   "stats": {
     "rawSignals": 250,
     "candidates": 249,
     "groqUsed": 12,
-    "usableLeads": 22,
-    "rejected": 227,
+    "usableLeads": 29,
+    "rejected": 220,
     "collectionErrors": 0
   },
   "errors": []
