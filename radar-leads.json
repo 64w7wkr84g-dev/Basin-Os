@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T13:11:58.984Z",
+  "generatedAt": "2026-08-11T13:08:55.387Z",
   "engine": "Free Feed Radar + Groq Managed",
   "geoMode": "texas_first_nationwide",
   "tavilyUsed": false,
@@ -21,7 +21,7 @@
   },
   "leads": [
     {
-      "id": "rad-free-1786367511374-6c4ae9eee6ee68",
+      "id": "rad-free-1786453728098-4984494f5c5ec8",
       "name": "Bob Frenzel",
       "title": "CEO",
       "company": "Xcel",
@@ -34,17 +34,17 @@
       "sourceDate": "Mon, 12 Jan 2026 08:00:00 GMT",
       "sourceType": "energy operator",
       "priority": "energy_states",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxNNUxlbWU1bkxjMGpPWWs5T2JfcHAtR2c1SjFOUkJXMFRPalpJYTZWTTBmWGVJMUZxaGhiWTFEcEo0eEw3eTRjVnExRzQ0TFlRekx2V2c3ODBEbGZfc0tpSlJqaFRaTGVGYkpkSEV6WFp3VV82dmxXbS1rX1g1a09oSk9yaUZZTHNqN0xGd2F3?oc=5\" target=\"_blank\"&gt;5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Utility Dive&lt;/font&gt;",
-      "signal": "5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed - Utility Dive",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxNNUxlbWU1bkxjMGpPWWs5T2JfcHAtR2c1SjFOUkJXMFRPalpJYTZWTTBmWGVJMUZxaGhiWTFEcEo0eEw3eTRjVnExRzQ0TFlRekx2V2c3ODBEbGZfc0tpSlJqaFRaTGVGYkpkSEV6WFp3VV82dmxXbS1rX1g1a09oSk9yaUZZTHNqN0xGd2F3?oc=5\" target=\"_blank\"&gt;5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;utilitydive.com&lt;/font&gt;",
+      "signal": "5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed - utilitydive.com",
       "raw": {
         "sourceKind": "rss",
         "sourceFeed": "Energy-state oil and gas executives",
         "sourceQuery": "(\"oil and gas\" OR \"mineral rights\" OR \"royalty owner\" OR \"energy operator\") (Texas OR Oklahoma OR Louisiana OR New Mexico OR Colorado OR Wyoming OR North Dakota) founder CEO owner president",
         "sourceType": "energy",
         "priority": "energy_states",
-        "title": "5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed - Utility Dive",
+        "title": "5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed - utilitydive.com",
         "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNUxlbWU1bkxjMGpPWWs5T2JfcHAtR2c1SjFOUkJXMFRPalpJYTZWTTBmWGVJMUZxaGhiWTFEcEo0eEw3eTRjVnExRzQ0TFlRekx2V2c3ODBEbGZfc0tpSlJqaFRaTGVGYkpkSEV6WFp3VV82dmxXbS1rX1g1a09oSk9yaUZZTHNqN0xGd2F3?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxNNUxlbWU1bkxjMGpPWWs5T2JfcHAtR2c1SjFOUkJXMFRPalpJYTZWTTBmWGVJMUZxaGhiWTFEcEo0eEw3eTRjVnExRzQ0TFlRekx2V2c3ODBEbGZfc0tpSlJqaFRaTGVGYkpkSEV6WFp3VV82dmxXbS1rX1g1a09oSk9yaUZZTHNqN0xGd2F3?oc=5\" target=\"_blank\"&gt;5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Utility Dive&lt;/font&gt;",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxNNUxlbWU1bkxjMGpPWWs5T2JfcHAtR2c1SjFOUkJXMFRPalpJYTZWTTBmWGVJMUZxaGhiWTFEcEo0eEw3eTRjVnExRzQ0TFlRekx2V2c3ODBEbGZfc0tpSlJqaFRaTGVGYkpkSEV6WFp3VV82dmxXbS1rX1g1a09oSk9yaUZZTHNqN0xGd2F3?oc=5\" target=\"_blank\"&gt;5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;utilitydive.com&lt;/font&gt;",
         "sourceDate": "Mon, 12 Jan 2026 08:00:00 GMT",
         "raw": {
           "meta": {
@@ -58,7 +58,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.374Z",
+      "foundAt": "2026-08-11T13:08:48.098Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -81,7 +81,7 @@
       "nextAction": "research Xcel's current projects and initiatives",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi Bob, I came across a public signal related to 5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed - Utility Dive. Basin Ventures may be relevant if direct energy ownership is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi Bob, I came across a public signal related to 5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed - utilitydive.com. Basin Ventures may be relevant if direct energy ownership is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
@@ -108,7 +108,7 @@
         "nextAction": "research Xcel's current projects and initiatives",
         "rejectReason": ""
       },
-      "groqAnalyzedAt": "2026-08-10T13:11:54.278Z",
+      "groqAnalyzedAt": "2026-08-11T13:08:50.328Z",
       "bestAngle": "energy investment opportunities in Texas",
       "likelyObjection": "none",
       "contactable": true,
@@ -119,7 +119,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511363-9fb2acd1f89bd8",
+      "id": "rad-free-1786453728086-04eb06fb4a4308",
       "name": "Carrie Carson",
       "title": "cpa",
       "company": "Oxy Low Carbon Ventures",
@@ -156,7 +156,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.363Z",
+      "foundAt": "2026-08-11T13:08:48.086Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -176,7 +176,7 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "Research Carrie Carson's current role and responsibilities at Oxy Low Carbon Ventures",
+      "nextAction": "research and outreach",
       "nurture": {
         "subject": "Reason for reaching out",
         "body": "Hi [Name], I came across a public signal related to Women in Energy: Carrie Carson, Oxy Low Carbon Ventures - Hart Energy. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
@@ -185,8 +185,8 @@
         "manual contact path available",
         "Texas-first priority",
         "Basin ICP signal",
-        "Groq fit: potential",
-        "Angle: energy investment"
+        "Groq fit: qualified",
+        "Angle: energy investment opportunities"
       ],
       "ai": {
         "isHumanLead": true,
@@ -195,18 +195,19 @@
         "title": "",
         "leadType": "energy/mineral/royalty operator",
         "usaRelevance": true,
-        "investorFit": "potential",
+        "investorFit": "qualified",
         "contactPath": "linkedin",
         "contactPathValue": "https://www.linkedin.com/search/results/people/?keywords=Carrie%20Carson%20Oxy%20Low%20Carbon%20Ventures",
         "scoreAdjustment": 0,
         "qualificationGaps": [],
-        "bestAngle": "energy investment",
-        "likelyObjection": "",
-        "nextAction": "Research Carrie Carson's current role and responsibilities at Oxy Low Carbon Ventures",
+        "bestAngle": "energy investment opportunities",
+        "likelyObjection": "no known objections",
+        "nextAction": "research and outreach",
         "rejectReason": ""
       },
-      "groqAnalyzedAt": "2026-08-10T13:11:53.583Z",
-      "bestAngle": "energy investment",
+      "groqAnalyzedAt": "2026-08-11T13:08:49.647Z",
+      "bestAngle": "energy investment opportunities",
+      "likelyObjection": "no known objections",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -215,7 +216,7 @@
       "contactSummary": "Google Search + LinkedIn Search"
     },
     {
-      "id": "rad-free-1786367511352-593adf8953c44",
+      "id": "rad-free-1786453728076-bc9c8bbaaae8a",
       "name": "Charged With",
       "title": "physician",
       "company": "Colorado Dental",
@@ -252,7 +253,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.352Z",
+      "foundAt": "2026-08-11T13:08:48.076Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -272,7 +273,7 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "research practice and owner background",
+      "nextAction": "attempt to find additional contact information through LinkedIn search or manual research",
       "nurture": {
         "subject": "Reason for reaching out",
         "body": "Hi Charged, I came across a public signal related to Colorado Dental Practice Owner Charged With $400,000 in Medicaid Fraud - Dentistry Today. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
@@ -283,7 +284,7 @@
         "Texas-first priority",
         "Basin ICP signal",
         "Groq fit: potential",
-        "Angle: medicaid fraud case implications on practice ownership"
+        "Angle: approach as a Texas-based physician practice owner with potential interest in investment or partnership opportunities"
       ],
       "ai": {
         "isHumanLead": true,
@@ -297,17 +298,17 @@
         "contactPathValue": "https://www.linkedin.com/search/results/people/?keywords=Charged%20With%20Colorado%20Dental",
         "scoreAdjustment": 0,
         "qualificationGaps": [
-          "email",
-          "phone number"
+          "missing email or phone number",
+          "no explicit investment interest"
         ],
-        "bestAngle": "medicaid fraud case implications on practice ownership",
-        "likelyObjection": "sensitivity around fraud allegations",
-        "nextAction": "research practice and owner background",
+        "bestAngle": "approach as a Texas-based physician practice owner with potential interest in investment or partnership opportunities",
+        "likelyObjection": "lack of publicly available contact information or explicit investment interest",
+        "nextAction": "attempt to find additional contact information through LinkedIn search or manual research",
         "rejectReason": ""
       },
-      "groqAnalyzedAt": "2026-08-10T13:11:55.116Z",
-      "bestAngle": "medicaid fraud case implications on practice ownership",
-      "likelyObjection": "sensitivity around fraud allegations",
+      "groqAnalyzedAt": "2026-08-11T13:08:51.224Z",
+      "bestAngle": "approach as a Texas-based physician practice owner with potential interest in investment or partnership opportunities",
+      "likelyObjection": "lack of publicly available contact information or explicit investment interest",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -316,7 +317,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511361-0f9ce0937e65a",
+      "id": "rad-free-1786453728085-d91769408a5f4",
       "name": "Doeren Mayhew",
       "title": "CPA",
       "company": "TBK CPA",
@@ -353,7 +354,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.361Z",
+      "foundAt": "2026-08-11T13:08:48.085Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -402,9 +403,9 @@
         "bestAngle": "",
         "likelyObjection": "",
         "nextAction": "",
-        "rejectReason": "company-only page"
+        "rejectReason": "company-only page, no named human contact"
       },
-      "groqAnalyzedAt": "2026-08-10T13:11:55.795Z",
+      "groqAnalyzedAt": "2026-08-11T13:08:52.001Z",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -413,7 +414,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511361-3e639215b62b68",
+      "id": "rad-free-1786453728085-d99f9a0bddcb4",
       "name": "Energy Tax Expert",
       "title": "Energy Tax Expert",
       "company": "Akin Gump",
@@ -424,7 +425,7 @@
       "sourceFeed": "Texas CPA tax advisors",
       "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
       "sourceDate": "Wed, 09 Feb 2022 08:00:00 GMT",
-      "sourceType": "CPA",
+      "sourceType": "CPA/Tax Advisor",
       "priority": "texas",
       "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTFA0TWFYRWE3T0RMOUgtTzQyTGhfVmNIS205VFVuMDExSXY2aU85RFF1elJaNW84ZDRKNDZxa3lkLVVMbDNseXNZNnRDbmRZNHBrSjljVW0wTFFfZExVRTQtRzdscjQxbmtYa2s3ZF9CN25BbWtnQV9JMA?oc=5\" target=\"_blank\"&gt;Energy Tax Expert Joins Akin Gump in Dallas&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;The Texas Lawbook&lt;/font&gt;",
       "signal": "Energy Tax Expert Joins Akin Gump in Dallas - The Texas Lawbook",
@@ -450,7 +451,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.361Z",
+      "foundAt": "2026-08-11T13:08:48.085Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -470,7 +471,7 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "manual research to find the specific energy tax expert's name and contact information",
+      "nextAction": "attempt to find specific name of energy tax expert on Akin Gump website or LinkedIn",
       "nurture": {
         "subject": "Reason for reaching out",
         "body": "Hi Energy, I came across a public signal related to Energy Tax Expert Joins Akin Gump in Dallas - The Texas Lawbook. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
@@ -480,29 +481,31 @@
         "manual contact path available",
         "Texas-first priority",
         "Basin ICP signal",
-        "Groq fit: no"
+        "Groq fit: potential",
+        "Angle: energy tax expertise"
       ],
       "ai": {
         "isHumanLead": false,
         "contactName": "",
         "company": "Akin Gump",
         "title": "Energy Tax Expert",
-        "leadType": "CPA",
+        "leadType": "CPA/Tax Advisor",
         "usaRelevance": true,
-        "investorFit": "no",
+        "investorFit": "potential",
         "contactPath": "linkedin",
         "contactPathValue": "https://www.linkedin.com/search/results/people/?keywords=Energy%20Tax%20Expert",
         "scoreAdjustment": -10,
         "qualificationGaps": [
-          "no specific human name",
-          "no direct contact information"
+          "no specific name provided"
         ],
-        "bestAngle": "",
-        "likelyObjection": "",
-        "nextAction": "manual research to find the specific energy tax expert's name and contact information",
-        "rejectReason": "no specific human contact"
+        "bestAngle": "energy tax expertise",
+        "likelyObjection": "lack of personal connection",
+        "nextAction": "attempt to find specific name of energy tax expert on Akin Gump website or LinkedIn",
+        "rejectReason": ""
       },
-      "groqAnalyzedAt": "2026-08-10T13:11:56.705Z",
+      "groqAnalyzedAt": "2026-08-11T13:08:52.822Z",
+      "bestAngle": "energy tax expertise",
+      "likelyObjection": "lack of personal connection",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -511,7 +514,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511361-b3d5cff32dfbc",
+      "id": "rad-free-1786453728085-131661c1f1ec",
       "name": "Firm Gummer Group Acquired",
       "title": "CPA",
       "company": "Gummer Group",
@@ -548,7 +551,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.361Z",
+      "foundAt": "2026-08-11T13:08:48.085Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -600,7 +603,7 @@
         "nextAction": "",
         "rejectReason": "company-only page"
       },
-      "groqAnalyzedAt": "2026-08-10T13:11:57.349Z",
+      "groqAnalyzedAt": "2026-08-11T13:08:53.474Z",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -609,7 +612,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511364-104d14f6eb9e98",
+      "id": "rad-free-1786453728087-d964120b171d6",
       "name": "Founders Table Restaurant Group",
       "title": "liquidity_event",
       "company": "Founders Table Restaurant Group",
@@ -646,7 +649,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.364Z",
+      "foundAt": "2026-08-11T13:08:48.087Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -687,7 +690,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511372-ee3dc80cfe3e4",
+      "id": "rad-free-1786453728096-0a378c38ea985",
       "name": "Frontier Tubular Solutions",
       "title": "liquidity_event",
       "company": "Hart Energy",
@@ -724,7 +727,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.372Z",
+      "foundAt": "2026-08-11T13:08:48.096Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -765,7 +768,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511350-153069611290f8",
+      "id": "rad-free-1786453728073-971cb0d10c28e",
       "name": "Glenn Davis",
       "title": "physician",
       "company": "",
@@ -776,7 +779,7 @@
       "sourceFeed": "Texas physician practice owners",
       "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
       "sourceDate": "Tue, 18 Oct 2022 07:00:00 GMT",
-      "sourceType": "physician",
+      "sourceType": "medical practice owner/founder",
       "priority": "texas",
       "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTE4ya0I3TkJYaktLVGlNdUZiSmd4SEl0dDE2R1RyYlVFTTBBc0RCSV9KcC0tZkdFUmlQYVNvd2pLVUxwUzB2MXJMVmxXTGY5NjNNYWFqV05PQW5vM1JsUHJ0TG1tVktDdw?oc=5\" target=\"_blank\"&gt;An Interview With TMCi Biodesign Advisor, Dr. Glenn Davis.&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;TMC Houston&lt;/font&gt;",
       "signal": "An Interview With TMCi Biodesign Advisor, Dr. Glenn Davis. - TMC Houston",
@@ -802,7 +805,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.350Z",
+      "foundAt": "2026-08-11T13:08:48.073Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -822,7 +825,7 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Glenn Davis and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nextAction": "research Glenn Davis's current medical practice and investment activities",
       "nurture": {
         "subject": "Reason for reaching out",
         "body": "Hi Glenn, I came across a public signal related to An Interview With TMCi Biodesign Advisor, Dr. Glenn Davis. - TMC Houston. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
@@ -831,9 +834,30 @@
         "named human contact found",
         "manual contact path available",
         "Texas-first priority",
-        "Basin ICP signal"
+        "Basin ICP signal",
+        "Groq fit: potential",
+        "Angle: medical practice investment opportunities in Texas"
       ],
-      "aiError": "Groq HTTP 429",
+      "ai": {
+        "isHumanLead": true,
+        "contactName": "Glenn Davis",
+        "company": "",
+        "title": "physician",
+        "leadType": "medical practice owner/founder",
+        "usaRelevance": true,
+        "investorFit": "potential",
+        "contactPath": "linkedin",
+        "contactPathValue": "https://www.linkedin.com/search/results/people/?keywords=Glenn%20Davis",
+        "scoreAdjustment": 0,
+        "qualificationGaps": [],
+        "bestAngle": "medical practice investment opportunities in Texas",
+        "likelyObjection": "lack of information about investment goals",
+        "nextAction": "research Glenn Davis's current medical practice and investment activities",
+        "rejectReason": ""
+      },
+      "groqAnalyzedAt": "2026-08-11T13:08:54.683Z",
+      "bestAngle": "medical practice investment opportunities in Texas",
+      "likelyObjection": "lack of information about investment goals",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -842,7 +866,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511353-fc3d84cddd41a",
+      "id": "rad-free-1786453728076-e03f6e3267812",
       "name": "Goranson Bain Ausley",
       "title": "attorney",
       "company": "Goranson Bain Ausley Named Best Family Law",
@@ -879,7 +903,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.353Z",
+      "foundAt": "2026-08-11T13:08:48.076Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -920,7 +944,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511368-d405e16ec3cec",
+      "id": "rad-free-1786453728092-863c3003f627",
       "name": "HomeCentris Healthcare",
       "title": "liquidity_event",
       "company": "Scan Group",
@@ -957,7 +981,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.368Z",
+      "foundAt": "2026-08-11T13:08:48.092Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -989,6 +1013,7 @@
         "Basin ICP signal",
         "timely public trigger"
       ],
+      "aiError": "Groq HTTP 429",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -997,7 +1022,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511351-7c462215e7a98",
+      "id": "rad-free-1786453728075-6af30e2e40cce",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
@@ -1034,7 +1059,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.351Z",
+      "foundAt": "2026-08-11T13:08:48.075Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1073,7 +1098,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511367-c5d4c32a56e78",
+      "id": "rad-free-1786453728091-69a48c61cde528",
       "name": "Keith Conlon Brings Local",
       "title": "liquidity_event",
       "company": "",
@@ -1110,7 +1135,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.367Z",
+      "foundAt": "2026-08-11T13:08:48.091Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1150,7 +1175,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511355-7156830113a28",
+      "id": "rad-free-1786453728078-17194387b5e1e8",
       "name": "Laura Gibson",
       "title": "attorney",
       "company": "",
@@ -1187,7 +1212,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.355Z",
+      "foundAt": "2026-08-11T13:08:48.078Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1227,7 +1252,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511359-9f37f6985d9cc",
+      "id": "rad-free-1786453728082-de6d839aca90e",
       "name": "Law Graduate Debany Davila",
       "title": "attorney",
       "company": "Texas A&M Law",
@@ -1264,7 +1289,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.359Z",
+      "foundAt": "2026-08-11T13:08:48.082Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1304,7 +1329,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511360-b82cfb4a194808",
+      "id": "rad-free-1786453728084-d3be5e5ab4bc1",
       "name": "Litigator Michael B. Goldberg",
       "title": "attorney",
       "company": "Litigator Michael B. Goldberg Joins PIB Law",
@@ -1341,7 +1366,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.360Z",
+      "foundAt": "2026-08-11T13:08:48.084Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1381,7 +1406,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511356-bf30dd79126c98",
+      "id": "rad-free-1786453728080-0cd3b03e1ce898",
       "name": "Mark Malveaux",
       "title": "attorney",
       "company": "",
@@ -1418,7 +1443,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.356Z",
+      "foundAt": "2026-08-11T13:08:48.080Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1458,7 +1483,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511352-21f0799937bfa8",
+      "id": "rad-free-1786453728075-4c9e9fe5dd5ae8",
       "name": "Mehmet Oz Shows Houston",
       "title": "physician",
       "company": "",
@@ -1495,7 +1520,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.352Z",
+      "foundAt": "2026-08-11T13:08:48.075Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1534,7 +1559,84 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511366-da3e8990dd4ef8",
+      "id": "rad-free-1786453728089-7e9994415b8858",
+      "name": "Mike Kortas",
+      "title": "liquidity_event",
+      "company": "",
+      "location": "Texas-first",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQb2liM2tzNklXUnA0RFV2MTg4blduTkdneE1Kemx2SXF3MDZCX1dDcExheHhqYTZMclEyanUxNE0wM2tycjVfcEZxX1NNZ05pcjc0bDNCcmMtQmU1VGEyMG90RnRCd1R6VFNaZ3pvUmZ4OW1WeElhemNZQWNlTGJ5Yw?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQb2liM2tzNklXUnA0RFV2MTg4blduTkdneE1Kemx2SXF3MDZCX1dDcExheHhqYTZMclEyanUxNE0wM2tycjVfcEZxX1NNZ05pcjc0bDNCcmMtQmU1VGEyMG90RnRCd1R6VFNaZ3pvUmZ4OW1WeElhemNZQWNlTGJ5Yw?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Texas business owners liquidity events",
+      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
+      "sourceDate": "Thu, 12 Feb 2026 08:00:00 GMT",
+      "sourceType": "liquidity_event",
+      "priority": "texas",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxQb2liM2tzNklXUnA0RFV2MTg4blduTkdneE1Kemx2SXF3MDZCX1dDcExheHhqYTZMclEyanUxNE0wM2tycjVfcEZxX1NNZ05pcjc0bDNCcmMtQmU1VGEyMG90RnRCd1R6VFNaZ3pvUmZ4OW1WeElhemNZQWNlTGJ5Yw?oc=5\" target=\"_blank\"&gt;FSBO.com acquired by group led by NEXA CEO Mike Kortas&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;HousingWire&lt;/font&gt;",
+      "signal": "FSBO.com acquired by group led by NEXA CEO Mike Kortas - HousingWire",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Texas business owners liquidity events",
+        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
+        "sourceType": "liquidity_event",
+        "priority": "texas",
+        "title": "FSBO.com acquired by group led by NEXA CEO Mike Kortas - HousingWire",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQb2liM2tzNklXUnA0RFV2MTg4blduTkdneE1Kemx2SXF3MDZCX1dDcExheHhqYTZMclEyanUxNE0wM2tycjVfcEZxX1NNZ05pcjc0bDNCcmMtQmU1VGEyMG90RnRCd1R6VFNaZ3pvUmZ4OW1WeElhemNZQWNlTGJ5Yw?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxQb2liM2tzNklXUnA0RFV2MTg4blduTkdneE1Kemx2SXF3MDZCX1dDcExheHhqYTZMclEyanUxNE0wM2tycjVfcEZxX1NNZ05pcjc0bDNCcmMtQmU1VGEyMG90RnRCd1R6VFNaZ3pvUmZ4OW1WeElhemNZQWNlTGJ5Yw?oc=5\" target=\"_blank\"&gt;FSBO.com acquired by group led by NEXA CEO Mike Kortas&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;HousingWire&lt;/font&gt;",
+        "sourceDate": "Thu, 12 Feb 2026 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Texas business owners liquidity events",
+            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
+            "type": "liquidity_event",
+            "priority": "texas",
+            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20Texas%20founder%20owner%20CEO&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-08-11T13:08:48.089Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Mike%20Kortas",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Mike%20Kortas+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Mike Kortas and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Mike, I came across a public signal related to FSBO.com acquired by group led by NEXA CEO Mike Kortas - HousingWire. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Texas-first priority",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1786453728090-631986e1141d48",
       "name": "Mission Critical Group",
       "title": "liquidity_event",
       "company": "Mission Critical Group",
@@ -1571,7 +1673,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.366Z",
+      "foundAt": "2026-08-11T13:08:48.090Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1611,7 +1713,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511370-cc64d25c6f892",
+      "id": "rad-free-1786453728094-752e8d6e3a6de",
       "name": "New CEO",
       "title": "liquidity_event",
       "company": "",
@@ -1648,7 +1750,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.370Z",
+      "foundAt": "2026-08-11T13:08:48.094Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1688,7 +1790,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511362-4b34d20a6c6e48",
+      "id": "rad-free-1786453728085-2a8e69668701f8",
       "name": "Practice Advisor",
       "title": "cpa",
       "company": "Texas Accounting Firm",
@@ -1725,7 +1827,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.362Z",
+      "foundAt": "2026-08-11T13:08:48.085Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1764,7 +1866,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511380-9d78199a29086",
+      "id": "rad-free-1786453728104-6d5dae48b0e238",
       "name": "Shelly Lambertz",
       "title": "energy",
       "company": "Continental Resources",
@@ -1801,7 +1903,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.380Z",
+      "foundAt": "2026-08-11T13:08:48.104Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1840,7 +1942,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511379-eecf9be50764e",
+      "id": "rad-free-1786453728103-6bcff18d979568",
       "name": "Timothy J. Cutt",
       "title": "energy",
       "company": "QEP Resources",
@@ -1877,7 +1979,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.379Z",
+      "foundAt": "2026-08-11T13:08:48.103Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1916,7 +2018,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511360-e9f8fd29aea18",
+      "id": "rad-free-1786453728084-22c9e81c528028",
       "name": "Who Honors Kaleen Reyna",
       "title": "cpa",
       "company": "",
@@ -1929,17 +2031,17 @@
       "sourceDate": "Wed, 08 Apr 2026 07:00:00 GMT",
       "sourceType": "cpa",
       "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMHBSN0hicllFdmhzQ0IzYWN0OFFqYmlsbmJUZzk2b1FWVGtESENqdzFJX0hFMkxaT0ZPRmNiTUd2VWpHaHZOdmpjQ1UzRXFZblhJV09PcmVQeUlMT0VNM0hhZDhMN19LdU9YbGZtX19WTmM5M09KWUhYMnlIcXJ3QkFBVlI2b2V5X1BJX1p4YnFnYnlkQUJSWXpTTzdHS1k3ZHpLcFhfM1RmeTgtTzYzQXF6Mmh6SmRLdGJTWmFRQ2Y1azZkb29NOUZwOXhzWlJRd0FSdEludXhKN2pGVlE2X0g0UVo?oc=5\" target=\"_blank\"&gt;Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;24-7 Press Release Newswire&lt;/font&gt;",
-      "signal": "Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry - 24-7 Press Release Newswire",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMHBSN0hicllFdmhzQ0IzYWN0OFFqYmlsbmJUZzk2b1FWVGtESENqdzFJX0hFMkxaT0ZPRmNiTUd2VWpHaHZOdmpjQ1UzRXFZblhJV09PcmVQeUlMT0VNM0hhZDhMN19LdU9YbGZtX19WTmM5M09KWUhYMnlIcXJ3QkFBVlI2b2V5X1BJX1p4YnFnYnlkQUJSWXpTTzdHS1k3ZHpLcFhfM1RmeTgtTzYzQXF6Mmh6SmRLdGJTWmFRQ2Y1azZkb29NOUZwOXhzWlJRd0FSdEludXhKN2pGVlE2X0g0UVo?oc=5\" target=\"_blank\"&gt;Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;24-7pressrelease.com&lt;/font&gt;",
+      "signal": "Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry - 24-7pressrelease.com",
       "raw": {
         "sourceKind": "rss",
         "sourceFeed": "Texas CPA tax advisors",
         "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
         "sourceType": "cpa",
         "priority": "texas",
-        "title": "Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry - 24-7 Press Release Newswire",
+        "title": "Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry - 24-7pressrelease.com",
         "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMHBSN0hicllFdmhzQ0IzYWN0OFFqYmlsbmJUZzk2b1FWVGtESENqdzFJX0hFMkxaT0ZPRmNiTUd2VWpHaHZOdmpjQ1UzRXFZblhJV09PcmVQeUlMT0VNM0hhZDhMN19LdU9YbGZtX19WTmM5M09KWUhYMnlIcXJ3QkFBVlI2b2V5X1BJX1p4YnFnYnlkQUJSWXpTTzdHS1k3ZHpLcFhfM1RmeTgtTzYzQXF6Mmh6SmRLdGJTWmFRQ2Y1azZkb29NOUZwOXhzWlJRd0FSdEludXhKN2pGVlE2X0g0UVo?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMHBSN0hicllFdmhzQ0IzYWN0OFFqYmlsbmJUZzk2b1FWVGtESENqdzFJX0hFMkxaT0ZPRmNiTUd2VWpHaHZOdmpjQ1UzRXFZblhJV09PcmVQeUlMT0VNM0hhZDhMN19LdU9YbGZtX19WTmM5M09KWUhYMnlIcXJ3QkFBVlI2b2V5X1BJX1p4YnFnYnlkQUJSWXpTTzdHS1k3ZHpLcFhfM1RmeTgtTzYzQXF6Mmh6SmRLdGJTWmFRQ2Y1azZkb29NOUZwOXhzWlJRd0FSdEludXhKN2pGVlE2X0g0UVo?oc=5\" target=\"_blank\"&gt;Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;24-7 Press Release Newswire&lt;/font&gt;",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMHBSN0hicllFdmhzQ0IzYWN0OFFqYmlsbmJUZzk2b1FWVGtESENqdzFJX0hFMkxaT0ZPRmNiTUd2VWpHaHZOdmpjQ1UzRXFZblhJV09PcmVQeUlMT0VNM0hhZDhMN19LdU9YbGZtX19WTmM5M09KWUhYMnlIcXJ3QkFBVlI2b2V5X1BJX1p4YnFnYnlkQUJSWXpTTzdHS1k3ZHpLcFhfM1RmeTgtTzYzQXF6Mmh6SmRLdGJTWmFRQ2Y1azZkb29NOUZwOXhzWlJRd0FSdEludXhKN2pGVlE2X0g0UVo?oc=5\" target=\"_blank\"&gt;Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;24-7pressrelease.com&lt;/font&gt;",
         "sourceDate": "Wed, 08 Apr 2026 07:00:00 GMT",
         "raw": {
           "meta": {
@@ -1953,7 +2055,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.360Z",
+      "foundAt": "2026-08-11T13:08:48.084Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1976,7 +2078,7 @@
       "nextAction": "Day 1: verify Who Honors Kaleen Reyna and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi Who, I came across a public signal related to Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry - 24-7 Press Release. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi Who, I came across a public signal related to Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry - 24-7pressrelease.c. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
@@ -1992,7 +2094,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511383-af06db87bec758",
+      "id": "rad-free-1786453728107-0de192a9d25448",
       "name": "Glen McGorty",
       "title": "attorney",
       "company": "New York Law",
@@ -2029,7 +2131,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.383Z",
+      "foundAt": "2026-08-11T13:08:48.107Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2068,7 +2170,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511382-160243b529d768",
+      "id": "rad-free-1786453728106-14ea476b45a1f",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
@@ -2105,7 +2207,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.382Z",
+      "foundAt": "2026-08-11T13:08:48.106Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2143,7 +2245,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511383-60020fe0dc11",
+      "id": "rad-free-1786453728106-d3df39cb281858",
       "name": "Michael Brelje Named Partner",
       "title": "attorney",
       "company": "Santa Barbara Law Firm",
@@ -2180,7 +2282,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.383Z",
+      "foundAt": "2026-08-11T13:08:48.106Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2219,7 +2321,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1786367511382-9c32282e2b131",
+      "id": "rad-free-1786453728106-bf28e99cff4458",
       "name": "SS Badrinath",
       "title": "physician",
       "company": "",
@@ -2232,17 +2334,17 @@
       "sourceDate": "Tue, 21 Nov 2023 08:00:00 GMT",
       "sourceType": "physician",
       "priority": "nationwide",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5\" target=\"_blank\"&gt;Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;medicaldialogues.in&lt;/font&gt;",
-      "signal": "Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more - medicaldialogues.in",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5\" target=\"_blank\"&gt;Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Medical Dialogues&lt;/font&gt;",
+      "signal": "Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more - Medical Dialogues",
       "raw": {
         "sourceKind": "rss",
         "sourceFeed": "Nationwide physician practice owners",
         "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
         "sourceType": "physician",
         "priority": "nationwide",
-        "title": "Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more - medicaldialogues.in",
+        "title": "Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more - Medical Dialogues",
         "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5\" target=\"_blank\"&gt;Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;medicaldialogues.in&lt;/font&gt;",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5\" target=\"_blank\"&gt;Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Medical Dialogues&lt;/font&gt;",
         "sourceDate": "Tue, 21 Nov 2023 08:00:00 GMT",
         "raw": {
           "meta": {
@@ -2256,7 +2358,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-10T13:11:51.382Z",
+      "foundAt": "2026-08-11T13:08:48.106Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2279,88 +2381,12 @@
       "nextAction": "Day 1: verify SS Badrinath and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi SS, I came across a public signal related to Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more - medicaldialogues.in. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi SS, I came across a public signal related to Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more - Medical Dialogues. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
         "manual contact path available",
         "Basin ICP signal"
-      ],
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1786367511383-f5fbec209cc9f",
-      "name": "Survey Says",
-      "title": "attorney",
-      "company": "Boost Law Firm",
-      "location": "Nationwide USA",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPVl9WdDZYTEh2aFNhYWs2SzVhMnBHZjRZVmhaS29HWGFybFhUQ2ZpOVdKTjIwS2dUTUg3c0FOWlhEVFhfWGxqSjA5ZFhpbVN1dVhxdkJqQWJ3YVk0clF5bjRVbGYtcmJhZzZDREZ2M0xhcWt2WndrWnJfNjdDLVRtcXhPc09NdVNIU2thYUxXdUVEOGtseDhQN3ZPQTJVX3VHLTdBdTFBVy1saXRnbG9uLXZHM1hxc1l6UXZiZk1IX205RUZNY2ZUYXpKWFFYaXItUGFnV2Y4QmFydHlpaWk4?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPVl9WdDZYTEh2aFNhYWs2SzVhMnBHZjRZVmhaS29HWGFybFhUQ2ZpOVdKTjIwS2dUTUg3c0FOWlhEVFhfWGxqSjA5ZFhpbVN1dVhxdkJqQWJ3YVk0clF5bjRVbGYtcmJhZzZDREZ2M0xhcWt2WndrWnJfNjdDLVRtcXhPc09NdVNIU2thYUxXdUVEOGtseDhQN3ZPQTJVX3VHLTdBdTFBVy1saXRnbG9uLXZHM1hxc1l6UXZiZk1IX205RUZNY2ZUYXpKWFFYaXItUGFnV2Y4QmFydHlpaWk4?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Nationwide law firm managing partners",
-      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
-      "sourceDate": "Mon, 29 Dec 2025 08:00:00 GMT",
-      "sourceType": "attorney",
-      "priority": "nationwide",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi3wFBVV95cUxPVl9WdDZYTEh2aFNhYWs2SzVhMnBHZjRZVmhaS29HWGFybFhUQ2ZpOVdKTjIwS2dUTUg3c0FOWlhEVFhfWGxqSjA5ZFhpbVN1dVhxdkJqQWJ3YVk0clF5bjRVbGYtcmJhZzZDREZ2M0xhcWt2WndrWnJfNjdDLVRtcXhPc09NdVNIU2thYUxXdUVEOGtseDhQN3ZPQTJVX3VHLTdBdTFBVy1saXRnbG9uLXZHM1hxc1l6UXZiZk1IX205RUZNY2ZUYXpKWFFYaXItUGFnV2Y4QmFydHlpaWk4?oc=5\" target=\"_blank\"&gt;Litigation, Restructuring Trumped Uncertainty to Boost Law Firm Growth, NJ Managing Partner Survey Says&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Law.com&lt;/font&gt;",
-      "signal": "Litigation, Restructuring Trumped Uncertainty to Boost Law Firm Growth, NJ Managing Partner Survey Says - Law.com",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Nationwide law firm managing partners",
-        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
-        "sourceType": "attorney",
-        "priority": "nationwide",
-        "title": "Litigation, Restructuring Trumped Uncertainty to Boost Law Firm Growth, NJ Managing Partner Survey Says - Law.com",
-        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPVl9WdDZYTEh2aFNhYWs2SzVhMnBHZjRZVmhaS29HWGFybFhUQ2ZpOVdKTjIwS2dUTUg3c0FOWlhEVFhfWGxqSjA5ZFhpbVN1dVhxdkJqQWJ3YVk0clF5bjRVbGYtcmJhZzZDREZ2M0xhcWt2WndrWnJfNjdDLVRtcXhPc09NdVNIU2thYUxXdUVEOGtseDhQN3ZPQTJVX3VHLTdBdTFBVy1saXRnbG9uLXZHM1hxc1l6UXZiZk1IX205RUZNY2ZUYXpKWFFYaXItUGFnV2Y4QmFydHlpaWk4?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi3wFBVV95cUxPVl9WdDZYTEh2aFNhYWs2SzVhMnBHZjRZVmhaS29HWGFybFhUQ2ZpOVdKTjIwS2dUTUg3c0FOWlhEVFhfWGxqSjA5ZFhpbVN1dVhxdkJqQWJ3YVk0clF5bjRVbGYtcmJhZzZDREZ2M0xhcWt2WndrWnJfNjdDLVRtcXhPc09NdVNIU2thYUxXdUVEOGtseDhQN3ZPQTJVX3VHLTdBdTFBVy1saXRnbG9uLXZHM1hxc1l6UXZiZk1IX205RUZNY2ZUYXpKWFFYaXItUGFnV2Y4QmFydHlpaWk4?oc=5\" target=\"_blank\"&gt;Litigation, Restructuring Trumped Uncertainty to Boost Law Firm Growth, NJ Managing Partner Survey Says&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Law.com&lt;/font&gt;",
-        "sourceDate": "Mon, 29 Dec 2025 08:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Nationwide law firm managing partners",
-            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
-            "type": "attorney",
-            "priority": "nationwide",
-            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-08-10T13:11:51.383Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Survey%20Says%20Boost%20Law%20Firm",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Survey%20Says%20Boost%20Law%20Firm+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Survey Says and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Survey, I came across a public signal related to Litigation, Restructuring Trumped Uncertainty to Boost Law Firm Growth, NJ Managing Partner Survey Says - Law.com. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Basin ICP signal",
-        "timely public trigger"
       ],
       "contactable": true,
       "usaBased": true,
