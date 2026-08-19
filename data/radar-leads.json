@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T12:49:31.017Z",
+  "generatedAt": "2026-08-19T12:50:16.386Z",
   "engine": "Free Feed Radar + Groq Managed",
   "geoMode": "texas_first_nationwide",
   "tavilyUsed": false,
@@ -15,13 +15,13 @@
     "rawSignals": 250,
     "candidates": 249,
     "groqUsed": 12,
-    "usableLeads": 26,
-    "rejected": 223,
+    "usableLeads": 25,
+    "rejected": 224,
     "collectionErrors": 0
   },
   "leads": [
     {
-      "id": "rad-free-1787057367049-f63f76b4eed348",
+      "id": "rad-free-1787143813385-89719e2a5c9eb",
       "name": "Bob Frenzel",
       "title": "energy",
       "company": "",
@@ -34,17 +34,17 @@
       "sourceDate": "Mon, 12 Jan 2026 08:00:00 GMT",
       "sourceType": "energy",
       "priority": "energy_states",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxNNUxlbWU1bkxjMGpPWWs5T2JfcHAtR2c1SjFOUkJXMFRPalpJYTZWTTBmWGVJMUZxaGhiWTFEcEo0eEw3eTRjVnExRzQ0TFlRekx2V2c3ODBEbGZfc0tpSlJqaFRaTGVGYkpkSEV6WFp3VV82dmxXbS1rX1g1a09oSk9yaUZZTHNqN0xGd2F3?oc=5\" target=\"_blank\"&gt;5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;utilitydive.com&lt;/font&gt;",
-      "signal": "5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed - utilitydive.com",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxNNUxlbWU1bkxjMGpPWWs5T2JfcHAtR2c1SjFOUkJXMFRPalpJYTZWTTBmWGVJMUZxaGhiWTFEcEo0eEw3eTRjVnExRzQ0TFlRekx2V2c3ODBEbGZfc0tpSlJqaFRaTGVGYkpkSEV6WFp3VV82dmxXbS1rX1g1a09oSk9yaUZZTHNqN0xGd2F3?oc=5\" target=\"_blank\"&gt;5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Utility Dive&lt;/font&gt;",
+      "signal": "5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed - Utility Dive",
       "raw": {
         "sourceKind": "rss",
         "sourceFeed": "Energy-state oil and gas executives",
         "sourceQuery": "(\"oil and gas\" OR \"mineral rights\" OR \"royalty owner\" OR \"energy operator\") (Texas OR Oklahoma OR Louisiana OR New Mexico OR Colorado OR Wyoming OR North Dakota) founder CEO owner president",
         "sourceType": "energy",
         "priority": "energy_states",
-        "title": "5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed - utilitydive.com",
+        "title": "5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed - Utility Dive",
         "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNUxlbWU1bkxjMGpPWWs5T2JfcHAtR2c1SjFOUkJXMFRPalpJYTZWTTBmWGVJMUZxaGhiWTFEcEo0eEw3eTRjVnExRzQ0TFlRekx2V2c3ODBEbGZfc0tpSlJqaFRaTGVGYkpkSEV6WFp3VV82dmxXbS1rX1g1a09oSk9yaUZZTHNqN0xGd2F3?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxNNUxlbWU1bkxjMGpPWWs5T2JfcHAtR2c1SjFOUkJXMFRPalpJYTZWTTBmWGVJMUZxaGhiWTFEcEo0eEw3eTRjVnExRzQ0TFlRekx2V2c3ODBEbGZfc0tpSlJqaFRaTGVGYkpkSEV6WFp3VV82dmxXbS1rX1g1a09oSk9yaUZZTHNqN0xGd2F3?oc=5\" target=\"_blank\"&gt;5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;utilitydive.com&lt;/font&gt;",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxNNUxlbWU1bkxjMGpPWWs5T2JfcHAtR2c1SjFOUkJXMFRPalpJYTZWTTBmWGVJMUZxaGhiWTFEcEo0eEw3eTRjVnExRzQ0TFlRekx2V2c3ODBEbGZfc0tpSlJqaFRaTGVGYkpkSEV6WFp3VV82dmxXbS1rX1g1a09oSk9yaUZZTHNqN0xGd2F3?oc=5\" target=\"_blank\"&gt;5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Utility Dive&lt;/font&gt;",
         "sourceDate": "Mon, 12 Jan 2026 08:00:00 GMT",
         "raw": {
           "meta": {
@@ -58,7 +58,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.049Z",
+      "foundAt": "2026-08-19T12:50:13.385Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -81,7 +81,7 @@
       "nextAction": "Day 1: verify Bob Frenzel and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi Bob, I came across a public signal related to 5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed - utilitydive.com. Basin Ventures may be relevant if direct energy ownership is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi Bob, I came across a public signal related to 5 takeaways from Xcel CEO Bob Frenzel’s talk at the Minneapolis Fed - Utility Dive. Basin Ventures may be relevant if direct energy ownership is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
@@ -98,7 +98,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367025-0d222e46a43cb",
+      "id": "rad-free-1787143813362-a1a1d1517efa58",
       "name": "Charged With",
       "title": "physician",
       "company": "Colorado Dental",
@@ -135,7 +135,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.025Z",
+      "foundAt": "2026-08-19T12:50:13.362Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -175,7 +175,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367027-d24004663b3718",
+      "id": "rad-free-1787143813364-2d96028fab8e88",
       "name": "Charles Harrell",
       "title": "attorney",
       "company": "",
@@ -188,17 +188,17 @@
       "sourceDate": "Mon, 19 Oct 2020 07:00:00 GMT",
       "sourceType": "attorney",
       "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPQThzbmg3YXRaZmFTYVZqU1JOaWJicjJhQ2ZSSkNaQVVWaHY1ajd5SzFqclFMUmk4UVNJaWNmeXZ1UUtGZ0Y3Smw5WHBDZGVyZGl0Ym1YYkEzdmVxdzJYRUxDMVlqdk5uWm56V3lPQ0MwbFpSMzA2c3gxUXh4WEppTVNabDVfTFY3NUY5TzJR?oc=5\" target=\"_blank\"&gt;Jackson Walker Expands Corporate & Securities Practice With Addition of Houston Partner Charles Harrell&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;jw.com&lt;/font&gt;",
-      "signal": "Jackson Walker Expands Corporate & Securities Practice With Addition of Houston Partner Charles Harrell - jw.com",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPQThzbmg3YXRaZmFTYVZqU1JOaWJicjJhQ2ZSSkNaQVVWaHY1ajd5SzFqclFMUmk4UVNJaWNmeXZ1UUtGZ0Y3Smw5WHBDZGVyZGl0Ym1YYkEzdmVxdzJYRUxDMVlqdk5uWm56V3lPQ0MwbFpSMzA2c3gxUXh4WEppTVNabDVfTFY3NUY5TzJR?oc=5\" target=\"_blank\"&gt;Jackson Walker Expands Corporate & Securities Practice With Addition of Houston Partner Charles Harrell&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Jackson Walker LLP&lt;/font&gt;",
+      "signal": "Jackson Walker Expands Corporate & Securities Practice With Addition of Houston Partner Charles Harrell - Jackson Walker LLP",
       "raw": {
         "sourceKind": "rss",
         "sourceFeed": "Texas law firm partners",
         "sourceQuery": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
         "sourceType": "attorney",
         "priority": "texas",
-        "title": "Jackson Walker Expands Corporate & Securities Practice With Addition of Houston Partner Charles Harrell - jw.com",
+        "title": "Jackson Walker Expands Corporate & Securities Practice With Addition of Houston Partner Charles Harrell - Jackson Walker LLP",
         "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQThzbmg3YXRaZmFTYVZqU1JOaWJicjJhQ2ZSSkNaQVVWaHY1ajd5SzFqclFMUmk4UVNJaWNmeXZ1UUtGZ0Y3Smw5WHBDZGVyZGl0Ym1YYkEzdmVxdzJYRUxDMVlqdk5uWm56V3lPQ0MwbFpSMzA2c3gxUXh4WEppTVNabDVfTFY3NUY5TzJR?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPQThzbmg3YXRaZmFTYVZqU1JOaWJicjJhQ2ZSSkNaQVVWaHY1ajd5SzFqclFMUmk4UVNJaWNmeXZ1UUtGZ0Y3Smw5WHBDZGVyZGl0Ym1YYkEzdmVxdzJYRUxDMVlqdk5uWm56V3lPQ0MwbFpSMzA2c3gxUXh4WEppTVNabDVfTFY3NUY5TzJR?oc=5\" target=\"_blank\"&gt;Jackson Walker Expands Corporate & Securities Practice With Addition of Houston Partner Charles Harrell&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;jw.com&lt;/font&gt;",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPQThzbmg3YXRaZmFTYVZqU1JOaWJicjJhQ2ZSSkNaQVVWaHY1ajd5SzFqclFMUmk4UVNJaWNmeXZ1UUtGZ0Y3Smw5WHBDZGVyZGl0Ym1YYkEzdmVxdzJYRUxDMVlqdk5uWm56V3lPQ0MwbFpSMzA2c3gxUXh4WEppTVNabDVfTFY3NUY5TzJR?oc=5\" target=\"_blank\"&gt;Jackson Walker Expands Corporate & Securities Practice With Addition of Houston Partner Charles Harrell&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Jackson Walker LLP&lt;/font&gt;",
         "sourceDate": "Mon, 19 Oct 2020 07:00:00 GMT",
         "raw": {
           "meta": {
@@ -212,7 +212,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.027Z",
+      "foundAt": "2026-08-19T12:50:13.364Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -235,7 +235,7 @@
       "nextAction": "Day 1: verify Charles Harrell and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi Charles, I came across a public signal related to Jackson Walker Expands Corporate & Securities Practice With Addition of Houston Partner Charles Harrell - jw.com. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi Charles, I came across a public signal related to Jackson Walker Expands Corporate & Securities Practice With Addition of Houston Partner Charles Harrell - Jackson Walker. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
@@ -253,7 +253,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367041-a9e8e9a7850448",
+      "id": "rad-free-1787143813378-9c09b1917478a8",
       "name": "Contact Center Co. Humach",
       "title": "liquidity_event",
       "company": "North Texas AI Contact Center",
@@ -290,7 +290,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.041Z",
+      "foundAt": "2026-08-19T12:50:13.378Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -331,7 +331,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367034-8fa2b38b301068",
+      "id": "rad-free-1787143813371-340ab839e9f628",
       "name": "Doeren Mayhew",
       "title": "cpa",
       "company": "TBK CPA",
@@ -368,7 +368,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.034Z",
+      "foundAt": "2026-08-19T12:50:13.371Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -408,84 +408,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367035-4919da4b771e48",
-      "name": "Energy Tax Expert",
-      "title": "cpa",
-      "company": "",
-      "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA0TWFYRWE3T0RMOUgtTzQyTGhfVmNIS205VFVuMDExSXY2aU85RFF1elJaNW84ZDRKNDZxa3lkLVVMbDNseXNZNnRDbmRZNHBrSjljVW0wTFFfZExVRTQtRzdscjQxbmtYa2s3ZF9CN25BbWtnQV9JMA?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA0TWFYRWE3T0RMOUgtTzQyTGhfVmNIS205VFVuMDExSXY2aU85RFF1elJaNW84ZDRKNDZxa3lkLVVMbDNseXNZNnRDbmRZNHBrSjljVW0wTFFfZExVRTQtRzdscjQxbmtYa2s3ZF9CN25BbWtnQV9JMA?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas CPA tax advisors",
-      "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
-      "sourceDate": "Wed, 09 Feb 2022 08:00:00 GMT",
-      "sourceType": "cpa",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTFA0TWFYRWE3T0RMOUgtTzQyTGhfVmNIS205VFVuMDExSXY2aU85RFF1elJaNW84ZDRKNDZxa3lkLVVMbDNseXNZNnRDbmRZNHBrSjljVW0wTFFfZExVRTQtRzdscjQxbmtYa2s3ZF9CN25BbWtnQV9JMA?oc=5\" target=\"_blank\"&gt;Energy Tax Expert Joins Akin Gump in Dallas&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;The Texas Lawbook&lt;/font&gt;",
-      "signal": "Energy Tax Expert Joins Akin Gump in Dallas - The Texas Lawbook",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Texas CPA tax advisors",
-        "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
-        "sourceType": "cpa",
-        "priority": "texas",
-        "title": "Energy Tax Expert Joins Akin Gump in Dallas - The Texas Lawbook",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA0TWFYRWE3T0RMOUgtTzQyTGhfVmNIS205VFVuMDExSXY2aU85RFF1elJaNW84ZDRKNDZxa3lkLVVMbDNseXNZNnRDbmRZNHBrSjljVW0wTFFfZExVRTQtRzdscjQxbmtYa2s3ZF9CN25BbWtnQV9JMA?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTFA0TWFYRWE3T0RMOUgtTzQyTGhfVmNIS205VFVuMDExSXY2aU85RFF1elJaNW84ZDRKNDZxa3lkLVVMbDNseXNZNnRDbmRZNHBrSjljVW0wTFFfZExVRTQtRzdscjQxbmtYa2s3ZF9CN25BbWtnQV9JMA?oc=5\" target=\"_blank\"&gt;Energy Tax Expert Joins Akin Gump in Dallas&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;The Texas Lawbook&lt;/font&gt;",
-        "sourceDate": "Wed, 09 Feb 2022 08:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Texas CPA tax advisors",
-            "query": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
-            "type": "cpa",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22%20OR%20%22depletion%20allowance%22%20OR%20%22high%20net%20worth%22)%20Texas&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-08-18T12:49:27.035Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Energy%20Tax%20Expert",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Energy%20Tax%20Expert+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Energy Tax Expert and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Energy, I came across a public signal related to Energy Tax Expert Joins Akin Gump in Dallas - The Texas Lawbook. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal"
-      ],
-      "aiError": "Groq HTTP 404",
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1787057367035-ac5fb92cae4458",
+      "id": "rad-free-1787143813372-e5420b4442d5c",
       "name": "Ferguson Acquires Local Dallas",
       "title": "cpa",
       "company": "Calvetti Ferguson Acquires Local Dallas CPA Firm",
@@ -522,7 +445,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.035Z",
+      "foundAt": "2026-08-19T12:50:13.372Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -562,7 +485,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367038-2fc769943c7f98",
+      "id": "rad-free-1787143813374-2429b3e3aae",
       "name": "Founders Table Restaurant Group",
       "title": "liquidity_event",
       "company": "Founders Table Restaurant Group",
@@ -599,7 +522,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.038Z",
+      "foundAt": "2026-08-19T12:50:13.374Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -640,7 +563,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367047-fa5c0c8ceadd78",
+      "id": "rad-free-1787143813383-bca39cc591dbe",
       "name": "Frontier Tubular Solutions",
       "title": "liquidity_event",
       "company": "Hart Energy",
@@ -677,7 +600,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.047Z",
+      "foundAt": "2026-08-19T12:50:13.383Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -718,7 +641,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367023-bf3a0103d1f788",
+      "id": "rad-free-1787143813360-07809a0d5155a8",
       "name": "Glenn Davis",
       "title": "physician",
       "company": "",
@@ -755,7 +678,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.023Z",
+      "foundAt": "2026-08-19T12:50:13.360Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -795,7 +718,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367029-d2b73674d6baf8",
+      "id": "rad-free-1787143813366-72197beb6e7b5",
       "name": "Goranson Bain Ausley",
       "title": "attorney",
       "company": "Goranson Bain Ausley Named Best Family Law",
@@ -832,7 +755,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.029Z",
+      "foundAt": "2026-08-19T12:50:13.366Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -872,7 +795,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367043-f8566bbfb0dda",
+      "id": "rad-free-1787143813380-8f19c14ffdfc5",
       "name": "HomeCentris Healthcare",
       "title": "liquidity_event",
       "company": "Scan Group",
@@ -909,7 +832,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.043Z",
+      "foundAt": "2026-08-19T12:50:13.380Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -949,7 +872,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367024-bc3190335c5ff8",
+      "id": "rad-free-1787143813361-4371c30c5735f8",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
@@ -986,7 +909,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.024Z",
+      "foundAt": "2026-08-19T12:50:13.361Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1025,7 +948,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367043-d22165b384cce",
+      "id": "rad-free-1787143813379-4af27a216b08b",
       "name": "Keith Conlon Brings Local",
       "title": "liquidity_event",
       "company": "",
@@ -1062,7 +985,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.043Z",
+      "foundAt": "2026-08-19T12:50:13.379Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1102,7 +1025,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367028-9c1624358f0338",
+      "id": "rad-free-1787143813364-ac654db11117d",
       "name": "Laura Gibson",
       "title": "attorney",
       "company": "",
@@ -1139,7 +1062,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.028Z",
+      "foundAt": "2026-08-19T12:50:13.364Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1179,7 +1102,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367032-3496f5de26963",
+      "id": "rad-free-1787143813367-7629c94255fcf",
       "name": "Law Graduate Debany Davila",
       "title": "attorney",
       "company": "Texas A&M Law",
@@ -1216,7 +1139,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.032Z",
+      "foundAt": "2026-08-19T12:50:13.367Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1256,7 +1179,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367034-1665a73058328",
+      "id": "rad-free-1787143813371-d7124c6f476698",
       "name": "Litigator Michael B. Goldberg",
       "title": "attorney",
       "company": "Litigator Michael B. Goldberg Joins PIB Law",
@@ -1293,7 +1216,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.034Z",
+      "foundAt": "2026-08-19T12:50:13.371Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1333,7 +1256,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367029-571a5b79f4d068",
+      "id": "rad-free-1787143813365-ee448bf13a8408",
       "name": "Mark Malveaux",
       "title": "attorney",
       "company": "",
@@ -1370,7 +1293,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.029Z",
+      "foundAt": "2026-08-19T12:50:13.365Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1410,7 +1333,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367025-f4a083923cd1a8",
+      "id": "rad-free-1787143813361-c909a5e30561c",
       "name": "Mehmet Oz Shows Houston",
       "title": "physician",
       "company": "",
@@ -1447,7 +1370,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.025Z",
+      "foundAt": "2026-08-19T12:50:13.361Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1486,7 +1409,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367035-3d10459f01d918",
+      "id": "rad-free-1787143813372-a37486d14ce07",
       "name": "Practice Advisor",
       "title": "cpa",
       "company": "Texas Accounting Firm",
@@ -1523,7 +1446,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.035Z",
+      "foundAt": "2026-08-19T12:50:13.372Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1562,7 +1485,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367054-aab94f871398a",
+      "id": "rad-free-1787143813391-8ed611c6cfc818",
       "name": "Shelly Lambertz",
       "title": "energy",
       "company": "Continental Resources",
@@ -1599,7 +1522,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.054Z",
+      "foundAt": "2026-08-19T12:50:13.391Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1638,7 +1561,83 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367038-88c5b71c6fc508",
+      "id": "rad-free-1787143813390-4cd653da08661",
+      "name": "Timothy J. Cutt",
+      "title": "energy",
+      "company": "QEP Resources",
+      "location": "Texas-first",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYTdmN0d4RmFVNkxURVJwUmp2ajZYY3dYVXpNck1rdzVMZTVCcjl3U3hpamlncWdCWWZ2Qkt1bTNTQTUtUkdmLXk3RFdOeVJXdW5UNlNwV3NqSWlrUC1QT2tJcVNOOV85d1pLV1NNLU90elVXQlllbHMydkNTVXM4UHRudGFHWVptX1N5RGYtOW51STNzbTQ2dmxqbGd0X2FwQUdiVVltOGtaeFFSYmpB?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYTdmN0d4RmFVNkxURVJwUmp2ajZYY3dYVXpNck1rdzVMZTVCcjl3U3hpamlncWdCWWZ2Qkt1bTNTQTUtUkdmLXk3RFdOeVJXdW5UNlNwV3NqSWlrUC1QT2tJcVNOOV85d1pLV1NNLU90elVXQlllbHMydkNTVXM4UHRudGFHWVptX1N5RGYtOW51STNzbTQ2dmxqbGd0X2FwQUdiVVltOGtaeFFSYmpB?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Energy-state oil and gas executives",
+      "sourceQuery": "(\"oil and gas\" OR \"mineral rights\" OR \"royalty owner\" OR \"energy operator\") (Texas OR Oklahoma OR Louisiana OR New Mexico OR Colorado OR Wyoming OR North Dakota) founder CEO owner president",
+      "sourceDate": "Fri, 11 Sep 2020 22:11:15 GMT",
+      "sourceType": "energy",
+      "priority": "energy_states",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxNYTdmN0d4RmFVNkxURVJwUmp2ajZYY3dYVXpNck1rdzVMZTVCcjl3U3hpamlncWdCWWZ2Qkt1bTNTQTUtUkdmLXk3RFdOeVJXdW5UNlNwV3NqSWlrUC1QT2tJcVNOOV85d1pLV1NNLU90elVXQlllbHMydkNTVXM4UHRudGFHWVptX1N5RGYtOW51STNzbTQ2dmxqbGd0X2FwQUdiVVltOGtaeFFSYmpB?oc=5\" target=\"_blank\"&gt;Charles B. Stanley to Retire from QEP Resources; Timothy J. Cutt Named President and CEO&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;huntscanlon.com&lt;/font&gt;",
+      "signal": "Charles B. Stanley to Retire from QEP Resources; Timothy J. Cutt Named President and CEO - huntscanlon.com",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Energy-state oil and gas executives",
+        "sourceQuery": "(\"oil and gas\" OR \"mineral rights\" OR \"royalty owner\" OR \"energy operator\") (Texas OR Oklahoma OR Louisiana OR New Mexico OR Colorado OR Wyoming OR North Dakota) founder CEO owner president",
+        "sourceType": "energy",
+        "priority": "energy_states",
+        "title": "Charles B. Stanley to Retire from QEP Resources; Timothy J. Cutt Named President and CEO - huntscanlon.com",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYTdmN0d4RmFVNkxURVJwUmp2ajZYY3dYVXpNck1rdzVMZTVCcjl3U3hpamlncWdCWWZ2Qkt1bTNTQTUtUkdmLXk3RFdOeVJXdW5UNlNwV3NqSWlrUC1QT2tJcVNOOV85d1pLV1NNLU90elVXQlllbHMydkNTVXM4UHRudGFHWVptX1N5RGYtOW51STNzbTQ2dmxqbGd0X2FwQUdiVVltOGtaeFFSYmpB?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxNYTdmN0d4RmFVNkxURVJwUmp2ajZYY3dYVXpNck1rdzVMZTVCcjl3U3hpamlncWdCWWZ2Qkt1bTNTQTUtUkdmLXk3RFdOeVJXdW5UNlNwV3NqSWlrUC1QT2tJcVNOOV85d1pLV1NNLU90elVXQlllbHMydkNTVXM4UHRudGFHWVptX1N5RGYtOW51STNzbTQ2dmxqbGd0X2FwQUdiVVltOGtaeFFSYmpB?oc=5\" target=\"_blank\"&gt;Charles B. Stanley to Retire from QEP Resources; Timothy J. Cutt Named President and CEO&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;huntscanlon.com&lt;/font&gt;",
+        "sourceDate": "Fri, 11 Sep 2020 22:11:15 GMT",
+        "raw": {
+          "meta": {
+            "name": "Energy-state oil and gas executives",
+            "query": "(\"oil and gas\" OR \"mineral rights\" OR \"royalty owner\" OR \"energy operator\") (Texas OR Oklahoma OR Louisiana OR New Mexico OR Colorado OR Wyoming OR North Dakota) founder CEO owner president",
+            "type": "energy",
+            "priority": "energy_states",
+            "url": "https://news.google.com/rss/search?q=(%22oil%20and%20gas%22%20OR%20%22mineral%20rights%22%20OR%20%22royalty%20owner%22%20OR%20%22energy%20operator%22)%20(Texas%20OR%20Oklahoma%20OR%20Louisiana%20OR%20New%20Mexico%20OR%20Colorado%20OR%20Wyoming%20OR%20North%20Dakota)%20founder%20CEO%20owner%20president&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-08-19T12:50:13.390Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Timothy%20J.%20Cutt%20QEP%20Resources",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Timothy%20J.%20Cutt%20QEP%20Resources+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Timothy J. Cutt and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Timothy, I came across a public signal related to Charles B. Stanley to Retire from QEP Resources; Timothy J. Cutt Named President and CEO - huntscanlon.com. Basin Ventures may be relevant if direct energy ownership is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Texas-first priority",
+        "Basin ICP signal"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1787143813374-11af7bdc51555",
       "name": "Trevor Roe Becomes Ownership",
       "title": "liquidity_event",
       "company": "Roe Strategic Capital",
@@ -1675,7 +1674,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.038Z",
+      "foundAt": "2026-08-19T12:50:13.374Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1715,7 +1714,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367034-f5c5829e43252",
+      "id": "rad-free-1787143813371-ac24bfc434306",
       "name": "Who Honors Kaleen Reyna",
       "title": "cpa",
       "company": "",
@@ -1752,7 +1751,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.034Z",
+      "foundAt": "2026-08-19T12:50:13.371Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1791,7 +1790,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367056-01a018bd0f88a",
+      "id": "rad-free-1787143813393-92b204b2cf0898",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
@@ -1828,7 +1827,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.056Z",
+      "foundAt": "2026-08-19T12:50:13.393Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1866,83 +1865,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787057367057-5f912d784de878",
-      "name": "Michael Brelje Named Partner",
-      "title": "attorney",
-      "company": "Santa Barbara Law Firm",
-      "location": "Nationwide USA",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSnB4Yy10cmtlcURUUXE0aU9Pc0RNNVJVYnROY1RMMU1makh5eW1SbDBEdkRwSmxGLWFoVDdpeVJjN01ySHhsTzh5Z19Zd0htWVQ5V19vODRGYmFpcFRqaElHVk8taG1DaHZnMUVNM1NXTF9GUmhycHVDRTlHbmdkVkZ6dDNVb2xyd3cwRHoxLW8wN05DSWI0amdUZ3B6ZE5CVzUxNFJPdHNPNDRxdGZWeGF3ZV9RYVUwVmRsSDlR?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSnB4Yy10cmtlcURUUXE0aU9Pc0RNNVJVYnROY1RMMU1makh5eW1SbDBEdkRwSmxGLWFoVDdpeVJjN01ySHhsTzh5Z19Zd0htWVQ5V19vODRGYmFpcFRqaElHVk8taG1DaHZnMUVNM1NXTF9GUmhycHVDRTlHbmdkVkZ6dDNVb2xyd3cwRHoxLW8wN05DSWI0amdUZ3B6ZE5CVzUxNFJPdHNPNDRxdGZWeGF3ZV9RYVUwVmRsSDlR?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Nationwide law firm managing partners",
-      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
-      "sourceDate": "Wed, 25 Feb 2026 08:00:00 GMT",
-      "sourceType": "attorney",
-      "priority": "nationwide",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxNSnB4Yy10cmtlcURUUXE0aU9Pc0RNNVJVYnROY1RMMU1makh5eW1SbDBEdkRwSmxGLWFoVDdpeVJjN01ySHhsTzh5Z19Zd0htWVQ5V19vODRGYmFpcFRqaElHVk8taG1DaHZnMUVNM1NXTF9GUmhycHVDRTlHbmdkVkZ6dDNVb2xyd3cwRHoxLW8wN05DSWI0amdUZ3B6ZE5CVzUxNFJPdHNPNDRxdGZWeGF3ZV9RYVUwVmRsSDlR?oc=5\" target=\"_blank\"&gt;Attorney Michael Brelje Named Partner at Santa Barbara Law Firm Cappello & Noël LLP&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;independent.com&lt;/font&gt;",
-      "signal": "Attorney Michael Brelje Named Partner at Santa Barbara Law Firm Cappello & Noël LLP - independent.com",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Nationwide law firm managing partners",
-        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
-        "sourceType": "attorney",
-        "priority": "nationwide",
-        "title": "Attorney Michael Brelje Named Partner at Santa Barbara Law Firm Cappello & Noël LLP - independent.com",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSnB4Yy10cmtlcURUUXE0aU9Pc0RNNVJVYnROY1RMMU1makh5eW1SbDBEdkRwSmxGLWFoVDdpeVJjN01ySHhsTzh5Z19Zd0htWVQ5V19vODRGYmFpcFRqaElHVk8taG1DaHZnMUVNM1NXTF9GUmhycHVDRTlHbmdkVkZ6dDNVb2xyd3cwRHoxLW8wN05DSWI0amdUZ3B6ZE5CVzUxNFJPdHNPNDRxdGZWeGF3ZV9RYVUwVmRsSDlR?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxNSnB4Yy10cmtlcURUUXE0aU9Pc0RNNVJVYnROY1RMMU1makh5eW1SbDBEdkRwSmxGLWFoVDdpeVJjN01ySHhsTzh5Z19Zd0htWVQ5V19vODRGYmFpcFRqaElHVk8taG1DaHZnMUVNM1NXTF9GUmhycHVDRTlHbmdkVkZ6dDNVb2xyd3cwRHoxLW8wN05DSWI0amdUZ3B6ZE5CVzUxNFJPdHNPNDRxdGZWeGF3ZV9RYVUwVmRsSDlR?oc=5\" target=\"_blank\"&gt;Attorney Michael Brelje Named Partner at Santa Barbara Law Firm Cappello & Noël LLP&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;independent.com&lt;/font&gt;",
-        "sourceDate": "Wed, 25 Feb 2026 08:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Nationwide law firm managing partners",
-            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
-            "type": "attorney",
-            "priority": "nationwide",
-            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-08-18T12:49:27.057Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Michael%20Brelje%20Named%20Partner%20Santa%20Barbara%20Law%20Firm",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Michael%20Brelje%20Named%20Partner%20Santa%20Barbara%20Law%20Firm+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Michael Brelje Named Partner and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Michael, I came across a public signal related to Attorney Michael Brelje Named Partner at Santa Barbara Law Firm Cappello & Noël LLP - independent.com. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1787057367057-c23d31c619c928",
+      "id": "rad-free-1787143813393-351ab18e4bc368",
       "name": "SS Badrinath",
       "title": "physician",
       "company": "",
@@ -1955,17 +1878,17 @@
       "sourceDate": "Tue, 21 Nov 2023 08:00:00 GMT",
       "sourceType": "physician",
       "priority": "nationwide",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5\" target=\"_blank\"&gt;Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Medical Dialogues&lt;/font&gt;",
-      "signal": "Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more - Medical Dialogues",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5\" target=\"_blank\"&gt;Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;medicaldialogues.in&lt;/font&gt;",
+      "signal": "Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more - medicaldialogues.in",
       "raw": {
         "sourceKind": "rss",
         "sourceFeed": "Nationwide physician practice owners",
         "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
         "sourceType": "physician",
         "priority": "nationwide",
-        "title": "Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more - Medical Dialogues",
+        "title": "Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more - medicaldialogues.in",
         "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5\" target=\"_blank\"&gt;Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Medical Dialogues&lt;/font&gt;",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5\" target=\"_blank\"&gt;Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;medicaldialogues.in&lt;/font&gt;",
         "sourceDate": "Tue, 21 Nov 2023 08:00:00 GMT",
         "raw": {
           "meta": {
@@ -1979,7 +1902,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-18T12:49:27.057Z",
+      "foundAt": "2026-08-19T12:50:13.393Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2002,7 +1925,7 @@
       "nextAction": "Day 1: verify SS Badrinath and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi SS, I came across a public signal related to Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more - Medical Dialogues. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi SS, I came across a public signal related to Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more - medicaldialogues.in. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
