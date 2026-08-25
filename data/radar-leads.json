@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T12:52:47.277Z",
+  "generatedAt": "2026-08-25T12:50:09.334Z",
   "engine": "Free Feed Radar + Groq Managed",
   "geoMode": "texas_first_nationwide",
   "tavilyUsed": false,
@@ -21,7 +21,7 @@
   },
   "leads": [
     {
-      "id": "rad-free-1787575964269-cf07f364a775b8",
+      "id": "rad-free-1787662205999-4b46c7a9548de",
       "name": "Bob Frenzel",
       "title": "energy",
       "company": "",
@@ -58,7 +58,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.269Z",
+      "foundAt": "2026-08-25T12:50:05.999Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -98,7 +98,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964247-5edbc066d585c",
+      "id": "rad-free-1787662205977-f1c0f3c680611",
       "name": "Charged With",
       "title": "physician",
       "company": "Colorado Dental",
@@ -135,7 +135,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.247Z",
+      "foundAt": "2026-08-25T12:50:05.977Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -175,7 +175,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964263-86fe4086e4aff8",
+      "id": "rad-free-1787662205993-52995fda113c98",
       "name": "Contact Center Co. Humach",
       "title": "liquidity_event",
       "company": "North Texas AI Contact Center",
@@ -212,7 +212,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.263Z",
+      "foundAt": "2026-08-25T12:50:05.993Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -253,7 +253,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964256-f0e7283999858",
+      "id": "rad-free-1787662205986-6a13e576cf22b8",
       "name": "Doeren Mayhew",
       "title": "cpa",
       "company": "TBK CPA",
@@ -290,7 +290,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.256Z",
+      "foundAt": "2026-08-25T12:50:05.986Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -330,7 +330,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964256-4afbf9b64c1d4",
+      "id": "rad-free-1787662205986-2ddeae24233fb",
       "name": "Doeren Mayhew Acquires",
       "title": "cpa",
       "company": "Doeren Mayhew Acquires CPA",
@@ -367,7 +367,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.256Z",
+      "foundAt": "2026-08-25T12:50:05.986Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -407,7 +407,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964257-882211e8c479a",
+      "id": "rad-free-1787662205987-6cd3fb28c43ee",
       "name": "Ferguson Acquires Local Dallas",
       "title": "cpa",
       "company": "Calvetti Ferguson Acquires Local Dallas CPA Firm",
@@ -444,7 +444,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.257Z",
+      "foundAt": "2026-08-25T12:50:05.987Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -484,7 +484,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964259-fcc8060081c698",
+      "id": "rad-free-1787662205989-31b552db11b7b",
       "name": "Founders Table Restaurant Group",
       "title": "liquidity_event",
       "company": "Founders Table Restaurant Group",
@@ -521,7 +521,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.259Z",
+      "foundAt": "2026-08-25T12:50:05.989Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -562,7 +562,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964268-2eb0be7ac49478",
+      "id": "rad-free-1787662205998-f84789be9d871",
       "name": "Frontier Tubular Solutions",
       "title": "liquidity_event",
       "company": "Hart Energy",
@@ -599,7 +599,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.268Z",
+      "foundAt": "2026-08-25T12:50:05.998Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -640,7 +640,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964247-ebb4b67eb536b",
+      "id": "rad-free-1787662205977-739fe09efd2238",
       "name": "Glenn Davis",
       "title": "physician",
       "company": "",
@@ -677,7 +677,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.247Z",
+      "foundAt": "2026-08-25T12:50:05.977Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -716,7 +716,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964247-2f19030d7c1778",
+      "id": "rad-free-1787662205978-e4eecdbde6423",
       "name": "Goranson Bain Ausley",
       "title": "attorney",
       "company": "Goranson Bain Ausley Named Best Family Law",
@@ -753,7 +753,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.247Z",
+      "foundAt": "2026-08-25T12:50:05.978Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -793,7 +793,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964265-ca20db10ea76f8",
+      "id": "rad-free-1787662205995-a1099d508a08d",
       "name": "HomeCentris Healthcare",
       "title": "liquidity_event",
       "company": "Scan Group",
@@ -830,7 +830,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.265Z",
+      "foundAt": "2026-08-25T12:50:05.995Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -870,84 +870,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964264-d1a0b1f1c2c968",
-      "name": "Invitation Homes",
-      "title": "liquidity_event",
-      "company": "",
-      "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQa1VNWWpEQndzaEVRMC1jR2dYQnI3Sklvbmx6RDVicWt5M0w5X2xEWVBueW9mSk9iT2FsX25aZHJkWHdlOGdjeFpwcE5VM1VtRkhTTEN3Y291cU1DelFJM0xhTmlCblJ6X3c4TUVrOERUWU1hZUxHU1BzZHF0OUMyYVVKOFYxaXQyY2tkNkI5MnlqSHpQV0hXejVaUG9xOFF1Qk1hYmluaGowNGxzOVhtOQ?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQa1VNWWpEQndzaEVRMC1jR2dYQnI3Sklvbmx6RDVicWt5M0w5X2xEWVBueW9mSk9iT2FsX25aZHJkWHdlOGdjeFpwcE5VM1VtRkhTTEN3Y291cU1DelFJM0xhTmlCblJ6X3c4TUVrOERUWU1hZUxHU1BzZHF0OUMyYVVKOFYxaXQyY2tkNkI5MnlqSHpQV0hXejVaUG9xOFF1Qk1hYmluaGowNGxzOVhtOQ?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas business owners liquidity events",
-      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-      "sourceDate": "Tue, 20 Jan 2026 08:00:00 GMT",
-      "sourceType": "liquidity_event",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxQa1VNWWpEQndzaEVRMC1jR2dYQnI3Sklvbmx6RDVicWt5M0w5X2xEWVBueW9mSk9iT2FsX25aZHJkWHdlOGdjeFpwcE5VM1VtRkhTTEN3Y291cU1DelFJM0xhTmlCblJ6X3c4TUVrOERUWU1hZUxHU1BzZHF0OUMyYVVKOFYxaXQyY2tkNkI5MnlqSHpQV0hXejVaUG9xOFF1Qk1hYmluaGowNGxzOVhtOQ?oc=5\" target=\"_blank\"&gt;Dallas’ Invitation Homes Acquires Atlanta-Based ResiBuilt in $89M Build-To-Rent Deal&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Dallas Innovates&lt;/font&gt;",
-      "signal": "Dallas’ Invitation Homes Acquires Atlanta-Based ResiBuilt in $89M Build-To-Rent Deal - Dallas Innovates",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Texas business owners liquidity events",
-        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-        "sourceType": "liquidity_event",
-        "priority": "texas",
-        "title": "Dallas’ Invitation Homes Acquires Atlanta-Based ResiBuilt in $89M Build-To-Rent Deal - Dallas Innovates",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQa1VNWWpEQndzaEVRMC1jR2dYQnI3Sklvbmx6RDVicWt5M0w5X2xEWVBueW9mSk9iT2FsX25aZHJkWHdlOGdjeFpwcE5VM1VtRkhTTEN3Y291cU1DelFJM0xhTmlCblJ6X3c4TUVrOERUWU1hZUxHU1BzZHF0OUMyYVVKOFYxaXQyY2tkNkI5MnlqSHpQV0hXejVaUG9xOFF1Qk1hYmluaGowNGxzOVhtOQ?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxQa1VNWWpEQndzaEVRMC1jR2dYQnI3Sklvbmx6RDVicWt5M0w5X2xEWVBueW9mSk9iT2FsX25aZHJkWHdlOGdjeFpwcE5VM1VtRkhTTEN3Y291cU1DelFJM0xhTmlCblJ6X3c4TUVrOERUWU1hZUxHU1BzZHF0OUMyYVVKOFYxaXQyY2tkNkI5MnlqSHpQV0hXejVaUG9xOFF1Qk1hYmluaGowNGxzOVhtOQ?oc=5\" target=\"_blank\"&gt;Dallas’ Invitation Homes Acquires Atlanta-Based ResiBuilt in $89M Build-To-Rent Deal&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Dallas Innovates&lt;/font&gt;",
-        "sourceDate": "Tue, 20 Jan 2026 08:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Texas business owners liquidity events",
-            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-            "type": "liquidity_event",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20Texas%20founder%20owner%20CEO&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-08-24T12:52:44.264Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Invitation%20Homes",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Invitation%20Homes+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Invitation Homes and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Invitation, I came across a public signal related to Dallas’ Invitation Homes Acquires Atlanta-Based ResiBuilt in $89M Build-To-Rent Deal - Dallas Innovates. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1787575964246-d3b3e4fcbe9078",
+      "id": "rad-free-1787662205976-329e82c0465718",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
@@ -984,7 +907,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.246Z",
+      "foundAt": "2026-08-25T12:50:05.976Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1023,7 +946,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964267-eecc771904b078",
+      "id": "rad-free-1787662205997-e8da5c069d96c",
       "name": "Jason Felts",
       "title": "liquidity_event",
       "company": "",
@@ -1060,7 +983,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.267Z",
+      "foundAt": "2026-08-25T12:50:05.997Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1100,7 +1023,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964264-9112df27eae3a8",
+      "id": "rad-free-1787662205995-0c6b6839b15d88",
       "name": "Keith Conlon Brings Local",
       "title": "liquidity_event",
       "company": "",
@@ -1137,7 +1060,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.264Z",
+      "foundAt": "2026-08-25T12:50:05.995Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1177,7 +1100,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964251-2f9d5b0b7b7278",
+      "id": "rad-free-1787662205982-11c7a2367de478",
       "name": "Law Graduate Debany Davila",
       "title": "attorney",
       "company": "Texas A&M Law",
@@ -1214,7 +1137,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.251Z",
+      "foundAt": "2026-08-25T12:50:05.982Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1254,7 +1177,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964250-fddb20563d30f",
+      "id": "rad-free-1787662205980-2fcaf91548dfb",
       "name": "Law School Graduate",
       "title": "attorney",
       "company": "New Texas A&M Law",
@@ -1291,7 +1214,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.250Z",
+      "foundAt": "2026-08-25T12:50:05.980Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1331,7 +1254,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964255-a015d0440ed418",
+      "id": "rad-free-1787662205985-2b82c7b775f378",
       "name": "Litigator Michael B. Goldberg",
       "title": "attorney",
       "company": "Litigator Michael B. Goldberg Joins PIB Law",
@@ -1368,7 +1291,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.255Z",
+      "foundAt": "2026-08-25T12:50:05.985Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1408,7 +1331,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964249-e0c7f4ae09d878",
+      "id": "rad-free-1787662205980-54e6ea94819578",
       "name": "Mark Malveaux",
       "title": "attorney",
       "company": "",
@@ -1445,7 +1368,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.249Z",
+      "foundAt": "2026-08-25T12:50:05.980Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1485,7 +1408,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964245-e18afb73548f6",
+      "id": "rad-free-1787662205975-73fb696426ec68",
       "name": "Mehmet Oz Shows Houston",
       "title": "physician",
       "company": "",
@@ -1522,7 +1445,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.245Z",
+      "foundAt": "2026-08-25T12:50:05.975Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1561,7 +1484,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964257-62b2fa3a146718",
+      "id": "rad-free-1787662205987-0bb9ba11619498",
       "name": "Practice Advisor",
       "title": "cpa",
       "company": "Texas Accounting Firm",
@@ -1598,7 +1521,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.257Z",
+      "foundAt": "2026-08-25T12:50:05.987Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1637,7 +1560,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964276-75653a585f9768",
+      "id": "rad-free-1787662206006-49b99b0460f138",
       "name": "Shelly Lambertz",
       "title": "energy",
       "company": "Continental Resources",
@@ -1674,7 +1597,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.276Z",
+      "foundAt": "2026-08-25T12:50:06.006Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1713,7 +1636,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964274-df1e340246901",
+      "id": "rad-free-1787662206004-47458076316a3",
       "name": "Timothy J. Cutt",
       "title": "energy",
       "company": "QEP Resources",
@@ -1750,7 +1673,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.274Z",
+      "foundAt": "2026-08-25T12:50:06.004Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1789,7 +1712,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964259-5be182e7076018",
+      "id": "rad-free-1787662205990-d4d554025d7fe",
       "name": "Trevor Roe Becomes Ownership",
       "title": "liquidity_event",
       "company": "Roe Strategic Capital",
@@ -1826,7 +1749,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.259Z",
+      "foundAt": "2026-08-25T12:50:05.990Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1866,7 +1789,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964271-f05d455388eaf",
+      "id": "rad-free-1787662206001-f828c5a02b8f",
       "name": "Trump Called CEO For",
       "title": "energy",
       "company": "",
@@ -1903,7 +1826,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.271Z",
+      "foundAt": "2026-08-25T12:50:06.001Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1942,7 +1865,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787575964256-613a97fe1ad868",
+      "id": "rad-free-1787662205986-84a8d7f3729fc",
       "name": "Who Honors Kaleen Reyna",
       "title": "cpa",
       "company": "",
@@ -1979,7 +1902,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-24T12:52:44.256Z",
+      "foundAt": "2026-08-25T12:50:05.986Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2008,6 +1931,81 @@
         "named human contact found",
         "manual contact path available",
         "Texas-first priority",
+        "Basin ICP signal"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1787662206008-aec8ad5a61f478",
+      "name": "SS Badrinath",
+      "title": "physician",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide physician practice owners",
+      "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+      "sourceDate": "Tue, 21 Nov 2023 08:00:00 GMT",
+      "sourceType": "physician",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5\" target=\"_blank\"&gt;Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Medical Dialogues&lt;/font&gt;",
+      "signal": "Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more - Medical Dialogues",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide physician practice owners",
+        "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+        "sourceType": "physician",
+        "priority": "nationwide",
+        "title": "Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more - Medical Dialogues",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5\" target=\"_blank\"&gt;Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Medical Dialogues&lt;/font&gt;",
+        "sourceDate": "Tue, 21 Nov 2023 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide physician practice owners",
+            "query": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+            "type": "physician",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-08-25T12:50:06.008Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=SS%20Badrinath",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=SS%20Badrinath+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify SS Badrinath and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi SS, I came across a public signal related to Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more - Medical Dialogues. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
         "Basin ICP signal"
       ],
       "contactable": true,
