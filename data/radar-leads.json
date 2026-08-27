@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T12:54:41.831Z",
+  "generatedAt": "2026-08-27T21:56:04.758Z",
   "engine": "Free Feed Radar + Groq Managed",
   "geoMode": "texas_first_nationwide",
   "tavilyUsed": false,
@@ -15,90 +15,13 @@
     "rawSignals": 250,
     "candidates": 249,
     "groqUsed": 12,
-    "usableLeads": 28,
-    "rejected": 221,
+    "usableLeads": 24,
+    "rejected": 225,
     "collectionErrors": 0
   },
   "leads": [
     {
-      "id": "rad-free-1787748878691-67c77657cd5fc",
-      "name": "Arizona Practice Owner",
-      "title": "physician",
-      "company": "",
-      "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSnZnNVp0ZndqVzVtX25zaVAyaWxzemRIYllpV091NGxPeldsOFhRUE84d0YwRWhxQXhYSFBKQzZBWE54RUozeWdpZUw0a3dSanR4b2J1X1hiU2hfREJuTktyRTkxaGVSSjB0UXVGcjViaXNmSkprWFFJMTZHaEh4TmhiQjRodlF2eTJmMzNR?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSnZnNVp0ZndqVzVtX25zaVAyaWxzemRIYllpV091NGxPeldsOFhRUE84d0YwRWhxQXhYSFBKQzZBWE54RUozeWdpZUw0a3dSanR4b2J1X1hiU2hfREJuTktyRTkxaGVSSjB0UXVGcjViaXNmSkprWFFJMTZHaEh4TmhiQjRodlF2eTJmMzNR?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas physician practice owners",
-      "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
-      "sourceDate": "Thu, 08 Dec 2022 08:00:00 GMT",
-      "sourceType": "physician",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPSnZnNVp0ZndqVzVtX25zaVAyaWxzemRIYllpV091NGxPeldsOFhRUE84d0YwRWhxQXhYSFBKQzZBWE54RUozeWdpZUw0a3dSanR4b2J1X1hiU2hfREJuTktyRTkxaGVSSjB0UXVGcjViaXNmSkprWFFJMTZHaEh4TmhiQjRodlF2eTJmMzNR?oc=5\" target=\"_blank\"&gt;Arizona Practice Owner Joins AAEP Board of Directors&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;EquiManagement&lt;/font&gt;",
-      "signal": "Arizona Practice Owner Joins AAEP Board of Directors - EquiManagement",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Texas physician practice owners",
-        "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
-        "sourceType": "physician",
-        "priority": "texas",
-        "title": "Arizona Practice Owner Joins AAEP Board of Directors - EquiManagement",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSnZnNVp0ZndqVzVtX25zaVAyaWxzemRIYllpV091NGxPeldsOFhRUE84d0YwRWhxQXhYSFBKQzZBWE54RUozeWdpZUw0a3dSanR4b2J1X1hiU2hfREJuTktyRTkxaGVSSjB0UXVGcjViaXNmSkprWFFJMTZHaEh4TmhiQjRodlF2eTJmMzNR?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPSnZnNVp0ZndqVzVtX25zaVAyaWxzemRIYllpV091NGxPeldsOFhRUE84d0YwRWhxQXhYSFBKQzZBWE54RUozeWdpZUw0a3dSanR4b2J1X1hiU2hfREJuTktyRTkxaGVSSjB0UXVGcjViaXNmSkprWFFJMTZHaEh4TmhiQjRodlF2eTJmMzNR?oc=5\" target=\"_blank\"&gt;Arizona Practice Owner Joins AAEP Board of Directors&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;EquiManagement&lt;/font&gt;",
-        "sourceDate": "Thu, 08 Dec 2022 08:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Texas physician practice owners",
-            "query": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
-            "type": "physician",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20Texas&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-08-26T12:54:38.691Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Arizona%20Practice%20Owner",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Arizona%20Practice%20Owner+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Arizona Practice Owner and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Arizona, I came across a public signal related to Arizona Practice Owner Joins AAEP Board of Directors - EquiManagement. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal"
-      ],
-      "aiError": "Groq HTTP 404",
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1787748878714-f473728e4402e8",
+      "id": "rad-free-1787867761359-d6447b1df7e778",
       "name": "Bob Frenzel",
       "title": "energy",
       "company": "",
@@ -135,7 +58,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.714Z",
+      "foundAt": "2026-08-27T21:56:01.359Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -175,84 +98,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878693-b0e0db022df1f8",
-      "name": "Charged With",
-      "title": "physician",
-      "company": "Colorado Dental",
-      "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNc3dPVXVXYlVheXZkMjRZMDV1UjBvYmloX2s2SEpLa2g2UzM3dXZjOVhZS0MwQUJpdzFicVhSZlJhb2VILWhKVG1xbkVqWFhtb1p1Y2xWZ25ieG04YXhFd2ZSTkZaVHk1UFlBZzNpXzc2LXY5M3BpSE10MGNMVm92NnFUY25jR0tTc1cyVUFDTkxTVEI0YTdqQy0yVDBrOXc4WHU0?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNc3dPVXVXYlVheXZkMjRZMDV1UjBvYmloX2s2SEpLa2g2UzM3dXZjOVhZS0MwQUJpdzFicVhSZlJhb2VILWhKVG1xbkVqWFhtb1p1Y2xWZ25ieG04YXhFd2ZSTkZaVHk1UFlBZzNpXzc2LXY5M3BpSE10MGNMVm92NnFUY25jR0tTc1cyVUFDTkxTVEI0YTdqQy0yVDBrOXc4WHU0?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas physician practice owners",
-      "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
-      "sourceDate": "Sun, 03 Oct 2021 22:39:01 GMT",
-      "sourceType": "physician",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxNc3dPVXVXYlVheXZkMjRZMDV1UjBvYmloX2s2SEpLa2g2UzM3dXZjOVhZS0MwQUJpdzFicVhSZlJhb2VILWhKVG1xbkVqWFhtb1p1Y2xWZ25ieG04YXhFd2ZSTkZaVHk1UFlBZzNpXzc2LXY5M3BpSE10MGNMVm92NnFUY25jR0tTc1cyVUFDTkxTVEI0YTdqQy0yVDBrOXc4WHU0?oc=5\" target=\"_blank\"&gt;Colorado Dental Practice Owner Charged With $400,000 in Medicaid Fraud&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Dentistry Today&lt;/font&gt;",
-      "signal": "Colorado Dental Practice Owner Charged With $400,000 in Medicaid Fraud - Dentistry Today",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Texas physician practice owners",
-        "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
-        "sourceType": "physician",
-        "priority": "texas",
-        "title": "Colorado Dental Practice Owner Charged With $400,000 in Medicaid Fraud - Dentistry Today",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNc3dPVXVXYlVheXZkMjRZMDV1UjBvYmloX2s2SEpLa2g2UzM3dXZjOVhZS0MwQUJpdzFicVhSZlJhb2VILWhKVG1xbkVqWFhtb1p1Y2xWZ25ieG04YXhFd2ZSTkZaVHk1UFlBZzNpXzc2LXY5M3BpSE10MGNMVm92NnFUY25jR0tTc1cyVUFDTkxTVEI0YTdqQy0yVDBrOXc4WHU0?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxNc3dPVXVXYlVheXZkMjRZMDV1UjBvYmloX2s2SEpLa2g2UzM3dXZjOVhZS0MwQUJpdzFicVhSZlJhb2VILWhKVG1xbkVqWFhtb1p1Y2xWZ25ieG04YXhFd2ZSTkZaVHk1UFlBZzNpXzc2LXY5M3BpSE10MGNMVm92NnFUY25jR0tTc1cyVUFDTkxTVEI0YTdqQy0yVDBrOXc4WHU0?oc=5\" target=\"_blank\"&gt;Colorado Dental Practice Owner Charged With $400,000 in Medicaid Fraud&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Dentistry Today&lt;/font&gt;",
-        "sourceDate": "Sun, 03 Oct 2021 22:39:01 GMT",
-        "raw": {
-          "meta": {
-            "name": "Texas physician practice owners",
-            "query": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
-            "type": "physician",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20Texas&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-08-26T12:54:38.693Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Charged%20With%20Colorado%20Dental",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Charged%20With%20Colorado%20Dental+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Charged With and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Charged, I came across a public signal related to Colorado Dental Practice Owner Charged With $400,000 in Medicaid Fraud - Dentistry Today. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal"
-      ],
-      "aiError": "Groq HTTP 404",
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1787748878708-df8093312ccde",
+      "id": "rad-free-1787867761353-4b7014cc8d0418",
       "name": "Contact Center Co. Humach",
       "title": "liquidity_event",
       "company": "North Texas AI Contact Center",
@@ -289,7 +135,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.708Z",
+      "foundAt": "2026-08-27T21:56:01.353Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -330,7 +176,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878701-c97cccecbcca8",
+      "id": "rad-free-1787867761345-d08b10aac8a1d8",
       "name": "Doeren Mayhew",
       "title": "cpa",
       "company": "TBK CPA",
@@ -367,7 +213,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.701Z",
+      "foundAt": "2026-08-27T21:56:01.345Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -407,7 +253,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878701-12b67d700531e8",
+      "id": "rad-free-1787867761345-d3bbd4d3a92f68",
       "name": "Doeren Mayhew Acquires",
       "title": "cpa",
       "company": "Doeren Mayhew Acquires CPA",
@@ -444,7 +290,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.701Z",
+      "foundAt": "2026-08-27T21:56:01.345Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -484,7 +330,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878702-bbd593fb09f33",
+      "id": "rad-free-1787867761346-04b213ae6d976",
       "name": "Ferguson Acquires Local Dallas",
       "title": "cpa",
       "company": "Calvetti Ferguson Acquires Local Dallas CPA Firm",
@@ -521,7 +367,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.702Z",
+      "foundAt": "2026-08-27T21:56:01.346Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -561,7 +407,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878704-4d73bae41f306",
+      "id": "rad-free-1787867761349-d12a4d2b571518",
       "name": "Founders Table Restaurant Group",
       "title": "liquidity_event",
       "company": "Founders Table Restaurant Group",
@@ -598,7 +444,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.704Z",
+      "foundAt": "2026-08-27T21:56:01.349Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -639,7 +485,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878713-df43350dee083",
+      "id": "rad-free-1787867761358-56b71712e6d4a",
       "name": "Frontier Tubular Solutions",
       "title": "liquidity_event",
       "company": "Hart Energy",
@@ -676,7 +522,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.713Z",
+      "foundAt": "2026-08-27T21:56:01.358Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -708,6 +554,7 @@
         "Basin ICP signal",
         "timely public trigger"
       ],
+      "aiError": "Groq HTTP 404",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -716,7 +563,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878690-6a2ef41d1d2428",
+      "id": "rad-free-1787867761334-369009f80b5e18",
       "name": "Glenn Davis",
       "title": "physician",
       "company": "",
@@ -753,7 +600,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.690Z",
+      "foundAt": "2026-08-27T21:56:01.334Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -784,6 +631,7 @@
         "Texas-first priority",
         "Basin ICP signal"
       ],
+      "aiError": "Groq HTTP 404",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -792,7 +640,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878693-1d566862656de8",
+      "id": "rad-free-1787867761336-c29e6fd8c3d5e",
       "name": "Goranson Bain Ausley",
       "title": "attorney",
       "company": "Goranson Bain Ausley Named Best Family Law",
@@ -829,7 +677,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.693Z",
+      "foundAt": "2026-08-27T21:56:01.336Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -869,7 +717,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878696-64807d0229f7d",
+      "id": "rad-free-1787867761339-876055f0650b2",
       "name": "Goranson Bain Ausley Attorneys",
       "title": "attorney",
       "company": "Family Law",
@@ -906,7 +754,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.696Z",
+      "foundAt": "2026-08-27T21:56:01.339Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -946,7 +794,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878709-81cd95cdad9538",
+      "id": "rad-free-1787867761355-1e1b58115675b8",
       "name": "HomeCentris Healthcare",
       "title": "liquidity_event",
       "company": "Scan Group",
@@ -983,7 +831,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.709Z",
+      "foundAt": "2026-08-27T21:56:01.355Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1023,7 +871,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878692-0b3089eabec19",
+      "id": "rad-free-1787867761335-eb71f9100cd2d8",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
@@ -1060,7 +908,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.692Z",
+      "foundAt": "2026-08-27T21:56:01.335Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1099,7 +947,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878709-067993a92b31f",
+      "id": "rad-free-1787867761353-6252965f0db4",
       "name": "Keith Conlon Brings Local",
       "title": "liquidity_event",
       "company": "",
@@ -1136,7 +984,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.709Z",
+      "foundAt": "2026-08-27T21:56:01.353Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1176,7 +1024,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878697-6173d2229d53e",
+      "id": "rad-free-1787867761341-a61e9a3f44c838",
       "name": "Law Graduate Debany Davila",
       "title": "attorney",
       "company": "Texas A&M Law",
@@ -1213,7 +1061,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.697Z",
+      "foundAt": "2026-08-27T21:56:01.341Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1253,7 +1101,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878696-25c76bc7f4056",
+      "id": "rad-free-1787867761339-74dbd6a7497598",
       "name": "Law School Graduate",
       "title": "attorney",
       "company": "New Texas A&M Law",
@@ -1290,7 +1138,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.696Z",
+      "foundAt": "2026-08-27T21:56:01.339Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1330,7 +1178,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878700-cfe4b31ba84548",
+      "id": "rad-free-1787867761344-de8a7695632c6",
       "name": "Litigator Michael B. Goldberg",
       "title": "attorney",
       "company": "Litigator Michael B. Goldberg Joins PIB Law",
@@ -1367,7 +1215,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.700Z",
+      "foundAt": "2026-08-27T21:56:01.344Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1407,7 +1255,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878695-a1e48e8273d2e",
+      "id": "rad-free-1787867761339-3b7aa5734e93b",
       "name": "Mark Malveaux",
       "title": "attorney",
       "company": "",
@@ -1444,7 +1292,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.695Z",
+      "foundAt": "2026-08-27T21:56:01.339Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1484,7 +1332,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878692-976d895d3699e",
+      "id": "rad-free-1787867761336-a8b4542c79ee48",
       "name": "Mehmet Oz Shows Houston",
       "title": "physician",
       "company": "",
@@ -1521,7 +1369,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.692Z",
+      "foundAt": "2026-08-27T21:56:01.336Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1560,84 +1408,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878706-9d7852a5fe8a9",
-      "name": "Mission Critical Group",
-      "title": "liquidity_event",
-      "company": "Mission Critical Group",
-      "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas business owners liquidity events",
-      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-      "sourceDate": "Wed, 08 Apr 2026 07:00:00 GMT",
-      "sourceType": "liquidity_event",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5\" target=\"_blank\"&gt;North Texas’ Mission Critical Group Acquires TxLa Systems&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Dallas Innovates&lt;/font&gt;",
-      "signal": "North Texas’ Mission Critical Group Acquires TxLa Systems - Dallas Innovates",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Texas business owners liquidity events",
-        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-        "sourceType": "liquidity_event",
-        "priority": "texas",
-        "title": "North Texas’ Mission Critical Group Acquires TxLa Systems - Dallas Innovates",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5\" target=\"_blank\"&gt;North Texas’ Mission Critical Group Acquires TxLa Systems&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Dallas Innovates&lt;/font&gt;",
-        "sourceDate": "Wed, 08 Apr 2026 07:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Texas business owners liquidity events",
-            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-            "type": "liquidity_event",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20Texas%20founder%20owner%20CEO&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-08-26T12:54:38.706Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Mission%20Critical%20Group%20Mission%20Critical%20Group",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Mission%20Critical%20Group%20Mission%20Critical%20Group+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Mission Critical Group and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Mission, I came across a public signal related to North Texas’ Mission Critical Group Acquires TxLa Systems - Dallas Innovates. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1787748878711-d7d2e9c9dcca88",
+      "id": "rad-free-1787867761355-1fab0659ae2ec",
       "name": "New CEO",
       "title": "liquidity_event",
       "company": "",
@@ -1674,7 +1445,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.711Z",
+      "foundAt": "2026-08-27T21:56:01.355Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1714,7 +1485,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878702-eb21207bdeaeb8",
+      "id": "rad-free-1787867761347-190b0151a280a",
       "name": "Practice Advisor",
       "title": "cpa",
       "company": "Texas Accounting Firm",
@@ -1751,7 +1522,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.702Z",
+      "foundAt": "2026-08-27T21:56:01.347Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1790,7 +1561,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878721-a3a9c532710d88",
+      "id": "rad-free-1787867761365-05fea79863e9",
       "name": "Shelly Lambertz",
       "title": "energy",
       "company": "Continental Resources",
@@ -1827,7 +1598,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.721Z",
+      "foundAt": "2026-08-27T21:56:01.365Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1866,7 +1637,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878720-114160aecf68",
+      "id": "rad-free-1787867761364-8e5feec14858f",
       "name": "Timothy J. Cutt",
       "title": "energy",
       "company": "QEP Resources",
@@ -1903,7 +1674,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.720Z",
+      "foundAt": "2026-08-27T21:56:01.364Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1942,7 +1713,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878716-f45e38d6073458",
+      "id": "rad-free-1787867761360-bb5544f28f3168",
       "name": "Trump Called CEO For",
       "title": "energy",
       "company": "",
@@ -1979,7 +1750,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.716Z",
+      "foundAt": "2026-08-27T21:56:01.360Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2018,7 +1789,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1787748878701-c1280f3cd8ed08",
+      "id": "rad-free-1787867761345-2f893a857d38f8",
       "name": "Who Honors Kaleen Reyna",
       "title": "cpa",
       "company": "",
@@ -2031,17 +1802,17 @@
       "sourceDate": "Wed, 08 Apr 2026 07:00:00 GMT",
       "sourceType": "cpa",
       "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMHBSN0hicllFdmhzQ0IzYWN0OFFqYmlsbmJUZzk2b1FWVGtESENqdzFJX0hFMkxaT0ZPRmNiTUd2VWpHaHZOdmpjQ1UzRXFZblhJV09PcmVQeUlMT0VNM0hhZDhMN19LdU9YbGZtX19WTmM5M09KWUhYMnlIcXJ3QkFBVlI2b2V5X1BJX1p4YnFnYnlkQUJSWXpTTzdHS1k3ZHpLcFhfM1RmeTgtTzYzQXF6Mmh6SmRLdGJTWmFRQ2Y1azZkb29NOUZwOXhzWlJRd0FSdEludXhKN2pGVlE2X0g0UVo?oc=5\" target=\"_blank\"&gt;Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;24-7 Press Release Newswire&lt;/font&gt;",
-      "signal": "Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry - 24-7 Press Release Newswire",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMHBSN0hicllFdmhzQ0IzYWN0OFFqYmlsbmJUZzk2b1FWVGtESENqdzFJX0hFMkxaT0ZPRmNiTUd2VWpHaHZOdmpjQ1UzRXFZblhJV09PcmVQeUlMT0VNM0hhZDhMN19LdU9YbGZtX19WTmM5M09KWUhYMnlIcXJ3QkFBVlI2b2V5X1BJX1p4YnFnYnlkQUJSWXpTTzdHS1k3ZHpLcFhfM1RmeTgtTzYzQXF6Mmh6SmRLdGJTWmFRQ2Y1azZkb29NOUZwOXhzWlJRd0FSdEludXhKN2pGVlE2X0g0UVo?oc=5\" target=\"_blank\"&gt;Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;24-7PressRelease.com&lt;/font&gt;",
+      "signal": "Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry - 24-7PressRelease.com",
       "raw": {
         "sourceKind": "rss",
         "sourceFeed": "Texas CPA tax advisors",
         "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
         "sourceType": "cpa",
         "priority": "texas",
-        "title": "Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry - 24-7 Press Release Newswire",
+        "title": "Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry - 24-7PressRelease.com",
         "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMHBSN0hicllFdmhzQ0IzYWN0OFFqYmlsbmJUZzk2b1FWVGtESENqdzFJX0hFMkxaT0ZPRmNiTUd2VWpHaHZOdmpjQ1UzRXFZblhJV09PcmVQeUlMT0VNM0hhZDhMN19LdU9YbGZtX19WTmM5M09KWUhYMnlIcXJ3QkFBVlI2b2V5X1BJX1p4YnFnYnlkQUJSWXpTTzdHS1k3ZHpLcFhfM1RmeTgtTzYzQXF6Mmh6SmRLdGJTWmFRQ2Y1azZkb29NOUZwOXhzWlJRd0FSdEludXhKN2pGVlE2X0g0UVo?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMHBSN0hicllFdmhzQ0IzYWN0OFFqYmlsbmJUZzk2b1FWVGtESENqdzFJX0hFMkxaT0ZPRmNiTUd2VWpHaHZOdmpjQ1UzRXFZblhJV09PcmVQeUlMT0VNM0hhZDhMN19LdU9YbGZtX19WTmM5M09KWUhYMnlIcXJ3QkFBVlI2b2V5X1BJX1p4YnFnYnlkQUJSWXpTTzdHS1k3ZHpLcFhfM1RmeTgtTzYzQXF6Mmh6SmRLdGJTWmFRQ2Y1azZkb29NOUZwOXhzWlJRd0FSdEludXhKN2pGVlE2X0g0UVo?oc=5\" target=\"_blank\"&gt;Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;24-7 Press Release Newswire&lt;/font&gt;",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMHBSN0hicllFdmhzQ0IzYWN0OFFqYmlsbmJUZzk2b1FWVGtESENqdzFJX0hFMkxaT0ZPRmNiTUd2VWpHaHZOdmpjQ1UzRXFZblhJV09PcmVQeUlMT0VNM0hhZDhMN19LdU9YbGZtX19WTmM5M09KWUhYMnlIcXJ3QkFBVlI2b2V5X1BJX1p4YnFnYnlkQUJSWXpTTzdHS1k3ZHpLcFhfM1RmeTgtTzYzQXF6Mmh6SmRLdGJTWmFRQ2Y1azZkb29NOUZwOXhzWlJRd0FSdEludXhKN2pGVlE2X0g0UVo?oc=5\" target=\"_blank\"&gt;Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;24-7PressRelease.com&lt;/font&gt;",
         "sourceDate": "Wed, 08 Apr 2026 07:00:00 GMT",
         "raw": {
           "meta": {
@@ -2055,7 +1826,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-08-26T12:54:38.701Z",
+      "foundAt": "2026-08-27T21:56:01.345Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2078,87 +1849,12 @@
       "nextAction": "Day 1: verify Who Honors Kaleen Reyna and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi Who, I came across a public signal related to Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry - 24-7 Press Release. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi Who, I came across a public signal related to Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry - 24-7PressRelease.c. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
         "manual contact path available",
         "Texas-first priority",
-        "Basin ICP signal"
-      ],
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1787748878723-2e7441a6c4cae",
-      "name": "J. Richard Steadman",
-      "title": "physician",
-      "company": "The Steadman Clinic",
-      "location": "Nationwide USA",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Nationwide physician practice owners",
-      "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
-      "sourceDate": "Tue, 31 Jan 2023 08:00:00 GMT",
-      "sourceType": "physician",
-      "priority": "nationwide",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5\" target=\"_blank\"&gt;Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Tahoe Daily Tribune&lt;/font&gt;",
-      "signal": "Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - Tahoe Daily Tribune",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Nationwide physician practice owners",
-        "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
-        "sourceType": "physician",
-        "priority": "nationwide",
-        "title": "Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - Tahoe Daily Tribune",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5\" target=\"_blank\"&gt;Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Tahoe Daily Tribune&lt;/font&gt;",
-        "sourceDate": "Tue, 31 Jan 2023 08:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Nationwide physician practice owners",
-            "query": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
-            "type": "physician",
-            "priority": "nationwide",
-            "url": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-08-26T12:54:38.723Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=J.%20Richard%20Steadman%20The%20Steadman%20Clinic",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=J.%20Richard%20Steadman%20The%20Steadman%20Clinic+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify J. Richard Steadman and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi J., I came across a public signal related to Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - Tahoe Daily Tribune. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
         "Basin ICP signal"
       ],
       "contactable": true,
