@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T16:14:18.696Z",
+  "generatedAt": "2026-09-02T16:09:34.978Z",
   "engine": "Free Feed Radar + Groq Managed",
   "geoMode": "texas_first_nationwide",
   "tavilyUsed": false,
@@ -13,15 +13,15 @@
   },
   "stats": {
     "rawSignals": 250,
-    "candidates": 249,
+    "candidates": 248,
     "groqUsed": 12,
     "usableLeads": 27,
-    "rejected": 222,
+    "rejected": 221,
     "collectionErrors": 0
   },
   "leads": [
     {
-      "id": "rad-free-1788279255252-0d79bda318e7a8",
+      "id": "rad-free-1788365372005-5e16900eaba9a8",
       "name": "Bob Frenzel",
       "title": "energy",
       "company": "",
@@ -58,7 +58,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.252Z",
+      "foundAt": "2026-09-02T16:09:32.005Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -98,7 +98,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255228-f6e4fe272bde4",
+      "id": "rad-free-1788365371991-b76c188f33ee38",
       "name": "Charged With",
       "title": "physician",
       "company": "Colorado Dental",
@@ -135,7 +135,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.228Z",
+      "foundAt": "2026-09-02T16:09:31.991Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -175,7 +175,85 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255237-fafa7c7e2ef81",
+      "id": "rad-free-1788365372001-f746144aa9066",
+      "name": "Contact Center Co. Humach",
+      "title": "liquidity_event",
+      "company": "North Texas AI Contact Center",
+      "location": "Texas-first",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOaGhFb2dFeG5WNHpaZ0ktQ2p4ZmZLd25naUFtTzVoYUJYcmhOdDJjWEJiZEFMZnY5Y014QTlVRk0wbnRJdS1iV0JuMVJicTRnMnowYlc4MU5VdXpfcEtUdWFydGMxRVBVOUdTU0lfYWpUSHNQOWU5TVFBNWNERFZROEt6ckZ2Umw0SXB1M2lpTUFYUXBLSlJlUjZURnlXdDA?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOaGhFb2dFeG5WNHpaZ0ktQ2p4ZmZLd25naUFtTzVoYUJYcmhOdDJjWEJiZEFMZnY5Y014QTlVRk0wbnRJdS1iV0JuMVJicTRnMnowYlc4MU5VdXpfcEtUdWFydGMxRVBVOUdTU0lfYWpUSHNQOWU5TVFBNWNERFZROEt6ckZ2Umw0SXB1M2lpTUFYUXBLSlJlUjZURnlXdDA?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Texas business owners liquidity events",
+      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
+      "sourceDate": "Wed, 09 Apr 2025 07:00:00 GMT",
+      "sourceType": "liquidity_event",
+      "priority": "texas",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxOaGhFb2dFeG5WNHpaZ0ktQ2p4ZmZLd25naUFtTzVoYUJYcmhOdDJjWEJiZEFMZnY5Y014QTlVRk0wbnRJdS1iV0JuMVJicTRnMnowYlc4MU5VdXpfcEtUdWFydGMxRVBVOUdTU0lfYWpUSHNQOWU5TVFBNWNERFZROEt6ckZ2Umw0SXB1M2lpTUFYUXBLSlJlUjZURnlXdDA?oc=5\" target=\"_blank\"&gt;North Texas AI Contact Center Co. Humach Acquires New York’s Markets EQ&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Dallas Innovates&lt;/font&gt;",
+      "signal": "North Texas AI Contact Center Co. Humach Acquires New York’s Markets EQ - Dallas Innovates",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Texas business owners liquidity events",
+        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
+        "sourceType": "liquidity_event",
+        "priority": "texas",
+        "title": "North Texas AI Contact Center Co. Humach Acquires New York’s Markets EQ - Dallas Innovates",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOaGhFb2dFeG5WNHpaZ0ktQ2p4ZmZLd25naUFtTzVoYUJYcmhOdDJjWEJiZEFMZnY5Y014QTlVRk0wbnRJdS1iV0JuMVJicTRnMnowYlc4MU5VdXpfcEtUdWFydGMxRVBVOUdTU0lfYWpUSHNQOWU5TVFBNWNERFZROEt6ckZ2Umw0SXB1M2lpTUFYUXBLSlJlUjZURnlXdDA?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxOaGhFb2dFeG5WNHpaZ0ktQ2p4ZmZLd25naUFtTzVoYUJYcmhOdDJjWEJiZEFMZnY5Y014QTlVRk0wbnRJdS1iV0JuMVJicTRnMnowYlc4MU5VdXpfcEtUdWFydGMxRVBVOUdTU0lfYWpUSHNQOWU5TVFBNWNERFZROEt6ckZ2Umw0SXB1M2lpTUFYUXBLSlJlUjZURnlXdDA?oc=5\" target=\"_blank\"&gt;North Texas AI Contact Center Co. Humach Acquires New York’s Markets EQ&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Dallas Innovates&lt;/font&gt;",
+        "sourceDate": "Wed, 09 Apr 2025 07:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Texas business owners liquidity events",
+            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
+            "type": "liquidity_event",
+            "priority": "texas",
+            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20Texas%20founder%20owner%20CEO&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-09-02T16:09:32.001Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Contact%20Center%20Co.%20Humach%20North%20Texas%20AI%20Contact%20Center",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Contact%20Center%20Co.%20Humach%20North%20Texas%20AI%20Contact%20Center+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Contact Center Co. Humach and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Contact, I came across a public signal related to North Texas AI Contact Center Co. Humach Acquires New York’s Markets EQ - Dallas Innovates. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Texas-first priority",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "aiError": "Groq HTTP 404",
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1788365371997-c2d0f3276699",
       "name": "Doeren Mayhew",
       "title": "cpa",
       "company": "TBK CPA",
@@ -212,7 +290,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.237Z",
+      "foundAt": "2026-09-02T16:09:31.997Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -252,7 +330,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255237-c151fa7361f758",
+      "id": "rad-free-1788365371997-3d577623ef43a8",
       "name": "Doeren Mayhew Acquires",
       "title": "cpa",
       "company": "Doeren Mayhew Acquires CPA",
@@ -289,7 +367,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.237Z",
+      "foundAt": "2026-09-02T16:09:31.997Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -329,108 +407,30 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255247-3aabab501fb6e",
-      "name": "Eli Lilly",
-      "title": "liquidity_event",
-      "company": "",
-      "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPS3E3enRKdFpWM0p3TjFWeE8wS0l4RjJ6bU12WUFZbWRGendwcmd3aTJ1R0VtVTBqTG1HbUozMFA1dVVBclZOUXQ0cHNZV0RQWjZOdDF4cWRTeUpxUHZlTk83eG1kMUt5NHFHRDB1RjJtck9GYUlzNlpYRjg5Mkx2T3lEbXg4Z3pHUmVLcmZaVmlhSWd1Mm9MbXlKbGw?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPS3E3enRKdFpWM0p3TjFWeE8wS0l4RjJ6bU12WUFZbWRGendwcmd3aTJ1R0VtVTBqTG1HbUozMFA1dVVBclZOUXQ0cHNZV0RQWjZOdDF4cWRTeUpxUHZlTk83eG1kMUt5NHFHRDB1RjJtck9GYUlzNlpYRjg5Mkx2T3lEbXg4Z3pHUmVLcmZaVmlhSWd1Mm9MbXlKbGw?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas business owners liquidity events",
-      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-      "sourceDate": "Thu, 16 Apr 2026 07:00:00 GMT",
-      "sourceType": "liquidity_event",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxPS3E3enRKdFpWM0p3TjFWeE8wS0l4RjJ6bU12WUFZbWRGendwcmd3aTJ1R0VtVTBqTG1HbUozMFA1dVVBclZOUXQ0cHNZV0RQWjZOdDF4cWRTeUpxUHZlTk83eG1kMUt5NHFHRDB1RjJtck9GYUlzNlpYRjg5Mkx2T3lEbXg4Z3pHUmVLcmZaVmlhSWd1Mm9MbXlKbGw?oc=5\" target=\"_blank\"&gt;Eli Lilly acquires Houston biotech startup for $300M&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Houston Chronicle&lt;/font&gt;",
-      "signal": "Eli Lilly acquires Houston biotech startup for $300M - Houston Chronicle",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Texas business owners liquidity events",
-        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-        "sourceType": "liquidity_event",
-        "priority": "texas",
-        "title": "Eli Lilly acquires Houston biotech startup for $300M - Houston Chronicle",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPS3E3enRKdFpWM0p3TjFWeE8wS0l4RjJ6bU12WUFZbWRGendwcmd3aTJ1R0VtVTBqTG1HbUozMFA1dVVBclZOUXQ0cHNZV0RQWjZOdDF4cWRTeUpxUHZlTk83eG1kMUt5NHFHRDB1RjJtck9GYUlzNlpYRjg5Mkx2T3lEbXg4Z3pHUmVLcmZaVmlhSWd1Mm9MbXlKbGw?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxPS3E3enRKdFpWM0p3TjFWeE8wS0l4RjJ6bU12WUFZbWRGendwcmd3aTJ1R0VtVTBqTG1HbUozMFA1dVVBclZOUXQ0cHNZV0RQWjZOdDF4cWRTeUpxUHZlTk83eG1kMUt5NHFHRDB1RjJtck9GYUlzNlpYRjg5Mkx2T3lEbXg4Z3pHUmVLcmZaVmlhSWd1Mm9MbXlKbGw?oc=5\" target=\"_blank\"&gt;Eli Lilly acquires Houston biotech startup for $300M&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Houston Chronicle&lt;/font&gt;",
-        "sourceDate": "Thu, 16 Apr 2026 07:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Texas business owners liquidity events",
-            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-            "type": "liquidity_event",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20Texas%20founder%20owner%20CEO&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-09-01T16:14:15.247Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Eli%20Lilly",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Eli%20Lilly+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Eli Lilly and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Eli, I came across a public signal related to Eli Lilly acquires Houston biotech startup for $300M - Houston Chronicle. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "aiError": "Groq HTTP 404",
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1788279255238-0f4794c14b0c5",
+      "id": "rad-free-1788365371998-4fda24b35331b8",
       "name": "Ferguson Acquires Local Dallas",
       "title": "cpa",
       "company": "Calvetti Ferguson Acquires Local Dallas CPA Firm",
       "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTDJEZXU4Q1R6bjlLYmNaaGtVbk1KQTFVWk5USEduaXhMaEF5eEJvU0FtZTh5QUtWcXFZVXRtMkRoOExWNXcwQS1iQUlHeXR3MHVGOXVsUGxZLWxUXzBWb3VxUEpqSEh2RWxGcVhMMnFNaHZTa3BjWFJZSHNrS2hPbWhtVlI2RTU0bDI0cC1xNC1rN1B5MmZOY3lWQ2hzczJ2VDUxcUNmNlZwaGRNUjY3MEJjUXlvYkQxZzFiOA?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTDJEZXU4Q1R6bjlLYmNaaGtVbk1KQTFVWk5USEduaXhMaEF5eEJvU0FtZTh5QUtWcXFZVXRtMkRoOExWNXcwQS1iQUlHeXR3MHVGOXVsUGxZLWxUXzBWb3VxUEpqSEh2RWxGcVhMMnFNaHZTa3BjWFJZSHNrS2hPbWhtVlI2RTU0bDI0cC1xNC1rN1B5MmZOY3lWQ2hzczJ2VDUxcUNmNlZwaGRNUjY3MEJjUXlvYkQxZzFiOA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMHlTVWVSN3NDb3M0NDNUay1lNnBtZUNEbXZ1Q2dUQW1uSWV3R1lkR1lPdFJyU2tBUl9PcUV0LXB0b2NubHVIRHM1RHdsN0ZRT3BUellzeno5cjhvQVk2OUZFaURKREdid25PbnF4WFc0WnppeXhnRHJ6TWhJUkhTOXBqNkNhdmZkLTFVdWwxNUw?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMHlTVWVSN3NDb3M0NDNUay1lNnBtZUNEbXZ1Q2dUQW1uSWV3R1lkR1lPdFJyU2tBUl9PcUV0LXB0b2NubHVIRHM1RHdsN0ZRT3BUellzeno5cjhvQVk2OUZFaURKREdid25PbnF4WFc0WnppeXhnRHJ6TWhJUkhTOXBqNkNhdmZkLTFVdWwxNUw?oc=5",
       "source": "Free Feed Radar",
       "sourceFeed": "Texas CPA tax advisors",
       "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
       "sourceDate": "Mon, 18 Dec 2023 08:00:00 GMT",
       "sourceType": "cpa",
       "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxNTDJEZXU4Q1R6bjlLYmNaaGtVbk1KQTFVWk5USEduaXhMaEF5eEJvU0FtZTh5QUtWcXFZVXRtMkRoOExWNXcwQS1iQUlHeXR3MHVGOXVsUGxZLWxUXzBWb3VxUEpqSEh2RWxGcVhMMnFNaHZTa3BjWFJZSHNrS2hPbWhtVlI2RTU0bDI0cC1xNC1rN1B5MmZOY3lWQ2hzczJ2VDUxcUNmNlZwaGRNUjY3MEJjUXlvYkQxZzFiOA?oc=5\" target=\"_blank\"&gt;Calvetti Ferguson Acquires Local Dallas CPA Firm&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;GlobeNewswire&lt;/font&gt;",
-      "signal": "Calvetti Ferguson Acquires Local Dallas CPA Firm - GlobeNewswire",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxNMHlTVWVSN3NDb3M0NDNUay1lNnBtZUNEbXZ1Q2dUQW1uSWV3R1lkR1lPdFJyU2tBUl9PcUV0LXB0b2NubHVIRHM1RHdsN0ZRT3BUellzeno5cjhvQVk2OUZFaURKREdid25PbnF4WFc0WnppeXhnRHJ6TWhJUkhTOXBqNkNhdmZkLTFVdWwxNUw?oc=5\" target=\"_blank\"&gt;Calvetti Ferguson Acquires Local Dallas CPA Firm&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;citybiz.co&lt;/font&gt;",
+      "signal": "Calvetti Ferguson Acquires Local Dallas CPA Firm - citybiz.co",
       "raw": {
         "sourceKind": "rss",
         "sourceFeed": "Texas CPA tax advisors",
         "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
         "sourceType": "cpa",
         "priority": "texas",
-        "title": "Calvetti Ferguson Acquires Local Dallas CPA Firm - GlobeNewswire",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTDJEZXU4Q1R6bjlLYmNaaGtVbk1KQTFVWk5USEduaXhMaEF5eEJvU0FtZTh5QUtWcXFZVXRtMkRoOExWNXcwQS1iQUlHeXR3MHVGOXVsUGxZLWxUXzBWb3VxUEpqSEh2RWxGcVhMMnFNaHZTa3BjWFJZSHNrS2hPbWhtVlI2RTU0bDI0cC1xNC1rN1B5MmZOY3lWQ2hzczJ2VDUxcUNmNlZwaGRNUjY3MEJjUXlvYkQxZzFiOA?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxNTDJEZXU4Q1R6bjlLYmNaaGtVbk1KQTFVWk5USEduaXhMaEF5eEJvU0FtZTh5QUtWcXFZVXRtMkRoOExWNXcwQS1iQUlHeXR3MHVGOXVsUGxZLWxUXzBWb3VxUEpqSEh2RWxGcVhMMnFNaHZTa3BjWFJZSHNrS2hPbWhtVlI2RTU0bDI0cC1xNC1rN1B5MmZOY3lWQ2hzczJ2VDUxcUNmNlZwaGRNUjY3MEJjUXlvYkQxZzFiOA?oc=5\" target=\"_blank\"&gt;Calvetti Ferguson Acquires Local Dallas CPA Firm&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;GlobeNewswire&lt;/font&gt;",
+        "title": "Calvetti Ferguson Acquires Local Dallas CPA Firm - citybiz.co",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMHlTVWVSN3NDb3M0NDNUay1lNnBtZUNEbXZ1Q2dUQW1uSWV3R1lkR1lPdFJyU2tBUl9PcUV0LXB0b2NubHVIRHM1RHdsN0ZRT3BUellzeno5cjhvQVk2OUZFaURKREdid25PbnF4WFc0WnppeXhnRHJ6TWhJUkhTOXBqNkNhdmZkLTFVdWwxNUw?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxNMHlTVWVSN3NDb3M0NDNUay1lNnBtZUNEbXZ1Q2dUQW1uSWV3R1lkR1lPdFJyU2tBUl9PcUV0LXB0b2NubHVIRHM1RHdsN0ZRT3BUellzeno5cjhvQVk2OUZFaURKREdid25PbnF4WFc0WnppeXhnRHJ6TWhJUkhTOXBqNkNhdmZkLTFVdWwxNUw?oc=5\" target=\"_blank\"&gt;Calvetti Ferguson Acquires Local Dallas CPA Firm&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;citybiz.co&lt;/font&gt;",
         "sourceDate": "Mon, 18 Dec 2023 08:00:00 GMT",
         "raw": {
           "meta": {
@@ -444,7 +444,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.238Z",
+      "foundAt": "2026-09-02T16:09:31.998Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -467,7 +467,7 @@
       "nextAction": "Day 1: verify Ferguson Acquires Local Dallas and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi Ferguson, I came across a public signal related to Calvetti Ferguson Acquires Local Dallas CPA Firm - GlobeNewswire. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi Ferguson, I came across a public signal related to Calvetti Ferguson Acquires Local Dallas CPA Firm - citybiz.co. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
@@ -484,88 +484,10 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255241-2ed36cbee167",
-      "name": "Founders Table Restaurant Group",
-      "title": "liquidity_event",
-      "company": "Founders Table Restaurant Group",
-      "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcnVsdjB3ZURiUWJvd3pEOUtpM01MY1ZrengwaFJ2cXgtckhuUjBkb2p2NzJsOEtOSUdlVG9UQ0dQYy0tQjN0THJqNkF5ZlMxWWVDbkFLczB2ZmZyNktFYkN0SUxWcEdqZzVuT3ktS2NHTEl3VjlJWkpvR1F2WE13bFJKbzZCS0ZZOC1GRmRyQ2twbFBuSk5aMg?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcnVsdjB3ZURiUWJvd3pEOUtpM01MY1ZrengwaFJ2cXgtckhuUjBkb2p2NzJsOEtOSUdlVG9UQ0dQYy0tQjN0THJqNkF5ZlMxWWVDbkFLczB2ZmZyNktFYkN0SUxWcEdqZzVuT3ktS2NHTEl3VjlJWkpvR1F2WE13bFJKbzZCS0ZZOC1GRmRyQ2twbFBuSk5aMg?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas business owners liquidity events",
-      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-      "sourceDate": "Fri, 26 Jun 2026 07:00:00 GMT",
-      "sourceType": "liquidity_event",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxQcnVsdjB3ZURiUWJvd3pEOUtpM01MY1ZrengwaFJ2cXgtckhuUjBkb2p2NzJsOEtOSUdlVG9UQ0dQYy0tQjN0THJqNkF5ZlMxWWVDbkFLczB2ZmZyNktFYkN0SUxWcEdqZzVuT3ktS2NHTEl3VjlJWkpvR1F2WE13bFJKbzZCS0ZZOC1GRmRyQ2twbFBuSk5aMg?oc=5\" target=\"_blank\"&gt;Founders Table Restaurant Group acquires Hopdoddy Burger Bar&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;fastcasual.com&lt;/font&gt;",
-      "signal": "Founders Table Restaurant Group acquires Hopdoddy Burger Bar - fastcasual.com",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Texas business owners liquidity events",
-        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-        "sourceType": "liquidity_event",
-        "priority": "texas",
-        "title": "Founders Table Restaurant Group acquires Hopdoddy Burger Bar - fastcasual.com",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcnVsdjB3ZURiUWJvd3pEOUtpM01MY1ZrengwaFJ2cXgtckhuUjBkb2p2NzJsOEtOSUdlVG9UQ0dQYy0tQjN0THJqNkF5ZlMxWWVDbkFLczB2ZmZyNktFYkN0SUxWcEdqZzVuT3ktS2NHTEl3VjlJWkpvR1F2WE13bFJKbzZCS0ZZOC1GRmRyQ2twbFBuSk5aMg?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxQcnVsdjB3ZURiUWJvd3pEOUtpM01MY1ZrengwaFJ2cXgtckhuUjBkb2p2NzJsOEtOSUdlVG9UQ0dQYy0tQjN0THJqNkF5ZlMxWWVDbkFLczB2ZmZyNktFYkN0SUxWcEdqZzVuT3ktS2NHTEl3VjlJWkpvR1F2WE13bFJKbzZCS0ZZOC1GRmRyQ2twbFBuSk5aMg?oc=5\" target=\"_blank\"&gt;Founders Table Restaurant Group acquires Hopdoddy Burger Bar&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;fastcasual.com&lt;/font&gt;",
-        "sourceDate": "Fri, 26 Jun 2026 07:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Texas business owners liquidity events",
-            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-            "type": "liquidity_event",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20Texas%20founder%20owner%20CEO&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-09-01T16:14:15.241Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Founders%20Table%20Restaurant%20Group%20Founders%20Table%20Restaurant%20Group",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Founders%20Table%20Restaurant%20Group%20Founders%20Table%20Restaurant%20Group+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Founders Table Restaurant Group and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Founders, I came across a public signal related to Founders Table Restaurant Group acquires Hopdoddy Burger Bar - fastcasual.com. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "aiError": "Groq HTTP 404",
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1788279255250-eac323920ddea8",
+      "id": "rad-free-1788365372004-934aab5998942",
       "name": "Frontier Tubular Solutions",
       "title": "liquidity_event",
-      "company": "",
+      "company": "Hart Energy",
       "location": "Texas-first",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRUZSM2I0STdOSUczb0Y3a3hTVmRXSVBXQ1NRRGVyOHNxMVJjeExHeG9IYlZ3WXpqWlB4T0dsM3Vjb1BISjlIQXVnYy0zak04LW00d3h1MEdsWXdVcUZyWmtRdTZmX1duMGlYTVQ0Tmo1Zk5DbXVMNHZ6dGRpQXlFN1pSVTFoOGt2MlVwcFRFTUdsOEFPZ3BEa2ZQUUk4RUUxdG1JNzJfcEhXVFoyYVBHMGdFTWQ4U01KS1ppU2NR?oc=5",
       "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRUZSM2I0STdOSUczb0Y3a3hTVmRXSVBXQ1NRRGVyOHNxMVJjeExHeG9IYlZ3WXpqWlB4T0dsM3Vjb1BISjlIQXVnYy0zak04LW00d3h1MEdsWXdVcUZyWmtRdTZmX1duMGlYTVQ0Tmo1Zk5DbXVMNHZ6dGRpQXlFN1pSVTFoOGt2MlVwcFRFTUdsOEFPZ3BEa2ZQUUk4RUUxdG1JNzJfcEhXVFoyYVBHMGdFTWQ4U01KS1ppU2NR?oc=5",
@@ -575,17 +497,17 @@
       "sourceDate": "Fri, 31 May 2019 07:00:00 GMT",
       "sourceType": "liquidity_event",
       "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxQRUZSM2I0STdOSUczb0Y3a3hTVmRXSVBXQ1NRRGVyOHNxMVJjeExHeG9IYlZ3WXpqWlB4T0dsM3Vjb1BISjlIQXVnYy0zak04LW00d3h1MEdsWXdVcUZyWmtRdTZmX1duMGlYTVQ0Tmo1Zk5DbXVMNHZ6dGRpQXlFN1pSVTFoOGt2MlVwcFRFTUdsOEFPZ3BEa2ZQUUk4RUUxdG1JNzJfcEhXVFoyYVBHMGdFTWQ4U01KS1ppU2NR?oc=5\" target=\"_blank\"&gt;Frontier Tubular Solutions Acquires Historic Permian Basin Service Provider&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;hartenergy.com&lt;/font&gt;",
-      "signal": "Frontier Tubular Solutions Acquires Historic Permian Basin Service Provider - hartenergy.com",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxQRUZSM2I0STdOSUczb0Y3a3hTVmRXSVBXQ1NRRGVyOHNxMVJjeExHeG9IYlZ3WXpqWlB4T0dsM3Vjb1BISjlIQXVnYy0zak04LW00d3h1MEdsWXdVcUZyWmtRdTZmX1duMGlYTVQ0Tmo1Zk5DbXVMNHZ6dGRpQXlFN1pSVTFoOGt2MlVwcFRFTUdsOEFPZ3BEa2ZQUUk4RUUxdG1JNzJfcEhXVFoyYVBHMGdFTWQ4U01KS1ppU2NR?oc=5\" target=\"_blank\"&gt;Frontier Tubular Solutions Acquires Historic Permian Basin Service Provider&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Hart Energy&lt;/font&gt;",
+      "signal": "Frontier Tubular Solutions Acquires Historic Permian Basin Service Provider - Hart Energy",
       "raw": {
         "sourceKind": "rss",
         "sourceFeed": "Texas business owners liquidity events",
         "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
         "sourceType": "liquidity_event",
         "priority": "texas",
-        "title": "Frontier Tubular Solutions Acquires Historic Permian Basin Service Provider - hartenergy.com",
+        "title": "Frontier Tubular Solutions Acquires Historic Permian Basin Service Provider - Hart Energy",
         "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRUZSM2I0STdOSUczb0Y3a3hTVmRXSVBXQ1NRRGVyOHNxMVJjeExHeG9IYlZ3WXpqWlB4T0dsM3Vjb1BISjlIQXVnYy0zak04LW00d3h1MEdsWXdVcUZyWmtRdTZmX1duMGlYTVQ0Tmo1Zk5DbXVMNHZ6dGRpQXlFN1pSVTFoOGt2MlVwcFRFTUdsOEFPZ3BEa2ZQUUk4RUUxdG1JNzJfcEhXVFoyYVBHMGdFTWQ4U01KS1ppU2NR?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxQRUZSM2I0STdOSUczb0Y3a3hTVmRXSVBXQ1NRRGVyOHNxMVJjeExHeG9IYlZ3WXpqWlB4T0dsM3Vjb1BISjlIQXVnYy0zak04LW00d3h1MEdsWXdVcUZyWmtRdTZmX1duMGlYTVQ0Tmo1Zk5DbXVMNHZ6dGRpQXlFN1pSVTFoOGt2MlVwcFRFTUdsOEFPZ3BEa2ZQUUk4RUUxdG1JNzJfcEhXVFoyYVBHMGdFTWQ4U01KS1ppU2NR?oc=5\" target=\"_blank\"&gt;Frontier Tubular Solutions Acquires Historic Permian Basin Service Provider&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;hartenergy.com&lt;/font&gt;",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxQRUZSM2I0STdOSUczb0Y3a3hTVmRXSVBXQ1NRRGVyOHNxMVJjeExHeG9IYlZ3WXpqWlB4T0dsM3Vjb1BISjlIQXVnYy0zak04LW00d3h1MEdsWXdVcUZyWmtRdTZmX1duMGlYTVQ0Tmo1Zk5DbXVMNHZ6dGRpQXlFN1pSVTFoOGt2MlVwcFRFTUdsOEFPZ3BEa2ZQUUk4RUUxdG1JNzJfcEhXVFoyYVBHMGdFTWQ4U01KS1ppU2NR?oc=5\" target=\"_blank\"&gt;Frontier Tubular Solutions Acquires Historic Permian Basin Service Provider&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Hart Energy&lt;/font&gt;",
         "sourceDate": "Fri, 31 May 2019 07:00:00 GMT",
         "raw": {
           "meta": {
@@ -599,19 +521,19 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.250Z",
+      "foundAt": "2026-09-02T16:09:32.004Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
         {
           "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Frontier%20Tubular%20Solutions",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Frontier%20Tubular%20Solutions%20Hart%20Energy",
           "confidence": "Medium",
           "source": "free search path"
         },
         {
           "type": "Google Search",
-          "value": "https://www.google.com/search?q=Frontier%20Tubular%20Solutions+contact+LinkedIn+email",
+          "value": "https://www.google.com/search?q=Frontier%20Tubular%20Solutions%20Hart%20Energy+contact+LinkedIn+email",
           "confidence": "Medium",
           "source": "free search path"
         }
@@ -622,7 +544,7 @@
       "nextAction": "Day 1: verify Frontier Tubular Solutions and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi Frontier, I came across a public signal related to Frontier Tubular Solutions Acquires Historic Permian Basin Service Provider - hartenergy.com. Basin Ventures may be relevant if direct energy ownership is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi Frontier, I came across a public signal related to Frontier Tubular Solutions Acquires Historic Permian Basin Service Provider - Hart Energy. Basin Ventures may be relevant if direct energy ownership is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
@@ -631,7 +553,6 @@
         "Basin ICP signal",
         "timely public trigger"
       ],
-      "aiError": "Groq HTTP 404",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -640,7 +561,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255228-4d57e382209a2",
+      "id": "rad-free-1788365371991-3bfc9eb4600688",
       "name": "Glenn Davis",
       "title": "physician",
       "company": "",
@@ -677,7 +598,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.228Z",
+      "foundAt": "2026-09-02T16:09:31.991Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -716,31 +637,31 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255229-a9d57c070488b",
+      "id": "rad-free-1788365371993-9700e4cc1fcf7",
       "name": "Goranson Bain Ausley",
       "title": "attorney",
       "company": "Goranson Bain Ausley Named Best Family Law",
       "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPaUJBUVhNUnB0cHlMQ19ldkdZbWxvc3BMa3d3Rkt0V1RRYXcyTGc4YWR0aDNoUlpRYml4RjlJaGJzQXE5WTZQdlQ5MFlzeDFkNmZNQlBHWEtDMXZ5MGJCYmpDVVBTaHJuTmZNdEpOb1ZfRlFHMnNuZHdpNTlKS18xaWNpTHZmMXN2UFRZQ1dzcnNtWVUwQS1mREFIam5GeTZ3TlpLRUV1SGpvbDRkcHZYRVA4eWhzbUxpVXkwUVFPNk8tN3g2aFBENUtGNUxMX0haVTFkZ0JyWUVlS2hZRGdkZ1NMR3p6d9IB6wFBVV95cUxQTm8zM1llV2ZIU1FNTHNFaUFPSFFkNWRLZGRDV1ZXWlBYTlVoblI1T1ZEZWtPQVZ5TVdSLXE5eU9XNDNBaGRtQW9sNWVlMHFkUnBhTy1ldzVCXzB4S1VESFpfLW02VEVzbnc3ODdnNjUzelppMDhmLWVVLWp6M0hoSXR1TWZpV0N2LTl2dEtyU0lWazhiMlBqQ01ZSWY4OU5yc2dEdHFPQTk2NkFkek9laHFTZ1RUZzgzRndINEd6clh5SzI5UFVJTXNHanhmeWRrT2ZOZHZoWm5aQzhZN2pMZ0ZVcHRmUmQ5ME9z?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPaUJBUVhNUnB0cHlMQ19ldkdZbWxvc3BMa3d3Rkt0V1RRYXcyTGc4YWR0aDNoUlpRYml4RjlJaGJzQXE5WTZQdlQ5MFlzeDFkNmZNQlBHWEtDMXZ5MGJCYmpDVVBTaHJuTmZNdEpOb1ZfRlFHMnNuZHdpNTlKS18xaWNpTHZmMXN2UFRZQ1dzcnNtWVUwQS1mREFIam5GeTZ3TlpLRUV1SGpvbDRkcHZYRVA4eWhzbUxpVXkwUVFPNk8tN3g2aFBENUtGNUxMX0haVTFkZ0JyWUVlS2hZRGdkZ1NMR3p6d9IB6wFBVV95cUxQTm8zM1llV2ZIU1FNTHNFaUFPSFFkNWRLZGRDV1ZXWlBYTlVoblI1T1ZEZWtPQVZ5TVdSLXE5eU9XNDNBaGRtQW9sNWVlMHFkUnBhTy1ldzVCXzB4S1VESFpfLW02VEVzbnc3ODdnNjUzelppMDhmLWVVLWp6M0hoSXR1TWZpV0N2LTl2dEtyU0lWazhiMlBqQ01ZSWY4OU5yc2dEdHFPQTk2NkFkek9laHFTZ1RUZzgzRndINEd6clh5SzI5UFVJTXNHanhmeWRrT2ZOZHZoWm5aQzhZN2pMZ0ZVcHRmUmQ5ME9z?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQlhabFlyU1h3czJkbVdJV2tyVjI4VDZpMmkyMzRyTHJQLVBJeGZFdDhzYUlHZEtmdHhTR2VrTExjcVN4cDc3SFlMaEw0bHppM0tEdDY4NkZJNnIzT0ZzZkJONHFWdEZaa25XSk12ZXJxcE9IRC1wVi1OLXYzWGVKYWl3emF2dmZ3cjdxdFoxOEhHd3JJT0dQWFYwT2loalVncWVnUW91V1dZUEpEbEFhTkVpZzJ3cnc?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQlhabFlyU1h3czJkbVdJV2tyVjI4VDZpMmkyMzRyTHJQLVBJeGZFdDhzYUlHZEtmdHhTR2VrTExjcVN4cDc3SFlMaEw0bHppM0tEdDY4NkZJNnIzT0ZzZkJONHFWdEZaa25XSk12ZXJxcE9IRC1wVi1OLXYzWGVKYWl3emF2dmZ3cjdxdFoxOEhHd3JJT0dQWFYwT2loalVncWVnUW91V1dZUEpEbEFhTkVpZzJ3cnc?oc=5",
       "source": "Free Feed Radar",
       "sourceFeed": "Texas law firm partners",
       "sourceQuery": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
-      "sourceDate": "Wed, 05 Aug 2026 10:15:06 GMT",
+      "sourceDate": "Wed, 05 Aug 2026 07:00:00 GMT",
       "sourceType": "attorney",
       "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi5gFBVV95cUxPaUJBUVhNUnB0cHlMQ19ldkdZbWxvc3BMa3d3Rkt0V1RRYXcyTGc4YWR0aDNoUlpRYml4RjlJaGJzQXE5WTZQdlQ5MFlzeDFkNmZNQlBHWEtDMXZ5MGJCYmpDVVBTaHJuTmZNdEpOb1ZfRlFHMnNuZHdpNTlKS18xaWNpTHZmMXN2UFRZQ1dzcnNtWVUwQS1mREFIam5GeTZ3TlpLRUV1SGpvbDRkcHZYRVA4eWhzbUxpVXkwUVFPNk8tN3g2aFBENUtGNUxMX0haVTFkZ0JyWUVlS2hZRGdkZ1NMR3p6d9IB6wFBVV95cUxQTm8zM1llV2ZIU1FNTHNFaUFPSFFkNWRLZGRDV1ZXWlBYTlVoblI1T1ZEZWtPQVZ5TVdSLXE5eU9XNDNBaGRtQW9sNWVlMHFkUnBhTy1ldzVCXzB4S1VESFpfLW02VEVzbnc3ODdnNjUzelppMDhmLWVVLWp6M0hoSXR1TWZpV0N2LTl2dEtyU0lWazhiMlBqQ01ZSWY4OU5yc2dEdHFPQTk2NkFkek9laHFTZ1RUZzgzRndINEd6clh5SzI5UFVJTXNHanhmeWRrT2ZOZHZoWm5aQzhZN2pMZ0ZVcHRmUmQ5ME9z?oc=5\" target=\"_blank\"&gt;Goranson Bain Ausley Named Best Family Law Firm in Texas Lawyer’s Best Of 2026&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;The Manila Times&lt;/font&gt;",
-      "signal": "Goranson Bain Ausley Named Best Family Law Firm in Texas Lawyer’s Best Of 2026 - The Manila Times",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxPQlhabFlyU1h3czJkbVdJV2tyVjI4VDZpMmkyMzRyTHJQLVBJeGZFdDhzYUlHZEtmdHhTR2VrTExjcVN4cDc3SFlMaEw0bHppM0tEdDY4NkZJNnIzT0ZzZkJONHFWdEZaa25XSk12ZXJxcE9IRC1wVi1OLXYzWGVKYWl3emF2dmZ3cjdxdFoxOEhHd3JJT0dQWFYwT2loalVncWVnUW91V1dZUEpEbEFhTkVpZzJ3cnc?oc=5\" target=\"_blank\"&gt;Goranson Bain Ausley Named Best Family Law Firm in Texas Lawyer’s Best Of 2026&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Carroll County Mirror-Democrat&lt;/font&gt;",
+      "signal": "Goranson Bain Ausley Named Best Family Law Firm in Texas Lawyer’s Best Of 2026 - Carroll County Mirror-Democrat",
       "raw": {
         "sourceKind": "rss",
         "sourceFeed": "Texas law firm partners",
         "sourceQuery": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
         "sourceType": "attorney",
         "priority": "texas",
-        "title": "Goranson Bain Ausley Named Best Family Law Firm in Texas Lawyer’s Best Of 2026 - The Manila Times",
-        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPaUJBUVhNUnB0cHlMQ19ldkdZbWxvc3BMa3d3Rkt0V1RRYXcyTGc4YWR0aDNoUlpRYml4RjlJaGJzQXE5WTZQdlQ5MFlzeDFkNmZNQlBHWEtDMXZ5MGJCYmpDVVBTaHJuTmZNdEpOb1ZfRlFHMnNuZHdpNTlKS18xaWNpTHZmMXN2UFRZQ1dzcnNtWVUwQS1mREFIam5GeTZ3TlpLRUV1SGpvbDRkcHZYRVA4eWhzbUxpVXkwUVFPNk8tN3g2aFBENUtGNUxMX0haVTFkZ0JyWUVlS2hZRGdkZ1NMR3p6d9IB6wFBVV95cUxQTm8zM1llV2ZIU1FNTHNFaUFPSFFkNWRLZGRDV1ZXWlBYTlVoblI1T1ZEZWtPQVZ5TVdSLXE5eU9XNDNBaGRtQW9sNWVlMHFkUnBhTy1ldzVCXzB4S1VESFpfLW02VEVzbnc3ODdnNjUzelppMDhmLWVVLWp6M0hoSXR1TWZpV0N2LTl2dEtyU0lWazhiMlBqQ01ZSWY4OU5yc2dEdHFPQTk2NkFkek9laHFTZ1RUZzgzRndINEd6clh5SzI5UFVJTXNHanhmeWRrT2ZOZHZoWm5aQzhZN2pMZ0ZVcHRmUmQ5ME9z?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi5gFBVV95cUxPaUJBUVhNUnB0cHlMQ19ldkdZbWxvc3BMa3d3Rkt0V1RRYXcyTGc4YWR0aDNoUlpRYml4RjlJaGJzQXE5WTZQdlQ5MFlzeDFkNmZNQlBHWEtDMXZ5MGJCYmpDVVBTaHJuTmZNdEpOb1ZfRlFHMnNuZHdpNTlKS18xaWNpTHZmMXN2UFRZQ1dzcnNtWVUwQS1mREFIam5GeTZ3TlpLRUV1SGpvbDRkcHZYRVA4eWhzbUxpVXkwUVFPNk8tN3g2aFBENUtGNUxMX0haVTFkZ0JyWUVlS2hZRGdkZ1NMR3p6d9IB6wFBVV95cUxQTm8zM1llV2ZIU1FNTHNFaUFPSFFkNWRLZGRDV1ZXWlBYTlVoblI1T1ZEZWtPQVZ5TVdSLXE5eU9XNDNBaGRtQW9sNWVlMHFkUnBhTy1ldzVCXzB4S1VESFpfLW02VEVzbnc3ODdnNjUzelppMDhmLWVVLWp6M0hoSXR1TWZpV0N2LTl2dEtyU0lWazhiMlBqQ01ZSWY4OU5yc2dEdHFPQTk2NkFkek9laHFTZ1RUZzgzRndINEd6clh5SzI5UFVJTXNHanhmeWRrT2ZOZHZoWm5aQzhZN2pMZ0ZVcHRmUmQ5ME9z?oc=5\" target=\"_blank\"&gt;Goranson Bain Ausley Named Best Family Law Firm in Texas Lawyer’s Best Of 2026&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;The Manila Times&lt;/font&gt;",
-        "sourceDate": "Wed, 05 Aug 2026 10:15:06 GMT",
+        "title": "Goranson Bain Ausley Named Best Family Law Firm in Texas Lawyer’s Best Of 2026 - Carroll County Mirror-Democrat",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQlhabFlyU1h3czJkbVdJV2tyVjI4VDZpMmkyMzRyTHJQLVBJeGZFdDhzYUlHZEtmdHhTR2VrTExjcVN4cDc3SFlMaEw0bHppM0tEdDY4NkZJNnIzT0ZzZkJONHFWdEZaa25XSk12ZXJxcE9IRC1wVi1OLXYzWGVKYWl3emF2dmZ3cjdxdFoxOEhHd3JJT0dQWFYwT2loalVncWVnUW91V1dZUEpEbEFhTkVpZzJ3cnc?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxPQlhabFlyU1h3czJkbVdJV2tyVjI4VDZpMmkyMzRyTHJQLVBJeGZFdDhzYUlHZEtmdHhTR2VrTExjcVN4cDc3SFlMaEw0bHppM0tEdDY4NkZJNnIzT0ZzZkJONHFWdEZaa25XSk12ZXJxcE9IRC1wVi1OLXYzWGVKYWl3emF2dmZ3cjdxdFoxOEhHd3JJT0dQWFYwT2loalVncWVnUW91V1dZUEpEbEFhTkVpZzJ3cnc?oc=5\" target=\"_blank\"&gt;Goranson Bain Ausley Named Best Family Law Firm in Texas Lawyer’s Best Of 2026&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Carroll County Mirror-Democrat&lt;/font&gt;",
+        "sourceDate": "Wed, 05 Aug 2026 07:00:00 GMT",
         "raw": {
           "meta": {
             "name": "Texas law firm partners",
@@ -753,7 +674,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.229Z",
+      "foundAt": "2026-09-02T16:09:31.993Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -776,7 +697,7 @@
       "nextAction": "Day 1: verify Goranson Bain Ausley and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi Goranson, I came across a public signal related to Goranson Bain Ausley Named Best Family Law Firm in Texas Lawyer’s Best Of 2026 - The Manila Times. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi Goranson, I came across a public signal related to Goranson Bain Ausley Named Best Family Law Firm in Texas Lawyer’s Best Of 2026 - Carroll County Mirror-Democrat. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
@@ -793,7 +714,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255232-d885d05a0a5268",
+      "id": "rad-free-1788365371993-eec38dad4b664",
       "name": "Goranson Bain Ausley Attorneys",
       "title": "attorney",
       "company": "Family Law",
@@ -830,7 +751,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.232Z",
+      "foundAt": "2026-09-02T16:09:31.993Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -870,7 +791,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255247-6e158fe47caed8",
+      "id": "rad-free-1788365372003-66d7ed2c7f979",
       "name": "HomeCentris Healthcare",
       "title": "liquidity_event",
       "company": "Scan Group",
@@ -907,7 +828,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.247Z",
+      "foundAt": "2026-09-02T16:09:32.003Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -947,7 +868,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255227-006c84981ee138",
+      "id": "rad-free-1788365371990-2797ef5ad89cc8",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
@@ -984,7 +905,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.227Z",
+      "foundAt": "2026-09-02T16:09:31.990Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1023,7 +944,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255249-2606d7920ba21",
+      "id": "rad-free-1788365372003-6b514cbd189c18",
       "name": "Jason Felts",
       "title": "liquidity_event",
       "company": "",
@@ -1060,7 +981,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.249Z",
+      "foundAt": "2026-09-02T16:09:32.003Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1100,83 +1021,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255239-d9a69222bb2a48",
-      "name": "Katherine Kirk",
-      "title": "cpa",
-      "company": "",
-      "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdmtHckVDd19Uekd3NkFScC1Jc3hpcFBtSU9HX2ZCQm0wSWFJOEVBWTlfTEJxMHNkVGIzMmhES0ZKRkk2dlgwTVNKZ1RWaV9OSUVvRERWbnhyb0VYdnlnVnY5X1QzU19idXZobEd0RW1LWS05aW1xVG1nZEp6TGxUYkFFZDNSNUxsN3drbEE0enFwdUZ1?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdmtHckVDd19Uekd3NkFScC1Jc3hpcFBtSU9HX2ZCQm0wSWFJOEVBWTlfTEJxMHNkVGIzMmhES0ZKRkk2dlgwTVNKZ1RWaV9OSUVvRERWbnhyb0VYdnlnVnY5X1QzU19idXZobEd0RW1LWS05aW1xVG1nZEp6TGxUYkFFZDNSNUxsN3drbEE0enFwdUZ1?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas CPA tax advisors",
-      "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
-      "sourceDate": "Thu, 20 Jul 2023 07:00:00 GMT",
-      "sourceType": "cpa",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxQdmtHckVDd19Uekd3NkFScC1Jc3hpcFBtSU9HX2ZCQm0wSWFJOEVBWTlfTEJxMHNkVGIzMmhES0ZKRkk2dlgwTVNKZ1RWaV9OSUVvRERWbnhyb0VYdnlnVnY5X1QzU19idXZobEd0RW1LWS05aW1xVG1nZEp6TGxUYkFFZDNSNUxsN3drbEE0enFwdUZ1?oc=5\" target=\"_blank\"&gt;Katherine Kirk named TXCPA Rising Star&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Odessa American&lt;/font&gt;",
-      "signal": "Katherine Kirk named TXCPA Rising Star - Odessa American",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Texas CPA tax advisors",
-        "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
-        "sourceType": "cpa",
-        "priority": "texas",
-        "title": "Katherine Kirk named TXCPA Rising Star - Odessa American",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdmtHckVDd19Uekd3NkFScC1Jc3hpcFBtSU9HX2ZCQm0wSWFJOEVBWTlfTEJxMHNkVGIzMmhES0ZKRkk2dlgwTVNKZ1RWaV9OSUVvRERWbnhyb0VYdnlnVnY5X1QzU19idXZobEd0RW1LWS05aW1xVG1nZEp6TGxUYkFFZDNSNUxsN3drbEE0enFwdUZ1?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxQdmtHckVDd19Uekd3NkFScC1Jc3hpcFBtSU9HX2ZCQm0wSWFJOEVBWTlfTEJxMHNkVGIzMmhES0ZKRkk2dlgwTVNKZ1RWaV9OSUVvRERWbnhyb0VYdnlnVnY5X1QzU19idXZobEd0RW1LWS05aW1xVG1nZEp6TGxUYkFFZDNSNUxsN3drbEE0enFwdUZ1?oc=5\" target=\"_blank\"&gt;Katherine Kirk named TXCPA Rising Star&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Odessa American&lt;/font&gt;",
-        "sourceDate": "Thu, 20 Jul 2023 07:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Texas CPA tax advisors",
-            "query": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
-            "type": "cpa",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22%20OR%20%22depletion%20allowance%22%20OR%20%22high%20net%20worth%22)%20Texas&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-09-01T16:14:15.239Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Katherine%20Kirk",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Katherine%20Kirk+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Katherine Kirk and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Katherine, I came across a public signal related to Katherine Kirk named TXCPA Rising Star - Odessa American. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal"
-      ],
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1788279255246-e44e66cc062448",
+      "id": "rad-free-1788365372002-badf4906a59d08",
       "name": "Keith Conlon Brings Local",
       "title": "liquidity_event",
       "company": "",
@@ -1213,7 +1058,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.246Z",
+      "foundAt": "2026-09-02T16:09:32.002Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1253,7 +1098,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255233-890317089f571",
+      "id": "rad-free-1788365371994-4b6940e56035a",
       "name": "Law Graduate Debany Davila",
       "title": "attorney",
       "company": "Texas A&M Law",
@@ -1290,7 +1135,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.233Z",
+      "foundAt": "2026-09-02T16:09:31.994Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1330,7 +1175,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255231-df19d2a23a2498",
+      "id": "rad-free-1788365371993-c2e2988ee3d82",
       "name": "Law School Graduate",
       "title": "attorney",
       "company": "New Texas A&M Law",
@@ -1367,7 +1212,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.231Z",
+      "foundAt": "2026-09-02T16:09:31.993Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1407,7 +1252,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255236-c3988dee998d",
+      "id": "rad-free-1788365371996-cf347d60e53248",
       "name": "Litigator Michael B. Goldberg",
       "title": "attorney",
       "company": "Litigator Michael B. Goldberg Joins PIB Law",
@@ -1444,7 +1289,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.236Z",
+      "foundAt": "2026-09-02T16:09:31.996Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1484,7 +1329,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255231-ac0c01f07ebfa",
+      "id": "rad-free-1788365371992-9e2910239daf38",
       "name": "Mark Malveaux",
       "title": "attorney",
       "company": "",
@@ -1521,7 +1366,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.231Z",
+      "foundAt": "2026-09-02T16:09:31.992Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1561,7 +1406,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255226-db8eb9ae50b5a8",
+      "id": "rad-free-1788365371989-17e639c12f9968",
       "name": "Mehmet Oz Shows Houston",
       "title": "physician",
       "company": "",
@@ -1598,7 +1443,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.226Z",
+      "foundAt": "2026-09-02T16:09:31.989Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1637,7 +1482,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255243-6aef2388fc63a",
+      "id": "rad-free-1788365372001-dadf063acead78",
       "name": "Mission Critical Group",
       "title": "liquidity_event",
       "company": "Mission Critical Group",
@@ -1674,7 +1519,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.243Z",
+      "foundAt": "2026-09-02T16:09:32.001Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1714,7 +1559,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255248-fd6279fcfc68d",
+      "id": "rad-free-1788365372003-b594e2a15df4d8",
       "name": "New CEO",
       "title": "liquidity_event",
       "company": "",
@@ -1751,7 +1596,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.248Z",
+      "foundAt": "2026-09-02T16:09:32.003Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1791,7 +1636,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255239-2207f698fd8f38",
+      "id": "rad-free-1788365371998-bbab138f1b8578",
       "name": "Practice Advisor",
       "title": "cpa",
       "company": "Texas Accounting Firm",
@@ -1828,7 +1673,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.239Z",
+      "foundAt": "2026-09-02T16:09:31.998Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1867,7 +1712,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255232-91740764eb3918",
+      "id": "rad-free-1788365371993-2f6a3cc661c6d",
       "name": "Three Cantey Hanger Attorneys",
       "title": "attorney",
       "company": "",
@@ -1904,7 +1749,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.232Z",
+      "foundAt": "2026-09-02T16:09:31.993Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1944,7 +1789,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255241-657233173ca96",
+      "id": "rad-free-1788365371999-cbd9761b23bb1",
       "name": "Trevor Roe Becomes Ownership",
       "title": "liquidity_event",
       "company": "Roe Strategic Capital",
@@ -1981,7 +1826,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.241Z",
+      "foundAt": "2026-09-02T16:09:31.999Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2021,7 +1866,84 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1788279255237-021b01ef7effe",
+      "id": "rad-free-1788365372001-a2825331f43fc8",
+      "name": "US LBM",
+      "title": "liquidity_event",
+      "company": "",
+      "location": "Texas-first",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPd2I4bGppZWxHNnk2dXFRaFhLNEhKQThTQW9jd1YzX0RLcVl0TlhWZGtNcDVCS0QyR244V2luR2FnWkhVaHdXM29wQ1BHWXJoQ1ZjbnpvdDVoNzVPbXEwaHppUDJmOEJTZmdSajhuaFliYlg4MDcwLW8zZFNIdUpPNXV5UF9zOG9Mdi00?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPd2I4bGppZWxHNnk2dXFRaFhLNEhKQThTQW9jd1YzX0RLcVl0TlhWZGtNcDVCS0QyR244V2luR2FnWkhVaHdXM29wQ1BHWXJoQ1ZjbnpvdDVoNzVPbXEwaHppUDJmOEJTZmdSajhuaFliYlg4MDcwLW8zZFNIdUpPNXV5UF9zOG9Mdi00?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Texas business owners liquidity events",
+      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
+      "sourceDate": "Thu, 10 Oct 2024 07:00:00 GMT",
+      "sourceType": "liquidity_event",
+      "priority": "texas",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxPd2I4bGppZWxHNnk2dXFRaFhLNEhKQThTQW9jd1YzX0RLcVl0TlhWZGtNcDVCS0QyR244V2luR2FnWkhVaHdXM29wQ1BHWXJoQ1ZjbnpvdDVoNzVPbXEwaHppUDJmOEJTZmdSajhuaFliYlg4MDcwLW8zZFNIdUpPNXV5UF9zOG9Mdi00?oc=5\" target=\"_blank\"&gt;US LBM Acquires Texas Tool Traders&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Roofing Contractor&lt;/font&gt;",
+      "signal": "US LBM Acquires Texas Tool Traders - Roofing Contractor",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Texas business owners liquidity events",
+        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
+        "sourceType": "liquidity_event",
+        "priority": "texas",
+        "title": "US LBM Acquires Texas Tool Traders - Roofing Contractor",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPd2I4bGppZWxHNnk2dXFRaFhLNEhKQThTQW9jd1YzX0RLcVl0TlhWZGtNcDVCS0QyR244V2luR2FnWkhVaHdXM29wQ1BHWXJoQ1ZjbnpvdDVoNzVPbXEwaHppUDJmOEJTZmdSajhuaFliYlg4MDcwLW8zZFNIdUpPNXV5UF9zOG9Mdi00?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxPd2I4bGppZWxHNnk2dXFRaFhLNEhKQThTQW9jd1YzX0RLcVl0TlhWZGtNcDVCS0QyR244V2luR2FnWkhVaHdXM29wQ1BHWXJoQ1ZjbnpvdDVoNzVPbXEwaHppUDJmOEJTZmdSajhuaFliYlg4MDcwLW8zZFNIdUpPNXV5UF9zOG9Mdi00?oc=5\" target=\"_blank\"&gt;US LBM Acquires Texas Tool Traders&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Roofing Contractor&lt;/font&gt;",
+        "sourceDate": "Thu, 10 Oct 2024 07:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Texas business owners liquidity events",
+            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
+            "type": "liquidity_event",
+            "priority": "texas",
+            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20Texas%20founder%20owner%20CEO&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-09-02T16:09:32.001Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=US%20LBM",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=US%20LBM+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify US LBM and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi US, I came across a public signal related to US LBM Acquires Texas Tool Traders - Roofing Contractor. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Texas-first priority",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1788365371997-ee7032b3281c28",
       "name": "Who Honors Kaleen Reyna",
       "title": "cpa",
       "company": "",
@@ -2058,7 +1980,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-09-01T16:14:15.237Z",
+      "foundAt": "2026-09-02T16:09:31.997Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2087,6 +2009,81 @@
         "named human contact found",
         "manual contact path available",
         "Texas-first priority",
+        "Basin ICP signal"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1788365372010-eeb9d5bd37249",
+      "name": "From South Windsor Guilty",
+      "title": "physician",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZXREdERfdVFuek93VjhBeDF6OFlIYlpvZjF5Vjl1V1R2Vk9oV2pMcTlvTHVULUZ4Z24wNlNYOW43TEZWUzREUnYzZ043TVE4MUNJZnNpcGJCaXFJb3E4RVR2TVM5eTZyS2xrV1RORlRYUVJfNTZPc3hlWkhpLVFmdldsb3otNFl2MmJ5ZUZXT0xOWTBTZm5DZWtvRlFKUUMzNGpn?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZXREdERfdVFuek93VjhBeDF6OFlIYlpvZjF5Vjl1V1R2Vk9oV2pMcTlvTHVULUZ4Z24wNlNYOW43TEZWUzREUnYzZ043TVE4MUNJZnNpcGJCaXFJb3E4RVR2TVM5eTZyS2xrV1RORlRYUVJfNTZPc3hlWkhpLVFmdldsb3otNFl2MmJ5ZUZXT0xOWTBTZm5DZWtvRlFKUUMzNGpn?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide physician practice owners",
+      "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+      "sourceDate": "Fri, 06 Sep 2024 07:00:00 GMT",
+      "sourceType": "physician",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxNZXREdERfdVFuek93VjhBeDF6OFlIYlpvZjF5Vjl1V1R2Vk9oV2pMcTlvTHVULUZ4Z24wNlNYOW43TEZWUzREUnYzZ043TVE4MUNJZnNpcGJCaXFJb3E4RVR2TVM5eTZyS2xrV1RORlRYUVJfNTZPc3hlWkhpLVFmdldsb3otNFl2MmJ5ZUZXT0xOWTBTZm5DZWtvRlFKUUMzNGpn?oc=5\" target=\"_blank\"&gt;Dental Practice Owner From South Windsor Guilty In Kickback Scheme&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Patch&lt;/font&gt;",
+      "signal": "Dental Practice Owner From South Windsor Guilty In Kickback Scheme - Patch",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide physician practice owners",
+        "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+        "sourceType": "physician",
+        "priority": "nationwide",
+        "title": "Dental Practice Owner From South Windsor Guilty In Kickback Scheme - Patch",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZXREdERfdVFuek93VjhBeDF6OFlIYlpvZjF5Vjl1V1R2Vk9oV2pMcTlvTHVULUZ4Z24wNlNYOW43TEZWUzREUnYzZ043TVE4MUNJZnNpcGJCaXFJb3E4RVR2TVM5eTZyS2xrV1RORlRYUVJfNTZPc3hlWkhpLVFmdldsb3otNFl2MmJ5ZUZXT0xOWTBTZm5DZWtvRlFKUUMzNGpn?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxNZXREdERfdVFuek93VjhBeDF6OFlIYlpvZjF5Vjl1V1R2Vk9oV2pMcTlvTHVULUZ4Z24wNlNYOW43TEZWUzREUnYzZ043TVE4MUNJZnNpcGJCaXFJb3E4RVR2TVM5eTZyS2xrV1RORlRYUVJfNTZPc3hlWkhpLVFmdldsb3otNFl2MmJ5ZUZXT0xOWTBTZm5DZWtvRlFKUUMzNGpn?oc=5\" target=\"_blank\"&gt;Dental Practice Owner From South Windsor Guilty In Kickback Scheme&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Patch&lt;/font&gt;",
+        "sourceDate": "Fri, 06 Sep 2024 07:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide physician practice owners",
+            "query": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+            "type": "physician",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-09-02T16:09:32.010Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=From%20South%20Windsor%20Guilty",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=From%20South%20Windsor%20Guilty+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify From South Windsor Guilty and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi From, I came across a public signal related to Dental Practice Owner From South Windsor Guilty In Kickback Scheme - Patch. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
         "Basin ICP signal"
       ],
       "contactable": true,
