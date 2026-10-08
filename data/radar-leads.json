@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T18:36:01.582Z",
+  "generatedAt": "2026-10-08T18:34:48.262Z",
   "engine": "Free Feed Radar + Groq Managed",
   "geoMode": "texas_first_nationwide",
   "tavilyUsed": false,
@@ -15,13 +15,13 @@
     "rawSignals": 250,
     "candidates": 250,
     "groqUsed": 12,
-    "usableLeads": 29,
-    "rejected": 221,
+    "usableLeads": 28,
+    "rejected": 222,
     "collectionErrors": 0
   },
   "leads": [
     {
-      "id": "rad-free-1791398158712-53d25fcc0dd4c8",
+      "id": "rad-free-1791484485019-d0b96abf4f92e8",
       "name": "Adam Ramji",
       "title": "attorney",
       "company": "Ramji Law Group",
@@ -58,7 +58,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.712Z",
+      "foundAt": "2026-10-08T18:34:45.019Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -99,7 +99,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158729-8baaaf8915655",
+      "id": "rad-free-1791484485035-5ffa279d4fdae8",
       "name": "Bob Frenzel",
       "title": "energy",
       "company": "",
@@ -136,7 +136,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.729Z",
+      "foundAt": "2026-10-08T18:34:45.035Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -176,7 +176,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158703-44a20349ec223",
+      "id": "rad-free-1791484485011-03e1ea961eca9",
       "name": "Charged With",
       "title": "physician",
       "company": "Colorado Dental",
@@ -213,7 +213,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.703Z",
+      "foundAt": "2026-10-08T18:34:45.011Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -253,7 +253,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158705-2750eb4833825",
+      "id": "rad-free-1791484485013-70cd16360a4fd",
       "name": "Chartwell Law",
       "title": "attorney",
       "company": "Chartwell Law",
@@ -290,7 +290,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.705Z",
+      "foundAt": "2026-10-08T18:34:45.013Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -331,7 +331,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158713-d9988a17d6e2d8",
+      "id": "rad-free-1791484485020-fc80b6498f7598",
       "name": "Doeren Mayhew",
       "title": "cpa",
       "company": "TBK CPA",
@@ -368,7 +368,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.713Z",
+      "foundAt": "2026-10-08T18:34:45.020Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -408,7 +408,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158713-772dbe08709f6",
+      "id": "rad-free-1791484485020-2e11aa111da46",
       "name": "Doeren Mayhew Acquires",
       "title": "cpa",
       "company": "Doeren Mayhew Acquires CPA",
@@ -445,7 +445,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.713Z",
+      "foundAt": "2026-10-08T18:34:45.020Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -476,7 +476,6 @@
         "Texas-first priority",
         "Basin ICP signal"
       ],
-      "aiError": "Groq HTTP 404",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -485,7 +484,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158721-c77c7262bf8fb",
+      "id": "rad-free-1791484485029-012f1b557a5318",
       "name": "Eli Lilly",
       "title": "liquidity_event",
       "company": "",
@@ -522,7 +521,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.721Z",
+      "foundAt": "2026-10-08T18:34:45.029Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -562,7 +561,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158714-4142f89a200e08",
+      "id": "rad-free-1791484485021-9e6e88ab221f88",
       "name": "Energy Tax Expert",
       "title": "cpa",
       "company": "",
@@ -599,7 +598,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.714Z",
+      "foundAt": "2026-10-08T18:34:45.021Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -638,7 +637,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158717-cfc9f0708ae318",
+      "id": "rad-free-1791484485024-da508ae220d888",
       "name": "Founders Table Restaurant Group",
       "title": "liquidity_event",
       "company": "Founders Table Restaurant Group",
@@ -675,7 +674,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.717Z",
+      "foundAt": "2026-10-08T18:34:45.024Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -715,7 +714,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158701-0930e2ea3681a8",
+      "id": "rad-free-1791484485008-024caaae5c8c3",
       "name": "Glenn Davis",
       "title": "physician",
       "company": "",
@@ -752,7 +751,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.701Z",
+      "foundAt": "2026-10-08T18:34:45.008Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -791,7 +790,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158722-41bfdfe57d9888",
+      "id": "rad-free-1791484485030-8aba9b6f0aee8",
       "name": "HomeCentris Healthcare",
       "title": "liquidity_event",
       "company": "Scan Group",
@@ -828,7 +827,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.722Z",
+      "foundAt": "2026-10-08T18:34:45.030Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -868,7 +867,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158702-75d73e93eb6708",
+      "id": "rad-free-1791484485009-13168fb79258d",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
@@ -905,7 +904,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.702Z",
+      "foundAt": "2026-10-08T18:34:45.009Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -944,7 +943,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158725-40292bd05ffae8",
+      "id": "rad-free-1791484485032-0e19e075d387d8",
       "name": "Jason Felts",
       "title": "liquidity_event",
       "company": "",
@@ -981,7 +980,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.725Z",
+      "foundAt": "2026-10-08T18:34:45.032Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1021,84 +1020,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158727-6be2d223e3975",
-      "name": "Joins Newly Purchased Texas",
-      "title": "liquidity_event",
-      "company": "",
-      "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUlVidC1fMFkyMFpwY21Bei1pdk1KNVdSdlphMnl1RGplenNZTF9sbE1FOXJob0NXcW1ial9nR1B5RU9Gb0NNWnhybEFtN2xxWUc4WmdDU0ZnOW9VRERONkdJQ1BIYmxLWlpRQWt0d05VM09EbEF4d3ZubXhuckg2dWE4cEN3MmZpSi0xTUhZTDI3X1diV2FvM2kyLU5qME1GN0tTMjd2MzlVQml6WkZVaHVmTm1aUQ?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUlVidC1fMFkyMFpwY21Bei1pdk1KNVdSdlphMnl1RGplenNZTF9sbE1FOXJob0NXcW1ial9nR1B5RU9Gb0NNWnhybEFtN2xxWUc4WmdDU0ZnOW9VRERONkdJQ1BIYmxLWlpRQWt0d05VM09EbEF4d3ZubXhuckg2dWE4cEN3MmZpSi0xTUhZTDI3X1diV2FvM2kyLU5qME1GN0tTMjd2MzlVQml6WkZVaHVmTm1aUQ?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas business owners liquidity events",
-      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-      "sourceDate": "Wed, 17 Aug 2016 07:00:00 GMT",
-      "sourceType": "liquidity_event",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxNUlVidC1fMFkyMFpwY21Bei1pdk1KNVdSdlphMnl1RGplenNZTF9sbE1FOXJob0NXcW1ial9nR1B5RU9Gb0NNWnhybEFtN2xxWUc4WmdDU0ZnOW9VRERONkdJQ1BIYmxLWlpRQWt0d05VM09EbEF4d3ZubXhuckg2dWE4cEN3MmZpSi0xTUhZTDI3X1diV2FvM2kyLU5qME1GN0tTMjd2MzlVQml6WkZVaHVmTm1aUQ?oc=5\" target=\"_blank\"&gt;Former Gold's Gym President Joins Newly Purchased Texas Family Fitness&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;American Spa&lt;/font&gt;",
-      "signal": "Former Gold's Gym President Joins Newly Purchased Texas Family Fitness - American Spa",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Texas business owners liquidity events",
-        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-        "sourceType": "liquidity_event",
-        "priority": "texas",
-        "title": "Former Gold's Gym President Joins Newly Purchased Texas Family Fitness - American Spa",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUlVidC1fMFkyMFpwY21Bei1pdk1KNVdSdlphMnl1RGplenNZTF9sbE1FOXJob0NXcW1ial9nR1B5RU9Gb0NNWnhybEFtN2xxWUc4WmdDU0ZnOW9VRERONkdJQ1BIYmxLWlpRQWt0d05VM09EbEF4d3ZubXhuckg2dWE4cEN3MmZpSi0xTUhZTDI3X1diV2FvM2kyLU5qME1GN0tTMjd2MzlVQml6WkZVaHVmTm1aUQ?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxNUlVidC1fMFkyMFpwY21Bei1pdk1KNVdSdlphMnl1RGplenNZTF9sbE1FOXJob0NXcW1ial9nR1B5RU9Gb0NNWnhybEFtN2xxWUc4WmdDU0ZnOW9VRERONkdJQ1BIYmxLWlpRQWt0d05VM09EbEF4d3ZubXhuckg2dWE4cEN3MmZpSi0xTUhZTDI3X1diV2FvM2kyLU5qME1GN0tTMjd2MzlVQml6WkZVaHVmTm1aUQ?oc=5\" target=\"_blank\"&gt;Former Gold's Gym President Joins Newly Purchased Texas Family Fitness&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;American Spa&lt;/font&gt;",
-        "sourceDate": "Wed, 17 Aug 2016 07:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Texas business owners liquidity events",
-            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-            "type": "liquidity_event",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20Texas%20founder%20owner%20CEO&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-10-07T18:35:58.727Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Joins%20Newly%20Purchased%20Texas",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Joins%20Newly%20Purchased%20Texas+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Joins Newly Purchased Texas and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Joins, I came across a public signal related to Former Gold's Gym President Joins Newly Purchased Texas Family Fitness - American Spa. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1791398158725-2c2e3b7318581",
+      "id": "rad-free-1791484485032-2c4e29e2370298",
       "name": "Keith Conlon Brings Local",
       "title": "liquidity_event",
       "company": "",
@@ -1135,7 +1057,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.725Z",
+      "foundAt": "2026-10-08T18:34:45.032Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1175,7 +1097,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158707-e131b8d8d7f42",
+      "id": "rad-free-1791484485014-12397b7fb84ea8",
       "name": "Laura Gibson",
       "title": "attorney",
       "company": "",
@@ -1212,7 +1134,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.707Z",
+      "foundAt": "2026-10-08T18:34:45.014Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1252,7 +1174,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158711-d4f00472c43f",
+      "id": "rad-free-1791484485018-daa9bc5c570298",
       "name": "Law Graduate Debany Davila",
       "title": "attorney",
       "company": "Texas A&M Law",
@@ -1289,7 +1211,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.711Z",
+      "foundAt": "2026-10-08T18:34:45.018Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1329,7 +1251,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158709-b30258229c3ad8",
+      "id": "rad-free-1791484485017-71154f884e4cf8",
       "name": "Law School Graduate",
       "title": "attorney",
       "company": "New Texas A&M Law",
@@ -1366,7 +1288,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.709Z",
+      "foundAt": "2026-10-08T18:34:45.017Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1406,7 +1328,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158713-c7a72f11402ee8",
+      "id": "rad-free-1791484485021-f8a308878c07e8",
       "name": "LibertyStream Adds Veteran",
       "title": "cpa",
       "company": "LibertyStream Adds Veteran CPA",
@@ -1443,7 +1365,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.713Z",
+      "foundAt": "2026-10-08T18:34:45.021Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1482,7 +1404,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158712-b7c44f23b04b2",
+      "id": "rad-free-1791484485019-cbdf99ee69b1e8",
       "name": "Litigator Michael B. Goldberg",
       "title": "attorney",
       "company": "Litigator Michael B. Goldberg Joins PIB Law",
@@ -1519,7 +1441,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.712Z",
+      "foundAt": "2026-10-08T18:34:45.019Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1559,7 +1481,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158708-65c1434e3218d8",
+      "id": "rad-free-1791484485015-af74fc02493278",
       "name": "Mark Malveaux",
       "title": "attorney",
       "company": "",
@@ -1596,7 +1518,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.708Z",
+      "foundAt": "2026-10-08T18:34:45.015Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1636,7 +1558,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158703-4bec521abbc25",
+      "id": "rad-free-1791484485010-a6883e2a196e1",
       "name": "Mehmet Oz Shows Houston",
       "title": "physician",
       "company": "",
@@ -1673,7 +1595,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.703Z",
+      "foundAt": "2026-10-08T18:34:45.010Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1712,7 +1634,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158719-ef78812ec9c66",
+      "id": "rad-free-1791484485027-c52b746214d72",
       "name": "Mission Critical Group",
       "title": "liquidity_event",
       "company": "Mission Critical Group",
@@ -1749,7 +1671,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.719Z",
+      "foundAt": "2026-10-08T18:34:45.027Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1789,7 +1711,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158723-95b3c141f8f0f8",
+      "id": "rad-free-1791484485031-e5dd068b533688",
       "name": "New CEO",
       "title": "liquidity_event",
       "company": "",
@@ -1826,7 +1748,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.723Z",
+      "foundAt": "2026-10-08T18:34:45.031Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1866,7 +1788,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158715-17906dfeafcb5",
+      "id": "rad-free-1791484485022-fa950afdb10c88",
       "name": "Practice Advisor",
       "title": "cpa",
       "company": "Texas Accounting Firm",
@@ -1903,7 +1825,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.715Z",
+      "foundAt": "2026-10-08T18:34:45.022Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1942,7 +1864,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158704-ea8dd6b937bdf8",
+      "id": "rad-free-1791484485011-defd9de72c15b",
       "name": "Stewart Law Group",
       "title": "attorney",
       "company": "Stewart Law Group",
@@ -1979,7 +1901,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.704Z",
+      "foundAt": "2026-10-08T18:34:45.011Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2019,56 +1941,56 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158732-4c9ab0bf32c538",
-      "name": "Timothy J. Cutt",
-      "title": "energy",
-      "company": "QEP Resources",
+      "id": "rad-free-1791484485025-467537d441c6d8",
+      "name": "Trevor Roe Becomes Ownership",
+      "title": "liquidity_event",
+      "company": "Roe Strategic Capital",
       "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYTdmN0d4RmFVNkxURVJwUmp2ajZYY3dYVXpNck1rdzVMZTVCcjl3U3hpamlncWdCWWZ2Qkt1bTNTQTUtUkdmLXk3RFdOeVJXdW5UNlNwV3NqSWlrUC1QT2tJcVNOOV85d1pLV1NNLU90elVXQlllbHMydkNTVXM4UHRudGFHWVptX1N5RGYtOW51STNzbTQ2dmxqbGd0X2FwQUdiVVltOGtaeFFSYmpB?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYTdmN0d4RmFVNkxURVJwUmp2ajZYY3dYVXpNck1rdzVMZTVCcjl3U3hpamlncWdCWWZ2Qkt1bTNTQTUtUkdmLXk3RFdOeVJXdW5UNlNwV3NqSWlrUC1QT2tJcVNOOV85d1pLV1NNLU90elVXQlllbHMydkNTVXM4UHRudGFHWVptX1N5RGYtOW51STNzbTQ2dmxqbGd0X2FwQUdiVVltOGtaeFFSYmpB?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQMlpqcURyM2FLZ3d4NmtNNHhMZWhCcW1fVVhwdFpqLVJESGJNMHR6NTR3NncxU01MSWE0d1NYZm01ZGQyd0ItTWc1aFVyZDF0eXVNYnFDNm1NQVRNOC1tejZCamw0WmljM3ZJOFZaSTJIS2xvN0dJUHBPM1lOakgtak5LaU94b3ljUC1TWUFnMS1CRU1XeXpyb0laRWpYLTkwOXZKN0dGMXpjVkNGUUthMmFyTGNtZlU1N2FIcUM2ZXFJdVRmY3F5Vlh0dnlNRE1JYUpzeEhPSjdoUkU?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQMlpqcURyM2FLZ3d4NmtNNHhMZWhCcW1fVVhwdFpqLVJESGJNMHR6NTR3NncxU01MSWE0d1NYZm01ZGQyd0ItTWc1aFVyZDF0eXVNYnFDNm1NQVRNOC1tejZCamw0WmljM3ZJOFZaSTJIS2xvN0dJUHBPM1lOakgtak5LaU94b3ljUC1TWUFnMS1CRU1XeXpyb0laRWpYLTkwOXZKN0dGMXpjVkNGUUthMmFyTGNtZlU1N2FIcUM2ZXFJdVRmY3F5Vlh0dnlNRE1JYUpzeEhPSjdoUkU?oc=5",
       "source": "Free Feed Radar",
-      "sourceFeed": "Energy-state oil and gas executives",
-      "sourceQuery": "(\"oil and gas\" OR \"mineral rights\" OR \"royalty owner\" OR \"energy operator\") (Texas OR Oklahoma OR Louisiana OR New Mexico OR Colorado OR Wyoming OR North Dakota) founder CEO owner president",
-      "sourceDate": "Fri, 11 Sep 2020 22:11:15 GMT",
-      "sourceType": "energy",
-      "priority": "energy_states",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxNYTdmN0d4RmFVNkxURVJwUmp2ajZYY3dYVXpNck1rdzVMZTVCcjl3U3hpamlncWdCWWZ2Qkt1bTNTQTUtUkdmLXk3RFdOeVJXdW5UNlNwV3NqSWlrUC1QT2tJcVNOOV85d1pLV1NNLU90elVXQlllbHMydkNTVXM4UHRudGFHWVptX1N5RGYtOW51STNzbTQ2dmxqbGd0X2FwQUdiVVltOGtaeFFSYmpB?oc=5\" target=\"_blank\"&gt;Charles B. Stanley to Retire from QEP Resources; Timothy J. Cutt Named President and CEO&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Hunt Scanlon Media&lt;/font&gt;",
-      "signal": "Charles B. Stanley to Retire from QEP Resources; Timothy J. Cutt Named President and CEO - Hunt Scanlon Media",
+      "sourceFeed": "Texas business owners liquidity events",
+      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
+      "sourceDate": "Tue, 03 Mar 2026 08:00:00 GMT",
+      "sourceType": "liquidity_event",
+      "priority": "texas",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi2wFBVV95cUxQMlpqcURyM2FLZ3d4NmtNNHhMZWhCcW1fVVhwdFpqLVJESGJNMHR6NTR3NncxU01MSWE0d1NYZm01ZGQyd0ItTWc1aFVyZDF0eXVNYnFDNm1NQVRNOC1tejZCamw0WmljM3ZJOFZaSTJIS2xvN0dJUHBPM1lOakgtak5LaU94b3ljUC1TWUFnMS1CRU1XeXpyb0laRWpYLTkwOXZKN0dGMXpjVkNGUUthMmFyTGNtZlU1N2FIcUM2ZXFJdVRmY3F5Vlh0dnlNRE1JYUpzeEhPSjdoUkU?oc=5\" target=\"_blank\"&gt;Shadow Systems Acquired by Roe Strategic Capital; CEO Trevor Roe Becomes Ownership Partner&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;24-7PressRelease.com&lt;/font&gt;",
+      "signal": "Shadow Systems Acquired by Roe Strategic Capital; CEO Trevor Roe Becomes Ownership Partner - 24-7PressRelease.com",
       "raw": {
         "sourceKind": "rss",
-        "sourceFeed": "Energy-state oil and gas executives",
-        "sourceQuery": "(\"oil and gas\" OR \"mineral rights\" OR \"royalty owner\" OR \"energy operator\") (Texas OR Oklahoma OR Louisiana OR New Mexico OR Colorado OR Wyoming OR North Dakota) founder CEO owner president",
-        "sourceType": "energy",
-        "priority": "energy_states",
-        "title": "Charles B. Stanley to Retire from QEP Resources; Timothy J. Cutt Named President and CEO - Hunt Scanlon Media",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYTdmN0d4RmFVNkxURVJwUmp2ajZYY3dYVXpNck1rdzVMZTVCcjl3U3hpamlncWdCWWZ2Qkt1bTNTQTUtUkdmLXk3RFdOeVJXdW5UNlNwV3NqSWlrUC1QT2tJcVNOOV85d1pLV1NNLU90elVXQlllbHMydkNTVXM4UHRudGFHWVptX1N5RGYtOW51STNzbTQ2dmxqbGd0X2FwQUdiVVltOGtaeFFSYmpB?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxNYTdmN0d4RmFVNkxURVJwUmp2ajZYY3dYVXpNck1rdzVMZTVCcjl3U3hpamlncWdCWWZ2Qkt1bTNTQTUtUkdmLXk3RFdOeVJXdW5UNlNwV3NqSWlrUC1QT2tJcVNOOV85d1pLV1NNLU90elVXQlllbHMydkNTVXM4UHRudGFHWVptX1N5RGYtOW51STNzbTQ2dmxqbGd0X2FwQUdiVVltOGtaeFFSYmpB?oc=5\" target=\"_blank\"&gt;Charles B. Stanley to Retire from QEP Resources; Timothy J. Cutt Named President and CEO&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Hunt Scanlon Media&lt;/font&gt;",
-        "sourceDate": "Fri, 11 Sep 2020 22:11:15 GMT",
+        "sourceFeed": "Texas business owners liquidity events",
+        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
+        "sourceType": "liquidity_event",
+        "priority": "texas",
+        "title": "Shadow Systems Acquired by Roe Strategic Capital; CEO Trevor Roe Becomes Ownership Partner - 24-7PressRelease.com",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQMlpqcURyM2FLZ3d4NmtNNHhMZWhCcW1fVVhwdFpqLVJESGJNMHR6NTR3NncxU01MSWE0d1NYZm01ZGQyd0ItTWc1aFVyZDF0eXVNYnFDNm1NQVRNOC1tejZCamw0WmljM3ZJOFZaSTJIS2xvN0dJUHBPM1lOakgtak5LaU94b3ljUC1TWUFnMS1CRU1XeXpyb0laRWpYLTkwOXZKN0dGMXpjVkNGUUthMmFyTGNtZlU1N2FIcUM2ZXFJdVRmY3F5Vlh0dnlNRE1JYUpzeEhPSjdoUkU?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi2wFBVV95cUxQMlpqcURyM2FLZ3d4NmtNNHhMZWhCcW1fVVhwdFpqLVJESGJNMHR6NTR3NncxU01MSWE0d1NYZm01ZGQyd0ItTWc1aFVyZDF0eXVNYnFDNm1NQVRNOC1tejZCamw0WmljM3ZJOFZaSTJIS2xvN0dJUHBPM1lOakgtak5LaU94b3ljUC1TWUFnMS1CRU1XeXpyb0laRWpYLTkwOXZKN0dGMXpjVkNGUUthMmFyTGNtZlU1N2FIcUM2ZXFJdVRmY3F5Vlh0dnlNRE1JYUpzeEhPSjdoUkU?oc=5\" target=\"_blank\"&gt;Shadow Systems Acquired by Roe Strategic Capital; CEO Trevor Roe Becomes Ownership Partner&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;24-7PressRelease.com&lt;/font&gt;",
+        "sourceDate": "Tue, 03 Mar 2026 08:00:00 GMT",
         "raw": {
           "meta": {
-            "name": "Energy-state oil and gas executives",
-            "query": "(\"oil and gas\" OR \"mineral rights\" OR \"royalty owner\" OR \"energy operator\") (Texas OR Oklahoma OR Louisiana OR New Mexico OR Colorado OR Wyoming OR North Dakota) founder CEO owner president",
-            "type": "energy",
-            "priority": "energy_states",
-            "url": "https://news.google.com/rss/search?q=(%22oil%20and%20gas%22%20OR%20%22mineral%20rights%22%20OR%20%22royalty%20owner%22%20OR%20%22energy%20operator%22)%20(Texas%20OR%20Oklahoma%20OR%20Louisiana%20OR%20New%20Mexico%20OR%20Colorado%20OR%20Wyoming%20OR%20North%20Dakota)%20founder%20CEO%20owner%20president&hl=en-US&gl=US&ceid=US:en",
+            "name": "Texas business owners liquidity events",
+            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
+            "type": "liquidity_event",
+            "priority": "texas",
+            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20Texas%20founder%20owner%20CEO&hl=en-US&gl=US&ceid=US:en",
             "sourceKind": "google_news_rss"
           }
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.732Z",
+      "foundAt": "2026-10-08T18:34:45.025Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
         {
           "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Timothy%20J.%20Cutt%20QEP%20Resources",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Trevor%20Roe%20Becomes%20Ownership%20Roe%20Strategic%20Capital",
           "confidence": "Medium",
           "source": "free search path"
         },
         {
           "type": "Google Search",
-          "value": "https://www.google.com/search?q=Timothy%20J.%20Cutt%20QEP%20Resources+contact+LinkedIn+email",
+          "value": "https://www.google.com/search?q=Trevor%20Roe%20Becomes%20Ownership%20Roe%20Strategic%20Capital+contact+LinkedIn+email",
           "confidence": "Medium",
           "source": "free search path"
         }
@@ -2076,16 +1998,17 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Timothy J. Cutt and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nextAction": "Day 1: verify Trevor Roe Becomes Ownership and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi Timothy, I came across a public signal related to Charles B. Stanley to Retire from QEP Resources; Timothy J. Cutt Named President and CEO - Hunt Scanlon Media. Basin Ventures may be relevant if direct energy ownership is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi Trevor, I came across a public signal related to Shadow Systems Acquired by Roe Strategic Capital; CEO Trevor Roe Becomes Ownership Partner - 24-7PressRelease.com. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
         "manual contact path available",
         "Texas-first priority",
-        "Basin ICP signal"
+        "Basin ICP signal",
+        "timely public trigger"
       ],
       "contactable": true,
       "usaBased": true,
@@ -2095,7 +2018,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158730-38beb0f99405f8",
+      "id": "rad-free-1791484485038-9e7c6f02e44638",
       "name": "Trump Called CEO For",
       "title": "energy",
       "company": "",
@@ -2132,7 +2055,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.730Z",
+      "foundAt": "2026-10-08T18:34:45.038Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2171,7 +2094,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791398158713-90d135b51f288",
+      "id": "rad-free-1791484485020-bb0c429c58964",
       "name": "Who Honors Kaleen Reyna",
       "title": "cpa",
       "company": "",
@@ -2208,7 +2131,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-07T18:35:58.713Z",
+      "foundAt": "2026-10-08T18:34:45.020Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
