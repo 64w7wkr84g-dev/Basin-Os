@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T18:06:19.947Z",
+  "generatedAt": "2026-10-12T21:01:47.296Z",
   "engine": "Free Feed Radar + Groq Managed",
   "geoMode": "texas_first_nationwide",
   "tavilyUsed": false,
@@ -15,91 +15,13 @@
     "rawSignals": 250,
     "candidates": 250,
     "groqUsed": 12,
-    "usableLeads": 27,
-    "rejected": 223,
+    "usableLeads": 24,
+    "rejected": 226,
     "collectionErrors": 0
   },
   "leads": [
     {
-      "id": "rad-free-1791569176886-e995a5ec7e5788",
-      "name": "Adam Ramji",
-      "title": "attorney",
-      "company": "Ramji Law Group",
-      "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdVBwQmtUYWtJZWh3ZHk5X0cwc3FTWHJ1QUwxNkJRN3JCUy1Ib2x0TE1XU25YZHVib3gyaTh3czdkTHNOY3VuS2xCN1lXcmVSWnFUNlVMSzRleU9iOXZwVldvWkJ5aVByUUlGRHJkRFJxdXNSYWlOTmhNVjEzQU12NHptN3BPeEE?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdVBwQmtUYWtJZWh3ZHk5X0cwc3FTWHJ1QUwxNkJRN3JCUy1Ib2x0TE1XU25YZHVib3gyaTh3czdkTHNOY3VuS2xCN1lXcmVSWnFUNlVMSzRleU9iOXZwVldvWkJ5aVByUUlGRHJkRFJxdXNSYWlOTmhNVjEzQU12NHptN3BPeEE?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas law firm partners",
-      "sourceQuery": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
-      "sourceDate": "Mon, 10 Apr 2017 07:00:00 GMT",
-      "sourceType": "attorney",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxNdVBwQmtUYWtJZWh3ZHk5X0cwc3FTWHJ1QUwxNkJRN3JCUy1Ib2x0TE1XU25YZHVib3gyaTh3czdkTHNOY3VuS2xCN1lXcmVSWnFUNlVMSzRleU9iOXZwVldvWkJ5aVByUUlGRHJkRFJxdXNSYWlOTmhNVjEzQU12NHptN3BPeEE?oc=5\" target=\"_blank\"&gt;Ramji Law Group Announced by Managing Partner Adam Ramji&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Yahoo Finance&lt;/font&gt;",
-      "signal": "Ramji Law Group Announced by Managing Partner Adam Ramji - Yahoo Finance",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Texas law firm partners",
-        "sourceQuery": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
-        "sourceType": "attorney",
-        "priority": "texas",
-        "title": "Ramji Law Group Announced by Managing Partner Adam Ramji - Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdVBwQmtUYWtJZWh3ZHk5X0cwc3FTWHJ1QUwxNkJRN3JCUy1Ib2x0TE1XU25YZHVib3gyaTh3czdkTHNOY3VuS2xCN1lXcmVSWnFUNlVMSzRleU9iOXZwVldvWkJ5aVByUUlGRHJkRFJxdXNSYWlOTmhNVjEzQU12NHptN3BPeEE?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxNdVBwQmtUYWtJZWh3ZHk5X0cwc3FTWHJ1QUwxNkJRN3JCUy1Ib2x0TE1XU25YZHVib3gyaTh3czdkTHNOY3VuS2xCN1lXcmVSWnFUNlVMSzRleU9iOXZwVldvWkJ5aVByUUlGRHJkRFJxdXNSYWlOTmhNVjEzQU12NHptN3BPeEE?oc=5\" target=\"_blank\"&gt;Ramji Law Group Announced by Managing Partner Adam Ramji&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Yahoo Finance&lt;/font&gt;",
-        "sourceDate": "Mon, 10 Apr 2017 07:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Texas law firm partners",
-            "query": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
-            "type": "attorney",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22named%20partner%22%20OR%20%22managing%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20Texas&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-10-09T18:06:16.886Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Adam%20Ramji%20Ramji%20Law%20Group",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Adam%20Ramji%20Ramji%20Law%20Group+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Adam Ramji and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Adam, I came across a public signal related to Ramji Law Group Announced by Managing Partner Adam Ramji - Yahoo Finance. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "aiError": "Groq HTTP 404",
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1791569176903-73692aeda0a95",
+      "id": "rad-free-1791838904320-ae133502bfde78",
       "name": "Bob Frenzel",
       "title": "energy",
       "company": "",
@@ -136,7 +58,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.903Z",
+      "foundAt": "2026-10-12T21:01:44.320Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -176,7 +98,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176878-f9f744aa9703c8",
+      "id": "rad-free-1791838904302-aef772db5a3fa8",
       "name": "Charged With",
       "title": "physician",
       "company": "Colorado Dental",
@@ -213,7 +135,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.878Z",
+      "foundAt": "2026-10-12T21:01:44.302Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -253,7 +175,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176880-a532e377773d18",
+      "id": "rad-free-1791838904305-6173d87c527a1",
       "name": "Chartwell Law",
       "title": "attorney",
       "company": "Chartwell Law",
@@ -290,7 +212,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.880Z",
+      "foundAt": "2026-10-12T21:01:44.305Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -331,7 +253,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176888-b381ea18e05d7",
+      "id": "rad-free-1791838904309-179522d29b56",
       "name": "Doeren Mayhew",
       "title": "cpa",
       "company": "TBK CPA",
@@ -368,7 +290,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.888Z",
+      "foundAt": "2026-10-12T21:01:44.309Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -408,7 +330,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176887-367ef4bc460d18",
+      "id": "rad-free-1791838904309-47c7e30cb15f28",
       "name": "Doeren Mayhew Acquires",
       "title": "cpa",
       "company": "Doeren Mayhew Acquires CPA",
@@ -445,7 +367,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.887Z",
+      "foundAt": "2026-10-12T21:01:44.309Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -476,6 +398,7 @@
         "Texas-first priority",
         "Basin ICP signal"
       ],
+      "aiError": "Groq HTTP 404",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -484,7 +407,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176889-ebfea811c661c",
+      "id": "rad-free-1791838904310-32c7f549e61cf8",
       "name": "Energy Tax Expert",
       "title": "cpa",
       "company": "",
@@ -521,7 +444,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.889Z",
+      "foundAt": "2026-10-12T21:01:44.310Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -560,7 +483,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176891-9623e2c9dc73d8",
+      "id": "rad-free-1791838904312-e67e25a9898418",
       "name": "Founders Table Restaurant Group",
       "title": "liquidity_event",
       "company": "Founders Table Restaurant Group",
@@ -597,7 +520,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.891Z",
+      "foundAt": "2026-10-12T21:01:44.312Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -637,7 +560,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176901-74fb05136c8dd8",
+      "id": "rad-free-1791838904319-a2363e32485048",
       "name": "Frontier Tubular Solutions",
       "title": "liquidity_event",
       "company": "Hart Energy",
@@ -674,7 +597,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.901Z",
+      "foundAt": "2026-10-12T21:01:44.319Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -714,7 +637,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176875-bac82b396d3528",
+      "id": "rad-free-1791838904301-551adcf269aa18",
       "name": "Glenn Davis",
       "title": "physician",
       "company": "",
@@ -751,7 +674,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.875Z",
+      "foundAt": "2026-10-12T21:01:44.301Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -790,7 +713,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176897-f019395f678f8",
+      "id": "rad-free-1791838904316-78c4ec4bc953d8",
       "name": "HomeCentris Healthcare",
       "title": "liquidity_event",
       "company": "Scan Group",
@@ -827,7 +750,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.897Z",
+      "foundAt": "2026-10-12T21:01:44.316Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -867,7 +790,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176877-db186f8ba66e08",
+      "id": "rad-free-1791838904302-112d4859cbd4d",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
@@ -904,7 +827,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.877Z",
+      "foundAt": "2026-10-12T21:01:44.302Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -943,7 +866,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176899-c4f8b0aedf82c",
+      "id": "rad-free-1791838904318-cf159da07dbf38",
       "name": "Jason Felts",
       "title": "liquidity_event",
       "company": "",
@@ -980,7 +903,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.899Z",
+      "foundAt": "2026-10-12T21:01:44.318Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1020,7 +943,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176900-15c9595374f798",
+      "id": "rad-free-1791838904318-aa016e6e1a1c9",
       "name": "Keith Conlon Brings Local",
       "title": "liquidity_event",
       "company": "",
@@ -1057,7 +980,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.900Z",
+      "foundAt": "2026-10-12T21:01:44.318Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1097,161 +1020,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176882-73e47a1c0bca68",
-      "name": "Laura Gibson",
-      "title": "attorney",
-      "company": "",
-      "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0w2TDk2SXFMOVBqU29oU3pEazFOQ1FPZ21LQThQR1ZxZU5Ycks3Q0d2bEVmOEdRZ3ZkUWVUTGYwU254clVSVjdOQ1U3YXhJU1Uzb2NFU0twbU9PWUJKMjdnMHhWU3VHWVc2WjJlOGNUVHVtRFBRa0JiMURSdWtQTzNRQlJ4WGxua2cwZ3dvaHFNWFJwSUYyOWU4SWI4SFh6QndDVnJtU0pUQQ?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0w2TDk2SXFMOVBqU29oU3pEazFOQ1FPZ21LQThQR1ZxZU5Ycks3Q0d2bEVmOEdRZ3ZkUWVUTGYwU254clVSVjdOQ1U3YXhJU1Uzb2NFU0twbU9PWUJKMjdnMHhWU3VHWVc2WjJlOGNUVHVtRFBRa0JiMURSdWtQTzNRQlJ4WGxua2cwZ3dvaHFNWFJwSUYyOWU4SWI4SFh6QndDVnJtU0pUQQ?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas law firm partners",
-      "sourceQuery": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
-      "sourceDate": "Wed, 02 Mar 2022 08:00:00 GMT",
-      "sourceType": "attorney",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0w2TDk2SXFMOVBqU29oU3pEazFOQ1FPZ21LQThQR1ZxZU5Ycks3Q0d2bEVmOEdRZ3ZkUWVUTGYwU254clVSVjdOQ1U3YXhJU1Uzb2NFU0twbU9PWUJKMjdnMHhWU3VHWVc2WjJlOGNUVHVtRFBRa0JiMURSdWtQTzNRQlJ4WGxua2cwZ3dvaHFNWFJwSUYyOWU4SWI4SFh6QndDVnJtU0pUQQ?oc=5\" target=\"_blank\"&gt;Laura Gibson named Dentons’ Houston office managing partner&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Dentons&lt;/font&gt;",
-      "signal": "Laura Gibson named Dentons’ Houston office managing partner - Dentons",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Texas law firm partners",
-        "sourceQuery": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
-        "sourceType": "attorney",
-        "priority": "texas",
-        "title": "Laura Gibson named Dentons’ Houston office managing partner - Dentons",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0w2TDk2SXFMOVBqU29oU3pEazFOQ1FPZ21LQThQR1ZxZU5Ycks3Q0d2bEVmOEdRZ3ZkUWVUTGYwU254clVSVjdOQ1U3YXhJU1Uzb2NFU0twbU9PWUJKMjdnMHhWU3VHWVc2WjJlOGNUVHVtRFBRa0JiMURSdWtQTzNRQlJ4WGxua2cwZ3dvaHFNWFJwSUYyOWU4SWI4SFh6QndDVnJtU0pUQQ?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0w2TDk2SXFMOVBqU29oU3pEazFOQ1FPZ21LQThQR1ZxZU5Ycks3Q0d2bEVmOEdRZ3ZkUWVUTGYwU254clVSVjdOQ1U3YXhJU1Uzb2NFU0twbU9PWUJKMjdnMHhWU3VHWVc2WjJlOGNUVHVtRFBRa0JiMURSdWtQTzNRQlJ4WGxua2cwZ3dvaHFNWFJwSUYyOWU4SWI4SFh6QndDVnJtU0pUQQ?oc=5\" target=\"_blank\"&gt;Laura Gibson named Dentons’ Houston office managing partner&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Dentons&lt;/font&gt;",
-        "sourceDate": "Wed, 02 Mar 2022 08:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Texas law firm partners",
-            "query": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
-            "type": "attorney",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22named%20partner%22%20OR%20%22managing%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20Texas&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-10-09T18:06:16.882Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Laura%20Gibson",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Laura%20Gibson+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Laura Gibson and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Laura, I came across a public signal related to Laura Gibson named Dentons’ Houston office managing partner - Dentons. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1791569176886-a55f05b6056b68",
-      "name": "Law Graduate Debany Davila",
-      "title": "attorney",
-      "company": "Texas A&M Law",
-      "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUHowNl80RUU5Z2lTR2xiVWllSnZhU3VtMW1NNGYzQjJKc0xNR0R3WFFxRGpMQ29Mc3N6WVVya0FCeEhPa1RPXzNfSjQyZWRFcDJMdmZZRXNOaUkweGkzWWc5ZmpSSGlsajFNckNibTFWSGhBNjFxNWZKNlh6cmNNblRJcW9zRklsZnp0RG9PVjVMU00zZHc?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUHowNl80RUU5Z2lTR2xiVWllSnZhU3VtMW1NNGYzQjJKc0xNR0R3WFFxRGpMQ29Mc3N6WVVya0FCeEhPa1RPXzNfSjQyZWRFcDJMdmZZRXNOaUkweGkzWWc5ZmpSSGlsajFNckNibTFWSGhBNjFxNWZKNlh6cmNNblRJcW9zRklsZnp0RG9PVjVMU00zZHc?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas law firm partners",
-      "sourceQuery": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
-      "sourceDate": "Wed, 07 Sep 2022 07:00:00 GMT",
-      "sourceType": "attorney",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxNUHowNl80RUU5Z2lTR2xiVWllSnZhU3VtMW1NNGYzQjJKc0xNR0R3WFFxRGpMQ29Mc3N6WVVya0FCeEhPa1RPXzNfSjQyZWRFcDJMdmZZRXNOaUkweGkzWWc5ZmpSSGlsajFNckNibTFWSGhBNjFxNWZKNlh6cmNNblRJcW9zRklsZnp0RG9PVjVMU00zZHc?oc=5\" target=\"_blank\"&gt;Texas A&M Law Graduate Debany Davila Joins Fort Worth-Based Pham Harrison&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Fort Worth Inc.&lt;/font&gt;",
-      "signal": "Texas A&M Law Graduate Debany Davila Joins Fort Worth-Based Pham Harrison - Fort Worth Inc.",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Texas law firm partners",
-        "sourceQuery": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
-        "sourceType": "attorney",
-        "priority": "texas",
-        "title": "Texas A&M Law Graduate Debany Davila Joins Fort Worth-Based Pham Harrison - Fort Worth Inc.",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUHowNl80RUU5Z2lTR2xiVWllSnZhU3VtMW1NNGYzQjJKc0xNR0R3WFFxRGpMQ29Mc3N6WVVya0FCeEhPa1RPXzNfSjQyZWRFcDJMdmZZRXNOaUkweGkzWWc5ZmpSSGlsajFNckNibTFWSGhBNjFxNWZKNlh6cmNNblRJcW9zRklsZnp0RG9PVjVMU00zZHc?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxNUHowNl80RUU5Z2lTR2xiVWllSnZhU3VtMW1NNGYzQjJKc0xNR0R3WFFxRGpMQ29Mc3N6WVVya0FCeEhPa1RPXzNfSjQyZWRFcDJMdmZZRXNOaUkweGkzWWc5ZmpSSGlsajFNckNibTFWSGhBNjFxNWZKNlh6cmNNblRJcW9zRklsZnp0RG9PVjVMU00zZHc?oc=5\" target=\"_blank\"&gt;Texas A&M Law Graduate Debany Davila Joins Fort Worth-Based Pham Harrison&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Fort Worth Inc.&lt;/font&gt;",
-        "sourceDate": "Wed, 07 Sep 2022 07:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Texas law firm partners",
-            "query": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
-            "type": "attorney",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22named%20partner%22%20OR%20%22managing%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20Texas&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-10-09T18:06:16.886Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Law%20Graduate%20Debany%20Davila%20Texas%20A%26M%20Law",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Law%20Graduate%20Debany%20Davila%20Texas%20A%26M%20Law+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Law Graduate Debany Davila and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Law, I came across a public signal related to Texas A&M Law Graduate Debany Davila Joins Fort Worth-Based Pham Harrison - Fort Worth Inc.. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1791569176883-c8ac577ba496a",
+      "id": "rad-free-1791838904306-697c2ef4ab8c28",
       "name": "Law School Graduate",
       "title": "attorney",
       "company": "New Texas A&M Law",
@@ -1288,7 +1057,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.883Z",
+      "foundAt": "2026-10-12T21:01:44.306Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1328,7 +1097,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176888-dfa3150c2290a8",
+      "id": "rad-free-1791838904309-aba1274c4d7a6",
       "name": "LibertyStream Adds Veteran",
       "title": "cpa",
       "company": "LibertyStream Adds Veteran CPA",
@@ -1365,7 +1134,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.888Z",
+      "foundAt": "2026-10-12T21:01:44.309Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1404,7 +1173,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176887-a588bacdabb7b8",
+      "id": "rad-free-1791838904309-1d6b84e163ccd8",
       "name": "Litigator Michael B. Goldberg",
       "title": "attorney",
       "company": "Litigator Michael B. Goldberg Joins PIB Law",
@@ -1441,7 +1210,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.887Z",
+      "foundAt": "2026-10-12T21:01:44.309Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1481,7 +1250,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176882-6c90a9cbd714c8",
+      "id": "rad-free-1791838904306-755930343e2ce8",
       "name": "Mark Malveaux",
       "title": "attorney",
       "company": "",
@@ -1518,7 +1287,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.882Z",
+      "foundAt": "2026-10-12T21:01:44.306Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1558,7 +1327,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176878-f2d76a4cc54ab8",
+      "id": "rad-free-1791838904302-cd894ea6c30398",
       "name": "Mehmet Oz Shows Houston",
       "title": "physician",
       "company": "",
@@ -1595,7 +1364,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.878Z",
+      "foundAt": "2026-10-12T21:01:44.302Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1634,7 +1403,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176894-3215c477a1e45",
+      "id": "rad-free-1791838904317-5257b5496229c8",
       "name": "New CEO",
       "title": "liquidity_event",
       "company": "",
@@ -1671,7 +1440,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.894Z",
+      "foundAt": "2026-10-12T21:01:44.317Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1711,7 +1480,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176890-08821b4acc17a",
+      "id": "rad-free-1791838904310-af6d8c6e37a14",
       "name": "Practice Advisor",
       "title": "cpa",
       "company": "Texas Accounting Firm",
@@ -1748,7 +1517,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.890Z",
+      "foundAt": "2026-10-12T21:01:44.310Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1787,7 +1556,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176878-3b3191d3af6e3",
+      "id": "rad-free-1791838904303-3840a20a30937",
       "name": "Stewart Law Group",
       "title": "attorney",
       "company": "Stewart Law Group",
@@ -1824,7 +1593,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.878Z",
+      "foundAt": "2026-10-12T21:01:44.303Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1864,7 +1633,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176892-a3883facebdc2",
+      "id": "rad-free-1791838904313-3c3958192d032",
       "name": "Trevor Roe Becomes Ownership",
       "title": "liquidity_event",
       "company": "Roe Strategic Capital",
@@ -1901,7 +1670,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.892Z",
+      "foundAt": "2026-10-12T21:01:44.313Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1941,7 +1710,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176905-9164eb514409d",
+      "id": "rad-free-1791838904322-dc8c1d023788b8",
       "name": "Trump Called CEO For",
       "title": "energy",
       "company": "",
@@ -1978,7 +1747,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.905Z",
+      "foundAt": "2026-10-12T21:01:44.322Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2017,7 +1786,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1791569176887-346205c4eb20c8",
+      "id": "rad-free-1791838904309-60c7b3defade5",
       "name": "Who Honors Kaleen Reyna",
       "title": "cpa",
       "company": "",
@@ -2054,7 +1823,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-09T18:06:16.887Z",
+      "foundAt": "2026-10-12T21:01:44.309Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
