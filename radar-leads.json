@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T16:30:23.728Z",
+  "generatedAt": "2026-10-16T16:15:34.580Z",
   "engine": "Free Feed Radar + Groq Managed",
   "geoMode": "texas_first_nationwide",
   "tavilyUsed": false,
@@ -13,15 +13,15 @@
   },
   "stats": {
     "rawSignals": 250,
-    "candidates": 250,
+    "candidates": 249,
     "groqUsed": 12,
-    "usableLeads": 32,
-    "rejected": 218,
+    "usableLeads": 33,
+    "rejected": 216,
     "collectionErrors": 0
   },
   "leads": [
     {
-      "id": "rad-free-1792081818332-cbc036051b3c68",
+      "id": "rad-free-1792167331530-fb7da00454a9e",
       "name": "Amanda Roark",
       "title": "attorney",
       "company": "Amanda Roark Joins Pham Harrison Law Firm",
@@ -58,7 +58,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.332Z",
+      "foundAt": "2026-10-16T16:15:31.530Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -99,7 +99,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818350-fabcb4382e2418",
+      "id": "rad-free-1792167331549-bdcae0838cbdf8",
       "name": "Bob Frenzel",
       "title": "energy",
       "company": "",
@@ -136,7 +136,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.350Z",
+      "foundAt": "2026-10-16T16:15:31.549Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -176,7 +176,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818347-9be95f4f835bf",
+      "id": "rad-free-1792167331546-eb2c391b151af",
       "name": "Centre Technologies",
       "title": "liquidity_event",
       "company": "",
@@ -213,7 +213,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.347Z",
+      "foundAt": "2026-10-16T16:15:31.546Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -254,7 +254,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818328-653377aa7ee408",
+      "id": "rad-free-1792167331526-8ef679d64ae11",
       "name": "Charged With",
       "title": "physician",
       "company": "Colorado Dental",
@@ -291,7 +291,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.328Z",
+      "foundAt": "2026-10-16T16:15:31.526Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -331,7 +331,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818342-690a6f448daaa",
+      "id": "rad-free-1792167331540-c7783a2ba4bbe",
       "name": "Contact Center Co. Humach",
       "title": "liquidity_event",
       "company": "North Texas AI Contact Center",
@@ -368,7 +368,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.342Z",
+      "foundAt": "2026-10-16T16:15:31.540Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -409,7 +409,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818336-365b3e3e420ee",
+      "id": "rad-free-1792167331534-9e4c363e6dac5",
       "name": "Doeren Mayhew",
       "title": "cpa",
       "company": "TBK CPA",
@@ -446,7 +446,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.336Z",
+      "foundAt": "2026-10-16T16:15:31.534Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -486,7 +486,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818336-3bc9dbae423cf",
+      "id": "rad-free-1792167331534-bf09fa2dc3055",
       "name": "Doeren Mayhew Acquires",
       "title": "cpa",
       "company": "Doeren Mayhew Acquires CPA",
@@ -523,7 +523,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.336Z",
+      "foundAt": "2026-10-16T16:15:31.534Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -563,7 +563,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818337-9067031661b6b",
+      "id": "rad-free-1792167331535-9dacc79643c8",
       "name": "Energy Tax Expert",
       "title": "cpa",
       "company": "",
@@ -600,7 +600,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.337Z",
+      "foundAt": "2026-10-16T16:15:31.535Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -639,7 +639,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818337-f0d0c6e1addc78",
+      "id": "rad-free-1792167331535-ba2cc9027d36c8",
       "name": "Ferguson Acquires Local Dallas",
       "title": "cpa",
       "company": "Calvetti Ferguson Acquires Local Dallas CPA Firm",
@@ -676,7 +676,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.337Z",
+      "foundAt": "2026-10-16T16:15:31.535Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -715,7 +715,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818340-2d9ed73342545",
+      "id": "rad-free-1792167331538-736c2cde06807",
       "name": "Founders Table Restaurant Group",
       "title": "liquidity_event",
       "company": "Founders Table Restaurant Group",
@@ -752,7 +752,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.340Z",
+      "foundAt": "2026-10-16T16:15:31.538Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -792,7 +792,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818349-bfee440e93ab28",
+      "id": "rad-free-1792167331548-4392d6ed6dfbe",
       "name": "Frontier Tubular Solutions",
       "title": "liquidity_event",
       "company": "Hart Energy",
@@ -829,7 +829,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.349Z",
+      "foundAt": "2026-10-16T16:15:31.548Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -869,7 +869,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818326-b8b02700d36708",
+      "id": "rad-free-1792167331524-1cda9eba754b",
       "name": "Glenn Davis",
       "title": "physician",
       "company": "",
@@ -906,7 +906,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.326Z",
+      "foundAt": "2026-10-16T16:15:31.524Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -945,7 +945,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818345-2e7393e922b7f8",
+      "id": "rad-free-1792167331544-921a2a44477318",
       "name": "HomeCentris Healthcare",
       "title": "liquidity_event",
       "company": "Scan Group",
@@ -982,7 +982,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.345Z",
+      "foundAt": "2026-10-16T16:15:31.544Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1022,7 +1022,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818327-d7667f51afc17",
+      "id": "rad-free-1792167331525-540148cb875ad8",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
@@ -1059,7 +1059,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.327Z",
+      "foundAt": "2026-10-16T16:15:31.525Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1098,7 +1098,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818347-7936b365dd4708",
+      "id": "rad-free-1792167331545-84d056c29cf228",
       "name": "Jason Felts",
       "title": "liquidity_event",
       "company": "",
@@ -1135,7 +1135,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.347Z",
+      "foundAt": "2026-10-16T16:15:31.545Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1175,7 +1175,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818347-2e67d1b3cd8b2",
+      "id": "rad-free-1792167331546-56190a45fd01a",
       "name": "Keith Conlon Brings Local",
       "title": "liquidity_event",
       "company": "",
@@ -1212,7 +1212,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.347Z",
+      "foundAt": "2026-10-16T16:15:31.546Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1252,7 +1252,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818335-89b0d5b49e9e7",
+      "id": "rad-free-1792167331533-62a24349db088",
       "name": "Law School Graduate",
       "title": "attorney",
       "company": "New Texas A&M Law",
@@ -1289,7 +1289,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.335Z",
+      "foundAt": "2026-10-16T16:15:31.533Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1329,7 +1329,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818337-7d5fa974e160d8",
+      "id": "rad-free-1792167331535-e650839f9acb8",
       "name": "LibertyStream Adds Veteran",
       "title": "cpa",
       "company": "LibertyStream Adds Veteran CPA",
@@ -1366,7 +1366,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.337Z",
+      "foundAt": "2026-10-16T16:15:31.535Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1405,7 +1405,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818335-025155c63f8ed",
+      "id": "rad-free-1792167331534-9e203c573acfd8",
       "name": "Litigator Michael B. Goldberg",
       "title": "attorney",
       "company": "Litigator Michael B. Goldberg Joins PIB Law",
@@ -1442,7 +1442,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.335Z",
+      "foundAt": "2026-10-16T16:15:31.534Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1482,7 +1482,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818332-a15c41cee2bcd8",
+      "id": "rad-free-1792167331530-7cd801d574af3",
       "name": "Mark Malveaux",
       "title": "attorney",
       "company": "",
@@ -1519,7 +1519,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.332Z",
+      "foundAt": "2026-10-16T16:15:31.530Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1559,7 +1559,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818327-597d7f52de9a38",
+      "id": "rad-free-1792167331526-98b47b4a25a748",
       "name": "Mehmet Oz Shows Houston",
       "title": "physician",
       "company": "",
@@ -1596,7 +1596,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.327Z",
+      "foundAt": "2026-10-16T16:15:31.526Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1635,84 +1635,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818341-f5dba1d01ccd78",
-      "name": "Mike Kortas",
-      "title": "liquidity_event",
-      "company": "",
-      "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQb2liM2tzNklXUnA0RFV2MTg4blduTkdneE1Kemx2SXF3MDZCX1dDcExheHhqYTZMclEyanUxNE0wM2tycjVfcEZxX1NNZ05pcjc0bDNCcmMtQmU1VGEyMG90RnRCd1R6VFNaZ3pvUmZ4OW1WeElhemNZQWNlTGJ5Yw?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQb2liM2tzNklXUnA0RFV2MTg4blduTkdneE1Kemx2SXF3MDZCX1dDcExheHhqYTZMclEyanUxNE0wM2tycjVfcEZxX1NNZ05pcjc0bDNCcmMtQmU1VGEyMG90RnRCd1R6VFNaZ3pvUmZ4OW1WeElhemNZQWNlTGJ5Yw?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas business owners liquidity events",
-      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-      "sourceDate": "Thu, 12 Feb 2026 08:00:00 GMT",
-      "sourceType": "liquidity_event",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxQb2liM2tzNklXUnA0RFV2MTg4blduTkdneE1Kemx2SXF3MDZCX1dDcExheHhqYTZMclEyanUxNE0wM2tycjVfcEZxX1NNZ05pcjc0bDNCcmMtQmU1VGEyMG90RnRCd1R6VFNaZ3pvUmZ4OW1WeElhemNZQWNlTGJ5Yw?oc=5\" target=\"_blank\"&gt;FSBO.com acquired by group led by NEXA CEO Mike Kortas&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;HousingWire&lt;/font&gt;",
-      "signal": "FSBO.com acquired by group led by NEXA CEO Mike Kortas - HousingWire",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Texas business owners liquidity events",
-        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-        "sourceType": "liquidity_event",
-        "priority": "texas",
-        "title": "FSBO.com acquired by group led by NEXA CEO Mike Kortas - HousingWire",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQb2liM2tzNklXUnA0RFV2MTg4blduTkdneE1Kemx2SXF3MDZCX1dDcExheHhqYTZMclEyanUxNE0wM2tycjVfcEZxX1NNZ05pcjc0bDNCcmMtQmU1VGEyMG90RnRCd1R6VFNaZ3pvUmZ4OW1WeElhemNZQWNlTGJ5Yw?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxQb2liM2tzNklXUnA0RFV2MTg4blduTkdneE1Kemx2SXF3MDZCX1dDcExheHhqYTZMclEyanUxNE0wM2tycjVfcEZxX1NNZ05pcjc0bDNCcmMtQmU1VGEyMG90RnRCd1R6VFNaZ3pvUmZ4OW1WeElhemNZQWNlTGJ5Yw?oc=5\" target=\"_blank\"&gt;FSBO.com acquired by group led by NEXA CEO Mike Kortas&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;HousingWire&lt;/font&gt;",
-        "sourceDate": "Thu, 12 Feb 2026 08:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Texas business owners liquidity events",
-            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-            "type": "liquidity_event",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20Texas%20founder%20owner%20CEO&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-10-15T16:30:18.341Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Mike%20Kortas",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Mike%20Kortas+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Mike Kortas and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Mike, I came across a public signal related to FSBO.com acquired by group led by NEXA CEO Mike Kortas - HousingWire. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1792081818345-52e8fd05b26568",
+      "id": "rad-free-1792167331544-cdbdae77f5f898",
       "name": "New CEO",
       "title": "liquidity_event",
       "company": "",
@@ -1749,7 +1672,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.345Z",
+      "foundAt": "2026-10-16T16:15:31.544Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1789,7 +1712,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818338-e84c4429c5871",
+      "id": "rad-free-1792167331536-cf036800836",
       "name": "Practice Advisor",
       "title": "cpa",
       "company": "Texas Accounting Firm",
@@ -1826,7 +1749,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.338Z",
+      "foundAt": "2026-10-16T16:15:31.536Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1865,7 +1788,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818349-dc1ba5367b797",
+      "id": "rad-free-1792167331548-3f415c99718da8",
       "name": "RV Retailer",
       "title": "liquidity_event",
       "company": "",
@@ -1902,7 +1825,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.349Z",
+      "foundAt": "2026-10-16T16:15:31.548Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1942,7 +1865,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818356-6db0da5dac9d38",
+      "id": "rad-free-1792167331555-624732eeb171e",
       "name": "Shelly Lambertz",
       "title": "energy",
       "company": "Continental Resources",
@@ -1979,7 +1902,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.356Z",
+      "foundAt": "2026-10-16T16:15:31.555Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2018,7 +1941,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818328-957e780845cfc8",
+      "id": "rad-free-1792167331526-730d77f80988b",
       "name": "Stewart Law Group",
       "title": "attorney",
       "company": "Stewart Law Group",
@@ -2055,7 +1978,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.328Z",
+      "foundAt": "2026-10-16T16:15:31.526Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2095,7 +2018,84 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818355-d2e64caddbd52",
+      "id": "rad-free-1792167331531-73f1d6c46cc518",
+      "name": "Three Cantey Hanger Attorneys",
+      "title": "attorney",
+      "company": "",
+      "location": "Texas-first",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdlRoYWFGcVAtUk0zeGRvQlB6d2RfOTRQcUJydXVrMDk2c2pnS1NPNzJOS2dJTzVBeEtTOUx2MTFBeFR0Uk1oaWI2enUzZndIdkJjMi12R281UVFsWmY4Q1Q0Q2VLWVFkcnRiWTN0MGZ0WmtlWWQ3ckgxcTNUckhsaFFZZFVpMkZLMFR3OHpzTlNaLXBEc0JlN3pQOTZLUnBuNVRKOEpYTQ?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdlRoYWFGcVAtUk0zeGRvQlB6d2RfOTRQcUJydXVrMDk2c2pnS1NPNzJOS2dJTzVBeEtTOUx2MTFBeFR0Uk1oaWI2enUzZndIdkJjMi12R281UVFsWmY4Q1Q0Q2VLWVFkcnRiWTN0MGZ0WmtlWWQ3ckgxcTNUckhsaFFZZFVpMkZLMFR3OHpzTlNaLXBEc0JlN3pQOTZLUnBuNVRKOEpYTQ?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Texas law firm partners",
+      "sourceQuery": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
+      "sourceDate": "Fri, 21 Feb 2025 08:00:00 GMT",
+      "sourceType": "attorney",
+      "priority": "texas",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxNdlRoYWFGcVAtUk0zeGRvQlB6d2RfOTRQcUJydXVrMDk2c2pnS1NPNzJOS2dJTzVBeEtTOUx2MTFBeFR0Uk1oaWI2enUzZndIdkJjMi12R281UVFsWmY4Q1Q0Q2VLWVFkcnRiWTN0MGZ0WmtlWWQ3ckgxcTNUckhsaFFZZFVpMkZLMFR3OHpzTlNaLXBEc0JlN3pQOTZLUnBuNVRKOEpYTQ?oc=5\" target=\"_blank\"&gt;Newsmakers: Three Cantey Hanger Attorneys Promoted to Partner&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Law.com&lt;/font&gt;",
+      "signal": "Newsmakers: Three Cantey Hanger Attorneys Promoted to Partner - Law.com",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Texas law firm partners",
+        "sourceQuery": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
+        "sourceType": "attorney",
+        "priority": "texas",
+        "title": "Newsmakers: Three Cantey Hanger Attorneys Promoted to Partner - Law.com",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdlRoYWFGcVAtUk0zeGRvQlB6d2RfOTRQcUJydXVrMDk2c2pnS1NPNzJOS2dJTzVBeEtTOUx2MTFBeFR0Uk1oaWI2enUzZndIdkJjMi12R281UVFsWmY4Q1Q0Q2VLWVFkcnRiWTN0MGZ0WmtlWWQ3ckgxcTNUckhsaFFZZFVpMkZLMFR3OHpzTlNaLXBEc0JlN3pQOTZLUnBuNVRKOEpYTQ?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxNdlRoYWFGcVAtUk0zeGRvQlB6d2RfOTRQcUJydXVrMDk2c2pnS1NPNzJOS2dJTzVBeEtTOUx2MTFBeFR0Uk1oaWI2enUzZndIdkJjMi12R281UVFsWmY4Q1Q0Q2VLWVFkcnRiWTN0MGZ0WmtlWWQ3ckgxcTNUckhsaFFZZFVpMkZLMFR3OHpzTlNaLXBEc0JlN3pQOTZLUnBuNVRKOEpYTQ?oc=5\" target=\"_blank\"&gt;Newsmakers: Three Cantey Hanger Attorneys Promoted to Partner&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Law.com&lt;/font&gt;",
+        "sourceDate": "Fri, 21 Feb 2025 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Texas law firm partners",
+            "query": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
+            "type": "attorney",
+            "priority": "texas",
+            "url": "https://news.google.com/rss/search?q=(%22named%20partner%22%20OR%20%22managing%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20Texas&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-10-16T16:15:31.531Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Three%20Cantey%20Hanger%20Attorneys",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Three%20Cantey%20Hanger%20Attorneys+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Three Cantey Hanger Attorneys and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Three, I came across a public signal related to Newsmakers: Three Cantey Hanger Attorneys Promoted to Partner - Law.com. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Texas-first priority",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1792167331554-269e0297696168",
       "name": "Timothy J. Cutt",
       "title": "energy",
       "company": "QEP Resources",
@@ -2132,7 +2132,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.355Z",
+      "foundAt": "2026-10-16T16:15:31.554Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2171,7 +2171,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818340-ac7211e337b0a8",
+      "id": "rad-free-1792167331538-3369976bb49398",
       "name": "Trevor Roe Becomes Ownership",
       "title": "liquidity_event",
       "company": "Roe Strategic Capital",
@@ -2208,7 +2208,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.340Z",
+      "foundAt": "2026-10-16T16:15:31.538Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2248,7 +2248,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818353-917fa1dd541b6",
+      "id": "rad-free-1792167331552-f87b066008e6b8",
       "name": "Trump Called CEO For",
       "title": "energy",
       "company": "",
@@ -2285,7 +2285,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.353Z",
+      "foundAt": "2026-10-16T16:15:31.552Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2324,7 +2324,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818336-e8f2f53c1c8e5",
+      "id": "rad-free-1792167331534-6cbd0be8b9c3a8",
       "name": "Who Honors Kaleen Reyna",
       "title": "cpa",
       "company": "",
@@ -2361,7 +2361,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.336Z",
+      "foundAt": "2026-10-16T16:15:31.534Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -2400,7 +2400,82 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1792081818357-b8a12cf3e22558",
+      "id": "rad-free-1792167331557-bf3236845e2468",
+      "name": "J. Richard Steadman",
+      "title": "physician",
+      "company": "The Steadman Clinic",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide physician practice owners",
+      "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+      "sourceDate": "Tue, 31 Jan 2023 08:00:00 GMT",
+      "sourceType": "physician",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5\" target=\"_blank\"&gt;Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Tahoe Daily Tribune&lt;/font&gt;",
+      "signal": "Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - Tahoe Daily Tribune",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide physician practice owners",
+        "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+        "sourceType": "physician",
+        "priority": "nationwide",
+        "title": "Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - Tahoe Daily Tribune",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5\" target=\"_blank\"&gt;Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Tahoe Daily Tribune&lt;/font&gt;",
+        "sourceDate": "Tue, 31 Jan 2023 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide physician practice owners",
+            "query": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+            "type": "physician",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-10-16T16:15:31.557Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=J.%20Richard%20Steadman%20The%20Steadman%20Clinic",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=J.%20Richard%20Steadman%20The%20Steadman%20Clinic+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify J. Richard Steadman and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi J., I came across a public signal related to Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - Tahoe Daily Tribune. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1792167331557-a759ae32c98a9",
       "name": "Lieu Balu Is Building",
       "title": "physician",
       "company": "",
@@ -2437,7 +2512,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-10-15T16:30:18.357Z",
+      "foundAt": "2026-10-16T16:15:31.557Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
