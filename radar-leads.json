@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T19:17:43.316Z",
+  "generatedAt": "2026-11-04T19:29:05.630Z",
   "engine": "Free Feed Radar + Groq Managed",
   "geoMode": "texas_first_nationwide",
   "tavilyUsed": false,
@@ -12,79 +12,65 @@
     "customFeeds": 0
   },
   "stats": {
-    "rawSignals": 41,
-    "candidates": 41,
+    "rawSignals": 250,
+    "candidates": 161,
     "groqUsed": 12,
-    "usableLeads": 13,
-    "rejected": 28,
-    "collectionErrors": 29
+    "usableLeads": 24,
+    "rejected": 137,
+    "collectionErrors": 0
   },
   "leads": [
     {
-      "id": "rad-free-1793733459989-3d1769e9e96b38",
-      "name": "Stubbs Alderton Jeffrey Gersh",
-      "title": "attorney",
+      "id": "rad-free-1793820542290-5246b7fabd332",
+      "name": "Arizona Practice Owner",
+      "title": "physician",
       "company": "",
       "location": "Texas-first",
-      "url": "https://natlawreview.com/author/jeffrey-f-gersh",
-      "sourceUrl": "https://natlawreview.com/author/jeffrey-f-gersh",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSnZnNVp0ZndqVzVtX25zaVAyaWxzemRIYllpV091NGxPeldsOFhRUE84d0YwRWhxQXhYSFBKQzZBWE54RUozeWdpZUw0a3dSanR4b2J1X1hiU2hfREJuTktyRTkxaGVSSjB0UXVGcjViaXNmSkprWFFJMTZHaEh4TmhiQjRodlF2eTJmMzNR?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSnZnNVp0ZndqVzVtX25zaVAyaWxzemRIYllpV091NGxPeldsOFhRUE84d0YwRWhxQXhYSFBKQzZBWE54RUozeWdpZUw0a3dSanR4b2J1X1hiU2hfREJuTktyRTkxaGVSSjB0UXVGcjViaXNmSkprWFFJMTZHaEh4TmhiQjRodlF2eTJmMzNR?oc=5",
       "source": "Free Feed Radar",
-      "sourceFeed": "Texas law firm partners",
-      "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-      "sourceDate": "20260929T020000Z",
-      "sourceType": "attorney",
+      "sourceFeed": "Texas physician practice owners",
+      "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
+      "sourceDate": "Thu, 08 Dec 2022 08:00:00 GMT",
+      "sourceType": "physician",
       "priority": "texas",
-      "summary": "Jeffrey Gersh Litigation Attorney Stubbs Alderton · natlawreview.com · United States · English",
-      "signal": "Jeffrey Gersh Litigation Attorney Stubbs Alderton",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPSnZnNVp0ZndqVzVtX25zaVAyaWxzemRIYllpV091NGxPeldsOFhRUE84d0YwRWhxQXhYSFBKQzZBWE54RUozeWdpZUw0a3dSanR4b2J1X1hiU2hfREJuTktyRTkxaGVSSjB0UXVGcjViaXNmSkprWFFJMTZHaEh4TmhiQjRodlF2eTJmMzNR?oc=5\" target=\"_blank\"&gt;Arizona Practice Owner Joins AAEP Board of Directors&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;EquiManagement&lt;/font&gt;",
+      "signal": "Arizona Practice Owner Joins AAEP Board of Directors - EquiManagement",
       "raw": {
-        "sourceKind": "gdelt",
-        "sourceFeed": "Texas law firm partners",
-        "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-        "sourceType": "attorney",
+        "sourceKind": "rss",
+        "sourceFeed": "Texas physician practice owners",
+        "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
+        "sourceType": "physician",
         "priority": "texas",
-        "title": "Jeffrey Gersh Litigation Attorney Stubbs Alderton",
-        "url": "https://natlawreview.com/author/jeffrey-f-gersh",
-        "summary": "Jeffrey Gersh Litigation Attorney Stubbs Alderton · natlawreview.com · United States · English",
-        "sourceDate": "20260929T020000Z",
+        "title": "Arizona Practice Owner Joins AAEP Board of Directors - EquiManagement",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSnZnNVp0ZndqVzVtX25zaVAyaWxzemRIYllpV091NGxPeldsOFhRUE84d0YwRWhxQXhYSFBKQzZBWE54RUozeWdpZUw0a3dSanR4b2J1X1hiU2hfREJuTktyRTkxaGVSSjB0UXVGcjViaXNmSkprWFFJMTZHaEh4TmhiQjRodlF2eTJmMzNR?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPSnZnNVp0ZndqVzVtX25zaVAyaWxzemRIYllpV091NGxPeldsOFhRUE84d0YwRWhxQXhYSFBKQzZBWE54RUozeWdpZUw0a3dSanR4b2J1X1hiU2hfREJuTktyRTkxaGVSSjB0UXVGcjViaXNmSkprWFFJMTZHaEh4TmhiQjRodlF2eTJmMzNR?oc=5\" target=\"_blank\"&gt;Arizona Practice Owner Joins AAEP Board of Directors&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;EquiManagement&lt;/font&gt;",
+        "sourceDate": "Thu, 08 Dec 2022 08:00:00 GMT",
         "raw": {
           "meta": {
-            "name": "Texas law firm partners",
-            "query": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-            "type": "attorney",
-            "priority": "texas"
-          },
-          "gdelt": {
-            "url": "https://natlawreview.com/author/jeffrey-f-gersh",
-            "url_mobile": "",
-            "title": "Jeffrey Gersh Litigation Attorney Stubbs Alderton",
-            "seendate": "20260929T020000Z",
-            "socialimage": "",
-            "domain": "natlawreview.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "name": "Texas physician practice owners",
+            "query": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
+            "type": "physician",
+            "priority": "texas",
+            "url": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20Texas&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
           }
         },
-        "sourceCollection": "gdeltQueries"
+        "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-03T19:17:39.989Z",
+      "foundAt": "2026-11-04T19:29:02.290Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
         {
-          "type": "Company Website",
-          "value": "https://natlawreview.com",
-          "confidence": "Medium",
-          "source": "source domain"
-        },
-        {
           "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Stubbs%20Alderton%20Jeffrey%20Gersh",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Arizona%20Practice%20Owner",
           "confidence": "Medium",
           "source": "free search path"
         },
         {
           "type": "Google Search",
-          "value": "https://www.google.com/search?q=Stubbs%20Alderton%20Jeffrey%20Gersh+contact+LinkedIn+email",
+          "value": "https://www.google.com/search?q=Arizona%20Practice%20Owner+contact+LinkedIn+email",
           "confidence": "Medium",
           "source": "free search path"
         }
@@ -92,10 +78,241 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Stubbs Alderton Jeffrey Gersh and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nextAction": "Day 1: verify Arizona Practice Owner and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi Stubbs, I came across a public signal related to Jeffrey Gersh Litigation Attorney Stubbs Alderton. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi Arizona, I came across a public signal related to Arizona Practice Owner Joins AAEP Board of Directors - EquiManagement. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Texas-first priority",
+        "Basin ICP signal"
+      ],
+      "aiError": "Groq HTTP 404",
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793820542296-764d5c48630bf",
+      "name": "Doeren Mayhew",
+      "title": "cpa",
+      "company": "TBK CPA",
+      "location": "Texas-first",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNVpWN3JxWmh6M3IxRnZYZjl5WllhaV9EV1RBbnYzbzRLRmh2YzhtUHRja0RFXzE5T2Npa3BwakJWNk5JeGZMdUVpZlNGNXNvR0NVbDhtNTZRQ244YThSOGFwMWE5TE9YWnpnUGpKTTdNQXBONUVRX2JENFU3S3lRR2IyU1N0UTR3eWNadQ?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNVpWN3JxWmh6M3IxRnZYZjl5WllhaV9EV1RBbnYzbzRLRmh2YzhtUHRja0RFXzE5T2Npa3BwakJWNk5JeGZMdUVpZlNGNXNvR0NVbDhtNTZRQ244YThSOGFwMWE5TE9YWnpnUGpKTTdNQXBONUVRX2JENFU3S3lRR2IyU1N0UTR3eWNadQ?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Texas CPA tax advisors",
+      "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
+      "sourceDate": "Fri, 12 Dec 2025 08:00:00 GMT",
+      "sourceType": "cpa",
+      "priority": "texas",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxQNVpWN3JxWmh6M3IxRnZYZjl5WllhaV9EV1RBbnYzbzRLRmh2YzhtUHRja0RFXzE5T2Npa3BwakJWNk5JeGZMdUVpZlNGNXNvR0NVbDhtNTZRQ244YThSOGFwMWE5TE9YWnpnUGpKTTdNQXBONUVRX2JENFU3S3lRR2IyU1N0UTR3eWNadQ?oc=5\" target=\"_blank\"&gt;Doeren Mayhew acquires TBK CPA to strengthen footprint in Houston, Texas&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;International Accounting Bulletin&lt;/font&gt;",
+      "signal": "Doeren Mayhew acquires TBK CPA to strengthen footprint in Houston, Texas - International Accounting Bulletin",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Texas CPA tax advisors",
+        "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
+        "sourceType": "cpa",
+        "priority": "texas",
+        "title": "Doeren Mayhew acquires TBK CPA to strengthen footprint in Houston, Texas - International Accounting Bulletin",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNVpWN3JxWmh6M3IxRnZYZjl5WllhaV9EV1RBbnYzbzRLRmh2YzhtUHRja0RFXzE5T2Npa3BwakJWNk5JeGZMdUVpZlNGNXNvR0NVbDhtNTZRQ244YThSOGFwMWE5TE9YWnpnUGpKTTdNQXBONUVRX2JENFU3S3lRR2IyU1N0UTR3eWNadQ?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxQNVpWN3JxWmh6M3IxRnZYZjl5WllhaV9EV1RBbnYzbzRLRmh2YzhtUHRja0RFXzE5T2Npa3BwakJWNk5JeGZMdUVpZlNGNXNvR0NVbDhtNTZRQ244YThSOGFwMWE5TE9YWnpnUGpKTTdNQXBONUVRX2JENFU3S3lRR2IyU1N0UTR3eWNadQ?oc=5\" target=\"_blank\"&gt;Doeren Mayhew acquires TBK CPA to strengthen footprint in Houston, Texas&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;International Accounting Bulletin&lt;/font&gt;",
+        "sourceDate": "Fri, 12 Dec 2025 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Texas CPA tax advisors",
+            "query": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
+            "type": "cpa",
+            "priority": "texas",
+            "url": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22%20OR%20%22depletion%20allowance%22%20OR%20%22high%20net%20worth%22)%20Texas&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-04T19:29:02.296Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Doeren%20Mayhew%20TBK%20CPA",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Doeren%20Mayhew%20TBK%20CPA+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Doeren Mayhew and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Doeren, I came across a public signal related to Doeren Mayhew acquires TBK CPA to strengthen footprint in Houston, Texas - International Accounting Bulletin. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Texas-first priority",
+        "Basin ICP signal"
+      ],
+      "aiError": "Groq HTTP 404",
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793820542296-d87113b8b6b2c8",
+      "name": "Energy Tax Expert",
+      "title": "cpa",
+      "company": "",
+      "location": "Texas-first",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA0TWFYRWE3T0RMOUgtTzQyTGhfVmNIS205VFVuMDExSXY2aU85RFF1elJaNW84ZDRKNDZxa3lkLVVMbDNseXNZNnRDbmRZNHBrSjljVW0wTFFfZExVRTQtRzdscjQxbmtYa2s3ZF9CN25BbWtnQV9JMA?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA0TWFYRWE3T0RMOUgtTzQyTGhfVmNIS205VFVuMDExSXY2aU85RFF1elJaNW84ZDRKNDZxa3lkLVVMbDNseXNZNnRDbmRZNHBrSjljVW0wTFFfZExVRTQtRzdscjQxbmtYa2s3ZF9CN25BbWtnQV9JMA?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Texas CPA tax advisors",
+      "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
+      "sourceDate": "Wed, 09 Feb 2022 08:00:00 GMT",
+      "sourceType": "cpa",
+      "priority": "texas",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTFA0TWFYRWE3T0RMOUgtTzQyTGhfVmNIS205VFVuMDExSXY2aU85RFF1elJaNW84ZDRKNDZxa3lkLVVMbDNseXNZNnRDbmRZNHBrSjljVW0wTFFfZExVRTQtRzdscjQxbmtYa2s3ZF9CN25BbWtnQV9JMA?oc=5\" target=\"_blank\"&gt;Energy Tax Expert Joins Akin Gump in Dallas&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;The Texas Lawbook&lt;/font&gt;",
+      "signal": "Energy Tax Expert Joins Akin Gump in Dallas - The Texas Lawbook",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Texas CPA tax advisors",
+        "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
+        "sourceType": "cpa",
+        "priority": "texas",
+        "title": "Energy Tax Expert Joins Akin Gump in Dallas - The Texas Lawbook",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA0TWFYRWE3T0RMOUgtTzQyTGhfVmNIS205VFVuMDExSXY2aU85RFF1elJaNW84ZDRKNDZxa3lkLVVMbDNseXNZNnRDbmRZNHBrSjljVW0wTFFfZExVRTQtRzdscjQxbmtYa2s3ZF9CN25BbWtnQV9JMA?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTFA0TWFYRWE3T0RMOUgtTzQyTGhfVmNIS205VFVuMDExSXY2aU85RFF1elJaNW84ZDRKNDZxa3lkLVVMbDNseXNZNnRDbmRZNHBrSjljVW0wTFFfZExVRTQtRzdscjQxbmtYa2s3ZF9CN25BbWtnQV9JMA?oc=5\" target=\"_blank\"&gt;Energy Tax Expert Joins Akin Gump in Dallas&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;The Texas Lawbook&lt;/font&gt;",
+        "sourceDate": "Wed, 09 Feb 2022 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Texas CPA tax advisors",
+            "query": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
+            "type": "cpa",
+            "priority": "texas",
+            "url": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22%20OR%20%22depletion%20allowance%22%20OR%20%22high%20net%20worth%22)%20Texas&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-04T19:29:02.296Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Energy%20Tax%20Expert",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Energy%20Tax%20Expert+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Energy Tax Expert and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Energy, I came across a public signal related to Energy Tax Expert Joins Akin Gump in Dallas - The Texas Lawbook. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Texas-first priority",
+        "Basin ICP signal"
+      ],
+      "aiError": "Groq HTTP 404",
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793820542305-ab11847b07fb98",
+      "name": "George Kurtz",
+      "title": "liquidity_event",
+      "company": "",
+      "location": "Texas-first",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxON1pLNVBOLVNwMTBwMExlZ080eHVtendaSGJHY1g2QllIQXo1Y2ExZFJLc1ZZbkVJb1BqM2xRZnNWVUtaQ09BTEZzZkQ4Zjg3U1F5dGJ2dlN3TlZIY1haTlp2UlA0U1BCRHhnWVJ3clRWY1QxSmxZemgtMlFOMEhWOERhaVpralJ2NnFwdUNxN1RGX2hHaHUwN3k3NzNxSkHSAaQBQVVfeXFMT0FDUnpIS2hCd0hwMTNMTnBSODY1Y1BqTlUwMHp3clJMZlRQcVdYb0pNbXd5SWNqM2tWRml3R1NianowVTBRb3hXR0NUQnpMdnVrb2lPaHROeW90aFBiTlN5SEpzdTk5NDRmelJMUUI1Ri1OOXF6ZDFwVGh4ZFRWVDRHdVo2U2hvdEl5V3dZbDBmeUUxM1BNYU0tVnI0Xzd5QWJ0eWk?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxON1pLNVBOLVNwMTBwMExlZ080eHVtendaSGJHY1g2QllIQXo1Y2ExZFJLc1ZZbkVJb1BqM2xRZnNWVUtaQ09BTEZzZkQ4Zjg3U1F5dGJ2dlN3TlZIY1haTlp2UlA0U1BCRHhnWVJ3clRWY1QxSmxZemgtMlFOMEhWOERhaVpralJ2NnFwdUNxN1RGX2hHaHUwN3k3NzNxSkHSAaQBQVVfeXFMT0FDUnpIS2hCd0hwMTNMTnBSODY1Y1BqTlUwMHp3clJMZlRQcVdYb0pNbXd5SWNqM2tWRml3R1NianowVTBRb3hXR0NUQnpMdnVrb2lPaHROeW90aFBiTlN5SEpzdTk5NDRmelJMUUI1Ri1OOXF6ZDFwVGh4ZFRWVDRHdVo2U2hvdEl5V3dZbDBmeUUxM1BNYU0tVnI0Xzd5QWJ0eWk?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide business founder exits",
+      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+      "sourceDate": "Thu, 20 Nov 2025 08:00:00 GMT",
+      "sourceType": "liquidity_event",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxON1pLNVBOLVNwMTBwMExlZ080eHVtendaSGJHY1g2QllIQXo1Y2ExZFJLc1ZZbkVJb1BqM2xRZnNWVUtaQ09BTEZzZkQ4Zjg3U1F5dGJ2dlN3TlZIY1haTlp2UlA0U1BCRHhnWVJ3clRWY1QxSmxZemgtMlFOMEhWOERhaVpralJ2NnFwdUNxN1RGX2hHaHUwN3k3NzNxSkHSAaQBQVVfeXFMT0FDUnpIS2hCd0hwMTNMTnBSODY1Y1BqTlUwMHp3clJMZlRQcVdYb0pNbXd5SWNqM2tWRml3R1NianowVTBRb3hXR0NUQnpMdnVrb2lPaHROeW90aFBiTlN5SEpzdTk5NDRmelJMUUI1Ri1OOXF6ZDFwVGh4ZFRWVDRHdVo2U2hvdEl5V3dZbDBmeUUxM1BNYU0tVnI0Xzd5QWJ0eWk?oc=5\" target=\"_blank\"&gt;Mercedes F1 boss Toto Wolff sells a piece of his ownership stake to CrowdStrike CEO George Kurtz&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;CNBC&lt;/font&gt;",
+      "signal": "Mercedes F1 boss Toto Wolff sells a piece of his ownership stake to CrowdStrike CEO George Kurtz - CNBC",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide business founder exits",
+        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+        "sourceType": "liquidity_event",
+        "priority": "nationwide",
+        "title": "Mercedes F1 boss Toto Wolff sells a piece of his ownership stake to CrowdStrike CEO George Kurtz - CNBC",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxON1pLNVBOLVNwMTBwMExlZ080eHVtendaSGJHY1g2QllIQXo1Y2ExZFJLc1ZZbkVJb1BqM2xRZnNWVUtaQ09BTEZzZkQ4Zjg3U1F5dGJ2dlN3TlZIY1haTlp2UlA0U1BCRHhnWVJ3clRWY1QxSmxZemgtMlFOMEhWOERhaVpralJ2NnFwdUNxN1RGX2hHaHUwN3k3NzNxSkHSAaQBQVVfeXFMT0FDUnpIS2hCd0hwMTNMTnBSODY1Y1BqTlUwMHp3clJMZlRQcVdYb0pNbXd5SWNqM2tWRml3R1NianowVTBRb3hXR0NUQnpMdnVrb2lPaHROeW90aFBiTlN5SEpzdTk5NDRmelJMUUI1Ri1OOXF6ZDFwVGh4ZFRWVDRHdVo2U2hvdEl5V3dZbDBmeUUxM1BNYU0tVnI0Xzd5QWJ0eWk?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxON1pLNVBOLVNwMTBwMExlZ080eHVtendaSGJHY1g2QllIQXo1Y2ExZFJLc1ZZbkVJb1BqM2xRZnNWVUtaQ09BTEZzZkQ4Zjg3U1F5dGJ2dlN3TlZIY1haTlp2UlA0U1BCRHhnWVJ3clRWY1QxSmxZemgtMlFOMEhWOERhaVpralJ2NnFwdUNxN1RGX2hHaHUwN3k3NzNxSkHSAaQBQVVfeXFMT0FDUnpIS2hCd0hwMTNMTnBSODY1Y1BqTlUwMHp3clJMZlRQcVdYb0pNbXd5SWNqM2tWRml3R1NianowVTBRb3hXR0NUQnpMdnVrb2lPaHROeW90aFBiTlN5SEpzdTk5NDRmelJMUUI1Ri1OOXF6ZDFwVGh4ZFRWVDRHdVo2U2hvdEl5V3dZbDBmeUUxM1BNYU0tVnI0Xzd5QWJ0eWk?oc=5\" target=\"_blank\"&gt;Mercedes F1 boss Toto Wolff sells a piece of his ownership stake to CrowdStrike CEO George Kurtz&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;CNBC&lt;/font&gt;",
+        "sourceDate": "Thu, 20 Nov 2025 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide business founder exits",
+            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+            "type": "liquidity_event",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20%22United%20States%22%20founder%20CEO%20owner&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-04T19:29:02.305Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=George%20Kurtz",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=George%20Kurtz+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify George Kurtz and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi George, I came across a public signal related to Mercedes F1 boss Toto Wolff sells a piece of his ownership stake to CrowdStrike CEO George Kurtz - CNBC. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
@@ -110,73 +327,59 @@
       "workflowEligible": true,
       "missingQualificationFields": [],
       "pipelineBlockReason": "",
-      "contactSummary": "Company Website + LinkedIn Search + Google Search"
+      "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793733459989-5835198371c2a8",
-      "name": "TY STIMPSON NAMED VARGHESE",
-      "title": "attorney",
-      "company": "",
+      "id": "rad-free-1793820542290-58b83162b1726",
+      "name": "J. Richard Steadman",
+      "title": "physician",
+      "company": "The Steadman Clinic",
       "location": "Texas-first",
-      "url": "http://www.clevelandstar.com/news/279295537/varghese-summersett-partner-ty-stimpson-named-man-of-impact-at-inaugural-titans-of-business-awards",
-      "sourceUrl": "http://www.clevelandstar.com/news/279295537/varghese-summersett-partner-ty-stimpson-named-man-of-impact-at-inaugural-titans-of-business-awards",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5",
       "source": "Free Feed Radar",
-      "sourceFeed": "Texas law firm partners",
-      "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-      "sourceDate": "20260909T064500Z",
-      "sourceType": "attorney",
+      "sourceFeed": "Texas physician practice owners",
+      "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
+      "sourceDate": "Tue, 31 Jan 2023 08:00:00 GMT",
+      "sourceType": "physician",
       "priority": "texas",
-      "summary": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED · clevelandstar.com · United States · English",
-      "signal": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5\" target=\"_blank\"&gt;Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;TahoeDailyTribune.com&lt;/font&gt;",
+      "signal": "Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - TahoeDailyTribune.com",
       "raw": {
-        "sourceKind": "gdelt",
-        "sourceFeed": "Texas law firm partners",
-        "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-        "sourceType": "attorney",
+        "sourceKind": "rss",
+        "sourceFeed": "Texas physician practice owners",
+        "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
+        "sourceType": "physician",
         "priority": "texas",
-        "title": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED",
-        "url": "http://www.clevelandstar.com/news/279295537/varghese-summersett-partner-ty-stimpson-named-man-of-impact-at-inaugural-titans-of-business-awards",
-        "summary": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED · clevelandstar.com · United States · English",
-        "sourceDate": "20260909T064500Z",
+        "title": "Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - TahoeDailyTribune.com",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5\" target=\"_blank\"&gt;Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;TahoeDailyTribune.com&lt;/font&gt;",
+        "sourceDate": "Tue, 31 Jan 2023 08:00:00 GMT",
         "raw": {
           "meta": {
-            "name": "Texas law firm partners",
-            "query": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-            "type": "attorney",
-            "priority": "texas"
-          },
-          "gdelt": {
-            "url": "http://www.clevelandstar.com/news/279295537/varghese-summersett-partner-ty-stimpson-named-man-of-impact-at-inaugural-titans-of-business-awards",
-            "url_mobile": "",
-            "title": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED",
-            "seendate": "20260909T064500Z",
-            "socialimage": "",
-            "domain": "clevelandstar.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "name": "Texas physician practice owners",
+            "query": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
+            "type": "physician",
+            "priority": "texas",
+            "url": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20Texas&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
           }
         },
-        "sourceCollection": "gdeltQueries"
+        "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-03T19:17:39.989Z",
+      "foundAt": "2026-11-04T19:29:02.290Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
         {
-          "type": "Company Website",
-          "value": "https://clevelandstar.com",
-          "confidence": "Medium",
-          "source": "source domain"
-        },
-        {
           "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=TY%20STIMPSON%20NAMED%20VARGHESE",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=J.%20Richard%20Steadman%20The%20Steadman%20Clinic",
           "confidence": "Medium",
           "source": "free search path"
         },
         {
           "type": "Google Search",
-          "value": "https://www.google.com/search?q=TY%20STIMPSON%20NAMED%20VARGHESE+contact+LinkedIn+email",
+          "value": "https://www.google.com/search?q=J.%20Richard%20Steadman%20The%20Steadman%20Clinic+contact+LinkedIn+email",
           "confidence": "Medium",
           "source": "free search path"
         }
@@ -184,10 +387,164 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify TY STIMPSON NAMED VARGHESE and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nextAction": "Day 1: verify J. Richard Steadman and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi TY, I came across a public signal related to VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi J., I came across a public signal related to Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - TahoeDailyTribune.c. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Texas-first priority",
+        "Basin ICP signal"
+      ],
+      "aiError": "Groq HTTP 404",
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793820542290-f7a0489095791",
+      "name": "Mehmet Oz Shows Houston",
+      "title": "physician",
+      "company": "",
+      "location": "Texas-first",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQMDYwOWtSbXlqc19YQl8xams0V0kyMF9acFNHdE1QbVlUTWo1aUhWQlhxY1JJWXB2MjRnSV9GYl92QjBWSjlaOTlGazRGaDg5MG0zUjFSVklteVV6UHRVQURKVmhSRDhDbGZyZFB1TmtMX0VSZjM3N0xRdlpsMW9pdw?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQMDYwOWtSbXlqc19YQl8xams0V0kyMF9acFNHdE1QbVlUTWo1aUhWQlhxY1JJWXB2MjRnSV9GYl92QjBWSjlaOTlGazRGaDg5MG0zUjFSVklteVV6UHRVQURKVmhSRDhDbGZyZFB1TmtMX0VSZjM3N0xRdlpsMW9pdw?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Texas physician practice owners",
+      "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
+      "sourceDate": "Tue, 14 Feb 2017 08:00:00 GMT",
+      "sourceType": "physician",
+      "priority": "texas",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxQMDYwOWtSbXlqc19YQl8xams0V0kyMF9acFNHdE1QbVlUTWo1aUhWQlhxY1JJWXB2MjRnSV9GYl92QjBWSjlaOTlGazRGaDg5MG0zUjFSVklteVV6UHRVQURKVmhSRDhDbGZyZFB1TmtMX0VSZjM3N0xRdlpsMW9pdw?oc=5\" target=\"_blank\"&gt;Dr. Mehmet Oz Shows Houston How to Texas Two Step&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;TMC Houston&lt;/font&gt;",
+      "signal": "Dr. Mehmet Oz Shows Houston How to Texas Two Step - TMC Houston",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Texas physician practice owners",
+        "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
+        "sourceType": "physician",
+        "priority": "texas",
+        "title": "Dr. Mehmet Oz Shows Houston How to Texas Two Step - TMC Houston",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQMDYwOWtSbXlqc19YQl8xams0V0kyMF9acFNHdE1QbVlUTWo1aUhWQlhxY1JJWXB2MjRnSV9GYl92QjBWSjlaOTlGazRGaDg5MG0zUjFSVklteVV6UHRVQURKVmhSRDhDbGZyZFB1TmtMX0VSZjM3N0xRdlpsMW9pdw?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxQMDYwOWtSbXlqc19YQl8xams0V0kyMF9acFNHdE1QbVlUTWo1aUhWQlhxY1JJWXB2MjRnSV9GYl92QjBWSjlaOTlGazRGaDg5MG0zUjFSVklteVV6UHRVQURKVmhSRDhDbGZyZFB1TmtMX0VSZjM3N0xRdlpsMW9pdw?oc=5\" target=\"_blank\"&gt;Dr. Mehmet Oz Shows Houston How to Texas Two Step&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;TMC Houston&lt;/font&gt;",
+        "sourceDate": "Tue, 14 Feb 2017 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Texas physician practice owners",
+            "query": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
+            "type": "physician",
+            "priority": "texas",
+            "url": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20Texas&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-04T19:29:02.290Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Mehmet%20Oz%20Shows%20Houston",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Mehmet%20Oz%20Shows%20Houston+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Mehmet Oz Shows Houston and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Mehmet, I came across a public signal related to Dr. Mehmet Oz Shows Houston How to Texas Two Step - TMC Houston. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Texas-first priority",
+        "Basin ICP signal"
+      ],
+      "aiError": "Groq HTTP 404",
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793820542291-bc843ddd103a3",
+      "name": "Stewart Law Group",
+      "title": "attorney",
+      "company": "Stewart Law Group",
+      "location": "Texas-first",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOHBrekVXV3F0d3VNX1ZKR1cxWnh4d0pWYmtmYmhSbGJzc2J1MzVueVR1TlIzNWpIYUJYeDZvejJ0YWV2MnBpaDJWeGJRTlB2bVlTb1BiWXdSMjU4cmhEbDA4ZmJjamJTU1prRFpZTXZhS012cldvQnI3N0tQRmIwSjl1M3prT29NVEgwLV81S19jOFVYZ09JTTNiZEdvaVp1WUVKZnk5bkw4Nl96LXc?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOHBrekVXV3F0d3VNX1ZKR1cxWnh4d0pWYmtmYmhSbGJzc2J1MzVueVR1TlIzNWpIYUJYeDZvejJ0YWV2MnBpaDJWeGJRTlB2bVlTb1BiWXdSMjU4cmhEbDA4ZmJjamJTU1prRFpZTXZhS012cldvQnI3N0tQRmIwSjl1M3prT29NVEgwLV81S19jOFVYZ09JTTNiZEdvaVp1WUVKZnk5bkw4Nl96LXc?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Texas law firm partners",
+      "sourceQuery": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
+      "sourceDate": "Mon, 20 Jul 2026 07:00:00 GMT",
+      "sourceType": "attorney",
+      "priority": "texas",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxOOHBrekVXV3F0d3VNX1ZKR1cxWnh4d0pWYmtmYmhSbGJzc2J1MzVueVR1TlIzNWpIYUJYeDZvejJ0YWV2MnBpaDJWeGJRTlB2bVlTb1BiWXdSMjU4cmhEbDA4ZmJjamJTU1prRFpZTXZhS012cldvQnI3N0tQRmIwSjl1M3prT29NVEgwLV81S19jOFVYZ09JTTNiZEdvaVp1WUVKZnk5bkw4Nl96LXc?oc=5\" target=\"_blank\"&gt;Stewart Law Group Joins Forces with Fisher Phillips in Dallas&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Fisher Phillips LLP&lt;/font&gt;",
+      "signal": "Stewart Law Group Joins Forces with Fisher Phillips in Dallas - Fisher Phillips LLP",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Texas law firm partners",
+        "sourceQuery": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
+        "sourceType": "attorney",
+        "priority": "texas",
+        "title": "Stewart Law Group Joins Forces with Fisher Phillips in Dallas - Fisher Phillips LLP",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOHBrekVXV3F0d3VNX1ZKR1cxWnh4d0pWYmtmYmhSbGJzc2J1MzVueVR1TlIzNWpIYUJYeDZvejJ0YWV2MnBpaDJWeGJRTlB2bVlTb1BiWXdSMjU4cmhEbDA4ZmJjamJTU1prRFpZTXZhS012cldvQnI3N0tQRmIwSjl1M3prT29NVEgwLV81S19jOFVYZ09JTTNiZEdvaVp1WUVKZnk5bkw4Nl96LXc?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxOOHBrekVXV3F0d3VNX1ZKR1cxWnh4d0pWYmtmYmhSbGJzc2J1MzVueVR1TlIzNWpIYUJYeDZvejJ0YWV2MnBpaDJWeGJRTlB2bVlTb1BiWXdSMjU4cmhEbDA4ZmJjamJTU1prRFpZTXZhS012cldvQnI3N0tQRmIwSjl1M3prT29NVEgwLV81S19jOFVYZ09JTTNiZEdvaVp1WUVKZnk5bkw4Nl96LXc?oc=5\" target=\"_blank\"&gt;Stewart Law Group Joins Forces with Fisher Phillips in Dallas&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Fisher Phillips LLP&lt;/font&gt;",
+        "sourceDate": "Mon, 20 Jul 2026 07:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Texas law firm partners",
+            "query": "(\"named partner\" OR \"managing partner\" OR \"promoted to partner\") \"law firm\" Texas",
+            "type": "attorney",
+            "priority": "texas",
+            "url": "https://news.google.com/rss/search?q=(%22named%20partner%22%20OR%20%22managing%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20Texas&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-04T19:29:02.291Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Stewart%20Law%20Group%20Stewart%20Law%20Group",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Stewart%20Law%20Group%20Stewart%20Law%20Group+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Stewart Law Group and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Stewart, I came across a public signal related to Stewart Law Group Joins Forces with Fisher Phillips in Dallas - Fisher Phillips LLP. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
@@ -202,73 +559,59 @@
       "workflowEligible": true,
       "missingQualificationFields": [],
       "pipelineBlockReason": "",
-      "contactSummary": "Company Website + LinkedIn Search + Google Search"
+      "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793733459989-ed89c6224cf86",
-      "name": "TY STIMPSON NAMED VARGHESE",
-      "title": "attorney",
+      "id": "rad-free-1793820542295-c59693ea6f1a3",
+      "name": "Who Honors Kaleen Reyna",
+      "title": "cpa",
       "company": "",
       "location": "Texas-first",
-      "url": "http://www.stlouisstar.com/news/279295537/varghese-summersett-partner-ty-stimpson-named-man-of-impact-at-inaugural-titans-of-business-awards",
-      "sourceUrl": "http://www.stlouisstar.com/news/279295537/varghese-summersett-partner-ty-stimpson-named-man-of-impact-at-inaugural-titans-of-business-awards",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMHBSN0hicllFdmhzQ0IzYWN0OFFqYmlsbmJUZzk2b1FWVGtESENqdzFJX0hFMkxaT0ZPRmNiTUd2VWpHaHZOdmpjQ1UzRXFZblhJV09PcmVQeUlMT0VNM0hhZDhMN19LdU9YbGZtX19WTmM5M09KWUhYMnlIcXJ3QkFBVlI2b2V5X1BJX1p4YnFnYnlkQUJSWXpTTzdHS1k3ZHpLcFhfM1RmeTgtTzYzQXF6Mmh6SmRLdGJTWmFRQ2Y1azZkb29NOUZwOXhzWlJRd0FSdEludXhKN2pGVlE2X0g0UVo?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMHBSN0hicllFdmhzQ0IzYWN0OFFqYmlsbmJUZzk2b1FWVGtESENqdzFJX0hFMkxaT0ZPRmNiTUd2VWpHaHZOdmpjQ1UzRXFZblhJV09PcmVQeUlMT0VNM0hhZDhMN19LdU9YbGZtX19WTmM5M09KWUhYMnlIcXJ3QkFBVlI2b2V5X1BJX1p4YnFnYnlkQUJSWXpTTzdHS1k3ZHpLcFhfM1RmeTgtTzYzQXF6Mmh6SmRLdGJTWmFRQ2Y1azZkb29NOUZwOXhzWlJRd0FSdEludXhKN2pGVlE2X0g0UVo?oc=5",
       "source": "Free Feed Radar",
-      "sourceFeed": "Texas law firm partners",
-      "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-      "sourceDate": "20260909T063000Z",
-      "sourceType": "attorney",
+      "sourceFeed": "Texas CPA tax advisors",
+      "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
+      "sourceDate": "Wed, 08 Apr 2026 07:00:00 GMT",
+      "sourceType": "cpa",
       "priority": "texas",
-      "summary": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED · stlouisstar.com · United States · English",
-      "signal": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMHBSN0hicllFdmhzQ0IzYWN0OFFqYmlsbmJUZzk2b1FWVGtESENqdzFJX0hFMkxaT0ZPRmNiTUd2VWpHaHZOdmpjQ1UzRXFZblhJV09PcmVQeUlMT0VNM0hhZDhMN19LdU9YbGZtX19WTmM5M09KWUhYMnlIcXJ3QkFBVlI2b2V5X1BJX1p4YnFnYnlkQUJSWXpTTzdHS1k3ZHpLcFhfM1RmeTgtTzYzQXF6Mmh6SmRLdGJTWmFRQ2Y1azZkb29NOUZwOXhzWlJRd0FSdEludXhKN2pGVlE2X0g0UVo?oc=5\" target=\"_blank\"&gt;Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;24-7PressRelease.com&lt;/font&gt;",
+      "signal": "Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry - 24-7PressRelease.com",
       "raw": {
-        "sourceKind": "gdelt",
-        "sourceFeed": "Texas law firm partners",
-        "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-        "sourceType": "attorney",
+        "sourceKind": "rss",
+        "sourceFeed": "Texas CPA tax advisors",
+        "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
+        "sourceType": "cpa",
         "priority": "texas",
-        "title": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED",
-        "url": "http://www.stlouisstar.com/news/279295537/varghese-summersett-partner-ty-stimpson-named-man-of-impact-at-inaugural-titans-of-business-awards",
-        "summary": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED · stlouisstar.com · United States · English",
-        "sourceDate": "20260909T063000Z",
+        "title": "Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry - 24-7PressRelease.com",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMHBSN0hicllFdmhzQ0IzYWN0OFFqYmlsbmJUZzk2b1FWVGtESENqdzFJX0hFMkxaT0ZPRmNiTUd2VWpHaHZOdmpjQ1UzRXFZblhJV09PcmVQeUlMT0VNM0hhZDhMN19LdU9YbGZtX19WTmM5M09KWUhYMnlIcXJ3QkFBVlI2b2V5X1BJX1p4YnFnYnlkQUJSWXpTTzdHS1k3ZHpLcFhfM1RmeTgtTzYzQXF6Mmh6SmRLdGJTWmFRQ2Y1azZkb29NOUZwOXhzWlJRd0FSdEludXhKN2pGVlE2X0g0UVo?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMHBSN0hicllFdmhzQ0IzYWN0OFFqYmlsbmJUZzk2b1FWVGtESENqdzFJX0hFMkxaT0ZPRmNiTUd2VWpHaHZOdmpjQ1UzRXFZblhJV09PcmVQeUlMT0VNM0hhZDhMN19LdU9YbGZtX19WTmM5M09KWUhYMnlIcXJ3QkFBVlI2b2V5X1BJX1p4YnFnYnlkQUJSWXpTTzdHS1k3ZHpLcFhfM1RmeTgtTzYzQXF6Mmh6SmRLdGJTWmFRQ2Y1azZkb29NOUZwOXhzWlJRd0FSdEludXhKN2pGVlE2X0g0UVo?oc=5\" target=\"_blank\"&gt;Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;24-7PressRelease.com&lt;/font&gt;",
+        "sourceDate": "Wed, 08 Apr 2026 07:00:00 GMT",
         "raw": {
           "meta": {
-            "name": "Texas law firm partners",
-            "query": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-            "type": "attorney",
-            "priority": "texas"
-          },
-          "gdelt": {
-            "url": "http://www.stlouisstar.com/news/279295537/varghese-summersett-partner-ty-stimpson-named-man-of-impact-at-inaugural-titans-of-business-awards",
-            "url_mobile": "",
-            "title": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED",
-            "seendate": "20260909T063000Z",
-            "socialimage": "",
-            "domain": "stlouisstar.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "name": "Texas CPA tax advisors",
+            "query": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
+            "type": "cpa",
+            "priority": "texas",
+            "url": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22%20OR%20%22depletion%20allowance%22%20OR%20%22high%20net%20worth%22)%20Texas&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
           }
         },
-        "sourceCollection": "gdeltQueries"
+        "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-03T19:17:39.989Z",
+      "foundAt": "2026-11-04T19:29:02.295Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
         {
-          "type": "Company Website",
-          "value": "https://stlouisstar.com",
-          "confidence": "Medium",
-          "source": "source domain"
-        },
-        {
           "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=TY%20STIMPSON%20NAMED%20VARGHESE",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Who%20Honors%20Kaleen%20Reyna",
           "confidence": "Medium",
           "source": "free search path"
         },
         {
           "type": "Google Search",
-          "value": "https://www.google.com/search?q=TY%20STIMPSON%20NAMED%20VARGHESE+contact+LinkedIn+email",
+          "value": "https://www.google.com/search?q=Who%20Honors%20Kaleen%20Reyna+contact+LinkedIn+email",
           "confidence": "Medium",
           "source": "free search path"
         }
@@ -276,17 +619,16 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify TY STIMPSON NAMED VARGHESE and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nextAction": "Day 1: verify Who Honors Kaleen Reyna and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi TY, I came across a public signal related to VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi Who, I came across a public signal related to Marquis Who's Who Honors Kaleen Reyna, CPA, for Expertise in Accounting in the Oil and Gas Industry - 24-7PressRelease.c. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
         "manual contact path available",
         "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
+        "Basin ICP signal"
       ],
       "aiError": "Groq HTTP 404",
       "contactable": true,
@@ -294,73 +636,59 @@
       "workflowEligible": true,
       "missingQualificationFields": [],
       "pipelineBlockReason": "",
-      "contactSummary": "Company Website + LinkedIn Search + Google Search"
+      "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793733459989-44fc31e2816948",
-      "name": "TY STIMPSON NAMED VARGHESE",
-      "title": "attorney",
+      "id": "rad-free-1793820542307-b739e07213b0b8",
+      "name": "And CEO",
+      "title": "business_owner",
       "company": "",
-      "location": "Texas-first",
-      "url": "http://www.nashvilleherald.com/news/279295537/varghese-summersett-partner-ty-stimpson-named-man-of-impact-at-inaugural-titans-of-business-awards",
-      "sourceUrl": "http://www.nashvilleherald.com/news/279295537/varghese-summersett-partner-ty-stimpson-named-man-of-impact-at-inaugural-titans-of-business-awards",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBuTW16cE1rQ3VxWHp6ZVU4VzMzc3gtNU40UTBTOXJ4c3VIcGgydXhyYVlYM0Y0d0xjYWNuemZyeHp1TGJVeE5ZeDNGNzMtUV9Ma1dUcUp5d01UY0UyWkRfdHRMQlctZTYzMnF0Z0ZFQnIxWUZDNzVB0gF8QVVfeXFMUEtDc1JWazBYbzB6b0JvVm9VN1RLUGtMeUNVZGN3Wjg3VTktcFdEenFvRjJvbGFOUXpONy1wSVl2Q0c3bFJPSGJSb25JTnM5MDVNY0hBM25hVUM3NnRkUGF4cHB4T3d2OE9XWnkyU0JtMjM1RjRkRTRpWUtCZA?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBuTW16cE1rQ3VxWHp6ZVU4VzMzc3gtNU40UTBTOXJ4c3VIcGgydXhyYVlYM0Y0d0xjYWNuemZyeHp1TGJVeE5ZeDNGNzMtUV9Ma1dUcUp5d01UY0UyWkRfdHRMQlctZTYzMnF0Z0ZFQnIxWUZDNzVB0gF8QVVfeXFMUEtDc1JWazBYbzB6b0JvVm9VN1RLUGtMeUNVZGN3Wjg3VTktcFdEenFvRjJvbGFOUXpONy1wSVl2Q0c3bFJPSGJSb25JTnM5MDVNY0hBM25hVUM3NnRkUGF4cHB4T3d2OE9XWnkyU0JtMjM1RjRkRTRpWUtCZA?oc=5",
       "source": "Free Feed Radar",
-      "sourceFeed": "Texas law firm partners",
-      "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-      "sourceDate": "20260909T061500Z",
-      "sourceType": "attorney",
-      "priority": "texas",
-      "summary": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED · nashvilleherald.com · United States · English",
-      "signal": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED",
+      "sourceFeed": "Nationwide franchise and multi-unit owners",
+      "sourceQuery": "(\"multi-unit franchisee\" OR \"franchise owner\" OR \"multi unit operator\") founder CEO owner \"United States\"",
+      "sourceDate": "Tue, 23 Sep 2025 07:00:00 GMT",
+      "sourceType": "business_owner",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBuTW16cE1rQ3VxWHp6ZVU4VzMzc3gtNU40UTBTOXJ4c3VIcGgydXhyYVlYM0Y0d0xjYWNuemZyeHp1TGJVeE5ZeDNGNzMtUV9Ma1dUcUp5d01UY0UyWkRfdHRMQlctZTYzMnF0Z0ZFQnIxWUZDNzVB0gF8QVVfeXFMUEtDc1JWazBYbzB6b0JvVm9VN1RLUGtMeUNVZGN3Wjg3VTktcFdEenFvRjJvbGFOUXpONy1wSVl2Q0c3bFJPSGJSb25JTnM5MDVNY0hBM25hVUM3NnRkUGF4cHB4T3d2OE9XWnkyU0JtMjM1RjRkRTRpWUtCZA?oc=5\" target=\"_blank\"&gt;From Franchisee To Company Owner And CEO&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Chief Executive&lt;/font&gt;",
+      "signal": "From Franchisee To Company Owner And CEO - Chief Executive",
       "raw": {
-        "sourceKind": "gdelt",
-        "sourceFeed": "Texas law firm partners",
-        "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-        "sourceType": "attorney",
-        "priority": "texas",
-        "title": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED",
-        "url": "http://www.nashvilleherald.com/news/279295537/varghese-summersett-partner-ty-stimpson-named-man-of-impact-at-inaugural-titans-of-business-awards",
-        "summary": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED · nashvilleherald.com · United States · English",
-        "sourceDate": "20260909T061500Z",
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide franchise and multi-unit owners",
+        "sourceQuery": "(\"multi-unit franchisee\" OR \"franchise owner\" OR \"multi unit operator\") founder CEO owner \"United States\"",
+        "sourceType": "business_owner",
+        "priority": "nationwide",
+        "title": "From Franchisee To Company Owner And CEO - Chief Executive",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBuTW16cE1rQ3VxWHp6ZVU4VzMzc3gtNU40UTBTOXJ4c3VIcGgydXhyYVlYM0Y0d0xjYWNuemZyeHp1TGJVeE5ZeDNGNzMtUV9Ma1dUcUp5d01UY0UyWkRfdHRMQlctZTYzMnF0Z0ZFQnIxWUZDNzVB0gF8QVVfeXFMUEtDc1JWazBYbzB6b0JvVm9VN1RLUGtMeUNVZGN3Wjg3VTktcFdEenFvRjJvbGFOUXpONy1wSVl2Q0c3bFJPSGJSb25JTnM5MDVNY0hBM25hVUM3NnRkUGF4cHB4T3d2OE9XWnkyU0JtMjM1RjRkRTRpWUtCZA?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBuTW16cE1rQ3VxWHp6ZVU4VzMzc3gtNU40UTBTOXJ4c3VIcGgydXhyYVlYM0Y0d0xjYWNuemZyeHp1TGJVeE5ZeDNGNzMtUV9Ma1dUcUp5d01UY0UyWkRfdHRMQlctZTYzMnF0Z0ZFQnIxWUZDNzVB0gF8QVVfeXFMUEtDc1JWazBYbzB6b0JvVm9VN1RLUGtMeUNVZGN3Wjg3VTktcFdEenFvRjJvbGFOUXpONy1wSVl2Q0c3bFJPSGJSb25JTnM5MDVNY0hBM25hVUM3NnRkUGF4cHB4T3d2OE9XWnkyU0JtMjM1RjRkRTRpWUtCZA?oc=5\" target=\"_blank\"&gt;From Franchisee To Company Owner And CEO&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Chief Executive&lt;/font&gt;",
+        "sourceDate": "Tue, 23 Sep 2025 07:00:00 GMT",
         "raw": {
           "meta": {
-            "name": "Texas law firm partners",
-            "query": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-            "type": "attorney",
-            "priority": "texas"
-          },
-          "gdelt": {
-            "url": "http://www.nashvilleherald.com/news/279295537/varghese-summersett-partner-ty-stimpson-named-man-of-impact-at-inaugural-titans-of-business-awards",
-            "url_mobile": "",
-            "title": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED",
-            "seendate": "20260909T061500Z",
-            "socialimage": "",
-            "domain": "nashvilleherald.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "name": "Nationwide franchise and multi-unit owners",
+            "query": "(\"multi-unit franchisee\" OR \"franchise owner\" OR \"multi unit operator\") founder CEO owner \"United States\"",
+            "type": "business_owner",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22multi-unit%20franchisee%22%20OR%20%22franchise%20owner%22%20OR%20%22multi%20unit%20operator%22)%20founder%20CEO%20owner%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
           }
         },
-        "sourceCollection": "gdeltQueries"
+        "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-03T19:17:39.989Z",
+      "foundAt": "2026-11-04T19:29:02.307Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
         {
-          "type": "Company Website",
-          "value": "https://nashvilleherald.com",
-          "confidence": "Medium",
-          "source": "source domain"
-        },
-        {
           "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=TY%20STIMPSON%20NAMED%20VARGHESE",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=And%20CEO",
           "confidence": "Medium",
           "source": "free search path"
         },
         {
           "type": "Google Search",
-          "value": "https://www.google.com/search?q=TY%20STIMPSON%20NAMED%20VARGHESE+contact+LinkedIn+email",
+          "value": "https://www.google.com/search?q=And%20CEO+contact+LinkedIn+email",
           "confidence": "Medium",
           "source": "free search path"
         }
@@ -368,17 +696,15 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify TY STIMPSON NAMED VARGHESE and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nextAction": "Day 1: verify And CEO and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi TY, I came across a public signal related to VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi And, I came across a public signal related to From Franchisee To Company Owner And CEO - Chief Executive. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
         "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
+        "Basin ICP signal"
       ],
       "aiError": "Groq HTTP 404",
       "contactable": true,
@@ -386,73 +712,59 @@
       "workflowEligible": true,
       "missingQualificationFields": [],
       "pipelineBlockReason": "",
-      "contactSummary": "Company Website + LinkedIn Search + Google Search"
+      "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793733459989-2c6c770a33a8c",
-      "name": "TY STIMPSON NAMED VARGHESE",
-      "title": "attorney",
+      "id": "rad-free-1793820542303-da25be9e7f679",
+      "name": "Associates Promotes Trent Cade",
+      "title": "cpa",
       "company": "",
-      "location": "Texas-first",
-      "url": "http://www.saltlakecitysun.com/news/279295537/varghese-summersett-partner-ty-stimpson-named-man-of-impact-at-inaugural-titans-of-business-awards",
-      "sourceUrl": "http://www.saltlakecitysun.com/news/279295537/varghese-summersett-partner-ty-stimpson-named-man-of-impact-at-inaugural-titans-of-business-awards",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUmIxc2RaenN0STZwczdSLVNRcmRVZks5WGFJZy1fUDVLVGJtN19pSlh3bGtQYW1uekk5VzhCTXFiYkhTOGFEVkt1akJ5SDVqYTFoTC02RF9vaGd6bF9EUVIxb005S194bUxlT01WZ3huVU0yVllvYmQxVXNHaEdldGd5MEU2NmhYVWNqUm9tMUlzQ0d1bFBmUzdLRnBod3hlSDNpeVNqNXhqRVBHYW9Cakt6R2hOY2VQbXZVa3Z2Z2ZMX1RlV1E?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUmIxc2RaenN0STZwczdSLVNRcmRVZks5WGFJZy1fUDVLVGJtN19pSlh3bGtQYW1uekk5VzhCTXFiYkhTOGFEVkt1akJ5SDVqYTFoTC02RF9vaGd6bF9EUVIxb005S194bUxlT01WZ3huVU0yVllvYmQxVXNHaEdldGd5MEU2NmhYVWNqUm9tMUlzQ0d1bFBmUzdLRnBod3hlSDNpeVNqNXhqRVBHYW9Cakt6R2hOY2VQbXZVa3Z2Z2ZMX1RlV1E?oc=5",
       "source": "Free Feed Radar",
-      "sourceFeed": "Texas law firm partners",
-      "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-      "sourceDate": "20260909T054500Z",
-      "sourceType": "attorney",
-      "priority": "texas",
-      "summary": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED · saltlakecitysun.com · United States · English",
-      "signal": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED",
+      "sourceFeed": "Nationwide CPA tax advisors",
+      "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+      "sourceDate": "Mon, 26 Oct 2026 09:03:10 GMT",
+      "sourceType": "cpa",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxPUmIxc2RaenN0STZwczdSLVNRcmRVZks5WGFJZy1fUDVLVGJtN19pSlh3bGtQYW1uekk5VzhCTXFiYkhTOGFEVkt1akJ5SDVqYTFoTC02RF9vaGd6bF9EUVIxb005S194bUxlT01WZ3huVU0yVllvYmQxVXNHaEdldGd5MEU2NmhYVWNqUm9tMUlzQ0d1bFBmUzdLRnBod3hlSDNpeVNqNXhqRVBHYW9Cakt6R2hOY2VQbXZVa3Z2Z2ZMX1RlV1E?oc=5\" target=\"_blank\"&gt;Cade & Associates Promotes Trent Cade, CPA, ABV, to Operations Manager&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;The Des Moines Register&lt;/font&gt;",
+      "signal": "Cade & Associates Promotes Trent Cade, CPA, ABV, to Operations Manager - The Des Moines Register",
       "raw": {
-        "sourceKind": "gdelt",
-        "sourceFeed": "Texas law firm partners",
-        "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-        "sourceType": "attorney",
-        "priority": "texas",
-        "title": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED",
-        "url": "http://www.saltlakecitysun.com/news/279295537/varghese-summersett-partner-ty-stimpson-named-man-of-impact-at-inaugural-titans-of-business-awards",
-        "summary": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED · saltlakecitysun.com · United States · English",
-        "sourceDate": "20260909T054500Z",
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide CPA tax advisors",
+        "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+        "sourceType": "cpa",
+        "priority": "nationwide",
+        "title": "Cade & Associates Promotes Trent Cade, CPA, ABV, to Operations Manager - The Des Moines Register",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUmIxc2RaenN0STZwczdSLVNRcmRVZks5WGFJZy1fUDVLVGJtN19pSlh3bGtQYW1uekk5VzhCTXFiYkhTOGFEVkt1akJ5SDVqYTFoTC02RF9vaGd6bF9EUVIxb005S194bUxlT01WZ3huVU0yVllvYmQxVXNHaEdldGd5MEU2NmhYVWNqUm9tMUlzQ0d1bFBmUzdLRnBod3hlSDNpeVNqNXhqRVBHYW9Cakt6R2hOY2VQbXZVa3Z2Z2ZMX1RlV1E?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxPUmIxc2RaenN0STZwczdSLVNRcmRVZks5WGFJZy1fUDVLVGJtN19pSlh3bGtQYW1uekk5VzhCTXFiYkhTOGFEVkt1akJ5SDVqYTFoTC02RF9vaGd6bF9EUVIxb005S194bUxlT01WZ3huVU0yVllvYmQxVXNHaEdldGd5MEU2NmhYVWNqUm9tMUlzQ0d1bFBmUzdLRnBod3hlSDNpeVNqNXhqRVBHYW9Cakt6R2hOY2VQbXZVa3Z2Z2ZMX1RlV1E?oc=5\" target=\"_blank\"&gt;Cade & Associates Promotes Trent Cade, CPA, ABV, to Operations Manager&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;The Des Moines Register&lt;/font&gt;",
+        "sourceDate": "Mon, 26 Oct 2026 09:03:10 GMT",
         "raw": {
           "meta": {
-            "name": "Texas law firm partners",
-            "query": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-            "type": "attorney",
-            "priority": "texas"
-          },
-          "gdelt": {
-            "url": "http://www.saltlakecitysun.com/news/279295537/varghese-summersett-partner-ty-stimpson-named-man-of-impact-at-inaugural-titans-of-business-awards",
-            "url_mobile": "",
-            "title": "VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED",
-            "seendate": "20260909T054500Z",
-            "socialimage": "",
-            "domain": "saltlakecitysun.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "name": "Nationwide CPA tax advisors",
+            "query": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+            "type": "cpa",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22high%20net%20worth%22%20OR%20%22business%20owner%22%20OR%20%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
           }
         },
-        "sourceCollection": "gdeltQueries"
+        "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-03T19:17:39.989Z",
+      "foundAt": "2026-11-04T19:29:02.303Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
         {
-          "type": "Company Website",
-          "value": "https://saltlakecitysun.com",
-          "confidence": "Medium",
-          "source": "source domain"
-        },
-        {
           "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=TY%20STIMPSON%20NAMED%20VARGHESE",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Associates%20Promotes%20Trent%20Cade",
           "confidence": "Medium",
           "source": "free search path"
         },
         {
           "type": "Google Search",
-          "value": "https://www.google.com/search?q=TY%20STIMPSON%20NAMED%20VARGHESE+contact+LinkedIn+email",
+          "value": "https://www.google.com/search?q=Associates%20Promotes%20Trent%20Cade+contact+LinkedIn+email",
           "confidence": "Medium",
           "source": "free search path"
         }
@@ -460,17 +772,15 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify TY STIMPSON NAMED VARGHESE and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nextAction": "Day 1: verify Associates Promotes Trent Cade and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi TY, I came across a public signal related to VARGHESE SUMMERSETT PARTNER TY STIMPSON NAMED. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi Associates, I came across a public signal related to Cade & Associates Promotes Trent Cade, CPA, ABV, to Operations Manager - The Des Moines Register. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
         "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
+        "Basin ICP signal"
       ],
       "aiError": "Groq HTTP 404",
       "contactable": true,
@@ -478,73 +788,59 @@
       "workflowEligible": true,
       "missingQualificationFields": [],
       "pipelineBlockReason": "",
-      "contactSummary": "Company Website + LinkedIn Search + Google Search"
+      "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793733459991-be666a13f398b",
-      "name": "VARGHESE SUMMERSETT",
-      "title": "attorney",
-      "company": "",
-      "location": "Texas-first",
-      "url": "http://www.pittsburghstar.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-      "sourceUrl": "http://www.pittsburghstar.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
+      "id": "rad-free-1793820542304-c441534855b5b",
+      "name": "Firm Joins Citrin Cooperman",
+      "title": "cpa",
+      "company": "Virginia CPA Firm",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaWtWUnRmZHVVSUUtVmp0V2U4anhuSU03RWVtamZVZUEzOXJYdzRNeWY0NHdyRDYzQmk2bUZmaW1sZFZTdVk3X0Y1bERob2ViU1lNR09rVzl1T25sWDRqeDFTbHh5MmVySmt3MGZpVjlBMUVaQUdYVE9UVnB0SkMtNUNKdWxlUmhySE1UTEhWWVRIRWJQZHFsalNWemxHX1VfdzZ2dW9hQQ?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaWtWUnRmZHVVSUUtVmp0V2U4anhuSU03RWVtamZVZUEzOXJYdzRNeWY0NHdyRDYzQmk2bUZmaW1sZFZTdVk3X0Y1bERob2ViU1lNR09rVzl1T25sWDRqeDFTbHh5MmVySmt3MGZpVjlBMUVaQUdYVE9UVnB0SkMtNUNKdWxlUmhySE1UTEhWWVRIRWJQZHFsalNWemxHX1VfdzZ2dW9hQQ?oc=5",
       "source": "Free Feed Radar",
-      "sourceFeed": "Texas law firm partners",
-      "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-      "sourceDate": "20260812T231500Z",
-      "sourceType": "attorney",
-      "priority": "texas",
-      "summary": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME · pittsburghstar.com · United States · English",
-      "signal": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
+      "sourceFeed": "Nationwide CPA tax advisors",
+      "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+      "sourceDate": "Tue, 23 Feb 2021 08:00:00 GMT",
+      "sourceType": "cpa",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxNaWtWUnRmZHVVSUUtVmp0V2U4anhuSU03RWVtamZVZUEzOXJYdzRNeWY0NHdyRDYzQmk2bUZmaW1sZFZTdVk3X0Y1bERob2ViU1lNR09rVzl1T25sWDRqeDFTbHh5MmVySmt3MGZpVjlBMUVaQUdYVE9UVnB0SkMtNUNKdWxlUmhySE1UTEhWWVRIRWJQZHFsalNWemxHX1VfdzZ2dW9hQQ?oc=5\" target=\"_blank\"&gt;Fairfax, Virginia CPA Firm Joins Citrin Cooperman&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;PR Newswire&lt;/font&gt;",
+      "signal": "Fairfax, Virginia CPA Firm Joins Citrin Cooperman - PR Newswire",
       "raw": {
-        "sourceKind": "gdelt",
-        "sourceFeed": "Texas law firm partners",
-        "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-        "sourceType": "attorney",
-        "priority": "texas",
-        "title": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
-        "url": "http://www.pittsburghstar.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-        "summary": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME · pittsburghstar.com · United States · English",
-        "sourceDate": "20260812T231500Z",
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide CPA tax advisors",
+        "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+        "sourceType": "cpa",
+        "priority": "nationwide",
+        "title": "Fairfax, Virginia CPA Firm Joins Citrin Cooperman - PR Newswire",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaWtWUnRmZHVVSUUtVmp0V2U4anhuSU03RWVtamZVZUEzOXJYdzRNeWY0NHdyRDYzQmk2bUZmaW1sZFZTdVk3X0Y1bERob2ViU1lNR09rVzl1T25sWDRqeDFTbHh5MmVySmt3MGZpVjlBMUVaQUdYVE9UVnB0SkMtNUNKdWxlUmhySE1UTEhWWVRIRWJQZHFsalNWemxHX1VfdzZ2dW9hQQ?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxNaWtWUnRmZHVVSUUtVmp0V2U4anhuSU03RWVtamZVZUEzOXJYdzRNeWY0NHdyRDYzQmk2bUZmaW1sZFZTdVk3X0Y1bERob2ViU1lNR09rVzl1T25sWDRqeDFTbHh5MmVySmt3MGZpVjlBMUVaQUdYVE9UVnB0SkMtNUNKdWxlUmhySE1UTEhWWVRIRWJQZHFsalNWemxHX1VfdzZ2dW9hQQ?oc=5\" target=\"_blank\"&gt;Fairfax, Virginia CPA Firm Joins Citrin Cooperman&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;PR Newswire&lt;/font&gt;",
+        "sourceDate": "Tue, 23 Feb 2021 08:00:00 GMT",
         "raw": {
           "meta": {
-            "name": "Texas law firm partners",
-            "query": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-            "type": "attorney",
-            "priority": "texas"
-          },
-          "gdelt": {
-            "url": "http://www.pittsburghstar.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-            "url_mobile": "",
-            "title": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
-            "seendate": "20260812T231500Z",
-            "socialimage": "",
-            "domain": "pittsburghstar.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "name": "Nationwide CPA tax advisors",
+            "query": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+            "type": "cpa",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22high%20net%20worth%22%20OR%20%22business%20owner%22%20OR%20%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
           }
         },
-        "sourceCollection": "gdeltQueries"
+        "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-03T19:17:39.991Z",
+      "foundAt": "2026-11-04T19:29:02.304Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
         {
-          "type": "Company Website",
-          "value": "https://pittsburghstar.com",
-          "confidence": "Medium",
-          "source": "source domain"
-        },
-        {
           "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=VARGHESE%20SUMMERSETT",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Firm%20Joins%20Citrin%20Cooperman%20Virginia%20CPA%20Firm",
           "confidence": "Medium",
           "source": "free search path"
         },
         {
           "type": "Google Search",
-          "value": "https://www.google.com/search?q=VARGHESE%20SUMMERSETT+contact+LinkedIn+email",
+          "value": "https://www.google.com/search?q=Firm%20Joins%20Citrin%20Cooperman%20Virginia%20CPA%20Firm+contact+LinkedIn+email",
           "confidence": "Medium",
           "source": "free search path"
         }
@@ -552,91 +848,74 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify VARGHESE SUMMERSETT and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nextAction": "Day 1: verify Firm Joins Citrin Cooperman and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi VARGHESE, I came across a public signal related to VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi Firm, I came across a public signal related to Fairfax, Virginia CPA Firm Joins Citrin Cooperman - PR Newswire. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
         "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
+        "Basin ICP signal"
       ],
-      "aiError": "Groq HTTP 404",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
       "missingQualificationFields": [],
       "pipelineBlockReason": "",
-      "contactSummary": "Company Website + LinkedIn Search + Google Search"
+      "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793733459991-fccfea8686b3e8",
-      "name": "VARGHESE SUMMERSETT",
-      "title": "attorney",
+      "id": "rad-free-1793820542301-40cb13f80be99",
+      "name": "From South Windsor Guilty",
+      "title": "physician",
       "company": "",
-      "location": "Texas-first",
-      "url": "http://www.dallassun.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-      "sourceUrl": "http://www.dallassun.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZXREdERfdVFuek93VjhBeDF6OFlIYlpvZjF5Vjl1V1R2Vk9oV2pMcTlvTHVULUZ4Z24wNlNYOW43TEZWUzREUnYzZ043TVE4MUNJZnNpcGJCaXFJb3E4RVR2TVM5eTZyS2xrV1RORlRYUVJfNTZPc3hlWkhpLVFmdldsb3otNFl2MmJ5ZUZXT0xOWTBTZm5DZWtvRlFKUUMzNGpn?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZXREdERfdVFuek93VjhBeDF6OFlIYlpvZjF5Vjl1V1R2Vk9oV2pMcTlvTHVULUZ4Z24wNlNYOW43TEZWUzREUnYzZ043TVE4MUNJZnNpcGJCaXFJb3E4RVR2TVM5eTZyS2xrV1RORlRYUVJfNTZPc3hlWkhpLVFmdldsb3otNFl2MmJ5ZUZXT0xOWTBTZm5DZWtvRlFKUUMzNGpn?oc=5",
       "source": "Free Feed Radar",
-      "sourceFeed": "Texas law firm partners",
-      "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-      "sourceDate": "20260812T220000Z",
-      "sourceType": "attorney",
-      "priority": "texas",
-      "summary": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME · dallassun.com · United States · English",
-      "signal": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
+      "sourceFeed": "Nationwide physician practice owners",
+      "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+      "sourceDate": "Fri, 06 Sep 2024 07:00:00 GMT",
+      "sourceType": "physician",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxNZXREdERfdVFuek93VjhBeDF6OFlIYlpvZjF5Vjl1V1R2Vk9oV2pMcTlvTHVULUZ4Z24wNlNYOW43TEZWUzREUnYzZ043TVE4MUNJZnNpcGJCaXFJb3E4RVR2TVM5eTZyS2xrV1RORlRYUVJfNTZPc3hlWkhpLVFmdldsb3otNFl2MmJ5ZUZXT0xOWTBTZm5DZWtvRlFKUUMzNGpn?oc=5\" target=\"_blank\"&gt;Dental Practice Owner From South Windsor Guilty In Kickback Scheme&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Patch&lt;/font&gt;",
+      "signal": "Dental Practice Owner From South Windsor Guilty In Kickback Scheme - Patch",
       "raw": {
-        "sourceKind": "gdelt",
-        "sourceFeed": "Texas law firm partners",
-        "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-        "sourceType": "attorney",
-        "priority": "texas",
-        "title": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
-        "url": "http://www.dallassun.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-        "summary": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME · dallassun.com · United States · English",
-        "sourceDate": "20260812T220000Z",
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide physician practice owners",
+        "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+        "sourceType": "physician",
+        "priority": "nationwide",
+        "title": "Dental Practice Owner From South Windsor Guilty In Kickback Scheme - Patch",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZXREdERfdVFuek93VjhBeDF6OFlIYlpvZjF5Vjl1V1R2Vk9oV2pMcTlvTHVULUZ4Z24wNlNYOW43TEZWUzREUnYzZ043TVE4MUNJZnNpcGJCaXFJb3E4RVR2TVM5eTZyS2xrV1RORlRYUVJfNTZPc3hlWkhpLVFmdldsb3otNFl2MmJ5ZUZXT0xOWTBTZm5DZWtvRlFKUUMzNGpn?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxNZXREdERfdVFuek93VjhBeDF6OFlIYlpvZjF5Vjl1V1R2Vk9oV2pMcTlvTHVULUZ4Z24wNlNYOW43TEZWUzREUnYzZ043TVE4MUNJZnNpcGJCaXFJb3E4RVR2TVM5eTZyS2xrV1RORlRYUVJfNTZPc3hlWkhpLVFmdldsb3otNFl2MmJ5ZUZXT0xOWTBTZm5DZWtvRlFKUUMzNGpn?oc=5\" target=\"_blank\"&gt;Dental Practice Owner From South Windsor Guilty In Kickback Scheme&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Patch&lt;/font&gt;",
+        "sourceDate": "Fri, 06 Sep 2024 07:00:00 GMT",
         "raw": {
           "meta": {
-            "name": "Texas law firm partners",
-            "query": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-            "type": "attorney",
-            "priority": "texas"
-          },
-          "gdelt": {
-            "url": "http://www.dallassun.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-            "url_mobile": "",
-            "title": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
-            "seendate": "20260812T220000Z",
-            "socialimage": "",
-            "domain": "dallassun.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "name": "Nationwide physician practice owners",
+            "query": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+            "type": "physician",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
           }
         },
-        "sourceCollection": "gdeltQueries"
+        "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-03T19:17:39.991Z",
+      "foundAt": "2026-11-04T19:29:02.301Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
         {
-          "type": "Company Website",
-          "value": "https://dallassun.com",
-          "confidence": "Medium",
-          "source": "source domain"
-        },
-        {
           "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=VARGHESE%20SUMMERSETT",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=From%20South%20Windsor%20Guilty",
           "confidence": "Medium",
           "source": "free search path"
         },
         {
           "type": "Google Search",
-          "value": "https://www.google.com/search?q=VARGHESE%20SUMMERSETT+contact+LinkedIn+email",
+          "value": "https://www.google.com/search?q=From%20South%20Windsor%20Guilty+contact+LinkedIn+email",
           "confidence": "Medium",
           "source": "free search path"
         }
@@ -644,91 +923,74 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify VARGHESE SUMMERSETT and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nextAction": "Day 1: verify From South Windsor Guilty and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi VARGHESE, I came across a public signal related to VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi From, I came across a public signal related to Dental Practice Owner From South Windsor Guilty In Kickback Scheme - Patch. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
         "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
+        "Basin ICP signal"
       ],
-      "aiError": "Groq HTTP 404",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
       "missingQualificationFields": [],
       "pipelineBlockReason": "",
-      "contactSummary": "Company Website + LinkedIn Search + Google Search"
+      "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793733459991-10d076a4f3aeb",
-      "name": "VARGHESE SUMMERSETT",
+      "id": "rad-free-1793820542302-e4df8f8b0e5df8",
+      "name": "Glen McGorty",
       "title": "attorney",
-      "company": "",
-      "location": "Texas-first",
-      "url": "http://www.bostonstar.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-      "sourceUrl": "http://www.bostonstar.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
+      "company": "New York Law",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNcWtGNXNHTDRHWEpfdWdmdG9yR3Q1SmIzUEtkUzZDS2twTUpQU0doT0FUQkY5bXdsUGF6NWRVVDA3X3FTNHg3blBnRjg2QnlBTDlWZTY4b2pWVGw1QV9MSmh5bVJiUDlnY0lPdFFvQmpsMXZOMnFnbEpiaWw4SlJFRXVza1dVTE5JZi1jS2F0YTJLX2g1UHFJNVB5MFRnV1ozNnhJWjZqX1ZGZ0hIbjdEekhhdXRZVVRlMUk0c29HZ0NPMVhwc0NXWjRNbFZCT2E5dlN3?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNcWtGNXNHTDRHWEpfdWdmdG9yR3Q1SmIzUEtkUzZDS2twTUpQU0doT0FUQkY5bXdsUGF6NWRVVDA3X3FTNHg3blBnRjg2QnlBTDlWZTY4b2pWVGw1QV9MSmh5bVJiUDlnY0lPdFFvQmpsMXZOMnFnbEpiaWw4SlJFRXVza1dVTE5JZi1jS2F0YTJLX2g1UHFJNVB5MFRnV1ozNnhJWjZqX1ZGZ0hIbjdEekhhdXRZVVRlMUk0c29HZ0NPMVhwc0NXWjRNbFZCT2E5dlN3?oc=5",
       "source": "Free Feed Radar",
-      "sourceFeed": "Texas law firm partners",
-      "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-      "sourceDate": "20260812T220000Z",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Wed, 20 Aug 2025 07:00:00 GMT",
       "sourceType": "attorney",
-      "priority": "texas",
-      "summary": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME · bostonstar.com · United States · English",
-      "signal": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxNcWtGNXNHTDRHWEpfdWdmdG9yR3Q1SmIzUEtkUzZDS2twTUpQU0doT0FUQkY5bXdsUGF6NWRVVDA3X3FTNHg3blBnRjg2QnlBTDlWZTY4b2pWVGw1QV9MSmh5bVJiUDlnY0lPdFFvQmpsMXZOMnFnbEpiaWw4SlJFRXVza1dVTE5JZi1jS2F0YTJLX2g1UHFJNVB5MFRnV1ozNnhJWjZqX1ZGZ0hIbjdEekhhdXRZVVRlMUk0c29HZ0NPMVhwc0NXWjRNbFZCT2E5dlN3?oc=5\" target=\"_blank\"&gt;Glen McGorty Named Finalist for Office Managing Partner of the Year by New York Law Journal&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Crowell & Moring LLP&lt;/font&gt;",
+      "signal": "Glen McGorty Named Finalist for Office Managing Partner of the Year by New York Law Journal - Crowell & Moring LLP",
       "raw": {
-        "sourceKind": "gdelt",
-        "sourceFeed": "Texas law firm partners",
-        "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
         "sourceType": "attorney",
-        "priority": "texas",
-        "title": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
-        "url": "http://www.bostonstar.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-        "summary": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME · bostonstar.com · United States · English",
-        "sourceDate": "20260812T220000Z",
+        "priority": "nationwide",
+        "title": "Glen McGorty Named Finalist for Office Managing Partner of the Year by New York Law Journal - Crowell & Moring LLP",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNcWtGNXNHTDRHWEpfdWdmdG9yR3Q1SmIzUEtkUzZDS2twTUpQU0doT0FUQkY5bXdsUGF6NWRVVDA3X3FTNHg3blBnRjg2QnlBTDlWZTY4b2pWVGw1QV9MSmh5bVJiUDlnY0lPdFFvQmpsMXZOMnFnbEpiaWw4SlJFRXVza1dVTE5JZi1jS2F0YTJLX2g1UHFJNVB5MFRnV1ozNnhJWjZqX1ZGZ0hIbjdEekhhdXRZVVRlMUk0c29HZ0NPMVhwc0NXWjRNbFZCT2E5dlN3?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxNcWtGNXNHTDRHWEpfdWdmdG9yR3Q1SmIzUEtkUzZDS2twTUpQU0doT0FUQkY5bXdsUGF6NWRVVDA3X3FTNHg3blBnRjg2QnlBTDlWZTY4b2pWVGw1QV9MSmh5bVJiUDlnY0lPdFFvQmpsMXZOMnFnbEpiaWw4SlJFRXVza1dVTE5JZi1jS2F0YTJLX2g1UHFJNVB5MFRnV1ozNnhJWjZqX1ZGZ0hIbjdEekhhdXRZVVRlMUk0c29HZ0NPMVhwc0NXWjRNbFZCT2E5dlN3?oc=5\" target=\"_blank\"&gt;Glen McGorty Named Finalist for Office Managing Partner of the Year by New York Law Journal&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Crowell & Moring LLP&lt;/font&gt;",
+        "sourceDate": "Wed, 20 Aug 2025 07:00:00 GMT",
         "raw": {
           "meta": {
-            "name": "Texas law firm partners",
-            "query": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
             "type": "attorney",
-            "priority": "texas"
-          },
-          "gdelt": {
-            "url": "http://www.bostonstar.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-            "url_mobile": "",
-            "title": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
-            "seendate": "20260812T220000Z",
-            "socialimage": "",
-            "domain": "bostonstar.com",
-            "language": "English",
-            "sourcecountry": "United States"
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
           }
         },
-        "sourceCollection": "gdeltQueries"
+        "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-03T19:17:39.991Z",
+      "foundAt": "2026-11-04T19:29:02.302Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
         {
-          "type": "Company Website",
-          "value": "https://bostonstar.com",
-          "confidence": "Medium",
-          "source": "source domain"
-        },
-        {
           "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=VARGHESE%20SUMMERSETT",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Glen%20McGorty%20New%20York%20Law",
           "confidence": "Medium",
           "source": "free search path"
         },
         {
           "type": "Google Search",
-          "value": "https://www.google.com/search?q=VARGHESE%20SUMMERSETT+contact+LinkedIn+email",
+          "value": "https://www.google.com/search?q=Glen%20McGorty%20New%20York%20Law+contact+LinkedIn+email",
           "confidence": "Medium",
           "source": "free search path"
         }
@@ -736,475 +998,14 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify VARGHESE SUMMERSETT and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nextAction": "Day 1: verify Glen McGorty and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi VARGHESE, I came across a public signal related to VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi Glen, I came across a public signal related to Glen McGorty Named Finalist for Office Managing Partner of the Year by New York Law Journal - Crowell & Moring LLP. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
         "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "aiError": "Groq HTTP 404",
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "Company Website + LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1793733459991-f3b0603f5f1428",
-      "name": "VARGHESE SUMMERSETT",
-      "title": "attorney",
-      "company": "",
-      "location": "Texas-first",
-      "url": "http://www.theusnews.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-      "sourceUrl": "http://www.theusnews.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas law firm partners",
-      "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-      "sourceDate": "20260812T214500Z",
-      "sourceType": "attorney",
-      "priority": "texas",
-      "summary": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME · theusnews.com · United States · English",
-      "signal": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
-      "raw": {
-        "sourceKind": "gdelt",
-        "sourceFeed": "Texas law firm partners",
-        "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-        "sourceType": "attorney",
-        "priority": "texas",
-        "title": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
-        "url": "http://www.theusnews.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-        "summary": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME · theusnews.com · United States · English",
-        "sourceDate": "20260812T214500Z",
-        "raw": {
-          "meta": {
-            "name": "Texas law firm partners",
-            "query": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-            "type": "attorney",
-            "priority": "texas"
-          },
-          "gdelt": {
-            "url": "http://www.theusnews.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-            "url_mobile": "",
-            "title": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
-            "seendate": "20260812T214500Z",
-            "socialimage": "",
-            "domain": "theusnews.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          }
-        },
-        "sourceCollection": "gdeltQueries"
-      },
-      "foundAt": "2026-11-03T19:17:39.991Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "Company Website",
-          "value": "https://theusnews.com",
-          "confidence": "Medium",
-          "source": "source domain"
-        },
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=VARGHESE%20SUMMERSETT",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=VARGHESE%20SUMMERSETT+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify VARGHESE SUMMERSETT and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi VARGHESE, I came across a public signal related to VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "aiError": "Groq HTTP 404",
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "Company Website + LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1793733459991-230e7380dc2928",
-      "name": "VARGHESE SUMMERSETT",
-      "title": "attorney",
-      "company": "",
-      "location": "Texas-first",
-      "url": "http://www.memphissun.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-      "sourceUrl": "http://www.memphissun.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas law firm partners",
-      "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-      "sourceDate": "20260812T213000Z",
-      "sourceType": "attorney",
-      "priority": "texas",
-      "summary": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME · memphissun.com · United States · English",
-      "signal": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
-      "raw": {
-        "sourceKind": "gdelt",
-        "sourceFeed": "Texas law firm partners",
-        "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-        "sourceType": "attorney",
-        "priority": "texas",
-        "title": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
-        "url": "http://www.memphissun.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-        "summary": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME · memphissun.com · United States · English",
-        "sourceDate": "20260812T213000Z",
-        "raw": {
-          "meta": {
-            "name": "Texas law firm partners",
-            "query": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-            "type": "attorney",
-            "priority": "texas"
-          },
-          "gdelt": {
-            "url": "http://www.memphissun.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-            "url_mobile": "",
-            "title": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
-            "seendate": "20260812T213000Z",
-            "socialimage": "",
-            "domain": "memphissun.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          }
-        },
-        "sourceCollection": "gdeltQueries"
-      },
-      "foundAt": "2026-11-03T19:17:39.991Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "Company Website",
-          "value": "https://memphissun.com",
-          "confidence": "Medium",
-          "source": "source domain"
-        },
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=VARGHESE%20SUMMERSETT",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=VARGHESE%20SUMMERSETT+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify VARGHESE SUMMERSETT and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi VARGHESE, I came across a public signal related to VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "aiError": "Groq HTTP 404",
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "Company Website + LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1793733459991-5385910677d5d8",
-      "name": "VARGHESE SUMMERSETT",
-      "title": "attorney",
-      "company": "",
-      "location": "Texas-first",
-      "url": "http://www.albuquerqueexpress.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-      "sourceUrl": "http://www.albuquerqueexpress.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas law firm partners",
-      "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-      "sourceDate": "20260812T211500Z",
-      "sourceType": "attorney",
-      "priority": "texas",
-      "summary": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME · albuquerqueexpress.com · United States · English",
-      "signal": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
-      "raw": {
-        "sourceKind": "gdelt",
-        "sourceFeed": "Texas law firm partners",
-        "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-        "sourceType": "attorney",
-        "priority": "texas",
-        "title": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
-        "url": "http://www.albuquerqueexpress.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-        "summary": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME · albuquerqueexpress.com · United States · English",
-        "sourceDate": "20260812T211500Z",
-        "raw": {
-          "meta": {
-            "name": "Texas law firm partners",
-            "query": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-            "type": "attorney",
-            "priority": "texas"
-          },
-          "gdelt": {
-            "url": "http://www.albuquerqueexpress.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-            "url_mobile": "",
-            "title": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
-            "seendate": "20260812T211500Z",
-            "socialimage": "",
-            "domain": "albuquerqueexpress.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          }
-        },
-        "sourceCollection": "gdeltQueries"
-      },
-      "foundAt": "2026-11-03T19:17:39.991Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "Company Website",
-          "value": "https://albuquerqueexpress.com",
-          "confidence": "Medium",
-          "source": "source domain"
-        },
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=VARGHESE%20SUMMERSETT",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=VARGHESE%20SUMMERSETT+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify VARGHESE SUMMERSETT and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi VARGHESE, I came across a public signal related to VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "aiError": "Groq HTTP 404",
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "Company Website + LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1793733459991-572ed38f71d328",
-      "name": "VARGHESE SUMMERSETT",
-      "title": "attorney",
-      "company": "",
-      "location": "Texas-first",
-      "url": "http://www.baltimorestar.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-      "sourceUrl": "http://www.baltimorestar.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas law firm partners",
-      "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-      "sourceDate": "20260812T193000Z",
-      "sourceType": "attorney",
-      "priority": "texas",
-      "summary": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME · baltimorestar.com · United States · English",
-      "signal": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
-      "raw": {
-        "sourceKind": "gdelt",
-        "sourceFeed": "Texas law firm partners",
-        "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-        "sourceType": "attorney",
-        "priority": "texas",
-        "title": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
-        "url": "http://www.baltimorestar.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-        "summary": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME · baltimorestar.com · United States · English",
-        "sourceDate": "20260812T193000Z",
-        "raw": {
-          "meta": {
-            "name": "Texas law firm partners",
-            "query": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-            "type": "attorney",
-            "priority": "texas"
-          },
-          "gdelt": {
-            "url": "http://www.baltimorestar.com/news/279237555/varghese-summersett-named-to-inc-5000-list-for-the-fourth-time",
-            "url_mobile": "",
-            "title": "VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME",
-            "seendate": "20260812T193000Z",
-            "socialimage": "",
-            "domain": "baltimorestar.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          }
-        },
-        "sourceCollection": "gdeltQueries"
-      },
-      "foundAt": "2026-11-03T19:17:39.991Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "Company Website",
-          "value": "https://baltimorestar.com",
-          "confidence": "Medium",
-          "source": "source domain"
-        },
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=VARGHESE%20SUMMERSETT",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=VARGHESE%20SUMMERSETT+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify VARGHESE SUMMERSETT and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi VARGHESE, I came across a public signal related to VARGHESE SUMMERSETT NAMED TO INC . 5000 LIST FOR THE FOURTH TIME. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "aiError": "Groq HTTP 404",
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "Company Website + LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1793733459989-a49addd3fb74",
-      "name": "Wilson Whitaker Rynell Attorneys",
-      "title": "attorney",
-      "company": "",
-      "location": "Texas-first",
-      "url": "https://www.pr-inside.com/four-wilson-whitaker-rynell-attorneys-named-to-2026-texas-super-lawyers-r5227018.htm",
-      "sourceUrl": "https://www.pr-inside.com/four-wilson-whitaker-rynell-attorneys-named-to-2026-texas-super-lawyers-r5227018.htm",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas law firm partners",
-      "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-      "sourceDate": "20260924T211500Z",
-      "sourceType": "attorney",
-      "priority": "texas",
-      "summary": "Four Wilson Whitaker Rynell Attorneys Named to 2026 Texas Super Lawyers ... · pr-inside.com · United States · English",
-      "signal": "Four Wilson Whitaker Rynell Attorneys Named to 2026 Texas Super Lawyers ...",
-      "raw": {
-        "sourceKind": "gdelt",
-        "sourceFeed": "Texas law firm partners",
-        "sourceQuery": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-        "sourceType": "attorney",
-        "priority": "texas",
-        "title": "Four Wilson Whitaker Rynell Attorneys Named to 2026 Texas Super Lawyers ...",
-        "url": "https://www.pr-inside.com/four-wilson-whitaker-rynell-attorneys-named-to-2026-texas-super-lawyers-r5227018.htm",
-        "summary": "Four Wilson Whitaker Rynell Attorneys Named to 2026 Texas Super Lawyers ... · pr-inside.com · United States · English",
-        "sourceDate": "20260924T211500Z",
-        "raw": {
-          "meta": {
-            "name": "Texas law firm partners",
-            "query": "(\"named partner\" OR \"managing partner\") \"law firm\" Texas",
-            "type": "attorney",
-            "priority": "texas"
-          },
-          "gdelt": {
-            "url": "https://www.pr-inside.com/four-wilson-whitaker-rynell-attorneys-named-to-2026-texas-super-lawyers-r5227018.htm",
-            "url_mobile": "",
-            "title": "Four Wilson Whitaker Rynell Attorneys Named to 2026 Texas Super Lawyers ... ",
-            "seendate": "20260924T211500Z",
-            "socialimage": "",
-            "domain": "pr-inside.com",
-            "language": "English",
-            "sourcecountry": "United States"
-          }
-        },
-        "sourceCollection": "gdeltQueries"
-      },
-      "foundAt": "2026-11-03T19:17:39.989Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "Company Website",
-          "value": "https://pr-inside.com",
-          "confidence": "Medium",
-          "source": "source domain"
-        },
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Wilson%20Whitaker%20Rynell%20Attorneys",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Wilson%20Whitaker%20Rynell%20Attorneys+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Wilson Whitaker Rynell Attorneys and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Wilson, I came across a public signal related to Four Wilson Whitaker Rynell Attorneys Named to 2026 Texas Super Lawyers .... Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
         "Basin ICP signal",
         "timely public trigger"
       ],
@@ -1213,7 +1014,836 @@
       "workflowEligible": true,
       "missingQualificationFields": [],
       "pipelineBlockReason": "",
-      "contactSummary": "Company Website + LinkedIn Search + Google Search"
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793820542301-c49dcad55bc6",
+      "name": "J. Richard Steadman",
+      "title": "physician",
+      "company": "The Steadman Clinic",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaTBvYzUteVpiNUw3Y0hGS2JYNGpZaVVaRDdSRV9Uc21OQUdXN1IzdXdPUjlja1hCRGFqZVdLTVU5Z2V1Yzh6LW9UNzJFSHM1N010NkptRzRyZnRCdDRjbnFSclZiQWctRGZzSm5xdTY0cGJ6OEFqWTVFR1p6Vzd3YVoxRWVCT3RYbFQ3VVFkSGpLdFJOaFpZRFRZcUh6WkJyUWdWQmcxX1dfTUlyRFBXb2VfNGZDSWI1MEcxUnF4N0ZpeG8?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaTBvYzUteVpiNUw3Y0hGS2JYNGpZaVVaRDdSRV9Uc21OQUdXN1IzdXdPUjlja1hCRGFqZVdLTVU5Z2V1Yzh6LW9UNzJFSHM1N010NkptRzRyZnRCdDRjbnFSclZiQWctRGZzSm5xdTY0cGJ6OEFqWTVFR1p6Vzd3YVoxRWVCT3RYbFQ3VVFkSGpLdFJOaFpZRFRZcUh6WkJyUWdWQmcxX1dfTUlyRFBXb2VfNGZDSWI1MEcxUnF4N0ZpeG8?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide physician practice owners",
+      "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+      "sourceDate": "Tue, 31 Jan 2023 08:00:00 GMT",
+      "sourceType": "physician",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaTBvYzUteVpiNUw3Y0hGS2JYNGpZaVVaRDdSRV9Uc21OQUdXN1IzdXdPUjlja1hCRGFqZVdLTVU5Z2V1Yzh6LW9UNzJFSHM1N010NkptRzRyZnRCdDRjbnFSclZiQWctRGZzSm5xdTY0cGJ6OEFqWTVFR1p6Vzd3YVoxRWVCT3RYbFQ3VVFkSGpLdFJOaFpZRFRZcUh6WkJyUWdWQmcxX1dfTUlyRFBXb2VfNGZDSWI1MEcxUnF4N0ZpeG8?oc=5\" target=\"_blank\"&gt;Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;SierraSun.com&lt;/font&gt;",
+      "signal": "Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - SierraSun.com",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide physician practice owners",
+        "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+        "sourceType": "physician",
+        "priority": "nationwide",
+        "title": "Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - SierraSun.com",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaTBvYzUteVpiNUw3Y0hGS2JYNGpZaVVaRDdSRV9Uc21OQUdXN1IzdXdPUjlja1hCRGFqZVdLTVU5Z2V1Yzh6LW9UNzJFSHM1N010NkptRzRyZnRCdDRjbnFSclZiQWctRGZzSm5xdTY0cGJ6OEFqWTVFR1p6Vzd3YVoxRWVCT3RYbFQ3VVFkSGpLdFJOaFpZRFRZcUh6WkJyUWdWQmcxX1dfTUlyRFBXb2VfNGZDSWI1MEcxUnF4N0ZpeG8?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaTBvYzUteVpiNUw3Y0hGS2JYNGpZaVVaRDdSRV9Uc21OQUdXN1IzdXdPUjlja1hCRGFqZVdLTVU5Z2V1Yzh6LW9UNzJFSHM1N010NkptRzRyZnRCdDRjbnFSclZiQWctRGZzSm5xdTY0cGJ6OEFqWTVFR1p6Vzd3YVoxRWVCT3RYbFQ3VVFkSGpLdFJOaFpZRFRZcUh6WkJyUWdWQmcxX1dfTUlyRFBXb2VfNGZDSWI1MEcxUnF4N0ZpeG8?oc=5\" target=\"_blank\"&gt;Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;SierraSun.com&lt;/font&gt;",
+        "sourceDate": "Tue, 31 Jan 2023 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide physician practice owners",
+            "query": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+            "type": "physician",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-04T19:29:02.301Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=J.%20Richard%20Steadman%20The%20Steadman%20Clinic",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=J.%20Richard%20Steadman%20The%20Steadman%20Clinic+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify J. Richard Steadman and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi J., I came across a public signal related to Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - SierraSun.com. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793820542302-2ba4dff6d48208",
+      "name": "Jayesh Patel",
+      "title": "attorney",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNeWhxOVY4c3R5Y0ZzYTdSYTctTGdvOG01Z0JfLVF2V2JBbTR0VE5zcWU3ZTB1azc3b01UT2prcHVnVS1LdE5yeUN3WlZwZE5Yc0NGWFRNTmd6NENrSjZmSE9DNWpGeEltVG9kUEJuanBiREZaSEQ0WGNsX1cwNWdUdm11OTlwbGpJaFdXam1TTXlzVnNiTGdWS3B1cDhjTXJyUHhoYnJtcUxTNm4yOV9WeDlrMDdJdmRVUVc2OU1vX3pxYktEQ09ZOFZXSXB6dEU?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNeWhxOVY4c3R5Y0ZzYTdSYTctTGdvOG01Z0JfLVF2V2JBbTR0VE5zcWU3ZTB1azc3b01UT2prcHVnVS1LdE5yeUN3WlZwZE5Yc0NGWFRNTmd6NENrSjZmSE9DNWpGeEltVG9kUEJuanBiREZaSEQ0WGNsX1cwNWdUdm11OTlwbGpJaFdXam1TTXlzVnNiTGdWS3B1cDhjTXJyUHhoYnJtcUxTNm4yOV9WeDlrMDdJdmRVUVc2OU1vX3pxYktEQ09ZOFZXSXB6dEU?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Wed, 11 Feb 2026 17:51:26 GMT",
+      "sourceType": "attorney",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxNeWhxOVY4c3R5Y0ZzYTdSYTctTGdvOG01Z0JfLVF2V2JBbTR0VE5zcWU3ZTB1azc3b01UT2prcHVnVS1LdE5yeUN3WlZwZE5Yc0NGWFRNTmd6NENrSjZmSE9DNWpGeEltVG9kUEJuanBiREZaSEQ0WGNsX1cwNWdUdm11OTlwbGpJaFdXam1TTXlzVnNiTGdWS3B1cDhjTXJyUHhoYnJtcUxTNm4yOV9WeDlrMDdJdmRVUVc2OU1vX3pxYktEQ09ZOFZXSXB6dEU?oc=5\" target=\"_blank\"&gt;Jayesh Patel named Partner-in-Charge of Norton Rose Fulbright’s Los Angeles office&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Norton Rose Fulbright&lt;/font&gt;",
+      "signal": "Jayesh Patel named Partner-in-Charge of Norton Rose Fulbright’s Los Angeles office - Norton Rose Fulbright",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+        "sourceType": "attorney",
+        "priority": "nationwide",
+        "title": "Jayesh Patel named Partner-in-Charge of Norton Rose Fulbright’s Los Angeles office - Norton Rose Fulbright",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNeWhxOVY4c3R5Y0ZzYTdSYTctTGdvOG01Z0JfLVF2V2JBbTR0VE5zcWU3ZTB1azc3b01UT2prcHVnVS1LdE5yeUN3WlZwZE5Yc0NGWFRNTmd6NENrSjZmSE9DNWpGeEltVG9kUEJuanBiREZaSEQ0WGNsX1cwNWdUdm11OTlwbGpJaFdXam1TTXlzVnNiTGdWS3B1cDhjTXJyUHhoYnJtcUxTNm4yOV9WeDlrMDdJdmRVUVc2OU1vX3pxYktEQ09ZOFZXSXB6dEU?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxNeWhxOVY4c3R5Y0ZzYTdSYTctTGdvOG01Z0JfLVF2V2JBbTR0VE5zcWU3ZTB1azc3b01UT2prcHVnVS1LdE5yeUN3WlZwZE5Yc0NGWFRNTmd6NENrSjZmSE9DNWpGeEltVG9kUEJuanBiREZaSEQ0WGNsX1cwNWdUdm11OTlwbGpJaFdXam1TTXlzVnNiTGdWS3B1cDhjTXJyUHhoYnJtcUxTNm4yOV9WeDlrMDdJdmRVUVc2OU1vX3pxYktEQ09ZOFZXSXB6dEU?oc=5\" target=\"_blank\"&gt;Jayesh Patel named Partner-in-Charge of Norton Rose Fulbright’s Los Angeles office&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Norton Rose Fulbright&lt;/font&gt;",
+        "sourceDate": "Wed, 11 Feb 2026 17:51:26 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+            "type": "attorney",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-04T19:29:02.302Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Jayesh%20Patel",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Jayesh%20Patel+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Jayesh Patel and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Jayesh, I came across a public signal related to Jayesh Patel named Partner-in-Charge of Norton Rose Fulbright’s Los Angeles office - Norton Rose Fulbright. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793820542303-a00af01a75165",
+      "name": "Jeremy Shebson",
+      "title": "attorney",
+      "company": "Bloomberg Law",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaUpHRGRjbDlJVDZydHJhUzR1TXoySklGdlFTYlJleGdtek1YX3hoMGN5NzcwMTlQVWs1Y05SSGxWMVVjTkdSM0lKbkZLSVhqZWNrNlZkNFBLcFlZSDFlWXh5ZzNRQlVhVnpSNmZpdWZCMXExMmRNVm9EQXU3bFFvd0NfMTBzVHpiRVdvN0ZzZTNyUXltam9VQkhqMkMzdWxMbmZnSW9nYnQ?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaUpHRGRjbDlJVDZydHJhUzR1TXoySklGdlFTYlJleGdtek1YX3hoMGN5NzcwMTlQVWs1Y05SSGxWMVVjTkdSM0lKbkZLSVhqZWNrNlZkNFBLcFlZSDFlWXh5ZzNRQlVhVnpSNmZpdWZCMXExMmRNVm9EQXU3bFFvd0NfMTBzVHpiRVdvN0ZzZTNyUXltam9VQkhqMkMzdWxMbmZnSW9nYnQ?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Fri, 25 Sep 2020 07:00:00 GMT",
+      "sourceType": "attorney",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaUpHRGRjbDlJVDZydHJhUzR1TXoySklGdlFTYlJleGdtek1YX3hoMGN5NzcwMTlQVWs1Y05SSGxWMVVjTkdSM0lKbkZLSVhqZWNrNlZkNFBLcFlZSDFlWXh5ZzNRQlVhVnpSNmZpdWZCMXExMmRNVm9EQXU3bFFvd0NfMTBzVHpiRVdvN0ZzZTNyUXltam9VQkhqMkMzdWxMbmZnSW9nYnQ?oc=5\" target=\"_blank\"&gt;Leading Questions: HFW Managing Partner Jeremy Shebson&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Bloomberg Law News&lt;/font&gt;",
+      "signal": "Leading Questions: HFW Managing Partner Jeremy Shebson - Bloomberg Law News",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+        "sourceType": "attorney",
+        "priority": "nationwide",
+        "title": "Leading Questions: HFW Managing Partner Jeremy Shebson - Bloomberg Law News",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaUpHRGRjbDlJVDZydHJhUzR1TXoySklGdlFTYlJleGdtek1YX3hoMGN5NzcwMTlQVWs1Y05SSGxWMVVjTkdSM0lKbkZLSVhqZWNrNlZkNFBLcFlZSDFlWXh5ZzNRQlVhVnpSNmZpdWZCMXExMmRNVm9EQXU3bFFvd0NfMTBzVHpiRVdvN0ZzZTNyUXltam9VQkhqMkMzdWxMbmZnSW9nYnQ?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaUpHRGRjbDlJVDZydHJhUzR1TXoySklGdlFTYlJleGdtek1YX3hoMGN5NzcwMTlQVWs1Y05SSGxWMVVjTkdSM0lKbkZLSVhqZWNrNlZkNFBLcFlZSDFlWXh5ZzNRQlVhVnpSNmZpdWZCMXExMmRNVm9EQXU3bFFvd0NfMTBzVHpiRVdvN0ZzZTNyUXltam9VQkhqMkMzdWxMbmZnSW9nYnQ?oc=5\" target=\"_blank\"&gt;Leading Questions: HFW Managing Partner Jeremy Shebson&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Bloomberg Law News&lt;/font&gt;",
+        "sourceDate": "Fri, 25 Sep 2020 07:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+            "type": "attorney",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-04T19:29:02.303Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Jeremy%20Shebson%20Bloomberg%20Law",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Jeremy%20Shebson%20Bloomberg%20Law+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Jeremy Shebson and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Jeremy, I came across a public signal related to Leading Questions: HFW Managing Partner Jeremy Shebson - Bloomberg Law News. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793820542303-45dd9dd3f2915",
+      "name": "Jorge Oben-Cuadros Elected",
+      "title": "cpa",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5YQlhMQ2tDUUNEVzNlU3lyazRWVXh2UWdDcG93N0JCRDdlal81cDR6LVNSLVBhTnkzNVdQMy1JcXVtdnE5NWR6dUVIM056UkpsY2hPMndjWUxnUTM5anhOcktfSVQySlNJbkhsbXlkdzNFUQ?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE5YQlhMQ2tDUUNEVzNlU3lyazRWVXh2UWdDcG93N0JCRDdlal81cDR6LVNSLVBhTnkzNVdQMy1JcXVtdnE5NWR6dUVIM056UkpsY2hPMndjWUxnUTM5anhOcktfSVQySlNJbkhsbXlkdzNFUQ?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide CPA tax advisors",
+      "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+      "sourceDate": "Wed, 13 May 2026 07:00:00 GMT",
+      "sourceType": "cpa",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMickFVX3lxTE5YQlhMQ2tDUUNEVzNlU3lyazRWVXh2UWdDcG93N0JCRDdlal81cDR6LVNSLVBhTnkzNVdQMy1JcXVtdnE5NWR6dUVIM056UkpsY2hPMndjWUxnUTM5anhOcktfSVQySlNJbkhsbXlkdzNFUQ?oc=5\" target=\"_blank\"&gt;International Tax Partner Jorge Oben-Cuadros Elected a Fellow of the American College of Tax Counsel&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Procopio&lt;/font&gt;",
+      "signal": "International Tax Partner Jorge Oben-Cuadros Elected a Fellow of the American College of Tax Counsel - Procopio",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide CPA tax advisors",
+        "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+        "sourceType": "cpa",
+        "priority": "nationwide",
+        "title": "International Tax Partner Jorge Oben-Cuadros Elected a Fellow of the American College of Tax Counsel - Procopio",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5YQlhMQ2tDUUNEVzNlU3lyazRWVXh2UWdDcG93N0JCRDdlal81cDR6LVNSLVBhTnkzNVdQMy1JcXVtdnE5NWR6dUVIM056UkpsY2hPMndjWUxnUTM5anhOcktfSVQySlNJbkhsbXlkdzNFUQ?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMickFVX3lxTE5YQlhMQ2tDUUNEVzNlU3lyazRWVXh2UWdDcG93N0JCRDdlal81cDR6LVNSLVBhTnkzNVdQMy1JcXVtdnE5NWR6dUVIM056UkpsY2hPMndjWUxnUTM5anhOcktfSVQySlNJbkhsbXlkdzNFUQ?oc=5\" target=\"_blank\"&gt;International Tax Partner Jorge Oben-Cuadros Elected a Fellow of the American College of Tax Counsel&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Procopio&lt;/font&gt;",
+        "sourceDate": "Wed, 13 May 2026 07:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide CPA tax advisors",
+            "query": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+            "type": "cpa",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22high%20net%20worth%22%20OR%20%22business%20owner%22%20OR%20%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-04T19:29:02.303Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Jorge%20Oben-Cuadros%20Elected",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Jorge%20Oben-Cuadros%20Elected+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Jorge Oben-Cuadros Elected and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Jorge, I came across a public signal related to International Tax Partner Jorge Oben-Cuadros Elected a Fellow of the American College of Tax Counsel - Procopio. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793820542301-de79ec5aec6028",
+      "name": "Lieu Balu Is Building",
+      "title": "physician",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPTFB6RTk3WjJ0dVV0SDhoZGd5M0t4OUlXb0huOXdNSVl0bjREbDIyM01VMWtmRlVrcUx6STQtWHRYcE5UMS1kSDhJRndlX1BldF9FT2RQb093UE1tRjNZZWFDYjFCVXBqczRzMTV2S0h3VC1obEkybTUtbGFjTVJ3OXZ5N0xXYUVzdlA1blM1dUl3dmN5SkdWV055aFNZMHppMGhIam1Id3owenJkQUxBQWlDWE90Y2xmQ1NFUlNoNHM5TzRjQVBoWTVIcGJQWTIwTnh6S2tEa3dFbkwzSjJBWGlVSmJIbFktYVE?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPTFB6RTk3WjJ0dVV0SDhoZGd5M0t4OUlXb0huOXdNSVl0bjREbDIyM01VMWtmRlVrcUx6STQtWHRYcE5UMS1kSDhJRndlX1BldF9FT2RQb093UE1tRjNZZWFDYjFCVXBqczRzMTV2S0h3VC1obEkybTUtbGFjTVJ3OXZ5N0xXYUVzdlA1blM1dUl3dmN5SkdWV055aFNZMHppMGhIam1Id3owenJkQUxBQWlDWE90Y2xmQ1NFUlNoNHM5TzRjQVBoWTVIcGJQWTIwTnh6S2tEa3dFbkwzSjJBWGlVSmJIbFktYVE?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide physician practice owners",
+      "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+      "sourceDate": "Wed, 14 Oct 2026 12:31:21 GMT",
+      "sourceType": "physician",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxPTFB6RTk3WjJ0dVV0SDhoZGd5M0t4OUlXb0huOXdNSVl0bjREbDIyM01VMWtmRlVrcUx6STQtWHRYcE5UMS1kSDhJRndlX1BldF9FT2RQb093UE1tRjNZZWFDYjFCVXBqczRzMTV2S0h3VC1obEkybTUtbGFjTVJ3OXZ5N0xXYUVzdlA1blM1dUl3dmN5SkdWV055aFNZMHppMGhIam1Id3owenJkQUxBQWlDWE90Y2xmQ1NFUlNoNHM5TzRjQVBoWTVIcGJQWTIwTnh6S2tEa3dFbkwzSjJBWGlVSmJIbFktYVE?oc=5\" target=\"_blank\"&gt;From Navy Veteran to Veterinary Practice Owner: Dr. Lieu Balu Is Building a Clinic Where Relationships Come First&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Vet Candy&lt;/font&gt;",
+      "signal": "From Navy Veteran to Veterinary Practice Owner: Dr. Lieu Balu Is Building a Clinic Where Relationships Come First - Vet Candy",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide physician practice owners",
+        "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+        "sourceType": "physician",
+        "priority": "nationwide",
+        "title": "From Navy Veteran to Veterinary Practice Owner: Dr. Lieu Balu Is Building a Clinic Where Relationships Come First - Vet Candy",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPTFB6RTk3WjJ0dVV0SDhoZGd5M0t4OUlXb0huOXdNSVl0bjREbDIyM01VMWtmRlVrcUx6STQtWHRYcE5UMS1kSDhJRndlX1BldF9FT2RQb093UE1tRjNZZWFDYjFCVXBqczRzMTV2S0h3VC1obEkybTUtbGFjTVJ3OXZ5N0xXYUVzdlA1blM1dUl3dmN5SkdWV055aFNZMHppMGhIam1Id3owenJkQUxBQWlDWE90Y2xmQ1NFUlNoNHM5TzRjQVBoWTVIcGJQWTIwTnh6S2tEa3dFbkwzSjJBWGlVSmJIbFktYVE?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxPTFB6RTk3WjJ0dVV0SDhoZGd5M0t4OUlXb0huOXdNSVl0bjREbDIyM01VMWtmRlVrcUx6STQtWHRYcE5UMS1kSDhJRndlX1BldF9FT2RQb093UE1tRjNZZWFDYjFCVXBqczRzMTV2S0h3VC1obEkybTUtbGFjTVJ3OXZ5N0xXYUVzdlA1blM1dUl3dmN5SkdWV055aFNZMHppMGhIam1Id3owenJkQUxBQWlDWE90Y2xmQ1NFUlNoNHM5TzRjQVBoWTVIcGJQWTIwTnh6S2tEa3dFbkwzSjJBWGlVSmJIbFktYVE?oc=5\" target=\"_blank\"&gt;From Navy Veteran to Veterinary Practice Owner: Dr. Lieu Balu Is Building a Clinic Where Relationships Come First&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Vet Candy&lt;/font&gt;",
+        "sourceDate": "Wed, 14 Oct 2026 12:31:21 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide physician practice owners",
+            "query": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+            "type": "physician",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-04T19:29:02.301Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Lieu%20Balu%20Is%20Building",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Lieu%20Balu%20Is%20Building+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Lieu Balu Is Building and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Lieu, I came across a public signal related to From Navy Veteran to Veterinary Practice Owner: Dr. Lieu Balu Is Building a Clinic Where Relationships Come First - Vet . Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793820542307-5395691213b3a",
+      "name": "Receives Prestigious Founder's Award",
+      "title": "business_owner",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOM282emhlb0RPdVk3VzY2ekxFWWVPM1lMOXRSR0Fma2dTWFBZbnBOSHBjMTZEcklCMmcycXBhUHQxR2tYV3l2Z2JPVzNfNWdHNm5qelhwRTZxTDBCUElaMHZGalFTeExBb3JuS0tCMk54elpnQ2d4UUV2U3RRMlJlZkdmNGduUWszR3VYTm0teXhiSTE2dXNkNWRmQ0wyTGdnM2FBMjlKd242Zm5iUnRn?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOM282emhlb0RPdVk3VzY2ekxFWWVPM1lMOXRSR0Fma2dTWFBZbnBOSHBjMTZEcklCMmcycXBhUHQxR2tYV3l2Z2JPVzNfNWdHNm5qelhwRTZxTDBCUElaMHZGalFTeExBb3JuS0tCMk54elpnQ2d4UUV2U3RRMlJlZkdmNGduUWszR3VYTm0teXhiSTE2dXNkNWRmQ0wyTGdnM2FBMjlKd242Zm5iUnRn?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide franchise and multi-unit owners",
+      "sourceQuery": "(\"multi-unit franchisee\" OR \"franchise owner\" OR \"multi unit operator\") founder CEO owner \"United States\"",
+      "sourceDate": "Tue, 29 Aug 2023 07:00:00 GMT",
+      "sourceType": "business_owner",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxOM282emhlb0RPdVk3VzY2ekxFWWVPM1lMOXRSR0Fma2dTWFBZbnBOSHBjMTZEcklCMmcycXBhUHQxR2tYV3l2Z2JPVzNfNWdHNm5qelhwRTZxTDBCUElaMHZGalFTeExBb3JuS0tCMk54elpnQ2d4UUV2U3RRMlJlZkdmNGduUWszR3VYTm0teXhiSTE2dXNkNWRmQ0wyTGdnM2FBMjlKd242Zm5iUnRn?oc=5\" target=\"_blank\"&gt;Spring Green Franchise Owner Receives Prestigious Founder's Award&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;PRWeb&lt;/font&gt;",
+      "signal": "Spring Green Franchise Owner Receives Prestigious Founder's Award - PRWeb",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide franchise and multi-unit owners",
+        "sourceQuery": "(\"multi-unit franchisee\" OR \"franchise owner\" OR \"multi unit operator\") founder CEO owner \"United States\"",
+        "sourceType": "business_owner",
+        "priority": "nationwide",
+        "title": "Spring Green Franchise Owner Receives Prestigious Founder's Award - PRWeb",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOM282emhlb0RPdVk3VzY2ekxFWWVPM1lMOXRSR0Fma2dTWFBZbnBOSHBjMTZEcklCMmcycXBhUHQxR2tYV3l2Z2JPVzNfNWdHNm5qelhwRTZxTDBCUElaMHZGalFTeExBb3JuS0tCMk54elpnQ2d4UUV2U3RRMlJlZkdmNGduUWszR3VYTm0teXhiSTE2dXNkNWRmQ0wyTGdnM2FBMjlKd242Zm5iUnRn?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxOM282emhlb0RPdVk3VzY2ekxFWWVPM1lMOXRSR0Fma2dTWFBZbnBOSHBjMTZEcklCMmcycXBhUHQxR2tYV3l2Z2JPVzNfNWdHNm5qelhwRTZxTDBCUElaMHZGalFTeExBb3JuS0tCMk54elpnQ2d4UUV2U3RRMlJlZkdmNGduUWszR3VYTm0teXhiSTE2dXNkNWRmQ0wyTGdnM2FBMjlKd242Zm5iUnRn?oc=5\" target=\"_blank\"&gt;Spring Green Franchise Owner Receives Prestigious Founder's Award&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;PRWeb&lt;/font&gt;",
+        "sourceDate": "Tue, 29 Aug 2023 07:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide franchise and multi-unit owners",
+            "query": "(\"multi-unit franchisee\" OR \"franchise owner\" OR \"multi unit operator\") founder CEO owner \"United States\"",
+            "type": "business_owner",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22multi-unit%20franchisee%22%20OR%20%22franchise%20owner%22%20OR%20%22multi%20unit%20operator%22)%20founder%20CEO%20owner%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-04T19:29:02.307Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Receives%20Prestigious%20Founder's%20Award",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Receives%20Prestigious%20Founder's%20Award+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Receives Prestigious Founder's Award and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Receives, I came across a public signal related to Spring Green Franchise Owner Receives Prestigious Founder's Award - PRWeb. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793820542307-366e564a6fd4d",
+      "name": "Returns Home For Expansion",
+      "title": "business_owner",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQeFNfcWhucU1HNzdLU0VEdWlvTTZOMVAtcUxaRkJRR1lrUC1xWVZycXF5dlNVbHBmQTdtcDRscGc0b1Fac21OYnpSQktSWEVhd2drcFZITEN1cUpNeFFkZ0lKR1NzV3BSeXVqRjBqcHlTaE5paVVralRJUEZLLS1vNEFKaVNRRDYtTEtrZQ?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQeFNfcWhucU1HNzdLU0VEdWlvTTZOMVAtcUxaRkJRR1lrUC1xWVZycXF5dlNVbHBmQTdtcDRscGc0b1Fac21OYnpSQktSWEVhd2drcFZITEN1cUpNeFFkZ0lKR1NzV3BSeXVqRjBqcHlTaE5paVVralRJUEZLLS1vNEFKaVNRRDYtTEtrZQ?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide franchise and multi-unit owners",
+      "sourceQuery": "(\"multi-unit franchisee\" OR \"franchise owner\" OR \"multi unit operator\") founder CEO owner \"United States\"",
+      "sourceDate": "Mon, 16 Feb 2026 08:00:00 GMT",
+      "sourceType": "business_owner",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxQeFNfcWhucU1HNzdLU0VEdWlvTTZOMVAtcUxaRkJRR1lrUC1xWVZycXF5dlNVbHBmQTdtcDRscGc0b1Fac21OYnpSQktSWEVhd2drcFZITEN1cUpNeFFkZ0lKR1NzV3BSeXVqRjBqcHlTaE5paVVralRJUEZLLS1vNEFKaVNRRDYtTEtrZQ?oc=5\" target=\"_blank\"&gt;Final Rentals Founder Returns Home For Expansion&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Auto Rental News&lt;/font&gt;",
+      "signal": "Final Rentals Founder Returns Home For Expansion - Auto Rental News",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide franchise and multi-unit owners",
+        "sourceQuery": "(\"multi-unit franchisee\" OR \"franchise owner\" OR \"multi unit operator\") founder CEO owner \"United States\"",
+        "sourceType": "business_owner",
+        "priority": "nationwide",
+        "title": "Final Rentals Founder Returns Home For Expansion - Auto Rental News",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQeFNfcWhucU1HNzdLU0VEdWlvTTZOMVAtcUxaRkJRR1lrUC1xWVZycXF5dlNVbHBmQTdtcDRscGc0b1Fac21OYnpSQktSWEVhd2drcFZITEN1cUpNeFFkZ0lKR1NzV3BSeXVqRjBqcHlTaE5paVVralRJUEZLLS1vNEFKaVNRRDYtTEtrZQ?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxQeFNfcWhucU1HNzdLU0VEdWlvTTZOMVAtcUxaRkJRR1lrUC1xWVZycXF5dlNVbHBmQTdtcDRscGc0b1Fac21OYnpSQktSWEVhd2drcFZITEN1cUpNeFFkZ0lKR1NzV3BSeXVqRjBqcHlTaE5paVVralRJUEZLLS1vNEFKaVNRRDYtTEtrZQ?oc=5\" target=\"_blank\"&gt;Final Rentals Founder Returns Home For Expansion&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Auto Rental News&lt;/font&gt;",
+        "sourceDate": "Mon, 16 Feb 2026 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide franchise and multi-unit owners",
+            "query": "(\"multi-unit franchisee\" OR \"franchise owner\" OR \"multi unit operator\") founder CEO owner \"United States\"",
+            "type": "business_owner",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22multi-unit%20franchisee%22%20OR%20%22franchise%20owner%22%20OR%20%22multi%20unit%20operator%22)%20founder%20CEO%20owner%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-04T19:29:02.307Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Returns%20Home%20For%20Expansion",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Returns%20Home%20For%20Expansion+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Returns Home For Expansion and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Returns, I came across a public signal related to Final Rentals Founder Returns Home For Expansion - Auto Rental News. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793820542302-3362ece1395bd",
+      "name": "Rich Rabin",
+      "title": "attorney",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZlNXeW13b1VmeGNRS013cThzdGI1Ym4xanBVVWhaeWhONkN4VkNETGM0cGs5dVJLMDVjNWlXWnVfOG5aUng2Rmc4Y2dfV1d5VUVvMmZJclRKbW5hZmZoaWtiQkNIQ3dicmNUY1U3QkYyaEhoV19IVlZGaWFMd1U5OFpVR2VTd1UxdUE0YzdsanlTMUFfbGU5VURBQjN0QURRWlV1aEJEMjQxN2l3VjFieA?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZlNXeW13b1VmeGNRS013cThzdGI1Ym4xanBVVWhaeWhONkN4VkNETGM0cGs5dVJLMDVjNWlXWnVfOG5aUng2Rmc4Y2dfV1d5VUVvMmZJclRKbW5hZmZoaWtiQkNIQ3dicmNUY1U3QkYyaEhoV19IVlZGaWFMd1U5OFpVR2VTd1UxdUE0YzdsanlTMUFfbGU5VURBQjN0QURRWlV1aEJEMjQxN2l3VjFieA?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Tue, 18 Feb 2025 08:00:00 GMT",
+      "sourceType": "attorney",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxNZlNXeW13b1VmeGNRS013cThzdGI1Ym4xanBVVWhaeWhONkN4VkNETGM0cGs5dVJLMDVjNWlXWnVfOG5aUng2Rmc4Y2dfV1d5VUVvMmZJclRKbW5hZmZoaWtiQkNIQ3dicmNUY1U3QkYyaEhoV19IVlZGaWFMd1U5OFpVR2VTd1UxdUE0YzdsanlTMUFfbGU5VURBQjN0QURRWlV1aEJEMjQxN2l3VjFieA?oc=5\" target=\"_blank\"&gt;Rich Rabin Named Partner in Charge of Akin’s New York Office&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Akin Gump Strauss Hauer & Feld LLP&lt;/font&gt;",
+      "signal": "Rich Rabin Named Partner in Charge of Akin’s New York Office - Akin Gump Strauss Hauer & Feld LLP",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+        "sourceType": "attorney",
+        "priority": "nationwide",
+        "title": "Rich Rabin Named Partner in Charge of Akin’s New York Office - Akin Gump Strauss Hauer & Feld LLP",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZlNXeW13b1VmeGNRS013cThzdGI1Ym4xanBVVWhaeWhONkN4VkNETGM0cGs5dVJLMDVjNWlXWnVfOG5aUng2Rmc4Y2dfV1d5VUVvMmZJclRKbW5hZmZoaWtiQkNIQ3dicmNUY1U3QkYyaEhoV19IVlZGaWFMd1U5OFpVR2VTd1UxdUE0YzdsanlTMUFfbGU5VURBQjN0QURRWlV1aEJEMjQxN2l3VjFieA?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxNZlNXeW13b1VmeGNRS013cThzdGI1Ym4xanBVVWhaeWhONkN4VkNETGM0cGs5dVJLMDVjNWlXWnVfOG5aUng2Rmc4Y2dfV1d5VUVvMmZJclRKbW5hZmZoaWtiQkNIQ3dicmNUY1U3QkYyaEhoV19IVlZGaWFMd1U5OFpVR2VTd1UxdUE0YzdsanlTMUFfbGU5VURBQjN0QURRWlV1aEJEMjQxN2l3VjFieA?oc=5\" target=\"_blank\"&gt;Rich Rabin Named Partner in Charge of Akin’s New York Office&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Akin Gump Strauss Hauer & Feld LLP&lt;/font&gt;",
+        "sourceDate": "Tue, 18 Feb 2025 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+            "type": "attorney",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-04T19:29:02.302Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Rich%20Rabin",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Rich%20Rabin+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Rich Rabin and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Rich, I came across a public signal related to Rich Rabin Named Partner in Charge of Akin’s New York Office - Akin Gump Strauss Hauer & Feld LLP. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793820542301-da3298b2f3b238",
+      "name": "SS Badrinath",
+      "title": "physician",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide physician practice owners",
+      "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+      "sourceDate": "Tue, 21 Nov 2023 08:00:00 GMT",
+      "sourceType": "physician",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5\" target=\"_blank\"&gt;Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Medical Dialogues&lt;/font&gt;",
+      "signal": "Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more - Medical Dialogues",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide physician practice owners",
+        "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+        "sourceType": "physician",
+        "priority": "nationwide",
+        "title": "Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more - Medical Dialogues",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRm1KSjJQNVlOaGFXRjc5LUdKcEExcEdIR3lMNmp6a01XMGt3b3FBOXd1bTNCX1R3RXNzU1BKVVVxYXFTMVBYR2xUSkhBTjRTQ1AyMG5aanNEQ1gwd3l2aXNSaFpKek5kZk5UWm9PcUZEUFVwWUlneHNxNXdQZ2tWdkVscVBCbmk1UEF6T0lMUWlaQk9VN3hsN2tqcG9Da2djR2djN2JGRjB5LWNaOGdNamdfTGNqdUVja185eXF5RlFaOWVEcTl5dnI5eFNVNUNlVzFPdNIB2gFBVV95cUxOSS15MnZFQ1d0Y3RKay0tLXBsbnRxa0NOUVFWNnp5UVdDdlVqcXdWMjVSc3pMSERlWVJrMDhPSzBhRnlrWnJ2U3JRS2NKU0I3UjU4M3hJQ2dlcnJfcDZ0S0N2R0FCRVBNd0EycWtPaWl0MHlOUnR6NHU5WU1NMTJ1dTNBMmFQbTNDOXRqdzI1Wk56RkpDT2NhT01vbjJiVGc5ZS1vR2YtSEdFT2V4MEJXT2U0bHBmdXZCZld0dHBReWE1ejFYRkUwTGo0SWpJd3l2eHhDcjFqQXRvUQ?oc=5\" target=\"_blank\"&gt;Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Medical Dialogues&lt;/font&gt;",
+        "sourceDate": "Tue, 21 Nov 2023 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide physician practice owners",
+            "query": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+            "type": "physician",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-04T19:29:02.301Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=SS%20Badrinath",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=SS%20Badrinath+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify SS Badrinath and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi SS, I came across a public signal related to Eminent vitreoretinal surgeon, Founder of Sankara Nethralaya Dr SS Badrinath no more - Medical Dialogues. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793820542306-ef481ec7c0b288",
+      "name": "The Coca-Cola Company",
+      "title": "liquidity_event",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZGxkcS0tY25vVzBXQjN0VkE3T2FhaUZ4Szl4bFk5ZlBCOGozNDZsbnRVUWJPYy1GZk0xTExjVXluSElwY0F0MkZ3YlVTMEU3M2FZNzdLOE9NMl9VeWgxV2tycUlUZ3ZHYmVhN1VCSGRDSWtObkhxalZmWGVzZGR5MHQtUl91LWo0bDl3VlFSbjd5WWlhTVFXWnJockllb0EwZ0VISDR4SEZKSlFPLWFXUWhOTnNJc0Zuc3JiOG05ZEJmdlRTMTUyS0dGTXRxb25UdXY4?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZGxkcS0tY25vVzBXQjN0VkE3T2FhaUZ4Szl4bFk5ZlBCOGozNDZsbnRVUWJPYy1GZk0xTExjVXluSElwY0F0MkZ3YlVTMEU3M2FZNzdLOE9NMl9VeWgxV2tycUlUZ3ZHYmVhN1VCSGRDSWtObkhxalZmWGVzZGR5MHQtUl91LWo0bDl3VlFSbjd5WWlhTVFXWnJockllb0EwZ0VISDR4SEZKSlFPLWFXUWhOTnNJc0Zuc3JiOG05ZEJmdlRTMTUyS0dGTXRxb25UdXY4?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide business founder exits",
+      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+      "sourceDate": "Mon, 01 Nov 2021 07:00:00 GMT",
+      "sourceType": "liquidity_event",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZGxkcS0tY25vVzBXQjN0VkE3T2FhaUZ4Szl4bFk5ZlBCOGozNDZsbnRVUWJPYy1GZk0xTExjVXluSElwY0F0MkZ3YlVTMEU3M2FZNzdLOE9NMl9VeWgxV2tycUlUZ3ZHYmVhN1VCSGRDSWtObkhxalZmWGVzZGR5MHQtUl91LWo0bDl3VlFSbjd5WWlhTVFXWnJockllb0EwZ0VISDR4SEZKSlFPLWFXUWhOTnNJc0Zuc3JiOG05ZEJmdlRTMTUyS0dGTXRxb25UdXY4?oc=5\" target=\"_blank\"&gt;The Coca-Cola Company Acquires Remaining Stake in BODYARMOR&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;investors.coca-colacompany.com&lt;/font&gt;",
+      "signal": "The Coca-Cola Company Acquires Remaining Stake in BODYARMOR - investors.coca-colacompany.com",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide business founder exits",
+        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+        "sourceType": "liquidity_event",
+        "priority": "nationwide",
+        "title": "The Coca-Cola Company Acquires Remaining Stake in BODYARMOR - investors.coca-colacompany.com",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZGxkcS0tY25vVzBXQjN0VkE3T2FhaUZ4Szl4bFk5ZlBCOGozNDZsbnRVUWJPYy1GZk0xTExjVXluSElwY0F0MkZ3YlVTMEU3M2FZNzdLOE9NMl9VeWgxV2tycUlUZ3ZHYmVhN1VCSGRDSWtObkhxalZmWGVzZGR5MHQtUl91LWo0bDl3VlFSbjd5WWlhTVFXWnJockllb0EwZ0VISDR4SEZKSlFPLWFXUWhOTnNJc0Zuc3JiOG05ZEJmdlRTMTUyS0dGTXRxb25UdXY4?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZGxkcS0tY25vVzBXQjN0VkE3T2FhaUZ4Szl4bFk5ZlBCOGozNDZsbnRVUWJPYy1GZk0xTExjVXluSElwY0F0MkZ3YlVTMEU3M2FZNzdLOE9NMl9VeWgxV2tycUlUZ3ZHYmVhN1VCSGRDSWtObkhxalZmWGVzZGR5MHQtUl91LWo0bDl3VlFSbjd5WWlhTVFXWnJockllb0EwZ0VISDR4SEZKSlFPLWFXUWhOTnNJc0Zuc3JiOG05ZEJmdlRTMTUyS0dGTXRxb25UdXY4?oc=5\" target=\"_blank\"&gt;The Coca-Cola Company Acquires Remaining Stake in BODYARMOR&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;investors.coca-colacompany.com&lt;/font&gt;",
+        "sourceDate": "Mon, 01 Nov 2021 07:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide business founder exits",
+            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+            "type": "liquidity_event",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20%22United%20States%22%20founder%20CEO%20owner&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-04T19:29:02.306Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=The%20Coca-Cola%20Company",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=The%20Coca-Cola%20Company+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify The Coca-Cola Company and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi The, I came across a public signal related to The Coca-Cola Company Acquires Remaining Stake in BODYARMOR - investors.coca-colacompany.com. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793820542303-62e181fa33daf8",
+      "name": "USA Welcomes Seven New",
+      "title": "cpa",
+      "company": "BDO Alliance USA Welcomes Seven New CPA",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRndJRDdocHJ0Q01UYk5ERGJsdWxmdEtzRWVYOXd4T2p5bmlIVGNBTHRPM0pJZ1JTYVgxTndXWktWN3FRSTZHTHhpdTI5NWNSNDV3SFUtTmhXVDJINkZ2cVFMQlVNMUdNRHVFV3RzcHpYakNsY1kycy02YTE1NnFyOUJ0WHY5RXBSYUhMUm5QYUN3MkI0bzZBTENmR1NpdUNhVzJtUjl0Ym9hMmJxRGpWcHd3?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRndJRDdocHJ0Q01UYk5ERGJsdWxmdEtzRWVYOXd4T2p5bmlIVGNBTHRPM0pJZ1JTYVgxTndXWktWN3FRSTZHTHhpdTI5NWNSNDV3SFUtTmhXVDJINkZ2cVFMQlVNMUdNRHVFV3RzcHpYakNsY1kycy02YTE1NnFyOUJ0WHY5RXBSYUhMUm5QYUN3MkI0bzZBTENmR1NpdUNhVzJtUjl0Ym9hMmJxRGpWcHd3?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide CPA tax advisors",
+      "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+      "sourceDate": "Thu, 06 Mar 2025 01:10:33 GMT",
+      "sourceType": "cpa",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxQRndJRDdocHJ0Q01UYk5ERGJsdWxmdEtzRWVYOXd4T2p5bmlIVGNBTHRPM0pJZ1JTYVgxTndXWktWN3FRSTZHTHhpdTI5NWNSNDV3SFUtTmhXVDJINkZ2cVFMQlVNMUdNRHVFV3RzcHpYakNsY1kycy02YTE1NnFyOUJ0WHY5RXBSYUhMUm5QYUN3MkI0bzZBTENmR1NpdUNhVzJtUjl0Ym9hMmJxRGpWcHd3?oc=5\" target=\"_blank\"&gt;BDO Alliance USA Welcomes Seven New CPA Member Firms – January 2024 Through July 2024&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;BDO USA&lt;/font&gt;",
+      "signal": "BDO Alliance USA Welcomes Seven New CPA Member Firms – January 2024 Through July 2024 - BDO USA",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide CPA tax advisors",
+        "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+        "sourceType": "cpa",
+        "priority": "nationwide",
+        "title": "BDO Alliance USA Welcomes Seven New CPA Member Firms – January 2024 Through July 2024 - BDO USA",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRndJRDdocHJ0Q01UYk5ERGJsdWxmdEtzRWVYOXd4T2p5bmlIVGNBTHRPM0pJZ1JTYVgxTndXWktWN3FRSTZHTHhpdTI5NWNSNDV3SFUtTmhXVDJINkZ2cVFMQlVNMUdNRHVFV3RzcHpYakNsY1kycy02YTE1NnFyOUJ0WHY5RXBSYUhMUm5QYUN3MkI0bzZBTENmR1NpdUNhVzJtUjl0Ym9hMmJxRGpWcHd3?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxQRndJRDdocHJ0Q01UYk5ERGJsdWxmdEtzRWVYOXd4T2p5bmlIVGNBTHRPM0pJZ1JTYVgxTndXWktWN3FRSTZHTHhpdTI5NWNSNDV3SFUtTmhXVDJINkZ2cVFMQlVNMUdNRHVFV3RzcHpYakNsY1kycy02YTE1NnFyOUJ0WHY5RXBSYUhMUm5QYUN3MkI0bzZBTENmR1NpdUNhVzJtUjl0Ym9hMmJxRGpWcHd3?oc=5\" target=\"_blank\"&gt;BDO Alliance USA Welcomes Seven New CPA Member Firms – January 2024 Through July 2024&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;BDO USA&lt;/font&gt;",
+        "sourceDate": "Thu, 06 Mar 2025 01:10:33 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide CPA tax advisors",
+            "query": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+            "type": "cpa",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22high%20net%20worth%22%20OR%20%22business%20owner%22%20OR%20%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-04T19:29:02.303Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=USA%20Welcomes%20Seven%20New%20BDO%20Alliance%20USA%20Welcomes%20Seven%20New%20CPA",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=USA%20Welcomes%20Seven%20New%20BDO%20Alliance%20USA%20Welcomes%20Seven%20New%20CPA+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify USA Welcomes Seven New and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi USA, I came across a public signal related to BDO Alliance USA Welcomes Seven New CPA Member Firms – January 2024 Through July 2024 - BDO USA. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
     }
   ]
 }
