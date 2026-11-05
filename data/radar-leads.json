@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T19:29:05.630Z",
+  "generatedAt": "2026-11-05T19:39:01.438Z",
   "engine": "Free Feed Radar + Groq Managed",
   "geoMode": "texas_first_nationwide",
   "tavilyUsed": false,
@@ -13,15 +13,15 @@
   },
   "stats": {
     "rawSignals": 250,
-    "candidates": 161,
+    "candidates": 152,
     "groqUsed": 12,
-    "usableLeads": 24,
-    "rejected": 137,
+    "usableLeads": 25,
+    "rejected": 127,
     "collectionErrors": 0
   },
   "leads": [
     {
-      "id": "rad-free-1793820542290-5246b7fabd332",
+      "id": "rad-free-1793907538462-d2f1976f3652f",
       "name": "Arizona Practice Owner",
       "title": "physician",
       "company": "",
@@ -58,7 +58,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.290Z",
+      "foundAt": "2026-11-05T19:38:58.462Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -98,7 +98,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542296-764d5c48630bf",
+      "id": "rad-free-1793907538467-172ae0914c1768",
       "name": "Doeren Mayhew",
       "title": "cpa",
       "company": "TBK CPA",
@@ -135,7 +135,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.296Z",
+      "foundAt": "2026-11-05T19:38:58.467Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -175,7 +175,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542296-d87113b8b6b2c8",
+      "id": "rad-free-1793907538468-f7f703eabaf048",
       "name": "Energy Tax Expert",
       "title": "cpa",
       "company": "",
@@ -212,7 +212,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.296Z",
+      "foundAt": "2026-11-05T19:38:58.468Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -252,7 +252,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542305-ab11847b07fb98",
+      "id": "rad-free-1793907538482-4c3e55c4d328f",
       "name": "George Kurtz",
       "title": "liquidity_event",
       "company": "",
@@ -289,7 +289,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.305Z",
+      "foundAt": "2026-11-05T19:38:58.482Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -330,7 +330,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542290-58b83162b1726",
+      "id": "rad-free-1793907538462-765b7ec0c51618",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
@@ -367,7 +367,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.290Z",
+      "foundAt": "2026-11-05T19:38:58.462Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -407,7 +407,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542290-f7a0489095791",
+      "id": "rad-free-1793907538461-1331f27d6c11e8",
       "name": "Mehmet Oz Shows Houston",
       "title": "physician",
       "company": "",
@@ -444,7 +444,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.290Z",
+      "foundAt": "2026-11-05T19:38:58.461Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -484,7 +484,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542291-bc843ddd103a3",
+      "id": "rad-free-1793907538463-0ef07d77ec7ad",
       "name": "Stewart Law Group",
       "title": "attorney",
       "company": "Stewart Law Group",
@@ -521,7 +521,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.291Z",
+      "foundAt": "2026-11-05T19:38:58.463Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -562,7 +562,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542295-c59693ea6f1a3",
+      "id": "rad-free-1793907538467-27fe6c9981ebf",
       "name": "Who Honors Kaleen Reyna",
       "title": "cpa",
       "company": "",
@@ -599,7 +599,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.295Z",
+      "foundAt": "2026-11-05T19:38:58.467Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -639,7 +639,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542307-b739e07213b0b8",
+      "id": "rad-free-1793907538485-f1f47fb67bc03",
       "name": "And CEO",
       "title": "business_owner",
       "company": "",
@@ -676,7 +676,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.307Z",
+      "foundAt": "2026-11-05T19:38:58.485Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -715,7 +715,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542303-da25be9e7f679",
+      "id": "rad-free-1793907538479-9a7e08932860a",
       "name": "Associates Promotes Trent Cade",
       "title": "cpa",
       "company": "",
@@ -725,7 +725,7 @@
       "source": "Free Feed Radar",
       "sourceFeed": "Nationwide CPA tax advisors",
       "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
-      "sourceDate": "Mon, 26 Oct 2026 09:03:10 GMT",
+      "sourceDate": "Mon, 26 Oct 2026 07:00:00 GMT",
       "sourceType": "cpa",
       "priority": "nationwide",
       "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxPUmIxc2RaenN0STZwczdSLVNRcmRVZks5WGFJZy1fUDVLVGJtN19pSlh3bGtQYW1uekk5VzhCTXFiYkhTOGFEVkt1akJ5SDVqYTFoTC02RF9vaGd6bF9EUVIxb005S194bUxlT01WZ3huVU0yVllvYmQxVXNHaEdldGd5MEU2NmhYVWNqUm9tMUlzQ0d1bFBmUzdLRnBod3hlSDNpeVNqNXhqRVBHYW9Cakt6R2hOY2VQbXZVa3Z2Z2ZMX1RlV1E?oc=5\" target=\"_blank\"&gt;Cade & Associates Promotes Trent Cade, CPA, ABV, to Operations Manager&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;The Des Moines Register&lt;/font&gt;",
@@ -739,7 +739,7 @@
         "title": "Cade & Associates Promotes Trent Cade, CPA, ABV, to Operations Manager - The Des Moines Register",
         "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUmIxc2RaenN0STZwczdSLVNRcmRVZks5WGFJZy1fUDVLVGJtN19pSlh3bGtQYW1uekk5VzhCTXFiYkhTOGFEVkt1akJ5SDVqYTFoTC02RF9vaGd6bF9EUVIxb005S194bUxlT01WZ3huVU0yVllvYmQxVXNHaEdldGd5MEU2NmhYVWNqUm9tMUlzQ0d1bFBmUzdLRnBod3hlSDNpeVNqNXhqRVBHYW9Cakt6R2hOY2VQbXZVa3Z2Z2ZMX1RlV1E?oc=5",
         "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxPUmIxc2RaenN0STZwczdSLVNRcmRVZks5WGFJZy1fUDVLVGJtN19pSlh3bGtQYW1uekk5VzhCTXFiYkhTOGFEVkt1akJ5SDVqYTFoTC02RF9vaGd6bF9EUVIxb005S194bUxlT01WZ3huVU0yVllvYmQxVXNHaEdldGd5MEU2NmhYVWNqUm9tMUlzQ0d1bFBmUzdLRnBod3hlSDNpeVNqNXhqRVBHYW9Cakt6R2hOY2VQbXZVa3Z2Z2ZMX1RlV1E?oc=5\" target=\"_blank\"&gt;Cade & Associates Promotes Trent Cade, CPA, ABV, to Operations Manager&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;The Des Moines Register&lt;/font&gt;",
-        "sourceDate": "Mon, 26 Oct 2026 09:03:10 GMT",
+        "sourceDate": "Mon, 26 Oct 2026 07:00:00 GMT",
         "raw": {
           "meta": {
             "name": "Nationwide CPA tax advisors",
@@ -752,7 +752,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.303Z",
+      "foundAt": "2026-11-05T19:38:58.479Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -791,7 +791,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542304-c441534855b5b",
+      "id": "rad-free-1793907538480-6eaeb619e393b8",
       "name": "Firm Joins Citrin Cooperman",
       "title": "cpa",
       "company": "Virginia CPA Firm",
@@ -828,7 +828,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.304Z",
+      "foundAt": "2026-11-05T19:38:58.480Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -866,7 +866,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542301-40cb13f80be99",
+      "id": "rad-free-1793907538476-a0d0d2e544515",
       "name": "From South Windsor Guilty",
       "title": "physician",
       "company": "",
@@ -903,7 +903,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.301Z",
+      "foundAt": "2026-11-05T19:38:58.476Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -941,7 +941,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542302-e4df8f8b0e5df8",
+      "id": "rad-free-1793907538477-06701c8a270348",
       "name": "Glen McGorty",
       "title": "attorney",
       "company": "New York Law",
@@ -978,7 +978,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.302Z",
+      "foundAt": "2026-11-05T19:38:58.477Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1017,7 +1017,83 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542301-c49dcad55bc6",
+      "id": "rad-free-1793907538477-2931aef413d618",
+      "name": "GW Alumna",
+      "title": "attorney",
+      "company": "New York Law Firm",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ISVdtclgtSEVaeWJhemphWnRiT0hUUTdtVTZRNm0zZXE0cjM4WkxabmEwcVYyLWJCcENwYUhYM2tHT0U5Z1FRaVc5NzdRd2IyMXgyM0tWR3BJclZwMWJBdDFReTFzNmszSktwLUE1b2w0THc?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ISVdtclgtSEVaeWJhemphWnRiT0hUUTdtVTZRNm0zZXE0cjM4WkxabmEwcVYyLWJCcENwYUhYM2tHT0U5Z1FRaVc5NzdRd2IyMXgyM0tWR3BJclZwMWJBdDFReTFzNmszSktwLUE1b2w0THc?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Fri, 12 Jan 2024 08:00:00 GMT",
+      "sourceType": "attorney",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTE9ISVdtclgtSEVaeWJhemphWnRiT0hUUTdtVTZRNm0zZXE0cjM4WkxabmEwcVYyLWJCcENwYUhYM2tHT0U5Z1FRaVc5NzdRd2IyMXgyM0tWR3BJclZwMWJBdDFReTFzNmszSktwLUE1b2w0THc?oc=5\" target=\"_blank\"&gt;GW Alumna Named Partner at New York Law Firm&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;GW Today&lt;/font&gt;",
+      "signal": "GW Alumna Named Partner at New York Law Firm - GW Today",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+        "sourceType": "attorney",
+        "priority": "nationwide",
+        "title": "GW Alumna Named Partner at New York Law Firm - GW Today",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ISVdtclgtSEVaeWJhemphWnRiT0hUUTdtVTZRNm0zZXE0cjM4WkxabmEwcVYyLWJCcENwYUhYM2tHT0U5Z1FRaVc5NzdRd2IyMXgyM0tWR3BJclZwMWJBdDFReTFzNmszSktwLUE1b2w0THc?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTE9ISVdtclgtSEVaeWJhemphWnRiT0hUUTdtVTZRNm0zZXE0cjM4WkxabmEwcVYyLWJCcENwYUhYM2tHT0U5Z1FRaVc5NzdRd2IyMXgyM0tWR3BJclZwMWJBdDFReTFzNmszSktwLUE1b2w0THc?oc=5\" target=\"_blank\"&gt;GW Alumna Named Partner at New York Law Firm&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;GW Today&lt;/font&gt;",
+        "sourceDate": "Fri, 12 Jan 2024 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+            "type": "attorney",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-05T19:38:58.477Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=GW%20Alumna%20New%20York%20Law%20Firm",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=GW%20Alumna%20New%20York%20Law%20Firm+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify GW Alumna and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi GW, I came across a public signal related to GW Alumna Named Partner at New York Law Firm - GW Today. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793907538475-3956365f090bd",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
@@ -1054,7 +1130,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.301Z",
+      "foundAt": "2026-11-05T19:38:58.475Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1092,7 +1168,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542302-2ba4dff6d48208",
+      "id": "rad-free-1793907538477-70ab1cf031ef",
       "name": "Jayesh Patel",
       "title": "attorney",
       "company": "",
@@ -1129,7 +1205,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.302Z",
+      "foundAt": "2026-11-05T19:38:58.477Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1168,7 +1244,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542303-a00af01a75165",
+      "id": "rad-free-1793907538479-95119d0fdbed88",
       "name": "Jeremy Shebson",
       "title": "attorney",
       "company": "Bloomberg Law",
@@ -1205,7 +1281,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.303Z",
+      "foundAt": "2026-11-05T19:38:58.479Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1244,7 +1320,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542303-45dd9dd3f2915",
+      "id": "rad-free-1793907538479-0ed2e58177fd8",
       "name": "Jorge Oben-Cuadros Elected",
       "title": "cpa",
       "company": "",
@@ -1281,7 +1357,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.303Z",
+      "foundAt": "2026-11-05T19:38:58.479Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1319,7 +1395,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542301-de79ec5aec6028",
+      "id": "rad-free-1793907538476-43807e7a1eb4a",
       "name": "Lieu Balu Is Building",
       "title": "physician",
       "company": "",
@@ -1356,7 +1432,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.301Z",
+      "foundAt": "2026-11-05T19:38:58.476Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1394,7 +1470,83 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542307-5395691213b3a",
+      "id": "rad-free-1793907538478-730c252b29f558",
+      "name": "Nixon Peabody",
+      "title": "attorney",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcUczQ0tIbS1tdUxSZ1VWZDJDTTFGTkZKenF6cXB3SzZjQ2o0cWlaRzYtYkZDNXZIYW1LdDA4ckZuZTF3UWY1QVRWSlFPTWhtejhhOEVJM0lyWlpsT05XNFEzYS05RTEzMEVoRWVpZFZHZ3VUNzhnTC04X3RRXzNhTFo1MjhSZWt5QmRxcGxlZG9aV1YwTlRJU2hvTkVwa0hmODduSGthVFlYS080SHFlUjFCUnlKZWV5Y2swQTZTVHM0QTRhOXZPQWlmRm4?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcUczQ0tIbS1tdUxSZ1VWZDJDTTFGTkZKenF6cXB3SzZjQ2o0cWlaRzYtYkZDNXZIYW1LdDA4ckZuZTF3UWY1QVRWSlFPTWhtejhhOEVJM0lyWlpsT05XNFEzYS05RTEzMEVoRWVpZFZHZ3VUNzhnTC04X3RRXzNhTFo1MjhSZWt5QmRxcGxlZG9aV1YwTlRJU2hvTkVwa0hmODduSGthVFlYS080SHFlUjFCUnlKZWV5Y2swQTZTVHM0QTRhOXZPQWlmRm4?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Thu, 03 Feb 2022 08:00:00 GMT",
+      "sourceType": "attorney",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxPcUczQ0tIbS1tdUxSZ1VWZDJDTTFGTkZKenF6cXB3SzZjQ2o0cWlaRzYtYkZDNXZIYW1LdDA4ckZuZTF3UWY1QVRWSlFPTWhtejhhOEVJM0lyWlpsT05XNFEzYS05RTEzMEVoRWVpZFZHZ3VUNzhnTC04X3RRXzNhTFo1MjhSZWt5QmRxcGxlZG9aV1YwTlRJU2hvTkVwa0hmODduSGthVFlYS080SHFlUjFCUnlKZWV5Y2swQTZTVHM0QTRhOXZPQWlmRm4?oc=5\" target=\"_blank\"&gt;Robert A. Weikert Appointed Managing Partner Nixon Peabody&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Nixon Peabody&lt;/font&gt;",
+      "signal": "Robert A. Weikert Appointed Managing Partner Nixon Peabody - Nixon Peabody",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+        "sourceType": "attorney",
+        "priority": "nationwide",
+        "title": "Robert A. Weikert Appointed Managing Partner Nixon Peabody - Nixon Peabody",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcUczQ0tIbS1tdUxSZ1VWZDJDTTFGTkZKenF6cXB3SzZjQ2o0cWlaRzYtYkZDNXZIYW1LdDA4ckZuZTF3UWY1QVRWSlFPTWhtejhhOEVJM0lyWlpsT05XNFEzYS05RTEzMEVoRWVpZFZHZ3VUNzhnTC04X3RRXzNhTFo1MjhSZWt5QmRxcGxlZG9aV1YwTlRJU2hvTkVwa0hmODduSGthVFlYS080SHFlUjFCUnlKZWV5Y2swQTZTVHM0QTRhOXZPQWlmRm4?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxPcUczQ0tIbS1tdUxSZ1VWZDJDTTFGTkZKenF6cXB3SzZjQ2o0cWlaRzYtYkZDNXZIYW1LdDA4ckZuZTF3UWY1QVRWSlFPTWhtejhhOEVJM0lyWlpsT05XNFEzYS05RTEzMEVoRWVpZFZHZ3VUNzhnTC04X3RRXzNhTFo1MjhSZWt5QmRxcGxlZG9aV1YwTlRJU2hvTkVwa0hmODduSGthVFlYS080SHFlUjFCUnlKZWV5Y2swQTZTVHM0QTRhOXZPQWlmRm4?oc=5\" target=\"_blank\"&gt;Robert A. Weikert Appointed Managing Partner Nixon Peabody&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Nixon Peabody&lt;/font&gt;",
+        "sourceDate": "Thu, 03 Feb 2022 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+            "type": "attorney",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-05T19:38:58.478Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Nixon%20Peabody",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Nixon%20Peabody+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Nixon Peabody and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Nixon, I came across a public signal related to Robert A. Weikert Appointed Managing Partner Nixon Peabody - Nixon Peabody. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793907538485-42c7b4c4b031a",
       "name": "Receives Prestigious Founder's Award",
       "title": "business_owner",
       "company": "",
@@ -1431,7 +1583,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.307Z",
+      "foundAt": "2026-11-05T19:38:58.485Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1469,7 +1621,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542307-366e564a6fd4d",
+      "id": "rad-free-1793907538484-5192df641341b",
       "name": "Returns Home For Expansion",
       "title": "business_owner",
       "company": "",
@@ -1506,7 +1658,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.307Z",
+      "foundAt": "2026-11-05T19:38:58.484Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1544,7 +1696,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542302-3362ece1395bd",
+      "id": "rad-free-1793907538477-495e0357364b4",
       "name": "Rich Rabin",
       "title": "attorney",
       "company": "",
@@ -1581,7 +1733,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.302Z",
+      "foundAt": "2026-11-05T19:38:58.477Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1620,7 +1772,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542301-da3298b2f3b238",
+      "id": "rad-free-1793907538476-31e234018026e8",
       "name": "SS Badrinath",
       "title": "physician",
       "company": "",
@@ -1657,7 +1809,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.301Z",
+      "foundAt": "2026-11-05T19:38:58.476Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1695,7 +1847,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793820542306-ef481ec7c0b288",
+      "id": "rad-free-1793907538483-ce96c1e6eeac08",
       "name": "The Coca-Cola Company",
       "title": "liquidity_event",
       "company": "",
@@ -1732,7 +1884,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-04T19:29:02.306Z",
+      "foundAt": "2026-11-05T19:38:58.483Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1762,81 +1914,6 @@
         "manual contact path available",
         "Basin ICP signal",
         "timely public trigger"
-      ],
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1793820542303-62e181fa33daf8",
-      "name": "USA Welcomes Seven New",
-      "title": "cpa",
-      "company": "BDO Alliance USA Welcomes Seven New CPA",
-      "location": "Nationwide USA",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRndJRDdocHJ0Q01UYk5ERGJsdWxmdEtzRWVYOXd4T2p5bmlIVGNBTHRPM0pJZ1JTYVgxTndXWktWN3FRSTZHTHhpdTI5NWNSNDV3SFUtTmhXVDJINkZ2cVFMQlVNMUdNRHVFV3RzcHpYakNsY1kycy02YTE1NnFyOUJ0WHY5RXBSYUhMUm5QYUN3MkI0bzZBTENmR1NpdUNhVzJtUjl0Ym9hMmJxRGpWcHd3?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRndJRDdocHJ0Q01UYk5ERGJsdWxmdEtzRWVYOXd4T2p5bmlIVGNBTHRPM0pJZ1JTYVgxTndXWktWN3FRSTZHTHhpdTI5NWNSNDV3SFUtTmhXVDJINkZ2cVFMQlVNMUdNRHVFV3RzcHpYakNsY1kycy02YTE1NnFyOUJ0WHY5RXBSYUhMUm5QYUN3MkI0bzZBTENmR1NpdUNhVzJtUjl0Ym9hMmJxRGpWcHd3?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Nationwide CPA tax advisors",
-      "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
-      "sourceDate": "Thu, 06 Mar 2025 01:10:33 GMT",
-      "sourceType": "cpa",
-      "priority": "nationwide",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxQRndJRDdocHJ0Q01UYk5ERGJsdWxmdEtzRWVYOXd4T2p5bmlIVGNBTHRPM0pJZ1JTYVgxTndXWktWN3FRSTZHTHhpdTI5NWNSNDV3SFUtTmhXVDJINkZ2cVFMQlVNMUdNRHVFV3RzcHpYakNsY1kycy02YTE1NnFyOUJ0WHY5RXBSYUhMUm5QYUN3MkI0bzZBTENmR1NpdUNhVzJtUjl0Ym9hMmJxRGpWcHd3?oc=5\" target=\"_blank\"&gt;BDO Alliance USA Welcomes Seven New CPA Member Firms – January 2024 Through July 2024&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;BDO USA&lt;/font&gt;",
-      "signal": "BDO Alliance USA Welcomes Seven New CPA Member Firms – January 2024 Through July 2024 - BDO USA",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Nationwide CPA tax advisors",
-        "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
-        "sourceType": "cpa",
-        "priority": "nationwide",
-        "title": "BDO Alliance USA Welcomes Seven New CPA Member Firms – January 2024 Through July 2024 - BDO USA",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRndJRDdocHJ0Q01UYk5ERGJsdWxmdEtzRWVYOXd4T2p5bmlIVGNBTHRPM0pJZ1JTYVgxTndXWktWN3FRSTZHTHhpdTI5NWNSNDV3SFUtTmhXVDJINkZ2cVFMQlVNMUdNRHVFV3RzcHpYakNsY1kycy02YTE1NnFyOUJ0WHY5RXBSYUhMUm5QYUN3MkI0bzZBTENmR1NpdUNhVzJtUjl0Ym9hMmJxRGpWcHd3?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxQRndJRDdocHJ0Q01UYk5ERGJsdWxmdEtzRWVYOXd4T2p5bmlIVGNBTHRPM0pJZ1JTYVgxTndXWktWN3FRSTZHTHhpdTI5NWNSNDV3SFUtTmhXVDJINkZ2cVFMQlVNMUdNRHVFV3RzcHpYakNsY1kycy02YTE1NnFyOUJ0WHY5RXBSYUhMUm5QYUN3MkI0bzZBTENmR1NpdUNhVzJtUjl0Ym9hMmJxRGpWcHd3?oc=5\" target=\"_blank\"&gt;BDO Alliance USA Welcomes Seven New CPA Member Firms – January 2024 Through July 2024&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;BDO USA&lt;/font&gt;",
-        "sourceDate": "Thu, 06 Mar 2025 01:10:33 GMT",
-        "raw": {
-          "meta": {
-            "name": "Nationwide CPA tax advisors",
-            "query": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
-            "type": "cpa",
-            "priority": "nationwide",
-            "url": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22high%20net%20worth%22%20OR%20%22business%20owner%22%20OR%20%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-11-04T19:29:02.303Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=USA%20Welcomes%20Seven%20New%20BDO%20Alliance%20USA%20Welcomes%20Seven%20New%20CPA",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=USA%20Welcomes%20Seven%20New%20BDO%20Alliance%20USA%20Welcomes%20Seven%20New%20CPA+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify USA Welcomes Seven New and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi USA, I came across a public signal related to BDO Alliance USA Welcomes Seven New CPA Member Firms – January 2024 Through July 2024 - BDO USA. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Basin ICP signal"
       ],
       "contactable": true,
       "usaBased": true,
