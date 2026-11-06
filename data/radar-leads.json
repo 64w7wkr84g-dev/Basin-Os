@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T19:39:01.438Z",
+  "generatedAt": "2026-11-06T19:00:41.932Z",
   "engine": "Free Feed Radar + Groq Managed",
   "geoMode": "texas_first_nationwide",
   "tavilyUsed": false,
@@ -13,15 +13,15 @@
   },
   "stats": {
     "rawSignals": 250,
-    "candidates": 152,
+    "candidates": 156,
     "groqUsed": 12,
-    "usableLeads": 25,
-    "rejected": 127,
+    "usableLeads": 30,
+    "rejected": 126,
     "collectionErrors": 0
   },
   "leads": [
     {
-      "id": "rad-free-1793907538462-d2f1976f3652f",
+      "id": "rad-free-1793991638737-e37baf79462448",
       "name": "Arizona Practice Owner",
       "title": "physician",
       "company": "",
@@ -58,7 +58,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.462Z",
+      "foundAt": "2026-11-06T19:00:38.737Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -98,7 +98,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538467-172ae0914c1768",
+      "id": "rad-free-1793991638742-77fc09b8504f88",
       "name": "Doeren Mayhew",
       "title": "cpa",
       "company": "TBK CPA",
@@ -135,7 +135,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.467Z",
+      "foundAt": "2026-11-06T19:00:38.742Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -175,7 +175,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538468-f7f703eabaf048",
+      "id": "rad-free-1793991638742-e6432ebcd9bdc8",
       "name": "Energy Tax Expert",
       "title": "cpa",
       "company": "",
@@ -212,7 +212,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.468Z",
+      "foundAt": "2026-11-06T19:00:38.742Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -252,7 +252,85 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538482-4c3e55c4d328f",
+      "id": "rad-free-1793991638751-e2568a8b1ee4d8",
+      "name": "Explains What Beauty Buyers",
+      "title": "liquidity_event",
+      "company": "",
+      "location": "Texas-first",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcWNUd19NVDltanBkRkl5WURueFRmMjlkSm9kZzdSWVdoa2FQUGRINHFwamtlZzFVVkRuWjFPV3dpRVctZmxJTU5UX0ZsTFA0TVZxR2h6T2xqYzhYMDl2YVhrVmtMUzVXOWN3TnEyU3k0WXpjeDFwOUZ6QlNnVUIwcVJsTEtzenJuR3VIYS1nODdOVEk0YldJbXNwdjhrc29JRHYwYm1JWnQ?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcWNUd19NVDltanBkRkl5WURueFRmMjlkSm9kZzdSWVdoa2FQUGRINHFwamtlZzFVVkRuWjFPV3dpRVctZmxJTU5UX0ZsTFA0TVZxR2h6T2xqYzhYMDl2YVhrVmtMUzVXOWN3TnEyU3k0WXpjeDFwOUZ6QlNnVUIwcVJsTEtzenJuR3VIYS1nODdOVEk0YldJbXNwdjhrc29JRHYwYm1JWnQ?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide business founder exits",
+      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+      "sourceDate": "Fri, 06 Nov 2026 04:05:58 GMT",
+      "sourceType": "liquidity_event",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcWNUd19NVDltanBkRkl5WURueFRmMjlkSm9kZzdSWVdoa2FQUGRINHFwamtlZzFVVkRuWjFPV3dpRVctZmxJTU5UX0ZsTFA0TVZxR2h6T2xqYzhYMDl2YVhrVmtMUzVXOWN3TnEyU3k0WXpjeDFwOUZ6QlNnVUIwcVJsTEtzenJuR3VIYS1nODdOVEk0YldJbXNwdjhrc29JRHYwYm1JWnQ?oc=5\" target=\"_blank\"&gt;Elemis Is Changing Hands Again. Its Co-Founder Explains What Beauty Buyers Want Now.&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Beauty Independent&lt;/font&gt;",
+      "signal": "Elemis Is Changing Hands Again. Its Co-Founder Explains What Beauty Buyers Want Now. - Beauty Independent",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide business founder exits",
+        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+        "sourceType": "liquidity_event",
+        "priority": "nationwide",
+        "title": "Elemis Is Changing Hands Again. Its Co-Founder Explains What Beauty Buyers Want Now. - Beauty Independent",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcWNUd19NVDltanBkRkl5WURueFRmMjlkSm9kZzdSWVdoa2FQUGRINHFwamtlZzFVVkRuWjFPV3dpRVctZmxJTU5UX0ZsTFA0TVZxR2h6T2xqYzhYMDl2YVhrVmtMUzVXOWN3TnEyU3k0WXpjeDFwOUZ6QlNnVUIwcVJsTEtzenJuR3VIYS1nODdOVEk0YldJbXNwdjhrc29JRHYwYm1JWnQ?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcWNUd19NVDltanBkRkl5WURueFRmMjlkSm9kZzdSWVdoa2FQUGRINHFwamtlZzFVVkRuWjFPV3dpRVctZmxJTU5UX0ZsTFA0TVZxR2h6T2xqYzhYMDl2YVhrVmtMUzVXOWN3TnEyU3k0WXpjeDFwOUZ6QlNnVUIwcVJsTEtzenJuR3VIYS1nODdOVEk0YldJbXNwdjhrc29JRHYwYm1JWnQ?oc=5\" target=\"_blank\"&gt;Elemis Is Changing Hands Again. Its Co-Founder Explains What Beauty Buyers Want Now.&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Beauty Independent&lt;/font&gt;",
+        "sourceDate": "Fri, 06 Nov 2026 04:05:58 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide business founder exits",
+            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+            "type": "liquidity_event",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20%22United%20States%22%20founder%20CEO%20owner&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-06T19:00:38.751Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Explains%20What%20Beauty%20Buyers",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Explains%20What%20Beauty%20Buyers+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Explains What Beauty Buyers and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Explains, I came across a public signal related to Elemis Is Changing Hands Again. Its Co-Founder Explains What Beauty Buyers Want Now. - Beauty Independent. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Texas-first priority",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "aiError": "Groq HTTP 404",
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793991638753-1b32e690adda",
       "name": "George Kurtz",
       "title": "liquidity_event",
       "company": "",
@@ -289,7 +367,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.482Z",
+      "foundAt": "2026-11-06T19:00:38.753Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -330,7 +408,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538462-765b7ec0c51618",
+      "id": "rad-free-1793991638737-1efb5a38369168",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
@@ -367,7 +445,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.462Z",
+      "foundAt": "2026-11-06T19:00:38.737Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -407,7 +485,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538461-1331f27d6c11e8",
+      "id": "rad-free-1793991638737-4123c88d65ccf",
       "name": "Mehmet Oz Shows Houston",
       "title": "physician",
       "company": "",
@@ -444,7 +522,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.461Z",
+      "foundAt": "2026-11-06T19:00:38.737Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -484,7 +562,85 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538463-0ef07d77ec7ad",
+      "id": "rad-free-1793991638745-a5f6f0826b29f8",
+      "name": "Mission Critical Group",
+      "title": "liquidity_event",
+      "company": "Mission Critical Group",
+      "location": "Texas-first",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Texas business owners liquidity events",
+      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
+      "sourceDate": "Wed, 08 Apr 2026 07:00:00 GMT",
+      "sourceType": "liquidity_event",
+      "priority": "texas",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5\" target=\"_blank\"&gt;North Texas’ Mission Critical Group Acquires TxLa Systems&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Dallas Innovates&lt;/font&gt;",
+      "signal": "North Texas’ Mission Critical Group Acquires TxLa Systems - Dallas Innovates",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Texas business owners liquidity events",
+        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
+        "sourceType": "liquidity_event",
+        "priority": "texas",
+        "title": "North Texas’ Mission Critical Group Acquires TxLa Systems - Dallas Innovates",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5\" target=\"_blank\"&gt;North Texas’ Mission Critical Group Acquires TxLa Systems&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Dallas Innovates&lt;/font&gt;",
+        "sourceDate": "Wed, 08 Apr 2026 07:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Texas business owners liquidity events",
+            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
+            "type": "liquidity_event",
+            "priority": "texas",
+            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20Texas%20founder%20owner%20CEO&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-06T19:00:38.745Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Mission%20Critical%20Group%20Mission%20Critical%20Group",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Mission%20Critical%20Group%20Mission%20Critical%20Group+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Mission Critical Group and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Mission, I came across a public signal related to North Texas’ Mission Critical Group Acquires TxLa Systems - Dallas Innovates. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Texas-first priority",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "aiError": "Groq HTTP 404",
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793991638738-53e0c46a5a13b8",
       "name": "Stewart Law Group",
       "title": "attorney",
       "company": "Stewart Law Group",
@@ -521,7 +677,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.463Z",
+      "foundAt": "2026-11-06T19:00:38.738Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -562,7 +718,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538467-27fe6c9981ebf",
+      "id": "rad-free-1793991638742-9f9fd60eb16218",
       "name": "Who Honors Kaleen Reyna",
       "title": "cpa",
       "company": "",
@@ -599,7 +755,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.467Z",
+      "foundAt": "2026-11-06T19:00:38.742Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -639,7 +795,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538485-f1f47fb67bc03",
+      "id": "rad-free-1793991638755-c3d0c3d5ca4c1",
       "name": "And CEO",
       "title": "business_owner",
       "company": "",
@@ -676,7 +832,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.485Z",
+      "foundAt": "2026-11-06T19:00:38.755Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -715,7 +871,82 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538479-9a7e08932860a",
+      "id": "rad-free-1793991638751-36fbae3a0a3748",
+      "name": "Andrew Hunzicker",
+      "title": "cpa",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE54N0pPYUpJNlJSUkZjS3o4OXVBdXBkMWRHSnp3cW1MNHlDdTZtcFNMWHFMSGhnRndYMWUwdC1vU2Vvdkl4eTdYMzZrWUFXamxiLWsyT0lKSmx4U3VIWTBlNDNwRXRCTkRzNHdIbmtJVnpKUmx5QjdqT2o5RnlxRjQ?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE54N0pPYUpJNlJSUkZjS3o4OXVBdXBkMWRHSnp3cW1MNHlDdTZtcFNMWHFMSGhnRndYMWUwdC1vU2Vvdkl4eTdYMzZrWUFXamxiLWsyT0lKSmx4U3VIWTBlNDNwRXRCTkRzNHdIbmtJVnpKUmx5QjdqT2o5RnlxRjQ?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide CPA tax advisors",
+      "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+      "sourceDate": "Tue, 01 Nov 2022 07:00:00 GMT",
+      "sourceType": "cpa",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE54N0pPYUpJNlJSUkZjS3o4OXVBdXBkMWRHSnp3cW1MNHlDdTZtcFNMWHFMSGhnRndYMWUwdC1vU2Vvdkl4eTdYMzZrWUFXamxiLWsyT0lKSmx4U3VIWTBlNDNwRXRCTkRzNHdIbmtJVnpKUmx5QjdqT2o5RnlxRjQ?oc=5\" target=\"_blank\"&gt;Andrew Hunzicker, CPA&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Journal of Accountancy&lt;/font&gt;",
+      "signal": "Andrew Hunzicker, CPA - Journal of Accountancy",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide CPA tax advisors",
+        "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+        "sourceType": "cpa",
+        "priority": "nationwide",
+        "title": "Andrew Hunzicker, CPA - Journal of Accountancy",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE54N0pPYUpJNlJSUkZjS3o4OXVBdXBkMWRHSnp3cW1MNHlDdTZtcFNMWHFMSGhnRndYMWUwdC1vU2Vvdkl4eTdYMzZrWUFXamxiLWsyT0lKSmx4U3VIWTBlNDNwRXRCTkRzNHdIbmtJVnpKUmx5QjdqT2o5RnlxRjQ?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE54N0pPYUpJNlJSUkZjS3o4OXVBdXBkMWRHSnp3cW1MNHlDdTZtcFNMWHFMSGhnRndYMWUwdC1vU2Vvdkl4eTdYMzZrWUFXamxiLWsyT0lKSmx4U3VIWTBlNDNwRXRCTkRzNHdIbmtJVnpKUmx5QjdqT2o5RnlxRjQ?oc=5\" target=\"_blank\"&gt;Andrew Hunzicker, CPA&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Journal of Accountancy&lt;/font&gt;",
+        "sourceDate": "Tue, 01 Nov 2022 07:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide CPA tax advisors",
+            "query": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+            "type": "cpa",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22high%20net%20worth%22%20OR%20%22business%20owner%22%20OR%20%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-06T19:00:38.751Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Andrew%20Hunzicker",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Andrew%20Hunzicker+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Andrew Hunzicker and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Andrew, I came across a public signal related to Andrew Hunzicker, CPA - Journal of Accountancy. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793991638751-6f4c1a08b4523",
       "name": "Associates Promotes Trent Cade",
       "title": "cpa",
       "company": "",
@@ -752,7 +983,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.479Z",
+      "foundAt": "2026-11-06T19:00:38.751Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -782,7 +1013,6 @@
         "manual contact path available",
         "Basin ICP signal"
       ],
-      "aiError": "Groq HTTP 404",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -791,7 +1021,83 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538480-6eaeb619e393b8",
+      "id": "rad-free-1793991638749-2d2071d3d81dc",
+      "name": "Cosmina Morariu",
+      "title": "attorney",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVW13RlMtU3RzdnZZNml6T05USm0tZ2VLZEUtLV9telE4WDJiN0RfNjJfUnd5WlFhalhPb0dPazUtcTJJVm1vYUFoU3NvYlpfTjNSQnMwbHJGdTlXeG4xa1JIc3lRakhJb1BybHBvMmQ0TUNNQTczVUlQT3B1SzdFck01bXp3UXJlLVBiXzJFNkMxTTNaT2RKdUhzeHBkWGxBU1dRNzAxNVUycVQ5?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVW13RlMtU3RzdnZZNml6T05USm0tZ2VLZEUtLV9telE4WDJiN0RfNjJfUnd5WlFhalhPb0dPazUtcTJJVm1vYUFoU3NvYlpfTjNSQnMwbHJGdTlXeG4xa1JIc3lRakhJb1BybHBvMmQ0TUNNQTczVUlQT3B1SzdFck01bXp3UXJlLVBiXzJFNkMxTTNaT2RKdUhzeHBkWGxBU1dRNzAxNVUycVQ5?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Tue, 06 Jan 2026 08:00:00 GMT",
+      "sourceType": "attorney",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxOVW13RlMtU3RzdnZZNml6T05USm0tZ2VLZEUtLV9telE4WDJiN0RfNjJfUnd5WlFhalhPb0dPazUtcTJJVm1vYUFoU3NvYlpfTjNSQnMwbHJGdTlXeG4xa1JIc3lRakhJb1BybHBvMmQ0TUNNQTczVUlQT3B1SzdFck01bXp3UXJlLVBiXzJFNkMxTTNaT2RKdUhzeHBkWGxBU1dRNzAxNVUycVQ5?oc=5\" target=\"_blank\"&gt;Cosmina Morariu Named Managing Partner of Fragomen’s Canadian Practice&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Fragomen&lt;/font&gt;",
+      "signal": "Cosmina Morariu Named Managing Partner of Fragomen’s Canadian Practice - Fragomen",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+        "sourceType": "attorney",
+        "priority": "nationwide",
+        "title": "Cosmina Morariu Named Managing Partner of Fragomen’s Canadian Practice - Fragomen",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVW13RlMtU3RzdnZZNml6T05USm0tZ2VLZEUtLV9telE4WDJiN0RfNjJfUnd5WlFhalhPb0dPazUtcTJJVm1vYUFoU3NvYlpfTjNSQnMwbHJGdTlXeG4xa1JIc3lRakhJb1BybHBvMmQ0TUNNQTczVUlQT3B1SzdFck01bXp3UXJlLVBiXzJFNkMxTTNaT2RKdUhzeHBkWGxBU1dRNzAxNVUycVQ5?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxOVW13RlMtU3RzdnZZNml6T05USm0tZ2VLZEUtLV9telE4WDJiN0RfNjJfUnd5WlFhalhPb0dPazUtcTJJVm1vYUFoU3NvYlpfTjNSQnMwbHJGdTlXeG4xa1JIc3lRakhJb1BybHBvMmQ0TUNNQTczVUlQT3B1SzdFck01bXp3UXJlLVBiXzJFNkMxTTNaT2RKdUhzeHBkWGxBU1dRNzAxNVUycVQ5?oc=5\" target=\"_blank\"&gt;Cosmina Morariu Named Managing Partner of Fragomen’s Canadian Practice&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Fragomen&lt;/font&gt;",
+        "sourceDate": "Tue, 06 Jan 2026 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+            "type": "attorney",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-06T19:00:38.749Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Cosmina%20Morariu",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Cosmina%20Morariu+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Cosmina Morariu and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Cosmina, I came across a public signal related to Cosmina Morariu Named Managing Partner of Fragomen’s Canadian Practice - Fragomen. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793991638751-6495b3f4efafd",
       "name": "Firm Joins Citrin Cooperman",
       "title": "cpa",
       "company": "Virginia CPA Firm",
@@ -828,7 +1134,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.480Z",
+      "foundAt": "2026-11-06T19:00:38.751Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -866,7 +1172,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538476-a0d0d2e544515",
+      "id": "rad-free-1793991638749-a4534ba250ab1",
       "name": "From South Windsor Guilty",
       "title": "physician",
       "company": "",
@@ -903,7 +1209,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.476Z",
+      "foundAt": "2026-11-06T19:00:38.749Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -941,7 +1247,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538477-06701c8a270348",
+      "id": "rad-free-1793991638749-372fd2feaf3f58",
       "name": "Glen McGorty",
       "title": "attorney",
       "company": "New York Law",
@@ -978,7 +1284,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.477Z",
+      "foundAt": "2026-11-06T19:00:38.749Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1017,7 +1323,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538477-2931aef413d618",
+      "id": "rad-free-1793991638750-b7095a256ca998",
       "name": "GW Alumna",
       "title": "attorney",
       "company": "New York Law Firm",
@@ -1054,7 +1360,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.477Z",
+      "foundAt": "2026-11-06T19:00:38.750Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1093,7 +1399,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538475-3956365f090bd",
+      "id": "rad-free-1793991638748-8778441c59347",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
@@ -1130,7 +1436,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.475Z",
+      "foundAt": "2026-11-06T19:00:38.748Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1168,7 +1474,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538477-70ab1cf031ef",
+      "id": "rad-free-1793991638749-f3e3cfa59cce4",
       "name": "Jayesh Patel",
       "title": "attorney",
       "company": "",
@@ -1205,7 +1511,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.477Z",
+      "foundAt": "2026-11-06T19:00:38.749Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1244,7 +1550,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538479-95119d0fdbed88",
+      "id": "rad-free-1793991638750-7c9c059d33d5a",
       "name": "Jeremy Shebson",
       "title": "attorney",
       "company": "Bloomberg Law",
@@ -1281,7 +1587,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.479Z",
+      "foundAt": "2026-11-06T19:00:38.750Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1320,7 +1626,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538479-0ed2e58177fd8",
+      "id": "rad-free-1793991638750-5deda8ad02862",
       "name": "Jorge Oben-Cuadros Elected",
       "title": "cpa",
       "company": "",
@@ -1357,7 +1663,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.479Z",
+      "foundAt": "2026-11-06T19:00:38.750Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1395,7 +1701,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538476-43807e7a1eb4a",
+      "id": "rad-free-1793991638748-9f46246b1de878",
       "name": "Lieu Balu Is Building",
       "title": "physician",
       "company": "",
@@ -1432,7 +1738,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.476Z",
+      "foundAt": "2026-11-06T19:00:38.748Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1470,7 +1776,83 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538478-730c252b29f558",
+      "id": "rad-free-1793991638749-bb9ba6f4ff2a28",
+      "name": "Mullins Law Group",
+      "title": "attorney",
+      "company": "Mullins Law Group",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPTTJxc0VvTXpjbFM4SE93ZjVmNl9UMWYzQlV0SGRVY1QzVHdnNThTWlNWZXpTOWVSamd5MTdiMVo3cWREWUY3dFVpcm9yRDloT3lOS0taMHdwVURxbVFIU2RQZzRsUU9ibXdheGZnZVpkV1BjRUxHaTZsVjhwX1R2em5lWnV6Tkw1czBsQnc5b3V3T0o4OEZzX1lyNmVieUtxOEoxRnhmSmFZRXlZcDFvQUkxdHB0b01zeGU2V3U4MlcwdWZYRmhiek1ReWs4UnpzTk84YVNQcnlMaGJZMG00eElSNlEweFE?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPTTJxc0VvTXpjbFM4SE93ZjVmNl9UMWYzQlV0SGRVY1QzVHdnNThTWlNWZXpTOWVSamd5MTdiMVo3cWREWUY3dFVpcm9yRDloT3lOS0taMHdwVURxbVFIU2RQZzRsUU9ibXdheGZnZVpkV1BjRUxHaTZsVjhwX1R2em5lWnV6Tkw1czBsQnc5b3V3T0o4OEZzX1lyNmVieUtxOEoxRnhmSmFZRXlZcDFvQUkxdHB0b01zeGU2V3U4MlcwdWZYRmhiek1ReWs4UnpzTk84YVNQcnlMaGJZMG00eElSNlEweFE?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Fri, 06 Nov 2026 01:42:00 GMT",
+      "sourceType": "attorney",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi5wFBVV95cUxPTTJxc0VvTXpjbFM4SE93ZjVmNl9UMWYzQlV0SGRVY1QzVHdnNThTWlNWZXpTOWVSamd5MTdiMVo3cWREWUY3dFVpcm9yRDloT3lOS0taMHdwVURxbVFIU2RQZzRsUU9ibXdheGZnZVpkV1BjRUxHaTZsVjhwX1R2em5lWnV6Tkw1czBsQnc5b3V3T0o4OEZzX1lyNmVieUtxOEoxRnhmSmFZRXlZcDFvQUkxdHB0b01zeGU2V3U4MlcwdWZYRmhiek1ReWs4UnpzTk84YVNQcnlMaGJZMG00eElSNlEweFE?oc=5\" target=\"_blank\"&gt;Mullins Law Group Named to Best Law Firms® for Third Consecutive Year in Transportation Law&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;The Des Moines Register&lt;/font&gt;",
+      "signal": "Mullins Law Group Named to Best Law Firms® for Third Consecutive Year in Transportation Law - The Des Moines Register",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+        "sourceType": "attorney",
+        "priority": "nationwide",
+        "title": "Mullins Law Group Named to Best Law Firms® for Third Consecutive Year in Transportation Law - The Des Moines Register",
+        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPTTJxc0VvTXpjbFM4SE93ZjVmNl9UMWYzQlV0SGRVY1QzVHdnNThTWlNWZXpTOWVSamd5MTdiMVo3cWREWUY3dFVpcm9yRDloT3lOS0taMHdwVURxbVFIU2RQZzRsUU9ibXdheGZnZVpkV1BjRUxHaTZsVjhwX1R2em5lWnV6Tkw1czBsQnc5b3V3T0o4OEZzX1lyNmVieUtxOEoxRnhmSmFZRXlZcDFvQUkxdHB0b01zeGU2V3U4MlcwdWZYRmhiek1ReWs4UnpzTk84YVNQcnlMaGJZMG00eElSNlEweFE?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi5wFBVV95cUxPTTJxc0VvTXpjbFM4SE93ZjVmNl9UMWYzQlV0SGRVY1QzVHdnNThTWlNWZXpTOWVSamd5MTdiMVo3cWREWUY3dFVpcm9yRDloT3lOS0taMHdwVURxbVFIU2RQZzRsUU9ibXdheGZnZVpkV1BjRUxHaTZsVjhwX1R2em5lWnV6Tkw1czBsQnc5b3V3T0o4OEZzX1lyNmVieUtxOEoxRnhmSmFZRXlZcDFvQUkxdHB0b01zeGU2V3U4MlcwdWZYRmhiek1ReWs4UnpzTk84YVNQcnlMaGJZMG00eElSNlEweFE?oc=5\" target=\"_blank\"&gt;Mullins Law Group Named to Best Law Firms® for Third Consecutive Year in Transportation Law&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;The Des Moines Register&lt;/font&gt;",
+        "sourceDate": "Fri, 06 Nov 2026 01:42:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+            "type": "attorney",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-06T19:00:38.749Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Mullins%20Law%20Group%20Mullins%20Law%20Group",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Mullins%20Law%20Group%20Mullins%20Law%20Group+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Mullins Law Group and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Mullins, I came across a public signal related to Mullins Law Group Named to Best Law Firms® for Third Consecutive Year in Transportation Law - The Des Moines Register. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1793991638750-eec44eeddc227",
       "name": "Nixon Peabody",
       "title": "attorney",
       "company": "",
@@ -1507,7 +1889,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.478Z",
+      "foundAt": "2026-11-06T19:00:38.750Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1546,7 +1928,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538485-42c7b4c4b031a",
+      "id": "rad-free-1793991638756-fab1337ada2d5",
       "name": "Receives Prestigious Founder's Award",
       "title": "business_owner",
       "company": "",
@@ -1583,7 +1965,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.485Z",
+      "foundAt": "2026-11-06T19:00:38.756Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1621,7 +2003,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538484-5192df641341b",
+      "id": "rad-free-1793991638755-db1a2de86935e8",
       "name": "Returns Home For Expansion",
       "title": "business_owner",
       "company": "",
@@ -1658,7 +2040,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.484Z",
+      "foundAt": "2026-11-06T19:00:38.755Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1696,7 +2078,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538477-495e0357364b4",
+      "id": "rad-free-1793991638749-8cc5792d95ae18",
       "name": "Rich Rabin",
       "title": "attorney",
       "company": "",
@@ -1733,7 +2115,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.477Z",
+      "foundAt": "2026-11-06T19:00:38.749Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1772,7 +2154,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538476-31e234018026e8",
+      "id": "rad-free-1793991638749-5b524dfdd49298",
       "name": "SS Badrinath",
       "title": "physician",
       "company": "",
@@ -1809,7 +2191,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.476Z",
+      "foundAt": "2026-11-06T19:00:38.749Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1847,7 +2229,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1793907538483-ce96c1e6eeac08",
+      "id": "rad-free-1793991638755-98a395c7f87de",
       "name": "The Coca-Cola Company",
       "title": "liquidity_event",
       "company": "",
@@ -1884,7 +2266,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-05T19:38:58.483Z",
+      "foundAt": "2026-11-06T19:00:38.755Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
