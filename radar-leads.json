@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T19:39:33.010Z",
+  "generatedAt": "2026-11-13T19:20:26.000Z",
   "engine": "Free Feed Radar + Groq Managed",
   "geoMode": "texas_first_nationwide",
   "tavilyUsed": false,
@@ -13,92 +13,15 @@
   },
   "stats": {
     "rawSignals": 250,
-    "candidates": 145,
+    "candidates": 151,
     "groqUsed": 12,
-    "usableLeads": 26,
-    "rejected": 119,
+    "usableLeads": 24,
+    "rejected": 127,
     "collectionErrors": 0
   },
   "leads": [
     {
-      "id": "rad-free-1794512369737-a406b8b05b14d8",
-      "name": "Arizona Practice Owner",
-      "title": "physician",
-      "company": "",
-      "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSnZnNVp0ZndqVzVtX25zaVAyaWxzemRIYllpV091NGxPeldsOFhRUE84d0YwRWhxQXhYSFBKQzZBWE54RUozeWdpZUw0a3dSanR4b2J1X1hiU2hfREJuTktyRTkxaGVSSjB0UXVGcjViaXNmSkprWFFJMTZHaEh4TmhiQjRodlF2eTJmMzNR?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSnZnNVp0ZndqVzVtX25zaVAyaWxzemRIYllpV091NGxPeldsOFhRUE84d0YwRWhxQXhYSFBKQzZBWE54RUozeWdpZUw0a3dSanR4b2J1X1hiU2hfREJuTktyRTkxaGVSSjB0UXVGcjViaXNmSkprWFFJMTZHaEh4TmhiQjRodlF2eTJmMzNR?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas physician practice owners",
-      "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
-      "sourceDate": "Thu, 08 Dec 2022 08:00:00 GMT",
-      "sourceType": "physician",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPSnZnNVp0ZndqVzVtX25zaVAyaWxzemRIYllpV091NGxPeldsOFhRUE84d0YwRWhxQXhYSFBKQzZBWE54RUozeWdpZUw0a3dSanR4b2J1X1hiU2hfREJuTktyRTkxaGVSSjB0UXVGcjViaXNmSkprWFFJMTZHaEh4TmhiQjRodlF2eTJmMzNR?oc=5\" target=\"_blank\"&gt;Arizona Practice Owner Joins AAEP Board of Directors&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;EquiManagement&lt;/font&gt;",
-      "signal": "Arizona Practice Owner Joins AAEP Board of Directors - EquiManagement",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Texas physician practice owners",
-        "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
-        "sourceType": "physician",
-        "priority": "texas",
-        "title": "Arizona Practice Owner Joins AAEP Board of Directors - EquiManagement",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSnZnNVp0ZndqVzVtX25zaVAyaWxzemRIYllpV091NGxPeldsOFhRUE84d0YwRWhxQXhYSFBKQzZBWE54RUozeWdpZUw0a3dSanR4b2J1X1hiU2hfREJuTktyRTkxaGVSSjB0UXVGcjViaXNmSkprWFFJMTZHaEh4TmhiQjRodlF2eTJmMzNR?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPSnZnNVp0ZndqVzVtX25zaVAyaWxzemRIYllpV091NGxPeldsOFhRUE84d0YwRWhxQXhYSFBKQzZBWE54RUozeWdpZUw0a3dSanR4b2J1X1hiU2hfREJuTktyRTkxaGVSSjB0UXVGcjViaXNmSkprWFFJMTZHaEh4TmhiQjRodlF2eTJmMzNR?oc=5\" target=\"_blank\"&gt;Arizona Practice Owner Joins AAEP Board of Directors&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;EquiManagement&lt;/font&gt;",
-        "sourceDate": "Thu, 08 Dec 2022 08:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Texas physician practice owners",
-            "query": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
-            "type": "physician",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20Texas&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-11-12T19:39:29.737Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Arizona%20Practice%20Owner",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Arizona%20Practice%20Owner+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Arizona Practice Owner and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Arizona, I came across a public signal related to Arizona Practice Owner Joins AAEP Board of Directors - EquiManagement. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal"
-      ],
-      "aiError": "Groq HTTP 404",
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1794512369738-dab7688487174",
+      "id": "rad-free-1794597623205-1db4ddfa6ab12",
       "name": "Charged With",
       "title": "physician",
       "company": "Colorado Dental",
@@ -135,7 +58,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.738Z",
+      "foundAt": "2026-11-13T19:20:23.205Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -175,7 +98,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369740-c1562e72981e8",
+      "id": "rad-free-1794597623209-30c97c018a52d8",
       "name": "Doeren Mayhew",
       "title": "cpa",
       "company": "TBK CPA",
@@ -212,7 +135,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.740Z",
+      "foundAt": "2026-11-13T19:20:23.209Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -252,56 +175,56 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369741-e107b0d56184a",
-      "name": "Energy Tax Expert",
-      "title": "cpa",
+      "id": "rad-free-1794597623219-5bd6d6f334db48",
+      "name": "George Kurtz",
+      "title": "liquidity_event",
       "company": "",
       "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA0TWFYRWE3T0RMOUgtTzQyTGhfVmNIS205VFVuMDExSXY2aU85RFF1elJaNW84ZDRKNDZxa3lkLVVMbDNseXNZNnRDbmRZNHBrSjljVW0wTFFfZExVRTQtRzdscjQxbmtYa2s3ZF9CN25BbWtnQV9JMA?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA0TWFYRWE3T0RMOUgtTzQyTGhfVmNIS205VFVuMDExSXY2aU85RFF1elJaNW84ZDRKNDZxa3lkLVVMbDNseXNZNnRDbmRZNHBrSjljVW0wTFFfZExVRTQtRzdscjQxbmtYa2s3ZF9CN25BbWtnQV9JMA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxON1pLNVBOLVNwMTBwMExlZ080eHVtendaSGJHY1g2QllIQXo1Y2ExZFJLc1ZZbkVJb1BqM2xRZnNWVUtaQ09BTEZzZkQ4Zjg3U1F5dGJ2dlN3TlZIY1haTlp2UlA0U1BCRHhnWVJ3clRWY1QxSmxZemgtMlFOMEhWOERhaVpralJ2NnFwdUNxN1RGX2hHaHUwN3k3NzNxSkHSAaQBQVVfeXFMT0FDUnpIS2hCd0hwMTNMTnBSODY1Y1BqTlUwMHp3clJMZlRQcVdYb0pNbXd5SWNqM2tWRml3R1NianowVTBRb3hXR0NUQnpMdnVrb2lPaHROeW90aFBiTlN5SEpzdTk5NDRmelJMUUI1Ri1OOXF6ZDFwVGh4ZFRWVDRHdVo2U2hvdEl5V3dZbDBmeUUxM1BNYU0tVnI0Xzd5QWJ0eWk?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxON1pLNVBOLVNwMTBwMExlZ080eHVtendaSGJHY1g2QllIQXo1Y2ExZFJLc1ZZbkVJb1BqM2xRZnNWVUtaQ09BTEZzZkQ4Zjg3U1F5dGJ2dlN3TlZIY1haTlp2UlA0U1BCRHhnWVJ3clRWY1QxSmxZemgtMlFOMEhWOERhaVpralJ2NnFwdUNxN1RGX2hHaHUwN3k3NzNxSkHSAaQBQVVfeXFMT0FDUnpIS2hCd0hwMTNMTnBSODY1Y1BqTlUwMHp3clJMZlRQcVdYb0pNbXd5SWNqM2tWRml3R1NianowVTBRb3hXR0NUQnpMdnVrb2lPaHROeW90aFBiTlN5SEpzdTk5NDRmelJMUUI1Ri1OOXF6ZDFwVGh4ZFRWVDRHdVo2U2hvdEl5V3dZbDBmeUUxM1BNYU0tVnI0Xzd5QWJ0eWk?oc=5",
       "source": "Free Feed Radar",
-      "sourceFeed": "Texas CPA tax advisors",
-      "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
-      "sourceDate": "Wed, 09 Feb 2022 08:00:00 GMT",
-      "sourceType": "cpa",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTFA0TWFYRWE3T0RMOUgtTzQyTGhfVmNIS205VFVuMDExSXY2aU85RFF1elJaNW84ZDRKNDZxa3lkLVVMbDNseXNZNnRDbmRZNHBrSjljVW0wTFFfZExVRTQtRzdscjQxbmtYa2s3ZF9CN25BbWtnQV9JMA?oc=5\" target=\"_blank\"&gt;Energy Tax Expert Joins Akin Gump in Dallas&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;The Texas Lawbook&lt;/font&gt;",
-      "signal": "Energy Tax Expert Joins Akin Gump in Dallas - The Texas Lawbook",
+      "sourceFeed": "Nationwide business founder exits",
+      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+      "sourceDate": "Thu, 20 Nov 2025 08:00:00 GMT",
+      "sourceType": "liquidity_event",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxON1pLNVBOLVNwMTBwMExlZ080eHVtendaSGJHY1g2QllIQXo1Y2ExZFJLc1ZZbkVJb1BqM2xRZnNWVUtaQ09BTEZzZkQ4Zjg3U1F5dGJ2dlN3TlZIY1haTlp2UlA0U1BCRHhnWVJ3clRWY1QxSmxZemgtMlFOMEhWOERhaVpralJ2NnFwdUNxN1RGX2hHaHUwN3k3NzNxSkHSAaQBQVVfeXFMT0FDUnpIS2hCd0hwMTNMTnBSODY1Y1BqTlUwMHp3clJMZlRQcVdYb0pNbXd5SWNqM2tWRml3R1NianowVTBRb3hXR0NUQnpMdnVrb2lPaHROeW90aFBiTlN5SEpzdTk5NDRmelJMUUI1Ri1OOXF6ZDFwVGh4ZFRWVDRHdVo2U2hvdEl5V3dZbDBmeUUxM1BNYU0tVnI0Xzd5QWJ0eWk?oc=5\" target=\"_blank\"&gt;Mercedes F1 boss Toto Wolff sells a piece of his ownership stake to CrowdStrike CEO George Kurtz&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;CNBC&lt;/font&gt;",
+      "signal": "Mercedes F1 boss Toto Wolff sells a piece of his ownership stake to CrowdStrike CEO George Kurtz - CNBC",
       "raw": {
         "sourceKind": "rss",
-        "sourceFeed": "Texas CPA tax advisors",
-        "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
-        "sourceType": "cpa",
-        "priority": "texas",
-        "title": "Energy Tax Expert Joins Akin Gump in Dallas - The Texas Lawbook",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA0TWFYRWE3T0RMOUgtTzQyTGhfVmNIS205VFVuMDExSXY2aU85RFF1elJaNW84ZDRKNDZxa3lkLVVMbDNseXNZNnRDbmRZNHBrSjljVW0wTFFfZExVRTQtRzdscjQxbmtYa2s3ZF9CN25BbWtnQV9JMA?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTFA0TWFYRWE3T0RMOUgtTzQyTGhfVmNIS205VFVuMDExSXY2aU85RFF1elJaNW84ZDRKNDZxa3lkLVVMbDNseXNZNnRDbmRZNHBrSjljVW0wTFFfZExVRTQtRzdscjQxbmtYa2s3ZF9CN25BbWtnQV9JMA?oc=5\" target=\"_blank\"&gt;Energy Tax Expert Joins Akin Gump in Dallas&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;The Texas Lawbook&lt;/font&gt;",
-        "sourceDate": "Wed, 09 Feb 2022 08:00:00 GMT",
+        "sourceFeed": "Nationwide business founder exits",
+        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+        "sourceType": "liquidity_event",
+        "priority": "nationwide",
+        "title": "Mercedes F1 boss Toto Wolff sells a piece of his ownership stake to CrowdStrike CEO George Kurtz - CNBC",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxON1pLNVBOLVNwMTBwMExlZ080eHVtendaSGJHY1g2QllIQXo1Y2ExZFJLc1ZZbkVJb1BqM2xRZnNWVUtaQ09BTEZzZkQ4Zjg3U1F5dGJ2dlN3TlZIY1haTlp2UlA0U1BCRHhnWVJ3clRWY1QxSmxZemgtMlFOMEhWOERhaVpralJ2NnFwdUNxN1RGX2hHaHUwN3k3NzNxSkHSAaQBQVVfeXFMT0FDUnpIS2hCd0hwMTNMTnBSODY1Y1BqTlUwMHp3clJMZlRQcVdYb0pNbXd5SWNqM2tWRml3R1NianowVTBRb3hXR0NUQnpMdnVrb2lPaHROeW90aFBiTlN5SEpzdTk5NDRmelJMUUI1Ri1OOXF6ZDFwVGh4ZFRWVDRHdVo2U2hvdEl5V3dZbDBmeUUxM1BNYU0tVnI0Xzd5QWJ0eWk?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxON1pLNVBOLVNwMTBwMExlZ080eHVtendaSGJHY1g2QllIQXo1Y2ExZFJLc1ZZbkVJb1BqM2xRZnNWVUtaQ09BTEZzZkQ4Zjg3U1F5dGJ2dlN3TlZIY1haTlp2UlA0U1BCRHhnWVJ3clRWY1QxSmxZemgtMlFOMEhWOERhaVpralJ2NnFwdUNxN1RGX2hHaHUwN3k3NzNxSkHSAaQBQVVfeXFMT0FDUnpIS2hCd0hwMTNMTnBSODY1Y1BqTlUwMHp3clJMZlRQcVdYb0pNbXd5SWNqM2tWRml3R1NianowVTBRb3hXR0NUQnpMdnVrb2lPaHROeW90aFBiTlN5SEpzdTk5NDRmelJMUUI1Ri1OOXF6ZDFwVGh4ZFRWVDRHdVo2U2hvdEl5V3dZbDBmeUUxM1BNYU0tVnI0Xzd5QWJ0eWk?oc=5\" target=\"_blank\"&gt;Mercedes F1 boss Toto Wolff sells a piece of his ownership stake to CrowdStrike CEO George Kurtz&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;CNBC&lt;/font&gt;",
+        "sourceDate": "Thu, 20 Nov 2025 08:00:00 GMT",
         "raw": {
           "meta": {
-            "name": "Texas CPA tax advisors",
-            "query": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
-            "type": "cpa",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22%20OR%20%22depletion%20allowance%22%20OR%20%22high%20net%20worth%22)%20Texas&hl=en-US&gl=US&ceid=US:en",
+            "name": "Nationwide business founder exits",
+            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+            "type": "liquidity_event",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20%22United%20States%22%20founder%20CEO%20owner&hl=en-US&gl=US&ceid=US:en",
             "sourceKind": "google_news_rss"
           }
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.741Z",
+      "foundAt": "2026-11-13T19:20:23.219Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
         {
           "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Energy%20Tax%20Expert",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=George%20Kurtz",
           "confidence": "Medium",
           "source": "free search path"
         },
         {
           "type": "Google Search",
-          "value": "https://www.google.com/search?q=Energy%20Tax%20Expert+contact+LinkedIn+email",
+          "value": "https://www.google.com/search?q=George%20Kurtz+contact+LinkedIn+email",
           "confidence": "Medium",
           "source": "free search path"
         }
@@ -309,16 +232,17 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Energy Tax Expert and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nextAction": "Day 1: verify George Kurtz and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi Energy, I came across a public signal related to Energy Tax Expert Joins Akin Gump in Dallas - The Texas Lawbook. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi George, I came across a public signal related to Mercedes F1 boss Toto Wolff sells a piece of his ownership stake to CrowdStrike CEO George Kurtz - CNBC. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
         "manual contact path available",
         "Texas-first priority",
-        "Basin ICP signal"
+        "Basin ICP signal",
+        "timely public trigger"
       ],
       "aiError": "Groq HTTP 404",
       "contactable": true,
@@ -329,30 +253,30 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369737-be9db4020d2638",
+      "id": "rad-free-1794597623205-7e28d6747b0d2",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
       "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaTBvYzUteVpiNUw3Y0hGS2JYNGpZaVVaRDdSRV9Uc21OQUdXN1IzdXdPUjlja1hCRGFqZVdLTVU5Z2V1Yzh6LW9UNzJFSHM1N010NkptRzRyZnRCdDRjbnFSclZiQWctRGZzSm5xdTY0cGJ6OEFqWTVFR1p6Vzd3YVoxRWVCT3RYbFQ3VVFkSGpLdFJOaFpZRFRZcUh6WkJyUWdWQmcxX1dfTUlyRFBXb2VfNGZDSWI1MEcxUnF4N0ZpeG8?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaTBvYzUteVpiNUw3Y0hGS2JYNGpZaVVaRDdSRV9Uc21OQUdXN1IzdXdPUjlja1hCRGFqZVdLTVU5Z2V1Yzh6LW9UNzJFSHM1N010NkptRzRyZnRCdDRjbnFSclZiQWctRGZzSm5xdTY0cGJ6OEFqWTVFR1p6Vzd3YVoxRWVCT3RYbFQ3VVFkSGpLdFJOaFpZRFRZcUh6WkJyUWdWQmcxX1dfTUlyRFBXb2VfNGZDSWI1MEcxUnF4N0ZpeG8?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5",
       "source": "Free Feed Radar",
       "sourceFeed": "Texas physician practice owners",
       "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
       "sourceDate": "Tue, 31 Jan 2023 08:00:00 GMT",
       "sourceType": "physician",
       "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaTBvYzUteVpiNUw3Y0hGS2JYNGpZaVVaRDdSRV9Uc21OQUdXN1IzdXdPUjlja1hCRGFqZVdLTVU5Z2V1Yzh6LW9UNzJFSHM1N010NkptRzRyZnRCdDRjbnFSclZiQWctRGZzSm5xdTY0cGJ6OEFqWTVFR1p6Vzd3YVoxRWVCT3RYbFQ3VVFkSGpLdFJOaFpZRFRZcUh6WkJyUWdWQmcxX1dfTUlyRFBXb2VfNGZDSWI1MEcxUnF4N0ZpeG8?oc=5\" target=\"_blank\"&gt;Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;SierraSun.com&lt;/font&gt;",
-      "signal": "Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - SierraSun.com",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5\" target=\"_blank\"&gt;Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;TahoeDailyTribune.com&lt;/font&gt;",
+      "signal": "Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - TahoeDailyTribune.com",
       "raw": {
         "sourceKind": "rss",
         "sourceFeed": "Texas physician practice owners",
         "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") Texas",
         "sourceType": "physician",
         "priority": "texas",
-        "title": "Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - SierraSun.com",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaTBvYzUteVpiNUw3Y0hGS2JYNGpZaVVaRDdSRV9Uc21OQUdXN1IzdXdPUjlja1hCRGFqZVdLTVU5Z2V1Yzh6LW9UNzJFSHM1N010NkptRzRyZnRCdDRjbnFSclZiQWctRGZzSm5xdTY0cGJ6OEFqWTVFR1p6Vzd3YVoxRWVCT3RYbFQ3VVFkSGpLdFJOaFpZRFRZcUh6WkJyUWdWQmcxX1dfTUlyRFBXb2VfNGZDSWI1MEcxUnF4N0ZpeG8?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaTBvYzUteVpiNUw3Y0hGS2JYNGpZaVVaRDdSRV9Uc21OQUdXN1IzdXdPUjlja1hCRGFqZVdLTVU5Z2V1Yzh6LW9UNzJFSHM1N010NkptRzRyZnRCdDRjbnFSclZiQWctRGZzSm5xdTY0cGJ6OEFqWTVFR1p6Vzd3YVoxRWVCT3RYbFQ3VVFkSGpLdFJOaFpZRFRZcUh6WkJyUWdWQmcxX1dfTUlyRFBXb2VfNGZDSWI1MEcxUnF4N0ZpeG8?oc=5\" target=\"_blank\"&gt;Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;SierraSun.com&lt;/font&gt;",
+        "title": "Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - TahoeDailyTribune.com",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxPQWoyVkh6czh3bDN6TjUtWUtoZjg1dDFoTXZmaUR1VTRyU1ZDZV8tZGhYbzJHRmduZEptQ0NnaFItcGZnT0tnd1FKVlBFQWRhWjJPSmxOY19TYTBtQno3WVUwMUJCZGdNU3JKZ2VMYlhqWnJEUGdkZnVabVNnNEZVUklmS2RqcHEwZGZZOXVlNUx4Q1VxYXNuVUFKYTA4aDJZX0h3blFyWENZTDd6MWNYRUZrYmZyazVLby1LcXozd3lULUZDLTZsbExJNU1yZw?oc=5\" target=\"_blank\"&gt;Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;TahoeDailyTribune.com&lt;/font&gt;",
         "sourceDate": "Tue, 31 Jan 2023 08:00:00 GMT",
         "raw": {
           "meta": {
@@ -366,7 +290,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.737Z",
+      "foundAt": "2026-11-13T19:20:23.205Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -389,7 +313,7 @@
       "nextAction": "Day 1: verify J. Richard Steadman and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi J., I came across a public signal related to Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - SierraSun.com. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi J., I came across a public signal related to Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - TahoeDailyTribune.c. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
@@ -406,7 +330,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369737-1b9dc0481712a",
+      "id": "rad-free-1794597623204-b9864dc17fdb5",
       "name": "Mehmet Oz Shows Houston",
       "title": "physician",
       "company": "",
@@ -443,7 +367,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.737Z",
+      "foundAt": "2026-11-13T19:20:23.204Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -483,85 +407,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369743-7a08983c616d",
-      "name": "Mission Critical Group",
-      "title": "liquidity_event",
-      "company": "Mission Critical Group",
-      "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas business owners liquidity events",
-      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-      "sourceDate": "Wed, 08 Apr 2026 07:00:00 GMT",
-      "sourceType": "liquidity_event",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5\" target=\"_blank\"&gt;North Texas’ Mission Critical Group Acquires TxLa Systems&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Dallas Innovates&lt;/font&gt;",
-      "signal": "North Texas’ Mission Critical Group Acquires TxLa Systems - Dallas Innovates",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Texas business owners liquidity events",
-        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-        "sourceType": "liquidity_event",
-        "priority": "texas",
-        "title": "North Texas’ Mission Critical Group Acquires TxLa Systems - Dallas Innovates",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5\" target=\"_blank\"&gt;North Texas’ Mission Critical Group Acquires TxLa Systems&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Dallas Innovates&lt;/font&gt;",
-        "sourceDate": "Wed, 08 Apr 2026 07:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Texas business owners liquidity events",
-            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-            "type": "liquidity_event",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20Texas%20founder%20owner%20CEO&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-11-12T19:39:29.743Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Mission%20Critical%20Group%20Mission%20Critical%20Group",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Mission%20Critical%20Group%20Mission%20Critical%20Group+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Mission Critical Group and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Mission, I came across a public signal related to North Texas’ Mission Critical Group Acquires TxLa Systems - Dallas Innovates. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "aiError": "Groq HTTP 404",
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1794512369739-133018d8425a48",
+      "id": "rad-free-1794597623206-4ac033d36ff69",
       "name": "Stewart Law Group",
       "title": "attorney",
       "company": "Stewart Law Group",
@@ -598,7 +444,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.739Z",
+      "foundAt": "2026-11-13T19:20:23.206Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -639,7 +485,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369740-77cb56f1d3ab6",
+      "id": "rad-free-1794597623209-9d477ef7fa9a88",
       "name": "Who Honors Kaleen Reyna",
       "title": "cpa",
       "company": "",
@@ -676,7 +522,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.740Z",
+      "foundAt": "2026-11-13T19:20:23.209Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -716,7 +562,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369754-ddcb055f3f8718",
+      "id": "rad-free-1794597623222-0259d9bc9e1198",
       "name": "And CEO",
       "title": "business_owner",
       "company": "",
@@ -753,7 +599,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.754Z",
+      "foundAt": "2026-11-13T19:20:23.222Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -792,83 +638,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369750-4df90167618a9",
-      "name": "Andrew Hunzicker",
-      "title": "cpa",
-      "company": "",
-      "location": "Nationwide USA",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE54N0pPYUpJNlJSUkZjS3o4OXVBdXBkMWRHSnp3cW1MNHlDdTZtcFNMWHFMSGhnRndYMWUwdC1vU2Vvdkl4eTdYMzZrWUFXamxiLWsyT0lKSmx4U3VIWTBlNDNwRXRCTkRzNHdIbmtJVnpKUmx5QjdqT2o5RnlxRjQ?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE54N0pPYUpJNlJSUkZjS3o4OXVBdXBkMWRHSnp3cW1MNHlDdTZtcFNMWHFMSGhnRndYMWUwdC1vU2Vvdkl4eTdYMzZrWUFXamxiLWsyT0lKSmx4U3VIWTBlNDNwRXRCTkRzNHdIbmtJVnpKUmx5QjdqT2o5RnlxRjQ?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Nationwide CPA tax advisors",
-      "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
-      "sourceDate": "Tue, 01 Nov 2022 07:00:00 GMT",
-      "sourceType": "cpa",
-      "priority": "nationwide",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE54N0pPYUpJNlJSUkZjS3o4OXVBdXBkMWRHSnp3cW1MNHlDdTZtcFNMWHFMSGhnRndYMWUwdC1vU2Vvdkl4eTdYMzZrWUFXamxiLWsyT0lKSmx4U3VIWTBlNDNwRXRCTkRzNHdIbmtJVnpKUmx5QjdqT2o5RnlxRjQ?oc=5\" target=\"_blank\"&gt;Andrew Hunzicker, CPA&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Journal of Accountancy&lt;/font&gt;",
-      "signal": "Andrew Hunzicker, CPA - Journal of Accountancy",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Nationwide CPA tax advisors",
-        "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
-        "sourceType": "cpa",
-        "priority": "nationwide",
-        "title": "Andrew Hunzicker, CPA - Journal of Accountancy",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE54N0pPYUpJNlJSUkZjS3o4OXVBdXBkMWRHSnp3cW1MNHlDdTZtcFNMWHFMSGhnRndYMWUwdC1vU2Vvdkl4eTdYMzZrWUFXamxiLWsyT0lKSmx4U3VIWTBlNDNwRXRCTkRzNHdIbmtJVnpKUmx5QjdqT2o5RnlxRjQ?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE54N0pPYUpJNlJSUkZjS3o4OXVBdXBkMWRHSnp3cW1MNHlDdTZtcFNMWHFMSGhnRndYMWUwdC1vU2Vvdkl4eTdYMzZrWUFXamxiLWsyT0lKSmx4U3VIWTBlNDNwRXRCTkRzNHdIbmtJVnpKUmx5QjdqT2o5RnlxRjQ?oc=5\" target=\"_blank\"&gt;Andrew Hunzicker, CPA&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Journal of Accountancy&lt;/font&gt;",
-        "sourceDate": "Tue, 01 Nov 2022 07:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Nationwide CPA tax advisors",
-            "query": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
-            "type": "cpa",
-            "priority": "nationwide",
-            "url": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22high%20net%20worth%22%20OR%20%22business%20owner%22%20OR%20%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-11-12T19:39:29.750Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Andrew%20Hunzicker",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Andrew%20Hunzicker+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Andrew Hunzicker and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Andrew, I came across a public signal related to Andrew Hunzicker, CPA - Journal of Accountancy. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Basin ICP signal"
-      ],
-      "aiError": "Groq HTTP 404",
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1794512369748-cbc054f9ab0a2",
+      "id": "rad-free-1794597623216-fc456b8fe6629",
       "name": "Cosmina Morariu",
       "title": "attorney",
       "company": "",
@@ -905,7 +675,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.748Z",
+      "foundAt": "2026-11-13T19:20:23.216Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -936,6 +706,7 @@
         "Basin ICP signal",
         "timely public trigger"
       ],
+      "aiError": "Groq HTTP 404",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -944,7 +715,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369750-4e85d3baeb0908",
+      "id": "rad-free-1794597623218-c16da6e2bed5e",
       "name": "Firm Joins Citrin Cooperman",
       "title": "cpa",
       "company": "Virginia CPA Firm",
@@ -981,7 +752,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.750Z",
+      "foundAt": "2026-11-13T19:20:23.218Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1011,6 +782,7 @@
         "manual contact path available",
         "Basin ICP signal"
       ],
+      "aiError": "Groq HTTP 404",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -1019,83 +791,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369751-9d62bbf88f2cd8",
-      "name": "George Kurtz",
-      "title": "liquidity_event",
-      "company": "",
-      "location": "Nationwide USA",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxON1pLNVBOLVNwMTBwMExlZ080eHVtendaSGJHY1g2QllIQXo1Y2ExZFJLc1ZZbkVJb1BqM2xRZnNWVUtaQ09BTEZzZkQ4Zjg3U1F5dGJ2dlN3TlZIY1haTlp2UlA0U1BCRHhnWVJ3clRWY1QxSmxZemgtMlFOMEhWOERhaVpralJ2NnFwdUNxN1RGX2hHaHUwN3k3NzNxSkE?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxON1pLNVBOLVNwMTBwMExlZ080eHVtendaSGJHY1g2QllIQXo1Y2ExZFJLc1ZZbkVJb1BqM2xRZnNWVUtaQ09BTEZzZkQ4Zjg3U1F5dGJ2dlN3TlZIY1haTlp2UlA0U1BCRHhnWVJ3clRWY1QxSmxZemgtMlFOMEhWOERhaVpralJ2NnFwdUNxN1RGX2hHaHUwN3k3NzNxSkE?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Nationwide business founder exits",
-      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
-      "sourceDate": "Thu, 20 Nov 2025 08:00:00 GMT",
-      "sourceType": "liquidity_event",
-      "priority": "nationwide",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxON1pLNVBOLVNwMTBwMExlZ080eHVtendaSGJHY1g2QllIQXo1Y2ExZFJLc1ZZbkVJb1BqM2xRZnNWVUtaQ09BTEZzZkQ4Zjg3U1F5dGJ2dlN3TlZIY1haTlp2UlA0U1BCRHhnWVJ3clRWY1QxSmxZemgtMlFOMEhWOERhaVpralJ2NnFwdUNxN1RGX2hHaHUwN3k3NzNxSkE?oc=5\" target=\"_blank\"&gt;Mercedes F1 boss Toto Wolff sells a piece of his ownership stake to CrowdStrike CEO George Kurtz&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;CNBC&lt;/font&gt;",
-      "signal": "Mercedes F1 boss Toto Wolff sells a piece of his ownership stake to CrowdStrike CEO George Kurtz - CNBC",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Nationwide business founder exits",
-        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
-        "sourceType": "liquidity_event",
-        "priority": "nationwide",
-        "title": "Mercedes F1 boss Toto Wolff sells a piece of his ownership stake to CrowdStrike CEO George Kurtz - CNBC",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxON1pLNVBOLVNwMTBwMExlZ080eHVtendaSGJHY1g2QllIQXo1Y2ExZFJLc1ZZbkVJb1BqM2xRZnNWVUtaQ09BTEZzZkQ4Zjg3U1F5dGJ2dlN3TlZIY1haTlp2UlA0U1BCRHhnWVJ3clRWY1QxSmxZemgtMlFOMEhWOERhaVpralJ2NnFwdUNxN1RGX2hHaHUwN3k3NzNxSkE?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxON1pLNVBOLVNwMTBwMExlZ080eHVtendaSGJHY1g2QllIQXo1Y2ExZFJLc1ZZbkVJb1BqM2xRZnNWVUtaQ09BTEZzZkQ4Zjg3U1F5dGJ2dlN3TlZIY1haTlp2UlA0U1BCRHhnWVJ3clRWY1QxSmxZemgtMlFOMEhWOERhaVpralJ2NnFwdUNxN1RGX2hHaHUwN3k3NzNxSkE?oc=5\" target=\"_blank\"&gt;Mercedes F1 boss Toto Wolff sells a piece of his ownership stake to CrowdStrike CEO George Kurtz&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;CNBC&lt;/font&gt;",
-        "sourceDate": "Thu, 20 Nov 2025 08:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Nationwide business founder exits",
-            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
-            "type": "liquidity_event",
-            "priority": "nationwide",
-            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20%22United%20States%22%20founder%20CEO%20owner&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-11-12T19:39:29.751Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=George%20Kurtz",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=George%20Kurtz+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify George Kurtz and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi George, I came across a public signal related to Mercedes F1 boss Toto Wolff sells a piece of his ownership stake to CrowdStrike CEO George Kurtz - CNBC. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1794512369748-fdbc74b600f038",
+      "id": "rad-free-1794597623216-504d349102ee7",
       "name": "Glen McGorty",
       "title": "attorney",
       "company": "New York Law",
@@ -1132,7 +828,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.748Z",
+      "foundAt": "2026-11-13T19:20:23.216Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1163,6 +859,7 @@
         "Basin ICP signal",
         "timely public trigger"
       ],
+      "aiError": "Groq HTTP 404",
       "contactable": true,
       "usaBased": true,
       "workflowEligible": true,
@@ -1171,7 +868,82 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369748-6d7c0b3ff13a7",
+      "id": "rad-free-1794597623215-645008f02f4c88",
+      "name": "J. Richard Steadman",
+      "title": "physician",
+      "company": "The Steadman Clinic",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaTBvYzUteVpiNUw3Y0hGS2JYNGpZaVVaRDdSRV9Uc21OQUdXN1IzdXdPUjlja1hCRGFqZVdLTVU5Z2V1Yzh6LW9UNzJFSHM1N010NkptRzRyZnRCdDRjbnFSclZiQWctRGZzSm5xdTY0cGJ6OEFqWTVFR1p6Vzd3YVoxRWVCT3RYbFQ3VVFkSGpLdFJOaFpZRFRZcUh6WkJyUWdWQmcxX1dfTUlyRFBXb2VfNGZDSWI1MEcxUnF4N0ZpeG8?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaTBvYzUteVpiNUw3Y0hGS2JYNGpZaVVaRDdSRV9Uc21OQUdXN1IzdXdPUjlja1hCRGFqZVdLTVU5Z2V1Yzh6LW9UNzJFSHM1N010NkptRzRyZnRCdDRjbnFSclZiQWctRGZzSm5xdTY0cGJ6OEFqWTVFR1p6Vzd3YVoxRWVCT3RYbFQ3VVFkSGpLdFJOaFpZRFRZcUh6WkJyUWdWQmcxX1dfTUlyRFBXb2VfNGZDSWI1MEcxUnF4N0ZpeG8?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide physician practice owners",
+      "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+      "sourceDate": "Tue, 31 Jan 2023 08:00:00 GMT",
+      "sourceType": "physician",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaTBvYzUteVpiNUw3Y0hGS2JYNGpZaVVaRDdSRV9Uc21OQUdXN1IzdXdPUjlja1hCRGFqZVdLTVU5Z2V1Yzh6LW9UNzJFSHM1N010NkptRzRyZnRCdDRjbnFSclZiQWctRGZzSm5xdTY0cGJ6OEFqWTVFR1p6Vzd3YVoxRWVCT3RYbFQ3VVFkSGpLdFJOaFpZRFRZcUh6WkJyUWdWQmcxX1dfTUlyRFBXb2VfNGZDSWI1MEcxUnF4N0ZpeG8?oc=5\" target=\"_blank\"&gt;Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;SierraSun.com&lt;/font&gt;",
+      "signal": "Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - SierraSun.com",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide physician practice owners",
+        "sourceQuery": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+        "sourceType": "physician",
+        "priority": "nationwide",
+        "title": "Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - SierraSun.com",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaTBvYzUteVpiNUw3Y0hGS2JYNGpZaVVaRDdSRV9Uc21OQUdXN1IzdXdPUjlja1hCRGFqZVdLTVU5Z2V1Yzh6LW9UNzJFSHM1N010NkptRzRyZnRCdDRjbnFSclZiQWctRGZzSm5xdTY0cGJ6OEFqWTVFR1p6Vzd3YVoxRWVCT3RYbFQ3VVFkSGpLdFJOaFpZRFRZcUh6WkJyUWdWQmcxX1dfTUlyRFBXb2VfNGZDSWI1MEcxUnF4N0ZpeG8?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaTBvYzUteVpiNUw3Y0hGS2JYNGpZaVVaRDdSRV9Uc21OQUdXN1IzdXdPUjlja1hCRGFqZVdLTVU5Z2V1Yzh6LW9UNzJFSHM1N010NkptRzRyZnRCdDRjbnFSclZiQWctRGZzSm5xdTY0cGJ6OEFqWTVFR1p6Vzd3YVoxRWVCT3RYbFQ3VVFkSGpLdFJOaFpZRFRZcUh6WkJyUWdWQmcxX1dfTUlyRFBXb2VfNGZDSWI1MEcxUnF4N0ZpeG8?oc=5\" target=\"_blank\"&gt;Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;SierraSun.com&lt;/font&gt;",
+        "sourceDate": "Tue, 31 Jan 2023 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide physician practice owners",
+            "query": "(\"physician founder\" OR \"practice owner\" OR \"medical practice owner\" OR \"surgeon founder\") \"United States\"",
+            "type": "physician",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22physician%20founder%22%20OR%20%22practice%20owner%22%20OR%20%22medical%20practice%20owner%22%20OR%20%22surgeon%20founder%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-13T19:20:23.215Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=J.%20Richard%20Steadman%20The%20Steadman%20Clinic",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=J.%20Richard%20Steadman%20The%20Steadman%20Clinic+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify J. Richard Steadman and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi J., I came across a public signal related to Dr. J. Richard Steadman, pioneering orthopedic surgeon, founder of The Steadman Clinic, dies at 85 - SierraSun.com. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1794597623216-e489247e048268",
       "name": "Jayesh Patel",
       "title": "attorney",
       "company": "",
@@ -1208,7 +980,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.748Z",
+      "foundAt": "2026-11-13T19:20:23.216Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1247,7 +1019,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369750-a27a19df3f0bd8",
+      "id": "rad-free-1794597623217-3a2efa8fd9bc2",
       "name": "Jorge Oben-Cuadros Elected",
       "title": "cpa",
       "company": "",
@@ -1284,7 +1056,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.750Z",
+      "foundAt": "2026-11-13T19:20:23.217Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1322,7 +1094,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369751-37f777bf4d5738",
+      "id": "rad-free-1794597623219-d949e9c6f2e6f8",
       "name": "Launches Another Fitness Group",
       "title": "liquidity_event",
       "company": "Former Xponential CEO Launches Another Fitness Group",
@@ -1359,7 +1131,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.751Z",
+      "foundAt": "2026-11-13T19:20:23.219Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1398,7 +1170,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369747-9b62e2624f44d8",
+      "id": "rad-free-1794597623215-1aab3e2b57c3b8",
       "name": "Lieu Balu Is Building",
       "title": "physician",
       "company": "",
@@ -1435,7 +1207,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.747Z",
+      "foundAt": "2026-11-13T19:20:23.215Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1473,7 +1245,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369749-930313303af5",
+      "id": "rad-free-1794597623217-34163a2d50747",
       "name": "Nixon Peabody",
       "title": "attorney",
       "company": "",
@@ -1510,7 +1282,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.749Z",
+      "foundAt": "2026-11-13T19:20:23.217Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1549,7 +1321,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369754-239ab0c61e83d8",
+      "id": "rad-free-1794597623222-ac61f867ea2f48",
       "name": "Receives Prestigious Founder's Award",
       "title": "business_owner",
       "company": "",
@@ -1586,7 +1358,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.754Z",
+      "foundAt": "2026-11-13T19:20:23.222Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1624,7 +1396,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369753-0ee631fda3cc48",
+      "id": "rad-free-1794597623222-c0219d6bd5dc98",
       "name": "Returns Home For Expansion",
       "title": "business_owner",
       "company": "",
@@ -1661,7 +1433,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.753Z",
+      "foundAt": "2026-11-13T19:20:23.222Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1699,7 +1471,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369749-87009b62f94058",
+      "id": "rad-free-1794597623216-8518ea5221c6b8",
       "name": "Rich Rabin",
       "title": "attorney",
       "company": "",
@@ -1736,7 +1508,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.749Z",
+      "foundAt": "2026-11-13T19:20:23.216Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1775,7 +1547,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369748-517c70938a30a8",
+      "id": "rad-free-1794597623215-778414d43c33e8",
       "name": "SS Badrinath",
       "title": "physician",
       "company": "",
@@ -1812,7 +1584,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.748Z",
+      "foundAt": "2026-11-13T19:20:23.215Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1850,7 +1622,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369753-05f817bf4d07e",
+      "id": "rad-free-1794597623221-12ae941ed45d5",
       "name": "The Coca-Cola Company",
       "title": "liquidity_event",
       "company": "",
@@ -1887,7 +1659,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.753Z",
+      "foundAt": "2026-11-13T19:20:23.221Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1926,7 +1698,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794512369752-03b1a09a649cb",
+      "id": "rad-free-1794597623220-b9af1143a02958",
       "name": "Trinity Hunt-Backed Allvia",
       "title": "liquidity_event",
       "company": "",
@@ -1963,7 +1735,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-12T19:39:29.752Z",
+      "foundAt": "2026-11-13T19:20:23.220Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1993,6 +1765,81 @@
         "manual contact path available",
         "Basin ICP signal",
         "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1794597623218-a72bf1f5fdc5d8",
+      "name": "USA Welcomes Seven New",
+      "title": "cpa",
+      "company": "BDO Alliance USA Welcomes Seven New CPA",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRndJRDdocHJ0Q01UYk5ERGJsdWxmdEtzRWVYOXd4T2p5bmlIVGNBTHRPM0pJZ1JTYVgxTndXWktWN3FRSTZHTHhpdTI5NWNSNDV3SFUtTmhXVDJINkZ2cVFMQlVNMUdNRHVFV3RzcHpYakNsY1kycy02YTE1NnFyOUJ0WHY5RXBSYUhMUm5QYUN3MkI0bzZBTENmR1NpdUNhVzJtUjl0Ym9hMmJxRGpWcHd3?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRndJRDdocHJ0Q01UYk5ERGJsdWxmdEtzRWVYOXd4T2p5bmlIVGNBTHRPM0pJZ1JTYVgxTndXWktWN3FRSTZHTHhpdTI5NWNSNDV3SFUtTmhXVDJINkZ2cVFMQlVNMUdNRHVFV3RzcHpYakNsY1kycy02YTE1NnFyOUJ0WHY5RXBSYUhMUm5QYUN3MkI0bzZBTENmR1NpdUNhVzJtUjl0Ym9hMmJxRGpWcHd3?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide CPA tax advisors",
+      "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+      "sourceDate": "Thu, 06 Mar 2025 01:10:33 GMT",
+      "sourceType": "cpa",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxQRndJRDdocHJ0Q01UYk5ERGJsdWxmdEtzRWVYOXd4T2p5bmlIVGNBTHRPM0pJZ1JTYVgxTndXWktWN3FRSTZHTHhpdTI5NWNSNDV3SFUtTmhXVDJINkZ2cVFMQlVNMUdNRHVFV3RzcHpYakNsY1kycy02YTE1NnFyOUJ0WHY5RXBSYUhMUm5QYUN3MkI0bzZBTENmR1NpdUNhVzJtUjl0Ym9hMmJxRGpWcHd3?oc=5\" target=\"_blank\"&gt;BDO Alliance USA Welcomes Seven New CPA Member Firms – January 2024 Through July 2024&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;BDO USA&lt;/font&gt;",
+      "signal": "BDO Alliance USA Welcomes Seven New CPA Member Firms – January 2024 Through July 2024 - BDO USA",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide CPA tax advisors",
+        "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+        "sourceType": "cpa",
+        "priority": "nationwide",
+        "title": "BDO Alliance USA Welcomes Seven New CPA Member Firms – January 2024 Through July 2024 - BDO USA",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRndJRDdocHJ0Q01UYk5ERGJsdWxmdEtzRWVYOXd4T2p5bmlIVGNBTHRPM0pJZ1JTYVgxTndXWktWN3FRSTZHTHhpdTI5NWNSNDV3SFUtTmhXVDJINkZ2cVFMQlVNMUdNRHVFV3RzcHpYakNsY1kycy02YTE1NnFyOUJ0WHY5RXBSYUhMUm5QYUN3MkI0bzZBTENmR1NpdUNhVzJtUjl0Ym9hMmJxRGpWcHd3?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxQRndJRDdocHJ0Q01UYk5ERGJsdWxmdEtzRWVYOXd4T2p5bmlIVGNBTHRPM0pJZ1JTYVgxTndXWktWN3FRSTZHTHhpdTI5NWNSNDV3SFUtTmhXVDJINkZ2cVFMQlVNMUdNRHVFV3RzcHpYakNsY1kycy02YTE1NnFyOUJ0WHY5RXBSYUhMUm5QYUN3MkI0bzZBTENmR1NpdUNhVzJtUjl0Ym9hMmJxRGpWcHd3?oc=5\" target=\"_blank\"&gt;BDO Alliance USA Welcomes Seven New CPA Member Firms – January 2024 Through July 2024&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;BDO USA&lt;/font&gt;",
+        "sourceDate": "Thu, 06 Mar 2025 01:10:33 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide CPA tax advisors",
+            "query": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"high net worth\" OR \"business owner\" OR \"oil and gas\" OR \"IDC deduction\") \"United States\"",
+            "type": "cpa",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22high%20net%20worth%22%20OR%20%22business%20owner%22%20OR%20%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22)%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-13T19:20:23.218Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=USA%20Welcomes%20Seven%20New%20BDO%20Alliance%20USA%20Welcomes%20Seven%20New%20CPA",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=USA%20Welcomes%20Seven%20New%20BDO%20Alliance%20USA%20Welcomes%20Seven%20New%20CPA+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify USA Welcomes Seven New and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi USA, I came across a public signal related to BDO Alliance USA Welcomes Seven New CPA Member Firms – January 2024 Through July 2024 - BDO USA. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal"
       ],
       "contactable": true,
       "usaBased": true,
