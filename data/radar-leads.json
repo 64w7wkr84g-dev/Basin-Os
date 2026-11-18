@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T20:34:53.964Z",
+  "generatedAt": "2026-11-18T20:07:13.077Z",
   "engine": "Free Feed Radar + Groq Managed",
   "geoMode": "texas_first_nationwide",
   "tavilyUsed": false,
@@ -15,13 +15,13 @@
     "rawSignals": 250,
     "candidates": 144,
     "groqUsed": 12,
-    "usableLeads": 21,
-    "rejected": 123,
+    "usableLeads": 23,
+    "rejected": 121,
     "collectionErrors": 0
   },
   "leads": [
     {
-      "id": "rad-free-1794947690674-e5e60d80473c28",
+      "id": "rad-free-1795032430033-e4cbd8000b09f",
       "name": "Doeren Mayhew",
       "title": "cpa",
       "company": "TBK CPA",
@@ -58,7 +58,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.674Z",
+      "foundAt": "2026-11-18T20:07:10.033Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -98,7 +98,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690684-c4f73c0fe065a",
+      "id": "rad-free-1795032430043-3a25cabe55583",
       "name": "George Kurtz",
       "title": "liquidity_event",
       "company": "",
@@ -135,7 +135,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.684Z",
+      "foundAt": "2026-11-18T20:07:10.043Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -176,7 +176,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690672-8b565a157d05c8",
+      "id": "rad-free-1795032430031-88fdb5d20412e",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
@@ -213,7 +213,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.672Z",
+      "foundAt": "2026-11-18T20:07:10.031Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -253,7 +253,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690671-1dc76c9cfb5c18",
+      "id": "rad-free-1795032430030-eb16d79ffa1c2",
       "name": "Mehmet Oz Shows Houston",
       "title": "physician",
       "company": "",
@@ -290,7 +290,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.671Z",
+      "foundAt": "2026-11-18T20:07:10.030Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -330,7 +330,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690677-70b198eb5f3c98",
+      "id": "rad-free-1795032430036-96c4132c29b368",
       "name": "Mission Critical Group",
       "title": "liquidity_event",
       "company": "Mission Critical Group",
@@ -367,7 +367,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.677Z",
+      "foundAt": "2026-11-18T20:07:10.036Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -408,7 +408,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690672-56bc8691d333d8",
+      "id": "rad-free-1795032430032-136490f7752de",
       "name": "Stewart Law Group",
       "title": "attorney",
       "company": "Stewart Law Group",
@@ -445,7 +445,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.672Z",
+      "foundAt": "2026-11-18T20:07:10.032Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -486,7 +486,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690674-c0cbb2393c0c88",
+      "id": "rad-free-1795032430033-9cb9a530b7c948",
       "name": "Who Honors Kaleen Reyna",
       "title": "cpa",
       "company": "",
@@ -523,7 +523,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.674Z",
+      "foundAt": "2026-11-18T20:07:10.033Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -563,7 +563,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690686-302ccb8e8bddd8",
+      "id": "rad-free-1795032430045-ecc74fb0be46b8",
       "name": "And CEO",
       "title": "business_owner",
       "company": "",
@@ -600,7 +600,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.686Z",
+      "foundAt": "2026-11-18T20:07:10.045Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -639,7 +639,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690682-d325b3ada88f78",
+      "id": "rad-free-1795032430042-9d0cec137ad92",
       "name": "Andrew Hunzicker",
       "title": "cpa",
       "company": "",
@@ -676,7 +676,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.682Z",
+      "foundAt": "2026-11-18T20:07:10.042Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -715,7 +715,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690681-d2093ff8408f68",
+      "id": "rad-free-1795032430041-2802d5a8f67838",
       "name": "Cosmina Morariu",
       "title": "attorney",
       "company": "",
@@ -752,7 +752,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.681Z",
+      "foundAt": "2026-11-18T20:07:10.041Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -792,7 +792,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690683-234822b3e11cb8",
+      "id": "rad-free-1795032430042-a9f7660cec96e8",
       "name": "Firm Joins Citrin Cooperman",
       "title": "cpa",
       "company": "Virginia CPA Firm",
@@ -829,7 +829,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.683Z",
+      "foundAt": "2026-11-18T20:07:10.042Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -867,7 +867,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690680-7b837801d9fee8",
+      "id": "rad-free-1795032430040-9a0c4af5d8b7f8",
       "name": "From South Windsor Guilty",
       "title": "physician",
       "company": "",
@@ -904,7 +904,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.680Z",
+      "foundAt": "2026-11-18T20:07:10.040Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -942,7 +942,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690681-c9655b9f5e8268",
+      "id": "rad-free-1795032430040-ba5bb33215576",
       "name": "Glen McGorty",
       "title": "attorney",
       "company": "New York Law",
@@ -979,7 +979,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.681Z",
+      "foundAt": "2026-11-18T20:07:10.040Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1018,7 +1018,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690682-c0a3fe1a0f37b",
+      "id": "rad-free-1795032430042-bd3d8f88c5196",
       "name": "Jorge Oben-Cuadros Elected",
       "title": "cpa",
       "company": "",
@@ -1055,7 +1055,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.682Z",
+      "foundAt": "2026-11-18T20:07:10.042Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1093,7 +1093,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690684-f0e9c8dac0b308",
+      "id": "rad-free-1795032430043-ed38584a8ffaa",
       "name": "Launches Another Fitness Group",
       "title": "liquidity_event",
       "company": "Former Xponential CEO Launches Another Fitness Group",
@@ -1130,7 +1130,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.684Z",
+      "foundAt": "2026-11-18T20:07:10.043Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1169,7 +1169,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690679-6d531b5f6130c",
+      "id": "rad-free-1795032430040-4e46ae498c3278",
       "name": "Lieu Balu Is Building",
       "title": "physician",
       "company": "",
@@ -1206,7 +1206,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.679Z",
+      "foundAt": "2026-11-18T20:07:10.040Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1244,7 +1244,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690681-365e5348da632",
+      "id": "rad-free-1795032430040-97425aaad6a3a8",
       "name": "Michael Brelje Named Partner",
       "title": "attorney",
       "company": "Santa Barbara Law Firm",
@@ -1281,7 +1281,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.681Z",
+      "foundAt": "2026-11-18T20:07:10.040Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1320,7 +1320,158 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690685-66dbd94f8dd938",
+      "id": "rad-free-1795032430042-6756e2ef56dbe8",
+      "name": "Mike Kortas Acquires FSBO.com",
+      "title": "liquidity_event",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbUZEV0xKRDJJd3o1OFdCY1VrVXJkeUh6NFJybmI0aEV5bHFLZ21oRVVEY09SWF9admZ1Wllfc29ZUnJ0d28zUmwwQlhiRnktWk00d2JyMUVtZU9xQWJPeG5EaG1JVFBaQnZsekYtRXkzdzF0LW9VX3dfZmhDQnd0TThJa2x0c1BZXzRnOU56Wko0a05VbGFwd1dkUlFlV0xENFM2N3g1NzduY0tQ?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbUZEV0xKRDJJd3o1OFdCY1VrVXJkeUh6NFJybmI0aEV5bHFLZ21oRVVEY09SWF9admZ1Wllfc29ZUnJ0d28zUmwwQlhiRnktWk00d2JyMUVtZU9xQWJPeG5EaG1JVFBaQnZsekYtRXkzdzF0LW9VX3dfZmhDQnd0TThJa2x0c1BZXzRnOU56Wko0a05VbGFwd1dkUlFlV0xENFM2N3g1NzduY0tQ?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide business founder exits",
+      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+      "sourceDate": "Fri, 13 Feb 2026 08:00:00 GMT",
+      "sourceType": "liquidity_event",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxQbUZEV0xKRDJJd3o1OFdCY1VrVXJkeUh6NFJybmI0aEV5bHFLZ21oRVVEY09SWF9admZ1Wllfc29ZUnJ0d28zUmwwQlhiRnktWk00d2JyMUVtZU9xQWJPeG5EaG1JVFBaQnZsekYtRXkzdzF0LW9VX3dfZmhDQnd0TThJa2x0c1BZXzRnOU56Wko0a05VbGFwd1dkUlFlV0xENFM2N3g1NzduY0tQ?oc=5\" target=\"_blank\"&gt;NEXA CEO Mike Kortas Acquires FSBO.com, Plans AI-Driven Overhaul&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;National Mortgage Professional&lt;/font&gt;",
+      "signal": "NEXA CEO Mike Kortas Acquires FSBO.com, Plans AI-Driven Overhaul - National Mortgage Professional",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide business founder exits",
+        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+        "sourceType": "liquidity_event",
+        "priority": "nationwide",
+        "title": "NEXA CEO Mike Kortas Acquires FSBO.com, Plans AI-Driven Overhaul - National Mortgage Professional",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbUZEV0xKRDJJd3o1OFdCY1VrVXJkeUh6NFJybmI0aEV5bHFLZ21oRVVEY09SWF9admZ1Wllfc29ZUnJ0d28zUmwwQlhiRnktWk00d2JyMUVtZU9xQWJPeG5EaG1JVFBaQnZsekYtRXkzdzF0LW9VX3dfZmhDQnd0TThJa2x0c1BZXzRnOU56Wko0a05VbGFwd1dkUlFlV0xENFM2N3g1NzduY0tQ?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxQbUZEV0xKRDJJd3o1OFdCY1VrVXJkeUh6NFJybmI0aEV5bHFLZ21oRVVEY09SWF9admZ1Wllfc29ZUnJ0d28zUmwwQlhiRnktWk00d2JyMUVtZU9xQWJPeG5EaG1JVFBaQnZsekYtRXkzdzF0LW9VX3dfZmhDQnd0TThJa2x0c1BZXzRnOU56Wko0a05VbGFwd1dkUlFlV0xENFM2N3g1NzduY0tQ?oc=5\" target=\"_blank\"&gt;NEXA CEO Mike Kortas Acquires FSBO.com, Plans AI-Driven Overhaul&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;National Mortgage Professional&lt;/font&gt;",
+        "sourceDate": "Fri, 13 Feb 2026 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide business founder exits",
+            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+            "type": "liquidity_event",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20%22United%20States%22%20founder%20CEO%20owner&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-18T20:07:10.042Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Mike%20Kortas%20Acquires%20FSBO.com",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Mike%20Kortas%20Acquires%20FSBO.com+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Mike Kortas Acquires FSBO.com and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Mike, I came across a public signal related to NEXA CEO Mike Kortas Acquires FSBO.com, Plans AI-Driven Overhaul - National Mortgage Professional. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1795032430045-67715e6deb0e1",
+      "name": "Receives Prestigious Founder's Award",
+      "title": "business_owner",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOM282emhlb0RPdVk3VzY2ekxFWWVPM1lMOXRSR0Fma2dTWFBZbnBOSHBjMTZEcklCMmcycXBhUHQxR2tYV3l2Z2JPVzNfNWdHNm5qelhwRTZxTDBCUElaMHZGalFTeExBb3JuS0tCMk54elpnQ2d4UUV2U3RRMlJlZkdmNGduUWszR3VYTm0teXhiSTE2dXNkNWRmQ0wyTGdnM2FBMjlKd242Zm5iUnRn?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOM282emhlb0RPdVk3VzY2ekxFWWVPM1lMOXRSR0Fma2dTWFBZbnBOSHBjMTZEcklCMmcycXBhUHQxR2tYV3l2Z2JPVzNfNWdHNm5qelhwRTZxTDBCUElaMHZGalFTeExBb3JuS0tCMk54elpnQ2d4UUV2U3RRMlJlZkdmNGduUWszR3VYTm0teXhiSTE2dXNkNWRmQ0wyTGdnM2FBMjlKd242Zm5iUnRn?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide franchise and multi-unit owners",
+      "sourceQuery": "(\"multi-unit franchisee\" OR \"franchise owner\" OR \"multi unit operator\") founder CEO owner \"United States\"",
+      "sourceDate": "Tue, 29 Aug 2023 07:00:00 GMT",
+      "sourceType": "business_owner",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxOM282emhlb0RPdVk3VzY2ekxFWWVPM1lMOXRSR0Fma2dTWFBZbnBOSHBjMTZEcklCMmcycXBhUHQxR2tYV3l2Z2JPVzNfNWdHNm5qelhwRTZxTDBCUElaMHZGalFTeExBb3JuS0tCMk54elpnQ2d4UUV2U3RRMlJlZkdmNGduUWszR3VYTm0teXhiSTE2dXNkNWRmQ0wyTGdnM2FBMjlKd242Zm5iUnRn?oc=5\" target=\"_blank\"&gt;Spring Green Franchise Owner Receives Prestigious Founder's Award&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;PRWeb&lt;/font&gt;",
+      "signal": "Spring Green Franchise Owner Receives Prestigious Founder's Award - PRWeb",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide franchise and multi-unit owners",
+        "sourceQuery": "(\"multi-unit franchisee\" OR \"franchise owner\" OR \"multi unit operator\") founder CEO owner \"United States\"",
+        "sourceType": "business_owner",
+        "priority": "nationwide",
+        "title": "Spring Green Franchise Owner Receives Prestigious Founder's Award - PRWeb",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOM282emhlb0RPdVk3VzY2ekxFWWVPM1lMOXRSR0Fma2dTWFBZbnBOSHBjMTZEcklCMmcycXBhUHQxR2tYV3l2Z2JPVzNfNWdHNm5qelhwRTZxTDBCUElaMHZGalFTeExBb3JuS0tCMk54elpnQ2d4UUV2U3RRMlJlZkdmNGduUWszR3VYTm0teXhiSTE2dXNkNWRmQ0wyTGdnM2FBMjlKd242Zm5iUnRn?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxOM282emhlb0RPdVk3VzY2ekxFWWVPM1lMOXRSR0Fma2dTWFBZbnBOSHBjMTZEcklCMmcycXBhUHQxR2tYV3l2Z2JPVzNfNWdHNm5qelhwRTZxTDBCUElaMHZGalFTeExBb3JuS0tCMk54elpnQ2d4UUV2U3RRMlJlZkdmNGduUWszR3VYTm0teXhiSTE2dXNkNWRmQ0wyTGdnM2FBMjlKd242Zm5iUnRn?oc=5\" target=\"_blank\"&gt;Spring Green Franchise Owner Receives Prestigious Founder's Award&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;PRWeb&lt;/font&gt;",
+        "sourceDate": "Tue, 29 Aug 2023 07:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide franchise and multi-unit owners",
+            "query": "(\"multi-unit franchisee\" OR \"franchise owner\" OR \"multi unit operator\") founder CEO owner \"United States\"",
+            "type": "business_owner",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22multi-unit%20franchisee%22%20OR%20%22franchise%20owner%22%20OR%20%22multi%20unit%20operator%22)%20founder%20CEO%20owner%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-18T20:07:10.045Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Receives%20Prestigious%20Founder's%20Award",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Receives%20Prestigious%20Founder's%20Award+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Receives Prestigious Founder's Award and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Receives, I came across a public signal related to Spring Green Franchise Owner Receives Prestigious Founder's Award - PRWeb. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1795032430045-08e02c273a4608",
       "name": "Returns Home For Expansion",
       "title": "business_owner",
       "company": "",
@@ -1357,7 +1508,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.685Z",
+      "foundAt": "2026-11-18T20:07:10.045Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1395,56 +1546,56 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690684-9b9183ca21bd18",
-      "name": "Richard Lawless",
-      "title": "liquidity_event",
-      "company": "Remembering Lawless Group",
+      "id": "rad-free-1795032430041-cea547be8e7f2",
+      "name": "Rich Rabin",
+      "title": "attorney",
+      "company": "",
       "location": "Nationwide USA",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNDNEUWhwY19pOFhNdFlfcVlTNnVXWTY5Q3hqbjl0c05ZUnRjRVNTZmoyTTh1c3NFVTh0eUNFdlVuSFl5NTV2RGtJSXV1VjRTUzhRcFN0R1NGUmtVQUkwbE9iS3Q3eE5hdk1PUVE4TlNsaWNva2JzSGpOSW9nRFZHbGRJTHNzVDEya0Zzag?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNDNEUWhwY19pOFhNdFlfcVlTNnVXWTY5Q3hqbjl0c05ZUnRjRVNTZmoyTTh1c3NFVTh0eUNFdlVuSFl5NTV2RGtJSXV1VjRTUzhRcFN0R1NGUmtVQUkwbE9iS3Q3eE5hdk1PUVE4TlNsaWNva2JzSGpOSW9nRFZHbGRJTHNzVDEya0Zzag?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZlNXeW13b1VmeGNRS013cThzdGI1Ym4xanBVVWhaeWhONkN4VkNETGM0cGs5dVJLMDVjNWlXWnVfOG5aUng2Rmc4Y2dfV1d5VUVvMmZJclRKbW5hZmZoaWtiQkNIQ3dicmNUY1U3QkYyaEhoV19IVlZGaWFMd1U5OFpVR2VTd1UxdUE0YzdsanlTMUFfbGU5VURBQjN0QURRWlV1aEJEMjQxN2l3VjFieA?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZlNXeW13b1VmeGNRS013cThzdGI1Ym4xanBVVWhaeWhONkN4VkNETGM0cGs5dVJLMDVjNWlXWnVfOG5aUng2Rmc4Y2dfV1d5VUVvMmZJclRKbW5hZmZoaWtiQkNIQ3dicmNUY1U3QkYyaEhoV19IVlZGaWFMd1U5OFpVR2VTd1UxdUE0YzdsanlTMUFfbGU5VURBQjN0QURRWlV1aEJEMjQxN2l3VjFieA?oc=5",
       "source": "Free Feed Radar",
-      "sourceFeed": "Nationwide business founder exits",
-      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
-      "sourceDate": "Fri, 29 Aug 2025 07:00:00 GMT",
-      "sourceType": "liquidity_event",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Tue, 18 Feb 2025 08:00:00 GMT",
+      "sourceType": "attorney",
       "priority": "nationwide",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxNNDNEUWhwY19pOFhNdFlfcVlTNnVXWTY5Q3hqbjl0c05ZUnRjRVNTZmoyTTh1c3NFVTh0eUNFdlVuSFl5NTV2RGtJSXV1VjRTUzhRcFN0R1NGUmtVQUkwbE9iS3Q3eE5hdk1PUVE4TlNsaWNva2JzSGpOSW9nRFZHbGRJTHNzVDEya0Zzag?oc=5\" target=\"_blank\"&gt;Obit: Remembering Lawless Group Founder Richard Lawless&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;National Association of Wholesaler-Distributors&lt;/font&gt;",
-      "signal": "Obit: Remembering Lawless Group Founder Richard Lawless - National Association of Wholesaler-Distributors",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxNZlNXeW13b1VmeGNRS013cThzdGI1Ym4xanBVVWhaeWhONkN4VkNETGM0cGs5dVJLMDVjNWlXWnVfOG5aUng2Rmc4Y2dfV1d5VUVvMmZJclRKbW5hZmZoaWtiQkNIQ3dicmNUY1U3QkYyaEhoV19IVlZGaWFMd1U5OFpVR2VTd1UxdUE0YzdsanlTMUFfbGU5VURBQjN0QURRWlV1aEJEMjQxN2l3VjFieA?oc=5\" target=\"_blank\"&gt;Rich Rabin Named Partner in Charge of Akin’s New York Office&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Akin Gump Strauss Hauer & Feld LLP&lt;/font&gt;",
+      "signal": "Rich Rabin Named Partner in Charge of Akin’s New York Office - Akin Gump Strauss Hauer & Feld LLP",
       "raw": {
         "sourceKind": "rss",
-        "sourceFeed": "Nationwide business founder exits",
-        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
-        "sourceType": "liquidity_event",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+        "sourceType": "attorney",
         "priority": "nationwide",
-        "title": "Obit: Remembering Lawless Group Founder Richard Lawless - National Association of Wholesaler-Distributors",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNDNEUWhwY19pOFhNdFlfcVlTNnVXWTY5Q3hqbjl0c05ZUnRjRVNTZmoyTTh1c3NFVTh0eUNFdlVuSFl5NTV2RGtJSXV1VjRTUzhRcFN0R1NGUmtVQUkwbE9iS3Q3eE5hdk1PUVE4TlNsaWNva2JzSGpOSW9nRFZHbGRJTHNzVDEya0Zzag?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxNNDNEUWhwY19pOFhNdFlfcVlTNnVXWTY5Q3hqbjl0c05ZUnRjRVNTZmoyTTh1c3NFVTh0eUNFdlVuSFl5NTV2RGtJSXV1VjRTUzhRcFN0R1NGUmtVQUkwbE9iS3Q3eE5hdk1PUVE4TlNsaWNva2JzSGpOSW9nRFZHbGRJTHNzVDEya0Zzag?oc=5\" target=\"_blank\"&gt;Obit: Remembering Lawless Group Founder Richard Lawless&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;National Association of Wholesaler-Distributors&lt;/font&gt;",
-        "sourceDate": "Fri, 29 Aug 2025 07:00:00 GMT",
+        "title": "Rich Rabin Named Partner in Charge of Akin’s New York Office - Akin Gump Strauss Hauer & Feld LLP",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZlNXeW13b1VmeGNRS013cThzdGI1Ym4xanBVVWhaeWhONkN4VkNETGM0cGs5dVJLMDVjNWlXWnVfOG5aUng2Rmc4Y2dfV1d5VUVvMmZJclRKbW5hZmZoaWtiQkNIQ3dicmNUY1U3QkYyaEhoV19IVlZGaWFMd1U5OFpVR2VTd1UxdUE0YzdsanlTMUFfbGU5VURBQjN0QURRWlV1aEJEMjQxN2l3VjFieA?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxNZlNXeW13b1VmeGNRS013cThzdGI1Ym4xanBVVWhaeWhONkN4VkNETGM0cGs5dVJLMDVjNWlXWnVfOG5aUng2Rmc4Y2dfV1d5VUVvMmZJclRKbW5hZmZoaWtiQkNIQ3dicmNUY1U3QkYyaEhoV19IVlZGaWFMd1U5OFpVR2VTd1UxdUE0YzdsanlTMUFfbGU5VURBQjN0QURRWlV1aEJEMjQxN2l3VjFieA?oc=5\" target=\"_blank\"&gt;Rich Rabin Named Partner in Charge of Akin’s New York Office&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Akin Gump Strauss Hauer & Feld LLP&lt;/font&gt;",
+        "sourceDate": "Tue, 18 Feb 2025 08:00:00 GMT",
         "raw": {
           "meta": {
-            "name": "Nationwide business founder exits",
-            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
-            "type": "liquidity_event",
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+            "type": "attorney",
             "priority": "nationwide",
-            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20%22United%20States%22%20founder%20CEO%20owner&hl=en-US&gl=US&ceid=US:en",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
             "sourceKind": "google_news_rss"
           }
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.684Z",
+      "foundAt": "2026-11-18T20:07:10.041Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
         {
           "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Richard%20Lawless%20Remembering%20Lawless%20Group",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Rich%20Rabin",
           "confidence": "Medium",
           "source": "free search path"
         },
         {
           "type": "Google Search",
-          "value": "https://www.google.com/search?q=Richard%20Lawless%20Remembering%20Lawless%20Group+contact+LinkedIn+email",
+          "value": "https://www.google.com/search?q=Rich%20Rabin+contact+LinkedIn+email",
           "confidence": "Medium",
           "source": "free search path"
         }
@@ -1452,10 +1603,10 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Richard Lawless and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nextAction": "Day 1: verify Rich Rabin and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi Richard, I came across a public signal related to Obit: Remembering Lawless Group Founder Richard Lawless - National Association of Wholesaler-Distributors. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi Rich, I came across a public signal related to Rich Rabin Named Partner in Charge of Akin’s New York Office - Akin Gump Strauss Hauer & Feld LLP. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
@@ -1471,7 +1622,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690680-d72c3e2a8f33",
+      "id": "rad-free-1795032430040-b40937e2c9e9c8",
       "name": "SS Badrinath",
       "title": "physician",
       "company": "",
@@ -1508,7 +1659,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.680Z",
+      "foundAt": "2026-11-18T20:07:10.040Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1546,7 +1697,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1794947690685-d07e5294c2c088",
+      "id": "rad-free-1795032430044-9974e6c7daa25",
       "name": "The Coca-Cola Company",
       "title": "liquidity_event",
       "company": "",
@@ -1583,7 +1734,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-17T20:34:50.685Z",
+      "foundAt": "2026-11-18T20:07:10.044Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
