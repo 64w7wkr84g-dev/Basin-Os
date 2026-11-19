@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T20:07:13.077Z",
+  "generatedAt": "2026-11-19T20:07:34.771Z",
   "engine": "Free Feed Radar + Groq Managed",
   "geoMode": "texas_first_nationwide",
   "tavilyUsed": false,
@@ -13,15 +13,15 @@
   },
   "stats": {
     "rawSignals": 250,
-    "candidates": 144,
+    "candidates": 189,
     "groqUsed": 12,
-    "usableLeads": 23,
-    "rejected": 121,
+    "usableLeads": 33,
+    "rejected": 156,
     "collectionErrors": 0
   },
   "leads": [
     {
-      "id": "rad-free-1795032430033-e4cbd8000b09f",
+      "id": "rad-free-1795118850973-62ed8d44990c3",
       "name": "Doeren Mayhew",
       "title": "cpa",
       "company": "TBK CPA",
@@ -58,7 +58,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.033Z",
+      "foundAt": "2026-11-19T20:07:30.973Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -98,7 +98,84 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430043-3a25cabe55583",
+      "id": "rad-free-1795118850973-3ade2eae1f783",
+      "name": "Doeren Mayhew Acquires",
+      "title": "cpa",
+      "company": "Doeren Mayhew Acquires CPA",
+      "location": "Texas-first",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdXNpeEJFYjFkRnpsaHpUbGdDLXI5cTNfcEduMDl2MU5wbm5VUEpUdWFsR1BnYzZsOXVzdzRmMGZJOW5BX2VQUlowdTE4Z05ueDl1WVM2SHY3SmdxV2hvQUdEUWpjQWFSSnMtUmp3WklUXzdEOVZPeW5KRnZvYXpRWDJwYmJKemNPd2FRQVU1ckJYMGgzanEtaDF1ODNDWHdRVDJtd2xPQm43c2s?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdXNpeEJFYjFkRnpsaHpUbGdDLXI5cTNfcEduMDl2MU5wbm5VUEpUdWFsR1BnYzZsOXVzdzRmMGZJOW5BX2VQUlowdTE4Z05ueDl1WVM2SHY3SmdxV2hvQUdEUWpjQWFSSnMtUmp3WklUXzdEOVZPeW5KRnZvYXpRWDJwYmJKemNPd2FRQVU1ckJYMGgzanEtaDF1ODNDWHdRVDJtd2xPQm43c2s?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Texas CPA tax advisors",
+      "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
+      "sourceDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "sourceType": "cpa",
+      "priority": "texas",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdXNpeEJFYjFkRnpsaHpUbGdDLXI5cTNfcEduMDl2MU5wbm5VUEpUdWFsR1BnYzZsOXVzdzRmMGZJOW5BX2VQUlowdTE4Z05ueDl1WVM2SHY3SmdxV2hvQUdEUWpjQWFSSnMtUmp3WklUXzdEOVZPeW5KRnZvYXpRWDJwYmJKemNPd2FRQVU1ckJYMGgzanEtaDF1ODNDWHdRVDJtd2xPQm43c2s?oc=5\" target=\"_blank\"&gt;Doeren Mayhew Acquires CPA Firms in Florida and Texas&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;CPA Practice Advisor&lt;/font&gt;",
+      "signal": "Doeren Mayhew Acquires CPA Firms in Florida and Texas - CPA Practice Advisor",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Texas CPA tax advisors",
+        "sourceQuery": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
+        "sourceType": "cpa",
+        "priority": "texas",
+        "title": "Doeren Mayhew Acquires CPA Firms in Florida and Texas - CPA Practice Advisor",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdXNpeEJFYjFkRnpsaHpUbGdDLXI5cTNfcEduMDl2MU5wbm5VUEpUdWFsR1BnYzZsOXVzdzRmMGZJOW5BX2VQUlowdTE4Z05ueDl1WVM2SHY3SmdxV2hvQUdEUWpjQWFSSnMtUmp3WklUXzdEOVZPeW5KRnZvYXpRWDJwYmJKemNPd2FRQVU1ckJYMGgzanEtaDF1ODNDWHdRVDJtd2xPQm43c2s?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdXNpeEJFYjFkRnpsaHpUbGdDLXI5cTNfcEduMDl2MU5wbm5VUEpUdWFsR1BnYzZsOXVzdzRmMGZJOW5BX2VQUlowdTE4Z05ueDl1WVM2SHY3SmdxV2hvQUdEUWpjQWFSSnMtUmp3WklUXzdEOVZPeW5KRnZvYXpRWDJwYmJKemNPd2FRQVU1ckJYMGgzanEtaDF1ODNDWHdRVDJtd2xPQm43c2s?oc=5\" target=\"_blank\"&gt;Doeren Mayhew Acquires CPA Firms in Florida and Texas&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;CPA Practice Advisor&lt;/font&gt;",
+        "sourceDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Texas CPA tax advisors",
+            "query": "(\"CPA\" OR \"tax advisor\" OR \"tax partner\") (\"oil and gas\" OR \"IDC deduction\" OR \"depletion allowance\" OR \"high net worth\") Texas",
+            "type": "cpa",
+            "priority": "texas",
+            "url": "https://news.google.com/rss/search?q=(%22CPA%22%20OR%20%22tax%20advisor%22%20OR%20%22tax%20partner%22)%20(%22oil%20and%20gas%22%20OR%20%22IDC%20deduction%22%20OR%20%22depletion%20allowance%22%20OR%20%22high%20net%20worth%22)%20Texas&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-19T20:07:30.973Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Doeren%20Mayhew%20Acquires%20Doeren%20Mayhew%20Acquires%20CPA",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Doeren%20Mayhew%20Acquires%20Doeren%20Mayhew%20Acquires%20CPA+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Doeren Mayhew Acquires and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Doeren, I came across a public signal related to Doeren Mayhew Acquires CPA Firms in Florida and Texas - CPA Practice Advisor. Basin Ventures may be relevant if tax planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Texas-first priority",
+        "Basin ICP signal"
+      ],
+      "aiError": "Groq HTTP 404",
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1795118850989-0b178d7638df18",
       "name": "George Kurtz",
       "title": "liquidity_event",
       "company": "",
@@ -135,7 +212,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.043Z",
+      "foundAt": "2026-11-19T20:07:30.989Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -176,7 +253,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430031-88fdb5d20412e",
+      "id": "rad-free-1795118850970-de4d251276612",
       "name": "J. Richard Steadman",
       "title": "physician",
       "company": "The Steadman Clinic",
@@ -213,7 +290,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.031Z",
+      "foundAt": "2026-11-19T20:07:30.970Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -253,7 +330,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430030-eb16d79ffa1c2",
+      "id": "rad-free-1795118850969-50b401e83c5d68",
       "name": "Mehmet Oz Shows Houston",
       "title": "physician",
       "company": "",
@@ -290,7 +367,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.030Z",
+      "foundAt": "2026-11-19T20:07:30.969Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -330,85 +407,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430036-96c4132c29b368",
-      "name": "Mission Critical Group",
-      "title": "liquidity_event",
-      "company": "Mission Critical Group",
-      "location": "Texas-first",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5",
-      "source": "Free Feed Radar",
-      "sourceFeed": "Texas business owners liquidity events",
-      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-      "sourceDate": "Wed, 08 Apr 2026 07:00:00 GMT",
-      "sourceType": "liquidity_event",
-      "priority": "texas",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5\" target=\"_blank\"&gt;North Texas’ Mission Critical Group Acquires TxLa Systems&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Dallas Innovates&lt;/font&gt;",
-      "signal": "North Texas’ Mission Critical Group Acquires TxLa Systems - Dallas Innovates",
-      "raw": {
-        "sourceKind": "rss",
-        "sourceFeed": "Texas business owners liquidity events",
-        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-        "sourceType": "liquidity_event",
-        "priority": "texas",
-        "title": "North Texas’ Mission Critical Group Acquires TxLa Systems - Dallas Innovates",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxORUgzMkIxcjdvSkdFTkF4VzBlNUc3YTEyVlUtVlh3VVp5bnk3OXBlRXhuM245dEVVd0otVWNDNU9KOHFSTlVrd0pWWjRIa1Nmamc2TGRGTGVpdEkyc0FOMGw3QkJoOU12MS1lWDhuYWROZUVJS24zaWNCSGhyWlhKVXcxNEx2bktjRHB4MXl3?oc=5\" target=\"_blank\"&gt;North Texas’ Mission Critical Group Acquires TxLa Systems&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Dallas Innovates&lt;/font&gt;",
-        "sourceDate": "Wed, 08 Apr 2026 07:00:00 GMT",
-        "raw": {
-          "meta": {
-            "name": "Texas business owners liquidity events",
-            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") Texas founder owner CEO",
-            "type": "liquidity_event",
-            "priority": "texas",
-            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20Texas%20founder%20owner%20CEO&hl=en-US&gl=US&ceid=US:en",
-            "sourceKind": "google_news_rss"
-          }
-        },
-        "sourceCollection": "googleNewsQueries"
-      },
-      "foundAt": "2026-11-18T20:07:10.036Z",
-      "status": "New",
-      "leadType": "basinos",
-      "contactMethods": [
-        {
-          "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Mission%20Critical%20Group%20Mission%20Critical%20Group",
-          "confidence": "Medium",
-          "source": "free search path"
-        },
-        {
-          "type": "Google Search",
-          "value": "https://www.google.com/search?q=Mission%20Critical%20Group%20Mission%20Critical%20Group+contact+LinkedIn+email",
-          "confidence": "Medium",
-          "source": "free search path"
-        }
-      ],
-      "score": 98,
-      "grade": "A",
-      "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Mission Critical Group and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
-      "nurture": {
-        "subject": "Reason for reaching out",
-        "body": "Hi Mission, I came across a public signal related to North Texas’ Mission Critical Group Acquires TxLa Systems - Dallas Innovates. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
-      },
-      "scoreSignals": [
-        "named human contact found",
-        "manual contact path available",
-        "Texas-first priority",
-        "Basin ICP signal",
-        "timely public trigger"
-      ],
-      "aiError": "Groq HTTP 404",
-      "contactable": true,
-      "usaBased": true,
-      "workflowEligible": true,
-      "missingQualificationFields": [],
-      "pipelineBlockReason": "",
-      "contactSummary": "LinkedIn Search + Google Search"
-    },
-    {
-      "id": "rad-free-1795032430032-136490f7752de",
+      "id": "rad-free-1795118850971-1997190c8211e8",
       "name": "Stewart Law Group",
       "title": "attorney",
       "company": "Stewart Law Group",
@@ -445,7 +444,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.032Z",
+      "foundAt": "2026-11-19T20:07:30.971Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -486,7 +485,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430033-9cb9a530b7c948",
+      "id": "rad-free-1795118850972-625279bdc5a3f8",
       "name": "Who Honors Kaleen Reyna",
       "title": "cpa",
       "company": "",
@@ -523,7 +522,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.033Z",
+      "foundAt": "2026-11-19T20:07:30.972Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -563,7 +562,84 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430045-ecc74fb0be46b8",
+      "id": "rad-free-1795118850986-f304dac7920b28",
+      "name": "ALBANY LAW FIRM ADDS",
+      "title": "attorney",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbFFOV2otZ1dmX0V3cEQwS1ByU0gzQW9lYjdsdEs3RDBhOURyd0lwYW5PSGpheENHaEFJanBlUTRrY2RPeW5OclN4T2t4NTlrR0Fta1lrVXphbDd0YzJQcG50Mlp0V0N1cW5Td2tNZGJyTWZ1NXBfN01ObFVGX3RraQ?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbFFOV2otZ1dmX0V3cEQwS1ByU0gzQW9lYjdsdEs3RDBhOURyd0lwYW5PSGpheENHaEFJanBlUTRrY2RPeW5OclN4T2t4NTlrR0Fta1lrVXphbDd0YzJQcG50Mlp0V0N1cW5Td2tNZGJyTWZ1NXBfN01ObFVGX3RraQ?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Mon, 26 Feb 2024 08:00:00 GMT",
+      "sourceType": "attorney",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxNbFFOV2otZ1dmX0V3cEQwS1ByU0gzQW9lYjdsdEs3RDBhOURyd0lwYW5PSGpheENHaEFJanBlUTRrY2RPeW5OclN4T2t4NTlrR0Fta1lrVXphbDd0YzJQcG50Mlp0V0N1cW5Td2tNZGJyTWZ1NXBfN01ObFVGX3RraQ?oc=5\" target=\"_blank\"&gt;LEADING ALBANY LAW FIRM ADDS NAMED PARTNER&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Empire Report&lt;/font&gt;",
+      "signal": "LEADING ALBANY LAW FIRM ADDS NAMED PARTNER - Empire Report",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+        "sourceType": "attorney",
+        "priority": "nationwide",
+        "title": "LEADING ALBANY LAW FIRM ADDS NAMED PARTNER - Empire Report",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbFFOV2otZ1dmX0V3cEQwS1ByU0gzQW9lYjdsdEs3RDBhOURyd0lwYW5PSGpheENHaEFJanBlUTRrY2RPeW5OclN4T2t4NTlrR0Fta1lrVXphbDd0YzJQcG50Mlp0V0N1cW5Td2tNZGJyTWZ1NXBfN01ObFVGX3RraQ?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxNbFFOV2otZ1dmX0V3cEQwS1ByU0gzQW9lYjdsdEs3RDBhOURyd0lwYW5PSGpheENHaEFJanBlUTRrY2RPeW5OclN4T2t4NTlrR0Fta1lrVXphbDd0YzJQcG50Mlp0V0N1cW5Td2tNZGJyTWZ1NXBfN01ObFVGX3RraQ?oc=5\" target=\"_blank\"&gt;LEADING ALBANY LAW FIRM ADDS NAMED PARTNER&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Empire Report&lt;/font&gt;",
+        "sourceDate": "Mon, 26 Feb 2024 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+            "type": "attorney",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-19T20:07:30.986Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=ALBANY%20LAW%20FIRM%20ADDS",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=ALBANY%20LAW%20FIRM%20ADDS+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify ALBANY LAW FIRM ADDS and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi ALBANY, I came across a public signal related to LEADING ALBANY LAW FIRM ADDS NAMED PARTNER - Empire Report. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "aiError": "Groq HTTP 404",
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1795118850992-33d40947420b68",
       "name": "And CEO",
       "title": "business_owner",
       "company": "",
@@ -600,7 +676,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.045Z",
+      "foundAt": "2026-11-19T20:07:30.992Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -639,7 +715,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430042-9d0cec137ad92",
+      "id": "rad-free-1795118850988-87156bad815478",
       "name": "Andrew Hunzicker",
       "title": "cpa",
       "company": "",
@@ -676,7 +752,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.042Z",
+      "foundAt": "2026-11-19T20:07:30.988Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -715,31 +791,31 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430041-2802d5a8f67838",
-      "name": "Cosmina Morariu",
+      "id": "rad-free-1795118850985-4f1fe1e6c02ca",
+      "name": "At Reicker",
       "title": "attorney",
-      "company": "",
+      "company": "McRoy Law Firm",
       "location": "Nationwide USA",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVW13RlMtU3RzdnZZNml6T05USm0tZ2VLZEUtLV9telE4WDJiN0RfNjJfUnd5WlFhalhPb0dPazUtcTJJVm1vYUFoU3NvYlpfTjNSQnMwbHJGdTlXeG4xa1JIc3lRakhJb1BybHBvMmQ0TUNNQTczVUlQT3B1SzdFck01bXp3UXJlLVBiXzJFNkMxTTNaT2RKdUhzeHBkWGxBU1dRNzAxNVUycVQ5?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVW13RlMtU3RzdnZZNml6T05USm0tZ2VLZEUtLV9telE4WDJiN0RfNjJfUnd5WlFhalhPb0dPazUtcTJJVm1vYUFoU3NvYlpfTjNSQnMwbHJGdTlXeG4xa1JIc3lRakhJb1BybHBvMmQ0TUNNQTczVUlQT3B1SzdFck01bXp3UXJlLVBiXzJFNkMxTTNaT2RKdUhzeHBkWGxBU1dRNzAxNVUycVQ5?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNY3RVYi1nTE1KWFExUFMwNTdhNG9MSzhFdVRoTlVscGZpejBVSVFXNEhnd2xEQU5Vc2dPRU1hTFByUlhLTGVEMjlzRHU3blZkZXRmQm9zTzd1N25lUHo1WDBzVXpDS2IwdE5oYXRQTGNxUlpxWXM1SEFqNmFMTzMtNFJGQ1B6eXM2WmdMa09NMk1IMDRrNHh2b0JsVkNNQVZKMEktVkRQV3lYRk53YUtoSnNxOFNQZGVEdnpuWl9B?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNY3RVYi1nTE1KWFExUFMwNTdhNG9MSzhFdVRoTlVscGZpejBVSVFXNEhnd2xEQU5Vc2dPRU1hTFByUlhLTGVEMjlzRHU3blZkZXRmQm9zTzd1N25lUHo1WDBzVXpDS2IwdE5oYXRQTGNxUlpxWXM1SEFqNmFMTzMtNFJGQ1B6eXM2WmdMa09NMk1IMDRrNHh2b0JsVkNNQVZKMEktVkRQV3lYRk53YUtoSnNxOFNQZGVEdnpuWl9B?oc=5",
       "source": "Free Feed Radar",
       "sourceFeed": "Nationwide law firm managing partners",
       "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
-      "sourceDate": "Tue, 06 Jan 2026 08:00:00 GMT",
+      "sourceDate": "Mon, 10 Mar 2025 07:00:00 GMT",
       "sourceType": "attorney",
       "priority": "nationwide",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxOVW13RlMtU3RzdnZZNml6T05USm0tZ2VLZEUtLV9telE4WDJiN0RfNjJfUnd5WlFhalhPb0dPazUtcTJJVm1vYUFoU3NvYlpfTjNSQnMwbHJGdTlXeG4xa1JIc3lRakhJb1BybHBvMmQ0TUNNQTczVUlQT3B1SzdFck01bXp3UXJlLVBiXzJFNkMxTTNaT2RKdUhzeHBkWGxBU1dRNzAxNVUycVQ5?oc=5\" target=\"_blank\"&gt;Cosmina Morariu Named Managing Partner of Fragomen’s Canadian Practice&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Fragomen&lt;/font&gt;",
-      "signal": "Cosmina Morariu Named Managing Partner of Fragomen’s Canadian Practice - Fragomen",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxNY3RVYi1nTE1KWFExUFMwNTdhNG9MSzhFdVRoTlVscGZpejBVSVFXNEhnd2xEQU5Vc2dPRU1hTFByUlhLTGVEMjlzRHU3blZkZXRmQm9zTzd1N25lUHo1WDBzVXpDS2IwdE5oYXRQTGNxUlpxWXM1SEFqNmFMTzMtNFJGQ1B6eXM2WmdMa09NMk1IMDRrNHh2b0JsVkNNQVZKMEktVkRQV3lYRk53YUtoSnNxOFNQZGVEdnpuWl9B?oc=5\" target=\"_blank\"&gt;Meghan Woodsome Promoted To Managing Partner At Reicker, Pfau, Pyle and McRoy Law Firm&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;edhat&lt;/font&gt;",
+      "signal": "Meghan Woodsome Promoted To Managing Partner At Reicker, Pfau, Pyle and McRoy Law Firm - edhat",
       "raw": {
         "sourceKind": "rss",
         "sourceFeed": "Nationwide law firm managing partners",
         "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
         "sourceType": "attorney",
         "priority": "nationwide",
-        "title": "Cosmina Morariu Named Managing Partner of Fragomen’s Canadian Practice - Fragomen",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVW13RlMtU3RzdnZZNml6T05USm0tZ2VLZEUtLV9telE4WDJiN0RfNjJfUnd5WlFhalhPb0dPazUtcTJJVm1vYUFoU3NvYlpfTjNSQnMwbHJGdTlXeG4xa1JIc3lRakhJb1BybHBvMmQ0TUNNQTczVUlQT3B1SzdFck01bXp3UXJlLVBiXzJFNkMxTTNaT2RKdUhzeHBkWGxBU1dRNzAxNVUycVQ5?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxOVW13RlMtU3RzdnZZNml6T05USm0tZ2VLZEUtLV9telE4WDJiN0RfNjJfUnd5WlFhalhPb0dPazUtcTJJVm1vYUFoU3NvYlpfTjNSQnMwbHJGdTlXeG4xa1JIc3lRakhJb1BybHBvMmQ0TUNNQTczVUlQT3B1SzdFck01bXp3UXJlLVBiXzJFNkMxTTNaT2RKdUhzeHBkWGxBU1dRNzAxNVUycVQ5?oc=5\" target=\"_blank\"&gt;Cosmina Morariu Named Managing Partner of Fragomen’s Canadian Practice&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Fragomen&lt;/font&gt;",
-        "sourceDate": "Tue, 06 Jan 2026 08:00:00 GMT",
+        "title": "Meghan Woodsome Promoted To Managing Partner At Reicker, Pfau, Pyle and McRoy Law Firm - edhat",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNY3RVYi1nTE1KWFExUFMwNTdhNG9MSzhFdVRoTlVscGZpejBVSVFXNEhnd2xEQU5Vc2dPRU1hTFByUlhLTGVEMjlzRHU3blZkZXRmQm9zTzd1N25lUHo1WDBzVXpDS2IwdE5oYXRQTGNxUlpxWXM1SEFqNmFMTzMtNFJGQ1B6eXM2WmdMa09NMk1IMDRrNHh2b0JsVkNNQVZKMEktVkRQV3lYRk53YUtoSnNxOFNQZGVEdnpuWl9B?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxNY3RVYi1nTE1KWFExUFMwNTdhNG9MSzhFdVRoTlVscGZpejBVSVFXNEhnd2xEQU5Vc2dPRU1hTFByUlhLTGVEMjlzRHU3blZkZXRmQm9zTzd1N25lUHo1WDBzVXpDS2IwdE5oYXRQTGNxUlpxWXM1SEFqNmFMTzMtNFJGQ1B6eXM2WmdMa09NMk1IMDRrNHh2b0JsVkNNQVZKMEktVkRQV3lYRk53YUtoSnNxOFNQZGVEdnpuWl9B?oc=5\" target=\"_blank\"&gt;Meghan Woodsome Promoted To Managing Partner At Reicker, Pfau, Pyle and McRoy Law Firm&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;edhat&lt;/font&gt;",
+        "sourceDate": "Mon, 10 Mar 2025 07:00:00 GMT",
         "raw": {
           "meta": {
             "name": "Nationwide law firm managing partners",
@@ -752,19 +828,19 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.041Z",
+      "foundAt": "2026-11-19T20:07:30.985Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
         {
           "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Cosmina%20Morariu",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=At%20Reicker%20McRoy%20Law%20Firm",
           "confidence": "Medium",
           "source": "free search path"
         },
         {
           "type": "Google Search",
-          "value": "https://www.google.com/search?q=Cosmina%20Morariu+contact+LinkedIn+email",
+          "value": "https://www.google.com/search?q=At%20Reicker%20McRoy%20Law%20Firm+contact+LinkedIn+email",
           "confidence": "Medium",
           "source": "free search path"
         }
@@ -772,10 +848,10 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Cosmina Morariu and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nextAction": "Day 1: verify At Reicker and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi Cosmina, I came across a public signal related to Cosmina Morariu Named Managing Partner of Fragomen’s Canadian Practice - Fragomen. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi At, I came across a public signal related to Meghan Woodsome Promoted To Managing Partner At Reicker, Pfau, Pyle and McRoy Law Firm - edhat. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
@@ -792,7 +868,159 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430042-a9f7660cec96e8",
+      "id": "rad-free-1795118850986-a5cdb6cbab04",
+      "name": "Brigitte Alanis",
+      "title": "attorney",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPLUVfTzRDdXpkSzIxb29oQVd4ZVRLVTdraGlDZlhjckwyX1pXcE9SSGstSF9RVnZGdDVuY2lmbk1YYUFGVUVLN0JUazJKZUxGSFRYSlpJVkh0RmIzZVVmYjV0S0gtUnpoWnQ2ZmoyN1ZsR1pTMkJmTm9lZWhkWXF0UmVBOF9mUkVKcElfdEQxVmN3bEFQYVhvOU5hYm44LWlzbWZ2UkdGY1B2RTVfcTRuNXRQX0JyVGtfc21keWZmTERSc2lHRGh0Nkl6NFRaUFJVem51RHY0elY?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPLUVfTzRDdXpkSzIxb29oQVd4ZVRLVTdraGlDZlhjckwyX1pXcE9SSGstSF9RVnZGdDVuY2lmbk1YYUFGVUVLN0JUazJKZUxGSFRYSlpJVkh0RmIzZVVmYjV0S0gtUnpoWnQ2ZmoyN1ZsR1pTMkJmTm9lZWhkWXF0UmVBOF9mUkVKcElfdEQxVmN3bEFQYVhvOU5hYm44LWlzbWZ2UkdGY1B2RTVfcTRuNXRQX0JyVGtfc21keWZmTERSc2lHRGh0Nkl6NFRaUFJVem51RHY0elY?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Tue, 28 Jan 2025 08:00:00 GMT",
+      "sourceType": "attorney",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi2AFBVV95cUxPLUVfTzRDdXpkSzIxb29oQVd4ZVRLVTdraGlDZlhjckwyX1pXcE9SSGstSF9RVnZGdDVuY2lmbk1YYUFGVUVLN0JUazJKZUxGSFRYSlpJVkh0RmIzZVVmYjV0S0gtUnpoWnQ2ZmoyN1ZsR1pTMkJmTm9lZWhkWXF0UmVBOF9mUkVKcElfdEQxVmN3bEFQYVhvOU5hYm44LWlzbWZ2UkdGY1B2RTVfcTRuNXRQX0JyVGtfc21keWZmTERSc2lHRGh0Nkl6NFRaUFJVem51RHY0elY?oc=5\" target=\"_blank\"&gt;Brigitte Alanis promoted to Partner at music law firm King, Holmes, Paterno & Soriano, LLP&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Music Business Worldwide&lt;/font&gt;",
+      "signal": "Brigitte Alanis promoted to Partner at music law firm King, Holmes, Paterno & Soriano, LLP - Music Business Worldwide",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+        "sourceType": "attorney",
+        "priority": "nationwide",
+        "title": "Brigitte Alanis promoted to Partner at music law firm King, Holmes, Paterno & Soriano, LLP - Music Business Worldwide",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPLUVfTzRDdXpkSzIxb29oQVd4ZVRLVTdraGlDZlhjckwyX1pXcE9SSGstSF9RVnZGdDVuY2lmbk1YYUFGVUVLN0JUazJKZUxGSFRYSlpJVkh0RmIzZVVmYjV0S0gtUnpoWnQ2ZmoyN1ZsR1pTMkJmTm9lZWhkWXF0UmVBOF9mUkVKcElfdEQxVmN3bEFQYVhvOU5hYm44LWlzbWZ2UkdGY1B2RTVfcTRuNXRQX0JyVGtfc21keWZmTERSc2lHRGh0Nkl6NFRaUFJVem51RHY0elY?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi2AFBVV95cUxPLUVfTzRDdXpkSzIxb29oQVd4ZVRLVTdraGlDZlhjckwyX1pXcE9SSGstSF9RVnZGdDVuY2lmbk1YYUFGVUVLN0JUazJKZUxGSFRYSlpJVkh0RmIzZVVmYjV0S0gtUnpoWnQ2ZmoyN1ZsR1pTMkJmTm9lZWhkWXF0UmVBOF9mUkVKcElfdEQxVmN3bEFQYVhvOU5hYm44LWlzbWZ2UkdGY1B2RTVfcTRuNXRQX0JyVGtfc21keWZmTERSc2lHRGh0Nkl6NFRaUFJVem51RHY0elY?oc=5\" target=\"_blank\"&gt;Brigitte Alanis promoted to Partner at music law firm King, Holmes, Paterno & Soriano, LLP&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Music Business Worldwide&lt;/font&gt;",
+        "sourceDate": "Tue, 28 Jan 2025 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+            "type": "attorney",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-19T20:07:30.986Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Brigitte%20Alanis",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Brigitte%20Alanis+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Brigitte Alanis and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Brigitte, I came across a public signal related to Brigitte Alanis promoted to Partner at music law firm King, Holmes, Paterno & Soriano, LLP - Music Business Worldwide. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1795118850980-7d8e7b8a448c1",
+      "name": "Eduardo Soler Tappa Steers",
+      "title": "attorney",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOT201Rk1yM2JIT2Q0Wld4OUZOZFlDdk40aDJjUm9tZGVlbXpyZVZJNURpOXo0R1kzbE5qVXd4RlNDUzJxcW5DXzlpdExPekNlMlFvRTRxTmtWOHlKQ09oV2FtVVRCT0VfOTlZU2w5c3o3ZXo3NEYxbzdwekJHejJ4b0phU292RlNtdk1FaVdDUm5KWUNrZkVxVDNabW0tZld5Q1J4UnVLRHNsZFRONGlmRzhHQk5sSDNlVEVhbUd6WHM5MVVndHR0ZTQxRUw?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOT201Rk1yM2JIT2Q0Wld4OUZOZFlDdk40aDJjUm9tZGVlbXpyZVZJNURpOXo0R1kzbE5qVXd4RlNDUzJxcW5DXzlpdExPekNlMlFvRTRxTmtWOHlKQ09oV2FtVVRCT0VfOTlZU2w5c3o3ZXo3NEYxbzdwekJHejJ4b0phU292RlNtdk1FaVdDUm5KWUNrZkVxVDNabW0tZld5Q1J4UnVLRHNsZFRONGlmRzhHQk5sSDNlVEVhbUd6WHM5MVVndHR0ZTQxRUw?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Tue, 20 Oct 2026 07:00:00 GMT",
+      "sourceType": "attorney",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxOT201Rk1yM2JIT2Q0Wld4OUZOZFlDdk40aDJjUm9tZGVlbXpyZVZJNURpOXo0R1kzbE5qVXd4RlNDUzJxcW5DXzlpdExPekNlMlFvRTRxTmtWOHlKQ09oV2FtVVRCT0VfOTlZU2w5c3o3ZXo3NEYxbzdwekJHejJ4b0phU292RlNtdk1FaVdDUm5KWUNrZkVxVDNabW0tZld5Q1J4UnVLRHNsZFRONGlmRzhHQk5sSDNlVEVhbUd6WHM5MVVndHR0ZTQxRUw?oc=5\" target=\"_blank\"&gt;Spanish Managing Partner Eduardo Soler Tappa Steers HSF Kramer Into the AI Era&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Law.com&lt;/font&gt;",
+      "signal": "Spanish Managing Partner Eduardo Soler Tappa Steers HSF Kramer Into the AI Era - Law.com",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+        "sourceType": "attorney",
+        "priority": "nationwide",
+        "title": "Spanish Managing Partner Eduardo Soler Tappa Steers HSF Kramer Into the AI Era - Law.com",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOT201Rk1yM2JIT2Q0Wld4OUZOZFlDdk40aDJjUm9tZGVlbXpyZVZJNURpOXo0R1kzbE5qVXd4RlNDUzJxcW5DXzlpdExPekNlMlFvRTRxTmtWOHlKQ09oV2FtVVRCT0VfOTlZU2w5c3o3ZXo3NEYxbzdwekJHejJ4b0phU292RlNtdk1FaVdDUm5KWUNrZkVxVDNabW0tZld5Q1J4UnVLRHNsZFRONGlmRzhHQk5sSDNlVEVhbUd6WHM5MVVndHR0ZTQxRUw?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxOT201Rk1yM2JIT2Q0Wld4OUZOZFlDdk40aDJjUm9tZGVlbXpyZVZJNURpOXo0R1kzbE5qVXd4RlNDUzJxcW5DXzlpdExPekNlMlFvRTRxTmtWOHlKQ09oV2FtVVRCT0VfOTlZU2w5c3o3ZXo3NEYxbzdwekJHejJ4b0phU292RlNtdk1FaVdDUm5KWUNrZkVxVDNabW0tZld5Q1J4UnVLRHNsZFRONGlmRzhHQk5sSDNlVEVhbUd6WHM5MVVndHR0ZTQxRUw?oc=5\" target=\"_blank\"&gt;Spanish Managing Partner Eduardo Soler Tappa Steers HSF Kramer Into the AI Era&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Law.com&lt;/font&gt;",
+        "sourceDate": "Tue, 20 Oct 2026 07:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+            "type": "attorney",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-19T20:07:30.980Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Eduardo%20Soler%20Tappa%20Steers",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Eduardo%20Soler%20Tappa%20Steers+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Eduardo Soler Tappa Steers and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Eduardo, I came across a public signal related to Spanish Managing Partner Eduardo Soler Tappa Steers HSF Kramer Into the AI Era - Law.com. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1795118850988-bda41db76862",
       "name": "Firm Joins Citrin Cooperman",
       "title": "cpa",
       "company": "Virginia CPA Firm",
@@ -829,7 +1057,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.042Z",
+      "foundAt": "2026-11-19T20:07:30.988Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -867,7 +1095,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430040-9a0c4af5d8b7f8",
+      "id": "rad-free-1795118850980-1d64d8e428889",
       "name": "From South Windsor Guilty",
       "title": "physician",
       "company": "",
@@ -904,7 +1132,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.040Z",
+      "foundAt": "2026-11-19T20:07:30.980Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -942,7 +1170,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430040-ba5bb33215576",
+      "id": "rad-free-1795118850981-ea1964b15826f8",
       "name": "Glen McGorty",
       "title": "attorney",
       "company": "New York Law",
@@ -979,7 +1207,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.040Z",
+      "foundAt": "2026-11-19T20:07:30.981Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1018,7 +1246,235 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430042-bd3d8f88c5196",
+      "id": "rad-free-1795118850983-f2c15948742f18",
+      "name": "GW Alumna",
+      "title": "attorney",
+      "company": "New York Law Firm",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ISVdtclgtSEVaeWJhemphWnRiT0hUUTdtVTZRNm0zZXE0cjM4WkxabmEwcVYyLWJCcENwYUhYM2tHT0U5Z1FRaVc5NzdRd2IyMXgyM0tWR3BJclZwMWJBdDFReTFzNmszSktwLUE1b2w0THc?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ISVdtclgtSEVaeWJhemphWnRiT0hUUTdtVTZRNm0zZXE0cjM4WkxabmEwcVYyLWJCcENwYUhYM2tHT0U5Z1FRaVc5NzdRd2IyMXgyM0tWR3BJclZwMWJBdDFReTFzNmszSktwLUE1b2w0THc?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Fri, 12 Jan 2024 08:00:00 GMT",
+      "sourceType": "attorney",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTE9ISVdtclgtSEVaeWJhemphWnRiT0hUUTdtVTZRNm0zZXE0cjM4WkxabmEwcVYyLWJCcENwYUhYM2tHT0U5Z1FRaVc5NzdRd2IyMXgyM0tWR3BJclZwMWJBdDFReTFzNmszSktwLUE1b2w0THc?oc=5\" target=\"_blank\"&gt;GW Alumna Named Partner at New York Law Firm&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;GW Today&lt;/font&gt;",
+      "signal": "GW Alumna Named Partner at New York Law Firm - GW Today",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+        "sourceType": "attorney",
+        "priority": "nationwide",
+        "title": "GW Alumna Named Partner at New York Law Firm - GW Today",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ISVdtclgtSEVaeWJhemphWnRiT0hUUTdtVTZRNm0zZXE0cjM4WkxabmEwcVYyLWJCcENwYUhYM2tHT0U5Z1FRaVc5NzdRd2IyMXgyM0tWR3BJclZwMWJBdDFReTFzNmszSktwLUE1b2w0THc?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTE9ISVdtclgtSEVaeWJhemphWnRiT0hUUTdtVTZRNm0zZXE0cjM4WkxabmEwcVYyLWJCcENwYUhYM2tHT0U5Z1FRaVc5NzdRd2IyMXgyM0tWR3BJclZwMWJBdDFReTFzNmszSktwLUE1b2w0THc?oc=5\" target=\"_blank\"&gt;GW Alumna Named Partner at New York Law Firm&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;GW Today&lt;/font&gt;",
+        "sourceDate": "Fri, 12 Jan 2024 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+            "type": "attorney",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-19T20:07:30.983Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=GW%20Alumna%20New%20York%20Law%20Firm",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=GW%20Alumna%20New%20York%20Law%20Firm+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify GW Alumna and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi GW, I came across a public signal related to GW Alumna Named Partner at New York Law Firm - GW Today. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1795118850981-64b770986ea198",
+      "name": "Jayesh Patel",
+      "title": "attorney",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNeWhxOVY4c3R5Y0ZzYTdSYTctTGdvOG01Z0JfLVF2V2JBbTR0VE5zcWU3ZTB1azc3b01UT2prcHVnVS1LdE5yeUN3WlZwZE5Yc0NGWFRNTmd6NENrSjZmSE9DNWpGeEltVG9kUEJuanBiREZaSEQ0WGNsX1cwNWdUdm11OTlwbGpJaFdXam1TTXlzVnNiTGdWS3B1cDhjTXJyUHhoYnJtcUxTNm4yOV9WeDlrMDdJdmRVUVc2OU1vX3pxYktEQ09ZOFZXSXB6dEU?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNeWhxOVY4c3R5Y0ZzYTdSYTctTGdvOG01Z0JfLVF2V2JBbTR0VE5zcWU3ZTB1azc3b01UT2prcHVnVS1LdE5yeUN3WlZwZE5Yc0NGWFRNTmd6NENrSjZmSE9DNWpGeEltVG9kUEJuanBiREZaSEQ0WGNsX1cwNWdUdm11OTlwbGpJaFdXam1TTXlzVnNiTGdWS3B1cDhjTXJyUHhoYnJtcUxTNm4yOV9WeDlrMDdJdmRVUVc2OU1vX3pxYktEQ09ZOFZXSXB6dEU?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Wed, 11 Feb 2026 17:51:26 GMT",
+      "sourceType": "attorney",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxNeWhxOVY4c3R5Y0ZzYTdSYTctTGdvOG01Z0JfLVF2V2JBbTR0VE5zcWU3ZTB1azc3b01UT2prcHVnVS1LdE5yeUN3WlZwZE5Yc0NGWFRNTmd6NENrSjZmSE9DNWpGeEltVG9kUEJuanBiREZaSEQ0WGNsX1cwNWdUdm11OTlwbGpJaFdXam1TTXlzVnNiTGdWS3B1cDhjTXJyUHhoYnJtcUxTNm4yOV9WeDlrMDdJdmRVUVc2OU1vX3pxYktEQ09ZOFZXSXB6dEU?oc=5\" target=\"_blank\"&gt;Jayesh Patel named Partner-in-Charge of Norton Rose Fulbright’s Los Angeles office&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Norton Rose Fulbright&lt;/font&gt;",
+      "signal": "Jayesh Patel named Partner-in-Charge of Norton Rose Fulbright’s Los Angeles office - Norton Rose Fulbright",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+        "sourceType": "attorney",
+        "priority": "nationwide",
+        "title": "Jayesh Patel named Partner-in-Charge of Norton Rose Fulbright’s Los Angeles office - Norton Rose Fulbright",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNeWhxOVY4c3R5Y0ZzYTdSYTctTGdvOG01Z0JfLVF2V2JBbTR0VE5zcWU3ZTB1azc3b01UT2prcHVnVS1LdE5yeUN3WlZwZE5Yc0NGWFRNTmd6NENrSjZmSE9DNWpGeEltVG9kUEJuanBiREZaSEQ0WGNsX1cwNWdUdm11OTlwbGpJaFdXam1TTXlzVnNiTGdWS3B1cDhjTXJyUHhoYnJtcUxTNm4yOV9WeDlrMDdJdmRVUVc2OU1vX3pxYktEQ09ZOFZXSXB6dEU?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxNeWhxOVY4c3R5Y0ZzYTdSYTctTGdvOG01Z0JfLVF2V2JBbTR0VE5zcWU3ZTB1azc3b01UT2prcHVnVS1LdE5yeUN3WlZwZE5Yc0NGWFRNTmd6NENrSjZmSE9DNWpGeEltVG9kUEJuanBiREZaSEQ0WGNsX1cwNWdUdm11OTlwbGpJaFdXam1TTXlzVnNiTGdWS3B1cDhjTXJyUHhoYnJtcUxTNm4yOV9WeDlrMDdJdmRVUVc2OU1vX3pxYktEQ09ZOFZXSXB6dEU?oc=5\" target=\"_blank\"&gt;Jayesh Patel named Partner-in-Charge of Norton Rose Fulbright’s Los Angeles office&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Norton Rose Fulbright&lt;/font&gt;",
+        "sourceDate": "Wed, 11 Feb 2026 17:51:26 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+            "type": "attorney",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-19T20:07:30.981Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Jayesh%20Patel",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Jayesh%20Patel+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Jayesh Patel and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Jayesh, I came across a public signal related to Jayesh Patel named Partner-in-Charge of Norton Rose Fulbright’s Los Angeles office - Norton Rose Fulbright. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1795118850984-a7b45970cbc688",
+      "name": "John D. Alessio Elected",
+      "title": "attorney",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPM2hjczBfUks2SlJMMTBmenRaLXJfZUNrcWt6aWZxSnV4bTdBQjlvQU15U2tCNm93d3ZzMFR3UmFnNmtseU5pa3drY2Noak1CMHFWc2k3dDBXMW9LX19TTmZYeENuSFhxc3IxOGNPR0FPdXNQcXkteTBhZWcyX0RpVmNUaDVIcE5IM2lucllmNjVRVzZxMXh5bW44bVJFQTdG?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPM2hjczBfUks2SlJMMTBmenRaLXJfZUNrcWt6aWZxSnV4bTdBQjlvQU15U2tCNm93d3ZzMFR3UmFnNmtseU5pa3drY2Noak1CMHFWc2k3dDBXMW9LX19TTmZYeENuSFhxc3IxOGNPR0FPdXNQcXkteTBhZWcyX0RpVmNUaDVIcE5IM2lucllmNjVRVzZxMXh5bW44bVJFQTdG?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Tue, 12 Sep 2017 07:00:00 GMT",
+      "sourceType": "attorney",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxPM2hjczBfUks2SlJMMTBmenRaLXJfZUNrcWt6aWZxSnV4bTdBQjlvQU15U2tCNm93d3ZzMFR3UmFnNmtseU5pa3drY2Noak1CMHFWc2k3dDBXMW9LX19TTmZYeENuSFhxc3IxOGNPR0FPdXNQcXkteTBhZWcyX0RpVmNUaDVIcE5IM2lucllmNjVRVzZxMXh5bW44bVJFQTdG?oc=5\" target=\"_blank\"&gt;Procopio Partner John D. Alessio Elected Incoming Managing Partner&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Procopio&lt;/font&gt;",
+      "signal": "Procopio Partner John D. Alessio Elected Incoming Managing Partner - Procopio",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+        "sourceType": "attorney",
+        "priority": "nationwide",
+        "title": "Procopio Partner John D. Alessio Elected Incoming Managing Partner - Procopio",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPM2hjczBfUks2SlJMMTBmenRaLXJfZUNrcWt6aWZxSnV4bTdBQjlvQU15U2tCNm93d3ZzMFR3UmFnNmtseU5pa3drY2Noak1CMHFWc2k3dDBXMW9LX19TTmZYeENuSFhxc3IxOGNPR0FPdXNQcXkteTBhZWcyX0RpVmNUaDVIcE5IM2lucllmNjVRVzZxMXh5bW44bVJFQTdG?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxPM2hjczBfUks2SlJMMTBmenRaLXJfZUNrcWt6aWZxSnV4bTdBQjlvQU15U2tCNm93d3ZzMFR3UmFnNmtseU5pa3drY2Noak1CMHFWc2k3dDBXMW9LX19TTmZYeENuSFhxc3IxOGNPR0FPdXNQcXkteTBhZWcyX0RpVmNUaDVIcE5IM2lucllmNjVRVzZxMXh5bW44bVJFQTdG?oc=5\" target=\"_blank\"&gt;Procopio Partner John D. Alessio Elected Incoming Managing Partner&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Procopio&lt;/font&gt;",
+        "sourceDate": "Tue, 12 Sep 2017 07:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+            "type": "attorney",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-19T20:07:30.984Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=John%20D.%20Alessio%20Elected",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=John%20D.%20Alessio%20Elected+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify John D. Alessio Elected and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi John, I came across a public signal related to Procopio Partner John D. Alessio Elected Incoming Managing Partner - Procopio. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1795118850987-ae89c78e174418",
       "name": "Jorge Oben-Cuadros Elected",
       "title": "cpa",
       "company": "",
@@ -1055,7 +1511,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.042Z",
+      "foundAt": "2026-11-19T20:07:30.988Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1093,7 +1549,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430043-ed38584a8ffaa",
+      "id": "rad-free-1795118850989-90b4715827ec18",
       "name": "Launches Another Fitness Group",
       "title": "liquidity_event",
       "company": "Former Xponential CEO Launches Another Fitness Group",
@@ -1130,7 +1586,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.043Z",
+      "foundAt": "2026-11-19T20:07:30.989Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1169,7 +1625,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430040-4e46ae498c3278",
+      "id": "rad-free-1795118850978-e7fe1d605cb8d",
       "name": "Lieu Balu Is Building",
       "title": "physician",
       "company": "",
@@ -1206,7 +1662,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.040Z",
+      "foundAt": "2026-11-19T20:07:30.978Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1244,7 +1700,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430040-97425aaad6a3a8",
+      "id": "rad-free-1795118850981-c299509e2df4b8",
       "name": "Michael Brelje Named Partner",
       "title": "attorney",
       "company": "Santa Barbara Law Firm",
@@ -1281,7 +1737,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.040Z",
+      "foundAt": "2026-11-19T20:07:30.981Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1320,56 +1776,56 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430042-6756e2ef56dbe8",
-      "name": "Mike Kortas Acquires FSBO.com",
-      "title": "liquidity_event",
-      "company": "",
+      "id": "rad-free-1795118850985-a3d11905735d3",
+      "name": "Nicholas Behrman",
+      "title": "attorney",
+      "company": "Law Firm",
       "location": "Nationwide USA",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbUZEV0xKRDJJd3o1OFdCY1VrVXJkeUh6NFJybmI0aEV5bHFLZ21oRVVEY09SWF9admZ1Wllfc29ZUnJ0d28zUmwwQlhiRnktWk00d2JyMUVtZU9xQWJPeG5EaG1JVFBaQnZsekYtRXkzdzF0LW9VX3dfZmhDQnd0TThJa2x0c1BZXzRnOU56Wko0a05VbGFwd1dkUlFlV0xENFM2N3g1NzduY0tQ?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbUZEV0xKRDJJd3o1OFdCY1VrVXJkeUh6NFJybmI0aEV5bHFLZ21oRVVEY09SWF9admZ1Wllfc29ZUnJ0d28zUmwwQlhiRnktWk00d2JyMUVtZU9xQWJPeG5EaG1JVFBaQnZsekYtRXkzdzF0LW9VX3dfZmhDQnd0TThJa2x0c1BZXzRnOU56Wko0a05VbGFwd1dkUlFlV0xENFM2N3g1NzduY0tQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPM3FHX3o4eEw2SUtyMzVfM3RfeU1RUDZIb01LMkttSjFwSjFxQXpqdkRjLXdnT1R2QUhrMHNGZmRUWk1SRU5IV3JjM0JWYWlhc3NESFdzZFFvZWxEUUNjQktlSWYxLXM3OHc4YW1VT2VCTjBxODkwOE41aTZyZWc4OTE1QUlBZFprNWtxSWtxWFdxa3E3blNMSVhRTGxBVmNieG1CRC1XTTdwRTZUNVpz?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPM3FHX3o4eEw2SUtyMzVfM3RfeU1RUDZIb01LMkttSjFwSjFxQXpqdkRjLXdnT1R2QUhrMHNGZmRUWk1SRU5IV3JjM0JWYWlhc3NESFdzZFFvZWxEUUNjQktlSWYxLXM3OHc4YW1VT2VCTjBxODkwOE41aTZyZWc4OTE1QUlBZFprNWtxSWtxWFdxa3E3blNMSVhRTGxBVmNieG1CRC1XTTdwRTZUNVpz?oc=5",
       "source": "Free Feed Radar",
-      "sourceFeed": "Nationwide business founder exits",
-      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
-      "sourceDate": "Fri, 13 Feb 2026 08:00:00 GMT",
-      "sourceType": "liquidity_event",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Fri, 21 Feb 2025 08:00:00 GMT",
+      "sourceType": "attorney",
       "priority": "nationwide",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxQbUZEV0xKRDJJd3o1OFdCY1VrVXJkeUh6NFJybmI0aEV5bHFLZ21oRVVEY09SWF9admZ1Wllfc29ZUnJ0d28zUmwwQlhiRnktWk00d2JyMUVtZU9xQWJPeG5EaG1JVFBaQnZsekYtRXkzdzF0LW9VX3dfZmhDQnd0TThJa2x0c1BZXzRnOU56Wko0a05VbGFwd1dkUlFlV0xENFM2N3g1NzduY0tQ?oc=5\" target=\"_blank\"&gt;NEXA CEO Mike Kortas Acquires FSBO.com, Plans AI-Driven Overhaul&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;National Mortgage Professional&lt;/font&gt;",
-      "signal": "NEXA CEO Mike Kortas Acquires FSBO.com, Plans AI-Driven Overhaul - National Mortgage Professional",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxPM3FHX3o4eEw2SUtyMzVfM3RfeU1RUDZIb01LMkttSjFwSjFxQXpqdkRjLXdnT1R2QUhrMHNGZmRUWk1SRU5IV3JjM0JWYWlhc3NESFdzZFFvZWxEUUNjQktlSWYxLXM3OHc4YW1VT2VCTjBxODkwOE41aTZyZWc4OTE1QUlBZFprNWtxSWtxWFdxa3E3blNMSVhRTGxBVmNieG1CRC1XTTdwRTZUNVpz?oc=5\" target=\"_blank\"&gt;Nicholas Behrman Named Partner at Law Firm Reicker, Pfau, Pyle and McRoy&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;The Santa Barbara Independent&lt;/font&gt;",
+      "signal": "Nicholas Behrman Named Partner at Law Firm Reicker, Pfau, Pyle and McRoy - The Santa Barbara Independent",
       "raw": {
         "sourceKind": "rss",
-        "sourceFeed": "Nationwide business founder exits",
-        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
-        "sourceType": "liquidity_event",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+        "sourceType": "attorney",
         "priority": "nationwide",
-        "title": "NEXA CEO Mike Kortas Acquires FSBO.com, Plans AI-Driven Overhaul - National Mortgage Professional",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbUZEV0xKRDJJd3o1OFdCY1VrVXJkeUh6NFJybmI0aEV5bHFLZ21oRVVEY09SWF9admZ1Wllfc29ZUnJ0d28zUmwwQlhiRnktWk00d2JyMUVtZU9xQWJPeG5EaG1JVFBaQnZsekYtRXkzdzF0LW9VX3dfZmhDQnd0TThJa2x0c1BZXzRnOU56Wko0a05VbGFwd1dkUlFlV0xENFM2N3g1NzduY0tQ?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxQbUZEV0xKRDJJd3o1OFdCY1VrVXJkeUh6NFJybmI0aEV5bHFLZ21oRVVEY09SWF9admZ1Wllfc29ZUnJ0d28zUmwwQlhiRnktWk00d2JyMUVtZU9xQWJPeG5EaG1JVFBaQnZsekYtRXkzdzF0LW9VX3dfZmhDQnd0TThJa2x0c1BZXzRnOU56Wko0a05VbGFwd1dkUlFlV0xENFM2N3g1NzduY0tQ?oc=5\" target=\"_blank\"&gt;NEXA CEO Mike Kortas Acquires FSBO.com, Plans AI-Driven Overhaul&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;National Mortgage Professional&lt;/font&gt;",
-        "sourceDate": "Fri, 13 Feb 2026 08:00:00 GMT",
+        "title": "Nicholas Behrman Named Partner at Law Firm Reicker, Pfau, Pyle and McRoy - The Santa Barbara Independent",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPM3FHX3o4eEw2SUtyMzVfM3RfeU1RUDZIb01LMkttSjFwSjFxQXpqdkRjLXdnT1R2QUhrMHNGZmRUWk1SRU5IV3JjM0JWYWlhc3NESFdzZFFvZWxEUUNjQktlSWYxLXM3OHc4YW1VT2VCTjBxODkwOE41aTZyZWc4OTE1QUlBZFprNWtxSWtxWFdxa3E3blNMSVhRTGxBVmNieG1CRC1XTTdwRTZUNVpz?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxPM3FHX3o4eEw2SUtyMzVfM3RfeU1RUDZIb01LMkttSjFwSjFxQXpqdkRjLXdnT1R2QUhrMHNGZmRUWk1SRU5IV3JjM0JWYWlhc3NESFdzZFFvZWxEUUNjQktlSWYxLXM3OHc4YW1VT2VCTjBxODkwOE41aTZyZWc4OTE1QUlBZFprNWtxSWtxWFdxa3E3blNMSVhRTGxBVmNieG1CRC1XTTdwRTZUNVpz?oc=5\" target=\"_blank\"&gt;Nicholas Behrman Named Partner at Law Firm Reicker, Pfau, Pyle and McRoy&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;The Santa Barbara Independent&lt;/font&gt;",
+        "sourceDate": "Fri, 21 Feb 2025 08:00:00 GMT",
         "raw": {
           "meta": {
-            "name": "Nationwide business founder exits",
-            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
-            "type": "liquidity_event",
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+            "type": "attorney",
             "priority": "nationwide",
-            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20%22United%20States%22%20founder%20CEO%20owner&hl=en-US&gl=US&ceid=US:en",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
             "sourceKind": "google_news_rss"
           }
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.042Z",
+      "foundAt": "2026-11-19T20:07:30.985Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
         {
           "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Mike%20Kortas%20Acquires%20FSBO.com",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Nicholas%20Behrman%20Law%20Firm",
           "confidence": "Medium",
           "source": "free search path"
         },
         {
           "type": "Google Search",
-          "value": "https://www.google.com/search?q=Mike%20Kortas%20Acquires%20FSBO.com+contact+LinkedIn+email",
+          "value": "https://www.google.com/search?q=Nicholas%20Behrman%20Law%20Firm+contact+LinkedIn+email",
           "confidence": "Medium",
           "source": "free search path"
         }
@@ -1377,10 +1833,10 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Mike Kortas Acquires FSBO.com and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nextAction": "Day 1: verify Nicholas Behrman and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi Mike, I came across a public signal related to NEXA CEO Mike Kortas Acquires FSBO.com, Plans AI-Driven Overhaul - National Mortgage Professional. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi Nicholas, I came across a public signal related to Nicholas Behrman Named Partner at Law Firm Reicker, Pfau, Pyle and McRoy - The Santa Barbara Independent. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
@@ -1396,7 +1852,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430045-67715e6deb0e1",
+      "id": "rad-free-1795118850993-ae0fb92387fc",
       "name": "Receives Prestigious Founder's Award",
       "title": "business_owner",
       "company": "",
@@ -1433,7 +1889,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.045Z",
+      "foundAt": "2026-11-19T20:07:30.993Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1471,7 +1927,7 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430045-08e02c273a4608",
+      "id": "rad-free-1795118850992-61f71c3b6cce8",
       "name": "Returns Home For Expansion",
       "title": "business_owner",
       "company": "",
@@ -1508,7 +1964,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.045Z",
+      "foundAt": "2026-11-19T20:07:30.992Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1546,56 +2002,56 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430041-cea547be8e7f2",
-      "name": "Rich Rabin",
-      "title": "attorney",
-      "company": "",
+      "id": "rad-free-1795118850989-671e1f04d61aa",
+      "name": "Richard Lawless",
+      "title": "liquidity_event",
+      "company": "Remembering Lawless Group",
       "location": "Nationwide USA",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZlNXeW13b1VmeGNRS013cThzdGI1Ym4xanBVVWhaeWhONkN4VkNETGM0cGs5dVJLMDVjNWlXWnVfOG5aUng2Rmc4Y2dfV1d5VUVvMmZJclRKbW5hZmZoaWtiQkNIQ3dicmNUY1U3QkYyaEhoV19IVlZGaWFMd1U5OFpVR2VTd1UxdUE0YzdsanlTMUFfbGU5VURBQjN0QURRWlV1aEJEMjQxN2l3VjFieA?oc=5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZlNXeW13b1VmeGNRS013cThzdGI1Ym4xanBVVWhaeWhONkN4VkNETGM0cGs5dVJLMDVjNWlXWnVfOG5aUng2Rmc4Y2dfV1d5VUVvMmZJclRKbW5hZmZoaWtiQkNIQ3dicmNUY1U3QkYyaEhoV19IVlZGaWFMd1U5OFpVR2VTd1UxdUE0YzdsanlTMUFfbGU5VURBQjN0QURRWlV1aEJEMjQxN2l3VjFieA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNDNEUWhwY19pOFhNdFlfcVlTNnVXWTY5Q3hqbjl0c05ZUnRjRVNTZmoyTTh1c3NFVTh0eUNFdlVuSFl5NTV2RGtJSXV1VjRTUzhRcFN0R1NGUmtVQUkwbE9iS3Q3eE5hdk1PUVE4TlNsaWNva2JzSGpOSW9nRFZHbGRJTHNzVDEya0Zzag?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNDNEUWhwY19pOFhNdFlfcVlTNnVXWTY5Q3hqbjl0c05ZUnRjRVNTZmoyTTh1c3NFVTh0eUNFdlVuSFl5NTV2RGtJSXV1VjRTUzhRcFN0R1NGUmtVQUkwbE9iS3Q3eE5hdk1PUVE4TlNsaWNva2JzSGpOSW9nRFZHbGRJTHNzVDEya0Zzag?oc=5",
       "source": "Free Feed Radar",
-      "sourceFeed": "Nationwide law firm managing partners",
-      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
-      "sourceDate": "Tue, 18 Feb 2025 08:00:00 GMT",
-      "sourceType": "attorney",
+      "sourceFeed": "Nationwide business founder exits",
+      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+      "sourceDate": "Fri, 29 Aug 2025 07:00:00 GMT",
+      "sourceType": "liquidity_event",
       "priority": "nationwide",
-      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxNZlNXeW13b1VmeGNRS013cThzdGI1Ym4xanBVVWhaeWhONkN4VkNETGM0cGs5dVJLMDVjNWlXWnVfOG5aUng2Rmc4Y2dfV1d5VUVvMmZJclRKbW5hZmZoaWtiQkNIQ3dicmNUY1U3QkYyaEhoV19IVlZGaWFMd1U5OFpVR2VTd1UxdUE0YzdsanlTMUFfbGU5VURBQjN0QURRWlV1aEJEMjQxN2l3VjFieA?oc=5\" target=\"_blank\"&gt;Rich Rabin Named Partner in Charge of Akin’s New York Office&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Akin Gump Strauss Hauer & Feld LLP&lt;/font&gt;",
-      "signal": "Rich Rabin Named Partner in Charge of Akin’s New York Office - Akin Gump Strauss Hauer & Feld LLP",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxNNDNEUWhwY19pOFhNdFlfcVlTNnVXWTY5Q3hqbjl0c05ZUnRjRVNTZmoyTTh1c3NFVTh0eUNFdlVuSFl5NTV2RGtJSXV1VjRTUzhRcFN0R1NGUmtVQUkwbE9iS3Q3eE5hdk1PUVE4TlNsaWNva2JzSGpOSW9nRFZHbGRJTHNzVDEya0Zzag?oc=5\" target=\"_blank\"&gt;Obit: Remembering Lawless Group Founder Richard Lawless&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;National Association of Wholesaler-Distributors&lt;/font&gt;",
+      "signal": "Obit: Remembering Lawless Group Founder Richard Lawless - National Association of Wholesaler-Distributors",
       "raw": {
         "sourceKind": "rss",
-        "sourceFeed": "Nationwide law firm managing partners",
-        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
-        "sourceType": "attorney",
+        "sourceFeed": "Nationwide business founder exits",
+        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+        "sourceType": "liquidity_event",
         "priority": "nationwide",
-        "title": "Rich Rabin Named Partner in Charge of Akin’s New York Office - Akin Gump Strauss Hauer & Feld LLP",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZlNXeW13b1VmeGNRS013cThzdGI1Ym4xanBVVWhaeWhONkN4VkNETGM0cGs5dVJLMDVjNWlXWnVfOG5aUng2Rmc4Y2dfV1d5VUVvMmZJclRKbW5hZmZoaWtiQkNIQ3dicmNUY1U3QkYyaEhoV19IVlZGaWFMd1U5OFpVR2VTd1UxdUE0YzdsanlTMUFfbGU5VURBQjN0QURRWlV1aEJEMjQxN2l3VjFieA?oc=5",
-        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxNZlNXeW13b1VmeGNRS013cThzdGI1Ym4xanBVVWhaeWhONkN4VkNETGM0cGs5dVJLMDVjNWlXWnVfOG5aUng2Rmc4Y2dfV1d5VUVvMmZJclRKbW5hZmZoaWtiQkNIQ3dicmNUY1U3QkYyaEhoV19IVlZGaWFMd1U5OFpVR2VTd1UxdUE0YzdsanlTMUFfbGU5VURBQjN0QURRWlV1aEJEMjQxN2l3VjFieA?oc=5\" target=\"_blank\"&gt;Rich Rabin Named Partner in Charge of Akin’s New York Office&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Akin Gump Strauss Hauer & Feld LLP&lt;/font&gt;",
-        "sourceDate": "Tue, 18 Feb 2025 08:00:00 GMT",
+        "title": "Obit: Remembering Lawless Group Founder Richard Lawless - National Association of Wholesaler-Distributors",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNDNEUWhwY19pOFhNdFlfcVlTNnVXWTY5Q3hqbjl0c05ZUnRjRVNTZmoyTTh1c3NFVTh0eUNFdlVuSFl5NTV2RGtJSXV1VjRTUzhRcFN0R1NGUmtVQUkwbE9iS3Q3eE5hdk1PUVE4TlNsaWNva2JzSGpOSW9nRFZHbGRJTHNzVDEya0Zzag?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxNNDNEUWhwY19pOFhNdFlfcVlTNnVXWTY5Q3hqbjl0c05ZUnRjRVNTZmoyTTh1c3NFVTh0eUNFdlVuSFl5NTV2RGtJSXV1VjRTUzhRcFN0R1NGUmtVQUkwbE9iS3Q3eE5hdk1PUVE4TlNsaWNva2JzSGpOSW9nRFZHbGRJTHNzVDEya0Zzag?oc=5\" target=\"_blank\"&gt;Obit: Remembering Lawless Group Founder Richard Lawless&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;National Association of Wholesaler-Distributors&lt;/font&gt;",
+        "sourceDate": "Fri, 29 Aug 2025 07:00:00 GMT",
         "raw": {
           "meta": {
-            "name": "Nationwide law firm managing partners",
-            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
-            "type": "attorney",
+            "name": "Nationwide business founder exits",
+            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+            "type": "liquidity_event",
             "priority": "nationwide",
-            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20%22United%20States%22%20founder%20CEO%20owner&hl=en-US&gl=US&ceid=US:en",
             "sourceKind": "google_news_rss"
           }
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.041Z",
+      "foundAt": "2026-11-19T20:07:30.989Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
         {
           "type": "LinkedIn Search",
-          "value": "https://www.linkedin.com/search/results/people/?keywords=Rich%20Rabin",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Richard%20Lawless%20Remembering%20Lawless%20Group",
           "confidence": "Medium",
           "source": "free search path"
         },
         {
           "type": "Google Search",
-          "value": "https://www.google.com/search?q=Rich%20Rabin+contact+LinkedIn+email",
+          "value": "https://www.google.com/search?q=Richard%20Lawless%20Remembering%20Lawless%20Group+contact+LinkedIn+email",
           "confidence": "Medium",
           "source": "free search path"
         }
@@ -1603,10 +2059,10 @@
       "score": 98,
       "grade": "A",
       "qualificationStatus": "Qualified",
-      "nextAction": "Day 1: verify Rich Rabin and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nextAction": "Day 1: verify Richard Lawless and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
       "nurture": {
         "subject": "Reason for reaching out",
-        "body": "Hi Rich, I came across a public signal related to Rich Rabin Named Partner in Charge of Akin’s New York Office - Akin Gump Strauss Hauer & Feld LLP. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+        "body": "Hi Richard, I came across a public signal related to Obit: Remembering Lawless Group Founder Richard Lawless - National Association of Wholesaler-Distributors. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
@@ -1622,7 +2078,83 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430040-b40937e2c9e9c8",
+      "id": "rad-free-1795118850985-3f317f1e51cca8",
+      "name": "Sami Tannous On His",
+      "title": "attorney",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcGVsQzNMNXMyZGp4QXE4VGtHaHFtWjc3MjZkd3VXUHBMMzZKVHpmZGdkcTRDeThoaTVRc1JRM2thVzZIdGxpRHQ0bnREZWhQZko4OXNBYi16YVN6QzNVZmQ2Njc4bUFKV19xWmNQLWhZczJCQWlCcHVaY0ItNEFDSVg3c2hiSTM2QzNGR2hmRHJYRzB0bHg2cjVkZzVKTW81YW02bWo3U3BxelFrT2tPckw3Tm5aUFB3MllOMTRNY0w?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcGVsQzNMNXMyZGp4QXE4VGtHaHFtWjc3MjZkd3VXUHBMMzZKVHpmZGdkcTRDeThoaTVRc1JRM2thVzZIdGxpRHQ0bnREZWhQZko4OXNBYi16YVN6QzNVZmQ2Njc4bUFKV19xWmNQLWhZczJCQWlCcHVaY0ItNEFDSVg3c2hiSTM2QzNGR2hmRHJYRzB0bHg2cjVkZzVKTW81YW02bWo3U3BxelFrT2tPckw3Tm5aUFB3MllOMTRNY0w?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Tue, 17 Sep 2024 07:00:00 GMT",
+      "sourceType": "attorney",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcGVsQzNMNXMyZGp4QXE4VGtHaHFtWjc3MjZkd3VXUHBMMzZKVHpmZGdkcTRDeThoaTVRc1JRM2thVzZIdGxpRHQ0bnREZWhQZko4OXNBYi16YVN6QzNVZmQ2Njc4bUFKV19xWmNQLWhZczJCQWlCcHVaY0ItNEFDSVg3c2hiSTM2QzNGR2hmRHJYRzB0bHg2cjVkZzVKTW81YW02bWo3U3BxelFrT2tPckw3Tm5aUFB3MllOMTRNY0w?oc=5\" target=\"_blank\"&gt;Inside Freshfields: Managing Partner Sami Tannous On His Plans for MENA&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Law.com&lt;/font&gt;",
+      "signal": "Inside Freshfields: Managing Partner Sami Tannous On His Plans for MENA - Law.com",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+        "sourceType": "attorney",
+        "priority": "nationwide",
+        "title": "Inside Freshfields: Managing Partner Sami Tannous On His Plans for MENA - Law.com",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcGVsQzNMNXMyZGp4QXE4VGtHaHFtWjc3MjZkd3VXUHBMMzZKVHpmZGdkcTRDeThoaTVRc1JRM2thVzZIdGxpRHQ0bnREZWhQZko4OXNBYi16YVN6QzNVZmQ2Njc4bUFKV19xWmNQLWhZczJCQWlCcHVaY0ItNEFDSVg3c2hiSTM2QzNGR2hmRHJYRzB0bHg2cjVkZzVKTW81YW02bWo3U3BxelFrT2tPckw3Tm5aUFB3MllOMTRNY0w?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcGVsQzNMNXMyZGp4QXE4VGtHaHFtWjc3MjZkd3VXUHBMMzZKVHpmZGdkcTRDeThoaTVRc1JRM2thVzZIdGxpRHQ0bnREZWhQZko4OXNBYi16YVN6QzNVZmQ2Njc4bUFKV19xWmNQLWhZczJCQWlCcHVaY0ItNEFDSVg3c2hiSTM2QzNGR2hmRHJYRzB0bHg2cjVkZzVKTW81YW02bWo3U3BxelFrT2tPckw3Tm5aUFB3MllOMTRNY0w?oc=5\" target=\"_blank\"&gt;Inside Freshfields: Managing Partner Sami Tannous On His Plans for MENA&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Law.com&lt;/font&gt;",
+        "sourceDate": "Tue, 17 Sep 2024 07:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+            "type": "attorney",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-19T20:07:30.985Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Sami%20Tannous%20On%20His",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Sami%20Tannous%20On%20His+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Sami Tannous On His and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Sami, I came across a public signal related to Inside Freshfields: Managing Partner Sami Tannous On His Plans for MENA - Law.com. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1795118850980-53a184d92c28e8",
       "name": "SS Badrinath",
       "title": "physician",
       "company": "",
@@ -1659,7 +2191,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.040Z",
+      "foundAt": "2026-11-19T20:07:30.980Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1697,7 +2229,83 @@
       "contactSummary": "LinkedIn Search + Google Search"
     },
     {
-      "id": "rad-free-1795032430044-9974e6c7daa25",
+      "id": "rad-free-1795118850988-cf0c190896ca2",
+      "name": "Ted Turner",
+      "title": "liquidity_event",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB1VE5JWTg2SkdueUlOQTAtV3dlR0ZpM0tDc1FmNmdXS05yTnlEc2tqMzdBUWhTbEhaa0dvV2tfN3pEbGU5Zzl2V2NxaFY4a1NHVU5zNU5JbnptLUpHRnZF?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB1VE5JWTg2SkdueUlOQTAtV3dlR0ZpM0tDc1FmNmdXS05yTnlEc2tqMzdBUWhTbEhaa0dvV2tfN3pEbGU5Zzl2V2NxaFY4a1NHVU5zNU5JbnptLUpHRnZF?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide business founder exits",
+      "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+      "sourceDate": "Wed, 06 May 2026 07:00:00 GMT",
+      "sourceType": "liquidity_event",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTFB1VE5JWTg2SkdueUlOQTAtV3dlR0ZpM0tDc1FmNmdXS05yTnlEc2tqMzdBUWhTbEhaa0dvV2tfN3pEbGU5Zzl2V2NxaFY4a1NHVU5zNU5JbnptLUpHRnZF?oc=5\" target=\"_blank\"&gt;CNN founder Ted Turner, a pioneer of cable TV news, dies at 87&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;CNN&lt;/font&gt;",
+      "signal": "CNN founder Ted Turner, a pioneer of cable TV news, dies at 87 - CNN",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide business founder exits",
+        "sourceQuery": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+        "sourceType": "liquidity_event",
+        "priority": "nationwide",
+        "title": "CNN founder Ted Turner, a pioneer of cable TV news, dies at 87 - CNN",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB1VE5JWTg2SkdueUlOQTAtV3dlR0ZpM0tDc1FmNmdXS05yTnlEc2tqMzdBUWhTbEhaa0dvV2tfN3pEbGU5Zzl2V2NxaFY4a1NHVU5zNU5JbnptLUpHRnZF?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTFB1VE5JWTg2SkdueUlOQTAtV3dlR0ZpM0tDc1FmNmdXS05yTnlEc2tqMzdBUWhTbEhaa0dvV2tfN3pEbGU5Zzl2V2NxaFY4a1NHVU5zNU5JbnptLUpHRnZF?oc=5\" target=\"_blank\"&gt;CNN founder Ted Turner, a pioneer of cable TV news, dies at 87&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;CNN&lt;/font&gt;",
+        "sourceDate": "Wed, 06 May 2026 07:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide business founder exits",
+            "query": "(\"acquired\" OR \"sold his company\" OR \"sold her company\" OR \"founder exits\" OR \"liquidity event\") \"United States\" founder CEO owner",
+            "type": "liquidity_event",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22acquired%22%20OR%20%22sold%20his%20company%22%20OR%20%22sold%20her%20company%22%20OR%20%22founder%20exits%22%20OR%20%22liquidity%20event%22)%20%22United%20States%22%20founder%20CEO%20owner&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-19T20:07:30.988Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Ted%20Turner",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Ted%20Turner+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Ted Turner and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Ted, I came across a public signal related to CNN founder Ted Turner, a pioneer of cable TV news, dies at 87 - CNN. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1795118850992-13ac695b883c98",
       "name": "The Coca-Cola Company",
       "title": "liquidity_event",
       "company": "",
@@ -1734,7 +2342,7 @@
         },
         "sourceCollection": "googleNewsQueries"
       },
-      "foundAt": "2026-11-18T20:07:10.044Z",
+      "foundAt": "2026-11-19T20:07:30.992Z",
       "status": "New",
       "leadType": "basinos",
       "contactMethods": [
@@ -1758,6 +2366,158 @@
       "nurture": {
         "subject": "Reason for reaching out",
         "body": "Hi The, I came across a public signal related to The Coca-Cola Company Acquires Remaining Stake in BODYARMOR - investors.coca-colacompany.com. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1795118850987-06a38de3783c18",
+      "name": "Todd Steggerda Sworn In",
+      "title": "attorney",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZE95YUlLejZuSDNqWTd1NWFsaHBnZUlHRGVtbFBwbHF6b1k5dVNTMEE2dG1KTm9seDBsWkpHb3lWQmJ2Y3U2bGJUQW9XdEZpTkJtY19CUXU4NGFXS0xjZ1g2TXpFdWRZdnpQbnRjNFE1Ykx3elQ0dk92azQ2TVRGbE9aTlpRU21Rd3B4RG93T1loTGpLQ0RhRnFETzJUQ2JJNThJVm8zS2RCc1pQRDJ4c1hBSFdBcXd0bHY0bUpjQ2c5YUM4bkpnUEV1LV9GelZSUUN6NG5ReFJ0Zw?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZE95YUlLejZuSDNqWTd1NWFsaHBnZUlHRGVtbFBwbHF6b1k5dVNTMEE2dG1KTm9seDBsWkpHb3lWQmJ2Y3U2bGJUQW9XdEZpTkJtY19CUXU4NGFXS0xjZ1g2TXpFdWRZdnpQbnRjNFE1Ykx3elQ0dk92azQ2TVRGbE9aTlpRU21Rd3B4RG93T1loTGpLQ0RhRnFETzJUQ2JJNThJVm8zS2RCc1pQRDJ4c1hBSFdBcXd0bHY0bUpjQ2c5YUM4bkpnUEV1LV9GelZSUUN6NG5ReFJ0Zw?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Wed, 26 Aug 2026 07:00:00 GMT",
+      "sourceType": "attorney",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZE95YUlLejZuSDNqWTd1NWFsaHBnZUlHRGVtbFBwbHF6b1k5dVNTMEE2dG1KTm9seDBsWkpHb3lWQmJ2Y3U2bGJUQW9XdEZpTkJtY19CUXU4NGFXS0xjZ1g2TXpFdWRZdnpQbnRjNFE1Ykx3elQ0dk92azQ2TVRGbE9aTlpRU21Rd3B4RG93T1loTGpLQ0RhRnFETzJUQ2JJNThJVm8zS2RCc1pQRDJ4c1hBSFdBcXd0bHY0bUpjQ2c5YUM4bkpnUEV1LV9GelZSUUN6NG5ReFJ0Zw?oc=5\" target=\"_blank\"&gt;Former McGuireWoods Deputy Managing Partner Todd Steggerda Sworn In as U.S. Ambassador to the United Nations in Geneva&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;LawFuel.com&lt;/font&gt;",
+      "signal": "Former McGuireWoods Deputy Managing Partner Todd Steggerda Sworn In as U.S. Ambassador to the United Nations in Geneva - LawFuel.com",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+        "sourceType": "attorney",
+        "priority": "nationwide",
+        "title": "Former McGuireWoods Deputy Managing Partner Todd Steggerda Sworn In as U.S. Ambassador to the United Nations in Geneva - LawFuel.com",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZE95YUlLejZuSDNqWTd1NWFsaHBnZUlHRGVtbFBwbHF6b1k5dVNTMEE2dG1KTm9seDBsWkpHb3lWQmJ2Y3U2bGJUQW9XdEZpTkJtY19CUXU4NGFXS0xjZ1g2TXpFdWRZdnpQbnRjNFE1Ykx3elQ0dk92azQ2TVRGbE9aTlpRU21Rd3B4RG93T1loTGpLQ0RhRnFETzJUQ2JJNThJVm8zS2RCc1pQRDJ4c1hBSFdBcXd0bHY0bUpjQ2c5YUM4bkpnUEV1LV9GelZSUUN6NG5ReFJ0Zw?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZE95YUlLejZuSDNqWTd1NWFsaHBnZUlHRGVtbFBwbHF6b1k5dVNTMEE2dG1KTm9seDBsWkpHb3lWQmJ2Y3U2bGJUQW9XdEZpTkJtY19CUXU4NGFXS0xjZ1g2TXpFdWRZdnpQbnRjNFE1Ykx3elQ0dk92azQ2TVRGbE9aTlpRU21Rd3B4RG93T1loTGpLQ0RhRnFETzJUQ2JJNThJVm8zS2RCc1pQRDJ4c1hBSFdBcXd0bHY0bUpjQ2c5YUM4bkpnUEV1LV9GelZSUUN6NG5ReFJ0Zw?oc=5\" target=\"_blank\"&gt;Former McGuireWoods Deputy Managing Partner Todd Steggerda Sworn In as U.S. Ambassador to the United Nations in Geneva&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;LawFuel.com&lt;/font&gt;",
+        "sourceDate": "Wed, 26 Aug 2026 07:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+            "type": "attorney",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-19T20:07:30.987Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Todd%20Steggerda%20Sworn%20In",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Todd%20Steggerda%20Sworn%20In+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Todd Steggerda Sworn In and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Todd, I came across a public signal related to Former McGuireWoods Deputy Managing Partner Todd Steggerda Sworn In as U.S. Ambassador to the United Nations in Geneva -. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
+      },
+      "scoreSignals": [
+        "named human contact found",
+        "manual contact path available",
+        "Basin ICP signal",
+        "timely public trigger"
+      ],
+      "contactable": true,
+      "usaBased": true,
+      "workflowEligible": true,
+      "missingQualificationFields": [],
+      "pipelineBlockReason": "",
+      "contactSummary": "LinkedIn Search + Google Search"
+    },
+    {
+      "id": "rad-free-1795118850982-9a3daf0ef1ce1",
+      "name": "Wins Second Term",
+      "title": "attorney",
+      "company": "",
+      "location": "Nationwide USA",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMTNwRmhGcGVRbHZhTWhhdWFCWWNEUGt6bDl0ZkJOU1dVN0h0LWF4dmQ4aThLWTZoLUZRVW9LMFJaeE1mR2E0dDBKemNwT1dUMTNVZjdOd1JTdTBtNGhVQS1LTVk1SW9rZ2JHWS1OTEYtdVZWVS1aRWRMeFR2eWFDSXBldy1wdDBWdUtzaGo4Skw5X3k4ZnhIOHBnRENhd0ozYjRZWDVXOHpPa0lBN093?oc=5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMTNwRmhGcGVRbHZhTWhhdWFCWWNEUGt6bDl0ZkJOU1dVN0h0LWF4dmQ4aThLWTZoLUZRVW9LMFJaeE1mR2E0dDBKemNwT1dUMTNVZjdOd1JTdTBtNGhVQS1LTVk1SW9rZ2JHWS1OTEYtdVZWVS1aRWRMeFR2eWFDSXBldy1wdDBWdUtzaGo4Skw5X3k4ZnhIOHBnRENhd0ozYjRZWDVXOHpPa0lBN093?oc=5",
+      "source": "Free Feed Radar",
+      "sourceFeed": "Nationwide law firm managing partners",
+      "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+      "sourceDate": "Tue, 23 Dec 2025 08:00:00 GMT",
+      "sourceType": "attorney",
+      "priority": "nationwide",
+      "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxQMTNwRmhGcGVRbHZhTWhhdWFCWWNEUGt6bDl0ZkJOU1dVN0h0LWF4dmQ4aThLWTZoLUZRVW9LMFJaeE1mR2E0dDBKemNwT1dUMTNVZjdOd1JTdTBtNGhVQS1LTVk1SW9rZ2JHWS1OTEYtdVZWVS1aRWRMeFR2eWFDSXBldy1wdDBWdUtzaGo4Skw5X3k4ZnhIOHBnRENhd0ozYjRZWDVXOHpPa0lBN093?oc=5\" target=\"_blank\"&gt;Clifford Chance Global Managing Partner Wins Second Term&lt;/a&gt; &lt;font color=\"#6f6f6f\"&gt;Law.com&lt;/font&gt;",
+      "signal": "Clifford Chance Global Managing Partner Wins Second Term - Law.com",
+      "raw": {
+        "sourceKind": "rss",
+        "sourceFeed": "Nationwide law firm managing partners",
+        "sourceQuery": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+        "sourceType": "attorney",
+        "priority": "nationwide",
+        "title": "Clifford Chance Global Managing Partner Wins Second Term - Law.com",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMTNwRmhGcGVRbHZhTWhhdWFCWWNEUGt6bDl0ZkJOU1dVN0h0LWF4dmQ4aThLWTZoLUZRVW9LMFJaeE1mR2E0dDBKemNwT1dUMTNVZjdOd1JTdTBtNGhVQS1LTVk1SW9rZ2JHWS1OTEYtdVZWVS1aRWRMeFR2eWFDSXBldy1wdDBWdUtzaGo4Skw5X3k4ZnhIOHBnRENhd0ozYjRZWDVXOHpPa0lBN093?oc=5",
+        "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxQMTNwRmhGcGVRbHZhTWhhdWFCWWNEUGt6bDl0ZkJOU1dVN0h0LWF4dmQ4aThLWTZoLUZRVW9LMFJaeE1mR2E0dDBKemNwT1dUMTNVZjdOd1JTdTBtNGhVQS1LTVk1SW9rZ2JHWS1OTEYtdVZWVS1aRWRMeFR2eWFDSXBldy1wdDBWdUtzaGo4Skw5X3k4ZnhIOHBnRENhd0ozYjRZWDVXOHpPa0lBN093?oc=5\" target=\"_blank\"&gt;Clifford Chance Global Managing Partner Wins Second Term&lt;/a&gt;&nbsp;&nbsp;&lt;font color=\"#6f6f6f\"&gt;Law.com&lt;/font&gt;",
+        "sourceDate": "Tue, 23 Dec 2025 08:00:00 GMT",
+        "raw": {
+          "meta": {
+            "name": "Nationwide law firm managing partners",
+            "query": "(\"managing partner\" OR \"named partner\" OR \"promoted to partner\") \"law firm\" \"United States\"",
+            "type": "attorney",
+            "priority": "nationwide",
+            "url": "https://news.google.com/rss/search?q=(%22managing%20partner%22%20OR%20%22named%20partner%22%20OR%20%22promoted%20to%20partner%22)%20%22law%20firm%22%20%22United%20States%22&hl=en-US&gl=US&ceid=US:en",
+            "sourceKind": "google_news_rss"
+          }
+        },
+        "sourceCollection": "googleNewsQueries"
+      },
+      "foundAt": "2026-11-19T20:07:30.982Z",
+      "status": "New",
+      "leadType": "basinos",
+      "contactMethods": [
+        {
+          "type": "LinkedIn Search",
+          "value": "https://www.linkedin.com/search/results/people/?keywords=Wins%20Second%20Term",
+          "confidence": "Medium",
+          "source": "free search path"
+        },
+        {
+          "type": "Google Search",
+          "value": "https://www.google.com/search?q=Wins%20Second%20Term+contact+LinkedIn+email",
+          "confidence": "Medium",
+          "source": "free search path"
+        }
+      ],
+      "score": 98,
+      "grade": "A",
+      "qualificationStatus": "Qualified",
+      "nextAction": "Day 1: verify Wins Second Term and use the source signal for first email + LinkedIn/manual research touch. Do not call until contact route is confirmed.",
+      "nurture": {
+        "subject": "Reason for reaching out",
+        "body": "Hi Wins, I came across a public signal related to Clifford Chance Global Managing Partner Wins Second Term - Law.com. Basin Ventures may be relevant if alternative investment planning is on your radar. Worth a short director call to see if there is a fit?"
       },
       "scoreSignals": [
         "named human contact found",
